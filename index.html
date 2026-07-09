@@ -183,6 +183,10 @@
         display: block;
       }
       .photo-gallery {display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;padding:.5rem 0 1.5rem}
+      .photo-item a { display:block; }
+      .photo-item a:hover img { opacity:0.88; transition:opacity 0.15s; }
+      .photo-item img { width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:0.5rem; display:block; }
+      .photo-caption { font-size:0.68rem; color:#6b7280; text-align:center; margin:0.2rem 0 0; }
 .photo-item img{width:100%;object-fit:cover;border-radius:10px;display:block}
 .photo-item p{font-size:.72rem;color:#8B6347;font-style:italic;text-align:center;margin:.3rem 0 0}
 @media(max-width:767px){.photo-gallery{grid-template-columns:repeat(2,1fr)!important}}
@@ -208,7 +212,6 @@
               <span data-id="10">⬇️</span> Download to Print
             </button>
           </div>
-        </div>
       </div>
     </header>
 
@@ -254,10 +257,8 @@
             <a data-id="35" href="https://app.notion.com/p/swiftsure/Zion-National-Park-301120f6445381fdbe2de1df1735baee" target="_blank" rel="noopener" class="notion-header-btn">Plans</a>
           </div>
           <div data-id="36" class="bg-white p-5 md:p-8 space-y-8">
-<div class="photo-gallery"><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/68BFC1AC-BF96-629F-89D261D78F181C64.jpg" alt="The Watchman peak at Zion" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">The Watchman</p></div><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/68ED8C2C-A9D3-90B2-BBC96E7A21BC3744.jpg" alt="The Narrows slot canyon" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">The Narrows</p></div><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/69162F54-D4AF-8695-A42F97A8F9774C19.jpg" alt="Towers of the Virgin at sunset" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Towers of the Virgin</p></div></div>
+<div class="photo-gallery"><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/68BFC1AC-BF96-629F-89D261D78F181C64.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/68BFC1AC-BF96-629F-89D261D78F181C64.jpg" alt="The Watchman peak" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">The Watchman — NPS</p></div><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/68ED8C2C-A9D3-90B2-BBC96E7A21BC3744.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/68ED8C2C-A9D3-90B2-BBC96E7A21BC3744.jpg" alt="The Narrows slot canyon" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">The Narrows — NPS</p></div><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/69162F54-D4AF-8695-A42F97A8F9774C19.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/69162F54-D4AF-8695-A42F97A8F9774C19.jpg" alt="Towers of the Virgin" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Towers of the Virgin — NPS</p></div></div>
 
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Zion_Narrows_2012.jpg/800px-Zion_Narrows_2012.jpg" alt="The Narrows — Virgin River" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>The Narrows — Virgin River</p></div>
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Zion_National_Park_valley_from_top_of_Angels_Landing.JPG/800px-Zion_National_Park_valley_from_top_of_Angels_Landing.JPG" alt="Zion Canyon valley" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Zion Canyon valley</p></div>
 </div>
 
 
@@ -286,7 +287,6 @@
                       <span data-id="57" class="badge badge-hike-strenuous ml-2">Hike · Strenuous</span>
                       <p data-id="58" class="text-sm text-dark/70 mt-1">Iconic chain-assisted summit scramble above Zion Canyon — one of America's most thrilling hikes. Permit required via recreation.gov.</p>
                     </div>
-                  </div>
                 </div>
                 <div data-id="59" class="bg-sagelt/50 rounded-xl p-4 border border-sage/20">
                   <div data-id="60" class="flex items-start gap-2">
@@ -296,7 +296,6 @@
                       <span data-id="64" class="badge badge-hike-moderate ml-2">Hike · Moderate</span>
                       <p data-id="65" class="text-sm text-dark/70 mt-1">Wade up the Virgin River through soaring 1,000-ft slot canyon walls; rent water shoes in Springdale.</p>
                     </div>
-                  </div>
                 </div>
                 <div data-id="66" class="bg-sagelt/50 rounded-xl p-4 border border-sage/20">
                   <div data-id="67" class="flex items-start gap-2">
@@ -306,7 +305,6 @@
                       <span data-id="71" class="badge badge-hike-easy ml-2">Hike · Easy</span>
                       <p data-id="72" class="text-sm text-dark/70 mt-1">Lush hanging gardens and cascading waterfalls; the Lower Pool is stroller-accessible.</p>
                     </div>
-                  </div>
                 </div>
                 <div data-id="73" class="bg-sagelt/50 rounded-xl p-4 border border-sage/20">
                   <div data-id="74" class="flex items-start gap-2">
@@ -316,7 +314,6 @@
                       <span data-id="78" class="badge badge-scenic ml-2">Scenic Drive</span>
                       <p data-id="79" class="text-sm text-dark/70 mt-1">Shuttle-served 6-mile corridor with trailhead access, towering canyon walls, and the Temple of Sinawava.</p>
                     </div>
-                  </div>
                 </div>
                 <div data-id="80" class="bg-sagelt/50 rounded-xl p-4 border border-sage/20">
                   <div data-id="81" class="flex items-start gap-2">
@@ -326,7 +323,6 @@
                       <span data-id="85" class="badge badge-hike-easy ml-2">Hike · Easy</span>
                       <p data-id="86" class="text-sm text-dark/70 mt-1">Short 1-mile ridge walk above Pine Creek Canyon with spectacular views — ideal at sunrise.</p>
                     </div>
-                  </div>
                 </div>
                 <div data-id="87" class="bg-sagelt/50 rounded-xl p-4 border border-sage/20">
                   <div data-id="88" class="flex items-start gap-2">
@@ -336,7 +332,6 @@
                       <span data-id="92" class="badge badge-scenic ml-2">Scenic Drive</span>
                       <p data-id="93" class="text-sm text-dark/70 mt-1">Quieter northwest section of the park; dramatic red mesa fins and the Timber Creek Overlook.</p>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -350,7 +345,6 @@
                     <div data-id="100" class="flex items-start gap-3"><span data-id="101" class="text-lg">☀️</span><div data-id="102"><span data-id="103" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="104" class="text-sm">Arrive Springdale; pick up water shoes; board shuttle for Zion Canyon Scenic Drive</p></div></div>
                     <div data-id="105" class="flex items-start gap-3"><span data-id="106" class="text-lg">🌤️</span><div data-id="107"><span data-id="108" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="109" class="text-sm">Emerald Pools Lower + Middle loop</p></div></div>
                     <div data-id="110" class="flex items-start gap-3"><span data-id="111" class="text-lg">🌙</span><div data-id="112"><span data-id="113" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="114" class="text-sm">Explore Springdale; dinner at Switchback Grille or Spotted Dog Café</p></div></div>
-                  </div>
                 </div>
                 <div data-id="115">
                   <h4 data-id="116" class="font-bold text-canyon text-sm mb-3">Day 2</h4>
@@ -358,7 +352,6 @@
                     <div data-id="118" class="flex items-start gap-3"><span data-id="119" class="text-lg">☀️</span><div data-id="120"><span data-id="121" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="122" class="text-sm">Angels Landing (start by 7am; permit required — book at recreation.gov)</p></div></div>
                     <div data-id="123" class="flex items-start gap-3"><span data-id="124" class="text-lg">🌤️</span><div data-id="125"><span data-id="126" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="127" class="text-sm">The Narrows from the bottom (2–4 hrs; turnaround at Wall Street)</p></div></div>
                     <div data-id="128" class="flex items-start gap-3"><span data-id="129" class="text-lg">🌙</span><div data-id="130"><span data-id="131" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="132" class="text-sm">Browse Springdale galleries; dinner at Bit &amp; Spur</p></div></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -406,12 +399,9 @@
                     <span data-id="165" class="badge badge-price ml-1">$$</span>
                     <p data-id="166" class="text-sm text-dark/70 mt-1">Quirky converted church with craft beer and wood-fired pies — a beloved local hangout after a long hike day.</p>
                   </div>
-                </div>
               </div>
               <p data-id="167" class="text-xs text-dark/50 mt-3 italic">Options range from ~$15–$100/person before tax &amp; tip.</p>
             </div>
-
-          </div>
         </div>
       </section>
 
@@ -429,10 +419,8 @@
             <a data-id="175" href="https://app.notion.com/p/swiftsure/Bryce-Canyon-301120f64453814daafed98d015cc050" target="_blank" rel="noopener" class="notion-header-btn">Plans</a>
           </div>
           <div data-id="176" class="bg-white p-5 md:p-8 space-y-8">
-<div class="photo-gallery"><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/61F08520-E14F-18F2-BF5F3D89482631BD.jpg" alt="Bryce Amphitheater at sunrise" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Bryce Amphitheater</p></div><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/60400EC2-B3DA-DAD5-18BF97EA3403B692.jpg" alt="Queen's Garden Trail hoodoos" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Queen's Garden Trail</p></div><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/600067EF-E1B2-18B1-6120394EC23521DB.jpg" alt="Winter sunrise at Sunset Point" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Sunrise at Sunset Point</p></div></div>
+<div class="photo-gallery"><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/61F08520-E14F-18F2-BF5F3D89482631BD.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/61F08520-E14F-18F2-BF5F3D89482631BD.jpg" alt="Bryce Amphitheater at sunrise" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Bryce Amphitheater — NPS</p></div><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/60400EC2-B3DA-DAD5-18BF97EA3403B692.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/60400EC2-B3DA-DAD5-18BF97EA3403B692.jpg" alt="Queen's Garden Trail hoodoos" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Queen's Garden Trail — NPS</p></div><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/600067EF-E1B2-18B1-6120394EC23521DB.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/600067EF-E1B2-18B1-6120394EC23521DB.jpg" alt="Winter sunrise at Sunset Point" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Sunset Point at Dawn — NPS</p></div></div>
 
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Thors_hammer.jpg/800px-Thors_hammer.jpg" alt="Thor's Hammer" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Thor's Hammer</p></div>
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Inspiration_Point%2C_Bryce_Canyon.jpg/800px-Inspiration_Point%2C_Bryce_Canyon.jpg" alt="Inspiration Point" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Inspiration Point</p></div>
 </div>
 
 
@@ -455,7 +443,6 @@
                     <li data-id="193">🏘️ <strong data-id="194">Panguitch</strong> — Charming brick pioneer town on US-89; good fuel and pie stop at Cowboy's Smokehouse.</li>
                   </ul>
                 </div>
-              </div>
             </div>
 
             <div data-id="195">
@@ -516,7 +503,6 @@
                     <span data-id="250" class="badge badge-mustsee ml-2">Must-See</span>
                     <p data-id="251" class="text-sm text-dark/70 mt-1">Panoramic viewpoint of the entire Silent City amphitheater; stunning at sunset.</p>
                   </div></div>
-                </div>
               </div>
             </div>
 
@@ -529,7 +515,6 @@
                     <div data-id="258" class="flex items-start gap-3"><span data-id="259" class="text-lg">☀️</span><div data-id="260"><span data-id="261" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="262" class="text-sm">Drive from Zion (~2 hrs); stop at Red Canyon (free) en route</p></div></div>
                     <div data-id="263" class="flex items-start gap-3"><span data-id="264" class="text-lg">🌤️</span><div data-id="265"><span data-id="266" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="267" class="text-sm">Rim Drive to Rainbow Point; work back through overlooks</p></div></div>
                     <div data-id="268" class="flex items-start gap-3"><span data-id="269" class="text-lg">🌙</span><div data-id="270"><span data-id="271" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="272" class="text-sm">Bryce Point at sunset; dinner in Tropic or at the Lodge</p></div></div>
-                  </div>
                 </div>
                 <div data-id="273">
                   <h4 data-id="274" class="font-bold text-canyon text-sm mb-3">Day 2</h4>
@@ -537,7 +522,6 @@
                     <div data-id="276" class="flex items-start gap-3"><span data-id="277" class="text-lg">☀️</span><div data-id="278"><span data-id="279" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="280" class="text-sm">Arrive Sunrise Point before dawn (5:30–6am in summer)</p></div></div>
                     <div data-id="281" class="flex items-start gap-3"><span data-id="282" class="text-lg">🌤️</span><div data-id="283"><span data-id="284" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="285" class="text-sm">Navajo Loop + Queens Garden combo trail (~3 miles, 2–3 hrs)</p></div></div>
                     <div data-id="286" class="flex items-start gap-3"><span data-id="287" class="text-lg">🌙</span><div data-id="288"><span data-id="289" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="290" class="text-sm">Ranger stargazing program; dinner at Stone Hearth Grille</p></div></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -572,8 +556,6 @@
               </div>
               <p data-id="314" class="text-xs text-dark/50 mt-3 italic">Options range from ~$15–$100/person before tax &amp; tip.</p>
             </div>
-
-          </div>
         </div>
       </section>
 
@@ -591,10 +573,8 @@
             <a data-id="322" href="https://app.notion.com/p/swiftsure/Capital-Reef-National-Park-301120f6445381b9b3e0ff32b69b94be" target="_blank" rel="noopener" class="notion-header-btn">Plans</a>
           </div>
           <div data-id="323" class="bg-white p-5 md:p-8 space-y-8">
-<div class="photo-gallery"><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/3C82E3C7-1DD8-B71B-0B4181834EE46AED.jpg" alt="Gifford Homestead with sandstone cliffs" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Gifford Homestead</p></div><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/3C82E4FB-1DD8-B71B-0B8614194A6D08FA.jpg" alt="Hiker at Hickman Bridge arch" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Hickman Bridge</p></div><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/3C82E601-1DD8-B71B-0BCB6A40DE28B1CB.jpg" alt="Strike Valley Waterpocket Fold" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Waterpocket Fold</p></div></div>
+<div class="photo-gallery"><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/3C82E3C7-1DD8-B71B-0B4181834EE46AED.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/3C82E3C7-1DD8-B71B-0B4181834EE46AED.jpg" alt="Gifford Homestead barn" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Gifford Homestead — NPS</p></div><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/3C82E4FB-1DD8-B71B-0B8614194A6D08FA.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/3C82E4FB-1DD8-B71B-0B8614194A6D08FA.jpg" alt="Hiker at Hickman Bridge arch" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Hickman Bridge — NPS</p></div><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/3C82E601-1DD8-B71B-0BCB6A40DE28B1CB.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/3C82E601-1DD8-B71B-0BCB6A40DE28B1CB.jpg" alt="Strike Valley Waterpocket Fold" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Waterpocket Fold — NPS</p></div></div>
 
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Hickman_Bridge_Capitol_Reef.jpg/800px-Hickman_Bridge_Capitol_Reef.jpg" alt="Hickman Bridge natural arch" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Hickman Bridge natural arch</p></div>
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Capitol_Reef_Fruita_Orchards.jpg/800px-Capitol_Reef_Fruita_Orchards.jpg" alt="Fruita orchards" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Fruita orchards</p></div>
 </div>
 
 
@@ -619,7 +599,6 @@
                     <li data-id="344">🌅 <strong data-id="345">Kodachrome Basin State Park</strong> — 20-min detour south of Cannonville; bizarre stone spires in a vivid desert basin.</li>
                   </ul>
                 </div>
-              </div>
             </div>
 
             <div data-id="346">
@@ -680,7 +659,6 @@
                     <span data-id="401" class="badge badge-scenic ml-2">Scenic Drive</span>
                     <p data-id="402" class="text-sm text-dark/70 mt-1">8-mile paved park road past Capitol Dome, the Waterpocket Fold, and a historic pioneer cabin.</p>
                   </div></div>
-                </div>
               </div>
             </div>
 
@@ -693,7 +671,6 @@
                     <div data-id="409" class="flex items-start gap-3"><span data-id="410" class="text-lg">☀️</span><div data-id="411"><span data-id="412" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="413" class="text-sm">Depart Bryce; drive UT-12 (stop at Head of the Rocks, Calf Creek Falls optional)</p></div></div>
                     <div data-id="414" class="flex items-start gap-3"><span data-id="415" class="text-lg">🌤️</span><div data-id="416"><span data-id="417" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="418" class="text-sm">Arrive Capitol Reef; Fremont Petroglyphs and Fruita Orchards</p></div></div>
                     <div data-id="419" class="flex items-start gap-3"><span data-id="420" class="text-lg">🌙</span><div data-id="421"><span data-id="422" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="423" class="text-sm">Dinner in Torrey</p></div></div>
-                  </div>
                 </div>
                 <div data-id="424">
                   <h4 data-id="425" class="font-bold text-canyon text-sm mb-3">Day 2</h4>
@@ -701,7 +678,6 @@
                     <div data-id="427" class="flex items-start gap-3"><span data-id="428" class="text-lg">☀️</span><div data-id="429"><span data-id="430" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="431" class="text-sm">Hickman Bridge Trail + Capitol Reef Scenic Drive</p></div></div>
                     <div data-id="432" class="flex items-start gap-3"><span data-id="433" class="text-lg">🌤️</span><div data-id="434"><span data-id="435" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="436" class="text-sm">Grand Wash hike; cool off at the Fruita campground picnic area</p></div></div>
                     <div data-id="437" class="flex items-start gap-3"><span data-id="438" class="text-lg">🌙</span><div data-id="439"><span data-id="440" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="441" class="text-sm">Extraordinary dark-sky stargazing; dinner in Torrey</p></div></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -737,8 +713,6 @@
               </div>
               <p data-id="466" class="text-xs text-dark/50 mt-3 italic">Options range from ~$15–$100/person before tax &amp; tip.</p>
             </div>
-
-          </div>
         </div>
       </section>
 
@@ -756,10 +730,8 @@
             <a data-id="474" href="https://app.notion.com/p/swiftsure/Arches-Canyonlands-301120f64453819d9ceaef69d44b374a" target="_blank" rel="noopener" class="notion-header-btn">Plans</a>
           </div>
           <div data-id="475" class="bg-white p-5 md:p-8 space-y-8">
-<div class="photo-gallery"><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/473F5463-F0D2-261D-CEF5FCB39363590B.jpg" alt="Crowd at Delicate Arch at sunset" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Delicate Arch — Arches NP</p></div><div class="photo-item"><img src="https://www.nps.gov/common/uploads/structured_data/3C7A525D-1DD8-B71B-0B8E59D2EB39F6D0.jpg" alt="Mesa Arch framing canyon" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Mesa Arch — Canyonlands NP</p></div><div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dead_Horse_Point.jpg/800px-Dead_Horse_Point.jpg" alt="Colorado River at Dead Horse Point" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Dead Horse Point SP</p></div></div>
+<div class="photo-gallery"><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/473F5463-F0D2-261D-CEF5FCB39363590B.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/473F5463-F0D2-261D-CEF5FCB39363590B.jpg" alt="Crowd at Delicate Arch sunset" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Delicate Arch — Arches NPS</p></div><div class="photo-item"><a href="https://www.nps.gov/common/uploads/structured_data/3C7A525D-1DD8-B71B-0B8E59D2EB39F6D0.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://www.nps.gov/common/uploads/structured_data/3C7A525D-1DD8-B71B-0B8E59D2EB39F6D0.jpg" alt="Mesa Arch framing canyon at sunrise" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Mesa Arch — Canyonlands NPS</p></div><div class="photo-item"><a href="https://commons.wikimedia.org/wiki/File:Dead_Horse_Point.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dead_Horse_Point.jpg/960px-Dead_Horse_Point.jpg" alt="Colorado River at Dead Horse Point" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Dead Horse Point — Wikimedia Commons</p></div></div>
 
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/MesaArchSunrise2.jpg/800px-MesaArchSunrise2.jpg" alt="Mesa Arch — Canyonlands" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Mesa Arch — Canyonlands</p></div>
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Dead_Horse_State_Park_Utah.jpg/800px-Dead_Horse_State_Park_Utah.jpg" alt="Dead Horse Point" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Dead Horse Point</p></div>
 </div>
 
 
@@ -782,7 +754,6 @@
                     <li data-id="492">🍈 <strong data-id="493">Green River</strong> — "Melon capital of the world"; July–Sept roadside stands sell the finest cantaloupe you'll ever eat. Also the John Wesley Powell River History Museum.</li>
                   </ul>
                 </div>
-              </div>
             </div>
 
             <div data-id="494">
@@ -845,7 +816,6 @@
                     <span data-id="559" class="badge badge-activity ml-2">Activity</span>
                     <p data-id="560" class="text-sm text-dark/70 mt-1">Calm half-day float through canyon scenery; guided tours available from multiple Moab outfitters.</p>
                   </div></div>
-                </div>
               </div>
             </div>
 
@@ -858,7 +828,6 @@
                     <div data-id="567" class="flex items-start gap-3"><span data-id="568" class="text-lg">☀️</span><div data-id="569"><span data-id="570" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="571" class="text-sm">Arches NP timed entry — Delicate Arch hike (3 mi, start by 7am to beat heat) + Windows Section</p></div></div>
                     <div data-id="572" class="flex items-start gap-3"><span data-id="573" class="text-lg">🌤️</span><div data-id="574"><span data-id="575" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="576" class="text-sm">Landscape Arch + Park Avenue loop</p></div></div>
                     <div data-id="577" class="flex items-start gap-3"><span data-id="578" class="text-lg">🌙</span><div data-id="579"><span data-id="580" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="581" class="text-sm">Dinner in downtown Moab</p></div></div>
-                  </div>
                 </div>
                 <div data-id="582">
                   <h4 data-id="583" class="font-bold text-canyon text-sm mb-3">Day 2</h4>
@@ -866,7 +835,6 @@
                     <div data-id="585" class="flex items-start gap-3"><span data-id="586" class="text-lg">☀️</span><div data-id="587"><span data-id="588" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="589" class="text-sm">Dead Horse Point State Park (spectacular sunrise)</p></div></div>
                     <div data-id="590" class="flex items-start gap-3"><span data-id="591" class="text-lg">🌤️</span><div data-id="592"><span data-id="593" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="594" class="text-sm">Canyonlands Island in the Sky — Mesa Arch, Grand View Point</p></div></div>
                     <div data-id="595" class="flex items-start gap-3"><span data-id="596" class="text-lg">🌙</span><div data-id="597"><span data-id="598" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="599" class="text-sm">Corona Arch at sunset; dinner</p></div></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -908,8 +876,6 @@
               </div>
               <p data-id="629" class="text-xs text-dark/50 mt-3 italic">Options range from ~$15–$100/person before tax &amp; tip.</p>
             </div>
-
-          </div>
         </div>
       </section>
 
@@ -927,10 +893,8 @@
             <a data-id="637" href="https://app.notion.com/p/swiftsure/Telluride-301120f644538149bc9ffe7909140a36" target="_blank" rel="noopener" class="notion-header-btn">Plans</a>
           </div>
           <div data-id="638" class="bg-white p-5 md:p-8 space-y-8">
-<div class="photo-gallery"><div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Telluride_Colorado.jpg/800px-Telluride_Colorado.jpg" alt="Telluride town in mountain valley" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Telluride</p></div><div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ajax_Peak%2C_San_Juan_Mountains%2C_Telluride%2C_Colorado_2014.jpg/960px-Ajax_Peak%2C_San_Juan_Mountains%2C_Telluride%2C_Colorado_2014.jpg" alt="Ajax Peak San Juan Mountains" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Ajax Peak & San Juans</p></div><div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gondola_views_of_Mountain_Village%2C_Telluride%2C_Colorado_2025.jpg/960px-Gondola_views_of_Mountain_Village%2C_Telluride%2C_Colorado_2025.jpg" alt="Gondola over Mountain Village Telluride" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Mountain Village Gondola</p></div></div>
+<div class="photo-gallery"><div class="photo-item"><a href="https://commons.wikimedia.org/wiki/File:Telluride_Colorado.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Telluride_Colorado.jpg/960px-Telluride_Colorado.jpg" alt="Telluride town in mountain valley" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Telluride, Colorado — Wikimedia Commons</p></div><div class="photo-item"><a href="https://commons.wikimedia.org/wiki/File:Ajax_Peak,_San_Juan_Mountains,_Telluride,_Colorado_2014.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ajax_Peak%2C_San_Juan_Mountains%2C_Telluride%2C_Colorado_2014.jpg/960px-Ajax_Peak%2C_San_Juan_Mountains%2C_Telluride%2C_Colorado_2014.jpg" alt="Ajax Peak and the San Juan Mountains above Telluride" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Ajax Peak & San Juans — Wikimedia Commons</p></div><div class="photo-item"><a href="https://commons.wikimedia.org/wiki/File:Gondola_views_of_Mountain_Village,_Telluride,_Colorado_2025.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gondola_views_of_Mountain_Village%2C_Telluride%2C_Colorado_2025.jpg/960px-Gondola_views_of_Mountain_Village%2C_Telluride%2C_Colorado_2025.jpg" alt="Gondola over Mountain Village" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Mountain Village Gondola — Wikimedia Commons</p></div></div>
 
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Bridal_Veil_Falls_Telluride.jpg/800px-Bridal_Veil_Falls_Telluride.jpg" alt="Bridal Veil Falls" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Bridal Veil Falls</p></div>
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Telluride_gondola.jpg/800px-Telluride_gondola.jpg" alt="Free gondola — fall aspens" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Free gondola — fall aspens</p></div>
 </div>
 
 
@@ -954,7 +918,6 @@
                     <li data-id="657">🌊 <strong data-id="658">Orvis Hot Springs, Ridgway</strong> — Clothing-optional natural hot springs pool if you have time for a soak on the way through.</li>
                   </ul>
                 </div>
-              </div>
             </div>
 
             <div data-id="659">
@@ -1017,7 +980,6 @@
                     <span data-id="724" class="badge badge-scenic ml-2">Scenic Drive</span>
                     <p data-id="725" class="text-sm text-dark/70 mt-1">Take the gondola to high alpine meadows — mid-July brings extraordinary wildflower blooms.</p>
                   </div></div>
-                </div>
               </div>
             </div>
 
@@ -1030,7 +992,6 @@
                     <div data-id="732" class="flex items-start gap-3"><span data-id="733" class="text-lg">☀️</span><div data-id="734"><span data-id="735" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="736" class="text-sm">Drive from Moab via CO-145 (gorgeous mountain highway); arrive Telluride</p></div></div>
                     <div data-id="737" class="flex items-start gap-3"><span data-id="738" class="text-lg">🌤️</span><div data-id="739"><span data-id="740" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="741" class="text-sm">Walk historic Main Street; take gondola to Mountain Village for panoramic views</p></div></div>
                     <div data-id="742" class="flex items-start gap-3"><span data-id="743" class="text-lg">🌙</span><div data-id="744"><span data-id="745" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="746" class="text-sm">Sunset ride back on gondola; dinner on Main Street</p></div></div>
-                  </div>
                 </div>
                 <div data-id="747">
                   <h4 data-id="748" class="font-bold text-canyon text-sm mb-3">Day 2</h4>
@@ -1038,7 +999,6 @@
                     <div data-id="750" class="flex items-start gap-3"><span data-id="751" class="text-lg">☀️</span><div data-id="752"><span data-id="753" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="754" class="text-sm">Bridal Veil Falls walk (easy, 2 hrs)</p></div></div>
                     <div data-id="755" class="flex items-start gap-3"><span data-id="756" class="text-lg">🌤️</span><div data-id="757"><span data-id="758" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="759" class="text-sm">Bear Creek Trail or Jud Wiebe depending on energy</p></div></div>
                     <div data-id="760" class="flex items-start gap-3"><span data-id="761" class="text-lg">🌙</span><div data-id="762"><span data-id="763" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="764" class="text-sm">Gondola sunset ride; dinner</p></div></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1075,8 +1035,6 @@
               </div>
               <p data-id="790" class="text-xs text-dark/50 mt-3 italic">Options range from ~$15–$100/person before tax &amp; tip.</p>
             </div>
-
-          </div>
         </div>
       </section>
 
@@ -1094,10 +1052,8 @@
             <a data-id="798" href="https://app.notion.com/p/swiftsure/Pagosa-Springs-360120f6445380e5a926c8e641df2c97" target="_blank" rel="noopener" class="notion-header-btn">Plans</a>
           </div>
           <div data-id="799" class="bg-white p-5 md:p-8 space-y-8">
-<div class="photo-gallery"><div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Pagosa_Springs%2C_Colorado.jpg/800px-Pagosa_Springs%2C_Colorado.jpg" alt="Pagosa Springs with San Juan Mountains" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Pagosa Springs</p></div><div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Treasure_Falls_%28Colorado%29.jpg/800px-Treasure_Falls_%28Colorado%29.jpg" alt="Treasure Falls waterfall" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Treasure Falls</p></div><div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Pagosa-Springs_The-Springs-Resort-and-Spa_2012-10-24.JPG/960px-Pagosa-Springs_The-Springs-Resort-and-Spa_2012-10-24.JPG" alt="The Springs Resort hot springs" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">The Springs Resort & Spa</p></div></div>
+<div class="photo-gallery"><div class="photo-item"><a href="https://commons.wikimedia.org/wiki/File:Pagosa_Springs,_Colorado.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Pagosa_Springs%2C_Colorado.jpg/960px-Pagosa_Springs%2C_Colorado.jpg" alt="Pagosa Springs with San Juan Mountains" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Pagosa Springs — Wikimedia Commons</p></div><div class="photo-item"><a href="https://commons.wikimedia.org/wiki/File:Treasure_Falls,_Colorado.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Treasure_Falls%2C_Colorado.jpg/960px-Treasure_Falls%2C_Colorado.jpg" alt="Treasure Falls waterfall near Pagosa Springs" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Treasure Falls — Wikimedia Commons</p></div><div class="photo-item"><a href="https://commons.wikimedia.org/wiki/File:Pagosa-Springs_The-Springs-Resort-and-Spa_2012-10-24.JPG" target="_blank" rel="noopener" title="View full size"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Pagosa-Springs_The-Springs-Resort-and-Spa_2012-10-24.JPG/960px-Pagosa-Springs_The-Springs-Resort-and-Spa_2012-10-24.JPG" alt="The Springs Resort hot springs at Pagosa Springs" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">The Springs Resort — Wikimedia Commons</p></div></div>
 
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Treasure_Falls_Pagosa_Springs.jpg/800px-Treasure_Falls_Pagosa_Springs.jpg" alt="Treasure Falls" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Treasure Falls</p></div>
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Wolf_Creek_Pass_Colorado.jpg/800px-Wolf_Creek_Pass_Colorado.jpg" alt="Wolf Creek Pass" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Wolf Creek Pass</p></div>
 </div>
 
 
@@ -1120,7 +1076,6 @@
                     <li data-id="816">⛷️ <strong data-id="817">Purgatory Resort</strong> — 20 miles north of Durango on US-550; in summer it's a mountain bike and scenic gondola destination worth a brief stop.</li>
                   </ul>
                 </div>
-              </div>
             </div>
 
             <div data-id="818">
@@ -1183,7 +1138,6 @@
                     <span data-id="883" class="badge badge-activity ml-2">Activity</span>
                     <p data-id="884" class="text-sm text-dark/70 mt-1">Blue-ribbon trout stream flowing through downtown Pagosa; guided half- and full-day trips available.</p>
                   </div></div>
-                </div>
               </div>
             </div>
 
@@ -1196,7 +1150,6 @@
                     <div data-id="891" class="flex items-start gap-3"><span data-id="892" class="text-lg">☀️</span><div data-id="893"><span data-id="894" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="895" class="text-sm">Drive from Telluride via US-550 S through Durango (optional lunch stop); detour to Treasure Falls on US-160 — easy 20-min walk to a 105-ft waterfall; continue to Pagosa Springs and check in</p></div></div>
                     <div data-id="896" class="flex items-start gap-3"><span data-id="897" class="text-lg">🌤️</span><div data-id="898"><span data-id="899" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="900" class="text-sm">Chimney Rock National Monument guided tour (arrive by 1pm; last tours depart 2pm — book ahead at chimneyrockco.org); alternatively, a relaxing walk along the San Juan River through town</p></div></div>
                     <div data-id="901" class="flex items-start gap-3"><span data-id="902" class="text-lg">🌙</span><div data-id="903"><span data-id="904" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="905" class="text-sm">The Springs Resort — sunset soak in the world's deepest geothermal hot springs (day pass); dinner in town before or after soaking</p></div></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1233,8 +1186,6 @@
               </div>
               <p data-id="931" class="text-xs text-dark/50 mt-3 italic">Options range from ~$15–$100/person before tax &amp; tip.</p>
             </div>
-
-          </div>
         </div>
       </section>
 
@@ -1252,10 +1203,8 @@
             <a data-id="939" href="https://app.notion.com/p/swiftsure/Santa-Fe-360120f644538007be5ac9abaa986ff4" target="_blank" rel="noopener" class="notion-header-btn">Plans</a>
           </div>
           <div data-id="940" class="bg-white p-5 md:p-8 space-y-8">
-<div class="photo-gallery"><div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Santa_Fe_Plaza.jpg/800px-Santa_Fe_Plaza.jpg" alt="Historic Santa Fe Plaza" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Santa Fe Plaza</p></div><div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Canyon_Road_in_Santa_Fe%2C_New_Mexico%2C_USA_%2820%29.jpg/960px-Canyon_Road_in_Santa_Fe%2C_New_Mexico%2C_USA_%2820%29.jpg" alt="Canyon Road galleries Santa Fe" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Canyon Road</p></div><div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gannon%27s_Antiques_and_Art_-_Canyon_Road_-_Santa_Fe%2C_New_Mexico%2C_USA_-_panoramio.jpg/960px-Gannon%27s_Antiques_and_Art_-_Canyon_Road_-_Santa_Fe%2C_New_Mexico%2C_USA_-_panoramio.jpg" alt="Art galleries on Canyon Road" loading="lazy" onerror="this.parentElement.style.display='none'" /><p class="photo-caption">Canyon Road Art Scene</p></div></div>
+<div class="photo-gallery"><div class="photo-item"><a href="https://commons.wikimedia.org/wiki/File:Santa_Fe_Plaza.jpg" target="_blank" rel="noopener" title="View full size"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Santa_Fe_Plaza.jpg/960px-Santa_Fe_Plaza.jpg" alt="Historic Santa Fe Plaza" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Santa Fe Plaza — Wikimedia Commons</p></div><div class="photo-item"><a href="https://commons.wikimedia.org/wiki/File:Canyon_Road_in_Santa_Fe,_New_Mexico,_USA_(20).jpg" target="_blank" rel="noopener" title="View full size"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Canyon_Road_in_Santa_Fe%2C_New_Mexico%2C_USA_%2820%29.jpg/960px-Canyon_Road_in_Santa_Fe%2C_New_Mexico%2C_USA_%2820%29.jpg" alt="Canyon Road galleries and adobe buildings" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Canyon Road — Wikimedia Commons</p></div><div class="photo-item"><a href="https://commons.wikimedia.org/wiki/File:Cathedral_Basilica_of_Saint_Francis_of_Assisi_(Santa_Fe)_-_nave,_July_2013.JPG" target="_blank" rel="noopener" title="View full size"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Cathedral_Basilica_of_Saint_Francis_of_Assisi_%28Santa_Fe%29_-_nave%2C_July_2013.JPG/960px-Cathedral_Basilica_of_Saint_Francis_of_Assisi_%28Santa_Fe%29_-_nave%2C_July_2013.JPG" alt="Cathedral Basilica interior" loading="lazy" onerror="this.closest('.photo-item').style.display='none'" /></a><p class="photo-caption">Cathedral Basilica of St. Francis — Wikimedia Commons</p></div></div>
 
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Canyon_Road_Santa_Fe.jpg/800px-Canyon_Road_Santa_Fe.jpg" alt="Canyon Road galleries" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Canyon Road galleries</p></div>
-<div class="photo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Cathedral_Basilica_Santa_Fe.jpg/800px-Cathedral_Basilica_Santa_Fe.jpg" alt="Cathedral Basilica" loading="lazy" onerror="this.closest('.' + 'photo-item').style.display='none'"><p>Cathedral Basilica</p></div>
 </div>
 
 
@@ -1279,7 +1228,6 @@
                     <li data-id="959">🏔️ <strong data-id="960">Abiquiú Lake</strong> — A brilliant turquoise reservoir ringed by red cliffs; excellent quick picnic stop just south of Ghost Ranch.</li>
                   </ul>
                 </div>
-              </div>
             </div>
 
             <div data-id="961">
@@ -1344,7 +1292,6 @@
                     <span data-id="1036" class="badge badge-activity ml-2">Activity</span>
                     <p data-id="1037" class="text-sm text-dark/70 mt-1">Open-air amphitheater in the desert hills north of town; world-class opera July–August — book months ahead.</p>
                   </div></div>
-                </div>
               </div>
             </div>
 
@@ -1357,7 +1304,6 @@
                     <div data-id="1044" class="flex items-start gap-3"><span data-id="1045" class="text-lg">☀️</span><div data-id="1046"><span data-id="1047" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="1048" class="text-sm">Drive from Pagosa via US-84; stop at Ghost Ranch and Abiquiú (O'Keeffe country)</p></div></div>
                     <div data-id="1049" class="flex items-start gap-3"><span data-id="1050" class="text-lg">🌤️</span><div data-id="1051"><span data-id="1052" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="1053" class="text-sm">Arrive Santa Fe; check in; stroll the Plaza and Palace of the Governors</p></div></div>
                     <div data-id="1054" class="flex items-start gap-3"><span data-id="1055" class="text-lg">🌙</span><div data-id="1056"><span data-id="1057" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="1058" class="text-sm">Canyon Road galleries (many stay open until 7pm on Fridays); dinner on the Plaza</p></div></div>
-                  </div>
                 </div>
                 <div data-id="1059">
                   <h4 data-id="1060" class="font-bold text-canyon text-sm mb-3">Day 2</h4>
@@ -1365,7 +1311,6 @@
                     <div data-id="1062" class="flex items-start gap-3"><span data-id="1063" class="text-lg">☀️</span><div data-id="1064"><span data-id="1065" class="text-xs font-bold text-dark/50 uppercase">Morning</span><p data-id="1066" class="text-sm">Georgia O'Keeffe Museum (timed entry); browse downtown galleries</p></div></div>
                     <div data-id="1067" class="flex items-start gap-3"><span data-id="1068" class="text-lg">🌤️</span><div data-id="1069"><span data-id="1070" class="text-xs font-bold text-dark/50 uppercase">Afternoon</span><p data-id="1071" class="text-sm">Meow Wolf: House of Eternal Return (allow 2–3 hrs); or day-trip to Bandelier National Monument</p></div></div>
                     <div data-id="1072" class="flex items-start gap-3"><span data-id="1073" class="text-lg">🌙</span><div data-id="1074"><span data-id="1075" class="text-xs font-bold text-dark/50 uppercase">Evening</span><p data-id="1076" class="text-sm">Farewell dinner at one of Santa Fe's outstanding restaurants</p></div></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1408,8 +1353,6 @@
               </div>
               <p data-id="1107" class="text-xs text-dark/50 mt-3 italic">Options range from ~$15–$100/person before tax &amp; tip.</p>
             </div>
-
-          </div>
         </div>
       </section>
 
@@ -1425,7 +1368,6 @@
         <button data-id="1111" id="drive-modal-close" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#999;line-height:1;">✕</button>
         <h3 data-id="1112" id="drive-modal-title" style="font-family:Georgia,serif;font-size:20px;color:#8B2E0A;margin:0 0 14px;padding-right:30px;"></h3>
         <div data-id="1113" id="drive-modal-body" style="font-size:14px;line-height:1.7;color:#2C1A0E;white-space:pre-line;"></div>
-      </div>
     </div>
 
     <!-- LEAFLET OVERVIEW MAP INIT -->
@@ -1780,7 +1722,7 @@
 
   <!-- Version footer -->
   <footer class="no-print" style="text-align:center;padding:1.5rem 1rem 2.5rem;font-size:0.72rem;color:#a8917a;letter-spacing:0.05em;border-top:1px solid #e8ddd0;margin-top:2rem;">
-    SW Road Trip Itinerary &nbsp;·&nbsp; v2.3 &nbsp;·&nbsp; Updated July 8, 2026
+    SW Road Trip Itinerary &nbsp;·&nbsp; v2.4 &nbsp;·&nbsp; Updated July 8, 2026
   </footer>
 </body>
 </html>
