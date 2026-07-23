@@ -1,0 +1,40 @@
+{
+  "generator_version": "1.3.0",
+  "template_version": "2.5",
+  "generated_at_utc": "2026-07-22T00:41:39.216832+00:00",
+  "timestamp_utc": "2026-07-22T00:41:39.540987Z",
+  "summary": {
+    "valid": true,
+    "error_count": 0,
+    "warning_count": 0
+  },
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "models": [
+      {
+        "provider": "grok",
+        "model": "grok-4.5",
+        "calls": 156,
+        "prompt_tokens": 47553,
+        "completion_tokens": 51092,
+        "total_tokens": 98645,
+        "estimated_cost_usd": 0.909039
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "calls": 24,
+        "prompt_tokens": 67008,
+        "completion_tokens": 18287,
+        "total_tokens": 85295,
+        "estimated_cost_usd": 0.609345
+      }
+    ],
+    "total_calls": 180,
+    "total_estimated_cost_usd": 1.518384
+  },
+  "errors": [],
+  "warnings": [],
+  "html_path": "C:\\Users\\bryan\\OneDrive\\RoadTripOutput\\sw\\dev\\index.html"
+}
