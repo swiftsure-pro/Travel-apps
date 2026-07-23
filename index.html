@@ -51,16 +51,12 @@
 
   <script>
     async function loadApps() {
-      const root = "https://api.github.com/repos/swiftsure-pro/Travel-apps/contents/";
-      const response = await fetch(root);
-      const items = await response.json();
-
-      const dirs = items.filter(item => item.type === "dir");
-
       const grid = document.getElementById("app-grid");
 
+      const dirs = await fetch("apps.json").then(r => r.json());
+
       for (const dir of dirs) {
-        const manifestUrl = `https://raw.githubusercontent.com/swiftsure-pro/Travel-apps/main/${dir.name}/manifest.json`;
+        const manifestUrl = `${dir}/manifest.json`;
 
         try {
           const manifestResp = await fetch(manifestUrl);
@@ -73,20 +69,19 @@
           card.className = "card";
 
           card.innerHTML = `
-            <img src="${dir.name}/${icon}" alt="${manifest.name}">
-            <a href="${dir.name}/">${manifest.name}</a>
+            <img src="${dir}/${icon}" alt="${manifest.name}">
+            <a href="${dir}/">${manifest.name}</a>
           `;
 
           grid.appendChild(card);
         } catch (e) {
-          console.log("No manifest in", dir.name);
+          console.log("No manifest in", dir);
         }
       }
     }
 
     loadApps();
 
-    // Register service worker
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js");
     }
