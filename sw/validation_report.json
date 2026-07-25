@@ -1,0 +1,40 @@
+{
+  "generator_version": "1.3.0",
+  "template_version": "2.5",
+  "generated_at_utc": "2026-07-25T02:31:20.026466+00:00",
+  "timestamp_utc": "2026-07-25T02:31:20.270286Z",
+  "summary": {
+    "valid": true,
+    "error_count": 0,
+    "warning_count": 0
+  },
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "models": [
+      {
+        "provider": "grok",
+        "model": "grok-4.5",
+        "calls": 158,
+        "prompt_tokens": 48149,
+        "completion_tokens": 54158,
+        "total_tokens": 102307,
+        "estimated_cost_usd": 0.956817
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "calls": 24,
+        "prompt_tokens": 66343,
+        "completion_tokens": 17856,
+        "total_tokens": 84199,
+        "estimated_cost_usd": 0.599555
+      }
+    ],
+    "total_calls": 182,
+    "total_estimated_cost_usd": 1.556372
+  },
+  "errors": [],
+  "warnings": [],
+  "html_path": "C:\\Users\\bryan\\Documents\\Github\\PWAapps\\Travel-apps\\sw\\index.html"
+}

@@ -311,9 +311,36 @@
     </section>
   </div>
 
+  <script id="embedded-trip-catalog" type="application/json">
+    {
+      "updatedAt": "2026-07-25T00:50:23.2915229Z",
+      "trips": [
+        {
+          "name": "Southwest Road Trip Itinerary",
+          "directory": "dev",
+          "entry": "dev/index.html",
+          "description": "Generated itinerary page located in dev."
+        },
+        {
+          "name": "Southwest Road Trip Itinerary",
+          "directory": "sw/dev",
+          "entry": "sw/dev/index.html",
+          "description": "Generated road-trip-generator output package in sw/dev.",
+          "templateVersion": "2.5",
+          "generatedAt": "2026-07-22T00:41:39.216832+00:00",
+          "validation": {
+            "valid": true,
+            "warningCount": 0
+          },
+          "validationReport": "sw/dev/validation_report.json"
+        }
+      ]
+    }
+  </script>
+
   <script>
     (function () {
-      var catalogUrl = "trips.json";
+      var catalogCandidates = [];
       var grid = document.getElementById("trip-grid");
       var statusEl = document.getElementById("status");
       var empty = document.getElementById("empty");
@@ -405,6 +432,93 @@
         statusEl.textContent = text;
       }
 
+      function buildCatalogCandidates() {
+        var names = ["trips.json", "apps.json"];
+        var maxParentDepth = 6;
+        var seen = Object.create(null);
+        var list = [];
+
+        for (var depth = 0; depth <= maxParentDepth; depth += 1) {
+          var prefix = depth === 0 ? "" : new Array(depth + 1).join("../");
+          for (var i = 0; i < names.length; i += 1) {
+            var candidate = prefix + names[i];
+            if (!seen[candidate]) {
+              seen[candidate] = true;
+              list.push(candidate);
+            }
+          }
+        }
+
+        return list;
+      }
+
+      function titleFromSlug(text) {
+        return String(text || "trip")
+          .replace(/[\-_]+/g, " ")
+          .replace(/\s+/g, " ")
+          .trim()
+          .replace(/\b\w/g, function (ch) { return ch.toUpperCase(); });
+      }
+
+      function normalizeCatalog(data, sourceLabel) {
+        if (data && Array.isArray(data.trips)) {
+          return {
+            items: data.trips,
+            sourceLabel: sourceLabel
+          };
+        }
+
+        if (Array.isArray(data)) {
+          var fromDirectories = data
+            .filter(function (value) { return typeof value === "string" && value.trim(); })
+            .map(function (directory) {
+              var cleanDirectory = directory.replace(/^\.?\//, "").replace(/\/+$/, "");
+              return {
+                name: titleFromSlug(cleanDirectory) + " Trip",
+                directory: cleanDirectory,
+                entry: cleanDirectory + "/index.html",
+                description: "Trip page in " + cleanDirectory + "."
+              };
+            });
+
+          return {
+            items: fromDirectories,
+            sourceLabel: sourceLabel
+          };
+        }
+
+        if (data && Array.isArray(data.apps)) {
+          return normalizeCatalog(data.apps, sourceLabel);
+        }
+
+        throw new Error("Catalog does not contain a supported trips/apps array");
+      }
+
+      function fetchJson(url) {
+        var cacheBuster = "?t=" + String(Date.now());
+        return fetch(url + cacheBuster, { cache: "no-store" })
+          .then(function (response) {
+            if (!response.ok) {
+              throw new Error("HTTP " + response.status);
+            }
+            return response.json();
+          });
+      }
+
+      function getEmbeddedCatalog() {
+        var node = document.getElementById("embedded-trip-catalog");
+        if (!node) {
+          return null;
+        }
+
+        try {
+          var parsed = JSON.parse(node.textContent || "{}");
+          return normalizeCatalog(parsed, "embedded catalog");
+        } catch (error) {
+          return null;
+        }
+      }
+
       function renderCatalog(items, sourceLabel) {
         grid.innerHTML = "";
         countChip.textContent = "Trips: " + items.length;
@@ -424,24 +538,44 @@
       }
 
       function fetchCatalog() {
+        catalogCandidates = buildCatalogCandidates();
         setStatus("Loading catalog...");
-        var cacheBuster = "?t=" + String(Date.now());
+        var attempts = [];
+        var failureDetails = [];
 
-        fetch(catalogUrl + cacheBuster, { cache: "no-store" })
-          .then(function (response) {
-            if (!response.ok) {
-              throw new Error("HTTP " + response.status + " when loading trips.json");
-            }
-            return response.json();
-          })
-          .then(function (data) {
-            if (!data || !Array.isArray(data.trips)) {
-              throw new Error("trips.json does not contain a trips array");
-            }
-            renderCatalog(data.trips, "trips.json");
+        function tryNext(index) {
+          if (index >= catalogCandidates.length) {
+            throw new Error("No supported catalog file found (tried: " + attempts.join(", ") + ")");
+          }
+
+          var candidate = catalogCandidates[index];
+          attempts.push(candidate);
+
+          return fetchJson(candidate)
+            .then(function (data) {
+              var normalized = normalizeCatalog(data, candidate);
+              return normalized;
+            })
+            .catch(function (error) {
+              failureDetails.push(candidate + " -> " + (error && error.message ? error.message : "request failed"));
+              return tryNext(index + 1);
+            });
+        }
+
+        tryNext(0)
+          .then(function (catalog) {
+            renderCatalog(catalog.items, catalog.sourceLabel);
           })
           .catch(function (error) {
-            setStatus("Could not load trips.json: " + error.message);
+            var embedded = getEmbeddedCatalog();
+            if (embedded && Array.isArray(embedded.items) && embedded.items.length) {
+              renderCatalog(embedded.items, embedded.sourceLabel);
+              setStatus("Loaded " + embedded.items.length + " trip" + (embedded.items.length === 1 ? "" : "s") + " from embedded catalog after file lookup failure.");
+              return;
+            }
+
+            var details = failureDetails.length ? " | Details: " + failureDetails.join("; ") : "";
+            setStatus("Could not load trip catalog: " + error.message + details);
           });
       }
 
