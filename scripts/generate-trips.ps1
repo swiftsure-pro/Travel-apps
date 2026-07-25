@@ -60,6 +60,24 @@ function Get-NameFromDirectory {
     return ($words -join " - ")
 }
 
+function Get-OptionalPropertyValue {
+    param(
+        [object]$Object,
+        [string]$PropertyName
+    )
+
+    if ($null -eq $Object -or [string]::IsNullOrWhiteSpace($PropertyName)) {
+        return $null
+    }
+
+    $property = $Object.PSObject.Properties[$PropertyName]
+    if ($null -eq $property) {
+        return $null
+    }
+
+    return $property.Value
+}
+
 function New-TripEntry {
     param(
         [string]$Root,
@@ -100,8 +118,9 @@ function New-TripEntry {
     $title = Get-HtmlTitle -HtmlText $html
 
     $name = $null
-    if ($existing -and $existing.name) {
-        $name = $existing.name
+    $existingName = Get-OptionalPropertyValue -Object $existing -PropertyName "name"
+    if ($existingName) {
+        $name = $existingName
     } elseif ($title) {
         $name = $title -replace "\s*[\-\u2014]\s*Full\s*$", ""
     } else {
@@ -109,25 +128,25 @@ function New-TripEntry {
     }
 
     $description = $null
-    if ($existing -and $existing.description) {
-        $description = $existing.description
+    $existingDescription = Get-OptionalPropertyValue -Object $existing -PropertyName "description"
+    if ($existingDescription) {
+        $description = $existingDescription
     } elseif ($validation) {
         $description = "Generated road-trip-generator output package in $relativeDirectory."
     } else {
         $description = "Generated itinerary page located in $relativeDirectory."
     }
 
-    $routeSummary = $null
-    if ($existing -and $existing.routeSummary) {
-        $routeSummary = $existing.routeSummary
+    $routeSummary = Get-OptionalPropertyValue -Object $existing -PropertyName "routeSummary"
+
+    $existingTemplateVersion = Get-OptionalPropertyValue -Object $existing -PropertyName "templateVersion"
+    if (-not $templateVersion -and $existingTemplateVersion) {
+        $templateVersion = $existingTemplateVersion
     }
 
-    if (-not $templateVersion -and $existing -and $existing.templateVersion) {
-        $templateVersion = $existing.templateVersion
-    }
-
-    if (-not $generatedAt -and $existing -and $existing.generatedAt) {
-        $generatedAt = $existing.generatedAt
+    $existingGeneratedAt = Get-OptionalPropertyValue -Object $existing -PropertyName "generatedAt"
+    if (-not $generatedAt -and $existingGeneratedAt) {
+        $generatedAt = $existingGeneratedAt
     }
 
     $entryObject = [ordered]@{
@@ -164,14 +183,20 @@ function New-TripEntry {
             valid = $isValid
             warningCount = $warningCount
         }
-    } elseif ($existing -and $existing.validation) {
-        $entryObject.validation = $existing.validation
+    } else {
+        $existingValidation = Get-OptionalPropertyValue -Object $existing -PropertyName "validation"
+        if ($existingValidation) {
+            $entryObject.validation = $existingValidation
+        }
     }
 
     if ($validationReport) {
         $entryObject.validationReport = $validationReport
-    } elseif ($existing -and $existing.validationReport) {
-        $entryObject.validationReport = $existing.validationReport
+    } else {
+        $existingValidationReport = Get-OptionalPropertyValue -Object $existing -PropertyName "validationReport"
+        if ($existingValidationReport) {
+            $entryObject.validationReport = $existingValidationReport
+        }
     }
 
     return [pscustomobject]$entryObject
