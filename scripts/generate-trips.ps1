@@ -220,7 +220,9 @@ if (Test-Path $catalogPath) {
 $indexFiles = Get-ChildItem -Path $rootResolved -Filter "index.html" -File -Recurse |
     Where-Object {
         $_.FullName -ne (Join-Path $rootResolved "index.html") -and
-        $_.FullName -notmatch "\\.git\\"
+        $_.FullName -notmatch "\\.git\\" -and
+        $_.FullName -notmatch "\\.archiver_shadow\\" -and
+        $_.FullName -notmatch "\\.vscode\\"
     }
 
 $trips = foreach ($indexFile in $indexFiles) {
