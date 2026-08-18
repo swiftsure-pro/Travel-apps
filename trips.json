@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-08-18T20:19:42.9524281Z",
+    "updatedAt":  "2026-08-18T21:15:36.4028481Z",
     "trips":  [
                   {
                       "name":  "Southwest Road Trip Itinerary",
@@ -19,6 +19,19 @@
                                          "warningCount":  0
                                      },
                       "validationReport":  "sw/validation_report.json"
+                  },
+                  {
+                      "name":  "Southwest Road Trip Itinerary",
+                      "directory":  "sw/eval",
+                      "entry":  "sw/eval/index.html",
+                      "description":  "Generated road-trip-generator output package in sw/eval.",
+                      "templateVersion":  "2.5",
+                      "generatedAt":  "2026-08-18T21:15:08.590015+00:00",
+                      "validation":  {
+                                         "valid":  true,
+                                         "warningCount":  2
+                                     },
+                      "validationReport":  "sw/eval/validation_report.json"
                   }
               ]
 }
