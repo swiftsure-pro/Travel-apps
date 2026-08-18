@@ -225,11 +225,17 @@ $indexFiles = Get-ChildItem -Path $rootResolved -Filter "index.html" -File -Recu
         $_.FullName -notmatch "\\.vscode\\"
     }
 
-$trips = foreach ($indexFile in $indexFiles) {
+$trips = @(foreach ($indexFile in $indexFiles) {
     New-TripEntry -Root $rootResolved -IndexFile $indexFile -ExistingByEntry $existingByEntry
-}
+})
 
-$trips = $trips | Sort-Object directory, entry
+# Wrapped in @() so a single-match result stays a 1-element array rather than
+# unwrapping to a bare object -- Sort-Object/pipeline output on exactly one
+# item does that unwrap, which then made $trips.Count below throw
+# PropertyNotFoundStrict (the catalog file itself still wrote correctly via
+# ConvertTo-Json, since @($trips) at the assignment forced array-shape there
+# too -- only this diagnostic line was affected).
+$trips = @($trips | Sort-Object directory, entry)
 
 $catalog = [ordered]@{
     updatedAt = (Get-Date).ToUniversalTime().ToString("o")
