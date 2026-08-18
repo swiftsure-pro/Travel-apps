@@ -1,0 +1,11 @@
+{
+    "git.ignoredRepositories": [
+        ".archiver_shadow"
+    ],
+    "chat.tools.terminal.autoApprove": {
+        ".\\tests\\*.py": true,
+        "pytest": true,
+        ".\\venv\\Scripts\\python.exe": true,
+        "gh": true
+    }
+}
