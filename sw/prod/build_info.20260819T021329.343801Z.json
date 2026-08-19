@@ -1,0 +1,13 @@
+{
+  "fingerprint": "v2.0.0+5476839+dirty+20260819T021329.343801Z",
+  "run_id": "20260819T021329.343801Z",
+  "generator_version": "2.0.0",
+  "template_version": "2.5",
+  "build_tag": "",
+  "git": {
+    "branch": "issue-6-v2",
+    "commit": "54768391eebbbe4fb110980c9542db7e95d5322d",
+    "short_commit": "5476839",
+    "dirty": true
+  }
+}
