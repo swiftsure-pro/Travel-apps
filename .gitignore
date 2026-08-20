@@ -1,2 +1,16 @@
 .archiver_shadow/
 .snapshots/
+
+# Non-prod generated output. These builds are NOT privacy-redacted --
+# _resolve_privacy_redaction only redacts in prod -- so a dev/eval index.html
+# carries private planning links and lodging/booking details verbatim.
+#
+# This repo is public and its Pages workflow uploads path: '.', the whole
+# repository, so anything staged here is published. run-trip.BAT's publish
+# step runs `git add -A` on any run that passes validation, with no
+# environment check, which would sweep these in. Ignoring them means that
+# can't happen regardless of what any script does.
+sw/dev/
+sw/eval/
+dev/
+eval/
