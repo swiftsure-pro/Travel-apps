@@ -1,21 +1,21 @@
 {
   "generator_version": "2.0.1",
   "template_version": "2.5",
-  "generated_at_utc": "2026-08-20T22:03:13.229282+00:00",
+  "generated_at_utc": "2026-08-20T23:05:33.426005+00:00",
   "development_build": {
-    "fingerprint": "v2.0.1+5d3b218+dirty+20260820T215926.150317Z",
-    "run_id": "20260820T215926.150317Z",
+    "fingerprint": "v2.0.1+3371a84+dirty+20260820T230223.510577Z",
+    "run_id": "20260820T230223.510577Z",
     "generator_version": "2.0.1",
     "template_version": "2.5",
     "build_tag": "",
     "git": {
       "branch": "v2",
-      "commit": "5d3b218834a890ee57b66926a275e48ab7c112ad",
-      "short_commit": "5d3b218",
+      "commit": "3371a841fe34b11ddaa028791309ff2313d696e2",
+      "short_commit": "3371a84",
       "dirty": true
     }
   },
-  "timestamp_utc": "2026-08-20T22:03:22.883184Z",
+  "timestamp_utc": "2026-08-20T23:05:41.372837Z",
   "summary": {
     "valid": true,
     "error_count": 0,
@@ -28,410 +28,421 @@
       {
         "provider": "grok",
         "model": "grok-4-fast",
-        "calls": 16,
-        "prompt_tokens": 90815,
-        "completion_tokens": 18407,
-        "total_tokens": 109222,
-        "tool_calls": 24,
-        "tool_call_cost_usd": 0.12,
-        "estimated_cost_usd": 0.147367
+        "calls": 17,
+        "prompt_tokens": 115407,
+        "completion_tokens": 19807,
+        "total_tokens": 135214,
+        "tool_calls": 30,
+        "tool_call_cost_usd": 0.15,
+        "estimated_cost_usd": 0.182986
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "calls": 18,
-        "prompt_tokens": 70952,
-        "completion_tokens": 21899,
-        "total_tokens": 92851,
+        "prompt_tokens": 70687,
+        "completion_tokens": 22230,
+        "total_tokens": 92917,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.023781
+        "estimated_cost_usd": 0.02394
       }
     ],
-    "total_calls": 34,
-    "total_estimated_cost_usd": 0.171148,
+    "total_calls": 35,
+    "total_estimated_cost_usd": 0.206926,
     "records": [
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:stgeorge",
         "prompt_tokens": 4766,
-        "completion_tokens": 1869,
-        "total_tokens": 6635,
+        "completion_tokens": 1807,
+        "total_tokens": 6573,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001836
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "destination_bundle:capitolreef",
-        "prompt_tokens": 4726,
-        "completion_tokens": 1995,
-        "total_tokens": 6721,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001906
+        "estimated_cost_usd": 0.001799
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:bryce",
         "prompt_tokens": 4714,
-        "completion_tokens": 2044,
-        "total_tokens": 6758,
+        "completion_tokens": 2106,
+        "total_tokens": 6820,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001933
+        "estimated_cost_usd": 0.001971
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:zion",
         "prompt_tokens": 4717,
-        "completion_tokens": 2116,
-        "total_tokens": 6833,
+        "completion_tokens": 2067,
+        "total_tokens": 6784,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001977
+        "estimated_cost_usd": 0.001948
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
-        "operation": "destination_bundle:arches",
-        "prompt_tokens": 4598,
-        "completion_tokens": 1879,
-        "total_tokens": 6477,
+        "operation": "destination_bundle:capitolreef",
+        "prompt_tokens": 4726,
+        "completion_tokens": 2411,
+        "total_tokens": 7137,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001817
+        "estimated_cost_usd": 0.002155
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:moab",
         "prompt_tokens": 4698,
-        "completion_tokens": 2049,
-        "total_tokens": 6747,
+        "completion_tokens": 1964,
+        "total_tokens": 6662,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001934
+        "estimated_cost_usd": 0.001883
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
-        "operation": "destination_bundle:canyonlands",
-        "prompt_tokens": 4599,
-        "completion_tokens": 2015,
-        "total_tokens": 6614,
+        "operation": "destination_bundle:arches",
+        "prompt_tokens": 4598,
+        "completion_tokens": 1980,
+        "total_tokens": 6578,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001899
+        "estimated_cost_usd": 0.001878
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:telluride",
         "prompt_tokens": 4713,
-        "completion_tokens": 2328,
-        "total_tokens": 7041,
+        "completion_tokens": 2022,
+        "total_tokens": 6735,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.002104
+        "estimated_cost_usd": 0.00192
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:canyonlands",
+        "prompt_tokens": 4599,
+        "completion_tokens": 2130,
+        "total_tokens": 6729,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001968
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:pagosa",
         "prompt_tokens": 4716,
-        "completion_tokens": 2235,
-        "total_tokens": 6951,
+        "completion_tokens": 2071,
+        "total_tokens": 6787,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.002048
+        "estimated_cost_usd": 0.00195
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:santafe",
         "prompt_tokens": 4760,
-        "completion_tokens": 2284,
-        "total_tokens": 7044,
+        "completion_tokens": 2403,
+        "total_tokens": 7163,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.002084
+        "estimated_cost_usd": 0.002156
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "cultural_events:search",
-        "prompt_tokens": 5287,
-        "completion_tokens": 907,
-        "total_tokens": 6194,
+        "prompt_tokens": 6539,
+        "completion_tokens": 786,
+        "total_tokens": 7325,
         "tool_calls": 2,
         "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.011511
+        "estimated_cost_usd": 0.011701
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "cultural_events:search",
-        "prompt_tokens": 4706,
-        "completion_tokens": 1121,
-        "total_tokens": 5827,
+        "prompt_tokens": 8687,
+        "completion_tokens": 1098,
+        "total_tokens": 9785,
         "tool_calls": 1,
         "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.006502
+        "estimated_cost_usd": 0.007286
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "cultural_events:search",
-        "prompt_tokens": 5976,
-        "completion_tokens": 904,
-        "total_tokens": 6880,
+        "prompt_tokens": 6763,
+        "completion_tokens": 1125,
+        "total_tokens": 7888,
         "tool_calls": 2,
         "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.011647
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "cultural_events:Capitol Reef National Park",
-        "prompt_tokens": 2946,
-        "completion_tokens": 125,
-        "total_tokens": 3071,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000517
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "cultural_events:Bryce Canyon National Park",
-        "prompt_tokens": 2842,
-        "completion_tokens": 131,
-        "total_tokens": 2973,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000505
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "cultural_events:St. George, Utah",
-        "prompt_tokens": 2974,
-        "completion_tokens": 138,
-        "total_tokens": 3112,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000529
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 13306,
-        "completion_tokens": 1425,
-        "total_tokens": 14731,
-        "tool_calls": 2,
-        "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.013374
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 5606,
-        "completion_tokens": 1173,
-        "total_tokens": 6779,
-        "tool_calls": 2,
-        "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.011708
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 3264,
-        "completion_tokens": 1369,
-        "total_tokens": 4633,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.006337
+        "estimated_cost_usd": 0.011915
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Zion National Park",
-        "prompt_tokens": 3132,
-        "completion_tokens": 158,
-        "total_tokens": 3290,
+        "prompt_tokens": 2757,
+        "completion_tokens": 131,
+        "total_tokens": 2888,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000565
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 3411,
-        "completion_tokens": 939,
-        "total_tokens": 4350,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.006152
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 4616,
-        "completion_tokens": 1125,
-        "total_tokens": 5741,
-        "tool_calls": 2,
-        "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.011486
+        "estimated_cost_usd": 0.000492
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "cultural_events:search",
-        "prompt_tokens": 5655,
-        "completion_tokens": 1116,
-        "total_tokens": 6771,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.006689
+        "prompt_tokens": 7116,
+        "completion_tokens": 1127,
+        "total_tokens": 8243,
+        "tool_calls": 3,
+        "tool_call_cost_usd": 0.015,
+        "estimated_cost_usd": 0.016987
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
-        "operation": "cultural_events:Moab",
-        "prompt_tokens": 2992,
-        "completion_tokens": 154,
-        "total_tokens": 3146,
+        "operation": "cultural_events:Capitol Reef National Park",
+        "prompt_tokens": 2944,
+        "completion_tokens": 131,
+        "total_tokens": 3075,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000541
+        "estimated_cost_usd": 0.00052
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 6829,
+        "completion_tokens": 1260,
+        "total_tokens": 8089,
+        "tool_calls": 2,
+        "tool_call_cost_usd": 0.01,
+        "estimated_cost_usd": 0.011996
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "cultural_events:Bryce Canyon National Park",
+        "prompt_tokens": 2823,
+        "completion_tokens": 158,
+        "total_tokens": 2981,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.000518
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 4030,
+        "completion_tokens": 1233,
+        "total_tokens": 5263,
+        "tool_calls": 2,
+        "tool_call_cost_usd": 0.01,
+        "estimated_cost_usd": 0.011422
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "cultural_events:St. George, Utah",
+        "prompt_tokens": 3105,
+        "completion_tokens": 311,
+        "total_tokens": 3416,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.000652
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 5611,
+        "completion_tokens": 1142,
+        "total_tokens": 6753,
+        "tool_calls": 2,
+        "tool_call_cost_usd": 0.01,
+        "estimated_cost_usd": 0.011693
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 11614,
+        "completion_tokens": 1016,
+        "total_tokens": 12630,
+        "tool_calls": 2,
+        "tool_call_cost_usd": 0.01,
+        "estimated_cost_usd": 0.012831
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "cultural_events:search",
-        "prompt_tokens": 4642,
-        "completion_tokens": 872,
-        "total_tokens": 5514,
+        "prompt_tokens": 5738,
+        "completion_tokens": 976,
+        "total_tokens": 6714,
         "tool_calls": 1,
         "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.006364
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 5287,
-        "completion_tokens": 1343,
-        "total_tokens": 6630,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.006729
+        "estimated_cost_usd": 0.006636
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Telluride",
-        "prompt_tokens": 2929,
-        "completion_tokens": 129,
-        "total_tokens": 3058,
+        "prompt_tokens": 2965,
+        "completion_tokens": 144,
+        "total_tokens": 3109,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000517
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 3362,
-        "completion_tokens": 1493,
-        "total_tokens": 4855,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.006419
+        "estimated_cost_usd": 0.000531
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "cultural_events:search",
-        "prompt_tokens": 6240,
-        "completion_tokens": 1039,
-        "total_tokens": 7279,
-        "tool_calls": 2,
-        "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.011767
+        "prompt_tokens": 8841,
+        "completion_tokens": 1329,
+        "total_tokens": 10170,
+        "tool_calls": 3,
+        "tool_call_cost_usd": 0.015,
+        "estimated_cost_usd": 0.017433
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "cultural_events:Moab",
+        "prompt_tokens": 3009,
+        "completion_tokens": 138,
+        "total_tokens": 3147,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.000534
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 3308,
-        "completion_tokens": 1350,
-        "total_tokens": 4658,
+        "operation": "cultural_events:search",
+        "prompt_tokens": 10688,
+        "completion_tokens": 1292,
+        "total_tokens": 11980,
         "tool_calls": 1,
         "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.006337
+        "estimated_cost_usd": 0.007784
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 6986,
+        "completion_tokens": 1063,
+        "total_tokens": 8049,
+        "tool_calls": 2,
+        "tool_call_cost_usd": 0.01,
+        "estimated_cost_usd": 0.011929
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Santa Fe",
-        "prompt_tokens": 3014,
-        "completion_tokens": 134,
-        "total_tokens": 3148,
+        "prompt_tokens": 3164,
+        "completion_tokens": 129,
+        "total_tokens": 3293,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000532
+        "estimated_cost_usd": 0.000552
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Pagosa Springs",
-        "prompt_tokens": 3116,
-        "completion_tokens": 116,
-        "total_tokens": 3232,
+        "prompt_tokens": 2913,
+        "completion_tokens": 127,
+        "total_tokens": 3040,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000537
+        "estimated_cost_usd": 0.000513
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 4028,
-        "completion_tokens": 1053,
-        "total_tokens": 5081,
-        "tool_calls": 2,
-        "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.011332
+        "prompt_tokens": 4559,
+        "completion_tokens": 1169,
+        "total_tokens": 5728,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.006496
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 12121,
-        "completion_tokens": 1178,
-        "total_tokens": 13299,
+        "prompt_tokens": 4100,
+        "completion_tokens": 1063,
+        "total_tokens": 5163,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.006352
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 5140,
+        "completion_tokens": 1659,
+        "total_tokens": 6799,
         "tool_calls": 2,
         "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.013013
+        "estimated_cost_usd": 0.011858
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 8827,
+        "completion_tokens": 938,
+        "total_tokens": 9765,
+        "tool_calls": 2,
+        "tool_call_cost_usd": 0.01,
+        "estimated_cost_usd": 0.012234
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 3339,
+        "completion_tokens": 1531,
+        "total_tokens": 4870,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.006433
       }
     ]
   },
   "errors": [],
   "warnings": [
-    "Attractions removed for no verified URL: 23 (threshold: 3)",
+    "Attractions removed for no verified URL: 19 (threshold: 3)",
     "Restaurants removed for no verified URL: 9 (threshold: 0)",
-    "En-route stops removed for no verified URL: 4 (threshold: 2)"
+    "En-route stops removed for no verified URL: 3 (threshold: 2)"
   ],
   "html_path": "C:\\Users\\bryan\\Documents\\Github\\PWAapps\\Travel-apps\\sw\\prod\\index.html"
 }
