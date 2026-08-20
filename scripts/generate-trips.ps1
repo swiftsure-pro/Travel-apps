@@ -222,7 +222,15 @@ $indexFiles = Get-ChildItem -Path $rootResolved -Filter "index.html" -File -Recu
         $_.FullName -ne (Join-Path $rootResolved "index.html") -and
         $_.FullName -notmatch "\\.git\\" -and
         $_.FullName -notmatch "\\.archiver_shadow\\" -and
-        $_.FullName -notmatch "\\.vscode\\"
+        $_.FullName -notmatch "\\.vscode\\" -and
+        # Non-prod builds are NOT privacy-redacted -- only prod is (see the
+        # generator's _resolve_privacy_redaction) -- so a dev/eval index.html
+        # carries private planning links and lodging/booking details verbatim.
+        # Those directories are gitignored and never published, but this script
+        # scans the FILESYSTEM rather than git, so without this it lists them in
+        # trips.json, which IS committed: the public landing page would then
+        # advertise the path and render a card linking to a 404.
+        $_.FullName -notmatch '[\\/](dev|eval)[\\/]'
     }
 
 $trips = @(foreach ($indexFile in $indexFiles) {
