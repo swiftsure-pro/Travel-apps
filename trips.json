@@ -1,6 +1,19 @@
 {
-    "updatedAt":  "2026-08-20T23:05:44.6316956Z",
+    "updatedAt":  "2026-08-28T17:58:06.4041463Z",
     "trips":  [
+                  {
+                      "name":  "Southwest Road Trip Itinerary",
+                      "directory":  "EuropeExploration/prod",
+                      "entry":  "EuropeExploration/prod/index.html",
+                      "description":  "Generated road-trip-generator output package in EuropeExploration/prod.",
+                      "templateVersion":  "2.5",
+                      "generatedAt":  "2026-08-28T17:58:03.338013+00:00",
+                      "validation":  {
+                                         "valid":  true,
+                                         "warningCount":  2
+                                     },
+                      "validationReport":  "EuropeExploration/prod/validation_report.json"
+                  },
                   {
                       "name":  "Southwest Road Trip Itinerary",
                       "directory":  "sw/prod",

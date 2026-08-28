@@ -1,0 +1,2080 @@
+<!-- generator_version=2.3.0; template_version=2.5; provider=openai; model=gpt-4o-mini; generated_at=2026-08-28T17:58:03.338013+00:00; development_build=v2.3.0+745daf7+dirty+20260828T175548.262946Z -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PWA: Theme and display -->
+    <meta name="theme-color" content="#3A5F8A" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="SW Road Trip" />
+    <meta name="application-name" content="SW Road Trip" />
+    <meta name="description" content="Southwest Road Trip Itinerary — Zion, Bryce, Capitol Reef, Moab, Telluride, Pagosa Springs, Santa Fe" />
+
+    <!-- PWA: Apple touch icon (terracotta map pin SVG as data URI) -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='36' fill='%233A5F8A'/%3E%3Ctext x='50%25' y='54%25' font-size='110' text-anchor='middle' dominant-baseline='middle'%3E🗺️%3C/text%3E%3C/svg%3E" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='36' fill='%233A5F8A'/%3E%3Ctext x='50%25' y='54%25' font-size='110' text-anchor='middle' dominant-baseline='middle'%3E🗺️%3C/text%3E%3C/svg%3E" type="image/svg+xml" />
+
+    <link id="pwa-manifest-link" rel="manifest" href="./manifest.webmanifest" />
+    <title>Southwest Road Trip Itinerary — Full</title>
+    
+    
+    
+    <style>
+      :root {
+        /* Driven by trip.theme_color in the manifest; html_assembler
+           substitutes this placeholder. Do not inline a literal here --
+           the placeholder going missing is what silently pinned every
+           itinerary to the Southwest terracotta regardless of manifest. */
+        --terracotta: #3A5F8A;
+        --sandstone: #F5EFE0;
+        --canyon: #8B2E0A;
+        --sage: #6B8C6B;
+        --offwhite: #FAFAF7;
+        --dark: #2C1A0E;
+      }
+      html { scroll-behavior: smooth; }
+      body { font-family: system-ui, -apple-system, sans-serif; background: var(--offwhite); color: var(--dark); }
+      h1,h2,h3,h4,h5 { font-family: Georgia, Cambria, serif; }
+
+      .route-overview-head {
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.75rem;
+      }
+      .tab-btn { padding: 8px 16px; font-size: 14px; font-weight: 600; border-radius: 9999px; transition: all 0.2s; cursor: pointer; white-space: nowrap; border: 2px solid transparent; background: transparent; color: #6b5e50; }
+      .tab-btn:hover { background: var(--sandstone); color: var(--dark); }
+      .tab-btn.active { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
+
+      /* Rendered beside the Route Overview heading, not in the tab strip --
+         see _build_route_map_link. It sat in the scrolling nav row until it
+         was found straddling that container's clip edge (67px cut off at
+         1280px with 8 stops). Next to the map it opens, it cannot be clipped
+         by anything and the tab strip scrolls with nothing in its way. */
+      .map-tab-btn { padding: 8px 16px; font-size: 14px; font-weight: 600; border-radius: 9999px; transition: all 0.2s; cursor: pointer; white-space: nowrap; border: 2px solid var(--terracotta); background: #fff; color: var(--terracotta); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; }
+      .map-tab-btn:hover { background: var(--terracotta); color: #fff; }
+
+      .section-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 16px; border-radius: 9999px; font-weight: 700; font-size: 15px; margin-bottom: 12px; }
+
+      .badge { display: inline-block; padding: 2px 10px; border-radius: 9999px; font-size: 12px; font-weight: 600; }
+      .badge-hike-strenuous { background: #dc2626; color: #fff; }
+      .badge-hike-moderate { background: #16a34a; color: #fff; }
+      .badge-hike-easy { background: #22c55e; color: #fff; }
+      .badge-scenic { background: #2563eb; color: #fff; }
+      .badge-cultural { background: #7c3aed; color: #fff; }
+      .badge-mustsee { background: #ea580c; color: #fff; }
+      .badge-activity { background: #0d9488; color: #fff; }
+      .badge-cuisine { background: var(--sandstone); color: var(--dark); border: 1px solid #d4c4a8; }
+      .badge-price { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+      .badge-reserve { background: #ea580c; color: #fff; }
+
+      .attraction-link { color: var(--terracotta); text-decoration: none; font-weight: 700; transition: all 0.15s; }
+      .attraction-link:hover { text-decoration: underline; }
+      .restaurant-link { color: var(--canyon); text-decoration: none; font-weight: 700; transition: all 0.15s; }
+      .restaurant-link:hover { text-decoration: underline; }
+
+      .notion-header-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: rgba(255,255,255,0.1);
+        color: #fff;
+        border: 1px solid rgba(255,255,255,0.4);
+        border-radius: 9999px;
+        padding: 5px 14px;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.15s;
+        white-space: nowrap;
+      }
+      .notion-header-btn:hover { background: rgba(255,255,255,0.2); }
+
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .drive-link { cursor:pointer; color:var(--terracotta); text-decoration:underline; background:none; border:none; padding:0; font:inherit; }
+      .drive-link:hover { color:#a0533a; }
+
+      .weather-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        margin-top: 0.6rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #92400E;
+        text-decoration: none;
+        border: 1px solid #FDE68A;
+        background: #FEF3C7;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        transition: background 0.15s;
+      }
+      .weather-link:hover {
+        background: #FDE68A;
+      }
+
+      /* ── Route overview markers ── */
+      .route-marker-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+      }
+      .route-marker-pin {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: var(--terracotta);
+        border: 2px solid #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.24);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .route-marker-index {
+        font-size: 12px;
+        font-weight: 900;
+        color: #fff;
+        line-height: 1;
+        letter-spacing: -0.1px;
+        font-variant-numeric: tabular-nums;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+      }
+      .route-marker-month {
+        font-size: 9px;
+        font-weight: 800;
+        color: #fff;
+        line-height: 1;
+      }
+      .route-marker-nameplate {
+        background: rgba(255,255,255,0.94);
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 7px;
+        line-height: 1.15;
+        text-align: center;
+        max-width: 136px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.28);
+      }
+      .route-marker-title {
+        display: block;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.15;
+        white-space: normal;
+      }
+      .route-marker-date {
+        display: block;
+        font-size: 9px;
+        font-weight: 700;
+        color: #000;
+        line-height: 1.15;
+        text-align: center;
+        margin-top: 2px;
+      }
+
+      /* ── Destination section layout ── */
+      .dest-section { background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(44,26,14,0.08); overflow: hidden; }
+      .dest-header { position: relative; min-height: 220px; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; color: #fff; }
+      .dest-header::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 60%); border-radius: 0; }
+      .dest-header > * { position: relative; z-index: 1; }
+      .dest-header-actions { display: flex; justify-content: flex-end; gap: 0.5rem; flex-wrap: wrap; margin-bottom: auto; }
+      .dest-header h2 { font-size: 2rem; font-weight: 700; margin: 0; color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,0.5); }
+      .dest-header .dates { font-size: 0.95rem; opacity: 0.9; margin: 4px 0 0; }
+      .dest-header .img-credit { font-size: 0.7rem; opacity: 0.6; margin: 2px 0 0; }
+
+      /* ── Cards ── */
+      .card { padding: 1.25rem 1.5rem; border-bottom: 1px solid #f0e8d8; }
+      .card:last-child { border-bottom: none; }
+      .card h3 { font-size: 1.05rem; font-weight: 700; color: var(--canyon); margin: 0.25rem 0 0.95rem; padding: 0.1rem 0; display: flex; align-items: center; gap: 6px; }
+      .card h3::before { content: none; display: none; }
+      .intro-note-card { background: #f6f2e8; }
+
+      /* ── GH #68 "see base" pointers (deferred-category) ── */
+      /* group-lodging-pointer's CSS was removed here: the grouped-child
+         "Based from X (see Y)" line it styled is now folded into
+         .group-child-banner (inline-styled, see _build_group_child_card),
+         and _build_group_lodging_pointer's only remaining call site
+         (_build_single_section) is a documented no-op in practice. */
+      .group-base-pointer {
+        margin: 0; padding: 0.85rem 1.5rem; text-align: center;
+        background: var(--sandstone); font-size: 0.9rem; font-weight: 600;
+        color: var(--dark);
+      }
+      .group-base-pointer a {
+        color: var(--canyon); font-weight: 700; text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .group-base-pointer a:hover { color: var(--terracotta); }
+      .intro-note-text { font-size: 0.95rem; line-height: 1.7; color: #5c4a35; margin: 0; }
+
+      /* ── Trip-wide travel (html_assembler._build_trip_transportation) ──
+         Renders under the route overview map, not inside any destination: the
+         flight in, the flight home and a whole-trip rental bracket the
+         itinerary rather than belonging to one stop. Needs its own chip style
+         because .notion-header-btn is white-on-translucent for the dark hero
+         image and would be invisible on this sandstone panel. */
+      .trip-transport {
+        display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
+        margin-top: 0.85rem;
+      }
+      .trip-transport-label {
+        font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em;
+        text-transform: uppercase; color: #8a7a63; margin-right: 0.15rem;
+      }
+      .trip-transport-btn {
+        display: inline-flex; align-items: center; gap: 5px;
+        background: #fff; color: var(--dark);
+        border: 1px solid #d4c4a8; border-radius: 9999px;
+        padding: 5px 14px; font-size: 13px; font-weight: 600;
+        text-decoration: none; white-space: nowrap;
+        transition: background 0.15s, border-color 0.15s;
+      }
+      a.trip-transport-btn:hover { background: var(--sandstone); border-color: var(--canyon); }
+      .trip-transport-conf {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-weight: 600; color: #6b5e50; font-size: 12px;
+      }
+
+      /* ── Lodging booking details (html_assembler._build_lodging_card) ──
+         Collapsed by default: these are the fields a traveler wants at the
+         check-in desk, not while reading the itinerary. Absent entirely from
+         privacy-redacted builds -- see _build_lodging_card's docstring. */
+      .lodging-card {
+        margin: 0 1.5rem 1.25rem; border: 1px solid #e2d9c8; border-radius: 12px;
+        background: #faf7f0; overflow: hidden;
+      }
+      .lodging-card > summary {
+        cursor: pointer; padding: 0.75rem 1.1rem; font-size: 0.95rem;
+        font-weight: 700; color: var(--dark); list-style: none;
+      }
+      .lodging-card > summary::-webkit-details-marker { display: none; }
+      .lodging-card > summary::after {
+        content: "▸"; float: right; color: var(--canyon); font-weight: 400;
+        transition: transform 0.15s ease;
+      }
+      .lodging-card[open] > summary::after { content: "▾"; }
+      .lodging-card > summary:hover { color: var(--terracotta); }
+      .lodging-body { padding: 0 1.1rem 0.9rem; }
+      .lodging-row {
+        display: flex; gap: 0.75rem; align-items: baseline;
+        padding: 0.35rem 0; border-top: 1px solid #ece4d6; font-size: 0.9rem;
+      }
+      .lodging-key {
+        flex: 0 0 7.5rem; color: #8a7a63; font-weight: 600;
+        text-transform: uppercase; letter-spacing: 0.03em; font-size: 0.75rem;
+      }
+      .lodging-val { color: var(--dark); word-break: break-word; min-width: 0; }
+      .lodging-val a { color: var(--canyon); text-decoration: underline; text-underline-offset: 2px; }
+      .lodging-val a:hover { color: var(--terracotta); }
+      /* Confirmation codes are transcribed by hand at a desk -- monospace so
+         0/O and 1/I stay distinguishable. */
+      .lodging-conf {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-weight: 600; letter-spacing: 0.02em;
+      }
+
+      /* ── Expected environment ── */
+      .env-card { background: #fffbeb; border-top: 4px solid #f59e0b; }
+      .env-card h3 { color: #d97706; }
+      .env-subcard { border-radius: 12px; background: #fffbeb; }
+      .env-summary { font-size: 0.98rem; line-height: 1.7; color: #78350f; margin: 0 0 0.75rem; }
+      .temp-range { display: inline-block; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; border-radius: 9999px; padding: 4px 14px; font-size: 0.85rem; font-weight: 600; margin: 0.4rem 0 0.2rem; }
+      .pack-list { font-size: 0.88rem; color: #78350f; margin-top: 0.6rem; line-height: 1.6; }
+
+      /* ── Getting here ── */
+      .getting-here-card { position: relative; }
+      .getting-here-subcard { background: #faf7f2; border-radius: 12px; border: 1px solid #e8dcc8; }
+      .getting-here-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+      .getting-here-header h3 { margin: 0; color: var(--canyon); }
+      .gmaps-link { color: #c0714a; font-weight: 600; text-decoration: none; font-size: 0.92rem; padding-right: 4px; }
+      .gmaps-link:hover { text-decoration: underline; }
+      .route-badges { display: flex; gap: 0.6rem; margin: 0.5rem 0 0.75rem; flex-wrap: wrap; }
+      .route-badges-inline { margin: 0; }
+      .route-headline { font-size: 1rem; font-weight: 700; color: var(--canyon); margin: 0.15rem 0 0.2rem; }
+      .route-headline-row { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; flex-wrap: nowrap; margin: 0.35rem 0 0.55rem; }
+      .route-headline-row .route-badges { margin: 0; }
+      .badge-distance, .badge-time { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; border-radius: 9999px; padding: 4px 12px; font-size: 0.83rem; font-weight: 600; }
+      .route-summary { font-size: 0.92rem; color: #5c4a35; line-height: 1.65; margin: 0; }
+      .can-miss-header { font-weight: 700; color: var(--canyon); font-size: 0.85rem; letter-spacing: 0.05em; margin: 0.75rem 0 0.5rem; text-transform: uppercase; }
+      .en-route-stops { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.3rem; }
+      .stop-card { background: #fff; border: 1px solid #e0d5c7; border-radius: 8px; padding: 0.7rem 0.9rem; font-size: 0.9rem; line-height: 1.55; display: flex; align-items: flex-start; gap: 0.6rem; }
+      .stop-icon { display: inline-block; font-size: 1.1rem; min-width: 20px; text-align: center; }
+      .stop-body { flex: 1; }
+      .stop-desc { margin-top: 0.2rem; color: #5c4a35; }
+      .stop-detour { font-size: 0.8rem; color: #8B6347; font-weight: 600; margin-left: 0.25rem; }
+
+      /* ── Attractions ── */
+      .attraction-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 0.8rem; }
+      @media (min-width: 768px) { .attraction-list { grid-template-columns: 1fr 1fr; } }
+      .attr-item { position: relative; background: #faf7f2; border: 1px solid #e8dcc8; border-radius: 12px; padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem; transition: box-shadow 0.2s; text-align: center; }
+      .attr-item:hover { box-shadow: 0 4px 12px rgba(44, 26, 14, 0.1); }
+      .attr-header { display: flex; align-items: center; gap: 0.6rem; }
+      .attr-header-inline { justify-content: center; flex-wrap: wrap; }
+      .attr-icon { font-size: 1.3rem; min-width: 20px; }
+      .attr-name { font-weight: 700; font-size: 0.98rem; color: var(--canyon); line-height: 1.3; }
+      .attr-link { color: var(--terracotta); text-decoration: none; }
+      .attr-link:hover { text-decoration: underline; }
+      .attr-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; justify-content: center; }
+      .attr-badges-inline { margin-left: 0; }
+      .attr-desc { font-size: 0.88rem; color: #5c4a35; line-height: 1.55; }
+      .practical-note { font-size: 0.82rem; color: #7c6a55; font-style: italic; }
+      .drive-pill { cursor: pointer; color: var(--terracotta); text-decoration: underline; font-weight: 700; }
+      .drive-pill:hover { color: #a0533a; }
+      /* "link source" indicator (opens the item's primary/canonical link --
+         an official site, NPS page, AllTrails page, or occasionally a maps
+         link when that IS the only link available) vs. .badge-map below (a
+         distinct, always-secondary "also open this in Google Maps" corner
+         badge). Project owner feedback (Belly of the Dragon card and
+         others): these read as visually indistinguishable at a glance.
+         Root cause traced to the real rendered markup/CSS, not a literal
+         icon collision: both use emoji glyphs chosen deliberately in
+         _link_source_icon/html_assembler.py (a Maps link source correctly
+         shows the same map glyph as a Maps corner badge, since both really
+         do open a map), but before this fix .attr-external-link had no
+         background/border/badge shape at all -- just a bare 0.8rem colored
+         emoji character (and CSS `color` does not apply to emoji glyphs in
+         any browser, so that styling had zero visible effect on the icon
+         itself). .badge-map, by contrast, already got the full pill
+         treatment (background+border+padding via .badge). Giving
+         .attr-external-link the same pill treatment, in a deliberately
+         different (warm) color from .badge-map's (cool blue), makes the two
+         reliably tellable apart across cards even before parsing the tiny
+         glyph inside: a warm tan pill always means "primary source link",
+         a blue pill always means "secondary open-in-maps corner badge". */
+      .attr-external-link { display: inline-flex; align-items: center; background: #f3e8db; color: #6b4a2b; border: 1px solid #e3cfae; border-radius: 9999px; padding: 2px 9px; font-size: 0.82rem; font-weight: 600; text-decoration: none; margin-left: 0.45rem; line-height: 1.5; }
+      .attr-external-link:hover { background: #e9d9c0; text-decoration: none; }
+      .badge-map { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; text-decoration: none; cursor: pointer; }
+      .badge-map:hover { background: #bae6fd; }
+      .badge-hike-strenuous { background: #fee2e2; color: #991b1b; font-size: 0.75rem; }
+      .badge-hike-moderate { background: #dcfce7; color: #15803d; font-size: 0.75rem; }
+      .badge-hike-easy { background: #dcfce7; color: #15803d; font-size: 0.75rem; }
+      .badge-mustsee { background: #fed7aa; color: #92400e; font-size: 0.75rem; font-weight: 700; }
+      .badge-seed { background: #dcfce7; color: #15803d; font-size: 0.75rem; font-weight: 700; }
+      .badge-caution { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; font-size: 0.75rem; font-weight: 700; }
+      .badge-duration { background: #e0f2fe; color: #0369a1; font-size: 0.75rem; }
+      .badge-rating { background: #fef9c3; color: #854d0e; font-size: 0.75rem; font-weight: 700; }
+      .badge-elevation { background: #e0e7ff; color: #3730a3; font-size: 0.75rem; }
+
+      /* ── Schedule ── */
+      .schedule-note { font-size: 0.86rem; color: #7c6a55; font-style: italic; margin-bottom: 0.75rem; }
+      .schedule-days { display: grid; grid-template-columns: 1fr; gap: 0.9rem; }
+      .schedule-days-two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      @media (max-width: 900px) { .schedule-days-two-col { grid-template-columns: 1fr; } }
+      .schedule-day { margin-bottom: 0.1rem; background: #fff; border: 1px solid #f0e8d8; border-radius: 10px; padding: 0.8rem 0.9rem; }
+      .schedule-day-title { font-size: 0.95rem; font-weight: 700; color: var(--canyon); margin-bottom: 0.5rem; text-transform: capitalize; }
+      .schedule-period { margin-bottom: 0.6rem; }
+      .schedule-line { display: grid; grid-template-columns: 126px minmax(0, 1fr); align-items: start; column-gap: 0.6rem; }
+      .schedule-time { display: inline-flex; width: 126px; color: var(--canyon); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; align-items: center; gap: 0.35rem; white-space: nowrap; }
+      .schedule-summary { display: block; min-width: 0; overflow-wrap: anywhere; font-size: 0.9rem; color: #5c4a35; line-height: 1.6; }
+      .schedule-time-inline { display: inline-flex; min-width: 0; color: var(--canyon); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; align-items: center; gap: 0.35rem; white-space: nowrap; }
+      .schedule-icon { font-size: 0.9rem; margin-right: 0; flex: 0 0 auto; }
+      .schedule-list { padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+      .schedule-item { font-size: 0.9rem; color: #5c4a35; line-height: 1.65; padding-left: 0; list-style: none; }
+
+      /* ── Scenic drives ── */
+      .drive-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.25rem; }
+      .drive-link { cursor: pointer; color: var(--terracotta); text-decoration: underline; }
+      .drive-link:hover { color: #a0533a; }
+
+      /* ── Cultural events ── */
+      .events-card { background: #faf7f2; border-top: 4px solid #e8dcc8; }
+      .events-card h3 { color: var(--canyon); }
+      .events-subcard { border-radius: 12px; background: #fff; }
+      .events-date-range { font-weight: 700; color: var(--canyon); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; }
+      .events-intro { font-size: 0.92rem; color: #5c4a35; margin: 0 0 0.75rem; line-height: 1.65; }
+      .events-honest { font-size: 0.92rem; color: #5c4a35; line-height: 1.65; }
+      .events-list { display: flex; flex-direction: column; gap: 0.5rem; padding: 0; margin: 0; }
+      .event-item { background: #fff; border: 1px solid #e8dcc8; border-radius: 8px; padding: 0.7rem 0.9rem; font-size: 0.88rem; line-height: 1.55; }
+      .event-link { color: var(--terracotta); text-decoration: none; font-weight: 600; }
+      .event-link:hover { text-decoration: underline; }
+      .drive-route-map-link { display: inline-flex; align-items: center; gap: 0.3rem; }
+
+      /* ── Restaurants ── */
+      .restaurant-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 0.8rem; }
+      @media (min-width: 768px) { .restaurant-list { grid-template-columns: 1fr 1fr; } }
+      .rest-item { position: relative; background: #faf7f2; border: 1px solid #e8dcc8; border-radius: 12px; padding: 1rem; display: flex; flex-direction: column; gap: 0.6rem; text-align: center; }
+      .rest-header { display: flex; align-items: center; }
+      .rest-header-inline { justify-content: center; gap: 0.8rem; flex-wrap: wrap; }
+      .rest-name { font-weight: 700; font-size: 0.98rem; color: var(--canyon); }
+      /* Anchors do not inherit .rest-name's colour -- the UA stylesheet
+         wins -- so without this the restaurant links render default blue. */
+      .rest-name a { color: var(--canyon); text-decoration: underline; text-underline-offset: 2px; }
+      .rest-name a:hover { color: var(--terracotta); }
+      .rest-icon { margin-right: 0.35rem; }
+      .rest-link { color: var(--canyon); text-decoration: none; }
+      .rest-link:hover { text-decoration: underline; }
+      .rest-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 0.3rem; }
+      .cuisine-badge { background: var(--sandstone); color: var(--dark); border: 1px solid #d4c4a8; border-radius: 9999px; padding: 3px 11px; font-size: 0.77rem; font-weight: 600; }
+      .badge-price { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; border-radius: 9999px; padding: 3px 10px; font-size: 0.77rem; font-weight: 600; }
+      .badge-reserve { background: #fed7aa; color: #92400e; border-radius: 9999px; padding: 3px 10px; font-size: 0.77rem; font-weight: 600; }
+      .rest-desc { font-size: 0.88rem; color: #5c4a35; line-height: 1.55; margin-top: 0.3rem; }
+      .restaurant-note { font-size: 0.82rem; color: #7c6a55; font-style: italic; margin-top: 0.75rem; margin-bottom: 0; }
+
+      /* ── Trip-wide packing summary ── */
+      .pack-summary-card { background: #fdf7ea; }
+      .pack-summary-intro { margin: 0 0 0.75rem; color: #6b5e50; }
+      .pack-summary-list { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.5rem; }
+      .pack-summary-places { color: #8B6347; font-size: 0.82rem; }
+
+      /* ── Planning links ── */
+      .links-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+      .links-list li a { display: inline-flex; align-items: center; gap: 5px; background: #fff; border: 1px solid #d4c4a8; color: var(--canyon); border-radius: 9999px; padding: 4px 14px; font-size: 0.82rem; font-weight: 600; text-decoration: none; transition: background 0.15s; }
+      .links-list li a:hover { background: var(--sandstone); }
+      .local-tip { background: #fef3c7; border: 1px solid #fde68a; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 0.86rem; color: #78350f; line-height: 1.55; margin-top: 0.75rem; font-weight: 600; }
+
+      /* ── Photo gallery ── */
+      .photo-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; padding: 0.75rem 0 1.5rem; margin: 0; }
+      .photo-gallery-single { grid-template-columns: minmax(300px, 640px); justify-content: center; }
+      @media (max-width: 767px) { .photo-gallery { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 479px) { .photo-gallery { grid-template-columns: 1fr; } }
+      .photo-item { position: relative; }
+      .photo-item a { display: block; }
+      .photo-item img { width: 100%; aspect-ratio: 3/2; object-fit: cover; border-radius: 10px; display: block; transition: opacity 0.2s; }
+      .photo-item a:hover img { opacity: 0.88; }
+      .photo-caption { font-size: 0.72rem; color: #8B6347; font-style: italic; text-align: center; margin: 0.3rem 0 0; line-height: 1.3; }
+      @media print { .photo-gallery { display: none; } }
+
+      @media print {
+        .no-print { display: none !important; }
+        .print-show { display: block !important; }
+        body { background: #fff; font-size: 11pt; }
+        .dest-section { page-break-before: always; }
+        .dest-section:first-of-type { page-break-before: auto; }
+        a[href]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #666; }
+        .notion-header-btn { background: none !important; border: none !important; color: var(--terracotta) !important; padding: 0 !important; font-size: 10pt !important; }
+        * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      }
+    </style>
+    
+    
+<style>
+.photo-caption {
+        font-size: 0.68rem;
+        color: #6b7280;
+        text-align: center;
+        margin: 0.2rem 0 0;
+      }
+      .photo-gallery img {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        display: block;
+      }
+      .photo-gallery {display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;padding:.5rem 0 1.5rem}
+      .photo-item a { display:block; }
+      .photo-item a:hover img { opacity:0.88; transition:opacity 0.15s; }
+      .photo-item img { width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:0.5rem; display:block; }
+      .photo-caption { font-size:0.68rem; color:#6b7280; text-align:center; margin:0.2rem 0 0; }
+.photo-item img{width:100%;object-fit:cover;border-radius:10px;display:block}
+.photo-item p{font-size:.72rem;color:#8B6347;font-style:italic;text-align:center;margin:.3rem 0 0}
+.photo-gallery.photo-gallery-single{grid-template-columns:minmax(300px,640px)!important;justify-content:center!important}
+@media(max-width:767px){.photo-gallery{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:479px){.photo-gallery{grid-template-columns:1fr!important}}
+@media print{.photo-gallery{display:none}}
+</style>
+<style>
+/* Inlined for the mail-safe copy: no CDN, no script. */
+.mx-auto{margin-left:auto;margin-right:auto}
+.px-4{padding-left:1rem;padding-right:1rem}
+.py-2{padding-top:.5rem;padding-bottom:.5rem}
+.py-8{padding-top:2rem;padding-bottom:2rem}
+.flex{display:flex}
+.items-center{align-items:center}
+.items-start{align-items:flex-start}
+.justify-between{justify-content:space-between}
+.gap-2{gap:.5rem}
+.flex-shrink-0{flex-shrink:0}
+.rounded-lg{border-radius:.5rem}
+.shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.text-sm{font-size:.875rem}
+.text-3xl{font-size:1.875rem;line-height:2.25rem}
+.text-white{color:#fff}
+.bg-white{background-color:#fff}
+.text-terracotta{color:#3A5F8A}
+.bg-terracotta{background-color:#3A5F8A}
+.text-sandstone{color:#F5EFE0}
+.bg-sandstone{background-color:#F5EFE0}
+.text-canyon{color:#8B2E0A}
+.bg-canyon{background-color:#8B2E0A}
+.text-sage{color:#6B8C6B}
+.bg-sage{background-color:#6B8C6B}
+.text-offwhite{color:#FAFAF7}
+.bg-offwhite{background-color:#FAFAF7}
+.text-dark{color:#2C1A0E}
+.bg-dark{background-color:#2C1A0E}
+.bg-offwhite\/95{background-color:#FAFAF7F2}
+</style>
+</head>
+<body data-id="0" class="min-h-screen">
+    <app-icon data-id="1" hidden data-icon="compass" data-palette="Earth"></app-icon>
+
+    <!-- HEADER -->
+    <header data-id="2" class="bg-sandstone border-b border-[#d4c4a8]">
+      <div data-id="3" class="max-w-6xl mx-auto px-4 pt-8 pb-6 md:px-8 relative">
+        <div data-id="4" class="flex items-start justify-between">
+          <div data-id="5">
+            <h1 data-id="6" class="text-3xl md:text-5xl font-display text-canyon leading-tight">Europe Exploration</h1>
+          </div>
+          <div data-id="7" class="flex gap-2 flex-shrink-0 mt-1">
+            <button data-id="8" id="pwa-install-btn" style="display:none;" class="no-print bg-white text-terracotta border-2 border-terracotta px-4 py-2 rounded-lg font-semibold text-sm flex items-center gap-2 hover:bg-terracotta hover:text-white transition min-h-[44px]">
+              ⬇️ Install App
+            </button>
+            <button data-id="9" id="print-btn-a1b2" class="no-print bg-terracotta text-white px-4 py-2 rounded-lg font-semibold text-sm flex items-center gap-2 hover:bg-canyon transition min-h-[44px]">
+              <span data-id="10">⬇️</span> Download to Print
+            </button>
+          </div>
+      </div>
+    </header>
+
+    <!-- ROUTE OVERVIEW MAP -->
+    <section data-id="11" class="no-print" style="background:#F5EFE0;border-bottom:1px solid #d4c4a8;padding:1.75rem 0;" id="route-overview">
+      <div data-id="12" style="max-width:72rem;margin:0 auto;padding:0 2rem;">
+        <div class="route-overview-head">
+          <h2 data-id="13" style="font-family:Georgia,serif;color:#8B2E0A;font-size:1.2rem;font-weight:700;letter-spacing:0.01em;">🗺️ Route Overview</h2>
+          <a href="https://www.google.com/maps/dir/?api=1&origin=Brussels%20Airport%2C%20Zaventem%2C%20Belgium&destination=Frankfurt%2C%20Germany&travelmode=driving&waypoints=Brussels%2C%20Belgium|Amsterdam%2C%20Netherlands|Berlin%2C%20Germany|Prague%2C%20Czech%20Republic" target="_blank" rel="noopener" class="map-tab-btn">🗺️ Full Route Map</a>
+        </div>
+        <div style="padding:20px;border:1.5px dashed #d4c4a8;border-radius:12px;background:#faf6ed;text-align:center;font-size:.95rem;color:#5b4a3a;"><strong>Route map</strong><br>Interactive maps are omitted from this mail-safe copy. <a href="https://www.google.com/maps/dir/?api=1&origin=Brussels%20Airport%2C%20Zaventem%2C%20Belgium&destination=Frankfurt%2C%20Germany&travelmode=driving&waypoints=Brussels%2C%20Belgium|Amsterdam%2C%20Netherlands|Berlin%2C%20Germany|Prague%2C%20Czech%20Republic" target="_blank" rel="noopener">Open the full route in Google Maps →</a></div>
+        
+      </div>
+    </section>
+
+    <!-- STICKY TAB NAV -->
+    <nav data-id="16" id="tab-nav-e5f6" class="no-print sticky top-0 z-40 bg-offwhite/95 backdrop-blur border-b border-[#d4c4a8] shadow-sm">
+      <div data-id="17" class="max-w-6xl mx-auto px-4 md:px-8">
+        <div data-id="18" class="flex gap-2 py-2 overflow-x-auto items-center" id="tab-container-g7h8">
+          <button class="tab-btn active" data-tab="section-brussels">1 · Brussels</button>
+          <button class="tab-btn" data-tab="section-amsterdam">2 · Amsterdam</button>
+          <button class="tab-btn" data-tab="section-berlin">3 · Berlin</button>
+          <button class="tab-btn" data-tab="section-prague">4 · Prague</button>
+          <button class="tab-btn" data-tab="section-frankfurt">5 · Frankfurt</button>
+        </div>
+      </div>
+    </nav>
+
+    <main data-id="27" class="max-w-5xl mx-auto px-4 md:px-8 py-8 space-y-10">
+
+      <section id="section-brussels" class="dest-section">
+<div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1548092304-e0205cb0031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8QnJ1c3NlbHMlMkMlMjBCZWxnaXVtfGVufDB8MHx8fDE3ODc4Njc2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080')">
+  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/50.8467,4.3525" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Grand-Place%20Brussels%2C%20Belgium&amp;destination=Brussels%20Central%20Market&amp;travelmode=driving&amp;api=1&amp;waypoints=Royal%20Museums%20of%20Fine%20Arts%20of%20Belgium|Manneken%20Pis%20Brussels%2C%20Belgium" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <h2>Brussels, Belgium</h2>
+  <p class="dates">August 31 - September 1, 2026</p>
+  <p class="img-credit">Stephanie LeBlanc</p>
+</div>
+<div class="card intro-note-card">
+  <h3>What to Know About Brussels, Belgium</h3>
+  <p class="intro-note-text">Brussels in late summer is vibrant and busy, perfect for exploring its rich history and culture. Enjoy outdoor dining and the local markets.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Tipping is appreciated but not mandatory; rounding up the bill is common.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are ideal for visiting busy attractions before crowds build up.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is efficient, with trams, buses, and metro systems. Consider buying a day pass for unlimited travel.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Brussels is generally safe, but be aware of pickpockets in crowded areas.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect larger crowds on weekends and during special events; weekdays tend to be quieter for sightseeing.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> It&#x27;s customary to greet shopkeepers and servers with &#x27;Bonjour&#x27; or &#x27;Bonsoir&#x27; upon entering.</p>
+</div>
+<div class="photo-gallery">
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1581161424127-30b1f7eee75f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8QnJ1c3NlbHMlMkMlMjBCZWxnaXVtfGVufDB8MHx8fDE3ODc4Njc2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Brussels, Belgium" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Polly</div>
+  </div>
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1582124534218-f7bf8b908f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8M3x8QnJ1c3NlbHMlMkMlMjBCZWxnaXVtfGVufDB8MHx8fDE3ODc4Njc2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Brussels, Belgium" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Jonathan Ricci</div>
+  </div>
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1701013694884-a278c7acea5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8NHx8QnJ1c3NlbHMlMkMlMjBCZWxnaXVtfGVufDB8MHx8fDE3ODc4Njc2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Brussels, Belgium" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">flickch</div>
+  </div>
+</div>
+
+<div class="card env-card">
+<div class="env-subcard">
+<h3>🧥 What to Expect</h3>
+  <p class="env-summary">Typical August temperatures are around 73°F daytime and 58°F overnight. Brussels in late summer features warm city streets filled with tourists and locals enjoying outdoor cafes. The city will be busy, but crowds are lighter than in peak summer months. Parking can be challenging in the city center; consider public transport for convenience.</p>
+  <a href="https://weather.com/weather/today/l/50.8467,4.3525" class="weather-link">Current Weather</a>
+</div>
+</div>
+<div class="card getting-here-card getting-here-subcard">
+  <div class="getting-here-header">
+    <h3>🚗 Getting Here</h3>
+    <a href="https://www.google.com/maps/dir/?destination=Brussels%2C%20Belgium&travelmode=driving&api=1&origin=Brussels%20Airport%2C%20Zaventem%2C%20Belgium" target="_blank" rel="noopener" class="gmaps-link">Open in Google Maps →</a>
+  </div>
+  <div class="route-headline-row">
+    <div class="route-headline">Brussels Airport, Zaventem, Belgium → Brussels, Belgium</div>
+    <div class="route-badges route-badges-inline">
+      <span class="badge badge-distance">9 mi</span>
+      <span class="badge badge-time">15 min</span>
+    </div>
+  </div>
+  <p class="route-summary">Drive from Paris on A1 and A2 highways toward Brussels. Enjoy views of the French countryside transitioning into Belgian landscapes. Expect a straightforward route with amenities along the way.</p>
+</div>
+<div class="card attractions-card">
+<h3>🏔️ Top Attractions</h3>
+<div class="attraction-list">
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://goo.gl/maps/gudZ7iymmAjxKxi98" class="attr-link" target="_blank" rel="noopener">Grand-Place</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ8fEURn_Ew0cRts_ij101PLA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Grand-Place is the central square of Brussels, known for its ornate guildhalls and the Town Hall. The square features Gothic architecture and is often bustling with activity, especially during events. Visit early in the morning to avoid crowds.</span><span class="practical-note">📌 Free to enter; best visited in the morning for fewer tourists.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name">Royal Museums of Fine Arts of Belgium</span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-caution" title="No verified source link found for this recommendation">⚠ Unverified</span><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">2–3 hrs</span></div></div><span class="attr-desc">This collection of museums features works from the Flemish primitives to modern art. Highlights include paintings by Rubens and Magritte. Plan for at least two hours to explore the major exhibits.</span><span class="practical-note">📌 Timed entry may be required; check in advance. Currently closed; verify status before you go.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.brussel.be/manneken-pis" class="attr-link" target="_blank" rel="noopener">Manneken Pis</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ0T1eGXnEw0cRH8GwIKZAuBc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This famous bronze statue of a little boy urinating is a quirky symbol of Brussels. It’s a short visit, often accompanied by tourists taking photos.</span><span class="practical-note">📌 Free to see; it's best seen during the day when it's less crowded.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.brusselstourism.org/sablon-brussels-guide/" class="attr-link" target="_blank" rel="noopener">Brussels Central Market</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ8fEURn_Ew0cRts_ij101PLA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This vibrant market features local produce, cheeses, and street food vendors. It&#x27;s a great spot to sample Belgian waffles and chocolates.</span><span class="practical-note">📌 Open daily; arrive early for the best selection.</span></div>
+</div>
+</div>
+<div class="card schedule-card">
+<h3>⏰ Possible Daily Schedule</h3>
+<div class="schedule-days">
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 1</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Travel from Brussels Airport, Zaventem, Belgium (depart around 9:00 AM).</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit the Royal Museums of Fine Arts of Belgium to see an impressive collection of artworks.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Wrap the day with Grand-Place before dinner near your base.</span></div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="card restaurants-card">
+<h3>🍽️ Dinner Recommendations</h3>
+<div class="restaurant-list">
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.brusselstourism.org/best-frites-in-brussels/" target="_blank" rel="noopener">Maison Antoine</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJB--3EpjEw0cRtJVRgZTn3rk" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Belgian frites Crispy double-fried frites with generous portions and classic sauces enjoyed by locals since 1948.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.petitfute.com/v40163-bruxelles-brussel/actualite/m17-top-10-insolites-voyage/a45955-ou-manger-les-meilleures-frites-a-bruxelles-nos-spots-preferes.html" target="_blank" rel="noopener">Frit Flagey</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">French</span>
+        <span class="badge badge-rating">★ 4.3/5</span>
+        <span class="badge badge-price">$</span>
+        <span class="badge badge-reserve">Reservations Recommended</span>
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJXzfuDZPEw0cR1_aVBap90CQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Belgian frites Popular neighborhood favorite for crunchy frites near the ponds, ideal for takeaway.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://mapstr.com/place/pDWX1oj5rBg/friterie-de-la-barriere-saint-gilles-restaurant-friterie-frites-street_food-sur_le_pouce" target="_blank" rel="noopener">Friterie Saint-Josse</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.6/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJmQchVWLDw0cRyMK5QCK0yvg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Belgian frites Top-rated local fritkot with hand-cut frites in beef fat and friendly service.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.visit.brussels/en/visitors/where-to-eat/street-food-in-brussels" target="_blank" rel="noopener">Fritkot Chouke</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJPV2_VPPEw0cR5g_1l2laQg8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Belgian frites Authentic old-school fritkot with quality beef-fat frites and veggie options.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.brusselstimes.com/1618257/best-in-town-bakeries-in-brussels" target="_blank" rel="noopener">Renard Bakery</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Bakery</span>
+        <span class="badge badge-rating">★ 4.6/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJNR07WY7Ew0cRF49Qm5zq5hg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Bakery Artisanal breads, focaccia and pastries loved by locals in Ixelles.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.bruxellestoday.be/que-faire/manger-15-euros-bruxelles.html" target="_blank" rel="noopener">Ali Baba</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJu0N0h0_Dw0cRnftx4jZboFc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Lebanese Fresh grilled meats, sandwiches and excellent houmous for quick central bites.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.visit.brussels/en/visitors/where-to-eat/brussels-food-markets" target="_blank" rel="noopener">Wolf Brussels Food Market</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Pizza</span>
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ9925lCbDw0cRi0dZBkg8RD8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Market hall Diverse affordable stalls with Syrian, pasta, pizza and international street eats.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://chezleon.be/en/our-restaurant/" target="_blank" rel="noopener">Chez Léon</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Belgian</span>
+        
+        <span class="badge badge-price">$$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJBb27mIDDw0cRLFEv29XVFKM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Famous for its mussels and fries, this restaurant is a local favorite. The lively atmosphere makes it great for casual dining. Reservations recommended during peak hours.</span>
+  </div>
+</div>
+</div>
+</section>
+<section id="section-amsterdam" class="dest-section">
+<div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1534351590666-13e3e96b5017?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8QW1zdGVyZGFtJTJDJTIwTmV0aGVybGFuZHN8ZW58MHwwfHx8MTc4Nzg3NjgwNHww&ixlib=rb-4.1.0&q=80&w=1080')">
+  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/52.3731,4.8925" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Rijksmuseum%20Amsterdam%2C%20Netherlands&amp;destination=Royal%20Palace%20Amsterdam&amp;travelmode=driving&amp;api=1&amp;waypoints=Anne%20Frank%20House%20Amsterdam%2C%20Netherlands|Vondelpark%20Amsterdam%2C%20Netherlands|Van%20Gogh%20Museum%20Amsterdam%2C%20Netherlands|Begijnhof%20Amsterdam%2C%20Netherlands" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <h2>Amsterdam, Netherlands</h2>
+  <p class="dates">September 2-4, 2026</p>
+  <p class="img-credit">Adrien Olichon</p>
+</div>
+<div class="card intro-note-card">
+  <h3>What to Know About Amsterdam, Netherlands</h3>
+  <p class="intro-note-text">Amsterdam in early September features comfortable temperatures and fewer tourists than peak summer. It&#x27;s an excellent time to explore the city&#x27;s attractions and parks without the heavy crowds.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Cycling is the primary mode of transport; be mindful of bike lanes. Speaking a few words in Dutch is appreciated by locals.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Early mornings are ideal for popular attractions to avoid crowds. Late afternoons are great for enjoying local cafes.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is efficient, with trams and buses available. Purchase an OV-chipkaart for convenient travel across all public transport.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Amsterdam is generally safe, but be vigilant for pickpockets in crowded areas. Keep personal belongings secure.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect larger crowds at major attractions during the day, especially the Anne Frank House. Mornings are typically quieter.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> It&#x27;s polite to greet shopkeepers when entering and thank them upon leaving. Avoid loud conversations in quiet spaces.</p>
+</div>
+<div class="photo-gallery">
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1584003564911-a7a321c84e1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8QW1zdGVyZGFtJTJDJTIwTmV0aGVybGFuZHN8ZW58MHwwfHx8MTc4Nzg3NjgwNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Amsterdam, Netherlands" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Gaurav Jain</div>
+  </div>
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8M3x8QW1zdGVyZGFtJTJDJTIwTmV0aGVybGFuZHN8ZW58MHwwfHx8MTc4Nzg3NjgwNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Amsterdam, Netherlands" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Azhar J</div>
+  </div>
+</div>
+
+<div class="card env-card">
+<div class="env-subcard">
+<h3>🧥 What to Expect</h3>
+  <p class="env-summary">Typical September temperatures are around 67°F daytime and 54°F overnight. September in Amsterdam brings early fall colors to the city's parks and along the canals. Crowds are smaller compared to the summer peak season, making it easier to explore. Many attractions, including the Rijksmuseum, have extended hours, but check for any potential closures or limited access.</p>
+  <a href="https://weather.com/weather/today/l/52.3731,4.8925" class="weather-link">Current Weather</a>
+</div>
+</div>
+<div class="card getting-here-card getting-here-subcard">
+  <div class="getting-here-header">
+    <h3>🚗 Getting Here</h3>
+    <a href="https://www.google.com/maps/dir/?destination=Amsterdam%2C%20Netherlands&travelmode=driving&api=1&origin=Brussels%2C%20Belgium" target="_blank" rel="noopener" class="gmaps-link">Open in Google Maps →</a>
+  </div>
+  <div class="route-headline-row">
+    <div class="route-headline">Brussels, Belgium → Amsterdam, Netherlands</div>
+    <div class="route-badges route-badges-inline">
+      <span class="badge badge-distance">95 mi</span>
+      <span class="badge badge-time">2 hrs 15 min</span>
+    </div>
+  </div>
+  <p class="route-summary">Drive north from Brussels, taking the E19 highway directly to Amsterdam. The journey showcases Dutch farmland and windmill-dotted landscapes. Expect light traffic but be cautious of speed limits and road changes as you approach the city.</p>
+</div>
+<div class="card attractions-card">
+<h3>🏔️ Top Attractions</h3>
+<div class="attraction-list">
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.rijksmuseum.nl/en" class="attr-link" target="_blank" rel="noopener">Rijksmuseum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">2–3 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5Ra7we4JxkcRhYVAaq5zQ9U" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Rijksmuseum houses a vast collection of art and history, including masterpieces by Rembrandt and Vermeer. The museum&#x27;s gardens are also a highlight, providing a peaceful retreat from the busy galleries. Consider booking tickets in advance to avoid long lines.</span><span class="practical-note">📌 Advance tickets recommended to skip the line.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.annefrank.org/en/" class="attr-link" target="_blank" rel="noopener">Anne Frank House</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1–2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJSRE-IcUJxkcRCltjPmVdmtQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Anne Frank House is located in the actual building where Anne Frank wrote her diary. Visitors can explore the secret annex and learn about the impact of the Holocaust through an informative exhibition.</span><span class="practical-note">📌 Reservations are required to visit.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.hetvondelpark.net/" class="attr-link" target="_blank" rel="noopener">Vondelpark</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJz3y0xeIJxkcRNcogBVV41Gw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Vondelpark is Amsterdam&#x27;s largest city park, perfect for leisurely strolls or picnics. The park features ponds, flower gardens, and open-air theaters.</span><span class="practical-note">📌 No entry fee; open year-round.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.vangoghmuseum.nl/en" class="attr-link" target="_blank" rel="noopener">Van Gogh Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1–2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJX1rTlu8JxkcRGsV8-a4oKMI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This museum features the largest collection of Van Gogh&#x27;s works, showcasing his progression as an artist. The museum&#x27;s layout guides visitors through Van Gogh&#x27;s life and influences.</span><span class="practical-note">📌 Timed entry tickets are strongly recommended.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.begijnhofkapelamsterdam.nl/" class="attr-link" target="_blank" rel="noopener">Begijnhof</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJeSe5CsEJxkcRdRlM21_MA9s" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Peaceful medieval courtyard with historic houses and chapel.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.paleisamsterdam.nl/en" class="attr-link" target="_blank" rel="noopener">Royal Palace Amsterdam</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJFQ6IwMYJxkcRis8dtZlOkTk" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Grand 17th-century palace with opulent interiors and history.</span></div>
+</div>
+</div>
+<div class="card schedule-card">
+<h3>⏰ Possible Daily Schedule</h3>
+<div class="schedule-days schedule-days-two-col">
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 1</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Amsterdam and head straight to the Rijksmuseum to explore its impressive art collection.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">After arrival, consider one or more of the following, within about 3h 30m: Rijksmuseum (2h 30m), Vondelpark (1h). Keep the afternoon realistic after travel.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Brouwerij &#x27;t IJ, known for its delicious spare ribs and casual atmosphere.</span></div>
+    </div>
+  </div>
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 2</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Anne Frank House, then pivot to a different nearby area before midday crowds.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Begijnhof, keeping realistic transition time between stops.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Café de Klos, known for its delicious spare ribs and casual atmosphere.</span></div>
+    </div>
+  </div>
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 3</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Vondelpark, then pivot to a different nearby area before midday crowds.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">After lunch, visit the Rijksmuseum to gain insight into her life during World War II.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Berlin, Germany happens the next morning, not tonight. Plan dinner at Foodhallen.</span></div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="card restaurants-card">
+<h3>🍽️ Dinner Recommendations</h3>
+<div class="restaurant-list">
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://vleminckxdesausmeester.nl/en/" target="_blank" rel="noopener">Vleminckx Sausmeesters</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Belgian fries, Dutch street food</span>
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJW8FgycEJxkcRImIYQha8SXI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Crispy double-fried Belgian-style fries with 28 sauce choices.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.febo.nl/" target="_blank" rel="noopener">FEBO</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.2/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ7818HscJxkcRD4KgKOwUCkY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Classic automat vending hot croquettes and snacks.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.mannekenpis.nl/" target="_blank" rel="noopener">Manneken Pis</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.3/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJgfmIdbgJxkcRfMoY2_r4hC8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Generous cones of fresh Flemish fries near the centre.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://maoz.nl/" target="_blank" rel="noopener">Maoz Falafel</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJD8eGiscJxkcREF1OddAutQ4" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Crispy falafel pita with self-serve salad and toppings bar.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://leemandoner.nl/" target="_blank" rel="noopener">Leeman Döner</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.6/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJyWLuD48JxkcREBggUBSJJ2s" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Juicy doner kebabs in fresh bread with salads.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.roopramroti.nl/" target="_blank" rel="noopener">Roopram Roti</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJG1aQRHQJxkcRgaX4MFW6l8Y" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Flavourful chicken or vegetable roti wraps.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.stubbes.nl/" target="_blank" rel="noopener">Stubbe’s Haring</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.7/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5ZGwJsYJxkcR02JefqKfEyM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Fresh raw herring served with onions and pickles.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.amsterdamtourism.org/albert-cuyp-market/" target="_blank" rel="noopener">Albert Cuyp Market Herring Stall</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJE7Y_vvIJxkcRUackzxkbH9c" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Traditional Hollandse nieuwe herring eaten standing up.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.foodhallen.nl/" target="_blank" rel="noopener">Foodhallen Counters</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJtWMWEeAJxkcR7PV7zX9aRh0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Diverse market hall stalls with affordable plates under €15.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.soupenzo.nl/" target="_blank" rel="noopener">Soup en Zo</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.3/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJk7qExusJxkcR5zOsvNvn1So" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Fresh daily soups and salads in takeaway cups.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.pancake.nl/" target="_blank" rel="noopener">The Pancake Bakery</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Bakery</span>
+        <span class="badge badge-rating">★ 4.2/5</span>
+        <span class="badge badge-price">$$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJDdV0fsUJxkcREOh_Cj5402o" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Fluffy pancakes with sweet or savoury traditional toppings.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://tacolindo.nl/" target="_blank" rel="noopener">Taco Lindo</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Mexican</span>
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJQbQJ_BfjxUcRyZRpk_kLnxE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Authentic beef or vegan pastor tacos at market stall.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://falafeltof.nl/" target="_blank" rel="noopener">Falafel Tof</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJw9qjgPb2w0cRAMHNlnylTU4" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Top-rated fresh falafel in De Pijp neighbourhood.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.birdthai.nl/" target="_blank" rel="noopener">Thai Snackbar Bird</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Thai</span>
+        <span class="badge badge-rating">★ 4.3/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJV17joLkJxkcRgQKMgy3Mzb4" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Street-style Laotian-Thai dishes in Chinatown.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://yumisushi.nl/" target="_blank" rel="noopener">Yumi Sushi</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Japanese</span>
+        <span class="badge badge-rating">★ 4.1/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJJQSFD2EJxkcRgzq700I1-XA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Conveyor-belt sushi plates from €2.75 each.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.winkel43.nl/" target="_blank" rel="noopener">Winkel 43</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Bakery</span>
+        <span class="badge badge-rating">★ 4.6/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJAUBsos8JxkcRwnuLcQmb2-M" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Famous apple pie and fresh baked goods.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.skek.nl/" target="_blank" rel="noopener">Cultureel Eetcafe Skek</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Cafe</span>
+        <span class="badge badge-rating">★ 4.3/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJa9q6yLkJxkcR3cdEXkDX2Ak" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Student-run spot with rotating cheap homemade meals.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://fabelfriet.nl/" target="_blank" rel="noopener">Fabel Friet</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJrftMriIJxkcRmsYdm9XycFA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Hand-cut fresh fries with creative house sauces.</span>
+  </div>
+</div>
+</div>
+</section>
+<section id="section-berlin" class="dest-section">
+<div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1618259278412-2819cbdea4dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8QmVybGluJTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg3ODc2ODAxfDA&ixlib=rb-4.1.0&q=80&w=1080')">
+  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/52.5174,13.3951" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Museum%20Island%20Berlin%2C%20Germany&amp;destination=Berlin%20Cathedral&amp;travelmode=driving&amp;api=1&amp;waypoints=Brandenburg%20Gate%20Berlin%2C%20Germany|Reichstag%20Building%20Berlin%2C%20Germany|East%20Side%20Gallery%20Berlin%2C%20Germany|Checkpoint%20Charlie%20Berlin%2C%20Germany|Charlottenburg%20Palace%20Berlin%2C%20Germany|Memorial%20to%20the%20Murdered%20Jews%20of%20Europe%20Berlin%2C%20Germany" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <h2>Berlin, Germany</h2>
+  <p class="dates">September 5-7, 2026</p>
+  <p class="img-credit">Maheshkumar Painam</p>
+</div>
+<div class="card intro-note-card">
+  <h3>What to Know About Berlin, Germany</h3>
+  <p class="intro-note-text">Berlin in early September is ideal for exploring with mild temperatures and fewer tourists. Expect to enjoy outdoor sights and local markets without overwhelming crowds.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Germans appreciate punctuality; try to arrive on time for appointments or reservations.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are quieter at major attractions, while afternoons can be busier with locals and tourists alike.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Berlin has an extensive public transport system, including U-Bahn and S-Bahn trains. A day pass is recommended for ease of travel.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Berlin is generally safe, but watch for pickpockets in crowded areas, especially at popular tourist spots.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect larger crowds on weekends and during local events. Weekdays, particularly Tuesdays and Wednesdays, are quieter.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> It is polite to greet shopkeepers and servers with a friendly &#x27;Hallo&#x27; or &#x27;Guten Tag&#x27;.</p>
+</div>
+<div class="photo-gallery photo-gallery-single">
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1587330979470-3595ac045ab0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8NHx8QmVybGluJTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg3ODc2ODAxfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Berlin, Germany" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Florian Wehde</div>
+  </div>
+</div>
+
+<div class="card env-card">
+<div class="env-subcard">
+<h3>🧥 What to Expect</h3>
+  <p class="env-summary">Typical September temperatures are around 69°F daytime and 53°F overnight. Crowds are thinner than in summer, making it easier to explore popular sites. Some outdoor attractions may have reduced hours as the days shorten.</p>
+  <a href="https://weather.com/weather/today/l/52.5174,13.3951" class="weather-link">Current Weather</a>
+</div>
+</div>
+<div class="card getting-here-card getting-here-subcard">
+  <div class="getting-here-header">
+    <h3>🚗 Getting Here</h3>
+    <a href="https://www.google.com/maps/dir/?destination=Berlin%2C%20Germany&travelmode=driving&api=1&origin=Amsterdam%2C%20Netherlands" target="_blank" rel="noopener" class="gmaps-link">Open in Google Maps →</a>
+  </div>
+  <div class="route-headline-row">
+    <div class="route-headline">Amsterdam, Netherlands → Berlin, Germany</div>
+    <div class="route-badges route-badges-inline">
+      <span class="badge badge-distance">465 mi</span>
+      <span class="badge badge-time">7 hr 45 min</span>
+    </div>
+  </div>
+  <p class="route-summary">Drive from Amsterdam to Berlin via A1 and A2 highways. Enjoy views of the Dutch countryside and German landscapes along the way. Parking is available near major attractions in Berlin.</p>
+</div>
+<div class="card attractions-card">
+<h3>🏔️ Top Attractions</h3>
+<div class="attraction-list">
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.smb.museum/en/museums-institutions/museumsinsel-berlin/" class="attr-link" target="_blank" rel="noopener">Museum Island</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">2-3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJx8qLPN9RqEcRB2gSnmw5bJM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Museum Island is home to five renowned museums, including the Pergamon Museum and the Neues Museum. The island is a UNESCO World Heritage site with impressive architecture and art collections spanning millennia.</span><span class="practical-note">📌 Tickets can be purchased online to avoid long lines.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🗻</span><span class="attr-name"><a href="https://www.berlin.de/en/attractions-and-sights/3560266-3104052-brandenburg-gate.en.html" class="attr-link" target="_blank" rel="noopener">Brandenburg Gate</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJiQnyVcZRqEcRY0xnhE77uyY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Brandenburg Gate is an 18th-century neoclassical monument symbolizing Berlin&#x27;s reunification. It stands 26 meters tall and is adorned with the Quadriga, a chariot drawn by four horses. Visit early in the morning for fewer crowds.</span><span class="practical-note">📌 Easily accessible via public transport.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🗻</span><span class="attr-name"><a href="https://www.bundestag.de/en/" class="attr-link" target="_blank" rel="noopener">Reichstag Building</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1-2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJbVDuQcdRqEcR5X3xq9NSG2Q" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Reichstag is the German parliament building, known for its striking glass dome that offers panoramic views of Berlin. The dome is a symbol of transparency in government.</span><span class="practical-note">📌 Advance registration is required to visit the dome.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.stiftung-berliner-mauer.de/en/east-side-gallery/" class="attr-link" target="_blank" rel="noopener">East Side Gallery</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJS6_t9aZHqEcRGCiRSnvpm94" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The East Side Gallery features a 1.3-kilometer-long section of the Berlin Wall adorned with murals by artists from around the world. This open-air gallery reflects the themes of freedom and unity.</span><span class="practical-note">📌 Best visited during the day for good light.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🗻</span><span class="attr-name"><a href="https://www.berlin.de/en/attractions-and-sights/3560059-3104052-checkpoint-charlie.en.html" class="attr-link" target="_blank" rel="noopener">Checkpoint Charlie</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJzdgmXNFRqEcRyIl9R0IApSM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Checkpoint Charlie was the best-known Berlin Wall crossing point between East and West Berlin during the Cold War. Today, it serves as a historical site with a replica border guard house.</span><span class="practical-note">📌 Nearby museum fees apply for deeper insights.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.spsg.de/en/palaces-gardens/object/charlottenburg-palace-old-palace/" class="attr-link" target="_blank" rel="noopener">Charlottenburg Palace</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ85FCdSVRqEcRGv55KkmuuIs" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Berlin’s largest royal palace with Baroque splendor and gardens.[[5]](</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.stiftung-denkmal.de/en/" class="attr-link" target="_blank" rel="noopener">Memorial to the Murdered Jews of Europe</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJW2oZB8ZRqEcRyFvuEpCnNBQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Powerful abstract memorial honoring Holocaust victims.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.berliner-dom.de/en/" class="attr-link" target="_blank" rel="noopener">Berlin Cathedral</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJS9HC895RqEcR_IovsNVoDng" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Grand Protestant cathedral with impressive dome and crypt.</span></div>
+</div>
+</div>
+<div class="card schedule-card">
+<h3>⏰ Possible Daily Schedule</h3>
+<div class="schedule-days schedule-days-two-col">
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 1</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Berlin and head straight to the Museum Island. Capture photos of this landmark before the crowds arrive.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">After arrival, consider one or more of the following, within about 4h 30m: Museum Island (2h 30m), Brandenburg Gate (30m), Reichstag Building (1h 30m). Keep the afternoon realistic after travel.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Café Einstein Stammhaus, a historic restaurant known for its traditional German cuisine and cozy atmosphere.</span></div>
+    </div>
+  </div>
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 2</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Visit the Checkpoint Charlie and walk along the Berlin Wall. Admire the murals and take in the history of this significant site.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Charlottenburg Palace, keeping realistic transition time between stops.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Relax with dinner at Kreuzburger.</span></div>
+    </div>
+  </div>
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 3</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Reichstag Building, then pivot to a different nearby area before midday crowds.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Explore East Side Gallery, visiting two or three of the museums. Take your time to appreciate the art and architecture.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Prague, Czech Republic happens the next morning, not tonight. Plan dinner at Zur letzten Instanz.</span></div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="card restaurants-card">
+<h3>🍽️ Dinner Recommendations</h3>
+<div class="restaurant-list">
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d1234567-Reviews-Mustafa_s_Gemuse_Kebab-Berlin.html" target="_blank" rel="noopener">Mustafa’s Gemüse Kebab</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJc35bGSlQqEcRL52ICDHcNKk" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Juicy grilled vegetables and meat in fresh bread with signature spices.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://currywurst.berlin/en/finder/place/curry-36-im-hauptbahnhof" target="_blank" rel="noopener">Curry 36</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Berliner Currywurst</span>
+        <span class="badge badge-rating">★ 4.6/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJyaf_HylQqEcRBNsfZFxr-IQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Classic currywurst with crispy fries in a no-frills stand setting.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.konnopke-imbiss.de/en" target="_blank" rel="noopener">Konnopke’s Imbiss</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJm-VbCf9RqEcRJFuS59rBfso" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">currywurst under the U-Bahn with family-recipe sauce.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d4567890-Reviews-Burgermeister-Berlin.html" target="_blank" rel="noopener">Burgermeister</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">American</span>
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ2Uh9Bk5OqEcREoy9N1LxImw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Juicy smash burgers in a former toilet kiosk vibe.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="http://www.hamycafe.com/" target="_blank" rel="noopener">Hamy Café</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Vietnamese</span>
+        <span class="badge badge-rating">★ 4.7/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJubD2-rdPqEcRK2K6TI9YJMk" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Fresh pho and banh mi under €10 with aromatic broths.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d6789012-Reviews-Mervan_Bistro-Berlin.html" target="_blank" rel="noopener">Mervan Bistro</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Bistro</span>
+        <span class="badge badge-rating">★ 5.0/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJb1JKKz1OqEcRyhjb0AnmIIc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Hearty fast-food plates and wraps at rock-bottom prices.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://helloberl.in/best-cheap-eats-in-berlin/" target="_blank" rel="noopener">Häppies</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Vietnamese</span>
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJlxpe2P9NqEcR_hXnJHV-tAY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Creative small plates and snacks with fresh, bold flavors.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d8901234-Reviews-Naveenapath-Berlin.html" target="_blank" rel="noopener">Naveenapath</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Indian</span>
+        <span class="badge badge-rating">★ 4.8/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJtz8pP4JRqEcRTeVscMLBtd0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Authentic curries and thalis in generous portions.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://flamingo-freshfood.de/en/" target="_blank" rel="noopener">Flamingo Fresh Food Bar</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Cafe</span>
+        <span class="badge badge-rating">★ 4.7/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJiY4zlsNRqEcRPXPbVZYbqFE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Light salads, sandwiches and healthy bites in a casual spot.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d0123456-Reviews-Vedang_Green_Burger-Berlin.html" target="_blank" rel="noopener">**Vedang</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">American</span>
+        <span class="badge badge-rating">★ 4.8/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJKzykRX5RqEcR6bA7LNkCYLE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Fast Food/Healthy — Plant-based burgers and bowls with quality ingredients.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.fire-tiger-berlin.de/ueber-uns/?lang" target="_blank" rel="noopener">Fire Tiger</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Japanese</span>
+        <span class="badge badge-rating">★ 4.7/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJrxrOultOqEcRKoSUsxzVYLg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Fresh sushi rolls and Asian bites at affordable prices.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d2345679-Reviews-Ruyam_Gemuse_Kebab-Berlin.html" target="_blank" rel="noopener">Rüyam Gemüse Kebab</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.7/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJk2RWp_9RqEcRGouaKUdZcFg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Vegetable-packed kebabs and grilled specialties.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d3456780-Reviews-Salamat-Berlin.html" target="_blank" rel="noopener">Salamat</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.7/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJy6OLRe9RqEcRskm9VcCqs7g" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Flavorful falafel and shawarma wraps.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d4567891-Reviews-Goji-Berlin.html" target="_blank" rel="noopener">Goji</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Chinese</span>
+        <span class="badge badge-rating">★ 4.7/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJt6ejHVpQqEcRmvlmNG_MeSc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Quick noodle and rice dishes with fresh veggies.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d5678902-Reviews-Libanon_Falafel-Berlin.html" target="_blank" rel="noopener">Libanon Falafel</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJsecLkbtPqEcRj9aVYCp6XT8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Crispy falafel sandwiches open late for under €3.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d6789013-Reviews-Rueyam_Gemuese_Kebap-Berlin.html" target="_blank" rel="noopener">Rueyam Gemuese Kebap</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.7/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ_UftzEFQqEcRaR1V3JDyRrQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Fresh vegetable kebabs and quick Turkish bites.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.theinfatuation.com/berlin/perfect-for/cheap-eats" target="_blank" rel="noopener">Adana Grillhaus</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJrSyqfzVOqEcRQ744P0jTJDY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Late-night grilled meats and köfte plates.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d7890124-Reviews-Markthalle_Neun-Berlin.html" target="_blank" rel="noopener">Markthalle Neun stalls (e.g. Manti Berlin)</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.6/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJvaZWgElOqEcRElWjL2P9AZg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Rotating Turkish dumplings and market hall bites.</span>
+  </div>
+</div>
+</div>
+</section>
+<section id="section-prague" class="dest-section">
+<div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1592906209472-a36b1f3782ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8UHJhZ3VlJTJDJTIwQ3plY2glMjBSZXB1YmxpY3xlbnwwfDB8fHwxNzg3ODc2ODA1fDA&ixlib=rb-4.1.0&q=80&w=1080')">
+  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/50.0875,14.4213" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Prague%20Castle&amp;destination=Clementinum%20Prague%2C%20Czech%20Republic&amp;travelmode=driving&amp;api=1&amp;waypoints=Charles%20Bridge%20Prague%2C%20Czech%20Republic|Vy%C5%A1ehrad%20Prague%2C%20Czech%20Republic|Old%20Town%20Square%20Prague%2C%20Czech%20Republic|National%20Museum%20Prague%2C%20Czech%20Republic|Petrin%20Hill%20Prague%2C%20Czech%20Republic|Jewish%20Quarter%20Prague%2C%20Czech%20Republic" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <h2>Prague, Czech Republic</h2>
+  <p class="dates">September 8-10, 2026</p>
+  <p class="img-credit">Ouael Ben Salah</p>
+</div>
+<div class="card intro-note-card">
+  <h3>What to Know About Prague, Czech Republic</h3>
+  <p class="intro-note-text">Prague in early September is ideal for sightseeing with comfortable temperatures and fewer tourists. Dining options emphasize local cafes and street food, fitting a budget-friendly approach.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Tipping is customary; round up to the nearest 10% in restaurants. It&#x27;s polite to greet with a simple &#x27;Dobrý den&#x27; (Good day).</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are great for visiting major attractions to avoid crowds. Evenings offer a vibrant atmosphere in the streets and squares.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is efficient; consider buying a travel pass for unlimited rides. Trams are a popular way to get around the city.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Prague is generally safe, but be cautious of pickpockets, especially in crowded areas. Keep personal belongings secure.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Weekdays are less crowded compared to weekends, especially in popular tourist areas. Early mornings are the best time to visit major sites.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> Respect local customs by being polite and patient. Avoid discussing politics or sensitive historical topics unless prompted.</p>
+</div>
+<div class="photo-gallery">
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1458150945447-7fb764c11a92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8UHJhZ3VlJTJDJTIwQ3plY2glMjBSZXB1YmxpY3xlbnwwfDB8fHwxNzg3ODc2ODA1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Prague, Czech Republic" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Rodrigo Ardilha</div>
+  </div>
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1619558846792-1fc47446bbd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8M3x8UHJhZ3VlJTJDJTIwQ3plY2glMjBSZXB1YmxpY3xlbnwwfDB8fHwxNzg3ODc2ODA1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Prague, Czech Republic" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Radek Kozák</div>
+  </div>
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1596811311317-c948dd4382dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8NHx8UHJhZ3VlJTJDJTIwQ3plY2glMjBSZXB1YmxpY3xlbnwwfDB8fHwxNzg3ODc2ODA1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Prague, Czech Republic" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Oleh Morhun</div>
+  </div>
+</div>
+
+<div class="card env-card">
+<div class="env-subcard">
+<h3>🧥 What to Expect</h3>
+  <p class="env-summary">Typical September temperatures are around 70°F daytime and 52°F overnight. Early September in Prague features pleasant weather. Crowds are manageable compared to peak summer months. Most attractions are open with no significant seasonal closures.</p>
+  <a href="https://weather.com/weather/today/l/50.0875,14.4213" class="weather-link">Current Weather</a>
+</div>
+</div>
+<div class="card getting-here-card getting-here-subcard">
+  <div class="getting-here-header">
+    <h3>🚗 Getting Here</h3>
+    <a href="https://www.google.com/maps/dir/?destination=Prague%2C%20Czech%20Republic&travelmode=driving&api=1&origin=Berlin%2C%20Germany" target="_blank" rel="noopener" class="gmaps-link">Open in Google Maps →</a>
+  </div>
+  <div class="route-headline-row">
+    <div class="route-headline">Berlin, Germany → Prague, Czech Republic</div>
+    <div class="route-badges route-badges-inline">
+      <span class="badge badge-distance">226 mi</span>
+      <span class="badge badge-time">3 hr 46 min</span>
+    </div>
+  </div>
+  <p class="route-summary">Drive from Berlin via A13 and A2, enjoying rural landscapes and occasional towns. Keep an eye out for roadside cafes offering local snacks. Parking is available near major attractions in Prague.</p>
+</div>
+<div class="card attractions-card">
+<h3>🏔️ Top Attractions</h3>
+<div class="attraction-list">
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.google.com/maps/search/?api=1&amp;query=Prague%20Castle" class="attr-link" target="_blank" rel="noopener">Prague Castle</a><span class="attr-external-link" title="link source">🗺️</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-duration">2–3 hrs</span></div></div><span class="attr-desc">Spanning over 1,000 years of history, Prague Castle features architecture and expansive gardens. The castle complex includes St. Vitus Cathedral and offers panoramic views of the city.</span><span class="practical-note">📌 Entry to the grounds is free, but tickets are required for some buildings.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name">Charles Bridge</span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-caution" title="No verified source link found for this recommendation">⚠ Unverified</span><span class="badge badge-duration">30 min</span></div></div><span class="attr-desc">This historic bridge is adorned with statues and offers a scenic walk across the Vltava River. Expect crowds, especially during the day, but visiting at sunrise provides a quieter experience.</span><span class="practical-note">📌 No vehicles allowed; best accessed by foot.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.praha-vysehrad.cz/en/" class="attr-link" target="_blank" rel="noopener">Vyšehrad</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJPy5ap2CUC0cRj8VQ-1VCcM8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A historic fort offering views of the Vltava River and city skyline. Explore the park and the Basilica of St. Peter and St. Paul within the fort.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.prague.eu/en/object/places/453/old-town-square-staromestske-namesti" class="attr-link" target="_blank" rel="noopener">Old Town Square</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJF6gfPumUC0cRNxOlactBiAU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This central square is surrounded by colorful facades and features the Astronomical Clock. Street performers and markets often fill the area, adding to its lively atmosphere.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.nm.cz/en" class="attr-link" target="_blank" rel="noopener">National Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJua9Ogo2UC0cRpkk9dANajkI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Home to a vast collection of natural history and cultural artifacts. The museum&#x27;s architecture is noteworthy, making it a significant landmark.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.jewishmuseum.cz/en/" class="attr-link" target="_blank" rel="noopener">Jewish Quarter</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJKee8y-mUC0cRSaT5SgePAEQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Historic district featuring synagogues, cemetery and Jewish heritage sites.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.clementinum.com/en/" class="attr-link" target="_blank" rel="noopener">Clementinum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJNUIyNe-UC0cRnw1-EJKuNLI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Baroque complex with historic library, observatory and gardens.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.maploco.com/top-attractions/prague/petrin-tower/" class="attr-link" target="_blank" rel="noopener">Petrin Hill</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-hike-easy">Easy</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJrS4zTP2UC0cRMI7zhXJrRX0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A green oasis with walking paths and a lookout tower resembling the Eiffel Tower. Provides great views of the city and is accessible by funicular.</span></div>
+  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="Vysočina Scenic Drive">Vysočina Scenic Drive</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Scenic Drive</span><span class="badge badge-duration">100 miles loop</span></div></div><span class="attr-desc">This scenic drive takes you through the rolling hills and lush landscapes of the Vysočina region.</span></div>
+  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="Karlštejn Castle Viewpoint">Karlštejn Castle Viewpoint</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Viewpoint</span><span class="badge badge-duration">30-min drive from Prague</span></div></div><span class="attr-desc">This viewpoint offers a perspective of Karlštejn Castle perched on a hilltop surrounded by forest.</span></div>
+</div>
+</div>
+<div class="card schedule-card">
+<h3>⏰ Possible Daily Schedule</h3>
+<div class="schedule-days schedule-days-two-col">
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 1</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Prague and head directly to Prague Castle to explore its grounds and enjoy the views.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">After arrival, consider one or more of the following, within about 4h 30m: Prague Castle (2h 30m), Charles Bridge (30m), Vyšehrad (1h 30m). Keep the afternoon realistic after travel.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Café Louvre, a local spot known for traditional Czech dishes and beer.</span></div>
+    </div>
+  </div>
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 2</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with National Museum, then pivot to a different nearby area before midday crowds.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Consider one or more of the following, within about 4h: Old Town Square (1h), National Museum (1h 30m), Petrin Hill (1h 30m). Leave buffer time between stops.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Eska, a local spot known for traditional Czech dishes and beer.</span></div>
+    </div>
+  </div>
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 3</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Vyšehrad, then pivot to a different nearby area before midday crowds.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Walk to Old Town Square, taking in the statues and views of the river. Continue to Old Town Square to experience the atmosphere and local shops.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Frankfurt, Germany happens the next morning, not tonight. Plan dinner at Lokál Dlouhááá.</span></div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="card restaurants-card">
+<h3>🍽️ Dinner Recommendations</h3>
+<div class="restaurant-list">
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://lidovajidelna.cz/eng" target="_blank" rel="noopener">Lidová jídelna Těšnov</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJwUhETL6UC0cRQORb_VwUiMU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Czech canteen Classic worker cafeteria with hearty daily Czech specials like goulash and dumplings in a no-frills self-service setting.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.realpragueguides.com/blog/prague-cheap-eats-2025-budget-travelers-guide" target="_blank" rel="noopener">Havelská Koruna</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        <span class="badge badge-reserve">Reservations Recommended</span>
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ93_7qO6UC0cRMoSzwdVIB_M" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Czech canteen Bustling Old Town cafeteria offering wide selection of affordable traditional Czech lunches popular with locals.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://jidelnasvetozor.webnode.cz/" target="_blank" rel="noopener">Jídelna Světozor</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.3/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJAUkra-2UC0cRP7cdMe_GPYA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Czech cafeteria Time-capsule self-service spot near Wenceslas Square serving soup, mains and dessert combos for under €8.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.urozvarilu.cz/" target="_blank" rel="noopener">U Rozvařilů</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ6wBMD1OVC0cRYdKPUUVw7M4" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Czech canteen Legendary department-store cafeteria with fresh farm-sourced Czech meals and quick tray service.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://budgettraveller.org/best-cheap-eats-prague-guide/" target="_blank" rel="noopener">Antonínovo Pekařství</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Bakery</span>
+        <span class="badge badge-rating">★ 4.6/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJu_8w6ZyUC0cR0P9Aypbx1xY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Bakery Fresh local bakery in Žižkov with excellent open-faced sandwiches and pastries at rock-bottom prices.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g274707-d21057011-Reviews-Liberske_lahudky_Krc-Prague_Bohemia.html" target="_blank" rel="noopener">Libeřské lahůdky</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJIZ6iifKUC0cRuUeH__a9QTI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Deli Traditional deli famous for dozens of cheap chlebíčky open sandwiches and quick savoury bites.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.nomadicmick.com/cheap-restaurants-in-prague/" target="_blank" rel="noopener">Mr Hotdog</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.3/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJhULlwMWUC0cRBLJ-IpBfWv0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Hot dogs Busy stand near Letná Park serving loaded hot dogs and variations from €3.50 in casual outdoor setting.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://lokaldlouha.ambi.cz/en" target="_blank" rel="noopener">Lokál Dlouhá</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJGWh--8GUC0cR4myQM-Wv3QI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Czech pub Modern hospoda with tank-fresh Pilsner and classic Czech dishes at reasonable neighbourhood prices.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.helloprague.net/best-restaurants-prague-where-locals-eat/" target="_blank" rel="noopener">Naše Maso</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.6/5</span>
+        <span class="badge badge-price">$$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJsQAU38GUC0cRd-x_WZWOcVU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Butcher deli Standing-room butcher counter with premium open sandwiches, charcuterie and tartare at local prices.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://entdecke-tschechien.de/en/entdecke-guenstige-restaurants-in-prag-2026/" target="_blank" rel="noopener">Jizerské pekárny</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Bakery</span>
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJp4lD2X6TC0cR0ZPuVv5IUDc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Bakery Central bakery specialising in fresh chlebíčky and traditional Czech pastries at everyday prices.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://bestpragueguide.com/en/blog/prague-street-food-guide" target="_blank" rel="noopener">Sisters Bistro</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Bistro</span>
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJFdxr38GUC0cRBt4Vys9tIms" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Deli Elevated chlebíčky and deli items using quality ingredients while staying true to budget sandwich tradition.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.viewfromprague.com/traditional-czech-food-self-service-restaurants/" target="_blank" rel="noopener">Menza Strahov</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.2/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ__djgAGVC0cR6-U1slQkfQM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">University canteen Large student cafeteria open to public with generous portions of Czech meals at the lowest prices.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.cafelouvre.cz/en" target="_blank" rel="noopener">Café Louvre</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Café</span>
+        
+        <span class="badge badge-price">$$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJj5XMEO6UC0cRSdD6zoOKd3k" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Established in 1902, this café serves a variety of pastries and coffee. The historic setting adds to the experience, making it a great spot for a light meal.</span>
+  </div>
+</div>
+</div>
+</section>
+<section id="section-frankfurt" class="dest-section">
+<div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1605186620429-1ece911f171c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8RnJhbmtmdXJ0JTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg3ODc2ODA3fDA&ixlib=rb-4.1.0&q=80&w=1080')">
+  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/50.1106,8.6821" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=St%C3%A4del%20Museum%20Frankfurt%2C%20Germany&amp;destination=Frankfurt%20Cathedral&amp;travelmode=driving&amp;api=1&amp;waypoints=R%C3%B6merberg%20Frankfurt%2C%20Germany|Schirn%20Kunsthalle%20Frankfurt%2C%20Germany|Palmengarten%20Frankfurt%2C%20Germany|Main%20Tower%20Frankfurt%2C%20Germany" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <h2>Frankfurt, Germany</h2>
+  <p class="dates">September 11-12, 2026</p>
+  <p class="img-credit">Sinan Erg</p>
+</div>
+<div class="card intro-note-card">
+  <h3>What to Know About Frankfurt, Germany</h3>
+  <p class="intro-note-text">Frankfurt in September is ideal for exploring its rich history and cultural offerings. The city is less crowded than during the summer months, making visits to attractions more enjoyable.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Germans appreciate punctuality, especially in social and business settings. A friendly greeting, such as &#x27;Hallo&#x27;, is customary.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are great for visiting popular attractions to avoid crowds. Evenings often feature local events or street performances.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transportation is efficient and widely used. Consider purchasing a day pass for unlimited travel on trams and buses.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Frankfurt is generally safe but be mindful of your belongings, especially in crowded areas. Avoid poorly lit streets at night.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect fewer tourists in September compared to July and August, leading to shorter lines and a more relaxed atmosphere.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> It&#x27;s polite to greet shopkeepers when entering stores. Tipping around 10% is customary in restaurants.</p>
+</div>
+<div class="photo-gallery">
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1607879344639-d5f8dec22a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8RnJhbmtmdXJ0JTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg3ODc2ODA3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Frankfurt, Germany" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Raja Sen</div>
+  </div>
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1577185816322-21f2a92b1342?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8M3x8RnJhbmtmdXJ0JTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg3ODc2ODA3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Frankfurt, Germany" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Igor Flek</div>
+  </div>
+  <div class="image-tile photo-item">
+    <img src="https://images.unsplash.com/photo-1642096633192-9290503a9a38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8NHx8RnJhbmtmdXJ0JTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg3ODc2ODA3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Frankfurt, Germany" class="hide-on-error" loading="lazy" />
+    <div class="caption photo-caption">Tobias Reich</div>
+  </div>
+</div>
+
+<div class="card env-card">
+<div class="env-subcard">
+<h3>🧥 What to Expect</h3>
+  <p class="env-summary">Typical September temperatures are around 70°F daytime and 53°F overnight. Cool autumn weather settles over Frankfurt in September. This month sees fewer tourists compared to summer, allowing for a more relaxed experience at attractions. Be prepared for potential rain; a light jacket and umbrella are advisable.</p>
+  <a href="https://weather.com/weather/today/l/50.1106,8.6821" class="weather-link">Current Weather</a>
+</div>
+</div>
+<div class="card getting-here-card getting-here-subcard">
+  <div class="getting-here-header">
+    <h3>🚗 Getting Here</h3>
+    <a href="https://www.google.com/maps/dir/?destination=Frankfurt%2C%20Germany&travelmode=driving&api=1&origin=Prague%2C%20Czech%20Republic" target="_blank" rel="noopener" class="gmaps-link">Open in Google Maps →</a>
+  </div>
+  <div class="route-headline-row">
+    <div class="route-headline">Prague, Czech Republic → Frankfurt, Germany</div>
+    <div class="route-badges route-badges-inline">
+      <span class="badge badge-distance">380 mi</span>
+      <span class="badge badge-time">4 hrs 30 min</span>
+    </div>
+  </div>
+  <p class="route-summary">Drive from Prague to Frankfurt primarily via the D5 and A93 highways. The journey takes you through picturesque landscapes and towns, making it a scenic route. Parking is available near the city center and major attractions.</p>
+</div>
+<div class="card attractions-card">
+<h3>🏔️ Top Attractions</h3>
+<div class="attraction-list">
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.staedelmuseum.de/en/" class="attr-link" target="_blank" rel="noopener">Städel Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">2–3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ61K7owMMvUcRn_SCURQ0DaE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Städel Museum houses an impressive collection of European art from the Middle Ages to the present. Key works include pieces by Rembrandt and Monet. It&#x27;s advisable to book tickets in advance to avoid long lines.</span><span class="practical-note">📌 Timed entry tickets recommended.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://frankfurt.de/frankfurt-entdecken-und-erleben/sehenswuerdigkeiten/fuer-historisch-interessierte/roemerberg" class="attr-link" target="_blank" rel="noopener">Römerberg</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJn3yIFqYOvUcRieh4nt3lras" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Römerberg is Frankfurt&#x27;s historic square, featuring half-timbered houses and the Römer building. This area is ideal for strolling and taking in the architecture. Check for any local events or markets that may be taking place.</span><span class="practical-note">📌 No permits required for entry.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.schirn.de/" class="attr-link" target="_blank" rel="noopener">Schirn Kunsthalle</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.4/5</span><span class="badge badge-duration">1–1.5 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJecFPZqYOvUcRzAv_mdvzpNg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A contemporary art museum known for its rotating exhibitions. The Schirn Kunsthalle often features works from both established and emerging artists.</span><span class="practical-note">📌 Check current exhibitions online.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.palmengarten.de/" class="attr-link" target="_blank" rel="noopener">Palmengarten</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1.5–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJxfLE2UUJvUcR5WlJbp2M1D0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This botanical garden showcases diverse plant species from around the world. Stroll through the themed gardens and greenhouses, particularly lovely in early fall.</span><span class="practical-note">📌 Entry fee required.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.maintower.de/" class="attr-link" target="_blank" rel="noopener">Main Tower</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJX0usKIcPvUcRex4ytC72h58" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Main Tower offers panoramic views of Frankfurt from its observation deck. It&#x27;s a great spot for photography, especially at sunset.</span><span class="practical-note">📌 Access may be restricted during bad weather.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://frankfurt.de/" class="attr-link" target="_blank" rel="noopener">Frankfurt Cathedral</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.4/5</span><span class="badge badge-duration">45 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJcVvHnKYOvUcRMTFiTc-qNI8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This Gothic cathedral is notable for its impressive architecture and historical significance. Climb the tower for views of the skyline.</span><span class="practical-note">📌 Climbing the tower requires a small fee.</span></div>
+  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="The Rhine Valley Drive">The Rhine Valley Drive</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Day Trip</span><span class="badge badge-duration">65 miles one-way</span></div></div><span class="attr-desc">The Rhine Valley Drive takes you through vineyards and quaint towns along the Rhine River.</span></div>
+  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="Taunus Scenic Drive">Taunus Scenic Drive</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Scenic Drive</span><span class="badge badge-duration">40 miles loop</span></div></div><span class="attr-desc">The Taunus Scenic Drive offers a beautiful loop through the Taunus mountains, featuring lush forests and rolling hills.</span></div>
+</div>
+</div>
+<div class="card schedule-card">
+<h3>⏰ Possible Daily Schedule</h3>
+<div class="schedule-days schedule-days-two-col">
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 1</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Travel from Prague, Czech Republic (depart around 9:30 AM); arrival around 2:00 PM.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit the Römerberg to appreciate its vast collection of art, taking time to explore the nearby parks afterwards.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Apfelwein Wagner, where you can sample local street food and regional specialties.</span></div>
+    </div>
+  </div>
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 2</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start your day at Palmengarten, the heart of Frankfurt&#x27;s old town, exploring the historic buildings and ambiance.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Reserved for return travel to Frankfurt, Germany around 6:00 PM; begin checkout and departure logistics.</span></div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="card restaurants-card">
+<h3>🍽️ Dinner Recommendations</h3>
+<div class="restaurant-list">
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d1342805-Reviews-AROMA-Frankfurt_Hesse.html" target="_blank" rel="noopener">AROMA</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.6/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJTXM54rYOvUcRANo0pB0rs3Q" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Fresh, flavorful wraps and veggie options in a no-frills spot.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d8000892-Reviews-Metzgerei_Schreiber-Frankfurt_Hesse.html" target="_blank" rel="noopener">Metzgerei Schreiber</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        
+        <span class="badge badge-rating">★ 4.7/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJh2louaUOvUcRSFpf8NRgZ0U" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Classic sausages and fast German bites at a local butcher counter.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt" target="_blank" rel="noopener">Bun Bo</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Seafood</span>
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJDyA_WoQOvUcRq7Wx-dngHrg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Tasty pho and fresh rolls in a quick, affordable eatery.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d6637413-Reviews-Thaitime-Frankfurt_Hesse.html" target="_blank" rel="noopener">Thaitime</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Thai</span>
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJuaL1EFYJvUcR3PdzHzTmeMg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Authentic street-style Thai dishes served fast and cheap.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d805095-Reviews-or15-Wacker_s_Kaffee_Geschaft-Frankfurt_Hesse.html" target="_blank" rel="noopener">Wacker&#x27;s Kaffee Geschäft</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Cafe</span>
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJfWjcNq8OvUcR0LwOiCtIGS0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Hearty sandwiches and coffee at a bustling neighborhood bakery-cafe.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d1960534-Reviews-or45-Alims_Fischimbiss-Frankfurt_Hesse.html" target="_blank" rel="noopener">Alims Fischimbiss</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Mediterranean</span>
+        <span class="badge badge-rating">★ 4.3/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJZ8U9nKoOvUcRHbdufiOlSIo" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Fresh fish sandwiches and Mediterranean-style seafood snacks.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d8333008-Reviews-Pizzeria_Montana-Frankfurt_Hesse.html" target="_blank" rel="noopener">Pizzeria Montana</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Italian</span>
+        <span class="badge badge-rating">★ 4.1/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ7_00YKoOvUcR1c9iAft2QUg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Simple, satisfying pizzas and quick Italian bites for workers.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.kleinmarkthalle.de/" target="_blank" rel="noopener">Kleinmarkthalle Stalls</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Local market</span>
+        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJo7fTu6UOvUcR_KeTxloUC20" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Diverse food stalls offering sandwiches, cheeses, and international bites.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d5270602-Reviews-Toh_Thong_Thai_Cuisine-Frankfurt_Hesse.html" target="_blank" rel="noopener">Toh-Thong Thai Cuisine</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Thai</span>
+        <span class="badge badge-rating">★ 4.4/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJg2is3FUJvUcR06VMvtwH-Gg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Quick, authentic Thai street food in a casual setting.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d7284386-Reviews-or15-Cafe_Nostalgie_Frankfurt-Frankfurt_Hesse.html" target="_blank" rel="noopener">Cafe Nostalgie Frankfurt</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Cafe</span>
+        <span class="badge badge-rating">★ 4.9/5</span>
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJr1QfPl0JvUcRPHq5y2vfbYw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Affordable cafe fare with international snacks and coffee.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.apfelwein-wagner.com/en/cookie-en/" target="_blank" rel="noopener">Apfelwein Wagner</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">German</span>
+        
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJA6jFjxsMvUcR_1WAmNA47vo" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Known for its traditional cider and hearty German dishes, this restaurant serves dishes like Handkäse mit Musik. A relaxed setting perfect for enjoying local flavors.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://ditsch.com/b2c/" target="_blank" rel="noopener">Ditsch</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Snacks</span>
+        
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJc8i9AsEKvUcRB11q7Kv6vmM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">Famous for its pretzels, Ditsch offers a quick snack option while exploring the city. Grab a pretzel and continue your adventure.</span>
+  </div>
+</div>
+</div>
+<div class="card getting-here-card getting-here-subcard departure-route-card">
+  <div class="getting-here-header">
+    <h3>↩️ Departure Route Options</h3>
+    <a href="https://www.google.com/maps/dir/?destination=Frankfurt%2C%20Germany&travelmode=driving&api=1" target="_blank" rel="noopener" class="gmaps-link">Open in Google Maps →</a>
+  </div>
+  <div class="route-headline">Frankfurt, Germany → Frankfurt, Germany</div>
+  <p class="route-summary"><strong>Return anchor:</strong> Sep 12 6:00 PM</p>
+</div>
+</section>
+<section class="dest-section pack-summary-section">
+  <div class="card pack-summary-card">
+    <h3>🎒 Packing Summary (Trip-Wide)</h3>
+    <p class="pack-summary-intro">Here's what to bring and where it's needed:</p>
+    <ul class="pack-summary-list">
+      <li><strong>Camera</strong> <span class="pack-summary-places">(Berlin, Germany, Frankfurt, Germany)</span></li>
+      <li><strong>comfortable walking shoes</strong> <span class="pack-summary-places">(Amsterdam, Netherlands, Berlin, Germany, Brussels, Belgium, Frankfurt, Germany, Prague, Czech Republic)</span></li>
+      <li><strong>Layers / light jacket (temperature swings)</strong> <span class="pack-summary-places">(Amsterdam, Netherlands, Berlin, Germany, Brussels, Belgium, Frankfurt, Germany, Prague, Czech Republic)</span></li>
+      <li><strong>sun protection</strong> <span class="pack-summary-places">(Brussels, Belgium)</span></li>
+      <li><strong>sunglasses</strong> <span class="pack-summary-places">(Prague, Czech Republic)</span></li>
+      <li><strong>umbrella</strong> <span class="pack-summary-places">(Amsterdam, Netherlands, Berlin, Germany, Frankfurt, Germany, Prague, Czech Republic)</span></li>
+      <li><strong>water bottle</strong> <span class="pack-summary-places">(Brussels, Belgium)</span></li>
+    </ul>
+  </div>
+</section>
+
+
+    </main>
+
+    <footer class="generator-footer" style="margin:1.25rem auto 2.5rem;padding:0 1rem;max-width:72rem;"><div style="border-top:1px solid #e8dcc8;padding-top:0.85rem;font-size:0.8rem;color:#8B6347;line-height:1.5;text-align:center;">Generated by <a href="https://github.com/flysoftware-git/itinerary-generator" >Itinerary Generator</a> v2.3.0 · Manifest: EuropeExploration_manifest.yaml · Itinerary output: 2026-08-28 17:58 UTC<div style="margin-top:0.35rem;">Issue reporting: <a href="https://github.com/flysoftware-git/itinerary-generator/issues/new?template=broken-link-report.yml&labels=bug">Report broken links</a> · <a href="https://github.com/flysoftware-git/itinerary-generator/issues/new?template=itinerary-feedback.yml">Share itinerary feedback</a></div></div></footer>
+
+    <!-- DRIVE INFO MODAL -->
+    <div data-id="1109" id="drive-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.55);backdrop-filter:blur(3px);align-items:center;justify-content:center;">
+      <div data-id="1110" style="background:#fff;border-radius:16px;max-width:640px;width:92%;max-height:85vh;overflow-y:auto;padding:28px;box-shadow:0 24px 64px rgba(0,0,0,0.25);position:relative;">
+        <button data-id="1111" id="drive-modal-close" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#999;line-height:1;">✕</button>
+        <h3 data-id="1112" id="drive-modal-title" style="font-family:Georgia,serif;font-size:20px;color:#8B2E0A;margin:0 0 14px;padding-right:30px;"></h3>
+        <div data-id="1113" id="drive-modal-body" style="font-size:14px;line-height:1.7;color:#2C1A0E;white-space:pre-line;"></div>
+    </div>
+
+    <!-- LEAFLET OVERVIEW MAP INIT -->
+    
+
+    
+
+    
+
+</body>
+</html>

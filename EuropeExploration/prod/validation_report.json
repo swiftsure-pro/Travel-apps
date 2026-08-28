@@ -1,0 +1,535 @@
+{
+  "generator_version": "2.3.0",
+  "template_version": "2.5",
+  "generated_at_utc": "2026-08-28T17:58:03.338013+00:00",
+  "development_build": {
+    "fingerprint": "v2.3.0+745daf7+dirty+20260828T175548.262946Z",
+    "run_id": "20260828T175548.262946Z",
+    "generator_version": "2.3.0",
+    "template_version": "2.5",
+    "build_tag": "",
+    "git": {
+      "branch": "feat/place-id-maps-links",
+      "commit": "745daf7dc0254e4943b49683426395637f952593",
+      "short_commit": "745daf7",
+      "dirty": true
+    }
+  },
+  "timestamp_utc": "2026-08-28T17:58:03.567368Z",
+  "summary": {
+    "valid": true,
+    "error_count": 0,
+    "warning_count": 2
+  },
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "models": [
+      {
+        "provider": "serper",
+        "model": "serper",
+        "calls": 38,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 38,
+        "tool_call_cost_usd": 0.038,
+        "estimated_cost_usd": 0.038
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "calls": 5,
+        "prompt_tokens": 24447,
+        "completion_tokens": 9079,
+        "total_tokens": 33526,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.009114
+      }
+    ],
+    "total_calls": 43,
+    "total_estimated_cost_usd": 0.047114,
+    "records": [
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:brussels",
+        "prompt_tokens": 4915,
+        "completion_tokens": 1552,
+        "total_tokens": 6467,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001668
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:amsterdam",
+        "prompt_tokens": 4873,
+        "completion_tokens": 1770,
+        "total_tokens": 6643,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001793
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:berlin",
+        "prompt_tokens": 4881,
+        "completion_tokens": 1827,
+        "total_tokens": 6708,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001828
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:prague",
+        "prompt_tokens": 4876,
+        "completion_tokens": 1934,
+        "total_tokens": 6810,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001892
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:frankfurt",
+        "prompt_tokens": 4902,
+        "completion_tokens": 1996,
+        "total_tokens": 6898,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001933
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      }
+    ]
+  },
+  "errors": [],
+  "warnings": [
+    "Attractions removed for no verified URL: 5 of 37 (14%) (threshold: 3)",
+    "Restaurants removed for no verified URL: 46 of 115 (40%) (threshold: 0)"
+  ],
+  "html_path": "C:\\Users\\bryan\\Documents\\Github\\PWAapps\\Travel-apps\\EuropeExploration\\prod\\index.html"
+}
