@@ -1,21 +1,21 @@
 {
   "generator_version": "2.3.0",
   "template_version": "2.5",
-  "generated_at_utc": "2026-08-28T17:58:03.338013+00:00",
+  "generated_at_utc": "2026-08-28T19:02:55.660262+00:00",
   "development_build": {
-    "fingerprint": "v2.3.0+745daf7+dirty+20260828T175548.262946Z",
-    "run_id": "20260828T175548.262946Z",
+    "fingerprint": "v2.3.0+b23a4c1+dirty+20260828T190055.131247Z",
+    "run_id": "20260828T190055.131247Z",
     "generator_version": "2.3.0",
     "template_version": "2.5",
     "build_tag": "",
     "git": {
       "branch": "feat/place-id-maps-links",
-      "commit": "745daf7dc0254e4943b49683426395637f952593",
-      "short_commit": "745daf7",
+      "commit": "b23a4c1ce1c461be99c188d99baa6bc8b999603d",
+      "short_commit": "b23a4c1",
       "dirty": true
     }
   },
-  "timestamp_utc": "2026-08-28T17:58:03.567368Z",
+  "timestamp_utc": "2026-08-28T19:02:55.908435Z",
   "summary": {
     "valid": true,
     "error_count": 0,
@@ -28,94 +28,83 @@
       {
         "provider": "serper",
         "model": "serper",
-        "calls": 38,
+        "calls": 37,
         "prompt_tokens": 0,
         "completion_tokens": 0,
         "total_tokens": 0,
-        "tool_calls": 38,
-        "tool_call_cost_usd": 0.038,
-        "estimated_cost_usd": 0.038
+        "tool_calls": 37,
+        "tool_call_cost_usd": 0.037,
+        "estimated_cost_usd": 0.037
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "calls": 5,
         "prompt_tokens": 24447,
-        "completion_tokens": 9079,
-        "total_tokens": 33526,
+        "completion_tokens": 9274,
+        "total_tokens": 33721,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.009114
+        "estimated_cost_usd": 0.009232
       }
     ],
-    "total_calls": 43,
-    "total_estimated_cost_usd": 0.047114,
+    "total_calls": 42,
+    "total_estimated_cost_usd": 0.046232,
     "records": [
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:brussels",
         "prompt_tokens": 4915,
-        "completion_tokens": 1552,
-        "total_tokens": 6467,
+        "completion_tokens": 1711,
+        "total_tokens": 6626,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001668
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "destination_bundle:amsterdam",
-        "prompt_tokens": 4873,
-        "completion_tokens": 1770,
-        "total_tokens": 6643,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001793
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "destination_bundle:berlin",
-        "prompt_tokens": 4881,
-        "completion_tokens": 1827,
-        "total_tokens": 6708,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001828
+        "estimated_cost_usd": 0.001764
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:prague",
         "prompt_tokens": 4876,
-        "completion_tokens": 1934,
-        "total_tokens": 6810,
+        "completion_tokens": 1811,
+        "total_tokens": 6687,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001892
+        "estimated_cost_usd": 0.001818
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:berlin",
+        "prompt_tokens": 4881,
+        "completion_tokens": 1779,
+        "total_tokens": 6660,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.0018
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:amsterdam",
+        "prompt_tokens": 4873,
+        "completion_tokens": 1909,
+        "total_tokens": 6782,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001876
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:frankfurt",
         "prompt_tokens": 4902,
-        "completion_tokens": 1996,
-        "total_tokens": 6898,
+        "completion_tokens": 2064,
+        "total_tokens": 6966,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001933
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "estimated_cost_usd": 0.001974
       },
       {
         "provider": "serper",
@@ -528,8 +517,8 @@
   },
   "errors": [],
   "warnings": [
-    "Attractions removed for no verified URL: 5 of 37 (14%) (threshold: 3)",
-    "Restaurants removed for no verified URL: 46 of 115 (40%) (threshold: 0)"
+    "Attractions removed for no verified URL: 8 of 38 (21%) (threshold: 3)",
+    "Restaurants removed for no verified URL: 39 of 109 (36%) (threshold: 0)"
   ],
   "html_path": "C:\\Users\\bryan\\Documents\\Github\\PWAapps\\Travel-apps\\EuropeExploration\\prod\\index.html"
 }
