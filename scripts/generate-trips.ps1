@@ -41,6 +41,11 @@ function Get-HtmlTitle {
     }
 
     $title = $match.Groups[1].Value
+    # <title> is HTML-escaped by the generator, so an ampersand arrives here as
+    # "&amp;". The card renders this value with textContent -- which is correct
+    # and must stay -- so the entity has to be decoded now, or it reaches the
+    # page as literal "&amp;". ("Old Hickory &amp; Asheville" shipped that way.)
+    $title = [System.Net.WebUtility]::HtmlDecode($title)
     $title = [regex]::Replace($title, "\s+", " ").Trim()
     return $title
 }
