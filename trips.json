@@ -1,44 +1,44 @@
 {
-  "updatedAt": "2026-08-29T18:15:53.2589784Z",
-  "trips": [
-    {
-      "name": "Europe Exploration",
-      "directory": "EuropeExploration/prod",
-      "entry": "EuropeExploration/prod/index.html",
-      "description": "Generated road-trip-generator output package in EuropeExploration/prod.",
-      "templateVersion": "2.5",
-      "generatedAt": "2026-08-29T18:04:21.756906+00:00",
-      "validation": {
-        "valid": true,
-        "warningCount": 2
-      },
-      "validationReport": "EuropeExploration/prod/validation_report.json"
-    },
-    {
-      "name": "Old Hickory & Asheville",
-      "directory": "OldHickory/prod",
-      "entry": "OldHickory/prod/index.html",
-      "description": "Generated road-trip-generator output package in OldHickory/prod.",
-      "templateVersion": "2.5",
-      "generatedAt": "2026-08-29T18:15:51.199745+00:00",
-      "validation": {
-        "valid": true,
-        "warningCount": 7
-      },
-      "validationReport": "OldHickory/prod/validation_report.json"
-    },
-    {
-      "name": "Southwest Road Trip",
-      "directory": "sw/prod",
-      "entry": "sw/prod/index.html",
-      "description": "Generated road-trip-generator output package in sw/prod.",
-      "templateVersion": "2.5",
-      "generatedAt": "2026-08-29T18:09:02.350362+00:00",
-      "validation": {
-        "valid": true,
-        "warningCount": 4
-      },
-      "validationReport": "sw/prod/validation_report.json"
-    }
-  ]
+    "updatedAt":  "2026-08-29T21:56:07.7391630Z",
+    "trips":  [
+                  {
+                      "name":  "Europe Exploration",
+                      "directory":  "EuropeExploration/prod",
+                      "entry":  "EuropeExploration/prod/index.html",
+                      "description":  "Generated road-trip-generator output package in EuropeExploration/prod.",
+                      "templateVersion":  "2.5",
+                      "generatedAt":  "2026-08-29T21:56:05.688103+00:00",
+                      "validation":  {
+                                         "valid":  true,
+                                         "warningCount":  2
+                                     },
+                      "validationReport":  "EuropeExploration/prod/validation_report.json"
+                  },
+                  {
+                      "name":  "Old Hickory \u0026 Asheville",
+                      "directory":  "OldHickory/prod",
+                      "entry":  "OldHickory/prod/index.html",
+                      "description":  "Generated road-trip-generator output package in OldHickory/prod.",
+                      "templateVersion":  "2.5",
+                      "generatedAt":  "2026-08-29T18:15:51.199745+00:00",
+                      "validation":  {
+                                         "valid":  true,
+                                         "warningCount":  7
+                                     },
+                      "validationReport":  "OldHickory/prod/validation_report.json"
+                  },
+                  {
+                      "name":  "Southwest Road Trip",
+                      "directory":  "sw/prod",
+                      "entry":  "sw/prod/index.html",
+                      "description":  "Generated road-trip-generator output package in sw/prod.",
+                      "templateVersion":  "2.5",
+                      "generatedAt":  "2026-08-29T18:09:02.350362+00:00",
+                      "validation":  {
+                                         "valid":  true,
+                                         "warningCount":  4
+                                     },
+                      "validationReport":  "sw/prod/validation_report.json"
+                  }
+              ]
 }
