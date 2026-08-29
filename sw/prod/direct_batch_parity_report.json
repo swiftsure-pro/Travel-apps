@@ -1,9 +1,9 @@
 {
-  "run_id": "20260829T180516.468316Z",
-  "generated_at_utc": "2026-08-29T18:09:11.392612+00:00",
+  "run_id": "20260829T215728.386833Z",
+  "generated_at_utc": "2026-08-29T22:01:53.344953+00:00",
   "captured_html_input_count": 160,
   "unique_captured_urls": 1769,
-  "unique_final_html_urls": 297,
+  "unique_final_html_urls": 361,
   "destinations_missing_at_least_one_captured_url": 10,
   "destinations_missing_captured_url_names": [
     "Arches National Park",
