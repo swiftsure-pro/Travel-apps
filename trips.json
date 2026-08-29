@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-08-29T22:17:16.0677066Z",
+    "updatedAt":  "2026-08-29T22:18:55.5295890Z",
     "trips":  [
                   {
                       "name":  "Europe Exploration",
@@ -20,7 +20,7 @@
                       "entry":  "OldHickory/prod/index.html",
                       "description":  "Generated road-trip-generator output package in OldHickory/prod.",
                       "templateVersion":  "2.5",
-                      "generatedAt":  "2026-08-29T22:04:07.513595+00:00",
+                      "generatedAt":  "2026-08-29T22:18:54.068932+00:00",
                       "validation":  {
                                          "valid":  true,
                                          "warningCount":  7
