@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260829T180934.336166Z
-- Generated at (UTC): 2026-08-29T18:15:51.146598+00:00
+- Run ID: 20260829T220222.939775Z
+- Generated at (UTC): 2026-08-29T22:04:07.490570+00:00
 - Destination count: 7
 - Retry recommended: 2
 - Retry attempted: 2
@@ -21,3 +21,98 @@
 - Franklin, Tennessee (franklin) — status=degraded, terminal=stable_without_retry
 - Leiper's Fork, Tennessee (leipers_fork) — status=degraded, terminal=stable_without_retry
 - Asheville, North Carolina (asheville) — status=degraded, terminal=stable_without_retry
+
+## Removed for No Verified URL (86)
+- **Old Hickory, Tennessee** (37)
+  - BODHI Asian Street Eats — dinner_recommendations
+  - BODHI Asian Street Eats — dinner_recommendations
+  - Gourmet Ribs — dinner_recommendations
+  - Gourmet Ribs — dinner_recommendations
+  - Grandaddy's Original Hot Chicken Shack — dinner_recommendations
+  - Grandaddy's Original Hot Chicken Shack — dinner_recommendations
+  - Meatballs Italian Grill — dinner_recommendations
+  - Meatballs Italian Grill — dinner_recommendations
+  - Nadeen's Hermitage Haven — dinner_recommendations
+  - Nadeen's Hermitage Haven — dinner_recommendations
+  - Old Hickory Steakhouse — dinner_recommendations
+  - Old Hickory Steakhouse — dinner_recommendations
+  - Rack and Tap Bar and Grill — dinner_recommendations
+  - Rack and Tap Bar and Grill — dinner_recommendations
+  - Rafferty's Restaurant & Bar — dinner_recommendations
+  - Ravello at Gaylord Opryland — dinner_recommendations
+  - Ravello at Gaylord Opryland — dinner_recommendations
+  - Salvo's Pizza — dinner_recommendations
+  - Salvo's Pizza — dinner_recommendations
+  - Sam’s Sports Grill — dinner_recommendations
+  - Sam’s Sports Grill — dinner_recommendations
+  - Silo — dinner_recommendations
+  - Simply Thai — dinner_recommendations
+  - Simply Thai — dinner_recommendations
+  - The Blackbird — dinner_recommendations
+  - Avondale Campground — top_attractions
+  - Avondale Campground — top_attractions
+  - Cages Bend Campground — top_attractions
+  - Cages Bend Campground — top_attractions
+  - Cedar Creek Marina — top_attractions
+  - Cedar Creek Marina — top_attractions
+  - Nat Caldwell Park — top_attractions
+  - Nat Caldwell Park — top_attractions
+  - Old Hickory Beach — top_attractions
+  - Old Hickory Beach — top_attractions
+  - Sanders Ferry Park — top_attractions
+  - Sanders Ferry Park — top_attractions
+- **Nashville, Tennessee** (7)
+  - Butcher & Bee — dinner_recommendations
+  - Five Points Pizza — dinner_recommendations
+  - Graze Nashville — dinner_recommendations
+  - Hattie B's Hot Chicken — dinner_recommendations
+  - House of India — dinner_recommendations
+  - Monell's Dining & Catering — dinner_recommendations
+  - Sho Pizza Bar — dinner_recommendations
+- **Gallatin, Tennessee** (21)
+  - Agave's 109 — dinner_recommendations
+  - Agave's 109 — dinner_recommendations
+  - Black Elm Coffee — dinner_recommendations
+  - Black Elm Coffee — dinner_recommendations
+  - Casa Roja Mexican Grill — dinner_recommendations
+  - Casa Roja Mexican Grill — dinner_recommendations
+  - Demos' Steak and Spaghetti House — dinner_recommendations
+  - DosBros Fresh Mexican Grill — dinner_recommendations
+  - DosBros Fresh Mexican Grill — dinner_recommendations
+  - Gyros King — dinner_recommendations
+  - Gyros King — dinner_recommendations
+  - Hummus Republic — dinner_recommendations
+  - Hummus Republic — dinner_recommendations
+  - Mama's Kitchen — dinner_recommendations
+  - Mama's Kitchen — dinner_recommendations
+  - Pokemoto — dinner_recommendations
+  - Pokemoto — dinner_recommendations
+  - Sapporo — dinner_recommendations
+  - Sapporo — dinner_recommendations
+  - Top Hog BBQ — dinner_recommendations
+  - Top Hog BBQ — dinner_recommendations
+- **Lebanon, Tennessee** (5)
+  - A1 Pizza & Pasta — dinner_recommendations
+  - Angelo's Italian Restaurant — dinner_recommendations
+  - Cedar City Brewing Company — dinner_recommendations
+  - Dak Der Asian Foods — dinner_recommendations
+  - Pyramids Grill — dinner_recommendations
+- **Franklin, Tennessee** (7)
+  - 55 South — dinner_recommendations
+  - Culaccino Italian Restaurant + Bar — dinner_recommendations
+  - Culamar — dinner_recommendations
+  - House of India — dinner_recommendations
+  - Mi Kitchen — dinner_recommendations
+  - North Italia — dinner_recommendations
+  - etch — dinner_recommendations
+- **Leiper's Fork, Tennessee** (7)
+  - Amerigo Italian Restaurant — dinner_recommendations
+  - GratiDude Ranch — dinner_recommendations
+  - Hattie B’s Hot Chicken — dinner_recommendations
+  - Martin’s Bar-B-Que Joint — dinner_recommendations
+  - Sperry’s Steakhouse — dinner_recommendations
+  - Uncle Lenny’s Country Cafe — dinner_recommendations
+  - Carter House — top_attractions
+- **Asheville, North Carolina** (2)
+  - Basilica of Saint Lawrence — top_attractions
+  - Thomas Wolfe Memorial — top_attractions
