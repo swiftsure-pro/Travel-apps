@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260828T190055.131247Z
-- Generated at (UTC): 2026-08-28T19:02:55.623836+00:00
+- Run ID: 20260829T053440.510565Z
+- Generated at (UTC): 2026-08-29T05:37:37.428050+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 1
