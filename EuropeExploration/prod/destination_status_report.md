@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260829T221252.119701Z
-- Generated at (UTC): 2026-08-29T22:14:34.189870+00:00
+- Run ID: 20260829T222648.523031Z
+- Generated at (UTC): 2026-08-29T22:28:36.654686+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 1
@@ -19,40 +19,42 @@
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (31)
+## Removed for No Verified URL (33)
 - **Brussels, Belgium** (11)
-  - Beijingya — dinner_recommendations
-  - Chou Sando — dinner_recommendations
-  - Fish Tank — dinner_recommendations
-  - Friterie Tabora — dinner_recommendations
-  - Friterie de la Barrière — dinner_recommendations
-  - Fritland — dinner_recommendations
-  - Kaf Kaf — dinner_recommendations
-  - Munch — dinner_recommendations
-  - Panam — dinner_recommendations
-  - Patatak — dinner_recommendations
-  - Ratz Food Market — dinner_recommendations
-- **Amsterdam, Netherlands** (3)
-  - Broodje van Kootje — dinner_recommendations
-  - Pietersma Snacks — dinner_recommendations
-  - Jordaan District — top_attractions
+  - Beijingya — dinner_recommendations (0 candidate(s) considered)
+  - Chou Sando — dinner_recommendations (0 candidate(s) considered)
+  - Fish Tank — dinner_recommendations (0 candidate(s) considered)
+  - Friterie Tabora — dinner_recommendations (0 candidate(s) considered)
+  - Friterie de la Barrière — dinner_recommendations (0 candidate(s) considered)
+  - Fritland — dinner_recommendations (0 candidate(s) considered)
+  - Kaf Kaf — dinner_recommendations (0 candidate(s) considered)
+  - Munch — dinner_recommendations (0 candidate(s) considered)
+  - Panam — dinner_recommendations (0 candidate(s) considered)
+  - Patatak — dinner_recommendations (0 candidate(s) considered)
+  - Ratz Food Market — dinner_recommendations (0 candidate(s) considered)
+- **Amsterdam, Netherlands** (4)
+  - Broodje van Kootje — dinner_recommendations (0 candidate(s) considered)
+  - Pietersma Snacks — dinner_recommendations (0 candidate(s) considered)
+  - Dam Square — top_attractions (0 candidate(s) considered)
+  - Jordaan District — top_attractions (0 candidate(s) considered)
 - **Berlin, Germany** (2)
-  - Banh Mi Stable — dinner_recommendations
-  - Dumplings Nian — dinner_recommendations
-- **Prague, Czech Republic** (9)
-  - Banh-Mi-Ba — dinner_recommendations
-  - Doner Kebab Zizkov — dinner_recommendations
-  - Hostinec U Merendy — dinner_recommendations
-  - Manifesto Market — dinner_recommendations
-  - Mlsná labuť — dinner_recommendations
-  - Station Anděl — dinner_recommendations
-  - U Jelínků — dinner_recommendations
-  - Prague Castle — top_attractions
-  - St. Vitus Cathedral — top_attractions
+  - Banh Mi Stable — dinner_recommendations (0 candidate(s) considered)
+  - Dumplings Nian — dinner_recommendations (0 candidate(s) considered)
+- **Prague, Czech Republic** (10)
+  - Banh-Mi-Ba — dinner_recommendations (0 candidate(s) considered)
+  - Doner Kebab Zizkov — dinner_recommendations (0 candidate(s) considered)
+  - Hostinec U Merendy — dinner_recommendations (0 candidate(s) considered)
+  - Manifesto Market — dinner_recommendations (0 candidate(s) considered)
+  - Mlsná labuť — dinner_recommendations (0 candidate(s) considered)
+  - Station Anděl — dinner_recommendations (0 candidate(s) considered)
+  - U Jelínků — dinner_recommendations (0 candidate(s) considered)
+  - Charles Bridge — top_attractions (0 candidate(s) considered)
+  - Prague Castle — top_attractions (0 candidate(s) considered)
+  - St. Vitus Cathedral — top_attractions (0 candidate(s) considered)
 - **Frankfurt, Germany** (6)
-  - Bader's Fisch Deli — dinner_recommendations
-  - Bistro B — dinner_recommendations
-  - Exenberger Der Frankfurter Imbiss — dinner_recommendations
-  - Frittenwerk — dinner_recommendations
-  - Gref-Völsings Braterei — dinner_recommendations
-  - Im Biss — dinner_recommendations
+  - Bader's Fisch Deli — dinner_recommendations (0 candidate(s) considered)
+  - Exenberger Der Frankfurter Imbiss — dinner_recommendations (0 candidate(s) considered)
+  - Frittenwerk — dinner_recommendations (0 candidate(s) considered)
+  - Gref-Völsings Braterei — dinner_recommendations (0 candidate(s) considered)
+  - Im Biss — dinner_recommendations (0 candidate(s) considered)
+  - Osteria da Vinci — dinner_recommendations (0 candidate(s) considered)
