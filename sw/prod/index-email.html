@@ -19,30 +19,9 @@
 
     <link id="pwa-manifest-link" rel="manifest" href="./manifest.webmanifest" />
     <title>Southwest Road Trip — Full</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              terracotta: '#C0623E',
-              sandstone: '#F5EFE0',
-              canyon: '#8B2E0A',
-              sage: '#6B8C6B',
-              offwhite: '#FAFAF7',
-              dark: '#2C1A0E',
-              sagelt: '#e8f0e8',
-              sandlt: '#faf6ed',
-            },
-            fontFamily: {
-              display: ['Georgia', 'Cambria', 'serif'],
-              body: ['system-ui', '-apple-system', 'sans-serif'],
-            }
-          }
-        }
-      };
-    </script>
-    <script src="https://unpkg.com/lucide@latest" defer></script>
+    
+    
+    
     <style>
       :root {
         /* Driven by trip.theme_color in the manifest; html_assembler
@@ -477,8 +456,8 @@
         * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
       }
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    
 <style>
 .photo-caption {
         font-size: 0.68rem;
@@ -504,6 +483,38 @@
 @media(max-width:767px){.photo-gallery{grid-template-columns:repeat(2,1fr)!important}}
 @media(max-width:479px){.photo-gallery{grid-template-columns:1fr!important}}
 @media print{.photo-gallery{display:none}}
+</style>
+<style>
+/* Inlined for the mail-safe copy: no CDN, no script. */
+.mx-auto{margin-left:auto;margin-right:auto}
+.px-4{padding-left:1rem;padding-right:1rem}
+.py-2{padding-top:.5rem;padding-bottom:.5rem}
+.py-8{padding-top:2rem;padding-bottom:2rem}
+.flex{display:flex}
+.items-center{align-items:center}
+.items-start{align-items:flex-start}
+.justify-between{justify-content:space-between}
+.gap-2{gap:.5rem}
+.flex-shrink-0{flex-shrink:0}
+.rounded-lg{border-radius:.5rem}
+.shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.text-sm{font-size:.875rem}
+.text-3xl{font-size:1.875rem;line-height:2.25rem}
+.text-white{color:#fff}
+.bg-white{background-color:#fff}
+.text-terracotta{color:#3A5F8A}
+.bg-terracotta{background-color:#3A5F8A}
+.text-sandstone{color:#F5EFE0}
+.bg-sandstone{background-color:#F5EFE0}
+.text-canyon{color:#8B2E0A}
+.bg-canyon{background-color:#8B2E0A}
+.text-sage{color:#6B8C6B}
+.bg-sage{background-color:#6B8C6B}
+.text-offwhite{color:#FAFAF7}
+.bg-offwhite{background-color:#FAFAF7}
+.text-dark{color:#2C1A0E}
+.bg-dark{background-color:#2C1A0E}
+.bg-offwhite\/95{background-color:#FAFAF7F2}
 </style>
 </head>
 <body data-id="0" class="min-h-screen">
@@ -534,7 +545,7 @@
           <h2 data-id="13">🗺️ Route Overview</h2>
           <a href="https://www.google.com/maps/dir/?api=1&origin=Las%20Vegas%20International%20Airport&destination=Albuquerque%2C%20NM%20airport&travelmode=driving&waypoints=1819%20S%20120%20E%2C%20St.%20George%2C%20UT%2084790|176%20Zion%20Park%20Blvd%2C%20Springdale%2C%20UT%2084767|30%20N%20100%20E%2C%20Bryce%2C%20UT%2084764|2600%20UT-24%2C%20Torrey%2C%20UT%2084775|890%20North%20Main%20Street%20Moab%2C%20Utah%2C%2084532|Arches%20National%20Park|Canyonlands%20National%20Park|199%20Cornet%20Ln%2C%20Telluride%2C%20Colorado%2081435|42%20Pinon%20Causeway%2C%20Pagosa%20Springs%2C%20CO%2081147|138%20Park%20Avenue%2C%20Santa%20Fe%2C%20NM%2087501" target="_blank" rel="noopener" class="map-tab-btn">🗺️ Full Route Map</a>
         </div>
-        <div data-id="14" id="overview-map" style="height:340px;border-radius:12px;overflow:hidden;border:1.5px solid #d4c4a8;"></div>
+        <div style="padding:20px;border:1.5px dashed #d4c4a8;border-radius:12px;background:#faf6ed;text-align:center;font-size:.95rem;color:#5b4a3a;"><strong>Route map</strong><br>Interactive maps are omitted from this mail-safe copy. <a href="https://www.google.com/maps/dir/?api=1&origin=Las%20Vegas%20International%20Airport&destination=Albuquerque%2C%20NM%20airport&travelmode=driving&waypoints=1819%20S%20120%20E%2C%20St.%20George%2C%20UT%2084790|176%20Zion%20Park%20Blvd%2C%20Springdale%2C%20UT%2084767|30%20N%20100%20E%2C%20Bryce%2C%20UT%2084764|2600%20UT-24%2C%20Torrey%2C%20UT%2084775|890%20North%20Main%20Street%20Moab%2C%20Utah%2C%2084532|Arches%20National%20Park|Canyonlands%20National%20Park|199%20Cornet%20Ln%2C%20Telluride%2C%20Colorado%2081435|42%20Pinon%20Causeway%2C%20Pagosa%20Springs%2C%20CO%2081147|138%20Park%20Avenue%2C%20Santa%20Fe%2C%20NM%2087501" target="_blank" rel="noopener">Open the full route in Google Maps →</a></div>
         
       </div>
     </section>
@@ -588,15 +599,7 @@
     <div class="caption photo-caption">Chris Kofoed</div>
   </div>
 </div>
-<script>
-document.addEventListener('error', function (e) {
-  var el = e.target;
-  if (el && el.tagName === 'IMG' &&
-      String(el.className).indexOf('hide-on-error') >= 0) {
-    el.style.display = 'none';
-  }
-}, true);
-</script>
+
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
@@ -814,15 +817,7 @@ document.addEventListener('error', function (e) {
     <div class="caption photo-caption">NPS / Ally O&#x27;Rullian</div>
   </div>
 </div>
-<script>
-document.addEventListener('error', function (e) {
-  var el = e.target;
-  if (el && el.tagName === 'IMG' &&
-      String(el.className).indexOf('hide-on-error') >= 0) {
-    el.style.display = 'none';
-  }
-}, true);
-</script>
+
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
@@ -1089,15 +1084,7 @@ document.addEventListener('error', function (e) {
     <div class="caption photo-caption">Ymaup</div>
   </div>
 </div>
-<script>
-document.addEventListener('error', function (e) {
-  var el = e.target;
-  if (el && el.tagName === 'IMG' &&
-      String(el.className).indexOf('hide-on-error') >= 0) {
-    el.style.display = 'none';
-  }
-}, true);
-</script>
+
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
@@ -1490,15 +1477,7 @@ document.addEventListener('error', function (e) {
     <div class="caption photo-caption">Alyssa McLay</div>
   </div>
 </div>
-<script>
-document.addEventListener('error', function (e) {
-  var el = e.target;
-  if (el && el.tagName === 'IMG' &&
-      String(el.className).indexOf('hide-on-error') >= 0) {
-    el.style.display = 'none';
-  }
-}, true);
-</script>
+
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
@@ -1845,15 +1824,7 @@ document.addEventListener('error', function (e) {
     <div class="caption photo-caption">Andrey Grinkevich</div>
   </div>
 </div>
-<script>
-document.addEventListener('error', function (e) {
-  var el = e.target;
-  if (el && el.tagName === 'IMG' &&
-      String(el.className).indexOf('hide-on-error') >= 0) {
-    el.style.display = 'none';
-  }
-}, true);
-</script>
+
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
@@ -2225,15 +2196,7 @@ document.addEventListener('error', function (e) {
     <div class="caption photo-caption">Serena Supplee</div>
   </div>
 </div>
-<script>
-document.addEventListener('error', function (e) {
-  var el = e.target;
-  if (el && el.tagName === 'IMG' &&
-      String(el.className).indexOf('hide-on-error') >= 0) {
-    el.style.display = 'none';
-  }
-}, true);
-</script>
+
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
@@ -2295,15 +2258,7 @@ document.addEventListener('error', function (e) {
     <div class="caption photo-caption">National Park Service</div>
   </div>
 </div>
-<script>
-document.addEventListener('error', function (e) {
-  var el = e.target;
-  if (el && el.tagName === 'IMG' &&
-      String(el.className).indexOf('hide-on-error') >= 0) {
-    el.style.display = 'none';
-  }
-}, true);
-</script>
+
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
@@ -2360,15 +2315,7 @@ document.addEventListener('error', function (e) {
     <div class="caption photo-caption">Jesse Paul</div>
   </div>
 </div>
-<script>
-document.addEventListener('error', function (e) {
-  var el = e.target;
-  if (el && el.tagName === 'IMG' &&
-      String(el.className).indexOf('hide-on-error') >= 0) {
-    el.style.display = 'none';
-  }
-}, true);
-</script>
+
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
@@ -2557,15 +2504,7 @@ document.addEventListener('error', function (e) {
     <div class="caption photo-caption">Catherine</div>
   </div>
 </div>
-<script>
-document.addEventListener('error', function (e) {
-  var el = e.target;
-  if (el && el.tagName === 'IMG' &&
-      String(el.className).indexOf('hide-on-error') >= 0) {
-    el.style.display = 'none';
-  }
-}, true);
-</script>
+
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
@@ -2660,15 +2599,7 @@ document.addEventListener('error', function (e) {
     <div class="caption photo-caption">Jenny Sherman</div>
   </div>
 </div>
-<script>
-document.addEventListener('error', function (e) {
-  var el = e.target;
-  if (el && el.tagName === 'IMG' &&
-      String(el.className).indexOf('hide-on-error') >= 0) {
-    el.style.display = 'none';
-  }
-}, true);
-</script>
+
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
@@ -3008,380 +2939,11 @@ document.addEventListener('error', function (e) {
     </div>
 
     <!-- LEAFLET OVERVIEW MAP INIT -->
-    <script>
-    (function(){
-      function init(){
-        if(typeof L==='undefined'){setTimeout(init,150);return;}
-        var stops=[{"c": [36.0861034, -115.1611002], "mo": "DEP", "dy": "", "name": "Las Vegas International ", "date_label": "Oct 17", "time_label": "1:30 PM"}, {"c": [37.1098772, -113.5832063], "mo": "Oct", "dy": "17", "name": "St. George, Utah", "idx": 1, "stop_index": 1}, {"c": [37.3221673, -113.0047934], "mo": "Oct", "dy": "18", "name": "Zion", "idx": 2, "stop_index": 2}, {"c": [37.5707948, -112.1855939], "mo": "Oct", "dy": "19", "name": "Bryce Canyon", "idx": 3, "stop_index": 3}, {"c": [38.0670286, -111.1552562], "mo": "Oct", "dy": "21", "name": "Capitol Reef", "idx": 4, "stop_index": 4}, {"c": [38.5738096, -109.546214], "mo": "Oct", "dy": "22", "name": "Moab", "idx": 5, "stop_index": 5}, {"c": [37.9374939, -107.812285], "mo": "Oct", "dy": "24", "name": "Telluride", "idx": 6, "stop_index": 6}, {"c": [37.2695661, -107.010816], "mo": "Oct", "dy": "26", "name": "Pagosa Springs", "idx": 7, "stop_index": 7}, {"c": [35.6876096, -105.938456], "mo": "Oct", "dy": "27", "name": "Santa Fe", "idx": 8, "stop_index": 8}, {"c": [35.1418923, -106.8072873], "mo": "RET", "dy": "", "name": "Albuquerque, NM airport", "date_label": "Oct 29", "time_label": "2:30 PM"}];
-        var map=L.map('overview-map',{zoomControl:true,scrollWheelZoom:false});
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:13}).addTo(map);
-        L.polyline(stops.map(function(s){return s.c;}),{color:'#C0623E',weight:2.5,dashArray:'7,6',opacity:0.85}).addTo(map);
-        stops.forEach(function(s){
-          var stopIndex = s.stop_index || s.idx;
-          var idxLabel=stopIndex ? '<span class="route-marker-index">'+stopIndex+'</span>' : '';
-          var dateLabel = ((s.mo || '') + (s.dy ? (' ' + s.dy) : '')).trim();
-          if (s.date_label) { dateLabel = s.date_label; }
-          var timeLabel = (s.time_label || '').trim();
-          var markerDateSecondaryText = dateLabel;
-          if (timeLabel) {
-            markerDateSecondaryText = markerDateSecondaryText ? (markerDateSecondaryText + '<br>' + timeLabel) : timeLabel;
-          }
-          var markerDateSecondary = markerDateSecondaryText ? '<span class="route-marker-date">'+markerDateSecondaryText+'</span>' : '';
-          var icon=L.divIcon({
-            className:'',
-            html:'<div class="route-marker-wrap">'+
-              '<div class="route-marker-pin">'+
-              (stopIndex ? idxLabel : ('<span class="route-marker-month">'+(s.mo || '')+'</span>'))+
-              '</div>'+
-              '<div class="route-marker-nameplate"><span class="route-marker-title">'+s.name+'</span>'+markerDateSecondary+'</div>'+
-              '</div>',
-            iconSize:[26,50],iconAnchor:[13,13],popupAnchor:[0,-20]
-          });
-          var popupWhen = markerDateSecondaryText.replace(/<br>/g, ' ');
-          L.marker(s.c,{icon:icon}).bindPopup('<b>'+(stopIndex?stopIndex+' · ':'')+s.name+'</b><br>'+(popupWhen || ((s.mo || '') + ' ' + (s.dy || '')).trim())).addTo(map);
-        });
-        map.fitBounds(L.featureGroup(stops.map(function(s){return L.circleMarker(s.c);})).getBounds().pad(0.1));
-      }
-      init();
-    })();
-    </script>
+    
 
-    <script>
-      // ── DRIVE DESCRIPTIONS (global) ─────────────────────────────────────────
-      var DRIVE_DESCRIPTIONS = {
-  "Capitol Reef Scenic Drive": {
-    "title": "Capitol Reef Scenic Drive",
-    "category": "drive",
-    "distance_or_duration": "8 miles one-way",
-    "best_time": "Any time \u2014 the road offers good light throughout the day",
-    "description": "The Capitol Reef Scenic Drive winds through the park's main attractions, showcasing red rock formations and cliffs. Key stops include the Gifford Homestead and various pullouts for views of the cliffs. The road is paved and open year-round, but check for weather-related closures in winter. October provides clear skies and vibrant fall colors that enhance the scenery.",
-    "vehicle_requirement": "Paved \u2014 any vehicle",
-    "route_map_url": "https://www.google.com/maps/dir/?api=1&destination=Capitol%20Reef%20Scenic%20Drive%20Capitol%20Reef%20National%20Park&travelmode=driving"
-  },
-  "Potash-Lower Colorado River Road": {
-    "title": "Potash-Lower Colorado River Road",
-    "category": "drive",
-    "distance_or_duration": "18 miles one-way",
-    "best_time": "Morning for soft light on the cliffs",
-    "description": "This scenic drive follows the Colorado River, showcasing towering cliffs and unique rock formations. Key stops include the petroglyphs at the Colorado River Overlook. The road is mostly paved but can be bumpy in sections. October offers clear skies and fewer vehicles, enhancing the experience.",
-    "vehicle_requirement": "Paved \u2014 any vehicle",
-    "route_map_url": "https://www.google.com/maps/dir/?api=1&destination=Potash-Lower%20Colorado%20River%20Road%20Moab&travelmode=driving"
-  },
-  "Arches Scenic Drive": {
-    "title": "Arches Scenic Drive",
-    "category": "drive",
-    "distance_or_duration": "18 miles one-way",
-    "best_time": "Any time \u2014 the road offers great views throughout the day",
-    "description": "Arches Scenic Drive winds through the park, showcasing various rock formations and arches. Key viewpoints include Park Avenue and the Windows Section. The road is well-maintained with several pull-outs for photos. Fall brings beautiful colors to the landscape, enhancing the drive's appeal.",
-    "vehicle_requirement": "Paved \u2014 any vehicle",
-    "route_map_url": "https://www.google.com/maps/dir/?api=1&destination=Arches%20Scenic%20Drive%20Arches%20National%20Park&travelmode=driving"
-  },
-  "Telluride to Lizard Head Pass": {
-    "title": "Telluride to Lizard Head Pass",
-    "category": "day_trip",
-    "distance_or_duration": "20 miles one-way",
-    "best_time": "Any time \u2014 road offers beautiful views year-round",
-    "description": "The drive from Telluride to Lizard Head Pass features impressive mountain scenery and colorful aspen trees in the fall. Along the way, stop at viewpoints like the Lizard Head overlook for panoramic views of the San Juan Mountains. The road is well-maintained and suitable for all vehicles, though winter conditions may affect access. October showcases vibrant fall foliage, making this drive particularly beautiful.",
-    "vehicle_requirement": "Any vehicle",
-    "route_map_url": "https://www.google.com/maps/dir/?api=1&destination=Telluride%20to%20Lizard%20Head%20Pass%20Telluride&travelmode=driving"
-  },
-  "Wolf Creek Pass Scenic Drive": {
-    "title": "Wolf Creek Pass Scenic Drive",
-    "category": "drive",
-    "distance_or_duration": "17 miles one-way",
-    "best_time": "Late afternoon for alpenglow on the peaks",
-    "description": "Wolf Creek Pass is a scenic route that winds through the San Juan Mountains, showcasing impressive peaks and vibrant fall colors. Along the way, stop at overlooks to capture views of the surrounding landscape, including the Continental Divide. Be cautious of the road conditions, especially after snow or rain. October offers clear skies and fewer vehicles, enhancing the drive's tranquility.",
-    "vehicle_requirement": "Any vehicle",
-    "route_map_url": "https://www.google.com/maps/dir/?api=1&destination=Wolf%20Creek%20Pass%20Scenic%20Drive%20Pagosa%20Springs&travelmode=driving"
-  },
-  "High Road to Taos": {
-    "title": "High Road to Taos",
-    "category": "day_trip",
-    "distance_or_duration": "56 miles one-way",
-    "best_time": "Any time \u2014 enjoy autumn colors and mountain views",
-    "description": "The High Road to Taos is a scenic byway that winds through picturesque landscapes of mountains, valleys, and historic villages. Key stops include the town of Chimayo and the Truchas Peaks. This drive is paved and suitable for all vehicles. October showcases beautiful fall foliage along the route.",
-    "vehicle_requirement": "Any vehicle",
-    "url": "https://taos.org/discover/the-high-road-between-taos-and-santa-fe/",
-    "route_map_url": "https://www.google.com/maps/dir/?api=1&destination=High%20Road%20to%20Taos%20Santa%20Fe&travelmode=driving"
-  },
-  "Cerro Gordo Road Viewpoint": {
-    "title": "Cerro Gordo Road Viewpoint",
-    "category": "viewpoint",
-    "distance_or_duration": "15-min drive from town center",
-    "best_time": "Late afternoon for golden hour views",
-    "description": "Cerro Gordo Road leads to a viewpoint with sweeping vistas of the Sangre de Cristo Mountains. From here, you can see the expansive landscape and the changing colors of fall. The road is well-maintained, and parking is available at the viewpoint. The clear skies of October provide excellent visibility.",
-    "vehicle_requirement": "Any vehicle",
-    "route_map_url": "https://www.google.com/maps/dir/?api=1&destination=Cerro%20Gordo%20Road%20Viewpoint%20Santa%20Fe&travelmode=driving"
-  }
-};
+    
 
-      // ── All DOM interactions wrapped in DOMContentLoaded ─────────────────────
-      document.addEventListener('DOMContentLoaded', function () {
-
-        // Progressive icon enhancement
-        try {
-          if (typeof lucide !== 'undefined' && typeof lucide.createIcons === 'function') {
-            lucide.createIcons();
-          }
-        } catch(e) {}
-
-        // ── SCENIC DRIVE POPUP ─────────────────────────────────────────────────
-        try {
-          window.openDriveInfo = function(title) {
-            var cleanTitle = (title || '').replace(/&amp;/g, '&');
-            var desc = DRIVE_DESCRIPTIONS[cleanTitle] || DRIVE_DESCRIPTIONS[title];
-            if (!desc) { return; }
-            var modal  = document.getElementById('drive-modal');
-            var titleEl = document.getElementById('drive-modal-title');
-            var bodyEl  = document.getElementById('drive-modal-body');
-            var attributionBlock = document.getElementById('attribution-block');
-            if (!modal || !titleEl || !bodyEl) { return; }
-            titleEl.textContent = cleanTitle;
-            var meta = [];
-            if (desc.category) meta.push('<span class="badge badge-scenic">' + desc.category.replace(/_/g, ' ') + '</span>');
-            if (desc.distance_or_duration) meta.push('<span class="badge badge-duration">' + desc.distance_or_duration + '</span>');
-            var blocks = [];
-            if (meta.length) {
-              blocks.push('<div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.9rem;">' + meta.join('') + '</div>');
-            }
-            if (desc.description) {
-              blocks.push('<p style="margin:0 0 0.9rem;line-height:1.75;">' + desc.description + '</p>');
-            }
-            if (desc.best_time) {
-              blocks.push('<p style="margin:0 0 0.65rem;"><strong>Best time:</strong> ' + desc.best_time + '</p>');
-            }
-            if (desc.vehicle_requirement) {
-              blocks.push('<p style="margin:0 0 0.65rem;"><strong>Vehicle:</strong> ' + desc.vehicle_requirement + '</p>');
-            }
-            var linkParts = [];
-            // Route Map is only worth a separate link/icon when it points
-            // somewhere distinct from the "More Info" source link below --
-            // otherwise it's a redundant second link to the same place.
-            if (desc.route_map_url && desc.route_map_url !== desc.url) {
-              linkParts.push('<a href="' + desc.route_map_url + '" target="_blank" rel="noopener" class="event-link drive-route-map-link">🗺️ Route Map</a>');
-            }
-            if (desc.url) {
-              linkParts.push('<a href="' + desc.url + '" target="_blank" rel="noopener" class="event-link">More Info</a>');
-            }
-            if (linkParts.length) {
-              blocks.push('<p style="margin:0.8rem 0 0;display:flex;justify-content:flex-end;gap:0.85rem;flex-wrap:wrap;">' + linkParts.join('') + '</p>');
-            }
-            bodyEl.innerHTML  = blocks.join('');
-            modal.style.display = 'flex';
-            if (attributionBlock) {
-              attributionBlock.setAttribute('data-hidden-by-drive-modal', 'true');
-              attributionBlock.style.display = 'none';
-            }
-            document.body.style.overflow = 'hidden';
-          };
-
-          document.querySelectorAll('.drive-link').forEach(function(btn) {
-            btn.addEventListener('click', function(e) {
-              e.preventDefault();
-              window.openDriveInfo(btn.getAttribute('data-drive-title') || btn.textContent.trim());
-            });
-          });
-
-          var driveModal = document.getElementById('drive-modal');
-          var driveClose = document.getElementById('drive-modal-close');
-          function closeDrive() {
-            var attributionBlock = document.getElementById('attribution-block');
-            if (attributionBlock && attributionBlock.getAttribute('data-hidden-by-drive-modal') === 'true') {
-              attributionBlock.style.display = '';
-              attributionBlock.removeAttribute('data-hidden-by-drive-modal');
-            }
-            if (driveModal) { driveModal.style.display = 'none'; document.body.style.overflow = ''; }
-          }
-          if (driveClose) driveClose.addEventListener('click', closeDrive);
-          if (driveModal) driveModal.addEventListener('click', function(e) { if (e.target === driveModal) closeDrive(); });
-          document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeDrive(); });
-        } catch(e) { console.error('Scenic drive popup error:', e); }
-
-        // ── TAB NAVIGATION ─────────────────────────────────────────────────────
-        try {
-          var navEl = document.getElementById('tab-nav-e5f6');
-          // .group-child-card: GH #68 card-within-card hierarchy -- a grouped
-          // (day-trip) entry's content nests inside its base's .dest-section
-          // rather than getting its own top-level section, but it still needs
-          // to be considered here so its nav tab highlights correctly while
-          // scrolled into view.
-          var sections = document.querySelectorAll('.dest-section, .group-child-card');
-          var tabBtns  = document.querySelectorAll('.tab-btn[data-tab]');
-          function setActiveTab(sectionId) {
-            if (!sectionId) return;
-            tabBtns.forEach(function(b) { b.classList.toggle('active', b.dataset.tab === sectionId); });
-          }
-          function normalizeHashTarget(rawHash) {
-            var token = String(rawHash || '').replace(/^#/, '').trim();
-            if (!token) return '';
-            return token.indexOf('section-') === 0 ? token : ('section-' + token);
-          }
-          function scrollToSection(sectionId, behavior) {
-            var target = document.getElementById(sectionId);
-            if (!target) return false;
-            var navH = navEl ? navEl.offsetHeight : 64;
-            setActiveTab(sectionId);
-            window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - navH - 16, behavior: behavior || 'smooth' });
-            return true;
-          }
-          function activateHashTarget(rawHash, behavior) {
-            var sectionId = normalizeHashTarget(rawHash);
-            if (!sectionId) return false;
-            return scrollToSection(sectionId, behavior || 'auto');
-          }
-
-          tabBtns.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-              var sectionId = btn.dataset.tab;
-              if (!sectionId) return;
-              if (window.history && typeof window.history.replaceState === 'function') {
-                window.history.replaceState(null, '', '#' + sectionId.replace(/^section-/, ''));
-              } else {
-                window.location.hash = sectionId.replace(/^section-/, '');
-              }
-              scrollToSection(sectionId, 'smooth');
-            });
-          });
-
-          if (window.location.hash) {
-            activateHashTarget(window.location.hash, 'auto');
-          }
-          window.addEventListener('hashchange', function() {
-            activateHashTarget(window.location.hash, 'smooth');
-          });
-
-          // Active tab on scroll
-          var scrollTout;
-          window.addEventListener('scroll', function() {
-            if (scrollTout) return;
-            scrollTout = setTimeout(function() {
-              scrollTout = null;
-              var navH = (navEl ? navEl.offsetHeight : 64) + 32;
-              var current = '';
-              sections.forEach(function(sec) {
-                if (sec.getBoundingClientRect().top < navH + 100) current = sec.id;
-              });
-              if (current) setActiveTab(current);
-            }, 80);
-          });
-        } catch(e) { console.error('Tab nav error:', e); }
-
-        // ── DOWNLOAD / PRINT BUTTON ────────────────────────────────────────────
-        try {
-          var printBtn = document.getElementById('print-btn-a1b2');
-          if (printBtn) {
-            printBtn.addEventListener('click', function() {
-              try {
-                var blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
-                var url  = URL.createObjectURL(blob);
-                var a    = document.createElement('a');
-                a.href   = url; a.download = 'southwest-road-trip-itinerary.html';
-                document.body.appendChild(a); a.click(); document.body.removeChild(a);
-                setTimeout(function() { URL.revokeObjectURL(url); }, 1000);
-              } catch(e2) { window.print(); }
-            });
-          }
-        } catch(e) { console.error('Print button error:', e); }
-
-        // ── LEAFLET RESIZE ─────────────────────────────────────────────────────
-        try {
-          setTimeout(function() {
-            document.querySelectorAll('.leaflet-container').forEach(function(c) {
-              if (c._leaflet_map) c._leaflet_map.invalidateSize();
-            });
-          }, 400);
-        } catch(e) {}
-
-      }); // end DOMContentLoaded
-    </script>
-
-    <script>
-    (function() {
-      var manifestLink = document.getElementById('pwa-manifest-link');
-
-      // Standalone file fallback: keep the HTML self-contained when opened via file://.
-      if (manifestLink && window.location.protocol === 'file:') {
-        try {
-          var inlineManifest = {
-            name: document.title || 'Road Trip Itinerary',
-            short_name: 'Road Trip',
-            description: 'Interactive road trip itinerary',
-            start_url: './index.html',
-            scope: './',
-            display: 'standalone',
-            background_color: '#FAFAF7',
-            theme_color: '#C0623E',
-            orientation: 'portrait-primary',
-            icons: [
-              {
-                src: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='36' fill='%23C0623E'/%3E%3Ctext x='50%25' y='54%25' font-size='110' text-anchor='middle' dominant-baseline='middle'%3E%F0%9F%97%BA%EF%B8%8F%3C/text%3E%3C/svg%3E",
-                sizes: '192x192',
-                type: 'image/svg+xml',
-                purpose: 'any maskable'
-              },
-              {
-                src: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='96' fill='%23C0623E'/%3E%3Ctext x='50%25' y='54%25' font-size='300' text-anchor='middle' dominant-baseline='middle'%3E%F0%9F%97%BA%EF%B8%8F%3C/text%3E%3C/svg%3E",
-                sizes: '512x512',
-                type: 'image/svg+xml',
-                purpose: 'any maskable'
-              }
-            ]
-          };
-          var inlineBlob = new Blob([JSON.stringify(inlineManifest)], {type: 'application/manifest+json'});
-          manifestLink.href = URL.createObjectURL(inlineBlob);
-        } catch (e) {}
-      }
-
-      // Register service worker only on secure origins (https or localhost).
-      var isSecureLike =
-        window.location.protocol === 'https:' ||
-        window.location.hostname === 'localhost' ||
-        window.location.hostname === '127.0.0.1';
-
-      if (isSecureLike && 'serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js').catch(function() {});
-      }
-
-      var PWA_INSTALL_ENABLED = false;
-      var deferredPrompt = null;
-      var installBtn = document.getElementById('pwa-install-btn');
-      if (installBtn) {
-        installBtn.style.display = 'none';
-      }
-
-      window.addEventListener('beforeinstallprompt', function(e) {
-        // Always suppress the browser's own native install UI -- this app's
-        // styled button is the only install affordance, on purpose. When
-        // PWA_INSTALL_ENABLED is false that button never reveals itself
-        // either, so there is no install path left at all.
-        e.preventDefault();
-        deferredPrompt = e;
-        if (PWA_INSTALL_ENABLED && installBtn) {
-          installBtn.style.display = 'flex';
-        }
-      });
-
-      if (PWA_INSTALL_ENABLED && installBtn) {
-        installBtn.addEventListener('click', function() {
-          if (!deferredPrompt) {
-            return;
-          }
-          deferredPrompt.prompt();
-          deferredPrompt.userChoice.then(function() {
-            deferredPrompt = null;
-            installBtn.style.display = 'none';
-          });
-        });
-      }
-
-      window.addEventListener('appinstalled', function() {
-        deferredPrompt = null;
-        if (installBtn) {
-          installBtn.style.display = 'none';
-        }
-      });
-    })();
-    </script>
+    
 
 </body>
 </html>
