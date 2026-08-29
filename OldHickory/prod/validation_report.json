@@ -1,0 +1,276 @@
+{
+  "generator_version": "2.3.0",
+  "template_version": "2.5",
+  "generated_at_utc": "2026-08-29T18:15:51.199745+00:00",
+  "development_build": {
+    "fingerprint": "v2.3.0+33691d7+dirty+20260829T180934.336166Z",
+    "run_id": "20260829T180934.336166Z",
+    "generator_version": "2.3.0",
+    "template_version": "2.5",
+    "build_tag": "",
+    "git": {
+      "branch": "feat/place-id-maps-links",
+      "commit": "33691d79b0aba3d31af343e9f9fecf4be98e3a43",
+      "short_commit": "33691d7",
+      "dirty": true
+    }
+  },
+  "timestamp_utc": "2026-08-29T18:15:51.750959Z",
+  "summary": {
+    "valid": true,
+    "error_count": 0,
+    "warning_count": 7
+  },
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "models": [
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "calls": 7,
+        "prompt_tokens": 34310,
+        "completion_tokens": 13948,
+        "total_tokens": 48258,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.013514
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "calls": 12,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 12,
+        "tool_call_cost_usd": 0.012,
+        "estimated_cost_usd": 0.012
+      }
+    ],
+    "total_calls": 19,
+    "total_estimated_cost_usd": 0.025514,
+    "records": [
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:gallatin",
+        "prompt_tokens": 4857,
+        "completion_tokens": 1951,
+        "total_tokens": 6808,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001899
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:oldhickory",
+        "prompt_tokens": 5010,
+        "completion_tokens": 1899,
+        "total_tokens": 6909,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001891
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:lebanon",
+        "prompt_tokens": 4855,
+        "completion_tokens": 2051,
+        "total_tokens": 6906,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001959
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:nashville",
+        "prompt_tokens": 4860,
+        "completion_tokens": 2069,
+        "total_tokens": 6929,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.00197
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:franklin",
+        "prompt_tokens": 4851,
+        "completion_tokens": 1963,
+        "total_tokens": 6814,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001905
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:leipers_fork",
+        "prompt_tokens": 4867,
+        "completion_tokens": 2002,
+        "total_tokens": 6869,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001931
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:asheville",
+        "prompt_tokens": 5010,
+        "completion_tokens": 2013,
+        "total_tokens": 7023,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001959
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      }
+    ]
+  },
+  "errors": [],
+  "warnings": [
+    "Orphan <script> tag found inside section 'section-nashville'",
+    "Orphan <script> tag found inside section 'section-gallatin'",
+    "Orphan <script> tag found inside section 'section-lebanon'",
+    "Orphan <script> tag found inside section 'section-franklin'",
+    "Orphan <script> tag found inside section 'section-leipers_fork'",
+    "Attractions removed for no verified URL: 17 of 55 (31%) (threshold: 3)",
+    "Restaurants removed for no verified URL: 67 of 156 (43%) (threshold: 0)"
+  ],
+  "html_path": "C:\\Users\\bryan\\Documents\\Github\\PWAapps\\Travel-apps\\OldHickory\\prod\\index.html"
+}
