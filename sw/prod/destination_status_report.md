@@ -1,20 +1,19 @@
 # Destination Status Summary
 
-- Run ID: 20260829T053811.660817Z
-- Generated at (UTC): 2026-08-29T05:45:18.207057+00:00
+- Run ID: 20260829T165434.396697Z
+- Generated at (UTC): 2026-08-29T16:56:22.685380+00:00
 - Destination count: 10
-- Retry recommended: 9
-- Retry attempted: 9
+- Retry recommended: 8
+- Retry attempted: 8
 - Resolved after retry: 0
-- Unresolved after retry: 9
+- Unresolved after retry: 8
 - Not retried due to cap: 0
 
-## Needs Attention (9)
+## Needs Attention (8)
 - St. George, Utah (stgeorge) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Zion National Park (zion) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
-- Bryce Canyon National Park (bryce) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Capitol Reef National Park (capitolreef) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
-- Moab (moab) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
+- Moab (moab) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, url_acceptance_ratio_below_threshold, retry_cap_reached
 - Arches National Park (arches) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, url_acceptance_ratio_below_threshold, retry_cap_reached
 - Canyonlands National Park (canyonlands) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, url_acceptance_ratio_below_threshold, retry_cap_reached
 - Telluride (telluride) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, url_acceptance_ratio_below_threshold, retry_cap_reached
@@ -23,7 +22,7 @@
 ## All Destinations (10)
 - St. George, Utah (stgeorge) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Zion National Park (zion) — status=needs_retry, terminal=retry_cap_reached_unresolved
-- Bryce Canyon National Park (bryce) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Bryce Canyon National Park (bryce) — status=degraded, terminal=stable_without_retry
 - Capitol Reef National Park (capitolreef) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Moab (moab) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Arches National Park (arches) — status=needs_retry, terminal=retry_cap_reached_unresolved
