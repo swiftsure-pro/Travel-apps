@@ -1,31 +1,31 @@
 {
-    "updatedAt":  "2026-08-29T05:45:27.6353102Z",
-    "trips":  [
-                  {
-                      "name":  "Southwest Road Trip Itinerary",
-                      "directory":  "EuropeExploration/prod",
-                      "entry":  "EuropeExploration/prod/index.html",
-                      "description":  "Generated road-trip-generator output package in EuropeExploration/prod.",
-                      "templateVersion":  "2.5",
-                      "generatedAt":  "2026-08-29T05:37:37.454936+00:00",
-                      "validation":  {
-                                         "valid":  true,
-                                         "warningCount":  2
-                                     },
-                      "validationReport":  "EuropeExploration/prod/validation_report.json"
-                  },
-                  {
-                      "name":  "Southwest Road Trip Itinerary",
-                      "directory":  "sw/prod",
-                      "entry":  "sw/prod/index.html",
-                      "description":  "Generated road-trip-generator output package in sw/prod.",
-                      "templateVersion":  "2.5",
-                      "generatedAt":  "2026-08-29T05:45:18.245132+00:00",
-                      "validation":  {
-                                         "valid":  true,
-                                         "warningCount":  4
-                                     },
-                      "validationReport":  "sw/prod/validation_report.json"
-                  }
-              ]
+  "updatedAt": "2026-08-29T05:45:27.6353102Z",
+  "trips": [
+    {
+      "name": "Europe Exploration",
+      "directory": "EuropeExploration/prod",
+      "entry": "EuropeExploration/prod/index.html",
+      "description": "Generated road-trip-generator output package in EuropeExploration/prod.",
+      "templateVersion": "2.5",
+      "generatedAt": "2026-08-29T05:37:37.454936+00:00",
+      "validation": {
+        "valid": true,
+        "warningCount": 2
+      },
+      "validationReport": "EuropeExploration/prod/validation_report.json"
+    },
+    {
+      "name": "Southwest Road Trip",
+      "directory": "sw/prod",
+      "entry": "sw/prod/index.html",
+      "description": "Generated road-trip-generator output package in sw/prod.",
+      "templateVersion": "2.5",
+      "generatedAt": "2026-08-29T05:45:18.245132+00:00",
+      "validation": {
+        "valid": true,
+        "warningCount": 4
+      },
+      "validationReport": "sw/prod/validation_report.json"
+    }
+  ]
 }
