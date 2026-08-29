@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260829T165154.874205Z
-- Generated at (UTC): 2026-08-29T16:54:13.836080+00:00
+- Run ID: 20260829T180227.848771Z
+- Generated at (UTC): 2026-08-29T18:04:21.721100+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 1
@@ -10,7 +10,7 @@
 - Not retried due to cap: 0
 
 ## Needs Attention (1)
-- Brussels, Belgium (brussels) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, url_acceptance_ratio_below_threshold, retry_cap_reached
+- Brussels, Belgium (brussels) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
 
 ## All Destinations (5)
 - Brussels, Belgium (brussels) — status=needs_retry, terminal=retry_cap_reached_unresolved
