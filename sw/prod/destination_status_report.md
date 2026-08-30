@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260830T011925.720188Z
-- Generated at (UTC): 2026-08-30T01:21:59.448749+00:00
+- Run ID: 20260830T044636.393620Z
+- Generated at (UTC): 2026-08-30T04:51:28.154381+00:00
 - Destination count: 10
 - Retry recommended: 4
 - Retry attempted: 4
@@ -10,24 +10,24 @@
 - Not retried due to cap: 0
 
 ## Needs Attention (4)
-- Zion National Park (zion) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Capitol Reef National Park (capitolreef) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
+- Arches National Park (arches) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Canyonlands National Park (canyonlands) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Pagosa Springs (pagosa) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 
 ## All Destinations (10)
 - St. George, Utah (stgeorge) — status=degraded, terminal=stable_without_retry
-- Zion National Park (zion) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Zion National Park (zion) — status=degraded, terminal=stable_without_retry
 - Bryce Canyon National Park (bryce) — status=degraded, terminal=stable_without_retry
 - Capitol Reef National Park (capitolreef) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Moab (moab) — status=degraded, terminal=stable_without_retry
-- Arches National Park (arches) — status=degraded, terminal=stable_without_retry
+- Arches National Park (arches) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Canyonlands National Park (canyonlands) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Telluride (telluride) — status=degraded, terminal=stable_without_retry
 - Pagosa Springs (pagosa) — status=needs_retry, terminal=retry_cap_reached_unresolved
-- Santa Fe (santafe) — status=degraded, terminal=stable_without_retry
+- Santa Fe (santafe) — status=healthy, terminal=stable_without_retry
 
-## Removed for No Verified URL (40)
+## Removed for No Verified URL (33)
 - **St. George, Utah** (3)
   - Book Club Bistro — dinner_recommendations (4 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-st-george-ut
@@ -40,7 +40,7 @@
   - Social District Boutique & Bistro — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-st-george-ut
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Social+District+Boutique+Bistro+St.+George+UT
-- **Zion National Park** (5)
+- **Zion National Park** (6)
   - Dulivia Ristorante Italiano — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-springdale-zion-national-park-ut
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dulivia+Ristorante+Italiano+Springdale+UT
@@ -57,14 +57,16 @@
     - url_collision_rejected: https://www.restaurantji.com/ut/springdale/camp-outpost-co-zion-/
   - Angels Landing — top_attractions (1 candidate(s) considered)
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
+  - Zion Canyon Scenic Drive — top_attractions (2 candidate(s) considered)
+    - direct_batch_selected_authoritative: https://www.nps.gov/zion/planyourvisit/directions.htm
+    - trail_like_misclassified_attraction_batch_recovered: https://www.nps.gov/zion/planyourvisit/directions.htm
 - **Bryce Canyon National Park** (4)
-  - Fairyland Loop Trail — top_attractions (2 candidate(s) considered)
-    - direct_batch_selected_authoritative: https://www.nps.gov/brca/planyourvisit/fairyland.htm
-    - trail_like_misclassified_attraction_batch_recovered: https://www.nps.gov/brca/planyourvisit/fairyland.htm
   - Navajo Loop Trail — top_attractions (3 candidate(s) considered)
     - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/utah/navajo-loop-trail
     - direct_batch_candidate_rejected: https://www.nps.gov/brca/planyourvisit/farview-and-piracy-points.htm
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/navajotrail.htm
+  - Peek-a-boo Loop Trail — top_attractions (1 candidate(s) considered)
+    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/peekabooloop.htm
   - Queen Victoria via Queen's Garden Trail — top_attractions (1 candidate(s) considered)
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/queensgarden.htm
   - Queen's Garden Trail — top_attractions (1 candidate(s) considered)
@@ -85,11 +87,10 @@
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Hunt+and+Gather+Restaurant+599+W+Main+St+Torrey+UT
     - direct_batch_accepted: https://www.yelp.com/biz/hunt-and-gather-restaurant-torrey
   - Chimney Rock — top_attractions (0 candidate(s) considered)
-  - Gifford Homestead — top_attractions (3 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.nps.gov/care/learn/historyculture/gifford-homestead.htm
-    - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Gifford%20Homestead%20Capitol%20Reef%20National%20Park
-    - direct_batch_accepted: https://www.google.com/maps/search/?api=1&query=Gifford%20Homestead%20Capitol%20Reef%20National%20Park
-- **Moab** (8)
+  - Goosenecks Overlook — top_attractions (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.nps.gov/care
+    - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=Goosenecks%20Overlook%20Capitol%20Reef%20National%20Park
+- **Moab** (5)
   - Gloria's Corner Cafe — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.restaurantji.com/ut/moab/glorias-corner-cafe/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gloria%27s+Corner+Cafe+Main+Street+Moab+UT
@@ -109,27 +110,15 @@
   - Wrap it Up Mediterranean Food — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.restaurantji.com/ut/moab/wrap-it-up-mediterranean-food/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wrap+it+Up+Mediterranean+Food+Main+Street+Moab+UT
-  - Arches National Park — top_attractions (3 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.nps.gov/ARCH
-    - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Arches%20National%20Park
-    - direct_batch_accepted: https://www.google.com/maps/search/?api=1&query=Arches%20National%20Park
-  - Canyonlands National Park — top_attractions (3 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.nps.gov/cany
-    - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Canyonlands%20National%20Park
-    - direct_batch_accepted: https://www.google.com/maps/search/?api=1&query=Canyonlands%20National%20Park
-  - Fisher Towers — top_attractions (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.nps.gov/arch/planyourvisit/fiery-furnace-hike.htm
-    - authoritative_no_match_recovered_via_general_search: https://www.reddit.com/r/hiking/comments/1du24cp/fisher_towers_trail_moab_ut_just_outside_arches_np/
 - **Arches National Park** (1)
   - Balanced Rock — top_attractions (3 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.nps.gov/arch/index.htm
-    - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Balanced%20Rock%20Arches%20National%20Park
-    - trail_like_misclassified_attraction_batch_recovered: https://www.google.com/maps/search/?api=1&query=Balanced%20Rock%20Arches%20National%20Park
-- **Canyonlands National Park** (2)
-  - Needles District — top_attractions (0 candidate(s) considered)
+    - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=Balanced%20Rock%20Arches%20National%20Park
+    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/arch/planyourvisit/balancedrock.htm
+- **Canyonlands National Park** (1)
   - Upheaval Dome — top_attractions (1 candidate(s) considered)
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/cany/getinvolved/canyonlands-still-photography-art-instruction-conditions.htm
-- **Telluride** (9)
+- **Telluride** (6)
   - Baked in Telluride — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://5280.com/telluride-dining-guide/
   - Black Iron Kitchen + Bar — dinner_recommendations (2 candidate(s) considered)
@@ -145,22 +134,10 @@
   - The New Tunnel Supper Club — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+New+Tunnel+Supper+Club+Telluride+CO
     - url_collision_rejected: https://www.restaurantji.com/co/telluride/
-  - Bear Creek Trail — top_attractions (1 candidate(s) considered)
-    - authoritative_no_match_recovered_via_general_search: https://www.telluride.com/activity/bear-creek-falls-trail/
-  - Free Gondola — top_attractions (3 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.telluride.com/
-    - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Free%20Gondola%20Telluride
-    - direct_batch_accepted: https://www.google.com/maps/search/?api=1&query=Free%20Gondola%20Telluride
+  - Bear Creek Falls — top_attractions (1 candidate(s) considered)
+    - authoritative_no_match_recovered_via_general_search: https://vanlifebydesign.com/hiking-bear-creek-falls-trail-in-telluride-colorado/
   - Jud Wiebe Trail — top_attractions (1 candidate(s) considered)
     - authoritative_no_match_recovered_via_general_search: https://www.hikingwalking.com/destinations/co/co_sw/telluride/jud_wiebe
-  - San Miguel River Trail — top_attractions (3 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.telluride.gov/
-    - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=San%20Miguel%20River%20Trail%20Telluride
-    - trail_like_misclassified_attraction_batch_recovered: https://www.google.com/maps/search/?api=1&query=San%20Miguel%20River%20Trail%20Telluride
-  - Sheridan Opera House — top_attractions (3 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.telluride.com/
-    - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Sheridan%20Opera%20House%20Telluride
-    - direct_batch_accepted: https://www.google.com/maps/search/?api=1&query=Sheridan%20Opera%20House%20Telluride
 - **Pagosa Springs** (3)
   - Chavolos Taqueria — dinner_recommendations (4 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33584-Pagosa_Springs_Colorado.html
@@ -172,8 +149,3 @@
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=City+Hall+Cafe+Grille+Pagosa+Springs+CO
   - San Juan River Walk — top_attractions (1 candidate(s) considered)
     - authoritative_no_match_recovered_via_general_search: https://local.yahoo.com/info-19727000-san-juan-river-walk-pagosa-springs/
-- **Santa Fe** (1)
-  - Museum of Indian Arts and Culture — top_attractions (3 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://moiac.org/
-    - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Museum%20of%20Indian%20Arts%20and%20Culture%20Santa%20Fe
-    - direct_batch_accepted: https://www.google.com/maps/search/?api=1&query=Museum%20of%20Indian%20Arts%20and%20Culture%20Santa%20Fe
