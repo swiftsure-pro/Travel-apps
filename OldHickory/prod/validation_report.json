@@ -1,21 +1,21 @@
 {
   "generator_version": "2.5.0",
   "template_version": "2.5",
-  "generated_at_utc": "2026-08-30T17:43:30.961372+00:00",
+  "generated_at_utc": "2026-08-30T21:11:01.442942+00:00",
   "development_build": {
-    "fingerprint": "v2.5.0+db2b8b0+dirty+20260830T173552.466546Z",
-    "run_id": "20260830T173552.466546Z",
+    "fingerprint": "v2.5.0+0e85320+dirty+20260830T210358.182392Z",
+    "run_id": "20260830T210358.182392Z",
     "generator_version": "2.5.0",
     "template_version": "2.5",
     "build_tag": "",
     "git": {
       "branch": "feat/place-id-maps-links",
-      "commit": "db2b8b0d05c60eb520adcc68cb51d85d30aca9d6",
-      "short_commit": "db2b8b0",
+      "commit": "0e85320afa79beb5af25509ce88ca8e4f334f559",
+      "short_commit": "0e85320",
       "dirty": true
     }
   },
-  "timestamp_utc": "2026-08-30T17:43:31.329478Z",
+  "timestamp_utc": "2026-08-30T21:11:02.009734Z",
   "summary": {
     "valid": true,
     "error_count": 0,
@@ -29,159 +29,115 @@
         "provider": "grok",
         "model": "grok-4.3",
         "calls": 9,
-        "prompt_tokens": 108779,
-        "completion_tokens": 10383,
-        "total_tokens": 119162,
-        "tool_calls": 18,
-        "tool_call_cost_usd": 0.09,
-        "estimated_cost_usd": 0.251932
+        "prompt_tokens": 86322,
+        "completion_tokens": 10347,
+        "total_tokens": 96669,
+        "tool_calls": 12,
+        "tool_call_cost_usd": 0.06,
+        "estimated_cost_usd": 0.19377
       },
       {
         "provider": "serper",
         "model": "serper",
-        "calls": 80,
+        "calls": 58,
         "prompt_tokens": 0,
         "completion_tokens": 0,
         "total_tokens": 0,
-        "tool_calls": 80,
-        "tool_call_cost_usd": 0.08,
-        "estimated_cost_usd": 0.08
+        "tool_calls": 58,
+        "tool_call_cost_usd": 0.058,
+        "estimated_cost_usd": 0.058
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "calls": 16,
-        "prompt_tokens": 64046,
-        "completion_tokens": 17090,
-        "total_tokens": 81136,
+        "prompt_tokens": 63063,
+        "completion_tokens": 16400,
+        "total_tokens": 79463,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.019861
+        "estimated_cost_usd": 0.019298
       }
     ],
-    "total_calls": 105,
-    "total_estimated_cost_usd": 0.351793,
+    "total_calls": 83,
+    "total_estimated_cost_usd": 0.271068,
     "records": [
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:oldhickory",
         "prompt_tokens": 5010,
-        "completion_tokens": 1902,
-        "total_tokens": 6912,
+        "completion_tokens": 1733,
+        "total_tokens": 6743,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001893
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "destination_bundle:gallatin",
-        "prompt_tokens": 4857,
-        "completion_tokens": 2039,
-        "total_tokens": 6896,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001952
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "destination_bundle:nashville",
-        "prompt_tokens": 4860,
-        "completion_tokens": 2057,
-        "total_tokens": 6917,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001963
+        "estimated_cost_usd": 0.001791
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:lebanon",
         "prompt_tokens": 4855,
-        "completion_tokens": 1939,
-        "total_tokens": 6794,
+        "completion_tokens": 1845,
+        "total_tokens": 6700,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001892
+        "estimated_cost_usd": 0.001835
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:gallatin",
+        "prompt_tokens": 4857,
+        "completion_tokens": 1944,
+        "total_tokens": 6801,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001895
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:nashville",
+        "prompt_tokens": 4860,
+        "completion_tokens": 2016,
+        "total_tokens": 6876,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.001939
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:franklin",
         "prompt_tokens": 4851,
-        "completion_tokens": 2098,
-        "total_tokens": 6949,
+        "completion_tokens": 1869,
+        "total_tokens": 6720,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001986
+        "estimated_cost_usd": 0.001849
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:leipers_fork",
         "prompt_tokens": 4867,
-        "completion_tokens": 1938,
-        "total_tokens": 6805,
+        "completion_tokens": 1984,
+        "total_tokens": 6851,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001893
+        "estimated_cost_usd": 0.00192
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:asheville",
         "prompt_tokens": 5010,
-        "completion_tokens": 2312,
-        "total_tokens": 7322,
+        "completion_tokens": 2206,
+        "total_tokens": 7216,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.002139
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "estimated_cost_usd": 0.002075
       },
       {
         "provider": "serper",
@@ -275,177 +231,67 @@
         "provider": "grok",
         "model": "grok-4.3",
         "operation": "cultural_events:search",
-        "prompt_tokens": 15147,
-        "completion_tokens": 1100,
-        "total_tokens": 16247,
-        "tool_calls": 3,
-        "tool_call_cost_usd": 0.015,
-        "estimated_cost_usd": 0.036684
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 16934,
-        "completion_tokens": 1067,
-        "total_tokens": 18001,
-        "tool_calls": 3,
-        "tool_call_cost_usd": 0.015,
-        "estimated_cost_usd": 0.038835
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 7846,
-        "completion_tokens": 1303,
-        "total_tokens": 9149,
+        "prompt_tokens": 7532,
+        "completion_tokens": 960,
+        "total_tokens": 8492,
         "tool_calls": 1,
         "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.018065
+        "estimated_cost_usd": 0.016815
       },
       {
         "provider": "grok",
         "model": "grok-4.3",
         "operation": "cultural_events:search",
-        "prompt_tokens": 18257,
-        "completion_tokens": 1278,
-        "total_tokens": 19535,
-        "tool_calls": 3,
-        "tool_call_cost_usd": 0.015,
-        "estimated_cost_usd": 0.041016
+        "prompt_tokens": 7507,
+        "completion_tokens": 1225,
+        "total_tokens": 8732,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.017446
       },
       {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 7602,
+        "completion_tokens": 1073,
+        "total_tokens": 8675,
         "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.017185
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Old Hickory, Tennessee",
-        "prompt_tokens": 3146,
-        "completion_tokens": 122,
-        "total_tokens": 3268,
+        "prompt_tokens": 3039,
+        "completion_tokens": 136,
+        "total_tokens": 3175,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000545
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "estimated_cost_usd": 0.000537
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Gallatin, Tennessee",
-        "prompt_tokens": 3289,
-        "completion_tokens": 152,
-        "total_tokens": 3441,
+        "prompt_tokens": 3111,
+        "completion_tokens": 164,
+        "total_tokens": 3275,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000585
+        "estimated_cost_usd": 0.000565
       },
       {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 7906,
+        "completion_tokens": 1364,
+        "total_tokens": 9270,
         "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "cultural_events:Lebanon, Tennessee",
-        "prompt_tokens": 3331,
-        "completion_tokens": 399,
-        "total_tokens": 3730,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000739
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.018292
       },
       {
         "provider": "serper",
@@ -484,12 +330,12 @@
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Nashville, Tennessee",
-        "prompt_tokens": 3298,
-        "completion_tokens": 717,
-        "total_tokens": 4015,
+        "prompt_tokens": 3213,
+        "completion_tokens": 519,
+        "total_tokens": 3732,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000925
+        "estimated_cost_usd": 0.000793
       },
       {
         "provider": "serper",
@@ -503,37 +349,15 @@
         "estimated_cost_usd": 0.001
       },
       {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "cultural_events:Lebanon, Tennessee",
+        "prompt_tokens": 3255,
+        "completion_tokens": 379,
+        "total_tokens": 3634,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.000716
       },
       {
         "provider": "serper",
@@ -605,45 +429,56 @@
         "provider": "grok",
         "model": "grok-4.3",
         "operation": "cultural_events:search",
-        "prompt_tokens": 7363,
-        "completion_tokens": 1070,
-        "total_tokens": 8433,
+        "prompt_tokens": 17596,
+        "completion_tokens": 1407,
+        "total_tokens": 19003,
+        "tool_calls": 3,
+        "tool_call_cost_usd": 0.015,
+        "estimated_cost_usd": 0.040513
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 8130,
+        "completion_tokens": 1092,
+        "total_tokens": 9222,
         "tool_calls": 1,
         "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.016879
+        "estimated_cost_usd": 0.017892
       },
       {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 7291,
+        "completion_tokens": 1408,
+        "total_tokens": 8699,
         "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.017634
       },
       {
         "provider": "serper",
@@ -671,144 +506,67 @@
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Franklin, Tennessee",
-        "prompt_tokens": 3349,
-        "completion_tokens": 283,
-        "total_tokens": 3632,
+        "prompt_tokens": 3376,
+        "completion_tokens": 481,
+        "total_tokens": 3857,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000672
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 7197,
-        "completion_tokens": 1523,
-        "total_tokens": 8720,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.017804
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 8174,
-        "completion_tokens": 1022,
-        "total_tokens": 9196,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.017773
+        "estimated_cost_usd": 0.000795
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Leiper's Fork, Tennessee",
-        "prompt_tokens": 3726,
-        "completion_tokens": 282,
-        "total_tokens": 4008,
+        "prompt_tokens": 3338,
+        "completion_tokens": 256,
+        "total_tokens": 3594,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000728
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "estimated_cost_usd": 0.000654
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Asheville, North Carolina",
-        "prompt_tokens": 3274,
-        "completion_tokens": 372,
-        "total_tokens": 3646,
+        "prompt_tokens": 3296,
+        "completion_tokens": 475,
+        "total_tokens": 3771,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000714
+        "estimated_cost_usd": 0.000779
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
       },
       {
         "provider": "serper",
@@ -1177,45 +935,45 @@
         "provider": "grok",
         "model": "grok-4.3",
         "operation": "cultural_events:search",
-        "prompt_tokens": 12804,
-        "completion_tokens": 968,
-        "total_tokens": 13772,
+        "prompt_tokens": 9812,
+        "completion_tokens": 853,
+        "total_tokens": 10665,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.019398
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 12946,
+        "completion_tokens": 965,
+        "total_tokens": 13911,
         "tool_calls": 2,
         "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.028425
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 15057,
-        "completion_tokens": 1052,
-        "total_tokens": 16109,
-        "tool_calls": 3,
-        "tool_call_cost_usd": 0.015,
-        "estimated_cost_usd": 0.036451
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "cultural_events:Old Hickory, Tennessee",
-        "prompt_tokens": 3184,
-        "completion_tokens": 124,
-        "total_tokens": 3308,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000552
+        "estimated_cost_usd": 0.028595
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Gallatin, Tennessee",
-        "prompt_tokens": 3139,
-        "completion_tokens": 354,
-        "total_tokens": 3493,
+        "prompt_tokens": 3104,
+        "completion_tokens": 264,
+        "total_tokens": 3368,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000683
+        "estimated_cost_usd": 0.000624
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "cultural_events:Old Hickory, Tennessee",
+        "prompt_tokens": 3021,
+        "completion_tokens": 129,
+        "total_tokens": 3150,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.000531
       }
     ]
   },
@@ -1226,8 +984,8 @@
     "Orphan <script> tag found inside section 'section-lebanon'",
     "Orphan <script> tag found inside section 'section-franklin'",
     "Orphan <script> tag found inside section 'section-leipers_fork'",
-    "Restaurants removed for no verified URL: 43 of 133 (32%) (threshold: 0)",
-    "En-route stops removed for no verified URL: 7 of 41 (17%) (threshold: 2)"
+    "Restaurants removed for no verified URL: 45 of 132 (34%) (threshold: 0)",
+    "En-route stops removed for no verified URL: 8 of 41 (20%) (threshold: 2)"
   ],
   "html_path": "C:\\Users\\bryan\\Documents\\Github\\PWAapps\\Travel-apps\\OldHickory\\prod\\index.html"
 }
