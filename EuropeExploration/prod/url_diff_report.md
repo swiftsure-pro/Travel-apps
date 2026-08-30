@@ -1,14 +1,45 @@
 # URL Diff Report
 
-- Run ID: 20260830T191436.475751Z
-- Generated at (UTC): 2026-08-30T19:16:38.488024+00:00
-- Baseline URLs: 236
-- Current URLs: 232
-- Kept: 211
-- Added: 21
-- Removed: 25
+- Run ID: 20260830T221721.729482Z
+- Generated at (UTC): 2026-08-30T22:19:02.418523+00:00
+- Baseline URLs: 232
+- Current URLs: 235
+- Kept: 206
+- Added: 29
+- Removed: 26
 
-## Added URLs (21)
+## Added URLs (29)
+- https://cafedesspores.be/en
+- https://www.9-hotel-chelton-brussels.be/en/collection/parc-du-cinquantenaire.15907.html
+- https://www.berlin.de/en/attractions-and-sights/3560059-3104052-checkpoint-charlie.en.html
+- https://www.brussel.be/manneken-pis
+- https://www.cafelouvre.cz/en
+- https://www.goethehaus-frankfurt.de/
+- https://www.google.com/maps/dir/?origin=Brandenburg%20Gate%20Berlin%2C%20Germany&amp;destination=Charlottenburg%20Palace%20Berlin%2C%20Germany&amp;travelmode=driving&amp;api=1&amp;waypoints=Museum%20Island%20Berlin%2C%20Germany|Checkpoint%20Charlie%20Berlin%2C%20Germany|Berlin%20Cathedral|Reichstag%20Building%20Berlin%2C%20Germany|East%20Side%20Gallery%20Berlin%2C%20Germany
+- https://www.google.com/maps/dir/?origin=Grand%20Place%20Brussels%2C%20Belgium&amp;destination=Cathedral%20of%20St.%20Michael%20and%20St.%20Gudula&amp;travelmode=driving&amp;api=1&amp;waypoints=Atomium%20Brussels%2C%20Belgium|Parc%20du%20Cinquantenaire%20Brussels%2C%20Belgium|Manneken%20Pis%20Brussels%2C%20Belgium|Sablon%20Neighborhood%20Brussels%2C%20Belgium
+- https://www.google.com/maps/dir/?origin=Prague%20Castle&amp;destination=Clementinum%20Prague%2C%20Czech%20Republic&amp;travelmode=driving&amp;api=1&amp;waypoints=Charles%20Bridge%20Prague%2C%20Czech%20Republic|Old%20Town%20Square%20Prague%2C%20Czech%20Republic|John%20Lennon%20Wall%20Prague%2C%20Czech%20Republic|St.%20Vitus%20Cathedral|Jewish%20Quarter%20Prague%2C%20Czech%20Republic
+- https://www.google.com/maps/dir/?origin=St%C3%A4del%20Museum%20Frankfurt%2C%20Germany&amp;destination=Frankfurt%20Cathedral&amp;travelmode=driving&amp;api=1&amp;waypoints=R%C3%B6mer%20Frankfurt%2C%20Germany|Palmengarten%20Frankfurt%2C%20Germany|Main%20Tower%20Frankfurt%2C%20Germany|Goethe%20House%20Frankfurt%2C%20Germany
+- https://www.google.com/maps/dir/?origin=Van%20Gogh%20Museum%20Amsterdam%2C%20Netherlands&amp;destination=Jordaan%20District%20Amsterdam%2C%20Netherlands&amp;travelmode=driving&amp;api=1&amp;waypoints=Rijksmuseum%20Amsterdam%2C%20Netherlands|Vondelpark%20Amsterdam%2C%20Netherlands|Dam%20Square%20Amsterdam%2C%20Netherlands|Canal%20Ring%20Amsterdam%2C%20Netherlands|Anne%20Frank%20House%20Amsterdam%2C%20Netherlands|Begijnhof%20Amsterdam%2C%20Netherlands
+- https://www.google.com/maps/place/?q=place_id:ChIJ0T1eGXnEw0cRH8GwIKZAuBc
+- https://www.google.com/maps/place/?q=place_id:ChIJ3fi1iOOUC0cR__Q9EXbH-kc
+- https://www.google.com/maps/place/?q=place_id:ChIJX1tyKaTEw0cRWjLH8frzAq8
+- https://www.google.com/maps/place/?q=place_id:ChIJhZzm1agOvUcR7Y5yl_dViYc
+- https://www.google.com/maps/place/?q=place_id:ChIJj5XMEO6UC0cRSdD6zoOKd3k
+- https://www.google.com/maps/place/?q=place_id:ChIJtSmst1zEw0cR3fngE41fBPE
+- https://www.google.com/maps/place/?q=place_id:ChIJxfLE2UUJvUcR5WlJbp2M1D0
+- https://www.google.com/maps/place/?q=place_id:ChIJxygTgAYJxkcR__xeHKA6tbg
+- https://www.google.com/maps/place/?q=place_id:ChIJzdgmXNFRqEcRyIl9R0IApSM
+- https://www.google.com/maps/search/?api=1&amp;query=Amsterdam%20Fringe%20Festival%20Various%20venues%2C%20Amsterdam
+- https://www.google.com/maps/search/?api=1&amp;query=Amsterdam%20Tattoo%20Convention
+- https://www.google.com/maps/search/?api=1&amp;query=Berlin%20Beer%20Week%20Various%20venues%20in%20Berlin
+- https://www.google.com/maps/search/?api=1&amp;query=Concert%20by%20The%20Black%20Keys%20Ziggo%20Dome%2C%20Amsterdam
+- https://www.google.com/maps/search/?api=1&amp;query=Czech%20Design%20Week%20Prague
+- https://www.google.com/maps/search/?api=1&amp;query=Musikfest%20Berlin%20Philharmonie%20Berlin
+- https://www.google.com/maps/search/?api=1&amp;query=Nederlands%20Theater%20Festival%20Various%20venues%2C%20Amsterdam
+- https://www.palmengarten.de/
+- https://www.prague.eu/en/object/places/456/john-lennon-wall
+
+## Removed URLs (26)
 - https://beerweek.de/
 - https://cafeleffebxl.wixsite.com/cafleffebruxelles
 - https://muziekpublique.be/
@@ -21,44 +52,22 @@
 - https://www.google.com/maps/dir/?origin=St%C3%A4del%20Museum%20Frankfurt%2C%20Germany&amp;destination=Frankfurt%20Cathedral&amp;travelmode=driving&amp;api=1&amp;waypoints=R%C3%B6mer%20Frankfurt%2C%20Germany|Main%20Tower%20Frankfurt%2C%20Germany|Kleinmarkthalle%20Frankfurt%2C%20Germany
 - https://www.google.com/maps/dir/?origin=Van%20Gogh%20Museum%20Amsterdam%2C%20Netherlands&amp;destination=Jordaan%20District%20Amsterdam%2C%20Netherlands&amp;travelmode=driving&amp;api=1&amp;waypoints=Rijksmuseum%20Amsterdam%2C%20Netherlands|Dam%20Square%20Amsterdam%2C%20Netherlands|Anne%20Frank%20House%20Amsterdam%2C%20Netherlands|Vondelpark%20Amsterdam%2C%20Netherlands|Canal%20Ring%20Amsterdam%2C%20Netherlands|Begijnhof%20Amsterdam%2C%20Netherlands
 - https://www.google.com/maps/place/?q=place_id:ChIJ4clK53rEw0cRedyFK8jjvrM
+- https://www.google.com/maps/place/?q=place_id:ChIJD8eGiscJxkcREF1OddAutQ4
 - https://www.google.com/maps/place/?q=place_id:ChIJL8LeE_uUC0cRj_E1IjqlnKc
+- https://www.google.com/maps/place/?q=place_id:ChIJPy5ap2CUC0cRj8VQ-1VCcM8
+- https://www.google.com/maps/place/?q=place_id:ChIJW2oZB8ZRqEcRyFvuEpCnNBQ
 - https://www.google.com/maps/place/?q=place_id:ChIJdU_LOXzEw0cRh2Oj6STu_So
 - https://www.google.com/maps/place/?q=place_id:ChIJpfmOTNuUC0cR2dltacHD1JI
-- https://www.google.com/maps/place/?q=place_id:ChIJvY1PLFYJxkcRkJnvoum_9fI
+- https://www.google.com/maps/place/?q=place_id:ChIJrS4zTP2UC0cRMI7zhXJrRX0
 - https://www.google.com/maps/search/?api=1&amp;query=Czech%20Design%20Week%20Various%20locations%20in%20Prague
-- https://www.google.com/maps/search/?api=1&amp;query=Herbst-Dippemess%20Frankfurt%20am%20Main
-- https://www.maploco.com/top-attractions/amsterdam/canal-ring/
+- https://www.maploco.com/top-attractions/prague/petrin-tower/
 - https://www.pelago.com/en-US/brussels/mont-des-arts-c1933/
 - https://www.prague.eu/en/object/places/letna-park
+- https://www.praha-vysehrad.cz/en/
+- https://www.ricksteves.com/watch-read-listen/read/articles/exploring-frankfurt-germanys-hub
+- https://www.stiftung-denkmal.de/en/
 
-## Removed URLs (25)
-- http://www.dauth-schneider.de/reservierung/
-- https://dotonmap.com/netherlands/amsterdam/westerkerk-church-amsterdam-netherlands/
-- https://www.brasseriedelapatinoire.be/en/
-- https://www.brussel.be/manneken-pis
-- https://www.cafelouvre.cz/en
-- https://www.google.com/maps/dir/?origin=Brandenburg%20Gate%20Berlin%2C%20Germany&amp;destination=Berlin%20Cathedral&amp;travelmode=driving&amp;api=1&amp;waypoints=Tiergarten%20Berlin%2C%20Germany|Reichstag%20Building%20Berlin%2C%20Germany|Museum%20Island%20Berlin%2C%20Germany|East%20Side%20Gallery%20Berlin%2C%20Germany|Charlottenburg%20Palace%20Berlin%2C%20Germany|Memorial%20to%20the%20Murdered%20Jews%20of%20Europe%20Berlin%2C%20Germany
-- https://www.google.com/maps/dir/?origin=Grand%20Place%20Brussels%2C%20Belgium&amp;destination=Cathedral%20of%20St.%20Michael%20and%20St.%20Gudula&amp;travelmode=driving&amp;api=1&amp;waypoints=Manneken%20Pis%20Brussels%2C%20Belgium|Atomium%20Brussels%2C%20Belgium|Sablon%20Neighborhood%20Brussels%2C%20Belgium
-- https://www.google.com/maps/dir/?origin=Prague%20Castle&amp;destination=Jewish%20Quarter%20Prague%2C%20Czech%20Republic&amp;travelmode=driving&amp;api=1&amp;waypoints=Charles%20Bridge%20Prague%2C%20Czech%20Republic|Vy%C5%A1ehrad%20Prague%2C%20Czech%20Republic|The%20Lennon%20Wall%20Prague%2C%20Czech%20Republic|Old%20Town%20Square%20Prague%2C%20Czech%20Republic|Petrin%20Hill%20Prague%2C%20Czech%20Republic|St.%20Vitus%20Cathedral
-- https://www.google.com/maps/dir/?origin=St%C3%A4del%20Museum%20Frankfurt%2C%20Germany&amp;destination=Frankfurt%20Cathedral&amp;travelmode=driving&amp;api=1&amp;waypoints=R%C3%B6mer%20Frankfurt%2C%20Germany|Palmengarten%20Frankfurt%2C%20Germany|Main%20Tower%20Frankfurt%2C%20Germany|Kleinmarkthalle%20Frankfurt%2C%20Germany
-- https://www.google.com/maps/dir/?origin=Van%20Gogh%20Museum%20Amsterdam%2C%20Netherlands&amp;destination=Royal%20Palace%20Amsterdam&amp;travelmode=driving&amp;api=1&amp;waypoints=Rijksmuseum%20Amsterdam%2C%20Netherlands|Vondelpark%20Amsterdam%2C%20Netherlands|Jordaan%20District%20Amsterdam%2C%20Netherlands|Dam%20Square%20Amsterdam%2C%20Netherlands|Anne%20Frank%20House%20Amsterdam%2C%20Netherlands|Begijnhof%20Amsterdam%2C%20Netherlands
-- https://www.google.com/maps/place/?q=place_id:ChIJ0T1eGXnEw0cRH8GwIKZAuBc
-- https://www.google.com/maps/place/?q=place_id:ChIJ3fi1iOOUC0cR__Q9EXbH-kc
-- https://www.google.com/maps/place/?q=place_id:ChIJMepasa0OvUcRp__BVFHau_s
-- https://www.google.com/maps/place/?q=place_id:ChIJRyLpxB8MvUcRdPPOGnQ98TY
-- https://www.google.com/maps/place/?q=place_id:ChIJiwmwKghRqEcR0KtfW0YgIQU
-- https://www.google.com/maps/place/?q=place_id:ChIJj5XMEO6UC0cRSdD6zoOKd3k
-- https://www.google.com/maps/place/?q=place_id:ChIJkyv4z8QJxkcR9FqUIxss0SM
-- https://www.google.com/maps/place/?q=place_id:ChIJw7p7JOTEw0cRF3CiKjAYHD0
-- https://www.google.com/maps/place/?q=place_id:ChIJxfLE2UUJvUcR5WlJbp2M1D0
-- https://www.google.com/maps/search/?api=1&amp;query=Amsterdam%20Fringe%20Festival
-- https://www.google.com/maps/search/?api=1&amp;query=Czech%20Design%20Week%20Various%20venues%20in%20Prague
-- https://www.meyer-frankfurt.de/meyers
-- https://www.palmengarten.de/
-- https://www.prague.eu/en/object/places/456/john-lennon-wall
-- https://www.visitberlin.de/en/tiergarten
-
-## Kept URLs (211)
+## Kept URLs (206)
 - http://www.hamycafe.com/
 - https://atomium.be/atomium_symbol_of_Brussels_and_Belgium
 - https://bestpragueguide.com/en/blog/prague-street-food-guide
@@ -135,7 +144,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJAUkra-2UC0cRP7cdMe_GPYA
 - https://www.google.com/maps/place/?q=place_id:ChIJB--3EpjEw0cRtJVRgZTn3rk
 - https://www.google.com/maps/place/?q=place_id:ChIJBw_qnX3Ew0cRN2tVwNKCFtI
-- https://www.google.com/maps/place/?q=place_id:ChIJD8eGiscJxkcREF1OddAutQ4
 - https://www.google.com/maps/place/?q=place_id:ChIJDdV0fsUJxkcREOh_Cj5402o
 - https://www.google.com/maps/place/?q=place_id:ChIJDyA_WoQOvUcRq7Wx-dngHrg
 - https://www.google.com/maps/place/?q=place_id:ChIJE7Y_vvIJxkcRUackzxkbH9c
@@ -151,7 +159,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJNR07WY7Ew0cRF49Qm5zq5hg
 - https://www.google.com/maps/place/?q=place_id:ChIJNUIyNe-UC0cRnw1-EJKuNLI
 - https://www.google.com/maps/place/?q=place_id:ChIJPV2_VPPEw0cR5g_1l2laQg8
-- https://www.google.com/maps/place/?q=place_id:ChIJPy5ap2CUC0cRj8VQ-1VCcM8
 - https://www.google.com/maps/place/?q=place_id:ChIJQbQJ_BfjxUcRyZRpk_kLnxE
 - https://www.google.com/maps/place/?q=place_id:ChIJS6_t9aZHqEcRGCiRSnvpm94
 - https://www.google.com/maps/place/?q=place_id:ChIJS9HC895RqEcR_IovsNVoDng
@@ -159,7 +166,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJTXM54rYOvUcRANo0pB0rs3Q
 - https://www.google.com/maps/place/?q=place_id:ChIJV17joLkJxkcRgQKMgy3Mzb4
 - https://www.google.com/maps/place/?q=place_id:ChIJW08COB6VC0cRoonZ8lA4rWk
-- https://www.google.com/maps/place/?q=place_id:ChIJW2oZB8ZRqEcRyFvuEpCnNBQ
 - https://www.google.com/maps/place/?q=place_id:ChIJW8FgycEJxkcRImIYQha8SXI
 - https://www.google.com/maps/place/?q=place_id:ChIJX0usKIcPvUcRex4ytC72h58
 - https://www.google.com/maps/place/?q=place_id:ChIJX1rTlu8JxkcRGsV8-a4oKMI
@@ -190,7 +196,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJo7fTu6UOvUcR_KeTxloUC20
 - https://www.google.com/maps/place/?q=place_id:ChIJp4lD2X6TC0cR0ZPuVv5IUDc
 - https://www.google.com/maps/place/?q=place_id:ChIJr1QfPl0JvUcRPHq5y2vfbYw
-- https://www.google.com/maps/place/?q=place_id:ChIJrS4zTP2UC0cRMI7zhXJrRX0
 - https://www.google.com/maps/place/?q=place_id:ChIJrSyqfzVOqEcRQ744P0jTJDY
 - https://www.google.com/maps/place/?q=place_id:ChIJrftMriIJxkcRmsYdm9XycFA
 - https://www.google.com/maps/place/?q=place_id:ChIJrxrOultOqEcRKoSUsxzVYLg
@@ -204,6 +209,7 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJuaL1EFYJvUcR3PdzHzTmeMg
 - https://www.google.com/maps/place/?q=place_id:ChIJubD2-rdPqEcRK2K6TI9YJMk
 - https://www.google.com/maps/place/?q=place_id:ChIJvTZ4_3_Dw0cRzSOE0556hYQ
+- https://www.google.com/maps/place/?q=place_id:ChIJvY1PLFYJxkcRkJnvoum_9fI
 - https://www.google.com/maps/place/?q=place_id:ChIJvaZWgElOqEcRElWjL2P9AZg
 - https://www.google.com/maps/place/?q=place_id:ChIJw7ckbB6VC0cRnyUSr4g8zyo
 - https://www.google.com/maps/place/?q=place_id:ChIJw9qjgPb2w0cRAMHNlnylTU4
@@ -214,6 +220,7 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJyaf_HylQqEcRBNsfZFxr-IQ
 - https://www.google.com/maps/place/?q=place_id:ChIJz1QQDqYOvUcRIg-vuOMzHW8
 - https://www.google.com/maps/place/?q=place_id:ChIJz3y0xeIJxkcRNcogBVV41Gw
+- https://www.google.com/maps/search/?api=1&amp;query=Herbst-Dippemess%20Frankfurt%20am%20Main
 - https://www.helloprague.net/best-restaurants-prague-where-locals-eat/
 - https://www.hetvondelpark.net/
 - https://www.jewishmuseum.cz/en/
@@ -221,17 +228,15 @@
 - https://www.konnopke-imbiss.de/en
 - https://www.maintower.de/
 - https://www.mannekenpis.nl/
+- https://www.maploco.com/top-attractions/amsterdam/canal-ring/
 - https://www.maploco.com/top-attractions/amsterdam/dam-square/
-- https://www.maploco.com/top-attractions/prague/petrin-tower/
 - https://www.nomadicmick.com/cheap-restaurants-in-prague/
 - https://www.paleisamsterdam.nl/en
 - https://www.pancake.nl/
 - https://www.petitfute.com/v40163-bruxelles-brussel/actualite/m17-top-10-insolites-voyage/a45955-ou-manger-les-meilleures-frites-a-bruxelles-nos-spots-preferes.html
 - https://www.prague.eu/en/object/places/453/old-town-square-staromestske-namesti
 - https://www.prague.eu/en/object/places/455/charles-bridge-karluv-most
-- https://www.praha-vysehrad.cz/en/
 - https://www.realpragueguides.com/blog/prague-cheap-eats-2025-budget-travelers-guide
-- https://www.ricksteves.com/watch-read-listen/read/articles/exploring-frankfurt-germanys-hub
 - https://www.rijksmuseum.nl/en
 - https://www.roopramroti.nl/
 - https://www.skek.nl/
@@ -240,7 +245,6 @@
 - https://www.spsg.de/en/palaces-gardens/object/charlottenburg-palace-old-palace/
 - https://www.staedelmuseum.de/en/
 - https://www.stiftung-berliner-mauer.de/en/east-side-gallery/
-- https://www.stiftung-denkmal.de/en/
 - https://www.stubbes.nl/
 - https://www.theinfatuation.com/berlin/perfect-for/cheap-eats
 - https://www.tripadvisor.com/Restaurant_Review-g187323-d0123456-Reviews-Vedang_Green_Burger-Berlin.html

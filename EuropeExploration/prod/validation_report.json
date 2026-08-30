@@ -1,21 +1,21 @@
 {
   "generator_version": "2.5.0",
   "template_version": "2.5",
-  "generated_at_utc": "2026-08-30T19:16:38.045890+00:00",
+  "generated_at_utc": "2026-08-30T22:19:02.080429+00:00",
   "development_build": {
-    "fingerprint": "v2.5.0+7b3f3b0+dirty+20260830T191436.475751Z",
-    "run_id": "20260830T191436.475751Z",
+    "fingerprint": "v2.5.0+682e5fd+dirty+20260830T221721.729482Z",
+    "run_id": "20260830T221721.729482Z",
     "generator_version": "2.5.0",
     "template_version": "2.5",
     "build_tag": "",
     "git": {
       "branch": "feat/place-id-maps-links",
-      "commit": "7b3f3b0cbf43b926e3a70e2bfe23cc884e76923b",
-      "short_commit": "7b3f3b0",
+      "commit": "682e5fd72214b207dae446478bcd5c476504c58e",
+      "short_commit": "682e5fd",
       "dirty": true
     }
   },
-  "timestamp_utc": "2026-08-30T19:16:38.565329Z",
+  "timestamp_utc": "2026-08-30T22:19:02.462635Z",
   "summary": {
     "valid": true,
     "error_count": 0,
@@ -29,159 +29,93 @@
         "provider": "grok",
         "model": "grok-4.3",
         "calls": 6,
-        "prompt_tokens": 88851,
-        "completion_tokens": 7640,
-        "total_tokens": 96491,
-        "tool_calls": 12,
-        "tool_call_cost_usd": 0.06,
-        "estimated_cost_usd": 0.190164
+        "prompt_tokens": 84894,
+        "completion_tokens": 7409,
+        "total_tokens": 92303,
+        "tool_calls": 11,
+        "tool_call_cost_usd": 0.055,
+        "estimated_cost_usd": 0.17964
       },
       {
         "provider": "serper",
         "model": "serper",
-        "calls": 26,
+        "calls": 23,
         "prompt_tokens": 0,
         "completion_tokens": 0,
         "total_tokens": 0,
-        "tool_calls": 26,
-        "tool_call_cost_usd": 0.026,
-        "estimated_cost_usd": 0.026
+        "tool_calls": 23,
+        "tool_call_cost_usd": 0.023,
+        "estimated_cost_usd": 0.023
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "calls": 11,
-        "prompt_tokens": 45109,
-        "completion_tokens": 12184,
-        "total_tokens": 57293,
+        "prompt_tokens": 44679,
+        "completion_tokens": 11730,
+        "total_tokens": 56409,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.014077
+        "estimated_cost_usd": 0.01374
       }
     ],
-    "total_calls": 43,
-    "total_estimated_cost_usd": 0.230241,
+    "total_calls": 40,
+    "total_estimated_cost_usd": 0.21638,
     "records": [
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:brussels",
         "prompt_tokens": 4907,
-        "completion_tokens": 1723,
-        "total_tokens": 6630,
+        "completion_tokens": 1552,
+        "total_tokens": 6459,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.00177
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "destination_bundle:prague",
-        "prompt_tokens": 4874,
-        "completion_tokens": 2029,
-        "total_tokens": 6903,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001948
+        "estimated_cost_usd": 0.001667
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:berlin",
         "prompt_tokens": 4873,
-        "completion_tokens": 2026,
-        "total_tokens": 6899,
+        "completion_tokens": 1795,
+        "total_tokens": 6668,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001947
+        "estimated_cost_usd": 0.001808
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "destination_bundle:prague",
+        "prompt_tokens": 4874,
+        "completion_tokens": 1831,
+        "total_tokens": 6705,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.00183
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:amsterdam",
         "prompt_tokens": 4870,
-        "completion_tokens": 2325,
-        "total_tokens": 7195,
+        "completion_tokens": 2186,
+        "total_tokens": 7056,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.002125
+        "estimated_cost_usd": 0.002042
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "destination_bundle:frankfurt",
         "prompt_tokens": 4897,
-        "completion_tokens": 1670,
-        "total_tokens": 6567,
+        "completion_tokens": 1828,
+        "total_tokens": 6725,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.001737
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "estimated_cost_usd": 0.001831
       },
       {
         "provider": "serper",
@@ -286,78 +220,111 @@
         "provider": "grok",
         "model": "grok-4.3",
         "operation": "cultural_events:search",
-        "prompt_tokens": 19671,
-        "completion_tokens": 1351,
-        "total_tokens": 21022,
-        "tool_calls": 3,
-        "tool_call_cost_usd": 0.015,
-        "estimated_cost_usd": 0.042966
+        "prompt_tokens": 14030,
+        "completion_tokens": 1173,
+        "total_tokens": 15203,
+        "tool_calls": 2,
+        "tool_call_cost_usd": 0.01,
+        "estimated_cost_usd": 0.03047
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
       },
       {
         "provider": "grok",
         "model": "grok-4.3",
         "operation": "cultural_events:search",
-        "prompt_tokens": 11101,
-        "completion_tokens": 1224,
-        "total_tokens": 12325,
+        "prompt_tokens": 13966,
+        "completion_tokens": 1252,
+        "total_tokens": 15218,
+        "tool_calls": 2,
+        "tool_call_cost_usd": 0.01,
+        "estimated_cost_usd": 0.030588
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 14229,
+        "completion_tokens": 1044,
+        "total_tokens": 15273,
+        "tool_calls": 2,
+        "tool_call_cost_usd": 0.01,
+        "estimated_cost_usd": 0.030396
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 11243,
+        "completion_tokens": 1119,
+        "total_tokens": 12362,
         "tool_calls": 1,
         "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.021936
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 21042,
-        "completion_tokens": 1282,
-        "total_tokens": 22324,
-        "tool_calls": 3,
-        "tool_call_cost_usd": 0.015,
-        "estimated_cost_usd": 0.044508
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 8070,
-        "completion_tokens": 1367,
-        "total_tokens": 9437,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.018505
+        "estimated_cost_usd": 0.021851
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Brussels, Belgium",
-        "prompt_tokens": 3367,
-        "completion_tokens": 220,
-        "total_tokens": 3587,
+        "prompt_tokens": 3301,
+        "completion_tokens": 394,
+        "total_tokens": 3695,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000637
+        "estimated_cost_usd": 0.000732
       },
       {
         "provider": "serper",
@@ -369,6 +336,28 @@
         "tool_calls": 1,
         "tool_call_cost_usd": 0.001,
         "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "cultural_events:Berlin, Germany",
+        "prompt_tokens": 3442,
+        "completion_tokens": 600,
+        "total_tokens": 4042,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.000876
+      },
+      {
+        "provider": "openai",
+        "model": "gpt-4o-mini-2024-07-18",
+        "operation": "cultural_events:Prague, Czech Republic",
+        "prompt_tokens": 3370,
+        "completion_tokens": 406,
+        "total_tokens": 3776,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.000749
       },
       {
         "provider": "serper",
@@ -396,23 +385,12 @@
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Amsterdam, Netherlands",
-        "prompt_tokens": 3475,
-        "completion_tokens": 476,
-        "total_tokens": 3951,
+        "prompt_tokens": 3234,
+        "completion_tokens": 439,
+        "total_tokens": 3673,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000807
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "cultural_events:Prague, Czech Republic",
-        "prompt_tokens": 3588,
-        "completion_tokens": 343,
-        "total_tokens": 3931,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000744
+        "estimated_cost_usd": 0.000749
       },
       {
         "provider": "serper",
@@ -435,17 +413,6 @@
         "tool_calls": 1,
         "tool_call_cost_usd": 0.001,
         "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "openai",
-        "model": "gpt-4o-mini-2024-07-18",
-        "operation": "cultural_events:Berlin, Germany",
-        "prompt_tokens": 3495,
-        "completion_tokens": 589,
-        "total_tokens": 4084,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000878
       },
       {
         "provider": "serper",
@@ -495,45 +462,45 @@
         "provider": "grok",
         "model": "grok-4.3",
         "operation": "cultural_events:search",
-        "prompt_tokens": 15186,
-        "completion_tokens": 1221,
-        "total_tokens": 16407,
+        "prompt_tokens": 15029,
+        "completion_tokens": 1556,
+        "total_tokens": 16585,
         "tool_calls": 2,
         "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.032035
+        "estimated_cost_usd": 0.032676
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Frankfurt, Germany",
-        "prompt_tokens": 3475,
-        "completion_tokens": 392,
-        "total_tokens": 3867,
+        "prompt_tokens": 3504,
+        "completion_tokens": 310,
+        "total_tokens": 3814,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000756
+        "estimated_cost_usd": 0.000712
       },
       {
         "provider": "grok",
         "model": "grok-4.3",
         "operation": "cultural_events:search",
-        "prompt_tokens": 13781,
-        "completion_tokens": 1195,
-        "total_tokens": 14976,
+        "prompt_tokens": 16397,
+        "completion_tokens": 1265,
+        "total_tokens": 17662,
         "tool_calls": 2,
         "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.030214
+        "estimated_cost_usd": 0.033659
       },
       {
         "provider": "openai",
         "model": "gpt-4o-mini-2024-07-18",
         "operation": "cultural_events:Brussels, Belgium",
-        "prompt_tokens": 3288,
-        "completion_tokens": 391,
-        "total_tokens": 3679,
+        "prompt_tokens": 3407,
+        "completion_tokens": 389,
+        "total_tokens": 3796,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.000728
+        "estimated_cost_usd": 0.000744
       }
     ]
   },

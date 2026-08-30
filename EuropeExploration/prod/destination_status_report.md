@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260830T191436.475751Z
-- Generated at (UTC): 2026-08-30T19:16:38.007571+00:00
+- Run ID: 20260830T221721.729482Z
+- Generated at (UTC): 2026-08-30T22:19:02.048388+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 1
@@ -19,7 +19,7 @@
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (30)
+## Removed for No Verified URL (31)
 - **Brussels, Belgium** (11)
   - Beijingya — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Beijingya+Rue+Melsens+Brussels
@@ -86,8 +86,12 @@
   - Dumplings Nian — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dumplings+Nian+Berlin+Germany
     - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
-  - Tiergarten — top_attractions (0 candidate(s) considered)
-- **Prague, Czech Republic** (7)
+  - Tiergarten Park — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.facebook.com/iamcuriousdon/posts/-tiergarten-park-berlin-germany-exploring-the-lush-beauty-of-tiergarten-park-ber/122149458044170560/
+    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/iamcuriousdon/posts/-tiergarten-park-berlin-germany-exploring-the-lush-beauty-of-tiergarten-park-ber/122149458044170560/
+    - audit_discarded_previously_accepted_url: https://www.facebook.com/iamcuriousdon/posts/-tiergarten-park-berlin-germany-exploring-the-lush-beauty-of-tiergarten-park-ber/122149458044170560/
+      [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
+- **Prague, Czech Republic** (9)
   - Banh-Mi-Ba — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh-Mi-Ba+Rybná+26+Prague
     - url_collision_rejected: https://budgettraveller.org/best-cheap-eats-prague-guide/
@@ -113,11 +117,16 @@
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=U+Rozvařilů+Na+Poříčí+1068/23+Prague
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mlsná+labuť+Palladium+Prague
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Antonínovo+Pekařství+Laubova+1689/4+Žižkov+Prague
-- **Frankfurt, Germany** (7)
+  - Petrin Hill — top_attractions (0 candidate(s) considered)
+  - Vyšehrad — top_attractions (0 candidate(s) considered)
+- **Frankfurt, Germany** (6)
   - Bader's Fisch Deli — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bader%27s+Fisch+Deli+Leipziger+Stra%C3%9Fe+Frankfurt
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-  - Ditsch Brezel — dinner_recommendations (0 candidate(s) considered)
+  - Die Kuh die lacht — dinner_recommendations (5 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g187337-d13195780-Reviews-or60-Five_Guys-Frankfurt_Hesse.html
+    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g187337-d13195780-Reviews-or60-Five_Guys-Frankfurt_Hesse.html
+    - search_resolved: https://www.yelp.com/biz/die-kuh-die-lacht-frankfurt-am-main
   - Exenberger Der Frankfurter Imbiss — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
   - Frittenwerk — dinner_recommendations (2 candidate(s) considered)
@@ -131,4 +140,3 @@
     - direct_batch_candidate_rejected_generic: https://en.tripadvisor.com/Restaurants-g187337-zfp16-Frankfurt_Hesse.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Alims+Fischimbiss+Frankfurt+Germany
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Im+Biss+Frankfurt+Germany
-  - Palmengarten — top_attractions (0 candidate(s) considered)
