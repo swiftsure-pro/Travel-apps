@@ -1,15 +1,16 @@
 # Destination Status Summary
 
-- Run ID: 20260830T180118.185005Z
-- Generated at (UTC): 2026-08-30T18:04:37.451942+00:00
+- Run ID: 20260830T191700.162369Z
+- Generated at (UTC): 2026-08-30T19:20:38.213396+00:00
 - Destination count: 10
-- Retry recommended: 4
-- Retry attempted: 4
+- Retry recommended: 5
+- Retry attempted: 5
 - Resolved after retry: 0
-- Unresolved after retry: 4
+- Unresolved after retry: 5
 - Not retried due to cap: 0
 
-## Needs Attention (4)
+## Needs Attention (5)
+- Zion National Park (zion) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Capitol Reef National Park (capitolreef) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Arches National Park (arches) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Canyonlands National Park (canyonlands) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
@@ -17,7 +18,7 @@
 
 ## All Destinations (10)
 - St. George, Utah (stgeorge) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/4, en_route_exhaustion_or_no_match=0
-- Zion National Park (zion) — status=degraded, terminal=stable_without_retry, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
+- Zion National Park (zion) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
 - Bryce Canyon National Park (bryce) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/6, en_route_exhaustion_or_no_match=0
 - Capitol Reef National Park (capitolreef) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=2/8, en_route_exhaustion_or_no_match=0
 - Moab (moab) — status=degraded, terminal=stable_without_retry, en_route_resolved=6/7, en_route_exhaustion_or_no_match=0
@@ -28,7 +29,7 @@
 - Santa Fe (santafe) — status=healthy, terminal=stable_without_retry, en_route_resolved=5/8, en_route_exhaustion_or_no_match=0
 
 ## Removed for No Verified URL (35)
-- **St. George, Utah** (4)
+- **St. George, Utah** (3)
   - Book Club Bistro — dinner_recommendations (7 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-st-george-ut
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Book+Club+Bistro+St.+George+UT
@@ -39,8 +40,7 @@
   - Social District Boutique & Bistro — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-st-george-ut
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Social+District+Boutique+Bistro+St.+George+UT
-  - The Granary — dinner_recommendations (0 candidate(s) considered)
-- **Zion National Park** (4)
+- **Zion National Park** (8)
   - Dulivia Ristorante Italiano — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-springdale-zion-national-park-ut
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dulivia+Ristorante+Italiano+Springdale+UT
@@ -55,7 +55,34 @@
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g61001-Springdale_Utah.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Zion+Canyon+Brew+Pub+95+Zion+Park+Blvd+Springdale+UT
     - url_collision_rejected: https://www.restaurantji.com/ut/springdale/camp-outpost-co-zion-/
-- **Bryce Canyon National Park** (4)
+  - Babylon Arch Trail (Red Cliffs NCA) — en_route_stops (6 candidate(s) considered)
+    - direct_batch_existing_url_preserved: https://www.zionadventurephotog.com/single-post/red-cliffs-national-conservation-area
+    - discovery_completed: https://www.zionadventurephotog.com/single-post/red-cliffs-national-conservation-area
+    - en_route_resolved_to_maps: https://www.google.com/maps/search/?api=1&query=37.2063561%2C-113.3299537
+    - direct_batch_existing_url_preserved: https://www.google.com/maps/search/?api=1&query=Babylon%20Arch%20Trail%20%28Red%20Cliffs%20NCA%29%20Zion%20National%20Park
+    - discovery_completed: https://www.google.com/maps/search/?api=1&query=Babylon%20Arch%20Trail%20%28Red%20Cliffs%20NCA%29%20Zion%20National%20Park
+    - en_route_resolved_to_maps: https://www.google.com/maps/search/?api=1&query=Babylon%20Arch%20Trail%20%28Red%20Cliffs%20NCA%29%20Zion%20National%20Park
+  - Quail Creek State Park — en_route_stops (10 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.zionriverresort.com/off-the-beaten-path-visit-grafton-ghost-town/
+    - direct_batch_candidate_rejected: https://www.zionadventurephotog.com/single-post/a-guide-to-visiting-hurricane-ut
+    - direct_batch_candidate_rejected: https://www.zionadventurephotog.com/single-post/red-cliffs-national-conservation-area
+    - direct_batch_candidate_rejected: https://www.visitutah.com/places-to-go/cities-and-towns/la-verkin
+    - direct_batch_selected_authoritative: https://stateparks.utah.gov/parks/quail-creek/
+    - discovery_completed: https://stateparks.utah.gov/parks/quail-creek/
+  - Red Reef Trail (Red Cliffs NCA) — en_route_stops (9 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.zionriverresort.com/off-the-beaten-path-visit-grafton-ghost-town/
+    - direct_batch_candidate_rejected: https://www.zionadventurephotog.com/single-post/a-guide-to-visiting-hurricane-ut
+    - direct_batch_candidate_rejected: https://www.zionadventurephotog.com/single-post/red-cliffs-national-conservation-area
+    - direct_batch_candidate_rejected: https://nsbfoundation.com/nb/zion-scenic-byway/
+    - direct_batch_candidate_rejected: https://www.visitutah.com/places-to-go/cities-and-towns/la-verkin
+  - Angels Landing — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
+    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
+    - search_cache_hit: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
+- **Bryce Canyon National Park** (5)
+  - Fairyland Loop Trail — top_attractions (2 candidate(s) considered)
+    - direct_batch_selected_authoritative: https://www.nps.gov/brca/planyourvisit/fairyland.htm
+    - trail_like_misclassified_attraction_batch_recovered: https://www.nps.gov/brca/planyourvisit/fairyland.htm
   - Inspiration Point — top_attractions (4 candidate(s) considered)
     - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/utah/inspiration-point-trail
     - direct_batch_selected_authoritative: https://www.nps.gov/places/000/inspiration-point-viewpoint.htm
@@ -65,14 +92,17 @@
     - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/utah/navajo-loop-trail
     - search_cache_hit: https://www.alltrails.com/trail/us/utah/rim-navajo-loop-and-peekaboo-loop-trail
     - direct_batch_candidate_rejected: https://www.nps.gov/brca/planyourvisit/farview-and-piracy-points.htm
-  - Peek-a-boo Loop Trail — top_attractions (2 candidate(s) considered)
-    - search_resolved: https://www.nps.gov/brca/planyourvisit/peekabooloop.htm
-    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/peekabooloop.htm
+  - Queen Victoria via Queen's Garden Trail — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.nps.gov/brca/planyourvisit/queensgarden.htm
+    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/queensgarden.htm
+    - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/utah/queen-victoria-via-queens-garden-loop
+      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name):')]
   - Queen's Garden Trail — top_attractions (3 candidate(s) considered)
     - search_resolved: https://www.nps.gov/brca/learn/nature/brycepaintbrush.htm
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/learn/nature/brycepaintbrush.htm
     - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/utah/queen-victoria-via-queens-garden-loop
-- **Capitol Reef National Park** (6)
+      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name):')]
+- **Capitol Reef National Park** (3)
   - Capitol Burger — dinner_recommendations (9 candidate(s) considered)
     - direct_batch_existing_url_preserved: https://www.tripadvisor.com/Restaurant_Review-g60758-d15199067-Reviews-Capitol_Burger-Torrey_Utah.html
     - direct_batch_existing_url_preserved: https://www.yelp.com/biz/capitol-burger-torrey
@@ -87,22 +117,7 @@
     - official_site_upgrade_rejected_name_mismatch: https://visitournationalparks.com/national-park/capitol-reef-national-park/where-to-eat/hunt-gather-restaurant/
     - search_cache_hit: https://visitournationalparks.com/national-park/capitol-reef-national-park/where-to-eat/hunt-gather-restaurant/
     - secondary_maps_link_attached_maps_place_id: https://www.google.com/maps/place/?q=place_id:ChIJEbKsK5o_SocRcwiQJo9WiFU
-  - Escalante Petrified Forest State Park — en_route_stops (11 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.fs.usda.gov/r04/dixie/recreation/red-canyon-visitor-center
-    - direct_batch_candidate_rejected: https://www.nps.gov/thingstodo/mossy-cave-trail.htm
-    - direct_batch_candidate_rejected: https://www.blm.gov/visit/calf-creek-recreation-area
-    - direct_batch_candidate_rejected: https://www.blm.gov/programs/recreation/recreation-areas/grand-staircase-escalante-national-monument
-    - direct_batch_candidate_rejected: https://kivakoffeehouse.com/
-  - Kodachrome Basin State Park — en_route_stops (11 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.fs.usda.gov/r04/dixie/recreation/red-canyon-visitor-center
-    - direct_batch_candidate_rejected: https://www.nps.gov/thingstodo/mossy-cave-trail.htm
-    - direct_batch_candidate_rejected: https://www.blm.gov/visit/calf-creek-recreation-area
-    - direct_batch_candidate_rejected: https://www.blm.gov/programs/recreation/recreation-areas/grand-staircase-escalante-national-monument
-    - direct_batch_candidate_rejected: https://kivakoffeehouse.com/
   - Chimney Rock — top_attractions (0 candidate(s) considered)
-  - Goosenecks Overlook — top_attractions (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.nps.gov/care
-    - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=Goosenecks%20Overlook%20Capitol%20Reef%20National%20Park
 - **Moab** (6)
   - Gloria's Corner Cafe — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.restaurantji.com/ut/moab/glorias-corner-cafe/
@@ -123,21 +138,25 @@
   - Wrap it Up Mediterranean Food — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.restaurantji.com/ut/moab/wrap-it-up-mediterranean-food/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wrap+it+Up+Mediterranean+Food+Main+Street+Moab+UT
-  - Fisher Towers — top_attractions (3 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.nps.gov/arch/planyourvisit/fiery-furnace-hike.htm
-    - search_resolved: https://www.reddit.com/r/hiking/comments/1du24cp/fisher_towers_trail_moab_ut_just_outside_arches_np/
-    - authoritative_no_match_recovered_via_general_search: https://www.reddit.com/r/hiking/comments/1du24cp/fisher_towers_trail_moab_ut_just_outside_arches_np/
+  - Fins & Things Trail — top_attractions (6 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.visitutah.com/places-to-go/cities-and-towns/moab/things-to-do/potash-lower-colorado-river-scenic-byway
+    - direct_batch_candidate_rejected: https://www.moabadventurecenter.com/things-to-do-in-moab
+    - direct_batch_candidate_rejected: https://www.visitutah.com/places-to-go/cities-and-towns/moab/things-to-do
+    - direct_batch_selected_authoritative: https://madelinemarquardt.com/best-things-to-do-moab/
+    - trail_like_misclassified_attraction_batch_recovered: https://madelinemarquardt.com/best-things-to-do-moab/
 - **Canyonlands National Park** (2)
-  - Shafer Trail — top_attractions (3 candidate(s) considered)
-    - direct_batch_selected_authoritative: https://www.nps.gov/cany/planyourvisit/islandinthesky.htm
-    - trail_like_misclassified_attraction_batch_recovered: https://www.nps.gov/cany/planyourvisit/islandinthesky.htm
-    - audit_discarded_previously_accepted_url: https://www.nps.gov/cany/planyourvisit/islandinthesky.htm
+  - Upheaval Dome — top_attractions (4 candidate(s) considered)
+    - search_resolved: https://www.nps.gov/cany/getinvolved/canyonlands-still-photography-art-instruction-conditions.htm
+    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/cany/getinvolved/canyonlands-still-photography-art-instruction-conditions.htm
+    - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/utah/upheaval-dome-via-crater-view-trail
+      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name):')]
   - White Rim Road — top_attractions (4 candidate(s) considered)
     - search_resolved: https://www.nps.gov/cany/
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/cany/
     - audit_discarded_previously_accepted_url: https://www.nps.gov/cany/
+      [retention exit (17, ')')]
     - search_cache_hit: https://www.nps.gov/cany/
-- **Telluride** (6)
+- **Telluride** (5)
   - Baked in Telluride — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://5280.com/telluride-dining-guide/
   - Black Iron Kitchen + Bar — dinner_recommendations (2 candidate(s) considered)
@@ -153,10 +172,6 @@
   - The New Tunnel Supper Club — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+New+Tunnel+Supper+Club+Telluride+CO
     - url_collision_rejected: https://www.restaurantji.com/co/telluride/
-  - Jud Wiebe Trail — top_attractions (3 candidate(s) considered)
-    - search_resolved: https://www.hikingwalking.com/destinations/co/co_sw/telluride/jud_wiebe
-    - authoritative_no_match_recovered_via_general_search: https://www.hikingwalking.com/destinations/co/co_sw/telluride/jud_wiebe
-    - audit_discarded_previously_accepted_url: https://www.hikingwalking.com/destinations/co/co_sw/telluride/jud_wiebe
   - San Miguel River Trail — top_attractions (5 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.telluride.gov/
     - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=San%20Miguel%20River%20Trail%20Telluride
@@ -174,3 +189,4 @@
     - search_resolved: https://local.yahoo.com/info-19727000-san-juan-river-walk-pagosa-springs/
     - authoritative_no_match_recovered_via_general_search: https://local.yahoo.com/info-19727000-san-juan-river-walk-pagosa-springs/
     - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/colorado/san-juan-riverwalk
+      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name):')]
