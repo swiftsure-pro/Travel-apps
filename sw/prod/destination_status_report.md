@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260830T191700.162369Z
-- Generated at (UTC): 2026-08-30T19:20:38.213396+00:00
+- Run ID: 20260830T192755.438619Z
+- Generated at (UTC): 2026-08-30T19:31:37.417710+00:00
 - Destination count: 10
 - Retry recommended: 5
 - Retry attempted: 5
@@ -26,7 +26,7 @@
 - Canyonlands National Park (canyonlands) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=1/6, en_route_exhaustion_or_no_match=0
 - Telluride (telluride) — status=degraded, terminal=stable_without_retry, en_route_resolved=6/6, en_route_exhaustion_or_no_match=0
 - Pagosa Springs (pagosa) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=2/3, en_route_exhaustion_or_no_match=0
-- Santa Fe (santafe) — status=healthy, terminal=stable_without_retry, en_route_resolved=5/8, en_route_exhaustion_or_no_match=0
+- Santa Fe (santafe) — status=degraded, terminal=stable_without_retry, en_route_resolved=4/8, en_route_exhaustion_or_no_match=0
 
 ## Removed for No Verified URL (35)
 - **St. George, Utah** (3)
@@ -80,9 +80,6 @@
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
     - search_cache_hit: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
 - **Bryce Canyon National Park** (5)
-  - Fairyland Loop Trail — top_attractions (2 candidate(s) considered)
-    - direct_batch_selected_authoritative: https://www.nps.gov/brca/planyourvisit/fairyland.htm
-    - trail_like_misclassified_attraction_batch_recovered: https://www.nps.gov/brca/planyourvisit/fairyland.htm
   - Inspiration Point — top_attractions (4 candidate(s) considered)
     - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/utah/inspiration-point-trail
     - direct_batch_selected_authoritative: https://www.nps.gov/places/000/inspiration-point-viewpoint.htm
@@ -92,16 +89,19 @@
     - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/utah/navajo-loop-trail
     - search_cache_hit: https://www.alltrails.com/trail/us/utah/rim-navajo-loop-and-peekaboo-loop-trail
     - direct_batch_candidate_rejected: https://www.nps.gov/brca/planyourvisit/farview-and-piracy-points.htm
-  - Queen Victoria via Queen's Garden Trail — top_attractions (3 candidate(s) considered)
-    - search_resolved: https://www.nps.gov/brca/planyourvisit/queensgarden.htm
-    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/queensgarden.htm
-    - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/utah/queen-victoria-via-queens-garden-loop
-      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name):')]
+  - Peek-a-boo Loop Trail — top_attractions (2 candidate(s) considered)
+    - search_resolved: https://www.nps.gov/brca/planyourvisit/peekabooloop.htm
+    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/peekabooloop.htm
   - Queen's Garden Trail — top_attractions (3 candidate(s) considered)
     - search_resolved: https://www.nps.gov/brca/learn/nature/brycepaintbrush.htm
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/learn/nature/brycepaintbrush.htm
     - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/utah/queen-victoria-via-queens-garden-loop
-      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name):')]
+      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name)')]
+  - Queens Garden Trail — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.nps.gov/brca/planyourvisit/queensgarden.htm
+    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/queensgarden.htm
+    - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/utah/queen-victoria-via-queens-garden-loop
+      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name)')]
 - **Capitol Reef National Park** (3)
   - Capitol Burger — dinner_recommendations (9 candidate(s) considered)
     - direct_batch_existing_url_preserved: https://www.tripadvisor.com/Restaurant_Review-g60758-d15199067-Reviews-Capitol_Burger-Torrey_Utah.html
@@ -117,8 +117,12 @@
     - official_site_upgrade_rejected_name_mismatch: https://visitournationalparks.com/national-park/capitol-reef-national-park/where-to-eat/hunt-gather-restaurant/
     - search_cache_hit: https://visitournationalparks.com/national-park/capitol-reef-national-park/where-to-eat/hunt-gather-restaurant/
     - secondary_maps_link_attached_maps_place_id: https://www.google.com/maps/place/?q=place_id:ChIJEbKsK5o_SocRcwiQJo9WiFU
-  - Chimney Rock — top_attractions (0 candidate(s) considered)
-- **Moab** (6)
+  - Cohab Canyon Trail — top_attractions (4 candidate(s) considered)
+    - search_resolved: https://www.nps.gov/care/learn/nature/cacti.htm
+    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/care/learn/nature/cacti.htm
+    - audit_discarded_previously_accepted_url: https://www.nps.gov/care/learn/nature/cacti.htm
+      [retention exit not recorded]
+- **Moab** (5)
   - Gloria's Corner Cafe — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.restaurantji.com/ut/moab/glorias-corner-cafe/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gloria%27s+Corner+Cafe+Main+Street+Moab+UT
@@ -138,25 +142,18 @@
   - Wrap it Up Mediterranean Food — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.restaurantji.com/ut/moab/wrap-it-up-mediterranean-food/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wrap+it+Up+Mediterranean+Food+Main+Street+Moab+UT
-  - Fins & Things Trail — top_attractions (6 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.visitutah.com/places-to-go/cities-and-towns/moab/things-to-do/potash-lower-colorado-river-scenic-byway
-    - direct_batch_candidate_rejected: https://www.moabadventurecenter.com/things-to-do-in-moab
-    - direct_batch_candidate_rejected: https://www.visitutah.com/places-to-go/cities-and-towns/moab/things-to-do
-    - direct_batch_selected_authoritative: https://madelinemarquardt.com/best-things-to-do-moab/
-    - trail_like_misclassified_attraction_batch_recovered: https://madelinemarquardt.com/best-things-to-do-moab/
 - **Canyonlands National Park** (2)
   - Upheaval Dome — top_attractions (4 candidate(s) considered)
     - search_resolved: https://www.nps.gov/cany/getinvolved/canyonlands-still-photography-art-instruction-conditions.htm
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/cany/getinvolved/canyonlands-still-photography-art-instruction-conditions.htm
     - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/utah/upheaval-dome-via-crater-view-trail
-      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name):')]
+      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name)')]
   - White Rim Road — top_attractions (4 candidate(s) considered)
     - search_resolved: https://www.nps.gov/cany/
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/cany/
     - audit_discarded_previously_accepted_url: https://www.nps.gov/cany/
-      [retention exit (17, ')')]
-    - search_cache_hit: https://www.nps.gov/cany/
-- **Telluride** (5)
+      [retention exit (17, 'if not self._looks_like_item_specific_homepage(url, item_name)')]
+- **Telluride** (6)
   - Baked in Telluride — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://5280.com/telluride-dining-guide/
   - Black Iron Kitchen + Bar — dinner_recommendations (2 candidate(s) considered)
@@ -172,6 +169,11 @@
   - The New Tunnel Supper Club — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+New+Tunnel+Supper+Club+Telluride+CO
     - url_collision_rejected: https://www.restaurantji.com/co/telluride/
+  - Jud Wiebe Trail — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.hikingwalking.com/destinations/co/co_sw/telluride/jud_wiebe
+    - authoritative_no_match_recovered_via_general_search: https://www.hikingwalking.com/destinations/co/co_sw/telluride/jud_wiebe
+    - audit_discarded_previously_accepted_url: https://www.hikingwalking.com/destinations/co/co_sw/telluride/jud_wiebe
+      [retention exit not recorded]
   - San Miguel River Trail — top_attractions (5 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.telluride.gov/
     - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=San%20Miguel%20River%20Trail%20Telluride
@@ -189,4 +191,4 @@
     - search_resolved: https://local.yahoo.com/info-19727000-san-juan-river-walk-pagosa-springs/
     - authoritative_no_match_recovered_via_general_search: https://local.yahoo.com/info-19727000-san-juan-river-walk-pagosa-springs/
     - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/colorado/san-juan-riverwalk
-      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name):')]
+      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name)')]
