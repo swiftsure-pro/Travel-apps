@@ -1,93 +1,95 @@
 # URL Diff Report
 
-- Run ID: 20260830T192755.438619Z
-- Generated at (UTC): 2026-08-30T19:31:38.095196+00:00
-- Baseline URLs: 448
-- Current URLs: 443
-- Kept: 408
-- Added: 35
-- Removed: 40
+- Run ID: 20260830T213847.510712Z
+- Generated at (UTC): 2026-08-30T21:41:56.970691+00:00
+- Baseline URLs: 443
+- Current URLs: 442
+- Kept: 404
+- Added: 38
+- Removed: 39
 
-## Added URLs (35)
-- https://benjathai.com/contact-us/
+## Added URLs (38)
+- https://events.greaterzion.com/event/tuacahn-saturday-market-2026-227/
+- https://wheelchairtraveling.com/pioneer-park-st-george-utah-wheelchair-travel-tips/
+- https://www.alltrails.com/trail/us/utah/chuckwalla-trail
+- https://www.alltrails.com/trail/us/utah/double-arch-trail
+- https://www.alltrails.com/trail/us/utah/grand-wash-trail-via-northeast-trailhead
+- https://www.alltrails.com/trail/us/utah/the-narrows-top-down
+- https://www.google.com/maps/dir/?destination=2600%20UT-24%2C%20Torrey%2C%20UT%2084775&travelmode=driving&api=1&origin=30%20N%20100%20E%2C%20Bryce%2C%20UT%2084764&waypoints=37.6642312%2C-112.1141035|37.5157817%2C-111.9974305|37.7911934%2C-111.6167266
+- https://www.google.com/maps/dir/?origin=Delicate%20Arch%20Arches%20National%20Park&amp;destination=Double%20Arch%20Arches%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Landscape%20Arch%20Arches%20National%20Park|Fiery%20Furnace%20Arches%20National%20Park|Balanced%20Rock%20Arches%20National%20Park
+- https://www.google.com/maps/dir/?origin=Hickman%20Bridge%20Capitol%20Reef%20National%20Park&amp;destination=Grand%20Wash%20Trail%20via%20Northeast%20Trailhead%20Capitol%20Reef%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Cassidy%20Arch%20Capitol%20Reef%20National%20Park|Notom-Bullfrog%20Road%20Capitol%20Reef%20National%20Park|Fruita%20Historic%20District%20Capitol%20Reef%20National%20Park|Goosenecks%20Overlook%20Capitol%20Reef%20National%20Park|Chimney%20Rock%20Capitol%20Reef%20National%20Park
+- https://www.google.com/maps/dir/?origin=Hot%20Air%20Balloon%20Rides%20Moab&amp;destination=Moab%20Rim%20Trail&amp;travelmode=driving&amp;api=1&amp;waypoints=Colorado%20River%20Rafting|Potash%20Road%20Scenic%20Byway%20Moab|Corona%20and%20Bowtie%20Arch%20via%20Corona%20Arch%20Trail%20Moab|Jeep%20Arch%20Moab
+- https://www.google.com/maps/dir/?origin=St.%20George%20Dinosaur%20Discovery%20Site%20at%20Johnson%20Farm&amp;destination=Chuckwalla%20Trail%20St.%20George%2C%20Utah&amp;travelmode=driving&amp;api=1&amp;waypoints=Jenny%27s%20Canyon%20Trail%20St.%20George%2C%20Utah|St.%20George%20Art%20Museum|Red%20Cliffs%20Desert%20Reserve%20St.%20George%2C%20Utah|Pioneer%20Park%20St.%20George%2C%20Utah
+- https://www.google.com/maps/dir/?origin=Sunrise%20Point%20Bryce%20Canyon%20National%20Park&amp;destination=Wall%20Street%20and%20Queens%20Garden%20Loop%20%28short%20variant%29%20Bryce%20Canyon%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Sunset%20Point%20Bryce%20Canyon%20National%20Park|Bryce%20Point|Rainbow%20Point%20Bryce%20Canyon%20National%20Park|Navajo%20Loop%20and%20Queens%20Garden%20Trail%20Bryce%20Canyon%20National%20Park|Bryce%20Point%20Trail
+- https://www.google.com/maps/dir/?origin=Telluride%20Historic%20District&amp;destination=Sheridan%20Opera%20House%20Telluride&amp;travelmode=driving&amp;api=1&amp;waypoints=Bridal%20Veil%20Falls%20Telluride|Mountain%20Village%20Telluride|Free%20Gondola%20Telluride
+- https://www.google.com/maps/dir/?origin=The%20Narrows%20Zion%20National%20Park&amp;destination=Zion%20Human%20History%20Museum&amp;travelmode=driving&amp;api=1&amp;waypoints=Emerald%20Pools%20Trail%20Zion%20National%20Park|Canyon%20Overlook%20Trail%20Zion%20National%20Park|Angels%20Landing%20Zion%20National%20Park
+- https://www.google.com/maps/dir/?origin=Treasure%20Falls%20Pagosa%20Springs&amp;destination=Pagosa%20Center%20for%20the%20Arts&amp;travelmode=driving&amp;api=1&amp;waypoints=Chimney%20Rock%20National%20Monument%20Pagosa%20Springs|Pagosa%20Springs%20Hot%20Springs|San%20Juan%20River%20Walk%20Pagosa%20Springs|Piedra%20Falls%20Pagosa%20Springs
+- https://www.google.com/maps/place/?q=place_id:ChIJ85Z0FM9EyoARemmRAEjuhuE
+- https://www.google.com/maps/place/?q=place_id:ChIJBQaz6ctEyoARJcbE09-7-gA
+- https://www.google.com/maps/place/?q=place_id:ChIJHymvaTRFyoAR2euMBaj0JzU
+- https://www.google.com/maps/place/?q=place_id:ChIJSeBtWGDbPYcR4zuLh1QqcV4
+- https://www.google.com/maps/place/?q=place_id:ChIJTTvnQoLYR4cRCmsOBNmNCjw
+- https://www.google.com/maps/place/?q=place_id:ChIJc729fZkJSIcReV8L4So3GqY
+- https://www.google.com/maps/place/?q=place_id:ChIJl6MjciOSFIcR3FTE_iUpKyc
+- https://www.google.com/maps/place/?q=place_id:ChIJqYrJykcpP4cRzjohGOx5Zp8
+- https://www.google.com/maps/place/?q=place_id:ChIJxyagppPCyoAR7g2MGgHVfqk
+- https://www.google.com/maps/search/?api=1&amp;query=37.38529,-112.83894
+- https://www.google.com/maps/search/?api=1&amp;query=37.6642312,-112.1141035
+- https://www.google.com/maps/search/?api=1&amp;query=38.27824,-111.19256
+- https://www.google.com/maps/search/?api=1&amp;query=38.68828,-109.53838
+- https://www.google.com/maps/search/?api=1&amp;query=Ah%20Haa%20School%20for%20the%20Arts%20Telluride
+- https://www.google.com/maps/search/?api=1&amp;query=Bryce%20Canyon%20Visitor%20Center%20Bryce%20Canyon%20National%20Park
+- https://www.google.com/maps/search/?api=1&amp;query=Capitol%20Reef%20National%20Park%20Visitor%20Center
+- https://www.moabadventurecenter.com/moab-river-rafting
+- https://www.moabadventurecenter.com/potash-road
+- https://www.nps.gov/thingstodo/mossy-cave-trail.htm
+- https://www.nps.gov/zion/learn/historyculture/places.htm
+- https://www.pagosahotsprings.com/
+- https://www.stgeorgeutah.com/life/a-fresh-identity-st-george-museum-of-art-invites-community-to-celebrate-new-chapter/article_c75434ef-36a3-4e60-9ef0-e58d7dc563e6.html
+- https://www.yelp.com/biz/red-cliffs-desert-reserve-st-george
+
+## Removed URLs (39)
 - https://blackbeardiner.com/location/st-george/
+- https://evendo.com/locations/utah/st-george/attraction/st-george-tabernacle
 - https://hikestgeorge.com/hiking-trails/the-sugarloaf-dixie-rock-pioneer-park/
 - https://travel.usnews.com/Moab_UT/Things_To_Do/Sand_Flats_Recreation_Area_66988/
-- https://www.google.com/maps/dir/?destination=138%20Park%20Avenue%2C%20Santa%20Fe%2C%20NM%2087501&travelmode=driving&api=1&origin=42%20Pinon%20Causeway%2C%20Pagosa%20Springs%2C%20CO%2081147&waypoints=36.703689%2C-106.5644017|36.3393494%2C-106.4690229|36.2632974%2C-106.5172941|35.989258%2C-105.9316908
+- https://vanlifebydesign.com/hiking-bear-creek-falls-trail-in-telluride-colorado/
+- https://wereintherockies.com/snow-canyon/
+- https://www.alltrails.com/trail/us/utah/park-avenue
+- https://www.google.com/maps/dir/?destination=2600%20UT-24%2C%20Torrey%2C%20UT%2084775&travelmode=driving&api=1&origin=30%20N%20100%20E%2C%20Bryce%2C%20UT%2084764&waypoints=37.5157817%2C-111.9974305|37.7911934%2C-111.6167266
 - https://www.google.com/maps/dir/?origin=Capitol%20Reef%20Scenic%20Drive&amp;destination=Cassidy%20Arch%20Capitol%20Reef%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Hickman%20Bridge%20Capitol%20Reef%20National%20Park|Notom-Bullfrog%20Road%20Capitol%20Reef%20National%20Park|Fruita%20Historic%20District%20Capitol%20Reef%20National%20Park|Cohab%20Canyon%20Trail%20Capitol%20Reef%20National%20Park
 - https://www.google.com/maps/dir/?origin=Delicate%20Arch%20Arches%20National%20Park&amp;destination=Park%20Avenue%20Arches%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Landscape%20Arch%20Arches%20National%20Park|Double%20Arch%20Arches%20National%20Park|Balanced%20Rock%20Arches%20National%20Park
-- https://www.google.com/maps/dir/?origin=Island%20in%20the%20Sky%20Canyonlands%20National%20Park&amp;destination=Upheaval%20Dome%20Canyonlands%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Mesa%20Arch%20Canyonlands%20National%20Park|White%20Rim%20Road%20Canyonlands%20National%20Park
-- https://www.google.com/maps/dir/?origin=Meow%20Wolf%3A%20House%20of%20Eternal%20Return%20Santa%20Fe&amp;destination=The%20Cathedral%20Basilica%20of%20St.%20Francis%20of%20Assisi&amp;travelmode=driving&amp;api=1&amp;waypoints=Georgia%20O%27Keeffe%20Museum%20Santa%20Fe|Santa%20Fe%20Plaza|Museum%20of%20International%20Folk%20Art%20Santa%20Fe|Loretto%20Chapel%20Santa%20Fe|Canyon%20Road%20Gallery%20District%20Santa%20Fe|Bandelier%20National%20Monument%20Santa%20Fe
 - https://www.google.com/maps/dir/?origin=Sand%20Flats%20Recreation%20Area%20Moab&amp;destination=Moab%20Rim%20Trail&amp;travelmode=driving&amp;api=1&amp;waypoints=Fiery%20Furnace%20Moab|Hot%20Air%20Balloon%20Rides%20Moab|Corona%20and%20Bowtie%20Arch%20via%20Corona%20Arch%20Trail%20Moab|Jeep%20Arch%20Moab
 - https://www.google.com/maps/dir/?origin=St.%20George%20Dinosaur%20Discovery%20Site%20at%20Johnson%20Farm&amp;destination=Dixie%20Rock%20St.%20George%2C%20Utah&amp;travelmode=driving&amp;api=1&amp;waypoints=Jenny%27s%20Canyon%20Trail%20St.%20George%2C%20Utah|St.%20George%20Historic%20District|Snow%20Canyon%20State%20Park
 - https://www.google.com/maps/dir/?origin=Sunrise%20Point%20Bryce%20Canyon%20National%20Park&amp;destination=Bryce%20Point%20Trail&amp;travelmode=driving&amp;api=1&amp;waypoints=Bryce%20Canyon%20Scenic%20Drive|Fairyland%20Point%20Bryce%20Canyon%20National%20Park|Sunset%20Point%20Bryce%20Canyon%20National%20Park|Bryce%20Point|Rainbow%20Point%20Bryce%20Canyon%20National%20Park|Navajo%20Loop%20and%20Queens%20Garden%20Trail%20Bryce%20Canyon%20National%20Park
 - https://www.google.com/maps/dir/?origin=Telluride%20Historic%20District&amp;destination=Sheridan%20Opera%20House%20Telluride&amp;travelmode=driving&amp;api=1&amp;waypoints=Bridal%20Veil%20Falls%20Telluride|Bear%20Creek%20Falls%20Telluride|Free%20Gondola%20Telluride|Telluride%20Mountain%20Village
 - https://www.google.com/maps/dir/?origin=The%20Narrows%20Zion%20National%20Park&amp;destination=Zion%20Canyon%20Scenic%20Drive&amp;travelmode=driving&amp;api=1&amp;waypoints=Emerald%20Pools%20Trail%20Zion%20National%20Park|Canyon%20Overlook%20Trail%20Zion%20National%20Park|Angels%20Landing%20Zion%20National%20Park
 - https://www.google.com/maps/dir/?origin=Treasure%20Falls%20Pagosa%20Springs&amp;destination=Pagosa%20Center%20for%20the%20Arts&amp;travelmode=driving&amp;api=1&amp;waypoints=Chimney%20Rock%20National%20Monument%20Pagosa%20Springs|Wolf%20Creek%20Ski%20Area%20Pagosa%20Springs|San%20Juan%20River%20Walk%20Pagosa%20Springs|Piedra%20Falls%20Pagosa%20Springs
-- https://www.google.com/maps/place/?q=place_id:ChIJ--uLl-8QSIcRqY9ccMplqnc
 - https://www.google.com/maps/place/?q=place_id:ChIJ03TcEzBFyoAR9eYhDVccGGY
-- https://www.google.com/maps/place/?q=place_id:ChIJ31B7aADnyoAR-IpdJEJ7yIg
+- https://www.google.com/maps/place/?q=place_id:ChIJ0WLhd89EyoARh5dWVITrGpU
+- https://www.google.com/maps/place/?q=place_id:ChIJ5YeO_9tpyoARl2bGLQIWC2g
 - https://www.google.com/maps/place/?q=place_id:ChIJ7boAwMtoNYcRCSDdfITRvqI
 - https://www.google.com/maps/place/?q=place_id:ChIJHRRLt_1FyoARZuA9SnaSoqQ
-- https://www.google.com/maps/place/?q=place_id:ChIJYbhFms9EyoARaYzh636o_CM
+- https://www.google.com/maps/place/?q=place_id:ChIJLevDAsZrNYcRBm2svvvY6Ws
+- https://www.google.com/maps/place/?q=place_id:ChIJU1EkyQbByoARkXgJXnvk15w
 - https://www.google.com/maps/place/?q=place_id:ChIJZTRKEZ3hR4cRpytgWz0MfjA
+- https://www.google.com/maps/place/?q=place_id:ChIJg1fu4ZvYR4cRqj2HUywwwnE
 - https://www.google.com/maps/place/?q=place_id:ChIJk9HUpwvZPocR_Br4AoCeXcc
 - https://www.google.com/maps/place/?q=place_id:ChIJl815ig3fR4cRWcu4rjtSolQ
-- https://www.google.com/maps/place/?q=place_id:ChIJq9HcwQTYPocRJyToW3Wuwk0
-- https://www.google.com/maps/place/?q=place_id:ChIJr4_ZqATbPYcRYTl1tD7O7Og
 - https://www.google.com/maps/place/?q=place_id:ChIJu5n_WzTCyoARzE00TeHN2wM
+- https://www.google.com/maps/place/?q=place_id:EjBCZWFyIENyZWVrIEZhbGxzIFRyYWlsLCBUZWxsdXJpZGUsIENPIDgxNDI2LCBVU0EiLiosChQKEgl_TbJZVdg-hxFj4EBVPIgPdhIUChIJc_TmcHvYPocR4eO6cSF37jg
+- https://www.google.com/maps/search/?api=1&amp;query=38.62442,-109.59984
 - https://www.google.com/maps/search/?api=1&amp;query=Bryce%20Canyon%20National%20Park%20Amphitheater
 - https://www.google.com/maps/search/?api=1&amp;query=Telluride%20Art%20Gallery
 - https://www.google.com/maps/search/?api=1&amp;query=Torrey%20Farmers%20Market%20Capitol%20Reef%20National%20Park
 - https://www.nps.gov/arch/planyourvisit/placestogo.htm
 - https://www.nps.gov/brca/planyourvisit/fairyland.htm
+- https://www.nps.gov/places/the-castle.htm
+- https://www.nps.gov/thingstodo/drive-the-southern-scenic-drive.htm
 - https://www.nps.gov/zion/planyourvisit/directions.htm
-- https://www.pagosacenter.org/
-- https://www.tripadvisor.com/Restaurant_Review-g2004180-d519703-Reviews-or15-Allred_s_Restaurant-Mountain_Village_Colorado.html
+- https://www.nps.gov/zion/planyourvisit/thenarrows.htm
 
-## Removed URLs (40)
-- https://cumbrestoltec.com/
-- https://madelinemarquardt.com/best-things-to-do-moab/
-- https://oldsite.haisla.ca/en/sand-hollow-state-park-st-george-utah.html
-- https://vivachicken.com/locations/st-george/
-- https://www.alltrails.com/trail/us/utah/chuckwalla-trail
-- https://www.alltrails.com/trail/us/utah/double-arch-trail
-- https://www.alltrails.com/trail/us/utah/grand-wash-trail-via-northeast-trailhead
-- https://www.google.com/maps/dir/?destination=138%20Park%20Avenue%2C%20Santa%20Fe%2C%20NM%2087501&travelmode=driving&api=1&origin=42%20Pinon%20Causeway%2C%20Pagosa%20Springs%2C%20CO%2081147&waypoints=36.902958%2C-106.5780094|36.703689%2C-106.5644017|36.3393494%2C-106.4690229|36.2632974%2C-106.5172941|35.989258%2C-105.9316908
-- https://www.google.com/maps/dir/?origin=Chimney%20Rock%20National%20Monument%20Pagosa%20Springs&amp;destination=Piedra%20Falls%20Pagosa%20Springs&amp;travelmode=driving&amp;api=1&amp;waypoints=Treasure%20Falls%20Pagosa%20Springs|Wolf%20Creek%20Pass%20Pagosa%20Springs|Pagosa%20Springs%20Hot%20Springs|San%20Juan%20River%20Walk%20Pagosa%20Springs
-- https://www.google.com/maps/dir/?origin=Delicate%20Arch%20Arches%20National%20Park&amp;destination=Park%20Avenue%20Arches%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Landscape%20Arch%20Arches%20National%20Park|Balanced%20Rock%20Arches%20National%20Park|Double%20Arch%20Arches%20National%20Park
-- https://www.google.com/maps/dir/?origin=Hickman%20Bridge%20Capitol%20Reef%20National%20Park&amp;destination=Grand%20Wash%20Trail%20via%20Northeast%20Trailhead%20Capitol%20Reef%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=The%20Reef|Notom-Bullfrog%20Road%20Capitol%20Reef%20National%20Park|Fruita%20Historic%20District%20Capitol%20Reef%20National%20Park|Chimney%20Rock%20Capitol%20Reef%20National%20Park|Cassidy%20Arch%20Capitol%20Reef%20National%20Park
-- https://www.google.com/maps/dir/?origin=Jenny%27s%20Canyon%20Trail%20St.%20George%2C%20Utah&amp;destination=Chuckwalla%20Trail%20St.%20George%2C%20Utah&amp;travelmode=driving&amp;api=1&amp;waypoints=St.%20George%20Dinosaur%20Discovery%20Site%20at%20Johnson%20Farm|Snow%20Canyon%20State%20Park|St.%20George%20Historic%20District|Sand%20Hollow%20State%20Park
-- https://www.google.com/maps/dir/?origin=Meow%20Wolf%3A%20House%20of%20Eternal%20Return%20Santa%20Fe&amp;destination=Loretto%20Chapel%20Santa%20Fe&amp;travelmode=driving&amp;api=1&amp;waypoints=Georgia%20O%27Keeffe%20Museum%20Santa%20Fe|Santa%20Fe%20Plaza|Museum%20of%20International%20Folk%20Art%20Santa%20Fe|Canyon%20Road%20Gallery%20District%20Santa%20Fe|Bandelier%20National%20Monument%20Santa%20Fe|The%20Cathedral%20Basilica%20of%20St.%20Francis%20of%20Assisi
-- https://www.google.com/maps/dir/?origin=Mesa%20Arch%20Canyonlands%20National%20Park&amp;destination=Upheaval%20Dome%20Canyonlands%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=White%20Rim%20Road%20Canyonlands%20National%20Park|Grand%20View%20Point%20Canyonlands%20National%20Park
-- https://www.google.com/maps/dir/?origin=Mill%20Creek%20Canyon%20Moab&amp;destination=Moab%20Rim%20Trail&amp;travelmode=driving&amp;api=1&amp;waypoints=Fiery%20Furnace%20Moab|Hot%20Air%20Balloon%20Rides%20Moab|Corona%20and%20Bowtie%20Arch%20via%20Corona%20Arch%20Trail%20Moab|Jeep%20Arch%20Moab
-- https://www.google.com/maps/dir/?origin=Sunrise%20Point%20Bryce%20Canyon%20National%20Park&amp;destination=Wall%20Street%20and%20Queens%20Garden%20Loop%20%28short%20variant%29%20Bryce%20Canyon%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Bryce%20Canyon%20Scenic%20Drive|Sunset%20Point%20Bryce%20Canyon%20National%20Park|Bryce%20Point|Rainbow%20Point%20Bryce%20Canyon%20National%20Park|Navajo%20Loop%20and%20Queens%20Garden%20Trail%20Bryce%20Canyon%20National%20Park|Bryce%20Point%20Trail
-- https://www.google.com/maps/dir/?origin=Telluride%20Historic%20District&amp;destination=Sheridan%20Opera%20House%20Telluride&amp;travelmode=driving&amp;api=1&amp;waypoints=Bridal%20Veil%20Falls%20Telluride|Mountain%20Village%20Telluride|Bear%20Creek%20Falls%20Telluride|Free%20Gondola%20Telluride
-- https://www.google.com/maps/dir/?origin=The%20Narrows%20Zion%20National%20Park&amp;destination=Court%20of%20the%20Patriarchs%20Zion%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Emerald%20Pools%20Trail%20Zion%20National%20Park|Canyon%20Overlook%20Trail%20Zion%20National%20Park|Angels%20Landing%20Zion%20National%20Park
-- https://www.google.com/maps/place/?q=place_id:ChIJ12QMdx7UNIcRc0r81_5r0PM
-- https://www.google.com/maps/place/?q=place_id:ChIJ8bh0S9TjR4cRndPRcDxNjjg
-- https://www.google.com/maps/place/?q=place_id:ChIJG-SJXiZbyoARBuLyQJ6BDtA
-- https://www.google.com/maps/place/?q=place_id:ChIJS4GU7XUJPocRUgrq3_c9mm4
-- https://www.google.com/maps/place/?q=place_id:ChIJScztgeT3yoAR1dU4sEOFYtg
-- https://www.google.com/maps/place/?q=place_id:ChIJSeBtWGDbPYcR4zuLh1QqcV4
-- https://www.google.com/maps/place/?q=place_id:ChIJ_2Ia80_CyoARsWBCk11MKto
-- https://www.google.com/maps/place/?q=place_id:ChIJi7ys8IIeSIcRWWjlCQPdyLE
-- https://www.google.com/maps/place/?q=place_id:ChIJk4Cx_8UVkFQRIe75XCmVVb4
-- https://www.google.com/maps/place/?q=place_id:ChIJqYrJykcpP4cRzjohGOx5Zp8
-- https://www.google.com/maps/place/?q=place_id:ChIJv3PBkIXZPocRahyke8Zob1E
-- https://www.google.com/maps/search/?api=1&amp;query=36.902958,-106.5780094
-- https://www.google.com/maps/search/?api=1&amp;query=38.27824,-111.19256
-- https://www.google.com/maps/search/?api=1&amp;query=38.68828,-109.53838
-- https://www.google.com/maps/search/?api=1&amp;query=Bryce%20Canyon%20Visitor%20Center%20Bryce%20Canyon%20National%20Park
-- https://www.google.com/maps/search/?api=1&amp;query=Capitol%20Reef%20National%20Park%20Amphitheater
-- https://www.google.com/maps/search/?api=1&amp;query=Pagosa%20Springs%20Center%20for%20the%20Arts
-- https://www.google.com/maps/search/?api=1&amp;query=Telluride%20Farmers%20Market
-- https://www.nps.gov/zion/planyourvisit/trail-access-information.htm
-- https://www.pagosahotsprings.com/
-- https://www.tripadvisor.com/Attraction_Review-g33581-d28181667-Reviews-Skin_Alchemy_Ouray-Ouray_Colorado.html
-- https://www.tripadvisor.com/Attraction_Review-g33584-d21331127-Reviews-Wolf_Creek_Pass_Overlook-Pagosa_Springs_Colorado.html
-
-## Kept URLs (408)
+## Kept URLs (404)
 - http://desertbistro.com/menu-spring-2026
 - http://johnwesleypowell.com/
 - http://www.labocasantafe.com/taberna-photo-gallery
@@ -96,6 +98,7 @@
 - https://98center.com/98centerfullmenu
 - https://alkeme-santafe.com/in-the-news/
 - https://andiamosantafe.com
+- https://benjathai.com/contact-us/
 - https://blackbartsbrunch.com/book-us-for-an-event
 - https://blog.wayro.ai/moab-telluride-road-trip-guide-red-rocks-alpine-bliss
 - https://cactusjacksmoab.com/breakfast-lunch/
@@ -103,7 +106,6 @@
 - https://currypizzahouse.com/store-locator/
 - https://darkskycoffee.shopsettings.com/
 - https://ebenezersbarnandgrill.com/dinner-in-bryce-canyon/
-- https://evendo.com/locations/utah/st-george/attraction/st-george-tabernacle
 - https://everywherewithclaire.com/zion-national-park-to-bryce-canyon/
 - https://forecast.weather.gov/MapClick.php?lat=35.6876&lon=-105.9385
 - https://forecast.weather.gov/MapClick.php?lat=37.1099&lon=-113.5832
@@ -155,9 +157,7 @@
 - https://thecosmopolitangrill.com/menu
 - https://travel.usnews.com/Santa_Fe_NM/Things_To_Do/Bandelier_National_Monument_60409/
 - https://utahdinosaurs.org/
-- https://vanlifebydesign.com/hiking-bear-creek-falls-trail-in-telluride-colorado/
 - https://visitcanyonroad.com/
-- https://wereintherockies.com/snow-canyon/
 - https://wildthymekanab.com/
 - https://www.alleyhousegrille.com/menu/
 - https://www.alltrails.com/trail/us/colorado/bridal-veil-falls-trail
@@ -177,7 +177,6 @@
 - https://www.alltrails.com/trail/us/utah/mesa-arch
 - https://www.alltrails.com/trail/us/utah/moab-rim-trail
 - https://www.alltrails.com/trail/us/utah/navajo-loop-and-queens-garden-trail
-- https://www.alltrails.com/trail/us/utah/park-avenue
 - https://www.alltrails.com/trail/us/utah/wall-street-and-queens-garden-loop-trail
 - https://www.anthera.co/
 - https://www.blm.gov/visit/sego-canyon-rock-art-interpretive-site
@@ -194,31 +193,33 @@
 - https://www.getyourguide.com/en-gb/moab-l1509/ttd/
 - https://www.ghostranch.org/
 - https://www.google.com/maps/dir/?api=1&origin=Las%20Vegas%20International%20Airport&destination=Albuquerque%2C%20NM%20airport&travelmode=driving&waypoints=1819%20S%20120%20E%2C%20St.%20George%2C%20UT%2084790|176%20Zion%20Park%20Blvd%2C%20Springdale%2C%20UT%2084767|30%20N%20100%20E%2C%20Bryce%2C%20UT%2084764|2600%20UT-24%2C%20Torrey%2C%20UT%2084775|890%20North%20Main%20Street%20Moab%2C%20Utah%2C%2084532|Arches%20National%20Park|Canyonlands%20National%20Park|199%20Cornet%20Ln%2C%20Telluride%2C%20Colorado%2081435|42%20Pinon%20Causeway%2C%20Pagosa%20Springs%2C%20CO%2081147|138%20Park%20Avenue%2C%20Santa%20Fe%2C%20NM%2087501
+- https://www.google.com/maps/dir/?destination=138%20Park%20Avenue%2C%20Santa%20Fe%2C%20NM%2087501&travelmode=driving&api=1&origin=42%20Pinon%20Causeway%2C%20Pagosa%20Springs%2C%20CO%2081147&waypoints=36.703689%2C-106.5644017|36.3393494%2C-106.4690229|36.2632974%2C-106.5172941|35.989258%2C-105.9316908
 - https://www.google.com/maps/dir/?destination=176%20Zion%20Park%20Blvd%2C%20Springdale%2C%20UT%2084767&travelmode=driving&api=1&origin=1819%20S%20120%20E%2C%20St.%20George%2C%20UT%2084790
 - https://www.google.com/maps/dir/?destination=1819%20S%20120%20E%2C%20St.%20George%2C%20UT%2084790&travelmode=driving&api=1&origin=Las%20Vegas%20International%20Airport
 - https://www.google.com/maps/dir/?destination=199%20Cornet%20Ln%2C%20Telluride%2C%20Colorado%2081435&travelmode=driving&api=1&origin=890%20North%20Main%20Street%20Moab%2C%20Utah%2C%2084532&waypoints=38.6263303%2C-109.5911955|38.6098289%2C-109.5335517|38.433728%2C-109.0091539|38.1288964%2C-108.2894984|Walnut%20Creek%20Park|Naturita%20Historic%20District%20Walk
-- https://www.google.com/maps/dir/?destination=2600%20UT-24%2C%20Torrey%2C%20UT%2084775&travelmode=driving&api=1&origin=30%20N%20100%20E%2C%20Bryce%2C%20UT%2084764&waypoints=37.5157817%2C-111.9974305|37.7911934%2C-111.6167266
 - https://www.google.com/maps/dir/?destination=30%20N%20100%20E%2C%20Bryce%2C%20UT%2084764&travelmode=driving&api=1&origin=176%20Zion%20Park%20Blvd%2C%20Springdale%2C%20UT%2084767&waypoints=37.1207779%2C-112.563801|37.2671512%2C-112.6212006|Panguitch%20Gem%20Theater%20Bryce%20Canyon%20National%20Park
 - https://www.google.com/maps/dir/?destination=42%20Pinon%20Causeway%2C%20Pagosa%20Springs%2C%20CO%2081147&travelmode=driving&api=1&origin=199%20Cornet%20Ln%2C%20Telluride%2C%20Colorado%2081435&waypoints=37.4062558%2C-108.2709652|Rico%20Historic%20District
 - https://www.google.com/maps/dir/?destination=890%20North%20Main%20Street%20Moab%2C%20Utah%2C%2084532&travelmode=driving&api=1&origin=2600%20UT-24%2C%20Torrey%2C%20UT%2084775&waypoints=38.4378746%2C-110.9143697|38.4053762%2C-110.7898833|38.5827588%2C-110.8024786|38.5981639%2C-110.6999678|39.0092888%2C-110.4898949|38.994028%2C-110.1411746
 - https://www.google.com/maps/dir/?destination=Albuquerque%2C%20NM%20airport&travelmode=driving&api=1
 - https://www.google.com/maps/dir/?destination=Arches%20National%20Park&travelmode=driving&api=1&origin=890%20North%20Main%20Street%20Moab%2C%20Utah%2C%2084532&waypoints=38.6691439%2C-109.6867648
 - https://www.google.com/maps/dir/?destination=Canyonlands%20National%20Park&travelmode=driving&api=1&origin=890%20North%20Main%20Street%20Moab%2C%20Utah%2C%2084532&waypoints=38.4885592%2C-109.7361795
+- https://www.google.com/maps/dir/?origin=Island%20in%20the%20Sky%20Canyonlands%20National%20Park&amp;destination=Upheaval%20Dome%20Canyonlands%20National%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Mesa%20Arch%20Canyonlands%20National%20Park|White%20Rim%20Road%20Canyonlands%20National%20Park
+- https://www.google.com/maps/dir/?origin=Meow%20Wolf%3A%20House%20of%20Eternal%20Return%20Santa%20Fe&amp;destination=The%20Cathedral%20Basilica%20of%20St.%20Francis%20of%20Assisi&amp;travelmode=driving&amp;api=1&amp;waypoints=Georgia%20O%27Keeffe%20Museum%20Santa%20Fe|Santa%20Fe%20Plaza|Museum%20of%20International%20Folk%20Art%20Santa%20Fe|Loretto%20Chapel%20Santa%20Fe|Canyon%20Road%20Gallery%20District%20Santa%20Fe|Bandelier%20National%20Monument%20Santa%20Fe
+- https://www.google.com/maps/place/?q=place_id:ChIJ--uLl-8QSIcRqY9ccMplqnc
 - https://www.google.com/maps/place/?q=place_id:ChIJ-5jgcyvhR4cRVAngDN4AWfQ
 - https://www.google.com/maps/place/?q=place_id:ChIJ-T9S_HFQGIcRaAbOZrb0RYo
 - https://www.google.com/maps/place/?q=place_id:ChIJ-VPYn2HbPYcRHhmg4pR8rtA
 - https://www.google.com/maps/place/?q=place_id:ChIJ-W45auzhR4cR93HF42vUSi0
 - https://www.google.com/maps/place/?q=place_id:ChIJ-yf2IaPZPocRh24F4cBt87g
-- https://www.google.com/maps/place/?q=place_id:ChIJ0WLhd89EyoARh5dWVITrGpU
 - https://www.google.com/maps/place/?q=place_id:ChIJ1U9ehFJQGIcRHUtyXamAZi4
 - https://www.google.com/maps/place/?q=place_id:ChIJ1Ukw9wQVSocR3Zki-ai_cy0
 - https://www.google.com/maps/place/?q=place_id:ChIJ276UEJXaPYcRRt5gJNd5qYs
 - https://www.google.com/maps/place/?q=place_id:ChIJ2fhEiNDqyoAR9VY2qhU6Lnw
+- https://www.google.com/maps/place/?q=place_id:ChIJ31B7aADnyoAR-IpdJEJ7yIg
 - https://www.google.com/maps/place/?q=place_id:ChIJ3VOprUBQGIcReYrpwfjXSIE
 - https://www.google.com/maps/place/?q=place_id:ChIJ3cBdWwLoyoAR4LBAcXDJRMA
 - https://www.google.com/maps/place/?q=place_id:ChIJ4YPB36nbPYcRheSc-54gX8A
 - https://www.google.com/maps/place/?q=place_id:ChIJ4ZJirS1RGIcRHYJ0eFKFtCo
-- https://www.google.com/maps/place/?q=place_id:ChIJ5YeO_9tpyoARl2bGLQIWC2g
 - https://www.google.com/maps/place/?q=place_id:ChIJ5dJQyaLCyoARFwTyS69MxIk
 - https://www.google.com/maps/place/?q=place_id:ChIJ61jdoC1FyoAR5zman9aGGOQ
 - https://www.google.com/maps/place/?q=place_id:ChIJ69AfLvxQGIcR8ksaBWgxq4M
@@ -256,7 +257,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJKWDCFAh3PocReVxxyr0ga3M
 - https://www.google.com/maps/place/?q=place_id:ChIJL38pz6fCyoARAQCXkucmIkQ
 - https://www.google.com/maps/place/?q=place_id:ChIJLQwZQq4ZSocRnCrjKEdf4RA
-- https://www.google.com/maps/place/?q=place_id:ChIJLevDAsZrNYcRBm2svvvY6Ws
 - https://www.google.com/maps/place/?q=place_id:ChIJM8V7tCRbyoARHc2Y8gMDmoE
 - https://www.google.com/maps/place/?q=place_id:ChIJMSa1Zh1OGIcR7hGXA9YCJkc
 - https://www.google.com/maps/place/?q=place_id:ChIJMwNkEQBFyoARwwLt6mWjoBM
@@ -281,7 +281,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJT-lMakZQGIcRZ8gKBHcJRSs
 - https://www.google.com/maps/place/?q=place_id:ChIJTaCuWQvhR4cRMrypqABUbuM
 - https://www.google.com/maps/place/?q=place_id:ChIJTzJyHmPYPocRc1OGJ0U10Bc
-- https://www.google.com/maps/place/?q=place_id:ChIJU1EkyQbByoARkXgJXnvk15w
 - https://www.google.com/maps/place/?q=place_id:ChIJU6LnB_8ASocRB_9PSFPsO94
 - https://www.google.com/maps/place/?q=place_id:ChIJU7GyAuzhR4cRxYgSHgck3_E
 - https://www.google.com/maps/place/?q=place_id:ChIJU8--3SdFyoARTWzAq1evNUI
@@ -296,6 +295,7 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJYVWFsB9pNYcRbEH9VoUJp-E
 - https://www.google.com/maps/place/?q=place_id:ChIJYbIyKgHbPYcRlg2DNtp8GvY
 - https://www.google.com/maps/place/?q=place_id:ChIJYbhFms9EyoARR6kx4a4528g
+- https://www.google.com/maps/place/?q=place_id:ChIJYbhFms9EyoARaYzh636o_CM
 - https://www.google.com/maps/place/?q=place_id:ChIJ_RpIaenaPYcRkgXuWNilNwk
 - https://www.google.com/maps/place/?q=place_id:ChIJ_THULkBQGIcR0WNchl7O154
 - https://www.google.com/maps/place/?q=place_id:ChIJ____pkJuNYcRnfL56pLFgv8
@@ -310,7 +310,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJeY0hhGLYPocRJ8s3vNZOVO8
 - https://www.google.com/maps/place/?q=place_id:ChIJfUF0Yx9BSocRqxCYY6c5mbM
 - https://www.google.com/maps/place/?q=place_id:ChIJfbLjXGhuNYcRF4i8awN6DWQ
-- https://www.google.com/maps/place/?q=place_id:ChIJg1fu4ZvYR4cRqj2HUywwwnE
 - https://www.google.com/maps/place/?q=place_id:ChIJg83r_g9vNYcRsa2Zl9-_J5c
 - https://www.google.com/maps/place/?q=place_id:ChIJgVAj4WbhR4cRlCWNvPP_2BY
 - https://www.google.com/maps/place/?q=place_id:ChIJhVlULkZQGIcR1R4Bj6Q0YCg
@@ -330,7 +329,9 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJo49LawLoyoAR_E8eeeqesrs
 - https://www.google.com/maps/place/?q=place_id:ChIJo_PyG57cPYcR0LD02Hb1dXs
 - https://www.google.com/maps/place/?q=place_id:ChIJpcKW5Kg_SocRkNbaN44ZvNo
+- https://www.google.com/maps/place/?q=place_id:ChIJq9HcwQTYPocRJyToW3Wuwk0
 - https://www.google.com/maps/place/?q=place_id:ChIJqQYdXGhuNYcREfyNrdSBVrY
+- https://www.google.com/maps/place/?q=place_id:ChIJr4_ZqATbPYcRYTl1tD7O7Og
 - https://www.google.com/maps/place/?q=place_id:ChIJsTT67NfhR4cRovGXkpz9eb8
 - https://www.google.com/maps/place/?q=place_id:ChIJsUYe6VfhR4cRiY7-SR41tEY
 - https://www.google.com/maps/place/?q=place_id:ChIJsy-obgBbNYcRwyfl556oOPM
@@ -351,7 +352,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJzSrM4evhR4cRXkKt-1L1Yv4
 - https://www.google.com/maps/place/?q=place_id:ChIJzZWuF9ThR4cRcsj5SFVu11Q
 - https://www.google.com/maps/place/?q=place_id:ChIJzc6h7yBpNYcRRrbcvJZdnM4
-- https://www.google.com/maps/place/?q=place_id:EjBCZWFyIENyZWVrIEZhbGxzIFRyYWlsLCBUZWxsdXJpZGUsIENPIDgxNDI2LCBVU0EiLiosChQKEgl_TbJZVdg-hxFj4EBVPIgPdhIUChIJc_TmcHvYPocR4eO6cSF37jg
 - https://www.google.com/maps/search/?api=1&amp;query=35.989258,-105.9316908
 - https://www.google.com/maps/search/?api=1&amp;query=36.2632974,-106.5172941
 - https://www.google.com/maps/search/?api=1&amp;query=36.3393494,-106.4690229
@@ -375,7 +375,6 @@
 - https://www.google.com/maps/search/?api=1&amp;query=38.5827588,-110.8024786
 - https://www.google.com/maps/search/?api=1&amp;query=38.5981639,-110.6999678
 - https://www.google.com/maps/search/?api=1&amp;query=38.6098289,-109.5335517
-- https://www.google.com/maps/search/?api=1&amp;query=38.62442,-109.59984
 - https://www.google.com/maps/search/?api=1&amp;query=38.6263303,-109.5911955
 - https://www.google.com/maps/search/?api=1&amp;query=38.6691439,-109.6867648
 - https://www.google.com/maps/search/?api=1&amp;query=38.78299,-109.59509
@@ -408,14 +407,12 @@
 - https://www.nps.gov/care/
 - https://www.nps.gov/care/learn/historyculture/fruita.htm
 - https://www.nps.gov/care/planyourvisit/roads.htm
-- https://www.nps.gov/places/the-castle.htm
-- https://www.nps.gov/thingstodo/drive-the-southern-scenic-drive.htm
 - https://www.nps.gov/zion/
-- https://www.nps.gov/zion/planyourvisit/thenarrows.htm
 - https://www.okeeffemuseum.org/
 - https://www.opentable.com/izanami
 - https://www.opentable.com/spotted-dog-cafe
 - https://www.pagosabakingcompany.com/menu/
+- https://www.pagosacenter.org/
 - https://www.paper-dosa.com/reservations
 - https://www.pastajays.com/moab
 - https://www.patriapagosa.com/our-story
@@ -442,6 +439,7 @@
 - https://www.telluride.com/campaign/destination-mountain-village/
 - https://www.telluride.gov/239/Historic-Preservation
 - https://www.tripadvisor.com/Restaurant_Review-g123456-d11223344-Reviews-Sweetwater_Kitchen-Boulder_Utah.html
+- https://www.tripadvisor.com/Restaurant_Review-g2004180-d519703-Reviews-or15-Allred_s_Restaurant-Mountain_Village_Colorado.html
 - https://www.tripadvisor.com/Restaurant_Review-g33584-d13325691-Reviews-Mee_Hmong_Cuisine-Pagosa_Springs_Colorado.html
 - https://www.tripadvisor.com/Restaurant_Review-g33584-d14201642-Reviews-Sage_Mobile_Eatery-Pagosa_Springs_Colorado.html
 - https://www.tripadvisor.com/Restaurant_Review-g33584-d33108489-Reviews-Wild_Finch-Pagosa_Springs_Colorado.html
