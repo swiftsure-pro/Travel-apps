@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-08-29T22:43:21.3935717Z",
+    "updatedAt":  "2026-08-30T00:55:38.3554875Z",
     "trips":  [
                   {
                       "name":  "Europe Exploration",
@@ -33,10 +33,10 @@
                       "entry":  "sw/prod/index.html",
                       "description":  "Generated road-trip-generator output package in sw/prod.",
                       "templateVersion":  "2.5",
-                      "generatedAt":  "2026-08-29T22:17:12.697791+00:00",
+                      "generatedAt":  "2026-08-30T00:55:30.411558+00:00",
                       "validation":  {
                                          "valid":  true,
-                                         "warningCount":  4
+                                         "warningCount":  5
                                      },
                       "validationReport":  "sw/prod/validation_report.json"
                   }
