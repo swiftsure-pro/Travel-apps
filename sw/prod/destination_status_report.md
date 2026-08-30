@@ -1,15 +1,16 @@
 # Destination Status Summary
 
-- Run ID: 20260830T044636.393620Z
-- Generated at (UTC): 2026-08-30T04:51:28.154381+00:00
+- Run ID: 20260830T045630.144285Z
+- Generated at (UTC): 2026-08-30T04:59:24.122652+00:00
 - Destination count: 10
-- Retry recommended: 4
-- Retry attempted: 4
+- Retry recommended: 5
+- Retry attempted: 5
 - Resolved after retry: 0
-- Unresolved after retry: 4
+- Unresolved after retry: 5
 - Not retried due to cap: 0
 
-## Needs Attention (4)
+## Needs Attention (5)
+- Zion National Park (zion) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Capitol Reef National Park (capitolreef) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Arches National Park (arches) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Canyonlands National Park (canyonlands) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
@@ -17,7 +18,7 @@
 
 ## All Destinations (10)
 - St. George, Utah (stgeorge) — status=degraded, terminal=stable_without_retry
-- Zion National Park (zion) — status=degraded, terminal=stable_without_retry
+- Zion National Park (zion) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Bryce Canyon National Park (bryce) — status=degraded, terminal=stable_without_retry
 - Capitol Reef National Park (capitolreef) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Moab (moab) — status=degraded, terminal=stable_without_retry
@@ -27,20 +28,20 @@
 - Pagosa Springs (pagosa) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Santa Fe (santafe) — status=healthy, terminal=stable_without_retry
 
-## Removed for No Verified URL (33)
-- **St. George, Utah** (3)
-  - Book Club Bistro — dinner_recommendations (4 candidate(s) considered)
+## Removed for No Verified URL (34)
+- **St. George, Utah** (4)
+  - Book Club Bistro — dinner_recommendations (6 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-st-george-ut
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Book+Club+Bistro+St.+George+UT
-    - discovery_completed: https://www.tripadvisor.com/RestaurantsNear-g57119-d109926-Ramada_by_Wyndham_St_George-St_George_Utah.html
-    - audit_url_rejected: https://www.tripadvisor.com/RestaurantsNear-g57119-d109926-Ramada_by_Wyndham_St_George-St_George_Utah.html
+    - search_resolved: https://www.tripadvisor.com/RestaurantsNear-g57119-d109926-Ramada_by_Wyndham_St_George-St_George_Utah.html
   - Slice House Pizza Co. — dinner_recommendations (2 candidate(s) considered)
     - url_collision_rejected: https://www.restaurantji.com/ut/st.-george/slice-house-pizza-co-/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Slice+House+Pizza+Co.+St.+George+UT
   - Social District Boutique & Bistro — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-st-george-ut
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Social+District+Boutique+Bistro+St.+George+UT
-- **Zion National Park** (6)
+  - The Wild Cow — dinner_recommendations (0 candidate(s) considered)
+- **Zion National Park** (5)
   - Dulivia Ristorante Italiano — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-springdale-zion-national-park-ut
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dulivia+Ristorante+Italiano+Springdale+UT
@@ -55,41 +56,46 @@
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g61001-Springdale_Utah.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Zion+Canyon+Brew+Pub+95+Zion+Park+Blvd+Springdale+UT
     - url_collision_rejected: https://www.restaurantji.com/ut/springdale/camp-outpost-co-zion-/
-  - Angels Landing — top_attractions (1 candidate(s) considered)
+  - Angels Landing — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
-  - Zion Canyon Scenic Drive — top_attractions (2 candidate(s) considered)
-    - direct_batch_selected_authoritative: https://www.nps.gov/zion/planyourvisit/directions.htm
-    - trail_like_misclassified_attraction_batch_recovered: https://www.nps.gov/zion/planyourvisit/directions.htm
+    - search_cache_hit: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
 - **Bryce Canyon National Park** (4)
-  - Navajo Loop Trail — top_attractions (3 candidate(s) considered)
+  - Fairyland Loop Trail — top_attractions (2 candidate(s) considered)
+    - direct_batch_selected_authoritative: https://www.nps.gov/brca/planyourvisit/fairyland.htm
+    - trail_like_misclassified_attraction_batch_recovered: https://www.nps.gov/brca/planyourvisit/fairyland.htm
+  - Inspiration Point — top_attractions (3 candidate(s) considered)
+    - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/utah/inspiration-point-trail
+    - direct_batch_selected_authoritative: https://www.nps.gov/places/000/inspiration-point-viewpoint.htm
+    - trail_like_misclassified_attraction_batch_recovered: https://www.nps.gov/places/000/inspiration-point-viewpoint.htm
+  - Navajo Loop Trail — top_attractions (6 candidate(s) considered)
+    - search_resolved: https://www.alltrails.com/trail/us/utah/rim-navajo-loop-and-peekaboo-loop-trail
     - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/utah/navajo-loop-trail
+    - search_cache_hit: https://www.alltrails.com/trail/us/utah/rim-navajo-loop-and-peekaboo-loop-trail
     - direct_batch_candidate_rejected: https://www.nps.gov/brca/planyourvisit/farview-and-piracy-points.htm
-    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/navajotrail.htm
-  - Peek-a-boo Loop Trail — top_attractions (1 candidate(s) considered)
-    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/peekabooloop.htm
-  - Queen Victoria via Queen's Garden Trail — top_attractions (1 candidate(s) considered)
-    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/planyourvisit/queensgarden.htm
-  - Queen's Garden Trail — top_attractions (1 candidate(s) considered)
+  - Queen's Garden Trail — top_attractions (2 candidate(s) considered)
+    - search_resolved: https://www.nps.gov/brca/learn/nature/brycepaintbrush.htm
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/brca/learn/nature/brycepaintbrush.htm
 - **Capitol Reef National Park** (4)
-  - Capitol Burger — dinner_recommendations (7 candidate(s) considered)
+  - Capitol Burger — dinner_recommendations (9 candidate(s) considered)
     - direct_batch_existing_url_preserved: https://www.tripadvisor.com/Restaurant_Review-g60758-d15199067-Reviews-Capitol_Burger-Torrey_Utah.html
     - direct_batch_existing_url_preserved: https://www.yelp.com/biz/capitol-burger-torrey
+    - search_resolved: https://www.torreyutah.gov/businesses/capitol-burger
     - official_site_upgrade_rejected_name_mismatch: https://www.torreyutah.gov/businesses/capitol-burger
+    - search_cache_hit: https://www.torreyutah.gov/businesses/capitol-burger
     - secondary_maps_link_attached_maps_place_id: https://www.google.com/maps/place/?q=place_id:ChIJj59sbNkNkFQR4FmjswijNQI
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Capitol+Burger+44+N+100+West+Torrey+UT
-    - direct_batch_accepted: https://www.yelp.com/biz/capitol-burger-torrey
-  - Hunt & Gather Restaurant — dinner_recommendations (7 candidate(s) considered)
+  - Hunt & Gather Restaurant — dinner_recommendations (9 candidate(s) considered)
     - direct_batch_existing_url_preserved: https://www.tripadvisor.com/Restaurant_Review-g60758-d20374424-Reviews-Hunt_Gather_Restaurant-Torrey_Utah.html
     - direct_batch_existing_url_preserved: https://www.yelp.com/biz/hunt-and-gather-restaurant-torrey
+    - search_resolved: https://visitournationalparks.com/national-park/capitol-reef-national-park/where-to-eat/hunt-gather-restaurant/
     - official_site_upgrade_rejected_name_mismatch: https://visitournationalparks.com/national-park/capitol-reef-national-park/where-to-eat/hunt-gather-restaurant/
+    - search_cache_hit: https://visitournationalparks.com/national-park/capitol-reef-national-park/where-to-eat/hunt-gather-restaurant/
     - secondary_maps_link_attached_maps_place_id: https://www.google.com/maps/place/?q=place_id:ChIJEbKsK5o_SocRcwiQJo9WiFU
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Hunt+and+Gather+Restaurant+599+W+Main+St+Torrey+UT
-    - direct_batch_accepted: https://www.yelp.com/biz/hunt-and-gather-restaurant-torrey
+  - Capitol Gorge — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.nps.gov/care/planyourvisit/flash-floods.htm
+    - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/care/planyourvisit/flash-floods.htm
+    - search_cache_hit: https://www.nps.gov/care/planyourvisit/flash-floods.htm
   - Chimney Rock — top_attractions (0 candidate(s) considered)
-  - Goosenecks Overlook — top_attractions (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.nps.gov/care
-    - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=Goosenecks%20Overlook%20Capitol%20Reef%20National%20Park
 - **Moab** (5)
   - Gloria's Corner Cafe — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.restaurantji.com/ut/moab/glorias-corner-cafe/
@@ -111,14 +117,18 @@
     - direct_batch_candidate_rejected: https://www.restaurantji.com/ut/moab/wrap-it-up-mediterranean-food/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wrap+it+Up+Mediterranean+Food+Main+Street+Moab+UT
 - **Arches National Park** (1)
-  - Balanced Rock — top_attractions (3 candidate(s) considered)
+  - Balanced Rock — top_attractions (5 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.nps.gov/arch/index.htm
     - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=Balanced%20Rock%20Arches%20National%20Park
+    - search_resolved: https://www.nps.gov/arch/planyourvisit/balancedrock.htm
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/arch/planyourvisit/balancedrock.htm
-- **Canyonlands National Park** (1)
-  - Upheaval Dome — top_attractions (1 candidate(s) considered)
+- **Canyonlands National Park** (2)
+  - Schaffer Trail — top_attractions (0 candidate(s) considered)
+  - Upheaval Dome — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.nps.gov/cany/getinvolved/canyonlands-still-photography-art-instruction-conditions.htm
     - authoritative_no_match_recovered_via_general_search: https://www.nps.gov/cany/getinvolved/canyonlands-still-photography-art-instruction-conditions.htm
-- **Telluride** (6)
+    - search_cache_hit: https://www.nps.gov/cany/getinvolved/canyonlands-still-photography-art-instruction-conditions.htm
+- **Telluride** (7)
   - Baked in Telluride — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://5280.com/telluride-dining-guide/
   - Black Iron Kitchen + Bar — dinner_recommendations (2 candidate(s) considered)
@@ -134,18 +144,22 @@
   - The New Tunnel Supper Club — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+New+Tunnel+Supper+Club+Telluride+CO
     - url_collision_rejected: https://www.restaurantji.com/co/telluride/
-  - Bear Creek Falls — top_attractions (1 candidate(s) considered)
+  - Bear Creek Falls — top_attractions (2 candidate(s) considered)
+    - search_resolved: https://vanlifebydesign.com/hiking-bear-creek-falls-trail-in-telluride-colorado/
     - authoritative_no_match_recovered_via_general_search: https://vanlifebydesign.com/hiking-bear-creek-falls-trail-in-telluride-colorado/
-  - Jud Wiebe Trail — top_attractions (1 candidate(s) considered)
+  - Jud Wiebe Trail — top_attractions (2 candidate(s) considered)
+    - search_resolved: https://www.hikingwalking.com/destinations/co/co_sw/telluride/jud_wiebe
     - authoritative_no_match_recovered_via_general_search: https://www.hikingwalking.com/destinations/co/co_sw/telluride/jud_wiebe
-- **Pagosa Springs** (3)
-  - Chavolos Taqueria — dinner_recommendations (4 candidate(s) considered)
+  - San Miguel River Trail — top_attractions (4 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.telluride.gov/
+    - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=San%20Miguel%20River%20Trail%20Telluride
+    - search_resolved: https://www.tripadvisor.com/Attraction_Review-g33667-d146477-Reviews-San_Miguel_River-Telluride_Colorado.html
+    - authoritative_no_match_recovered_via_general_search: https://www.tripadvisor.com/Attraction_Review-g33667-d146477-Reviews-San_Miguel_River-Telluride_Colorado.html
+- **Pagosa Springs** (2)
+  - Chavolos Taqueria — dinner_recommendations (8 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33584-Pagosa_Springs_Colorado.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Chavolos+Taqueria+Pagosa+Springs+CO
-    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g33584-d1907683-Reviews-Chavolos_Mexican_Restaurant-Pagosa_Springs_Colorado.html
-    - audit_url_rejected: https://www.tripadvisor.com/Restaurant_Review-g33584-d1907683-Reviews-Chavolos_Mexican_Restaurant-Pagosa_Springs_Colorado.html
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g33584-d1907683-Reviews-Chavolos_Mexican_Restaurant-Pagosa_Springs_Colorado.html
   - City Hall Cafe & Grille — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33584-Pagosa_Springs_Colorado.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=City+Hall+Cafe+Grille+Pagosa+Springs+CO
-  - San Juan River Walk — top_attractions (1 candidate(s) considered)
-    - authoritative_no_match_recovered_via_general_search: https://local.yahoo.com/info-19727000-san-juan-river-walk-pagosa-springs/
