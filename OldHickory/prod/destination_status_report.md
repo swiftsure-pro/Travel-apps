@@ -1,11 +1,11 @@
 # Destination Status Summary
 
-- Run ID: 20260830T210358.182392Z
-- Generated at (UTC): 2026-08-30T21:11:01.342466+00:00
+- Run ID: 20260830T211825.107724Z
+- Generated at (UTC): 2026-08-30T21:22:05.380560+00:00
 - Destination count: 7
 - Retry recommended: 3
-- Retry attempted: 3
-- Resolved after retry: 0
+- Retry attempted: 4
+- Resolved after retry: 1
 - Unresolved after retry: 3
 - Not retried due to cap: 0
 
@@ -19,11 +19,11 @@
 - Nashville, Tennessee (nashville) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/8, en_route_exhaustion_or_no_match=0
 - Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=5/5, en_route_exhaustion_or_no_match=0
 - Lebanon, Tennessee (lebanon) — status=degraded, terminal=stable_without_retry, en_route_resolved=6/8, en_route_exhaustion_or_no_match=0
-- Franklin, Tennessee (franklin) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/6, en_route_exhaustion_or_no_match=0
-- Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/8, en_route_exhaustion_or_no_match=0
+- Franklin, Tennessee (franklin) — status=degraded, terminal=resolved_after_retry, en_route_resolved=3/6, en_route_exhaustion_or_no_match=0
+- Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
 - Asheville, North Carolina (asheville) — status=degraded, terminal=stable_without_retry, en_route_resolved=10/11, en_route_exhaustion_or_no_match=0
 
-## Removed for No Verified URL (55)
+## Removed for No Verified URL (56)
 - **Old Hickory, Tennessee** (14)
   - BODHI Asian Street Eats — dinner_recommendations (9 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
@@ -156,14 +156,14 @@
     - direct_batch_candidate_rejected: https://www.hendersonvillen.gov/parks
     - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Hendersonville%20Memory%20Gardens%20Gallatin%2C%20Tennessee
     - discovery_completed: https://www.google.com/maps/search/?api=1&query=Hendersonville%20Memory%20Gardens%20Gallatin%2C%20Tennessee
-  - Monthaven Arts & Cultural Center — en_route_stops (7 candidate(s) considered)
+  - Monthaven Arts & Cultural Center — en_route_stops (9 candidate(s) considered)
     - direct_batch_candidate_rejected: https://historicrockcastle.com/
     - direct_batch_candidate_rejected: https://www.hendersonvillememorygardens.com/
     - direct_batch_candidate_rejected: https://monthavenartscenter.org/
     - direct_batch_candidate_rejected: https://www.hendersonvillen.gov/parks
     - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Monthaven%20Arts%20%26%20Cultural%20Center%20Gallatin%2C%20Tennessee
-    - discovery_completed: https://www.google.com/maps/search/?api=1&query=Monthaven%20Arts%20%26%20Cultural%20Center%20Gallatin%2C%20Tennessee
-- **Lebanon, Tennessee** (6)
+    - en_route_url_collision_rejected: https://www.google.com/maps/search/?api=1&query=Monthaven%20Arts%20%26%20Cultural%20Center%20Gallatin%2C%20Tennessee
+- **Lebanon, Tennessee** (7)
   - A1 Pizza & Pasta — dinner_recommendations (6 candidate(s) considered)
     - direct_batch_candidate_rejected: https://restaurantguru.com/Aubreys-Lebanon
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Chi-Town+Pizza+Lebanon+TN
@@ -177,20 +177,25 @@
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55153-Lebanon_Tennessee.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Angelo%27s+Italian+Restaurant+Lebanon+TN
     - url_collision_rejected: https://www.yelp.com/biz/painturos-lebanon
+  - Cedar City Brewing Company — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.restaurantji.com/tn/lebanon/cedar-city-brewing-company/
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Cedar+City+Brewing+Company+Lebanon+TN
+    - direct_batch_candidate_rejected: https://www.restaurantji.com/tn/lebanon/tenn-lakes-brewing-company/
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Tenn+Lakes+Brewing+Company+Lebanon+TN
   - Dak Der Asian Foods — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://restaurantguru.com/DAK-DER-ASIAN-FOODS-Lebanon
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dak+Der+Asian+Foods+Lebanon+TN
   - Pyramids Grill — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://restaurantguru.com/Pyramids-Grill-Lebanon
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pyramids+Grill+Lebanon+TN
-  - Fite-Fessenden House — en_route_stops (10 candidate(s) considered)
+  - Fite-Fessenden House — en_route_stops (12 candidate(s) considered)
     - direct_batch_candidate_rejected: https://thehermitage.com/
     - direct_batch_candidate_rejected: https://thehermitage.com/plan-your-visit/tulip-grove/
     - direct_batch_candidate_rejected: https://www.rockcastle.org/
     - direct_batch_candidate_rejected: https://www.mtjuliet-tn.gov/240/Charlie-Daniels-Park
     - direct_batch_candidate_rejected: https://www.mtjuliet-tn.gov/
     - direct_batch_candidate_rejected: https://tnstateparks.com/parks/cedars-of-lebanon
-  - Lebanon's Donuts — en_route_stops (11 candidate(s) considered)
+  - Hibbett Hall Train and History Museum — en_route_stops (10 candidate(s) considered)
     - direct_batch_candidate_rejected: https://thehermitage.com/
     - direct_batch_candidate_rejected: https://thehermitage.com/plan-your-visit/tulip-grove/
     - direct_batch_candidate_rejected: https://www.rockcastle.org/
@@ -228,13 +233,16 @@
     - direct_batch_candidate_rejected: https://www.opentable.com/neighborhood/tn/franklin-restaurants
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=North+Italia+Franklin+TN
     - url_collision_rejected: https://ratingsnearme.com/franklin-tn/best-restaurant
-  - The Harpeth — dinner_recommendations (6 candidate(s) considered)
-    - search_resolved: https://www.tripadvisor.com/RestaurantsNear-g55055-d17790575-The_Harpeth_Franklin_Downtown_Curio_Collection_by_Hilton-Franklin_Tennessee.html
-    - discovery_completed: https://www.tripadvisor.com/RestaurantsNear-g55055-d17790575-The_Harpeth_Franklin_Downtown_Curio_Collection_by_Hilton-Franklin_Tennessee.html
-    - search_resolved: https://www.camelsandchocolate.com/harpeth-hotel-franklin/
   - etch — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=etch+Franklin+230+Franklin+Rd+Franklin+TN
     - url_collision_rejected: https://www.theinfatuation.com/nashville/guides/best-restaurants-franklin-tennessee
+  - Birdsong Hollow Overlook — en_route_stops (10 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://visitfranklin.com/blog/your-guide-to-the-natchez-trace-parkway-in-franklin-tn/
+    - direct_batch_candidate_rejected: https://franklinis.com/nashville-to-franklin-tn-what-to-see-eat-and-do-in-downtown-franklin/
+    - direct_batch_candidate_rejected: https://visitfranklin.com/plan-your-trip/
+    - direct_batch_candidate_rejected: https://franklintn.com/blog/day-trips-from-franklin-tn
+    - direct_batch_candidate_rejected: https://visitfranklin.com/blog/the-6-most-scenic-drives-to-take-around-franklin/
+    - direct_batch_selected_authoritative: https://visitfranklin.com/blog/your-guide-to-the-natchez-trace-parkway-in-franklin-tn/
 - **Leiper's Fork, Tennessee** (7)
   - GratiDude Ranch — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=GratiDude+Ranch+Leiper%27s+Fork+TN
