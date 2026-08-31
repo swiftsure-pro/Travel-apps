@@ -313,33 +313,28 @@
 
   <script id="embedded-trip-catalog" type="application/json">
     {
-          "updatedAt": "2026-08-29T05:45:27.6353102Z",
+          "updatedAt": "2026-08-31T17:18:26.7792930Z",
           "trips": [
                 {
                       "name": "Europe Exploration",
                       "directory": "EuropeExploration/prod",
                       "entry": "EuropeExploration/prod/index.html",
-                      "description": "Generated road-trip-generator output package in EuropeExploration/prod.",
-                      "templateVersion": "2.5",
-                      "generatedAt": "2026-08-29T05:37:37.454936+00:00",
-                      "validation": {
-                            "valid": true,
-                            "warningCount": 2
-                      },
-                      "validationReport": "EuropeExploration/prod/validation_report.json"
+                      "description": "Five capitals by rail — Brussels to Frankfurt",
+                      "generatedAt": "2026-08-30T22:19:02.080429+00:00"
+                },
+                {
+                      "name": "Old Hickory & Asheville",
+                      "directory": "OldHickory/prod",
+                      "entry": "OldHickory/prod/index.html",
+                      "description": "December 6-16, 2026 — the lake outside Nashville, then Asheville at Christmas",
+                      "generatedAt": "2026-08-30T21:22:05.420171+00:00"
                 },
                 {
                       "name": "Southwest Road Trip",
                       "directory": "sw/prod",
                       "entry": "sw/prod/index.html",
-                      "description": "Generated road-trip-generator output package in sw/prod.",
-                      "templateVersion": "2.5",
-                      "generatedAt": "2026-08-29T05:45:18.245132+00:00",
-                      "validation": {
-                            "valid": true,
-                            "warningCount": 4
-                      },
-                      "validationReport": "sw/prod/validation_report.json"
+                      "description": "October 2026 — Utah, Colorado & New Mexico",
+                      "generatedAt": "2026-08-30T21:41:51.933884+00:00"
                 }
           ]
     }
@@ -401,16 +396,11 @@
 
         var meta = document.createElement("div");
         meta.className = "meta";
-        meta.appendChild(makeTag("Template " + (trip.templateVersion || "n/a")));
+        // Template version, validation pass/fail and warning counts were
+        // build-system facts on a page for reading trips. The template version
+        // was also stale -- __template_version__ has not moved since the
+        // initial rebuild while the template file has changed repeatedly.
         meta.appendChild(makeTag("Generated " + toLocalDate(trip.generatedAt)));
-
-        if (trip.validation && typeof trip.validation.valid === "boolean") {
-          meta.appendChild(makeTag(trip.validation.valid ? "Validation: pass" : "Validation: issues", trip.validation.valid ? "ok" : "warn"));
-        }
-
-        if (trip.validation && Number.isFinite(trip.validation.warningCount)) {
-          meta.appendChild(makeTag("Warnings: " + trip.validation.warningCount));
-        }
 
         card.appendChild(meta);
 
@@ -422,14 +412,6 @@
         openBtn.href = trip.entry;
         openBtn.textContent = "Open Trip";
         cta.appendChild(openBtn);
-
-        if (trip.validationReport) {
-          var srcBtn = document.createElement("a");
-          srcBtn.className = "button-link source-btn";
-          srcBtn.href = trip.validationReport;
-          srcBtn.textContent = "View Validation";
-          cta.appendChild(srcBtn);
-        }
 
         card.appendChild(cta);
         return card;

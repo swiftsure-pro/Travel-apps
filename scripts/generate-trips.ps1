@@ -50,6 +50,28 @@ function Get-HtmlTitle {
     return $title
 }
 
+function Get-HtmlMetaDescription {
+    param([string]$HtmlText)
+
+    # The generator already writes a human summary here from the manifest's
+    # own subtitle ("Five capitals by rail - Brussels to Frankfurt"). The card
+    # used to say "Generated road-trip-generator output package in
+    # EuropeExploration/prod", which describes the build system rather than
+    # the trip.
+    if (-not $HtmlText) { return $null }
+    $m = [regex]::Match($HtmlText, '<meta\s+name="description"\s+content="([^"]*)"', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    if (-not $m.Success) { return $null }
+    $text = [System.Net.WebUtility]::HtmlDecode($m.Groups[1].Value)
+    $text = [regex]::Replace($text, "\s+", " ").Trim()
+    if (-not $text) { return $null }
+    # The meta repeats the trip title before an em dash; the card shows the
+    # title separately, so drop that prefix and keep the summary.
+    $dash = [string][char]0x2014
+    $parts = $text -split ("\s+" + [regex]::Escape($dash) + "\s+"), 2
+    if ($parts.Count -eq 2 -and $parts[1].Trim()) { return $parts[1].Trim() }
+    return $text
+}
+
 function Get-NameFromDirectory {
     param([string]$RelativeDirectory)
 
@@ -98,25 +120,20 @@ function New-TripEntry {
         $existing = $ExistingByEntry[$entry]
     }
 
+    # The validation report is still written per run; the gallery card just no
+    # longer surfaces it. Template version, pass/fail and warning counts are
+    # build-system facts, not things a reader of the trip list needs -- and the
+    # template version shown was stale anyway (generator.__template_version__
+    # has not moved since the initial rebuild, while the template file has).
     $validationReportPath = Join-Path $IndexFile.DirectoryName "validation_report.json"
-    $validation = $null
-    $templateVersion = $null
     $generatedAt = $null
-    $validationReport = $null
 
     if (Test-Path $validationReportPath) {
         $validation = Get-Content -Raw -Path $validationReportPath -Encoding UTF8 | ConvertFrom-Json
-        $templateVersion = $validation.template_version
-        if (-not $templateVersion -and $validation.generator.template_version) {
-            $templateVersion = $validation.generator.template_version
-        }
-
         $generatedAt = $validation.generated_at_utc
         if (-not $generatedAt) {
             $generatedAt = $validation.timestamp_utc
         }
-
-        $validationReport = Convert-ToRelativePath -BasePath $Root -TargetPath $validationReportPath
     }
 
     $html = Get-Content -Raw -Path $IndexFile.FullName -Encoding UTF8
@@ -132,22 +149,17 @@ function New-TripEntry {
         $name = Get-NameFromDirectory -RelativeDirectory $relativeDirectory
     }
 
-    $description = $null
-    $existingDescription = Get-OptionalPropertyValue -Object $existing -PropertyName "description"
-    if ($existingDescription) {
-        $description = $existingDescription
-    } elseif ($validation) {
-        $description = "Generated road-trip-generator output package in $relativeDirectory."
-    } else {
-        $description = "Generated itinerary page located in $relativeDirectory."
+    $description = Get-HtmlMetaDescription -HtmlText $html
+    if (-not $description) {
+        $existingDescription = Get-OptionalPropertyValue -Object $existing -PropertyName "description"
+        if ($existingDescription) {
+            $description = $existingDescription
+        } else {
+            $description = "Itinerary page in $relativeDirectory."
+        }
     }
 
     $routeSummary = Get-OptionalPropertyValue -Object $existing -PropertyName "routeSummary"
-
-    $existingTemplateVersion = Get-OptionalPropertyValue -Object $existing -PropertyName "templateVersion"
-    if (-not $templateVersion -and $existingTemplateVersion) {
-        $templateVersion = $existingTemplateVersion
-    }
 
     $existingGeneratedAt = Get-OptionalPropertyValue -Object $existing -PropertyName "generatedAt"
     if (-not $generatedAt -and $existingGeneratedAt) {
@@ -165,43 +177,8 @@ function New-TripEntry {
         $entryObject.routeSummary = $routeSummary
     }
 
-    if ($templateVersion) {
-        $entryObject.templateVersion = [string]$templateVersion
-    }
-
     if ($generatedAt) {
         $entryObject.generatedAt = [string]$generatedAt
-    }
-
-    if ($validation) {
-        $warningCount = 0
-        if ($validation.summary -and $null -ne $validation.summary.warning_count) {
-            $warningCount = [int]$validation.summary.warning_count
-        }
-
-        $isValid = $false
-        if ($validation.summary -and $null -ne $validation.summary.valid) {
-            $isValid = [bool]$validation.summary.valid
-        }
-
-        $entryObject.validation = [ordered]@{
-            valid = $isValid
-            warningCount = $warningCount
-        }
-    } else {
-        $existingValidation = Get-OptionalPropertyValue -Object $existing -PropertyName "validation"
-        if ($existingValidation) {
-            $entryObject.validation = $existingValidation
-        }
-    }
-
-    if ($validationReport) {
-        $entryObject.validationReport = $validationReport
-    } else {
-        $existingValidationReport = Get-OptionalPropertyValue -Object $existing -PropertyName "validationReport"
-        if ($existingValidationReport) {
-            $entryObject.validationReport = $existingValidationReport
-        }
     }
 
     return [pscustomobject]$entryObject
