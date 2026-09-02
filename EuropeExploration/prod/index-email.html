@@ -1,4 +1,4 @@
-<!-- generator_version=2.5.0; template_version=2.5; provider=openai; model=gpt-4o-mini; generated_at=2026-08-30T22:19:02.080429+00:00; development_build=v2.5.0+682e5fd+dirty+20260830T221721.729482Z -->
+<!-- generator_version=2.5.0; template_version=2.5.3; provider=openai; model=gpt-4o-mini; generated_at=2026-09-02T22:22:20.534825+00:00; development_build=v2.5.0+b0f1c80+clean+20260902T221834.839465Z -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -308,6 +308,22 @@
       .route-headline-row { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; flex-wrap: nowrap; margin: 0.35rem 0 0.55rem; }
       .route-headline-row .route-badges { margin: 0; }
       .badge-distance, .badge-time { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; border-radius: 9999px; padding: 4px 12px; font-size: 0.83rem; font-weight: 600; }
+      .badge-fare { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; border-radius: 9999px; padding: 4px 12px; font-size: 0.83rem; font-weight: 600; }
+      .badge-transfers { background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; border-radius: 9999px; padding: 4px 12px; font-size: 0.83rem; font-weight: 600; }
+      .badge-unverified { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; border-radius: 9999px; padding: 4px 12px; font-size: 0.83rem; font-weight: 600; }
+      /* Public transport: suggested, never booked. Deliberately the same
+         stop-card vocabulary as an en-route stop, so a suggestion reads as a
+         sibling of the itinerary around it rather than as a timetable. */
+      .transit-options { margin: 0.85rem 0 0.4rem; }
+      .transit-header { font-weight: 700; color: var(--canyon); font-size: 0.85rem; letter-spacing: 0.05em; margin: 0.75rem 0 0.5rem; text-transform: uppercase; }
+      .transit-option { flex-direction: column; align-items: stretch; gap: 0.35rem; margin-bottom: 0.4rem; }
+      .transit-option-name { font-weight: 700; color: #2c1a0e; }
+      .transit-option-notes, .transit-option-hint { font-size: 0.85rem; color: #5c4a35; margin: 0; line-height: 1.55; }
+      .transit-option-hint { font-style: italic; }
+      .transit-assessment { font-size: 0.92rem; color: #5c4a35; line-height: 1.65; margin: 0; }
+      .transit-local-tip { font-size: 0.85rem; color: #5c4a35; margin: 0.4rem 0 0; line-height: 1.55; }
+      .transit-fallback { font-size: 0.85rem; color: #5c4a35; margin: 0.5rem 0 0; }
+      .transit-disclaimer { font-size: 0.8rem; color: #991b1b; margin: 0.5rem 0 0; line-height: 1.5; }
       .route-summary { font-size: 0.92rem; color: #5c4a35; line-height: 1.65; margin: 0; }
       .can-miss-header { font-weight: 700; color: var(--canyon); font-size: 0.85rem; letter-spacing: 0.05em; margin: 0.75rem 0 0.5rem; text-transform: uppercase; }
       .en-route-stops { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.3rem; }
@@ -355,10 +371,18 @@
          reliably tellable apart across cards even before parsing the tiny
          glyph inside: a warm tan pill always means "primary source link",
          a blue pill always means "secondary open-in-maps corner badge". */
-      .attr-external-link { display: inline-flex; align-items: center; background: #f3e8db; color: #6b4a2b; border: 1px solid #e3cfae; border-radius: 9999px; padding: 2px 9px; font-size: 0.82rem; font-weight: 600; text-decoration: none; margin-left: 0.45rem; line-height: 1.5; }
-      .attr-external-link:hover { background: #e9d9c0; text-decoration: none; }
-      .badge-map { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; text-decoration: none; cursor: pointer; }
+      /* The designator says what KIND of source the title link is. It is a
+         <span>, not a control, and it had a hover background that said
+         otherwise -- so it read as a second, broken link. It now sits flat and
+         muted with cursor:default, and carries no hover state at all. */
+      .attr-external-link { display: inline-flex; align-items: center; background: transparent; color: #8a7a66; border: none; border-radius: 0; padding: 0 0 0 2px; font-size: 0.8rem; font-weight: 400; text-decoration: none; margin-left: 0.35rem; line-height: 1.5; opacity: 0.75; cursor: default; }
+      /* The real map link is a control and must look like one: larger glyph,
+         its own pill, a pointer, and a hover state. Previously it inherited
+         .badge's 12px while the designator beside it rendered at 0.82rem, so
+         the clickable one was the SMALLER of the two. */
+      .badge-map { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; text-decoration: none; cursor: pointer; font-size: 15px; line-height: 1; padding: 4px 10px; }
       .badge-map:hover { background: #bae6fd; }
+      .badge-map:focus-visible { outline: 2px solid #0369a1; outline-offset: 2px; }
       .badge-hike-strenuous { background: #fee2e2; color: #991b1b; font-size: 0.75rem; }
       .badge-hike-moderate { background: #dcfce7; color: #15803d; font-size: 0.75rem; }
       .badge-hike-easy { background: #dcfce7; color: #15803d; font-size: 0.75rem; }
@@ -579,20 +603,20 @@
 
       <section id="section-brussels" class="dest-section">
 <div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1548092304-e0205cb0031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8QnJ1c3NlbHMlMkMlMjBCZWxnaXVtfGVufDB8MHx8fDE3ODc4Njc2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080')">
-  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/50.8467,4.3525" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Grand%20Place%20Brussels%2C%20Belgium&amp;destination=Cathedral%20of%20St.%20Michael%20and%20St.%20Gudula&amp;travelmode=driving&amp;api=1&amp;waypoints=Atomium%20Brussels%2C%20Belgium|Parc%20du%20Cinquantenaire%20Brussels%2C%20Belgium|Manneken%20Pis%20Brussels%2C%20Belgium|Sablon%20Neighborhood%20Brussels%2C%20Belgium" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/50.8467,4.3525" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Mont%20des%20Arts%20Brussels%2C%20Belgium&amp;destination=Atomium%20Brussels%2C%20Belgium&amp;travelmode=driving&amp;api=1&amp;waypoints=Grand%20Place%20Brussels%2C%20Belgium|Sablon%20District%20Brussels%2C%20Belgium|Manneken%20Pis%20Brussels%2C%20Belgium" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Brussels, Belgium</h2>
   <p class="dates">August 31 - September 1, 2026</p>
   <p class="img-credit">Stephanie LeBlanc</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Brussels, Belgium</h3>
-  <p class="intro-note-text">Brussels in late summer is warm and bustling, ideal for exploring the city&#x27;s rich culture and cuisine. Expect moderate crowds and vibrant street life. Local markets and cafes offer affordable dining options.</p>
-  <p class="intro-note-text"><strong>Local customs:</strong> Greetings are often warm; a handshake is common. It&#x27;s polite to say &#x27;Bonjour&#x27; or &#x27;Bonsoir&#x27; when entering shops.</p>
-  <p class="intro-note-text"><strong>Best times of day:</strong> Morning is perfect for visiting popular attractions before the crowds arrive. Late afternoon is great for enjoying outdoor cafes.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is efficient, with trams and buses connecting key areas. Consider a day pass for convenience.</p>
-  <p class="intro-note-text"><strong>Safety:</strong> Brussels is generally safe, but remain vigilant in crowded areas for pickpockets. Avoid poorly lit streets at night.</p>
-  <p class="intro-note-text"><strong>Crowd patterns:</strong> Weekends see higher foot traffic at major sights. Early mornings or late afternoons are best for quieter visits.</p>
-  <p class="intro-note-text"><strong>Local etiquette:</strong> Politeness is important; use &#x27;s&#x27;il vous plaît&#x27; and &#x27;merci&#x27; when interacting. Tipping is not mandatory but appreciated.</p>
+  <p class="intro-note-text">Brussels in late summer offers mild weather and fewer crowds. Enjoy local cafes and markets for budget-friendly dining. The city is easy to navigate on foot or by public transport.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> It is customary to greet with a handshake and say &#x27;bonjour&#x27; or &#x27;bonsoir&#x27; depending on the time of day.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are ideal for exploring popular attractions before crowds build.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is efficient, with trams and buses running frequently. Consider getting a day pass for unlimited travel.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Be aware of pickpockets in crowded areas. Keep your belongings secure and avoid displaying valuables.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect larger crowds in popular areas during the afternoon. Early mornings and late evenings are quieter.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> When dining, it is polite to wait for everyone at the table to be served before starting your meal.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -612,7 +636,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical August temperatures are around 73°F daytime and 58°F overnight. Late summer in Brussels brings warm days perfect for exploring. Crowds are moderate as local festivals draw visitors but are fewer than in peak summer. Most attractions are open with regular hours.</p>
+  <p class="env-summary">Typical August temperatures are around 73°F daytime and 58°F overnight. Late summer in Brussels brings mild weather with warm days and cool nights. Crowds are lighter than in peak summer months, though popular spots may still be busy. Many outdoor cafes and markets will be open, perfect for al fresco dining.</p>
   <a href="https://weather.com/weather/today/l/50.8467,4.3525" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -628,17 +652,16 @@
       <span class="badge badge-time">15 min</span>
     </div>
   </div>
-  <p class="route-summary">Drive from the previous stop on A1. Expect a mix of urban landscapes and rural fields along the way. Plan for a few rest stops to stretch your legs.</p>
+  <p class="route-summary">Drive along the A1 towards Brussels, enjoying the scenic Belgian countryside. Watch for signs as you approach the city, which is well-marked for easy navigation.</p>
 </div>
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://goo.gl/maps/gudZ7iymmAjxKxi98" class="attr-link" target="_blank" rel="noopener">Grand Place</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ8fEURn_Ew0cRts_ij101PLA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This UNESCO World Heritage site features opulent guildhalls and the Town Hall. It&#x27;s the city&#x27;s central square, often bustling with street performers and vendors. Best visited in the morning to avoid crowds.</span><span class="practical-note">📌 Access is free, but guided tours are available for a fee.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://atomium.be/atomium_symbol_of_Brussels_and_Belgium" class="attr-link" target="_blank" rel="noopener">Atomium</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">1-2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJAQAAAKzDw0cRCTemaB0Hk1I" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A landmark structure resembling an iron crystal magnified 165 billion times. Visitors can explore the spheres and enjoy panoramic views of the city. Be sure to check for any special exhibitions.</span><span class="practical-note">📌 Entry fee required; consider visiting early to avoid lines.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.9-hotel-chelton-brussels.be/en/collection/parc-du-cinquantenaire.15907.html" class="attr-link" target="_blank" rel="noopener">Parc du Cinquantenaire</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJX1tyKaTEw0cRWjLH8frzAq8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A large public park with arches and beautiful gardens. It&#x27;s a great spot for a picnic and offers a lovely view of the surrounding museums.</span><span class="practical-note">📌 Free entry; ideal for a sunny afternoon.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.brussel.be/manneken-pis" class="attr-link" target="_blank" rel="noopener">Manneken Pis</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">30 minutes</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ0T1eGXnEw0cRH8GwIKZAuBc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A small bronze statue of a boy urinating into a fountain, this quirky landmark is a symbol of Brussels. It&#x27;s often dressed in various costumes.</span><span class="practical-note">📌 Easily accessible; combine with a visit to nearby cafes for refreshments.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.brusselstourism.org/sablon-brussels-guide/" class="attr-link" target="_blank" rel="noopener">Sablon Neighborhood</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJBw_qnX3Ew0cRN2tVwNKCFtI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Elegant district with antiques market, chocolatiers and Gothic church.[[3]](</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.cathedralisbruxellensis.be/" class="attr-link" target="_blank" rel="noopener">Cathedral of St. Michael and St. Gudula</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJvTZ4_3_Dw0cRzSOE0556hYQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Gothic cathedral with impressive stained glass and architecture.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.pelago.com/en-US/brussels/mont-des-arts-c1933/" class="attr-link" target="_blank" rel="noopener">Mont des Arts</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ4clK53rEw0cRedyFK8jjvrM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This elevated area offers a beautiful view of the city and is surrounded by museums and gardens. It&#x27;s a perfect spot for photos and a relaxing break.</span><span class="practical-note">📌 Easily accessible on foot from the Grand Place.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://goo.gl/maps/gudZ7iymmAjxKxi98" class="attr-link" target="_blank" rel="noopener">Grand Place</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ8fEURn_Ew0cRts_ij101PLA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Grand Place is the central square of Brussels, surrounded by opulent guildhalls and the Town Hall. Its intricate architecture is a UNESCO World Heritage site. Visit in the evening to see the buildings beautifully illuminated.</span><span class="practical-note">📌 Access is free, but it can be busy during peak hours.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.brusselstourism.org/sablon-brussels-guide/" class="attr-link" target="_blank" rel="noopener">Sablon District</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJi1yFcH3Ew0cRMmuGFDc3PBo" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This upscale area is known for its antique shops, chocolatiers, and the beautiful Church of Our Blessed Lady of the Sablon. It&#x27;s a great place to enjoy local treats.</span><span class="practical-note">📌 Perfect for an afternoon stroll and coffee break.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.brussel.be/manneken-pis" class="attr-link" target="_blank" rel="noopener">Manneken Pis</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ0T1eGXnEw0cRH8GwIKZAuBc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This small bronze statue of a boy urinating is a quirky symbol of Brussels. It&#x27;s often dressed in various costumes and attracts many visitors.</span><span class="practical-note">📌 Best visited early in the morning to avoid crowds.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://atomium.be/atomium_symbol_of_Brussels_and_Belgium" class="attr-link" target="_blank" rel="noopener">Atomium</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJAQAAAKzDw0cRCTemaB0Hk1I" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">An building and museum, the Atomium represents an iron crystal magnified 165 billion times. Visitors can explore the spheres and enjoy panoramic views of the city from the top.</span><span class="practical-note">📌 Tickets are required for entry.</span></div>
 </div>
 </div>
 <div class="card schedule-card">
@@ -650,29 +673,29 @@
       <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Travel from Brussels Airport, Zaventem, Belgium (depart around 9:00 AM).</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit the Atomium for an interactive experience and panoramic views. Enjoy lunch at a neighborhood café nearby.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit the Grand Place for a unique perspective of the city. Explore the surrounding park area afterwards.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Wrap the day with Grand Place before dinner near your base.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Dine at Chez Léon, known for its mussels and fries. Enjoy the lively atmosphere of the nearby streets.</span></div>
     </div>
   </div>
   <div class="schedule-day">
     <div class="schedule-day-title">Day 2</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Begin at Parc du Cinquantenaire to admire the architecture and bustling atmosphere. Explore nearby cafes for a light breakfast.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Mont des Arts and keep parking buffers before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
       <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Atomium, keeping realistic transition time between stops.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Amsterdam, Netherlands happens the next morning, not tonight. Plan dinner at Chez Léon.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Amsterdam, Netherlands happens the next morning, not tonight. Plan dinner at Le Pain Quotidien.</span></div>
     </div>
   </div>
 </div>
 </div>
 <div class="card events-card">
 <h3>🎭 Cultural Events</h3>
-<p>Brussels has a dynamic cultural scene in late summer. Expect numerous festivals celebrating music and dance. The city is home to many galleries, theaters, and live music venues, providing ample opportunities for exploration.</p>
+<p>Brussels has a dynamic cultural scene in late summer. Expect a variety of music festivals, dance events, and outdoor activities. The city is known for its vibrant street life and numerous galleries showcasing local and international artists.</p>
 </div>
 <div class="card restaurants-card">
 <h3>🍽️ Dinner Recommendations</h3>
@@ -682,7 +705,7 @@
       <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.brusselstourism.org/best-frites-in-brussels/" class="rest-link" target="_blank" rel="noopener">Maison Antoine</a> <span class="attr-external-link" title="link source">🔗</span></span>
       <div class="rest-badges">
         
-        
+        <span class="badge cuisine-badge">Belgian</span>
         <span class="badge badge-rating">★ 4.5/5</span>
         <span class="badge badge-price">$</span>
         
@@ -777,37 +800,37 @@
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://cafedesspores.be/en" class="rest-link" target="_blank" rel="noopener">Café des Spores</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://chezleon.be/en/our-restaurant/" class="rest-link" target="_blank" rel="noopener">Chez Léon</a> <span class="attr-external-link" title="link source">🔗</span></span>
       <div class="rest-badges">
         
         <span class="badge cuisine-badge">Belgian</span>
         
         <span class="badge badge-price">$$</span>
         
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJtSmst1zEw0cR3fngE41fBPE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJBb27mIDDw0cRLFEv29XVFKM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
       </div>
     </div>
-    <span class="rest-desc">A cozy bistro focusing on seasonal dishes with a local twist. Try the wild mushroom risotto or the Flemish stew. Reservations are recommended, especially on weekends.</span>
+    <span class="rest-desc">Famous for its mussels and fries, this restaurant has been serving customers since 1893. The lively atmosphere makes it a popular choice among locals and tourists. Reservations are recommended during peak times.</span>
   </div>
 </div>
 </div>
 </section>
 <section id="section-amsterdam" class="dest-section">
 <div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1534351590666-13e3e96b5017?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8QW1zdGVyZGFtJTJDJTIwTmV0aGVybGFuZHN8ZW58MHwwfHx8MTc4Nzg3NjgwNHww&ixlib=rb-4.1.0&q=80&w=1080')">
-  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/52.3731,4.8925" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Van%20Gogh%20Museum%20Amsterdam%2C%20Netherlands&amp;destination=Jordaan%20District%20Amsterdam%2C%20Netherlands&amp;travelmode=driving&amp;api=1&amp;waypoints=Rijksmuseum%20Amsterdam%2C%20Netherlands|Vondelpark%20Amsterdam%2C%20Netherlands|Dam%20Square%20Amsterdam%2C%20Netherlands|Canal%20Ring%20Amsterdam%2C%20Netherlands|Anne%20Frank%20House%20Amsterdam%2C%20Netherlands|Begijnhof%20Amsterdam%2C%20Netherlands" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/52.3731,4.8925" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Van%20Gogh%20Museum%20Amsterdam%2C%20Netherlands&amp;destination=Royal%20Palace%20Amsterdam&amp;travelmode=driving&amp;api=1&amp;waypoints=Rijksmuseum%20Amsterdam%2C%20Netherlands|Vondelpark%20Amsterdam%2C%20Netherlands|Jordaan%20District%20Amsterdam%2C%20Netherlands|Dam%20Square%20Amsterdam%2C%20Netherlands|Anne%20Frank%20House%20Amsterdam%2C%20Netherlands|Begijnhof%20Amsterdam%2C%20Netherlands" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Amsterdam, Netherlands</h2>
   <p class="dates">September 2-4, 2026</p>
   <p class="img-credit">Adrien Olichon</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Amsterdam, Netherlands</h3>
-  <p class="intro-note-text">Amsterdam in early September is ideal for exploring its cultural heritage and lively neighborhoods. The pleasant weather encourages outdoor activities, including canal walks and park visits.</p>
-  <p class="intro-note-text"><strong>Local customs:</strong> Biking is a popular mode of transport; consider renting a bike to blend in with locals.</p>
-  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are great for visiting popular attractions before the crowds arrive. Evenings offer a vibrant atmosphere with many cafes and bars open late.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Trams and buses are efficient; however, be mindful of bike lanes when walking or crossing the street.</p>
-  <p class="intro-note-text"><strong>Safety:</strong> Amsterdam is generally safe, but keep an eye on personal belongings in crowded areas.</p>
-  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect more visitors at popular sites during weekends, particularly on Saturdays.</p>
-  <p class="intro-note-text"><strong>Local etiquette:</strong> It&#x27;s customary to greet with a friendly &#x27;Hallo&#x27; and to say &#x27;Dank u&#x27; when receiving service.</p>
+  <p class="intro-note-text">Amsterdam in September is mild and pleasant, making it suitable for outdoor activities. Expect a mix of cultural experiences and local eateries.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Bicycling is a primary mode of transport; be mindful of bike lanes when walking.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are ideal for museum visits to avoid crowds. Late afternoons offer a great atmosphere for exploring cafes.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is efficient but can be crowded. Purchase tickets in advance for trams or buses.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Amsterdam is generally safe, but be cautious of pickpockets in crowded areas.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Weekends are busier at major attractions. Aim for weekdays if possible for a more relaxed experience.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> Respect local customs, especially in quieter neighborhoods. Always greet shopkeepers and say thank you.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -823,7 +846,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical September temperatures are around 67°F daytime and 54°F overnight. September brings mild days in Amsterdam with the arrival of early fall. The summer tourist crowds diminish significantly, making it easier to explore. Most attractions are open, but some may have reduced hours, so check ahead.</p>
+  <p class="env-summary">Typical September temperatures are around 67°F daytime and 54°F overnight. September brings a mix of mild weather and early fall colors. Crowds are smaller than peak summer, making it easier to explore popular attractions. Some outdoor cafes may still be open, but check for seasonal closures.</p>
   <a href="https://weather.com/weather/today/l/52.3731,4.8925" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -836,24 +859,23 @@
     <div class="route-headline">Brussels, Belgium → Amsterdam, Netherlands</div>
     <div class="route-badges route-badges-inline">
       <span class="badge badge-distance">95 mi</span>
-      <span class="badge badge-time">2 hrs 15 min</span>
+      <span class="badge badge-time">2 hrs</span>
     </div>
   </div>
-  <p class="route-summary">Drive from Brussels to Amsterdam via A1, passing through scenic Dutch countryside. Expect flat landscapes and villages along the way. Parking in Amsterdam can be challenging, so plan to leave your vehicle in a designated garage.</p>
+  <p class="route-summary">Take the E19 from Brussels, passing through scenic Dutch countryside. Enjoy views of fields and small towns along the way. Arrive in Amsterdam, where parking can be limited.</p>
 </div>
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.vangoghmuseum.nl/en" class="attr-link" target="_blank" rel="noopener">Van Gogh Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1.5–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJX1rTlu8JxkcRGsV8-a4oKMI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This museum houses the largest collection of Van Gogh&#x27;s works, showcasing his artistic evolution. Don&#x27;t miss the Sunflowers and self-portraits.</span><span class="practical-note">📌 Check for any special exhibitions when planning your visit.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.rijksmuseum.nl/en" class="attr-link" target="_blank" rel="noopener">Rijksmuseum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">2–3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5Ra7we4JxkcRhYVAaq5zQ9U" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Home to Dutch masterpieces including works by Rembrandt and Vermeer. The museum grounds feature a picturesque garden and a large I Amsterdam sign.</span><span class="practical-note">📌 Timed-entry tickets recommended to avoid long lines.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.hetvondelpark.net/" class="attr-link" target="_blank" rel="noopener">Vondelpark</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJz3y0xeIJxkcRNcogBVV41Gw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Amsterdam&#x27;s largest city park features walking paths, ponds, and open-air theater. It&#x27;s a great spot to relax and enjoy a picnic.</span><span class="practical-note">📌 Free entry, ideal for a leisurely afternoon.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.maploco.com/top-attractions/amsterdam/dam-square/" class="attr-link" target="_blank" rel="noopener">Dam Square</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ7xRLO8cJxkcR-QTagFuyCZg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The city&#x27;s central square features the Royal Palace and the National Monument. It&#x27;s a vibrant meeting point for locals and tourists alike.</span><span class="practical-note">📌 Regular events and performances can be found here.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.maploco.com/top-attractions/amsterdam/canal-ring/" class="attr-link" target="_blank" rel="noopener">Canal Ring</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJvY1PLFYJxkcRkJnvoum_9fI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A UNESCO World Heritage site, the canal ring is best explored on foot or by boat. The views of historic houses along the canals are remarkable.</span><span class="practical-note">📌 Consider a guided boat tour for a unique perspective.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.annefrank.org/en/" class="attr-link" target="_blank" rel="noopener">Anne Frank House</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1–1.5 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJSRE-IcUJxkcRCltjPmVdmtQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The secret annex where Anne Frank wrote her diary during World War II. The museum offers a poignant insight into her life and the history of the time.</span><span class="practical-note">📌 Tickets must be booked online in advance.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.vangoghmuseum.nl/en" class="attr-link" target="_blank" rel="noopener">Van Gogh Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1.5–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJX1rTlu8JxkcRGsV8-a4oKMI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Features the largest collection of Van Gogh&#x27;s paintings and letters. The museum offers insight into his life and artistic progression.</span><span class="practical-note">📌 Timed-entry tickets are recommended to ensure access.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.rijksmuseum.nl/en" class="attr-link" target="_blank" rel="noopener">Rijksmuseum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">2–3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5Ra7we4JxkcRhYVAaq5zQ9U" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Home to a vast collection of Dutch art and history, including works by Rembrandt and Vermeer. The museum&#x27;s architecture is also notable, with its striking facade and beautiful gardens.</span><span class="practical-note">📌 Tickets are required and should be purchased in advance to avoid long lines.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.hetvondelpark.net/" class="attr-link" target="_blank" rel="noopener">Vondelpark</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJz3y0xeIJxkcRNcogBVV41Gw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A large public park perfect for picnics and leisurely strolls. It features ponds, walking paths, and outdoor theaters.</span><span class="practical-note">📌 Free entry; a great place to relax after visiting museums.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://questoapp.com/amsterdam/places-to-visit/jordaan-district-amsterdam" class="attr-link" target="_blank" rel="noopener">Jordaan District</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJf-GU6NoJxkcRHOqk5aT6MoY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Known for its narrow streets, independent art galleries, and atmospheric canals. A great place to explore local shops and cafes.</span><span class="practical-note">📌 Best explored on foot for an immersive experience.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.maploco.com/top-attractions/amsterdam/dam-square/" class="attr-link" target="_blank" rel="noopener">Dam Square</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ7xRLO8cJxkcR-QTagFuyCZg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The city&#x27;s main square, hosting the Royal Palace and the National Monument. It&#x27;s a bustling area ideal for people-watching.</span><span class="practical-note">📌 Nearby cafes offer affordable snack options.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.annefrank.org/en/" class="attr-link" target="_blank" rel="noopener">Anne Frank House</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1–1.5 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJSRE-IcUJxkcRCltjPmVdmtQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The hidden annex where Anne Frank wrote her diary during WWII. The preserved rooms give a poignant glimpse into her life.</span><span class="practical-note">📌 Advance tickets are necessary, as walk-up tickets are often sold out.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.begijnhofkapelamsterdam.nl/" class="attr-link" target="_blank" rel="noopener">Begijnhof</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJeSe5CsEJxkcRdRlM21_MA9s" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Peaceful medieval courtyard with historic houses and chapel.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://questoapp.com/amsterdam/places-to-visit/jordaan-district-amsterdam" class="attr-link" target="_blank" rel="noopener">Jordaan District</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"> <a href="https://www.google.com/maps/place/?q=place_id:ChIJf-GU6NoJxkcRHOqk5aT6MoY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">neighborhood of narrow streets, cafes, and galleries.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.paleisamsterdam.nl/en" class="attr-link" target="_blank" rel="noopener">Royal Palace Amsterdam</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJFQ6IwMYJxkcRis8dtZlOkTk" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Grand 17th-century palace with opulent interiors and history.</span></div>
-  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="Zaanse Schans">Zaanse Schans</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Day Trip</span><span class="badge badge-duration">30-min drive from Amsterdam</span></div></div><span class="attr-desc">Zaanse Schans is a historic village showcasing traditional Dutch windmills and wooden houses.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://dotonmap.com/netherlands/amsterdam/westerkerk-church-amsterdam-netherlands/" class="attr-link" target="_blank" rel="noopener">Westerkerk</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"> <a href="https://www.google.com/maps/place/?q=place_id:ChIJkyv4z8QJxkcR9FqUIxss0SM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">church with Rembrandt’s grave and panoramic tower views.</span></div>
 </div>
 </div>
 <div class="card schedule-card">
@@ -862,74 +884,66 @@
   <div class="schedule-day">
     <div class="schedule-day-title">Day 1</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Amsterdam and start your day at the Van Gogh Museum to explore Dutch art and history.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Amsterdam and visit the Van Gogh Museum to explore its extensive collection of Dutch masterpieces.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">After arrival, consider one or more of the following, within about 3h 15m: Van Gogh Museum (1h 45m), Vondelpark (1h 30m). Keep the afternoon realistic after travel.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">After arrival, consider one or more of the following, within about 3h 45m: Van Gogh Museum (1h 45m), Vondelpark (1h 30m), Dam Square (30m). Keep the afternoon realistic after travel.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Cafe Loetje, known for its excellent steak and local atmosphere.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Dine at Café de Jaren for their renowned ribs and enjoy the lively atmosphere of the city.</span></div>
     </div>
   </div>
   <div class="schedule-day">
     <div class="schedule-day-title">Day 2</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Visit the Rijksmuseum to learn about her remarkable story and the history of the Holocaust.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Visit the Rijksmuseum to gain insight into her story and the impact of WWII.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Consider one or more of the following, within about 3h 15m: Dam Square (30m), Canal Ring (1h 30m), Anne Frank House (1h 15m). Leave buffer time between stops.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Consider one or more of the following, within about 2h 45m: Jordaan District (1h 30m), Anne Frank House (1h 15m). Leave buffer time between stops.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Relax at a local café and enjoy a casual dinner at De Silveren Spiegel, a vibrant food market with various options.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Café de Klos, known for its fresh herring sandwiches and local seafood.</span></div>
     </div>
   </div>
   <div class="schedule-day">
     <div class="schedule-day-title">Day 3</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Explore the Vondelpark on foot, taking in the historic architecture and atmosphere.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Vondelpark, then pivot to a different nearby area before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit the nearby Hermitage Amsterdam for more art and exhibitions before enjoying lunch at a local eatery.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Stroll through Vondelpark and enjoy a picnic lunch before heading to the Van Gogh Museum.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Berlin, Germany happens the next morning, not tonight. Plan dinner at Foodhallen.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Berlin, Germany happens the next morning, not tonight. Plan dinner at Haring &amp; Zo.</span></div>
     </div>
   </div>
 </div>
 </div>
 <div class="card events-card">
 <h3>🎭 Cultural Events &amp; Entertainment</h3>
-<p class="events-intro">Amsterdam in September is alive with cultural activities. The city hosts numerous festivals and concerts, making it a vibrant time to visit. Art galleries and theaters are also active, showcasing local talent and international works.</p>
+<p class="events-intro">Amsterdam's cultural scene in early September is lively, with numerous festivals and performances taking place. The city is known for its vibrant arts community, including theaters, galleries, and live music venues.</p>
 <div class="events-list">
   <div class="event-item">
     <div class="events-subcard">
-      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Nederlands%20Theater%20Festival%20Various%20venues%2C%20Amsterdam" class="event-link" target="_blank" rel="noopener">Nederlands Theater Festival</a></strong><br/>
-      <span class="events-date-range">September 3–13</span><br/>
-      📍 Various venues, Amsterdam<br/>
-      💵 Varies<br/>
-    </div>
-  </div>
-  <div class="event-item">
-    <div class="events-subcard">
-      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Amsterdam%20Fringe%20Festival%20Various%20venues%2C%20Amsterdam" class="event-link" target="_blank" rel="noopener">Amsterdam Fringe Festival</a></strong><br/>
-      <span class="events-date-range">September 3–13</span><br/>
-      📍 Various venues, Amsterdam<br/>
-      💵 Varies<br/>
-    </div>
-  </div>
-  <div class="event-item">
-    <div class="events-subcard">
-      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Amsterdam%20Tattoo%20Convention" class="event-link" target="_blank" rel="noopener">Amsterdam Tattoo Convention</a></strong><br/>
-      <span class="events-date-range">September 4–6</span><br/>
+      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Nederlands%20Theater%20Festival%20Amsterdam" class="event-link" target="_blank" rel="noopener">Nederlands Theater Festival</a></strong><br/>
+      <span class="events-date-range">September 3–13, 2026</span><br/>
       📍 Amsterdam<br/>
       💵 Varies<br/>
     </div>
   </div>
   <div class="event-item">
     <div class="events-subcard">
-      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Concert%20by%20The%20Black%20Keys%20Ziggo%20Dome%2C%20Amsterdam" class="event-link" target="_blank" rel="noopener">Concert by The Black Keys</a></strong><br/>
-      <span class="events-date-range">September 4</span><br/>
-      📍 Ziggo Dome, Amsterdam<br/>
+      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Amsterdam%20Fringe%20Festival" class="event-link" target="_blank" rel="noopener">Amsterdam Fringe Festival</a></strong><br/>
+      <span class="events-date-range">September 3–13, 2026</span><br/>
+      📍 Amsterdam<br/>
+      💵 Varies<br/>
+    </div>
+  </div>
+  <div class="event-item">
+    <div class="events-subcard">
+      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Amsterdam%20Tattoo%20Convention" class="event-link" target="_blank" rel="noopener">Amsterdam Tattoo Convention</a></strong><br/>
+      <span class="events-date-range">September 4–6, 2026</span><br/>
+      📍 Amsterdam<br/>
       💵 Varies<br/>
     </div>
   </div>
@@ -951,48 +965,6 @@
       </div>
     </div>
     <span class="rest-desc">Crispy double-fried Belgian-style fries with 28 sauce choices.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.febo.nl/" class="rest-link" target="_blank" rel="noopener">FEBO</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.2/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ7818HscJxkcRD4KgKOwUCkY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Classic automat vending hot croquettes and snacks.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.mannekenpis.nl/" class="rest-link" target="_blank" rel="noopener">Manneken Pis</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.3/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJgfmIdbgJxkcRfMoY2_r4hC8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Generous cones of fresh Flemish fries near the centre.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://maoz.nl/" class="rest-link" target="_blank" rel="noopener">Maoz Falafel</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.4/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJxygTgAYJxkcR__xeHKA6tbg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Crispy falafel pita with self-serve salad and toppings bar.</span>
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
@@ -1049,48 +1021,6 @@
       </div>
     </div>
     <span class="rest-desc">Traditional Hollandse nieuwe herring eaten standing up.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.foodhallen.nl/" class="rest-link" target="_blank" rel="noopener">Foodhallen Counters</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        <span class="badge cuisine-badge">Various</span>
-        <span class="badge badge-rating">★ 4.4/5</span>
-        <span class="badge badge-price">$$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJtWMWEeAJxkcR7PV7zX9aRh0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Diverse market hall stalls with affordable plates under €15.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.soupenzo.nl/" class="rest-link" target="_blank" rel="noopener">Soup en Zo</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.3/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJk7qExusJxkcR5zOsvNvn1So" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Fresh daily soups and salads in takeaway cups.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.pancake.nl/" class="rest-link" target="_blank" rel="noopener">The Pancake Bakery</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        <span class="badge cuisine-badge">Bakery</span>
-        <span class="badge badge-rating">★ 4.2/5</span>
-        <span class="badge badge-price">$$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJDdV0fsUJxkcREOh_Cj5402o" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Fluffy pancakes with sweet or savoury traditional toppings.</span>
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
@@ -1195,20 +1125,20 @@
 </section>
 <section id="section-berlin" class="dest-section">
 <div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1618259278412-2819cbdea4dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8QmVybGluJTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg3ODc2ODAxfDA&ixlib=rb-4.1.0&q=80&w=1080')">
-  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/52.5174,13.3951" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Brandenburg%20Gate%20Berlin%2C%20Germany&amp;destination=Charlottenburg%20Palace%20Berlin%2C%20Germany&amp;travelmode=driving&amp;api=1&amp;waypoints=Museum%20Island%20Berlin%2C%20Germany|Checkpoint%20Charlie%20Berlin%2C%20Germany|Berlin%20Cathedral|Reichstag%20Building%20Berlin%2C%20Germany|East%20Side%20Gallery%20Berlin%2C%20Germany" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/52.5174,13.3951" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Museum%20Island%20Berlin%2C%20Germany&amp;destination=Berlin%20Cathedral&amp;travelmode=driving&amp;api=1&amp;waypoints=East%20Side%20Gallery%20Berlin%2C%20Germany|Charlottenburg%20Palace%20Berlin%2C%20Germany|Brandenburg%20Gate%20Berlin%2C%20Germany|Reichstag%20Building%20Berlin%2C%20Germany|Memorial%20to%20the%20Murdered%20Jews%20of%20Europe%20Berlin%2C%20Germany" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Berlin, Germany</h2>
   <p class="dates">September 5-7, 2026</p>
   <p class="img-credit">Maheshkumar Painam</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Berlin, Germany</h3>
-  <p class="intro-note-text">Berlin in September offers a mix of mild weather and cultural events. It&#x27;s an ideal time for outdoor activities and exploring historical sites without the summer crowds.</p>
-  <p class="intro-note-text"><strong>Local customs:</strong> Tipping is customary at restaurants; rounding up the bill is appreciated.</p>
-  <p class="intro-note-text"><strong>Best times of day:</strong> Early mornings are ideal for sightseeing to avoid crowds at popular attractions.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transportation is efficient; consider purchasing a day pass for unlimited travel.</p>
-  <p class="intro-note-text"><strong>Safety:</strong> Berlin is generally safe, but remain vigilant in crowded areas against pickpockets.</p>
-  <p class="intro-note-text"><strong>Crowd patterns:</strong> Weekends can be busier, especially at popular tourist spots and local markets.</p>
-  <p class="intro-note-text"><strong>Local etiquette:</strong> Keep noise levels down in residential areas, especially during early mornings and late evenings.</p>
+  <p class="intro-note-text">Berlin in September offers mild weather and fewer tourists. The city is rich in history, making it ideal for exploration. Local cafes and markets are perfect for budget-friendly dining.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Berliners appreciate punctuality and direct communication. It’s common to greet with a handshake.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Early mornings or late afternoons are ideal for sightseeing to avoid peak crowds.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is efficient, with options including buses, trams, and trains. Tickets must be validated before boarding.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Berlin is generally safe, but remain aware of your belongings in crowded areas, especially in tourist spots.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> September sees a decline in tourist numbers compared to summer, making popular sites more accessible.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> When dining, it&#x27;s customary to wait for everyone to be served before starting to eat. Tipping around 10% is appreciated.</p>
 </div>
 <div class="photo-gallery photo-gallery-single">
   <div class="image-tile photo-item">
@@ -1220,7 +1150,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical September temperatures are around 69°F daytime and 53°F overnight. Fall colors begin to appear in Berlin with hints of orange and gold in the parks and trees. Crowds thin out compared to peak summer. Public transport operates normally with no major disruptions.</p>
+  <p class="env-summary">Typical September temperatures are around 69°F daytime and 53°F overnight. September brings mild weather to Berlin with leaves beginning to turn. Crowds are lighter than the summer peak, making it a good time to explore. Many outdoor attractions remain open, but check for any seasonal closures at lesser-known sites.</p>
   <a href="https://weather.com/weather/today/l/52.5174,13.3951" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -1232,22 +1162,22 @@
   <div class="route-headline-row">
     <div class="route-headline">Amsterdam, Netherlands → Berlin, Germany</div>
     <div class="route-badges route-badges-inline">
-      <span class="badge badge-distance">370 mi</span>
-      <span class="badge badge-time">6 hrs</span>
+      <span class="badge badge-distance">465 mi</span>
+      <span class="badge badge-time">7 hr 45 min</span>
     </div>
   </div>
-  <p class="route-summary">Drive along the A1 from Amsterdam towards Berlin. Enjoy the pastoral scenery of the Netherlands before crossing into Germany. The drive features smooth highways with several rest stops for refreshments.</p>
+  <p class="route-summary">Drive from Amsterdam to Berlin via A1 and A10, passing through scenic countryside and historic towns. Expect well-maintained highways and plenty of rest stops along the way.</p>
 </div>
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🗻</span><span class="attr-name"><a href="https://www.berlin.de/en/attractions-and-sights/3560266-3104052-brandenburg-gate.en.html" class="attr-link" target="_blank" rel="noopener">Brandenburg Gate</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJiQnyVcZRqEcRY0xnhE77uyY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A neoclassical monument that symbolizes Berlin&#x27;s history. The gate stands 26 meters tall and is located at Pariser Platz. It&#x27;s best visited early in the morning to avoid crowds.</span><span class="practical-note">📌 Easily accessible by public transport.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.smb.museum/en/museums-institutions/museumsinsel-berlin/" class="attr-link" target="_blank" rel="noopener">Museum Island</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">2–3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJx8qLPN9RqEcRB2gSnmw5bJM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A UNESCO World Heritage site housing five museums. Each museum features unique collections of art and artifacts. A great stop for culture enthusiasts.</span><span class="practical-note">📌 Purchase tickets in advance to avoid long lines.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🗻</span><span class="attr-name"><a href="https://www.berlin.de/en/attractions-and-sights/3560059-3104052-checkpoint-charlie.en.html" class="attr-link" target="_blank" rel="noopener">Checkpoint Charlie</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJzdgmXNFRqEcRyIl9R0IApSM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A famous crossing point between East and West Berlin during the Cold War. The site includes a museum detailing the history of the Berlin Wall.</span><span class="practical-note">📌 Popular with tourists; visit early in the day.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.berliner-dom.de/en/" class="attr-link" target="_blank" rel="noopener">Berlin Cathedral</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJS9HC895RqEcR_IovsNVoDng" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This Protestant cathedral is known for its impressive dome. Climb to the top for panoramic views of the city.</span><span class="practical-note">📌 Admission fee applies for the dome climb.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.smb.museum/en/museums-institutions/museumsinsel-berlin/" class="attr-link" target="_blank" rel="noopener">Museum Island</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">2-3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJx8qLPN9RqEcRB2gSnmw5bJM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A UNESCO World Heritage Site hosting five museums with collections spanning 6,000 years. Highlights include the Pergamon Museum and the Altes Museum.</span><span class="practical-note">📌 Entry fees apply; consider a museum pass for savings.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.stiftung-berliner-mauer.de/en/east-side-gallery/" class="attr-link" target="_blank" rel="noopener">East Side Gallery</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJS6_t9aZHqEcRGCiRSnvpm94" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This open-air gallery features murals painted on a remaining section of the Berlin Wall. It&#x27;s a vibrant representation of freedom and artistic expression.</span><span class="practical-note">📌 Free access; best visited during daylight.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.spsg.de/en/palaces-gardens/object/charlottenburg-palace-old-palace/" class="attr-link" target="_blank" rel="noopener">Charlottenburg Palace</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1-2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ85FCdSVRqEcRGv55KkmuuIs" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The largest palace in Berlin, showcasing baroque architecture and beautiful gardens. Explore the opulent rooms and art collections.</span><span class="practical-note">📌 Entry fee required; gardens are free.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.berlin.de/en/attractions-and-sights/3560266-3104052-brandenburg-gate.en.html" class="attr-link" target="_blank" rel="noopener">Brandenburg Gate</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJiQnyVcZRqEcRY0xnhE77uyY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">neoclassical landmark symbolizing unity and peace.[[1]](</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.bundestag.de/en/" class="attr-link" target="_blank" rel="noopener">Reichstag Building</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJbVDuQcdRqEcR5X3xq9NSG2Q" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">parliament with glass dome offering panoramic views.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.stiftung-berliner-mauer.de/en/east-side-gallery/" class="attr-link" target="_blank" rel="noopener">East Side Gallery</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJS6_t9aZHqEcRGCiRSnvpm94" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Longest preserved Berlin Wall section with vibrant open-air art.[[3]](</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.spsg.de/en/palaces-gardens/object/charlottenburg-palace-old-palace/" class="attr-link" target="_blank" rel="noopener">Charlottenburg Palace</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ85FCdSVRqEcRGv55KkmuuIs" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Berlin’s largest royal palace with Baroque splendor and gardens.[[5]](</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.stiftung-denkmal.de/en/" class="attr-link" target="_blank" rel="noopener">Memorial to the Murdered Jews of Europe</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJW2oZB8ZRqEcRyFvuEpCnNBQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Powerful abstract memorial honoring Holocaust victims.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.berliner-dom.de/en/" class="attr-link" target="_blank" rel="noopener">Berlin Cathedral</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJS9HC895RqEcR_IovsNVoDng" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Grand Protestant cathedral with impressive dome and crypt.</span></div>
 </div>
 </div>
 <div class="card schedule-card">
@@ -1256,58 +1186,58 @@
   <div class="schedule-day">
     <div class="schedule-day-title">Day 1</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Berlin and head straight to the Brandenburg Gate for a photo opportunity and to soak in the history.</span></div>
-    </div>
-    <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Berlin Cathedral, keeping realistic transition time between stops.</span></div>
-    </div>
-    <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a casual dinner at Café Einstein Stammhaus, a food hall known for its local street food vendors.</span></div>
-    </div>
-  </div>
-  <div class="schedule-day">
-    <div class="schedule-day-title">Day 2</div>
-    <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Visit Museum Island and explore the various museums for a cultural morning.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Berlin and start at Brandenburg Gate, a key historical landmark. It&#x27;s an excellent introduction to the city&#x27;s storied past.</span></div>
     </div>
     <div class="schedule-period">
       <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Reichstag Building, keeping realistic transition time between stops.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Have dinner at Markthalle Neun, a historic restaurant serving traditional German cuisine.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed evening back at your lodging after dinner.</span></div>
+    </div>
+  </div>
+  <div class="schedule-day">
+    <div class="schedule-day-title">Day 2</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Explore East Side Gallery, where you can visit several museums. Each offers unique collections that highlight different eras.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Consider one or more of the following, within about 5h: Museum Island (2h 30m), East Side Gallery (1h), Charlottenburg Palace (1h 30m). Leave buffer time between stops.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Dicke Wirtin, a local food market with various stalls offering street food and local specialties.</span></div>
     </div>
   </div>
   <div class="schedule-day">
     <div class="schedule-day-title">Day 3</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Brandenburg Gate, then pivot to a different nearby area before midday crowds.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Memorial to the Murdered Jews of Europe and keep parking buffers before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at East Side Gallery, keeping realistic transition time between stops.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit the East Side Gallery to learn about the city&#x27;s divided history. The exhibits offer a detailed look at life during the Cold War.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Prague, Czech Republic happens the next morning, not tonight. Plan dinner at Zur Letzten Instanz.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Prague, Czech Republic happens the next morning, not tonight. Plan dinner at Markthalle Neun.</span></div>
     </div>
   </div>
 </div>
 </div>
 <div class="card events-card">
 <h3>🎭 Cultural Events &amp; Entertainment</h3>
-<p class="events-intro">Berlin's cultural scene in September is vibrant, with numerous festivals and events celebrating music, literature, and art. The city is filled with galleries, theaters, and live music venues, offering a rich experience for visitors.</p>
+<p class="events-intro">Berlin has a dynamic cultural scene in September, with numerous festivals and events taking place. The city is known for its vibrant arts community, live music venues, and diverse culinary offerings. Expect a mix of local and international influences throughout the city.</p>
 <div class="events-list">
   <div class="event-item">
     <div class="events-subcard">
-      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Musikfest%20Berlin%20Philharmonie%20Berlin" class="event-link" target="_blank" rel="noopener">Musikfest Berlin</a></strong><br/>
-      <span class="events-date-range">August 28 – September 23, 2026</span><br/>
-      📍 Philharmonie Berlin<br/>
-      💵 Varies<br/>
+      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Rudow%20September%20Mile%20Rudow%2C%20Berlin" class="event-link" target="_blank" rel="noopener">Rudow September Mile</a></strong><br/>
+      <span class="events-date-range">September 5–6, 2026</span><br/>
+      📍 Rudow, Berlin<br/>
+      💵 Free<br/>
     </div>
   </div>
   <div class="event-item">
     <div class="events-subcard">
-      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Berlin%20Beer%20Week%20Various%20venues%20in%20Berlin" class="event-link" target="_blank" rel="noopener">Berlin Beer Week</a></strong><br/>
-      <span class="events-date-range">August 28 – September 6, 2026</span><br/>
-      📍 Various venues in Berlin<br/>
+      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Gatow%20Airfield%20Festival%20Gatow%20Airfield%2C%20Berlin" class="event-link" target="_blank" rel="noopener">Gatow Airfield Festival</a></strong><br/>
+      <span class="events-date-range">September 5–6, 2026</span><br/>
+      📍 Gatow Airfield, Berlin<br/>
       💵 Varies<br/>
     </div>
   </div>
@@ -1316,20 +1246,6 @@
 <div class="card restaurants-card">
 <h3>🍽️ Dinner Recommendations</h3>
 <div class="restaurant-list">
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d1234567-Reviews-Mustafa_s_Gemuse_Kebab-Berlin.html" class="rest-link" target="_blank" rel="noopener">Mustafa’s Gemüse Kebab</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.5/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJc35bGSlQqEcRL52ICDHcNKk" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Juicy grilled vegetables and meat in fresh bread with signature spices.</span>
-  </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
       <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://currywurst.berlin/en/finder/place/curry-36-im-hauptbahnhof" class="rest-link" target="_blank" rel="noopener">Curry 36</a> <span class="attr-external-link" title="link source">🔗</span></span>
@@ -1343,34 +1259,6 @@
       </div>
     </div>
     <span class="rest-desc">Classic currywurst with crispy fries in a no-frills stand setting.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.konnopke-imbiss.de/en" class="rest-link" target="_blank" rel="noopener">Konnopke’s Imbiss</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.4/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJm-VbCf9RqEcRJFuS59rBfso" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">currywurst under the U-Bahn with family-recipe sauce.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d4567890-Reviews-Burgermeister-Berlin.html" class="rest-link" target="_blank" rel="noopener">Burgermeister</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        <span class="badge cuisine-badge">American</span>
-        <span class="badge badge-rating">★ 4.5/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ2Uh9Bk5OqEcREoy9N1LxImw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Juicy smash burgers in a former toilet kiosk vibe.</span>
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
@@ -1399,20 +1287,6 @@
       </div>
     </div>
     <span class="rest-desc">Hearty fast-food plates and wraps at rock-bottom prices.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://helloberl.in/best-cheap-eats-in-berlin/" class="rest-link" target="_blank" rel="noopener">Häppies</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        <span class="badge cuisine-badge">Vietnamese</span>
-        <span class="badge badge-rating">★ 4.4/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJlxpe2P9NqEcR_hXnJHV-tAY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Creative small plates and snacks with fresh, bold flavors.</span>
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
@@ -1514,20 +1388,6 @@
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d5678902-Reviews-Libanon_Falafel-Berlin.html" class="rest-link" target="_blank" rel="noopener">Libanon Falafel</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.5/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJsecLkbtPqEcRj9aVYCp6XT8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Crispy falafel sandwiches open late for under €3.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
       <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d6789013-Reviews-Rueyam_Gemuese_Kebap-Berlin.html" class="rest-link" target="_blank" rel="noopener">Rueyam Gemuese Kebap</a> <span class="attr-external-link" title="link source">🔗</span></span>
       <div class="rest-badges">
         
@@ -1539,20 +1399,6 @@
       </div>
     </div>
     <span class="rest-desc">Fresh vegetable kebabs and quick Turkish bites.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.theinfatuation.com/berlin/perfect-for/cheap-eats" class="rest-link" target="_blank" rel="noopener">Adana Grillhaus</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.5/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJrSyqfzVOqEcRQ744P0jTJDY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Late-night grilled meats and köfte plates.</span>
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
@@ -1573,20 +1419,20 @@
 </section>
 <section id="section-prague" class="dest-section">
 <div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1592906209472-a36b1f3782ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8UHJhZ3VlJTJDJTIwQ3plY2glMjBSZXB1YmxpY3xlbnwwfDB8fHwxNzg3ODc2ODA1fDA&ixlib=rb-4.1.0&q=80&w=1080')">
-  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/50.0875,14.4213" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Prague%20Castle&amp;destination=Clementinum%20Prague%2C%20Czech%20Republic&amp;travelmode=driving&amp;api=1&amp;waypoints=Charles%20Bridge%20Prague%2C%20Czech%20Republic|Old%20Town%20Square%20Prague%2C%20Czech%20Republic|John%20Lennon%20Wall%20Prague%2C%20Czech%20Republic|St.%20Vitus%20Cathedral|Jewish%20Quarter%20Prague%2C%20Czech%20Republic" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/50.0875,14.4213" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Prague%20Castle&amp;destination=Clementinum%20Prague%2C%20Czech%20Republic&amp;travelmode=driving&amp;api=1&amp;waypoints=Charles%20Bridge%20Prague%2C%20Czech%20Republic|Vysehrad%20Fortress%20Prague%2C%20Czech%20Republic|Old%20Town%20Square%20Prague%2C%20Czech%20Republic|Petrin%20Hill%20Prague%2C%20Czech%20Republic|St.%20Vitus%20Cathedral|Jewish%20Quarter%20Prague%2C%20Czech%20Republic" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Prague, Czech Republic</h2>
   <p class="dates">September 8-10, 2026</p>
   <p class="img-credit">Ouael Ben Salah</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Prague, Czech Republic</h3>
-  <p class="intro-note-text">Prague in September offers mild weather and fewer crowds, ideal for exploring the city&#x27;s historic sites and vibrant neighborhoods. Expect highs around 72°F and lows around 38°F. Budget dining options are plentiful, from cafes to street food.</p>
-  <p class="intro-note-text"><strong>Local customs:</strong> Czechs appreciate politeness; greet with &#x27;Dobrý den&#x27; (Good day) and say &#x27;Děkuji&#x27; (Thank you).</p>
-  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are best for sightseeing to avoid crowds, especially at popular spots like Charles Bridge.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transportation is efficient; consider getting a travel pass for unlimited rides on trams and buses.</p>
-  <p class="intro-note-text"><strong>Safety:</strong> Prague is generally safe, but watch for pickpockets in crowded areas.</p>
-  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect busier crowds in popular tourist areas during midday; early mornings are quieter.</p>
-  <p class="intro-note-text"><strong>Local etiquette:</strong> Tipping around 10% is common in restaurants; leave small change for cafes and bars.</p>
+  <p class="intro-note-text">Prague in September features mild weather, making it ideal for exploring the city&#x27;s rich history and architecture. Be prepared for some crowds at popular attractions, but overall the city is less busy than during peak summer months. Local markets and street food vendors provide budget-friendly dining options.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Tipping is customary, around 10% of the bill in restaurants. Greeting people with a handshake is common.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Early mornings are best for visiting major attractions to avoid crowds. Late afternoons provide beautiful lighting for photography.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is efficient and affordable; consider purchasing a travel pass for convenience. Trams and metro are popular ways to get around.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Prague is generally safe, but be cautious of pickpockets in crowded areas. Keep valuables secure and be aware of your surroundings.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Crowds peak around noon at major tourist sites, especially Old Town Square and Prague Castle. Visiting early or late in the day is advisable.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> Respect local customs, such as not speaking loudly in public places. It&#x27;s polite to say &#x27;Dobrý den&#x27; (good day) when entering shops or restaurants.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -1606,7 +1452,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical September temperatures are around 70°F daytime and 52°F overnight. September brings a mix of warm days and cool nights in Prague. The summer crowds have thinned considerably, making it easier to explore popular sites. Some attractions may have reduced hours as the season transitions to fall.</p>
+  <p class="env-summary">Typical September temperatures are around 70°F daytime and 52°F overnight. Fall foliage begins to emerge in Prague, with vibrant hues of orange and yellow accentuating the historic architecture. Crowds are manageable compared to peak summer season, making attractions more accessible. Some parks may have limited hours as the days get shorter.</p>
   <a href="https://weather.com/weather/today/l/50.0875,14.4213" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -1622,18 +1468,19 @@
       <span class="badge badge-time">3 hr 46 min</span>
     </div>
   </div>
-  <p class="route-summary">Drive from Berlin to Prague along the A13 and A12, passing through scenic countryside. Expect a few picturesque small towns along the way. Parking is available near most attractions in Prague, but check local signs for regulations.</p>
+  <p class="route-summary">Drive from Berlin to Prague via A13 and D8. The route offers views of the scenic countryside and several small towns along the way. Expect a few rest stops where you can stretch and grab refreshments.</p>
 </div>
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://prague.eu/en/objevujte/prague-castle-prazsky-hrad/" class="attr-link" target="_blank" rel="noopener">Prague Castle</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">2–3 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJw7ckbB6VC0cRnyUSr4g8zyo" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A vast complex that includes the Gothic-style St. Vitus Cathedral and beautiful gardens. The castle offers insights into Czech history and architecture.</span><span class="practical-note">📌 Entry to the castle grounds is free, but tickets are needed for some interiors.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.prague.eu/en/object/places/455/charles-bridge-karluv-most" class="attr-link" target="_blank" rel="noopener">Charles Bridge</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJn7WO5eWUC0cRJrHT0TiXIHU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This stone bridge features 30 statues of saints and offers beautiful views of the Vltava River. It&#x27;s a pedestrian-only zone, ideal for strolling and photography.</span><span class="practical-note">📌 Best visited early in the morning to avoid crowds.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.prague.eu/en/object/places/453/old-town-square-staromestske-namesti" class="attr-link" target="_blank" rel="noopener">Old Town Square</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJF6gfPumUC0cRNxOlactBiAU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A historic square featuring the Astronomical Clock and vibrant street performances. It&#x27;s surrounded by colorful buildings and cafes.</span><span class="practical-note">📌 Crowded during midday; visit in the early morning or late afternoon.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.prague.eu/en/object/places/456/john-lennon-wall" class="attr-link" target="_blank" rel="noopener">John Lennon Wall</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.4/5</span><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ3fi1iOOUC0cR__Q9EXbH-kc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A colorful wall filled with graffiti and messages of peace and love, inspired by John Lennon. It’s a symbol of freedom and hope.</span><span class="practical-note">📌 Best to visit in the morning to enjoy the art without large crowds.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://prague.eu/en/objevujte/prague-castle-prazsky-hrad/" class="attr-link" target="_blank" rel="noopener">Prague Castle</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">2–3 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJw7ckbB6VC0cRnyUSr4g8zyo" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Prague Castle is the largest ancient castle in the world, featuring architecture and beautiful gardens. Visitors can explore St. Vitus Cathedral and the Old Royal Palace. Arrive early to avoid the crowds.</span><span class="practical-note">📌 Entry to the castle complex is free, but tickets are required for specific buildings.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.prague.eu/en/object/places/455/charles-bridge-karluv-most" class="attr-link" target="_blank" rel="noopener">Charles Bridge</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJn7WO5eWUC0cRJrHT0TiXIHU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This historic bridge, adorned with statues, spans the Vltava River and connects the Old Town with Lesser Town. It&#x27;s particularly beautiful at sunrise.</span><span class="practical-note">📌 No vehicles allowed; pedestrian access only.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.praha-vysehrad.cz/en/" class="attr-link" target="_blank" rel="noopener">Vysehrad Fortress</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1–2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJCd13PWeUC0cRZihTX2RPn0w" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A historic fort offering views of the Vltava River and a peaceful park. Explore the grounds and visit the Basilica of St. Peter and St. Paul.</span><span class="practical-note">📌 Free entry; check for any guided tour availability.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.prague.eu/en/object/places/453/old-town-square-staromestske-namesti" class="attr-link" target="_blank" rel="noopener">Old Town Square</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJF6gfPumUC0cRNxOlactBiAU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The heart of Prague, featuring the Astronomical Clock and Týn Church. Watch the clock strike the hour for a delightful show.</span><span class="practical-note">📌 Best visited in the early morning or late afternoon to avoid crowds.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://storyofprague.cz/blog/st-vitus-cathedral/" class="attr-link" target="_blank" rel="noopener">St. Vitus Cathedral</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"> <a href="https://www.google.com/maps/place/?q=place_id:ChIJW08COB6VC0cRoonZ8lA4rWk" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Gothic masterpiece with stained glass and royal tombs.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.jewishmuseum.cz/en/" class="attr-link" target="_blank" rel="noopener">Jewish Quarter</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJKee8y-mUC0cRSaT5SgePAEQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Historic district featuring synagogues, cemetery and Jewish heritage sites.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.clementinum.com/en/" class="attr-link" target="_blank" rel="noopener">Clementinum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJNUIyNe-UC0cRnw1-EJKuNLI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Baroque complex with historic library, observatory and gardens.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.maploco.com/top-attractions/prague/petrin-tower/" class="attr-link" target="_blank" rel="noopener">Petrin Hill</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-hike-moderate">Moderate</span><span class="badge badge-duration">1–2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJrS4zTP2UC0cRMI7zhXJrRX0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Climb or take the funicular to the top for panoramic views of the city. The area features gardens and a miniature version of the Eiffel Tower.</span><span class="practical-note">📌 The funicular operates frequently; check the schedule.</span></div>
 </div>
 </div>
 <div class="card schedule-card">
@@ -1642,13 +1489,13 @@
   <div class="schedule-day">
     <div class="schedule-day-title">Day 1</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Prague and head to Prague Castle for a walk. Enjoy the quiet atmosphere and take photos of the statues (realistic arrival is closer to 11:45 AM).</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Prague and head straight to Prague Castle. Explore the grounds and visit St. Vitus Cathedral.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">After arrival, consider one or more of the following, within about 3h 30m: Prague Castle (2h 30m), Charles Bridge (1h). Keep the afternoon realistic after travel.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">After arrival, consider one or more of the following, within about 3h: Prague Castle (2h 30m), Charles Bridge (30m). Keep the afternoon realistic after travel.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Wrap the day with Jewish Quarter before dinner near your base.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Visit Vysehrad Fortress to see the Astronomical Clock. Dinner at Bistro 8, known for its traditional Czech cuisine.</span></div>
     </div>
   </div>
   <div class="schedule-day">
@@ -1657,10 +1504,10 @@
       <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Old Town Square, then pivot to a different nearby area before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Clementinum, keeping realistic transition time between stops.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Consider one or more of the following, within about 4h 30m: Vysehrad Fortress (1h 30m), Jewish Quarter (Josefov) (1h 30m), Petrin Hill (1h 30m). Leave buffer time between stops.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Stroll through Prague Castle as the sun sets. Enjoy dinner at Lokál Dlouhááá, a local brewery serving traditional Czech dishes.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Visit Prague Castle to see the Astronomical Clock. Dinner at Café Savoy, known for its traditional Czech cuisine.</span></div>
     </div>
   </div>
   <div class="schedule-day">
@@ -1669,27 +1516,17 @@
       <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Old Town Square, then pivot to a different nearby area before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Explore the John Lennon Wall complex, including St. Vitus Cathedral and the gardens. Take time to appreciate the architecture and views.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Stroll across Jewish Quarter (Josefov) and enjoy the views. Stop for lunch at a nearby café.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Frankfurt, Germany happens the next morning, not tonight. Plan dinner at Mlejnice.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Frankfurt, Germany happens the next morning, not tonight. Plan dinner at Lokál Dlouhááá.</span></div>
     </div>
   </div>
 </div>
 </div>
 <div class="card events-card">
-<h3>🎭 Cultural Events &amp; Entertainment</h3>
-<p class="events-intro">Prague in September is rich with cultural offerings. The city hosts a variety of music festivals, art exhibitions, and local markets. Visitors can explore a vibrant arts scene and enjoy performances in historic venues.</p>
-<div class="events-list">
-  <div class="event-item">
-    <div class="events-subcard">
-      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Czech%20Design%20Week%20Prague" class="event-link" target="_blank" rel="noopener">Czech Design Week</a></strong><br/>
-      <span class="events-date-range">September 10-13, 2026</span><br/>
-      📍 Prague<br/>
-      💵 Varies<br/>
-    </div>
-  </div>
-</div>
+<h3>🎭 Cultural Events</h3>
+<p>Prague's cultural scene in September is vibrant with numerous festivals and concerts celebrating music, design, and local culture. The city is alive with performances and exhibitions, making it an exciting time to explore.</p>
 </div>
 <div class="card restaurants-card">
 <h3>🍽️ Dinner Recommendations</h3>
@@ -1850,51 +1687,37 @@
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.viewfromprague.com/traditional-czech-food-self-service-restaurants/" class="rest-link" target="_blank" rel="noopener">Menza Strahov</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.2/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ__djgAGVC0cR6-U1slQkfQM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">University canteen Large student cafeteria open to public with generous portions of Czech meals at the lowest prices.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.cafelouvre.cz/en" class="rest-link" target="_blank" rel="noopener">Café Louvre</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.cafesavoy.ambi.cz/en" class="rest-link" target="_blank" rel="noopener">Café Savoy</a> <span class="attr-external-link" title="link source">🔗</span></span>
       <div class="rest-badges">
         
         <span class="badge cuisine-badge">Café</span>
         
-        <span class="badge badge-price">$</span>
+        <span class="badge badge-price">$$</span>
         
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJj5XMEO6UC0cRSdD6zoOKd3k" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJL8LeE_uUC0cRj_E1IjqlnKc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
       </div>
     </div>
-    <span class="rest-desc">A historic café known for its coffee and desserts. The apple strudel and traditional Czech pastries are favorites. It offers a cozy atmosphere, perfect for a break.</span>
+    <span class="rest-desc">A classic café known for its pastries and breakfast options. The ambiance combines elegance with a relaxed vibe, perfect for afternoon coffee.</span>
   </div>
 </div>
 </div>
 </section>
 <section id="section-frankfurt" class="dest-section">
 <div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1605186620429-1ece911f171c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8RnJhbmtmdXJ0JTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg3ODc2ODA3fDA&ixlib=rb-4.1.0&q=80&w=1080')">
-  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/50.1106,8.6821" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=St%C3%A4del%20Museum%20Frankfurt%2C%20Germany&amp;destination=Frankfurt%20Cathedral&amp;travelmode=driving&amp;api=1&amp;waypoints=R%C3%B6mer%20Frankfurt%2C%20Germany|Palmengarten%20Frankfurt%2C%20Germany|Main%20Tower%20Frankfurt%2C%20Germany|Goethe%20House%20Frankfurt%2C%20Germany" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://weather.com/weather/today/l/50.1106,8.6821" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=St%C3%A4del%20Museum%20Frankfurt%2C%20Germany&amp;destination=Frankfurt%20Cathedral&amp;travelmode=driving&amp;api=1&amp;waypoints=R%C3%B6mer%20Frankfurt%2C%20Germany|Schirn%20Kunsthalle%20Frankfurt%2C%20Germany|Palmengarten%20Frankfurt%2C%20Germany|Main%20Tower%20Frankfurt%2C%20Germany" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Frankfurt, Germany</h2>
   <p class="dates">September 11-12, 2026</p>
   <p class="img-credit">Sinan Erg</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Frankfurt, Germany</h3>
-  <p class="intro-note-text">Frankfurt in September offers mild weather and a lively atmosphere as the fall season begins. Expect a mix of cultural experiences, from museums to local cuisine at markets. Budget-friendly options are readily available.</p>
-  <p class="intro-note-text"><strong>Local customs:</strong> Dining often starts later in Germany, typically around 7 PM. It&#x27;s also common to greet people with a friendly &#x27;Hallo&#x27; or &#x27;Guten Tag&#x27;.</p>
-  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are ideal for visiting popular attractions before crowds build. Late afternoons are great for exploring outdoor spaces.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is efficient but can be crowded during rush hours. Consider purchasing a day pass for unlimited travel.</p>
-  <p class="intro-note-text"><strong>Safety:</strong> Frankfurt is generally safe, but be cautious in crowded areas and keep an eye on personal belongings.</p>
-  <p class="intro-note-text"><strong>Crowd patterns:</strong> September sees fewer tourists than in summer, making it easier to enjoy attractions without long waits.</p>
-  <p class="intro-note-text"><strong>Local etiquette:</strong> It&#x27;s polite to say &#x27;Danke&#x27; when receiving service. Tipping around 10% is appreciated but not compulsory.</p>
+  <p class="intro-note-text">Frankfurt in September is a bustling city with a rich cultural scene and pleasant weather. Expect a mix of historic sites and modern attractions, perfect for exploration.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Greet people with a firm handshake and maintain eye contact. Tipping is customary, usually around 10%.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Early mornings are quieter, ideal for sightseeing. Evenings come alive with social activity and dining.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is efficient, with options like trams and buses. Consider purchasing a day pass for convenience.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Frankfurt is generally safe, but remain vigilant in crowded areas. Keep personal belongings secure.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Weekends can be busier, especially at popular sites and markets. Weekdays are usually less crowded.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> Be punctual for appointments and reservations. Avoid speaking loudly in public places.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -1914,7 +1737,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical September temperatures are around 70°F daytime and 53°F overnight. September brings mild weather to Frankfurt, with leaves beginning to turn. Crowds are generally lighter than in summer, making it easier to explore. Many outdoor attractions are still accessible, although some may start to reduce hours as fall progresses.</p>
+  <p class="env-summary">Typical September temperatures are around 70°F daytime and 53°F overnight. September in Frankfurt brings a vibrant mix of early fall colors with leaves turning shades of yellow and orange. Crowds are thinner than in summer, making it an ideal time to explore. Many outdoor cafes and markets remain open, offering local flavors and a lively atmosphere.</p>
   <a href="https://weather.com/weather/today/l/50.1106,8.6821" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -1930,17 +1753,19 @@
       <span class="badge badge-time">5 hr 31 min</span>
     </div>
   </div>
-  <p class="route-summary">The drive from Prague to Frankfurt takes you through rolling hills and scenic countryside. You’ll pass through towns and vineyards, providing a pleasant backdrop. Expect to navigate some busy stretches as you approach Frankfurt.</p>
+  <p class="route-summary">Drive from Prague to Frankfurt via A93 and A5. The route features picturesque countryside views, with rolling hills and quaint villages along the way. Keep an eye out for roadside stands selling local produce.</p>
 </div>
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.staedelmuseum.de/en/" class="attr-link" target="_blank" rel="noopener">Städel Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">2-3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ61K7owMMvUcRn_SCURQ0DaE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This renowned art museum features works from the Middle Ages to modern times. Masterpieces from artists such as Rembrandt, Monet, and Picasso are on display. Allocate time to explore the outdoor sculpture garden as well.</span><span class="practical-note">📌 Advance booking recommended for busy days.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://frankfurt.de/frankfurt-entdecken-und-erleben/sehenswuerdigkeiten/fuer-historisch-interessierte/roemerberg" class="attr-link" target="_blank" rel="noopener">Römer</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJz1QQDqYOvUcRIg-vuOMzHW8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Römer is a medieval building that has served as Frankfurt&#x27;s city hall for over 600 years. Its distinctive architecture features gabled roofs and an impressive façade, making it a key historical site. The surrounding square is lively with shops and cafes, perfect for a leisurely visit.</span><span class="practical-note">📌 Free entry, but guided tours may have a fee.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.palmengarten.de/" class="attr-link" target="_blank" rel="noopener">Palmengarten</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJxfLE2UUJvUcR5WlJbp2M1D0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This botanical garden spans 54 acres, showcasing a variety of plants from around the world. The conservatories and themed gardens make it a peaceful escape. A café on-site offers refreshments amid the greenery.</span><span class="practical-note">📌 Admission fee applies; check for seasonal events.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.maintower.de/" class="attr-link" target="_blank" rel="noopener">Main Tower</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJX0usKIcPvUcRex4ytC72h58" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This skyscraper features an observation deck offering impressive views of Frankfurt&#x27;s skyline and the River Main. It’s especially beautiful at sunset when the city lights start to twinkle.</span><span class="practical-note">📌 Entry fee for observation deck; check for weather conditions.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.goethehaus-frankfurt.de/" class="attr-link" target="_blank" rel="noopener">Goethe House</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1-2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJhZzm1agOvUcR7Y5yl_dViYc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The birthplace of the famous writer Johann Wolfgang von Goethe, this museum offers insights into his life and work. The rooms are filled with period furniture and personal artifacts. The adjacent garden is also worth a visit.</span><span class="practical-note">📌 Guided tours are available but may require advance booking.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://frankfurt.de/" class="attr-link" target="_blank" rel="noopener">Frankfurt Cathedral</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.4/5</span><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJcVvHnKYOvUcRMTFiTc-qNI8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A striking Gothic cathedral known for its tall tower and beautiful stained glass windows. Climb to the top for a panoramic view of the city. The cathedral is an important historical site, having hosted many emperors&#x27; elections.</span><span class="practical-note">📌 Free entry; climbing the tower has a small fee.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.staedelmuseum.de/en/" class="attr-link" target="_blank" rel="noopener">Städel Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">2-3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ61K7owMMvUcRn_SCURQ0DaE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">One of Germany&#x27;s most important art museums, Städel features works from the Middle Ages to present day. Notable artists include Rembrandt and Monet.</span><span class="practical-note">📌 Timed-entry tickets recommended to avoid long waits.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://frankfurt.de/frankfurt-entdecken-und-erleben/sehenswuerdigkeiten/fuer-historisch-interessierte/roemerberg" class="attr-link" target="_blank" rel="noopener">Römer</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJz1QQDqYOvUcRIg-vuOMzHW8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Römer is a historic building complex in Frankfurt, known for its distinctive gabled facade. It has served as the city hall for over 600 years. Explore the square and take in the architecture.</span><span class="practical-note">📌 Free entry; best visited in the morning to avoid crowds.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.schirn.de/" class="attr-link" target="_blank" rel="noopener">Schirn Kunsthalle</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.4/5</span><span class="badge badge-duration">1-2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJecFPZqYOvUcRzAv_mdvzpNg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This exhibition hall features contemporary art and special exhibitions. Check the schedule for current shows.</span><span class="practical-note">📌 Entry fee required; open daily.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.palmengarten.de/" class="attr-link" target="_blank" rel="noopener">Palmengarten</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJxfLE2UUJvUcR5WlJbp2M1D0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This botanical garden is a serene escape in the city. Featuring a variety of plant species and themed gardens, it’s perfect for a leisurely stroll.</span><span class="practical-note">📌 Entry fee required; check opening hours as they vary.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.maintower.de/" class="attr-link" target="_blank" rel="noopener">Main Tower</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJX0usKIcPvUcRex4ytC72h58" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This skyscraper offers an observation deck with views over Frankfurt and the River Main. It’s a great spot for city photos.</span><span class="practical-note">📌 Entry fee required; best visited around sunset.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://frankfurt.de/" class="attr-link" target="_blank" rel="noopener">Frankfurt Cathedral</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.4/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJcVvHnKYOvUcRMTFiTc-qNI8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Also known as St. Bartholomew&#x27;s Cathedral, it stands tall in the city skyline. Climb the tower for panoramic city views.</span><span class="practical-note">📌 Free entry; small fee for tower access.</span></div>
+  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="Rhine Valley Scenic Drive">Rhine Valley Scenic Drive</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Scenic Drive</span><span class="badge badge-duration">65 miles one-way</span></div></div><span class="attr-desc">The Rhine Valley drive showcases vineyards, castles, and the Rhine River.</span></div>
+  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="Bergstraße Wine Route">Bergstraße Wine Route</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Day Trip</span><span class="badge badge-duration">40 miles round-trip</span></div></div><span class="attr-desc">This picturesque drive through the Bergstraße region features rolling hills and vineyards.</span></div>
 </div>
 </div>
 <div class="card schedule-card">
@@ -1949,19 +1774,19 @@
   <div class="schedule-day">
     <div class="schedule-day-title">Day 1</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Frankfurt and start your exploration at the Städel Museum, the city&#x27;s historic town hall. Enjoy the surrounding square for local shops and cafes.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Travel from Prague, Czech Republic (depart around 9:30 AM); arrival around 11:45 AM.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">After arrival, consider one or more of the following, within about 4h 30m: Städel Museum (2h 30m), Römer (1h), Main Tower (1h). Keep the afternoon realistic after travel.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">After arrival, consider one or more of the following, within about 3h 30m: Städel Museum (2h 30m), Römer (1h). Keep the afternoon realistic after travel.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Apfelwein Wagner, known for its authentic local cuisine and apple wine. The atmosphere is casual and lively.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Apfelweinwirtschaft, sampling local street food and market offerings. This vibrant market atmosphere is perfect for a relaxed evening.</span></div>
     </div>
   </div>
   <div class="schedule-day">
     <div class="schedule-day-title">Day 2</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Goethe House, then pivot to a different nearby area before midday crowds.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start at the Palmengarten, exploring its historic architecture and the surrounding square. This area is rich in history and offers great photo opportunities.</span></div>
     </div>
     <div class="schedule-period">
       <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Reserved for return travel to Frankfurt, Germany around 6:00 PM; begin checkout and departure logistics.</span></div>
@@ -1971,13 +1796,21 @@
 </div>
 <div class="card events-card">
 <h3>🎭 Cultural Events &amp; Entertainment</h3>
-<p class="events-intro">Frankfurt has a lively cultural scene in September. Expect a mix of fairs, concerts, and local markets. The city is known for its vibrant nightlife and diverse music venues.</p>
+<p class="events-intro">Frankfurt has a rich cultural scene in September, with numerous festivals and events celebrating local traditions. The city is known for its vibrant music and arts scene, with various venues hosting performances throughout the month.</p>
 <div class="events-list">
   <div class="event-item">
     <div class="events-subcard">
-      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Herbst-Dippemess%20Frankfurt%20am%20Main" class="event-link" target="_blank" rel="noopener">Herbst-Dippemess</a></strong><br/>
+      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Herbst-Dippemess%20Frankfurt" class="event-link" target="_blank" rel="noopener">Herbst-Dippemess</a></strong><br/>
       <span class="events-date-range">September 11–27, 2026</span><br/>
-      📍 Frankfurt am Main<br/>
+      📍 Frankfurt<br/>
+      💵 Free<br/>
+    </div>
+  </div>
+  <div class="event-item">
+    <div class="events-subcard">
+      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Frankfurter%20Oktoberfest%20Deutsche%20Bank%20Park%2C%20Frankfurt" class="event-link" target="_blank" rel="noopener">Frankfurter Oktoberfest</a></strong><br/>
+      <span class="events-date-range">September 9 – October 11, 2026</span><br/>
+      📍 Deutsche Bank Park, Frankfurt<br/>
       💵 Varies<br/>
     </div>
   </div>
@@ -1986,34 +1819,6 @@
 <div class="card restaurants-card">
 <h3>🍽️ Dinner Recommendations</h3>
 <div class="restaurant-list">
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d1342805-Reviews-AROMA-Frankfurt_Hesse.html" class="rest-link" target="_blank" rel="noopener">AROMA</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.6/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJTXM54rYOvUcRANo0pB0rs3Q" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Fresh, flavorful wraps and veggie options in a no-frills spot.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d8000892-Reviews-Metzgerei_Schreiber-Frankfurt_Hesse.html" class="rest-link" target="_blank" rel="noopener">Metzgerei Schreiber</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        
-        <span class="badge badge-rating">★ 4.7/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJh2louaUOvUcRSFpf8NRgZ0U" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Classic sausages and fast German bites at a local butcher counter.</span>
-  </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
       <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt" class="rest-link" target="_blank" rel="noopener">Bun Bo</a> <span class="attr-external-link" title="link source">🔗</span></span>
@@ -2041,20 +1846,6 @@
       </div>
     </div>
     <span class="rest-desc">Authentic street-style Thai dishes served fast and cheap.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d805095-Reviews-or15-Wacker_s_Kaffee_Geschaft-Frankfurt_Hesse.html" class="rest-link" target="_blank" rel="noopener">Wacker&#x27;s Kaffee Geschäft</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        <span class="badge cuisine-badge">Cafe</span>
-        <span class="badge badge-rating">★ 4.4/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJfWjcNq8OvUcR0LwOiCtIGS0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Hearty sandwiches and coffee at a bustling neighborhood bakery-cafe.</span>
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
@@ -2089,7 +1880,7 @@
       <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.kleinmarkthalle.de/" class="rest-link" target="_blank" rel="noopener">Kleinmarkthalle Stalls</a> <span class="attr-external-link" title="link source">🔗</span></span>
       <div class="rest-badges">
         
-        <span class="badge cuisine-badge">Market</span>
+        <span class="badge cuisine-badge">Market Food</span>
         <span class="badge badge-rating">★ 4.5/5</span>
         <span class="badge badge-price">$</span>
         
@@ -2097,20 +1888,6 @@
       </div>
     </div>
     <span class="rest-desc">Diverse food stalls offering sandwiches, cheeses, and international bites.</span>
-  </div>
-  <div class="rest-item">
-    <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d5270602-Reviews-Toh_Thong_Thai_Cuisine-Frankfurt_Hesse.html" class="rest-link" target="_blank" rel="noopener">Toh-Thong Thai Cuisine</a> <span class="attr-external-link" title="link source">🔗</span></span>
-      <div class="rest-badges">
-        
-        <span class="badge cuisine-badge">Thai</span>
-        <span class="badge badge-rating">★ 4.4/5</span>
-        <span class="badge badge-price">$</span>
-        
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJg2is3FUJvUcR06VMvtwH-Gg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
-      </div>
-    </div>
-    <span class="rest-desc">Quick, authentic Thai street food in a casual setting.</span>
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
@@ -2128,17 +1905,31 @@
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.apfelwein-wagner.com/en/cookie-en/" class="rest-link" target="_blank" rel="noopener">Apfelwein Wagner</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.tripadvisor.com/Restaurant_Review-g187337-d984144-Reviews-Zur_Buchscheer_Apfelweinwirtschaft-Frankfurt_Hesse.html" class="rest-link" target="_blank" rel="noopener">Apfelweinwirtschaft</a> <span class="attr-external-link" title="link source">🔗</span></span>
       <div class="rest-badges">
         
         <span class="badge cuisine-badge">German</span>
         
         <span class="badge badge-price">$$</span>
         
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJA6jFjxsMvUcR_1WAmNA47vo" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJtQzZzB8MvUcRwR35_WneJHc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
       </div>
     </div>
-    <span class="rest-desc">A local favorite for traditional Frankfurt dishes like Handkäse and apple wine. The rustic setting adds to the authentic experience. Reservations are recommended during peak hours.</span>
+    <span class="rest-desc">Specializes in apple wine and regional dishes. The atmosphere is relaxed, making it a great spot for unwinding after a day of sightseeing.</span>
+  </div>
+  <div class="rest-item">
+    <div class="rest-header rest-header-inline">
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.cafecrumble.de/" class="rest-link" target="_blank" rel="noopener">Café Crumble</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <div class="rest-badges">
+        
+        <span class="badge cuisine-badge">Café</span>
+        
+        <span class="badge badge-price">$</span>
+        
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJ51xMNkMJvUcRjhwAxA7nWGw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+      </div>
+    </div>
+    <span class="rest-desc">A café known for its fresh pastries and coffee. Perfect for a casual breakfast or afternoon snack.</span>
   </div>
 </div>
 </div>
@@ -2158,11 +1949,9 @@
     <ul class="pack-summary-list">
       <li><strong>comfortable walking shoes</strong> <span class="pack-summary-places">(Amsterdam, Netherlands, Berlin, Germany, Brussels, Belgium, Frankfurt, Germany, Prague, Czech Republic)</span></li>
       <li><strong>Layers / light jacket (temperature swings)</strong> <span class="pack-summary-places">(Amsterdam, Netherlands, Berlin, Germany, Brussels, Belgium, Frankfurt, Germany, Prague, Czech Republic)</span></li>
-      <li><strong>refillable water bottle</strong> <span class="pack-summary-places">(Brussels, Belgium)</span></li>
-      <li><strong>reusable water bottle</strong> <span class="pack-summary-places">(Amsterdam, Netherlands)</span></li>
+      <li><strong>reusable water bottle</strong> <span class="pack-summary-places">(Amsterdam, Netherlands, Berlin, Germany, Brussels, Belgium)</span></li>
       <li><strong>sunglasses</strong> <span class="pack-summary-places">(Brussels, Belgium, Frankfurt, Germany)</span></li>
       <li><strong>umbrella</strong> <span class="pack-summary-places">(Amsterdam, Netherlands, Berlin, Germany, Frankfurt, Germany, Prague, Czech Republic)</span></li>
-      <li><strong>water bottle</strong> <span class="pack-summary-places">(Prague, Czech Republic)</span></li>
     </ul>
   </div>
 </section>
@@ -2170,7 +1959,7 @@
 
     </main>
 
-    <footer class="generator-footer" style="margin:1.25rem auto 2.5rem;padding:0 1rem;max-width:72rem;"><div style="border-top:1px solid #e8dcc8;padding-top:0.85rem;font-size:0.8rem;color:#8B6347;line-height:1.5;text-align:center;">Generated by <a href="https://github.com/flysoftware-git/itinerary-generator" >Itinerary Generator</a> v2.5.0 · Manifest: EuropeExploration_manifest.yaml · Itinerary output: 2026-08-30 22:19 UTC<div style="margin-top:0.35rem;">Issue reporting: <a href="https://github.com/flysoftware-git/itinerary-generator/issues/new?template=broken-link-report.yml&labels=bug">Report broken links</a> · <a href="https://github.com/flysoftware-git/itinerary-generator/issues/new?template=itinerary-feedback.yml">Share itinerary feedback</a></div></div></footer>
+    <footer class="generator-footer" style="margin:1.25rem auto 2.5rem;padding:0 1rem;max-width:72rem;"><div style="border-top:1px solid #e8dcc8;padding-top:0.85rem;font-size:0.8rem;color:#8B6347;line-height:1.5;text-align:center;">Generated by <a href="https://github.com/flysoftware-git/itinerary-generator" >Itinerary Generator</a> v2.5.0 · Manifest: EuropeExploration_manifest.yaml · Itinerary output: 2026-09-02 22:22 UTC<div style="margin-top:0.35rem;">Issue reporting: <a href="https://github.com/flysoftware-git/itinerary-generator/issues/new?template=broken-link-report.yml&labels=bug">Report broken links</a> · <a href="https://github.com/flysoftware-git/itinerary-generator/issues/new?template=itinerary-feedback.yml">Share itinerary feedback</a></div></div></footer>
 
     <!-- DRIVE INFO MODAL -->
     <div data-id="1109" id="drive-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.55);backdrop-filter:blur(3px);align-items:center;justify-content:center;">

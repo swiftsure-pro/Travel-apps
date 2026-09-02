@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260830T221721.729482Z
-- Generated at (UTC): 2026-08-30T22:19:02.048388+00:00
+- Run ID: 20260902T221834.839465Z
+- Generated at (UTC): 2026-09-02T22:22:20.492590+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 1
@@ -19,7 +19,7 @@
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (31)
+## Removed for No Verified URL (29)
 - **Brussels, Belgium** (11)
   - Beijingya — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Beijingya+Rue+Melsens+Brussels
@@ -91,7 +91,7 @@
     - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/iamcuriousdon/posts/-tiergarten-park-berlin-germany-exploring-the-lush-beauty-of-tiergarten-park-ber/122149458044170560/
     - audit_discarded_previously_accepted_url: https://www.facebook.com/iamcuriousdon/posts/-tiergarten-park-berlin-germany-exploring-the-lush-beauty-of-tiergarten-park-ber/122149458044170560/
       [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
-- **Prague, Czech Republic** (9)
+- **Prague, Czech Republic** (7)
   - Banh-Mi-Ba — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh-Mi-Ba+Rybná+26+Prague
     - url_collision_rejected: https://budgettraveller.org/best-cheap-eats-prague-guide/
@@ -110,23 +110,21 @@
   - Station Anděl — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Station+Anděl+Anděl+Prague
     - url_collision_rejected: https://www.nomadicmick.com/cheap-restaurants-in-prague/
-  - U Jelínků — dinner_recommendations (24 candidate(s) considered)
+  - U Jelínků — dinner_recommendations (25 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Lidová+jídelna+Těšnov+Těšnov+1163/5+Prague
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Havelská+Koruna+Old+Town+Prague
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Jídelna+Světozor+Vodičkova+39+Prague
+    - direct_batch_candidate_rejected: https://www.urozvarilu.cz/
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=U+Rozvařilů+Na+Poříčí+1068/23+Prague
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mlsná+labuť+Palladium+Prague
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Antonínovo+Pekařství+Laubova+1689/4+Žižkov+Prague
-  - Petrin Hill — top_attractions (0 candidate(s) considered)
-  - Vyšehrad — top_attractions (0 candidate(s) considered)
 - **Frankfurt, Germany** (6)
   - Bader's Fisch Deli — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bader%27s+Fisch+Deli+Leipziger+Stra%C3%9Fe+Frankfurt
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-  - Die Kuh die lacht — dinner_recommendations (5 candidate(s) considered)
-    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g187337-d13195780-Reviews-or60-Five_Guys-Frankfurt_Hesse.html
-    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g187337-d13195780-Reviews-or60-Five_Guys-Frankfurt_Hesse.html
-    - search_resolved: https://www.yelp.com/biz/die-kuh-die-lacht-frankfurt-am-main
+  - Bistro B — dinner_recommendations (5 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/Hotel_Review-g155033-d185738-Reviews-Le_C3_Hotel_art_de_vivre-Quebec_City_Quebec.html
+    - discovery_completed: https://www.tripadvisor.com/Hotel_Review-g155033-d185738-Reviews-Le_C3_Hotel_art_de_vivre-Quebec_City_Quebec.html
+    - search_resolved: https://www.yelp.com/biz/pub-bistro-b-54-rennerod
   - Exenberger Der Frankfurter Imbiss — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
   - Frittenwerk — dinner_recommendations (2 candidate(s) considered)
