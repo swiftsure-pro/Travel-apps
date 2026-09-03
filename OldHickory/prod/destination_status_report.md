@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260903T065219.170372Z
-- Generated at (UTC): 2026-09-03T06:55:08.806357+00:00
+- Run ID: 20260903T071328.464836Z
+- Generated at (UTC): 2026-09-03T07:16:18.750858+00:00
 - Destination count: 7
 - Retry recommended: 3
 - Retry attempted: 3
@@ -18,9 +18,9 @@
 - Old Hickory, Tennessee (oldhickory) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
 - Nashville, Tennessee (nashville) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/8, en_route_exhaustion_or_no_match=0
 - Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=5/5, en_route_exhaustion_or_no_match=0
-- Lebanon, Tennessee (lebanon) — status=degraded, terminal=stable_without_retry, en_route_resolved=6/7, en_route_exhaustion_or_no_match=0
+- Lebanon, Tennessee (lebanon) — status=degraded, terminal=stable_without_retry, en_route_resolved=7/8, en_route_exhaustion_or_no_match=0
 - Franklin, Tennessee (franklin) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/6, en_route_exhaustion_or_no_match=0
-- Leiper's Fork, Tennessee (leipers_fork) — status=degraded, terminal=stable_without_retry, en_route_resolved=6/8, en_route_exhaustion_or_no_match=0
+- Leiper's Fork, Tennessee (leipers_fork) — status=degraded, terminal=stable_without_retry, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
 - Asheville, North Carolina (asheville) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=10/12, en_route_exhaustion_or_no_match=0
 
 ## Removed for No Verified URL (57)
@@ -268,7 +268,11 @@
     - direct_batch_candidate_rejected: https://www.nps.gov/natr/index.htm
     - direct_batch_candidate_rejected: https://cheekwood.org/
     - direct_batch_candidate_rejected: https://tnstateparks.com/parks/radnor-lake
-  - Carter House — top_attractions (0 candidate(s) considered)
+  - FiftyForward Martin Center — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.facebook.com/fiftyforwardmartincenter/photos/off-to-leipers-fork-for-a-day-of-fun/2306416149678789/
+    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/fiftyforwardmartincenter/photos/off-to-leipers-fork-for-a-day-of-fun/2306416149678789/
+    - audit_discarded_previously_accepted_url: https://www.facebook.com/fiftyforwardmartincenter/photos/off-to-leipers-fork-for-a-day-of-fun/2306416149678789/
+      [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
   - Harpeth River Trail and Judge Fulton Greer Park — top_attractions (4 candidate(s) considered)
     - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/tennessee/harpeth-river-trail-and-judge-fulton-greer-park
     - search_resolved: https://www.alltrails.com/parks/us/tennessee/judge-fulton-green-park
