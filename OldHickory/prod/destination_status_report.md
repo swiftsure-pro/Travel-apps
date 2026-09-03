@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260903T022037.377857Z
-- Generated at (UTC): 2026-09-03T02:23:28.972291+00:00
+- Run ID: 20260903T023947.286939Z
+- Generated at (UTC): 2026-09-03T02:43:20.285370+00:00
 - Destination count: 7
 - Retry recommended: 2
 - Retry attempted: 3
@@ -10,16 +10,16 @@
 - Not retried due to cap: 0
 
 ## Needs Attention (2)
-- Old Hickory, Tennessee (oldhickory) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
 - Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 
 ## All Destinations (7)
-- Old Hickory, Tennessee (oldhickory) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
-- Nashville, Tennessee (nashville) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/8, en_route_exhaustion_or_no_match=0
-- Gallatin, Tennessee (gallatin) — status=degraded, terminal=resolved_after_retry, en_route_resolved=5/5, en_route_exhaustion_or_no_match=0
+- Old Hickory, Tennessee (oldhickory) — status=degraded, terminal=resolved_after_retry, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
+- Nashville, Tennessee (nashville) — status=degraded, terminal=stable_without_retry, en_route_resolved=2/8, en_route_exhaustion_or_no_match=0
+- Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=5/5, en_route_exhaustion_or_no_match=0
 - Lebanon, Tennessee (lebanon) — status=degraded, terminal=stable_without_retry, en_route_resolved=7/8, en_route_exhaustion_or_no_match=0
 - Franklin, Tennessee (franklin) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/6, en_route_exhaustion_or_no_match=0
-- Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
+- Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/8, en_route_exhaustion_or_no_match=0
 - Asheville, North Carolina (asheville) — status=degraded, terminal=stable_without_retry, en_route_resolved=10/11, en_route_exhaustion_or_no_match=0
 
 ## Removed for No Verified URL (55)
@@ -48,7 +48,7 @@
   - Rack and Tap Bar and Grill — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Rack+and+Tap+Bar+and+Grill+Old+Hickory+TN+37138
     - url_collision_rejected: https://www.restaurantji.com/tn/old-hickory/
-  - Ravello at Gaylord Opryland — dinner_recommendations (3 candidate(s) considered)
+  - Ravello at Gaylord Opryland — dinner_recommendations (10 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-old-hickory-hermitage-tn
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Old+Hickory+Steakhouse+Gaylord+Opryland+Nashville+TN
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Ravello+at+Gaylord+Opryland+Nashville+TN
