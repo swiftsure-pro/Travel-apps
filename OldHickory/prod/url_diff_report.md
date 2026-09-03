@@ -1,23 +1,76 @@
 # URL Diff Report
 
-- Run ID: 20260902T220915.469029Z
-- Generated at (UTC): 2026-09-02T22:17:46.406573+00:00
-- Baseline URLs: 338
-- Current URLs: 253
-- Kept: 220
-- Added: 33
-- Removed: 118
+- Run ID: 20260903T005102.422171Z
+- Generated at (UTC): 2026-09-03T00:54:40.753194+00:00
+- Baseline URLs: 253
+- Current URLs: 256
+- Kept: 210
+- Added: 46
+- Removed: 43
 
-## Added URLs (33)
-- https://lebanonwilsonchamber.com/event/christmas-on-the-square-2026/
+## Added URLs (46)
+- https://CAESfAHrOzAVQmkPaAaDNvY-jRG-IJk5aqyv-Ms6ZOnrQeEwgqUsABDEZvb1nig8-WUaPTKwwjhW4N8oWloB68fqimO2dXsBSI5qQNC_bb7ronTyi-p-fTtDwKh3gZYAmTmirK4eZm2iTMnBFBE9Mb5itcRA3B_JGMyjyWGTV_I
+- https://amerigo.net/nashville/
+- https://boatzia.com/tennessee/sumner/sanders-ferry-park
+- https://downtowngallatin.org/calendar
+- https://lebanonwilsonchamber.com/event/lebanons-christmas-parade-2026/
+- https://timothysrestaurant.com/order
+- https://www.alltrails.com/trail/us/tennessee/radnor-lake-ganier-ridge-trail
+- https://www.gallatintn.gov/2238/The-Corn-Crib
+- https://www.google.com/maps/dir/?destination=Franklin%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.0367424%2C-86.9764887|35.973446%2C-86.8333953
+- https://www.google.com/maps/dir/?destination=Gallatin%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138
+- https://www.google.com/maps/dir/?destination=Lebanon%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.2792871%2C-86.5964169|36.2102139%2C-86.600933|36.1039057%2C-86.5414535|36.2232118%2C-86.5096271|36.3767148%2C-86.3555472
+- https://www.google.com/maps/dir/?destination=Leiper%27s%20Fork%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.0553946%2C-86.7957879|35.9177868%2C-86.8726799|35.9170294%2C-86.8735275|35.9031197%2C-86.8583341|Cheekwood%20Estate%20%26%20Gardens%20Leiper%27s%20Fork%2C%20Tennessee|David%20Arms%20Gallery%20Leiper%27s%20Fork%2C%20Tennessee
+- https://www.google.com/maps/dir/?origin=Biltmore%20Estate%20Asheville%2C%20North%20Carolina&amp;destination=Basilica%20of%20Saint%20Lawrence%20Asheville%2C%20North%20Carolina&amp;travelmode=driving&amp;api=1&amp;waypoints=River%20Arts%20District%20Asheville%2C%20North%20Carolina|North%20Carolina%20Arboretum|Downtown%20Asheville|Blue%20Ridge%20Parkway%20-%20Craggy%20Gardens%20Asheville%2C%20North%20Carolina|Asheville%20Art%20Museum|Asheville%20Pinball%20Museum
+- https://www.google.com/maps/dir/?origin=Cedars%20of%20Lebanon%20State%20Park&amp;destination=Limestone%20Sinks%20Trail%20Lebanon%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Historic%20Lebanon%20Public%20Square|Fiddlers%20Grove%20Historic%20Village%20Lebanon%2C%20Tennessee|Lebanon%27s%20Antique%20District|Don%20Fox%20Community%20Park%20Lebanon%2C%20Tennessee|Cedar%20Glades%20Trail%20Lebanon%2C%20Tennessee
+- https://www.google.com/maps/dir/?origin=Historic%20Downtown%20Franklin&amp;destination=Winstead%20Hill%20Park%20Loop%20Franklin%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Carnton%20Franklin%2C%20Tennessee|Franklin%20Theatre
+- https://www.google.com/maps/dir/?origin=Leiper%27s%20Fork%20Village&amp;destination=Harpeth%20River%20Trail%20and%20Judge%20Fulton%20Greer%20Park%20Leiper%27s%20Fork%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Puckett%27s%20Grocery%20%26%20Restaurant%20Leiper%27s%20Fork%2C%20Tennessee|Timothy%27s%20Fish%20and%20Chips%20Leiper%27s%20Fork%2C%20Tennessee|The%20Leiper%27s%20Fork%20Distillery|Timberland%20Park%20Perimeter%20Trail%20Leiper%27s%20Fork%2C%20Tennessee
+- https://www.google.com/maps/dir/?origin=Old%20Hickory%20Lake&amp;destination=Lock%203%20Recreation%20Area%20Old%20Hickory%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Music%20City%20Walk%20of%20Fame%20Old%20Hickory%2C%20Tennessee|Old%20Hickory%20Beach|Cages%20Bend%20Campground%20Old%20Hickory%2C%20Tennessee|Sanders%20Ferry%20Park%20Old%20Hickory%2C%20Tennessee|Avondale%20Campground%20Old%20Hickory%2C%20Tennessee|Nat%20Caldwell%20Park%20Old%20Hickory%2C%20Tennessee
+- https://www.google.com/maps/dir/?origin=Ryman%20Auditorium%20Nashville%2C%20Tennessee&amp;destination=Radnor%20Lake%3A%20Otter%20Creek%20Road%20to%20Ganier%20Ridge%20Trail%20Nashville%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Grand%20Ole%20Opry%20Nashville%2C%20Tennessee|Country%20Music%20Hall%20of%20Fame%20and%20Museum%20Nashville%2C%20Tennessee|Broadway%20Historic%20District%20Nashville%2C%20Tennessee|Parthenon%20Nashville%2C%20Tennessee|Couchville%20Lake%20Loop%20Trail%20Nashville%2C%20Tennessee
+- https://www.google.com/maps/dir/?origin=Trousdale%20Place%20Gallatin%2C%20Tennessee&amp;destination=Shoreline%2C%20High%20Ridge%2C%20Owl%20Ridge%20Loop&amp;travelmode=driving&amp;api=1&amp;waypoints=Historic%20Downtown%20Gallatin|Gallatin%20Civic%20Center|Cedar%20Creek%20Marina%20Gallatin%2C%20Tennessee
+- https://www.google.com/maps/place/?q=place_id:ChIJAQAABOJDZIgRzJ-FGqHl3zA
+- https://www.google.com/maps/place/?q=place_id:ChIJGeRbxMgCWogRbUcBHFWZk0I
+- https://www.google.com/maps/place/?q=place_id:ChIJITRuIed7ZIgRYo2q5vpjzIU
+- https://www.google.com/maps/place/?q=place_id:ChIJPcdEHWowZIgRgRaJLDDN2CY
+- https://www.google.com/maps/place/?q=place_id:ChIJV0iBkc8hZIgRrZq4xVR4EJg
+- https://www.google.com/maps/place/?q=place_id:ChIJfz9kzbdBZIgRKFmmyYYadxU
+- https://www.google.com/maps/place/?q=place_id:ChIJm7ihF_OBZIgR0OBPluZVYD8
+- https://www.google.com/maps/place/?q=place_id:ChIJmTrBPQAXHxURe8GXq4OP3J0
+- https://www.google.com/maps/place/?q=place_id:ChIJmeamClxAZIgRDbncXYSRl_0
+- https://www.google.com/maps/search/?api=1&amp;query=35.9031197,-86.8583341
+- https://www.google.com/maps/search/?api=1&amp;query=36.05811,-86.79243
+- https://www.google.com/maps/search/?api=1&amp;query=36.3767148,-86.3555472
+- https://www.google.com/maps/search/?api=1&amp;query=Asheville%20Holiday%20Craft%20Market%20Asheville%2C%20North%20Carolina
+- https://www.google.com/maps/search/?api=1&amp;query=Downtown%20Franklin%20Franklin%2C%20Tennessee
+- https://www.google.com/maps/search/?api=1&amp;query=Ryman%20Auditorium%20Nashville%2C%20Tennessee
+- https://www.google.com/maps/search/?api=1&amp;query=The%20Factory%20at%20Franklin%20Franklin%2C%20Tennessee
+- https://www.google.com/maps/search/?api=1&amp;query=The%20Park%20at%20Harlinsdale%20Farm%20Franklin%2C%20Tennessee
+- https://www.google.com/maps/search/?api=1&amp;query=Timothy%27s%20Fish%20and%20Chips%20Leiper%27s%20Fork%2C%20Tennessee
+- https://www.govserv.org/US/Franklin/546227228855683/Leiper%27s-Fork-Christmas-Parade
+- https://www.leipersforkdistillery.com/
+- https://www.tripadvisor.com/Attraction_Review-g55061-d25802328-Reviews-Get_Up_And_Go_Kayaking_Old_Hickory_Lake-Gallatin_Sumner_County_Tennessee.html
+- https://www.tripadvisor.com/Attraction_Review-g55153-d7380848-Reviews-Don_Fox_Community_Park-Lebanon_Tennessee.html
+- https://www.tripadvisor.com/Attraction_Review-g55248-d33675510-Reviews-Old_Hickory_Beach-Old_Hickory_Tennessee.html
+- https://www.tripadvisor.com/Restaurant_Review-g55055-d19805772-Reviews-or15-1799_Kitchen_Bar_Room-Franklin_Tennessee.html
+- https://www.tripadvisor.com/ShowUserReviews-g55153-d19000101-r713398364-Antiques_on_231-Lebanon_Tennessee.html
+- https://www.tripadvisor.com/ShowUserReviews-g55248-d24804351-r850593744-Granddaddy_s_Original_Hot_Chicken_Shack-Old_Hickory_Tennessee.html
+- https://www.visitmusiccity.com/nashville-trip-ideas/free-things-to-do-nashville
+
+## Removed URLs (43)
+- https://corpslakes.erdc.dren.mil/Visitors/projects.cfm?Id=H313280
+- https://historicrockcastle.com/
 - https://lock-4-mountain-bike-trailhead.wheree.com/
 - https://natchez-trace.thefuntimesguide.com/highway_96_parkway_exits/
+- https://tnstateparks.com/parks/bledsoe-creek
+- https://visitfranklin.com/
 - https://www.1799franklin.com/reservations
 - https://www.alltrails.com/trail/us/north-carolina/craggy-gardens
 - https://www.alltrails.com/trail/us/tennessee/carnton-plantation
 - https://www.alltrails.com/trail/us/tennessee/old-natchez-trace-garrison-creek-loop-trail
 - https://www.factoryatfranklin.com/
 - https://www.google.com/maps/dir/?destination=Franklin%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.0367424%2C-86.9764887|35.973446%2C-86.8333953|Birdsong%20Hollow%20Overlook%20Franklin%2C%20Tennessee
+- https://www.google.com/maps/dir/?destination=Gallatin%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.3000799%2C-86.6539054|36.2526113%2C-86.6049498|Historic%20Rock%20Castle%20Gallatin%2C%20Tennessee
+- https://www.google.com/maps/dir/?destination=Lebanon%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.2792871%2C-86.5964169|36.2102139%2C-86.600933|36.1039057%2C-86.5414535|36.2232118%2C-86.5096271
 - https://www.google.com/maps/dir/?destination=Leiper%27s%20Fork%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.0553946%2C-86.7957879|35.8403014%2C-86.6962652|35.9177868%2C-86.8726799|35.9170294%2C-86.8735275|Cheekwood%20Estate%20%26%20Gardens%20Leiper%27s%20Fork%2C%20Tennessee|David%20Arms%20Gallery%20Leiper%27s%20Fork%2C%20Tennessee
 - https://www.google.com/maps/dir/?origin=Biltmore%20Estate%20Asheville%2C%20North%20Carolina&amp;destination=Basilica%20of%20Saint%20Lawrence%20Asheville%2C%20North%20Carolina&amp;travelmode=driving&amp;api=1&amp;waypoints=River%20Arts%20District%20Asheville%2C%20North%20Carolina|North%20Carolina%20Arboretum|Downtown%20Asheville|Craggy%20Gardens%20Asheville%2C%20North%20Carolina|Asheville%20Art%20Museum|Asheville%20Pinball%20Museum
 - https://www.google.com/maps/dir/?origin=Bledsoe%20Creek%20State%20Park&amp;destination=Shoreline%2C%20High%20Ridge%2C%20Owl%20Ridge%20Loop&amp;travelmode=driving&amp;api=1&amp;waypoints=Trousdale%20Place%20Gallatin%2C%20Tennessee|Historic%20Downtown%20Gallatin|Old%20Hickory%20Lake%20Gallatin%2C%20Tennessee|Lock%204%20Park%20Gallatin%2C%20Tennessee
@@ -26,144 +79,29 @@
 - https://www.google.com/maps/dir/?origin=Historic%20Downtown%20Franklin&amp;destination=Winstead%20Hill%20Park%20Loop%20Franklin%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=The%20Factory%20at%20Franklin|Franklin%20Theatre|Carnton%20Franklin%2C%20Tennessee|Carnton%20Plantation%20Franklin%2C%20Tennessee
 - https://www.google.com/maps/dir/?origin=Leiper%27s%20Fork%20Village&amp;destination=Old%20Natchez%20Trace%20Garrison%20Creek%20Loop%20Trail%20Leiper%27s%20Fork%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Puckett%27s%20Grocery%20%26%20Restaurant%20Leiper%27s%20Fork%2C%20Tennessee|The%20Factory%20at%20Franklin%20Leiper%27s%20Fork%2C%20Tennessee|Timberland%20Park%20Perimeter%20Trail%20Leiper%27s%20Fork%2C%20Tennessee
 - https://www.google.com/maps/dir/?origin=Ryman%20Auditorium%20Nashville%2C%20Tennessee&amp;destination=Couchville%20Lake%20Loop%20Trail%20Nashville%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Grand%20Ole%20Opry%20Nashville%2C%20Tennessee|Country%20Music%20Hall%20of%20Fame%20and%20Museum%20Nashville%2C%20Tennessee|Broadway%20Historic%20District%20Nashville%2C%20Tennessee|The%20Parthenon%20Nashville%2C%20Tennessee
+- https://www.google.com/maps/place/?q=place_id:ChIJDeYrBBt9Y4gRs_ZIR5ypG_s
 - https://www.google.com/maps/place/?q=place_id:ChIJRV2dU44fZIgRlhrksCGgFp4
+- https://www.google.com/maps/place/?q=place_id:ChIJ_4d8HPUlZIgRI_0G0jhMS7A
 - https://www.google.com/maps/place/?q=place_id:ChIJf2rnpoJqZIgRQyx--6HBumM
 - https://www.google.com/maps/place/?q=place_id:ChIJi46Be7A7ZIgRAXPC53CxYaI
+- https://www.google.com/maps/place/?q=place_id:ChIJl5YvN_QhZIgRe-0acHZ_3sA
 - https://www.google.com/maps/place/?q=place_id:ChIJqS-E9_Z-ZIgRoYOK20eJNEM
 - https://www.google.com/maps/search/?api=1&amp;query=35.8403014,-86.6962652
+- https://www.google.com/maps/search/?api=1&amp;query=36.2526113,-86.6049498
+- https://www.google.com/maps/search/?api=1&amp;query=36.3000799,-86.6539054
 - https://www.google.com/maps/search/?api=1&amp;query=Birdsong%20Hollow%20Overlook%20Franklin%2C%20Tennessee
-- https://www.google.com/maps/search/?api=1&amp;query=Burgess%20Falls%20State%20Park
-- https://www.google.com/maps/search/?api=1&amp;query=Cheekwood%20Estate%20%26%20Gardens%20Leiper%27s%20Fork%2C%20Tennessee
-- https://www.google.com/maps/search/?api=1&amp;query=David%20Arms%20Gallery%20Leiper%27s%20Fork%2C%20Tennessee
 - https://www.google.com/maps/search/?api=1&amp;query=Dickens%20of%20a%20Christmas%20%282026%29%20Main%20Street%2C%20Franklin%2C%20TN
 - https://www.google.com/maps/search/?api=1&amp;query=Flashlight%20Candy%20Cane%20Hunt%20Franklin%2C%20TN
 - https://www.google.com/maps/search/?api=1&amp;query=Historic%20Rock%20Castle%20Gallatin%2C%20Tennessee
+- https://www.google.com/maps/search/?api=1&amp;query=Leiper%27s%20Fork%20Christmas%20Parade
 - https://www.google.com/maps/search/?api=1&amp;query=Little%20Big%20Town%3A%20The%20Christmas%20Shows%20Ryman%20Auditorium
 - https://www.google.com/maps/search/?api=1&amp;query=Nashville%20Music%20Scene%20Old%20Hickory%2C%20Tennessee
+- https://www.hldrivingtour.info/lebanon-commercial-historic-district
 - https://www.romanticasheville.com/winter_in_asheville.htm
+- https://www.tripadvisor.com/RestaurantsNear-g55055-d6507851-Leiper_s_Fork-Franklin_Tennessee.html
 - https://www.waze.com/live-map/directions/us/tn/lebanon/baird-park-circle?to=place.EiZCYWlyZCBQYXJrIENpciwgTGViYW5vbiwgVE4gMzcwODcsIFVTQSIuKiwKFAoSCUVdnVOOH2SIEZYa5LAhoBaeEhQKEglTlZQ4fwRkiBEaEZCgmuGhQw
 
-## Removed URLs (118)
-- https://allevents.in/lebanon/lebanons-christmas-on-the-square/200029680652942
-- https://amerigo.net/nashville/
-- https://ar.tripadvisor.com/Restaurant_Review-g55055-d4727215-Reviews-or30-GRAYS_On_Main-Franklin_Tennessee.html
-- https://bangkokpadthai.toast.site/order
-- https://chrysalis-modern.com/
-- https://foodeist.com/best-restaurants-in-gallatin-sumner-county
-- https://hangryjoeslebanon.com/careers
-- https://kokomotradingco.com/franklin-westhaven-kokomo-trading-company-happy-hours-specials
-- https://lebanonpublichouse.com/contact/
-- https://logansroadhouse.com/locations/us/tn/lebanon/1006-cumberland-center-boulevard/
-- https://nashville.eater.com/maps/best-nashville-restaurants-38
-- https://oldglorydistilling.com/
-- https://restaurantguru.com/Gallatin
-- https://resy.com/cities/franklin-tn/list/top-rated?date=2024-05-09&amp;seats=2
-- https://resy.com/cities/nashville-tn
-- https://sobrosnetwork.com/2023/09/nashville-restaurant-rankings/
-- https://tennlakesbrewing.com/food-menu
-- https://thethompsonskitchen.com/fairview-the-thompsons-kitchen-drink-menu
-- https://thetrailerparktn.com/@maxiempanadas.tn
-- https://topofnashville.com/top-rated/
-- https://www.alltrails.com/trail/us/tennessee/radnor-lake-ganier-ridge-trail
-- https://www.bourbonsteak.com/location/nashville/
-- https://www.coaltownpublichouse.com/reservations
-- https://www.gallatintn.gov/2282/Events
-- https://www.google.com/maps/dir/?destination=Franklin%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.0367424%2C-86.9764887|35.973446%2C-86.8333953
-- https://www.google.com/maps/dir/?destination=Leiper%27s%20Fork%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.0553946%2C-86.7957879|35.9177868%2C-86.8726799|35.9170294%2C-86.8735275|35.9031197%2C-86.8583341|Cheekwood%20Estate%20%26%20Gardens%20Leiper%27s%20Fork%2C%20Tennessee|David%20Arms%20Gallery%20Leiper%27s%20Fork%2C%20Tennessee
-- https://www.google.com/maps/dir/?origin=Biltmore%20Estate%20Asheville%2C%20North%20Carolina&amp;destination=Basilica%20of%20Saint%20Lawrence%20Asheville%2C%20North%20Carolina&amp;travelmode=driving&amp;api=1&amp;waypoints=River%20Arts%20District%20Asheville%2C%20North%20Carolina|Downtown%20Asheville|Blue%20Ridge%20Parkway%20Asheville%2C%20North%20Carolina|North%20Carolina%20Arboretum|Asheville%20Art%20Museum|Asheville%20Pinball%20Museum
-- https://www.google.com/maps/dir/?origin=Bledsoe%20Creek%20State%20Park&amp;destination=Shoreline%2C%20High%20Ridge%2C%20Owl%20Ridge%20Loop&amp;travelmode=driving&amp;api=1&amp;waypoints=Trousdale%20Place%20Gallatin%2C%20Tennessee|Historic%20Downtown%20Gallatin|Sumner%20County%20Museum%20Gallatin%2C%20Tennessee|Old%20Hickory%20Lake%20Gallatin%2C%20Tennessee
-- https://www.google.com/maps/dir/?origin=Cedars%20of%20Lebanon%20State%20Park&amp;destination=Limestone%20Sinks%20Trail%20Lebanon%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Historic%20Lebanon%20Public%20Square|Fiddlers%20Grove%20Historic%20Village%20Lebanon%2C%20Tennessee|Lebanon%27s%20Wilson%20County%20Museum|Don%20Fox%20Community%20Park%20Lebanon%2C%20Tennessee|Cedar%20Glades%20Trail%20Lebanon%2C%20Tennessee
-- https://www.google.com/maps/dir/?origin=Franklin%27s%20Main%20Street&amp;destination=Winstead%20Hill%20Park%20Loop%20Franklin%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Franklin%20Theatre|Carnton%20Franklin%2C%20Tennessee
-- https://www.google.com/maps/dir/?origin=Leiper%27s%20Fork%20Village&amp;destination=Harpeth%20River%20Trail%20and%20Judge%20Fulton%20Greer%20Park%20Leiper%27s%20Fork%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Puckett%27s%20Grocery%20%26%20Restaurant%20Leiper%27s%20Fork%2C%20Tennessee|Franklin%20Theatre%20Leiper%27s%20Fork%2C%20Tennessee|Timberland%20Park%20Perimeter%20Trail%20Leiper%27s%20Fork%2C%20Tennessee
-- https://www.google.com/maps/dir/?origin=Ryman%20Auditorium%20Nashville%2C%20Tennessee&amp;destination=Radnor%20Lake%3A%20Otter%20Creek%20Road%20to%20Ganier%20Ridge%20Trail%20Nashville%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Grand%20Ole%20Opry%20Nashville%2C%20Tennessee|Country%20Music%20Hall%20of%20Fame%20and%20Museum%20Nashville%2C%20Tennessee|Broadway%20Historic%20District%20Nashville%2C%20Tennessee|The%20Parthenon%20Nashville%2C%20Tennessee|Couchville%20Lake%20Loop%20Trail%20Nashville%2C%20Tennessee
-- https://www.google.com/maps/dir/?origin=The%20Hermitage%20Hotel%20Old%20Hickory%2C%20Tennessee&amp;destination=Lock%203%20Recreation%20Area%20Old%20Hickory%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Cumberland%20River%20Greenway%20Old%20Hickory%2C%20Tennessee|Cedar%20Creek%20Marina%20Old%20Hickory%2C%20Tennessee|Cages%20Bend%20Campground%20Old%20Hickory%2C%20Tennessee|Avondale%20Campground%20Old%20Hickory%2C%20Tennessee|Nat%20Caldwell%20Park%20Old%20Hickory%2C%20Tennessee
-- https://www.google.com/maps/place/?q=place_id:ChIJ1_TwUtBnZIgRMBWrg2FzLYA
-- https://www.google.com/maps/place/?q=place_id:ChIJ7-vuc_h5ZIgR5nIcS00b1aM
-- https://www.google.com/maps/place/?q=place_id:ChIJ7QkWOeN7ZIgRQll7tLVOw8g
-- https://www.google.com/maps/place/?q=place_id:ChIJ87ISHkRnZIgRIhlakPvG4x8
-- https://www.google.com/maps/place/?q=place_id:ChIJ8UbmbN4hZIgRV8yGhQDiVJg
-- https://www.google.com/maps/place/?q=place_id:ChIJ8WdN-TUhZIgRttTZ_UepLnU
-- https://www.google.com/maps/place/?q=place_id:ChIJA52LgFdnZIgRwjYY8HbAFYE
-- https://www.google.com/maps/place/?q=place_id:ChIJAVxhXSCNWYgR4uNNc1N4Xgk
-- https://www.google.com/maps/place/?q=place_id:ChIJBUrsYXcwZIgRy_K6b2zVjpE
-- https://www.google.com/maps/place/?q=place_id:ChIJBdb8uEeBZIgRBv2o7qibBDA
-- https://www.google.com/maps/place/?q=place_id:ChIJC2dSNslnZIgRQNB5SkWKInY
-- https://www.google.com/maps/place/?q=place_id:ChIJE2EDwxQhZIgRBzfFlQCOMhM
-- https://www.google.com/maps/place/?q=place_id:ChIJI32yClF-ZIgRu27uKU8wudk
-- https://www.google.com/maps/place/?q=place_id:ChIJITRuIed7ZIgRYo2q5vpjzIU
-- https://www.google.com/maps/place/?q=place_id:ChIJJ7g8LisgZIgRMrpXxTXY1fw
-- https://www.google.com/maps/place/?q=place_id:ChIJJ9xf2mYxZIgRA6Kuhf2-RQM
-- https://www.google.com/maps/place/?q=place_id:ChIJJ_94uV45ZIgRTXTFxN0EcDc
-- https://www.google.com/maps/place/?q=place_id:ChIJL5cybZY6ZIgRGAx0eA5OX8c
-- https://www.google.com/maps/place/?q=place_id:ChIJORYUWNSBZIgRL1iv3WP3XhE
-- https://www.google.com/maps/place/?q=place_id:ChIJSZo0GwhnZIgRLyF81BXiZ7U
-- https://www.google.com/maps/place/?q=place_id:ChIJSf0U2fdpZIgRJ5adKZHG0Bg
-- https://www.google.com/maps/place/?q=place_id:ChIJSy7tWh1nZIgR7o6crVziEqY
-- https://www.google.com/maps/place/?q=place_id:ChIJU6gaZmWCZIgRjqKtVU72kkU
-- https://www.google.com/maps/place/?q=place_id:ChIJU6nkI3EwZIgRdl-9zx2D560
-- https://www.google.com/maps/place/?q=place_id:ChIJV0iBkc8hZIgRrZq4xVR4EJg
-- https://www.google.com/maps/place/?q=place_id:ChIJY9viGBeZZIgRUxYfsSHIO8k
-- https://www.google.com/maps/place/?q=place_id:ChIJZ5Ps0isgZIgRXxytCxsW_mU
-- https://www.google.com/maps/place/?q=place_id:ChIJb3lqe1xmZIgR9f1AAIPhV1M
-- https://www.google.com/maps/place/?q=place_id:ChIJbbxOPrN-ZIgRwRdlqZS_u0Y
-- https://www.google.com/maps/place/?q=place_id:ChIJcYvTRy9nZIgRUV2mzYjLCx0
-- https://www.google.com/maps/place/?q=place_id:ChIJe3yVpj2AZIgRg2jYR0OA0o0
-- https://www.google.com/maps/place/?q=place_id:ChIJfciRPa_0WYgR6UbEhYeaQmo
-- https://www.google.com/maps/place/?q=place_id:ChIJgS4N8jzzWYgRyrkSedg-3I8
-- https://www.google.com/maps/place/?q=place_id:ChIJgUb189YhZIgRIfFZAlGyq8A
-- https://www.google.com/maps/place/?q=place_id:ChIJhdOH0PdmZIgRVSci-4ShivQ
-- https://www.google.com/maps/place/?q=place_id:ChIJmWkjvhaCZIgR9rYhbkeHbio
-- https://www.google.com/maps/place/?q=place_id:ChIJmzVsLzOMWYgRP340m5T3ie4
-- https://www.google.com/maps/place/?q=place_id:ChIJo51CPqAfZIgRp630Tp6oSyo
-- https://www.google.com/maps/place/?q=place_id:ChIJq3tfSZJmZIgRLkkEXv4QxkQ
-- https://www.google.com/maps/place/?q=place_id:ChIJs8o3QKp_ZIgRRae1jww1MGk
-- https://www.google.com/maps/place/?q=place_id:ChIJs9t1fKchZIgRqPNagIpErio
-- https://www.google.com/maps/place/?q=place_id:ChIJsR8WErkhZIgRd_Ea-2vVg6w
-- https://www.google.com/maps/place/?q=place_id:ChIJswFemRaCZIgR9DHRvg2PiLA
-- https://www.google.com/maps/place/?q=place_id:ChIJteAoYMYZZIgR_ATBQPqnpZw
-- https://www.google.com/maps/place/?q=place_id:ChIJu6DEnoQ7ZIgRFZPVzGWYnWM
-- https://www.google.com/maps/place/?q=place_id:ChIJz_KaYmUhZIgRUfN7aWGiEho
-- https://www.google.com/maps/place/?q=place_id:EiNCbHVlIFJpZGdlIFBrd3ksIEFzaGV2aWxsZSwgTkMsIFVTQSIuKiwKFAoSCRWmusG4m02IEc3Sqhz23lqOEhQKEgkJbw88qYxZiBFdOjQGwTHvlA
-- https://www.google.com/maps/search/?api=1&amp;query=35.9031197,-86.8583341
-- https://www.google.com/maps/search/?api=1&amp;query=36.05811,-86.79243
-- https://www.google.com/maps/search/?api=1&amp;query=Burgess%20Falls%20State%20Park%20near%20Asheville%2C%20North%20Carolina
-- https://www.google.com/maps/search/?api=1&amp;query=Cheekwood%20Estate%20%26%20Gardens%20Leiper%27s%20Fork%2C%20Tennessee%20route%20from%20Old%20Hickory%2C%20Tennessee
-- https://www.google.com/maps/search/?api=1&amp;query=David%20Arms%20Gallery%20Leiper%27s%20Fork%2C%20Tennessee%20route%20from%20Old%20Hickory%2C%20Tennessee
-- https://www.google.com/maps/search/?api=1&amp;query=Dickens%20of%20a%20Christmas%20%282026%29%20Downtown%20Franklin
-- https://www.google.com/maps/search/?api=1&amp;query=Flashlight%20Candy%20Cane%20Hunt%20Downtown%20Franklin
-- https://www.google.com/maps/search/?api=1&amp;query=Grand%20Ole%20Opry%20Old%20Hickory%2C%20Tennessee
-- https://www.google.com/maps/search/?api=1&amp;query=Historic%20Rock%20Castle%20Gallatin%2C%20Tennessee%20route%20from%20Old%20Hickory%2C%20Tennessee
-- https://www.google.com/maps/search/?api=1&amp;query=Little%20Big%20Town%20Ryman%20Auditorium
-- https://www.jonathansgrille.com/post/jonathan-s-grille-to-open-new-location-in-gallatin-tn
-- https://www.opentable.com/r/culinary-dropout-franklin
-- https://www.opentable.com/village-social-biltmore-estate
-- https://www.painturos.com/locations
-- https://www.pelatorestaurant.com/nashville-menus/
-- https://www.restaurantji.com/tn/lebanon/
-- https://www.rolfanddaughters.com/contact
-- https://www.romanticasheville.com/BlueRidgeParkway.htm
-- https://www.southboundstays.com/visit-leipers-fork/what-to-do-in-leipers-fork/eat-drink-in-leipers-fork/
-- https://www.sperrys.com/cool-springs
-- https://www.sumnercountymuseum.org/
-- https://www.telegraph.co.uk/travel/destinations/north-america/united-states/tennessee/nashville/best-restaurants-nashville/
-- https://www.tennessean.com/story/entertainment/dining/2024/06/19/williamson-county-restaurants-franklin-food-top-10-ranking/73978137007/
-- https://www.tennessean.com/story/life/food/2018/10/17/review-leipers-fork-restaurant-1892-farm-fresh-fare/1651251002/
-- https://www.theinfatuation.com/nashville/guides/best-restaurants-franklin-tennessee
-- https://www.traillink.com/trail/old-hickory-dam-greenway/
-- https://www.tripadvisor.com/Attraction_Review-g55153-d7380848-Reviews-Don_Fox_Community_Park-Lebanon_Tennessee.html
-- https://www.tripadvisor.com/Restaurant_Review-g55055-d19805772-Reviews-or15-1799_Kitchen_Bar_Room-Franklin_Tennessee.html
-- https://www.tripadvisor.com/Restaurant_Review-g55061-d10247472-Reviews-Prince_Street_Pizza_Pub-Gallatin_Sumner_County_Tennessee.html
-- https://www.tripadvisor.com/Restaurant_Review-g55153-d7597034-Reviews-Speedy_Burrito-Lebanon_Tennessee.html
-- https://www.tripadvisor.com/Restaurant_Review-g55229-d3452984-Reviews-or15-Etch-Nashville_Davidson_County_Tennessee.html
-- https://www.tripadvisor.com/Restaurant_Review-g60742-d559913-Reviews-El_Chapala_Mexican-Asheville_North_Carolina.html
-- https://www.tripadvisor.com/Restaurant_Review-g60742-d559913-Reviews-Plant_Asheville-Asheville_North_Carolina.html
-- https://www.tripadvisor.com/Restaurant_Review-g60742-d559913-Reviews-Red_Stag_Grill-Asheville_North_Carolina.html
-- https://www.yelp.com/biz/fox-and-locke-franklin
-- https://www.yelp.com/biz/guadalajara-taqueria-y-carniceria-lebanon
-- https://www.yelp.com/biz/town-square-social-lebanon
-- https://www.yelp.com/biz/uncle-lennys-country-cafe-franklin
-
-## Kept URLs (220)
+## Kept URLs (210)
 - http://koftakygrill1.com/
 - https://allevents.in/lebanon/32nd-annual-christmas-train-show/200030347843955
 - https://aubreysrestaurants.com/lebanon/
@@ -173,7 +111,6 @@
 - https://campiones.com/campionestasteofchicago-tjqrsf
 - https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css
 - https://cheekwood.org/
-- https://corpslakes.erdc.dren.mil/Visitors/projects.cfm?Id=H313280
 - https://countrymusichalloffame.org/
 - https://davidarms.com/
 - https://demosrestaurants.com/location/lebanon/?srsltid
@@ -194,7 +131,7 @@
 - https://github.com/flysoftware-git/itinerary-generator/issues/new?template=broken-link-report.yml&labels=bug
 - https://github.com/flysoftware-git/itinerary-generator/issues/new?template=itinerary-feedback.yml
 - https://hillmanbeer.com/asheville-taproom/
-- https://historicrockcastle.com/
+- https://lebanonwilsonchamber.com/event/christmas-on-the-square-2026/
 - https://ncarboretum.org/
 - https://papaturneysbbq.com/menu
 - https://posanarestaurant.com/downtown-asheville-event-venue/
@@ -204,14 +141,12 @@
 - https://stateparks.com/cages_bend_campground_in_tennessee.html
 - https://thecornerkitchen.com/menu/
 - https://thehermitage.com/
-- https://tnstateparks.com/parks/bledsoe-creek
 - https://tnstateparks.com/parks/cedars-of-lebanon/
 - https://tnstateparks.com/parks/long-hunter
 - https://tnstateparks.com/parks/radnor-lake
 - https://tnvacation.com/trip-inspiration/articles/escape-crossville-cumberland-county
 - https://tnvacation.com/trip-inspiration/articles/tennessee-cumberland-plateau
 - https://topofnashville.com/best-restaurants-gallatin/
-- https://visitfranklin.com/
 - https://visitfranklin.com/blog/the-6-most-scenic-drives-to-take-around-franklin/
 - https://visitfranklin.com/blog/your-guide-to-the-natchez-trace-parkway-in-franklin-tn/
 - https://www.aboutasheville.com/
@@ -242,8 +177,6 @@
 - https://www.google.com/maps/dir/?destination=11%20Boston%20Way%2C%20Asheville%2C%20NC%2028803&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.0446107%2C-85.598687|35.6660944%2C-85.3557167|35.8804563%2C-84.8098977|35.9442398%2C-84.6816073|36.0103562%2C-84.2696449|35.9617124%2C-83.9232783|35.9603948%2C-83.9210261|35.96109%2C-83.9148104
 - https://www.google.com/maps/dir/?destination=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&travelmode=driving&api=1&origin=Nashville%20International%20Airport
 - https://www.google.com/maps/dir/?destination=Charlotte%20Douglas%20International%20Airport&travelmode=driving&api=1
-- https://www.google.com/maps/dir/?destination=Gallatin%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.3000799%2C-86.6539054|36.2526113%2C-86.6049498|Historic%20Rock%20Castle%20Gallatin%2C%20Tennessee
-- https://www.google.com/maps/dir/?destination=Lebanon%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.2792871%2C-86.5964169|36.2102139%2C-86.600933|36.1039057%2C-86.5414535|36.2232118%2C-86.5096271
 - https://www.google.com/maps/dir/?destination=Nashville%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=36.3256059%2C-86.5652728|36.2138124%2C-86.6129944|36.1897757%2C-86.6774864
 - https://www.google.com/maps/place/?q=place_id:ChIJ-XoGlZ4fZIgRlhZwttpy-qw
 - https://www.google.com/maps/place/?q=place_id:ChIJ045tczXzWYgRXHmCdMGmziY
@@ -266,7 +199,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJCTmGqAdBZIgRqAornAd4Zbg
 - https://www.google.com/maps/place/?q=place_id:ChIJCaTjlPIfZIgRzoaLrgTMix4
 - https://www.google.com/maps/place/?q=place_id:ChIJD85VCFbzWYgROwRZIM5Gcbg
-- https://www.google.com/maps/place/?q=place_id:ChIJDeYrBBt9Y4gRs_ZIR5ypG_s
 - https://www.google.com/maps/place/?q=place_id:ChIJFQR_eoUhZIgReJ7mEZvSekw
 - https://www.google.com/maps/place/?q=place_id:ChIJFWmibsVnZIgRl-ylIKaFJeU
 - https://www.google.com/maps/place/?q=place_id:ChIJGyru2RfzWYgR35MLgf4We2o
@@ -293,7 +225,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJXzYq41nzWYgRmy6GPmXlimQ
 - https://www.google.com/maps/place/?q=place_id:ChIJYdzNVQAhZIgRvNXDXMBYEqI
 - https://www.google.com/maps/place/?q=place_id:ChIJZTkU2HdlZIgR_V55oayk0Lw
-- https://www.google.com/maps/place/?q=place_id:ChIJ_4d8HPUlZIgRI_0G0jhMS7A
 - https://www.google.com/maps/place/?q=place_id:ChIJ__dX4M_zWYgRQ1qMfVqGFvo
 - https://www.google.com/maps/place/?q=place_id:ChIJa3IBl1B5ZIgR_Enncf_uxiI
 - https://www.google.com/maps/place/?q=place_id:ChIJb28u1zzzWYgRkOLZpZQMpLc
@@ -306,7 +237,6 @@
 - https://www.google.com/maps/place/?q=place_id:ChIJiQiiFwAjZIgRTyJad-ZnftY
 - https://www.google.com/maps/place/?q=place_id:ChIJiaVPXCCNWYgR6cdCVLx8eJU
 - https://www.google.com/maps/place/?q=place_id:ChIJj1v93VnzWYgRUUoZ_Nrk5Nk
-- https://www.google.com/maps/place/?q=place_id:ChIJl5YvN_QhZIgRe-0acHZ_3sA
 - https://www.google.com/maps/place/?q=place_id:ChIJldzMGpc-ZIgROCNzaPx8PFk
 - https://www.google.com/maps/place/?q=place_id:ChIJletJO1lmZIgRq0UiSZV5AGM
 - https://www.google.com/maps/place/?q=place_id:ChIJlwcL4_9_ZIgRsnghwlfkoVc
@@ -337,16 +267,15 @@
 - https://www.google.com/maps/search/?api=1&amp;query=36.1897757,-86.6774864
 - https://www.google.com/maps/search/?api=1&amp;query=36.2102139,-86.600933
 - https://www.google.com/maps/search/?api=1&amp;query=36.2138124,-86.6129944
-- https://www.google.com/maps/search/?api=1&amp;query=36.2526113,-86.6049498
 - https://www.google.com/maps/search/?api=1&amp;query=36.2792871,-86.5964169
-- https://www.google.com/maps/search/?api=1&amp;query=36.3000799,-86.6539054
 - https://www.google.com/maps/search/?api=1&amp;query=36.3256059,-86.5652728
+- https://www.google.com/maps/search/?api=1&amp;query=Burgess%20Falls%20State%20Park
 - https://www.google.com/maps/search/?api=1&amp;query=Charlie%20Daniels%20Park%20Lebanon%2C%20Tennessee
+- https://www.google.com/maps/search/?api=1&amp;query=Cheekwood%20Estate%20%26%20Gardens%20Leiper%27s%20Fork%2C%20Tennessee
+- https://www.google.com/maps/search/?api=1&amp;query=David%20Arms%20Gallery%20Leiper%27s%20Fork%2C%20Tennessee
 - https://www.google.com/maps/search/?api=1&amp;query=Italy%20From%20Scratch%20Leiper%27s%20Fork%2C%20Tennessee
-- https://www.google.com/maps/search/?api=1&amp;query=Leiper%27s%20Fork%20Christmas%20Parade
 - https://www.google.com/maps/search/?api=1&amp;query=restaurants%20near%20Oak%20Ridge%2C%20Tennessee
 - https://www.historiclebanon.com
-- https://www.hldrivingtour.info/lebanon-commercial-historic-district
 - https://www.italyfromscratch.com/
 - https://www.johnnycashmuseum.com/
 - https://www.kisserrestaurant.com/menu
@@ -378,7 +307,6 @@
 - https://www.tripadvisor.com/Restaurant_Review-g60742-d559913-Reviews-Fig_Bistro-Asheville_North_Carolina.html
 - https://www.tripadvisor.com/Restaurant_Review-g60742-d559913-Reviews-Little_Chango-Asheville_North_Carolina.html
 - https://www.tripadvisor.com/Restaurant_Review-g60742-d559913-Reviews-Luminosa-Asheville_North_Carolina.html
-- https://www.tripadvisor.com/RestaurantsNear-g55055-d6507851-Leiper_s_Fork-Franklin_Tennessee.html
 - https://www.trousdaleplace.com/
 - https://www.wildwnc.org/
 - https://www.williamsonscene.com/williamsonsbest/2025/food_drink/readers_poll/leiper-s-fork-distillery/article_6df62122-488a-4cb0-a636-20717a31559e.html
