@@ -1,30 +1,29 @@
 # Destination Status Summary
 
-- Run ID: 20260903T050423.392889Z
-- Generated at (UTC): 2026-09-03T05:07:34.763827+00:00
+- Run ID: 20260903T065219.170372Z
+- Generated at (UTC): 2026-09-03T06:55:08.806357+00:00
 - Destination count: 7
-- Retry recommended: 4
-- Retry attempted: 4
+- Retry recommended: 3
+- Retry attempted: 3
 - Resolved after retry: 0
-- Unresolved after retry: 4
+- Unresolved after retry: 3
 - Not retried due to cap: 0
 
-## Needs Attention (4)
+## Needs Attention (3)
 - Old Hickory, Tennessee (oldhickory) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
 - Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
-- Lebanon, Tennessee (lebanon) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
-- Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
+- Asheville, North Carolina (asheville) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 
 ## All Destinations (7)
 - Old Hickory, Tennessee (oldhickory) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
 - Nashville, Tennessee (nashville) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/8, en_route_exhaustion_or_no_match=0
 - Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=5/5, en_route_exhaustion_or_no_match=0
-- Lebanon, Tennessee (lebanon) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=6/7, en_route_exhaustion_or_no_match=0
+- Lebanon, Tennessee (lebanon) — status=degraded, terminal=stable_without_retry, en_route_resolved=6/7, en_route_exhaustion_or_no_match=0
 - Franklin, Tennessee (franklin) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/6, en_route_exhaustion_or_no_match=0
-- Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
-- Asheville, North Carolina (asheville) — status=degraded, terminal=stable_without_retry, en_route_resolved=10/11, en_route_exhaustion_or_no_match=0
+- Leiper's Fork, Tennessee (leipers_fork) — status=degraded, terminal=stable_without_retry, en_route_resolved=6/8, en_route_exhaustion_or_no_match=0
+- Asheville, North Carolina (asheville) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=10/12, en_route_exhaustion_or_no_match=0
 
-## Removed for No Verified URL (53)
+## Removed for No Verified URL (57)
 - **Old Hickory, Tennessee** (13)
   - BODHI Asian Street Eats — dinner_recommendations (9 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
@@ -161,7 +160,7 @@
     - direct_batch_candidate_rejected: https://www.hendersonvillen.gov/parks
     - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Monthaven%20Arts%20%26%20Cultural%20Center%20Gallatin%2C%20Tennessee
     - en_route_url_collision_rejected: https://www.google.com/maps/search/?api=1&query=Monthaven%20Arts%20%26%20Cultural%20Center%20Gallatin%2C%20Tennessee
-- **Lebanon, Tennessee** (5)
+- **Lebanon, Tennessee** (7)
   - A1 Pizza & Pasta — dinner_recommendations (6 candidate(s) considered)
     - direct_batch_candidate_rejected: https://restaurantguru.com/Aubreys-Lebanon
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Chi-Town+Pizza+Lebanon+TN
@@ -169,6 +168,17 @@
     - direct_batch_candidate_rejected: https://restaurantguru.com/A1-PIZZA-and-PASTA-Lebanon
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=A1+Pizza+%26+Pasta+Lebanon+TN
     - url_collision_rejected: https://www.yelp.com/biz/chi-town-pizza-lebanon
+  - Angelo's Italian Restaurant — dinner_recommendations (5 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://restaurantguru.com/Demos-Restaurant-Lebanon
+    - direct_batch_candidate_rejected: https://restaurantguru.com/A1-PIZZA-and-PASTA-Lebanon
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55153-Lebanon_Tennessee.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Angelo%27s+Italian+Restaurant+Lebanon+TN
+    - url_collision_rejected: https://www.yelp.com/biz/painturos-lebanon
+  - Cedar City Brewing Company — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.restaurantji.com/tn/lebanon/cedar-city-brewing-company/
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Cedar+City+Brewing+Company+Lebanon+TN
+    - direct_batch_candidate_rejected: https://www.restaurantji.com/tn/lebanon/tenn-lakes-brewing-company/
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Tenn+Lakes+Brewing+Company+Lebanon+TN
   - Dak Der Asian Foods — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://restaurantguru.com/DAK-DER-ASIAN-FOODS-Lebanon
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dak+Der+Asian+Foods+Lebanon+TN
@@ -230,7 +240,10 @@
     - direct_batch_candidate_rejected: https://franklintn.com/blog/day-trips-from-franklin-tn
     - direct_batch_candidate_rejected: https://visitfranklin.com/blog/the-6-most-scenic-drives-to-take-around-franklin/
     - direct_batch_selected_authoritative: https://visitfranklin.com/blog/your-guide-to-the-natchez-trace-parkway-in-franklin-tn/
-- **Leiper's Fork, Tennessee** (7)
+- **Leiper's Fork, Tennessee** (9)
+  - Amerigo Italian Restaurant — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Amerigo+Italian+Restaurant+Franklin+TN
+    - url_collision_rejected: https://www.yelp.com/biz/italy-from-scratch-franklin
   - GratiDude Ranch — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=GratiDude+Ranch+Leiper%27s+Fork+TN
     - url_collision_rejected: https://www.southboundstays.com/visit-leipers-fork/what-to-do-in-leipers-fork/eat-drink-in-leipers-fork/
@@ -255,12 +268,13 @@
     - direct_batch_candidate_rejected: https://www.nps.gov/natr/index.htm
     - direct_batch_candidate_rejected: https://cheekwood.org/
     - direct_batch_candidate_rejected: https://tnstateparks.com/parks/radnor-lake
-  - Harpeth River Trail and Judge Fulton Greer Park — top_attractions (5 candidate(s) considered)
+  - Carter House — top_attractions (0 candidate(s) considered)
+  - Harpeth River Trail and Judge Fulton Greer Park — top_attractions (4 candidate(s) considered)
     - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/tennessee/harpeth-river-trail-and-judge-fulton-greer-park
     - search_resolved: https://www.alltrails.com/parks/us/tennessee/judge-fulton-green-park
     - authoritative_no_match_recovered_via_general_search: https://www.alltrails.com/parks/us/tennessee/judge-fulton-green-park
 - **Asheville, North Carolina** (1)
-  - Lake Powhatan via Bent Creek Trail — top_attractions (3 candidate(s) considered)
+  - Lake Powhatan via Bent Creek Trail — top_attractions (4 candidate(s) considered)
     - search_resolved: https://www.alltrails.com/poi/us/north-carolina/asheville/lake-powhatan-dam
     - authoritative_no_match_recovered_via_general_search: https://www.alltrails.com/poi/us/north-carolina/asheville/lake-powhatan-dam
     - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/north-carolina/wesley-branch-natural-garden-and-bent-creek-loop
