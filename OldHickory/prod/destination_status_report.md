@@ -1,27 +1,30 @@
 # Destination Status Summary
 
-- Run ID: 20260903T040152.005501Z
-- Generated at (UTC): 2026-09-03T04:04:42.611221+00:00
+- Run ID: 20260903T050423.392889Z
+- Generated at (UTC): 2026-09-03T05:07:34.763827+00:00
 - Destination count: 7
-- Retry recommended: 1
-- Retry attempted: 3
-- Resolved after retry: 2
-- Unresolved after retry: 1
+- Retry recommended: 4
+- Retry attempted: 4
+- Resolved after retry: 0
+- Unresolved after retry: 4
 - Not retried due to cap: 0
 
-## Needs Attention (1)
+## Needs Attention (4)
+- Old Hickory, Tennessee (oldhickory) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Lebanon, Tennessee (lebanon) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 - Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 
 ## All Destinations (7)
-- Old Hickory, Tennessee (oldhickory) — status=degraded, terminal=resolved_after_retry, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
+- Old Hickory, Tennessee (oldhickory) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
 - Nashville, Tennessee (nashville) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/8, en_route_exhaustion_or_no_match=0
-- Gallatin, Tennessee (gallatin) — status=degraded, terminal=resolved_after_retry, en_route_resolved=5/5, en_route_exhaustion_or_no_match=0
-- Lebanon, Tennessee (lebanon) — status=degraded, terminal=stable_without_retry, en_route_resolved=7/8, en_route_exhaustion_or_no_match=0
+- Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=5/5, en_route_exhaustion_or_no_match=0
+- Lebanon, Tennessee (lebanon) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=6/7, en_route_exhaustion_or_no_match=0
 - Franklin, Tennessee (franklin) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/6, en_route_exhaustion_or_no_match=0
-- Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/8, en_route_exhaustion_or_no_match=0
+- Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
 - Asheville, North Carolina (asheville) — status=degraded, terminal=stable_without_retry, en_route_resolved=10/11, en_route_exhaustion_or_no_match=0
 
-## Removed for No Verified URL (56)
+## Removed for No Verified URL (53)
 - **Old Hickory, Tennessee** (13)
   - BODHI Asian Street Eats — dinner_recommendations (9 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
@@ -158,7 +161,7 @@
     - direct_batch_candidate_rejected: https://www.hendersonvillen.gov/parks
     - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Monthaven%20Arts%20%26%20Cultural%20Center%20Gallatin%2C%20Tennessee
     - en_route_url_collision_rejected: https://www.google.com/maps/search/?api=1&query=Monthaven%20Arts%20%26%20Cultural%20Center%20Gallatin%2C%20Tennessee
-- **Lebanon, Tennessee** (7)
+- **Lebanon, Tennessee** (5)
   - A1 Pizza & Pasta — dinner_recommendations (6 candidate(s) considered)
     - direct_batch_candidate_rejected: https://restaurantguru.com/Aubreys-Lebanon
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Chi-Town+Pizza+Lebanon+TN
@@ -166,17 +169,6 @@
     - direct_batch_candidate_rejected: https://restaurantguru.com/A1-PIZZA-and-PASTA-Lebanon
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=A1+Pizza+%26+Pasta+Lebanon+TN
     - url_collision_rejected: https://www.yelp.com/biz/chi-town-pizza-lebanon
-  - Angelo's Italian Restaurant — dinner_recommendations (5 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://restaurantguru.com/Demos-Restaurant-Lebanon
-    - direct_batch_candidate_rejected: https://restaurantguru.com/A1-PIZZA-and-PASTA-Lebanon
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55153-Lebanon_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Angelo%27s+Italian+Restaurant+Lebanon+TN
-    - url_collision_rejected: https://www.yelp.com/biz/painturos-lebanon
-  - Cedar City Brewing Company — dinner_recommendations (4 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.restaurantji.com/tn/lebanon/cedar-city-brewing-company/
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Cedar+City+Brewing+Company+Lebanon+TN
-    - direct_batch_candidate_rejected: https://www.restaurantji.com/tn/lebanon/tenn-lakes-brewing-company/
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Tenn+Lakes+Brewing+Company+Lebanon+TN
   - Dak Der Asian Foods — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://restaurantguru.com/DAK-DER-ASIAN-FOODS-Lebanon
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dak+Der+Asian+Foods+Lebanon+TN
@@ -197,7 +189,7 @@
     - direct_batch_candidate_rejected: https://www.mtjuliet-tn.gov/240/Charlie-Daniels-Park
     - direct_batch_candidate_rejected: https://www.mtjuliet-tn.gov/
     - direct_batch_candidate_rejected: https://tnstateparks.com/parks/cedars-of-lebanon
-- **Franklin, Tennessee** (9)
+- **Franklin, Tennessee** (8)
   - 55 South — dinner_recommendations (4 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=January+at+Southall+2200+Osage+Loop+Franklin+TN
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55055-Franklin_Tennessee.html
@@ -228,7 +220,6 @@
     - direct_batch_candidate_rejected: https://www.opentable.com/neighborhood/tn/franklin-restaurants
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=North+Italia+Franklin+TN
     - url_collision_rejected: https://ratingsnearme.com/franklin-tn/best-restaurant
-  - The 615 Hideaway — dinner_recommendations (0 candidate(s) considered)
   - etch — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=etch+Franklin+230+Franklin+Rd+Franklin+TN
     - url_collision_rejected: https://www.theinfatuation.com/nashville/guides/best-restaurants-franklin-tennessee

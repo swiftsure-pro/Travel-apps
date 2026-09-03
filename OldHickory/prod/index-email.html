@@ -1,4 +1,4 @@
-<!-- generator_version=2.6.0; template_version=2.5.4; provider=openai; model=gpt-4o-mini; generated_at=2026-09-03T04:04:42.652110+00:00; development_build=v2.6.0+c532f2b+clean+20260903T040152.005501Z -->
+<!-- generator_version=2.6.0; template_version=2.5.5; provider=openai; model=gpt-4o-mini; generated_at=2026-09-03T05:07:34.868840+00:00; development_build=v2.6.0+966867e+clean+20260903T050423.392889Z -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,7 +111,7 @@
       .notion-header-btn:hover { background: rgba(255,255,255,0.2); }
 
       @keyframes spin { to { transform: rotate(360deg); } }
-      .drive-link:hover { color:#a0533a; }
+      .drive-link:hover { color: var(--link); }
 
       .weather-link {
         display: inline-flex;
@@ -120,7 +120,7 @@
         margin-top: 0.6rem;
         font-size: 0.8rem;
         font-weight: 600;
-        color: #92400E;
+        color: var(--link);
         text-decoration: none;
         border: 1px solid #FDE68A;
         background: #FEF3C7;
@@ -221,10 +221,10 @@
         color: var(--dark);
       }
       .group-base-pointer a {
-        color: var(--canyon); font-weight: 700; text-decoration: underline;
+        color: var(--link); font-weight: 700; text-decoration: underline;
         text-underline-offset: 2px;
       }
-      .group-base-pointer a:hover { color: var(--terracotta); }
+      .group-base-pointer a:hover { color: var(--link); }
       .intro-note-text { font-size: 0.95rem; line-height: 1.7; color: #5c4a35; margin: 0; }
 
       /* ── Trip-wide travel (html_assembler._build_trip_transportation) ──
@@ -284,8 +284,8 @@
         text-transform: uppercase; letter-spacing: 0.03em; font-size: 0.75rem;
       }
       .lodging-val { color: var(--dark); word-break: break-word; min-width: 0; }
-      .lodging-val a { color: var(--canyon); text-decoration: underline; text-underline-offset: 2px; }
-      .lodging-val a:hover { color: var(--terracotta); }
+      .lodging-val a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+      .lodging-val a:hover { color: var(--link); }
       /* Confirmation codes are transcribed by hand at a desk -- monospace so
          0/O and 1/I stay distinguishable. */
       .lodging-conf {
@@ -418,7 +418,7 @@
       /* ── Scenic drives ── */
       .drive-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.25rem; }
       .drive-link { cursor: pointer; color: var(--link); text-decoration: underline; }
-      .drive-link:hover { color: #a0533a; }
+      .drive-link:hover { color: var(--link); }
 
       /* ── Cultural events ── */
       .events-card { background: #faf7f2; border-top: 4px solid #e8dcc8; }
@@ -442,8 +442,8 @@
       .rest-name { font-weight: 700; font-size: 0.98rem; color: var(--canyon); }
       /* Anchors do not inherit .rest-name's colour -- the UA stylesheet
          wins -- so without this the restaurant links render default blue. */
-      .rest-name a { color: var(--canyon); text-decoration: underline; text-underline-offset: 2px; }
-      .rest-name a:hover { color: var(--terracotta); }
+      .rest-name a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+      .rest-name a:hover { color: var(--link); }
       .rest-icon { margin-right: 0.35rem; }
       .rest-link { color: var(--link); text-decoration: none; }
       .rest-link:hover { text-decoration: underline; }
@@ -462,7 +462,7 @@
 
       /* ── Planning links ── */
       .links-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
-      .links-list li a { display: inline-flex; align-items: center; gap: 5px; background: #fff; border: 1px solid #d4c4a8; color: var(--canyon); border-radius: 9999px; padding: 4px 14px; font-size: 0.82rem; font-weight: 600; text-decoration: none; transition: background 0.15s; }
+      .links-list li a { display: inline-flex; align-items: center; gap: 5px; background: #fff; border: 1px solid #d4c4a8; color: var(--link); border-radius: 9999px; padding: 4px 14px; font-size: 0.82rem; font-weight: 600; text-decoration: none; transition: background 0.15s; }
       .links-list li a:hover { background: var(--sandstone); }
       /* The page loads Tailwind, whose Preflight sets a{color:inherit;
          text-decoration:inherit}, and the template defines no base rule --
@@ -606,20 +606,20 @@
 
       <section id="section-oldhickory" class="dest-section">
 <div class="dest-header" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/d/d2/Cornerstone%2C_Old_Hickory_United_Methodist_Church.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled')">
-  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=36.2597&lon=-86.6481" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Cumberland%20River%20Old%20Hickory%2C%20Tennessee&amp;destination=Andrew%20Jackson%27s%20Hermitage%20Old%20Hickory%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Rocky%20Fork%20State%20Park|Cedar%20Creek%20Marina%20Old%20Hickory%2C%20Tennessee|Cages%20Bend%20Campground%20Old%20Hickory%2C%20Tennessee|Avondale%20Campground%20Old%20Hickory%2C%20Tennessee|Nat%20Caldwell%20Park%20Old%20Hickory%2C%20Tennessee|Lock%203%20Recreation%20Area%20Old%20Hickory%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=36.2597&lon=-86.6481" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=The%20Hermitage%20Hotel%20Old%20Hickory%2C%20Tennessee&amp;destination=Avondale%20Campground%20Old%20Hickory%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Old%20Hickory%20Park|Old%20Hickory%20Lake|Cumberland%20River%20Greenway%20Old%20Hickory%2C%20Tennessee|Old%20Hickory%20Beach|Cedar%20Creek%20Marina%20Old%20Hickory%2C%20Tennessee|Cages%20Bend%20Campground%20Old%20Hickory%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Old Hickory, Tennessee</h2>
   <p class="dates">December 6-13, 2026</p>
   <p class="img-credit">Jgamb</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Old Hickory, Tennessee</h3>
-  <p class="intro-note-text">Old Hickory in December is a mix of mild weather and holiday cheer. It&#x27;s a great time to explore local attractions with fewer crowds. Expect cooler evenings that may require a light jacket.</p>
-  <p class="intro-note-text"><strong>Local customs:</strong> Residents appreciate friendliness and often greet newcomers warmly. It&#x27;s common to share small talk with locals.</p>
-  <p class="intro-note-text"><strong>Best times of day:</strong> Late morning or early afternoon is ideal for visiting outdoor attractions before temperatures drop.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport options are limited; a car is recommended for getting around effectively.</p>
-  <p class="intro-note-text"><strong>Safety:</strong> Stay aware of your surroundings, especially in less populated areas. Keep personal items secure.</p>
-  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect lighter crowds at major attractions compared to summer months. Weekends may see more visitors.</p>
-  <p class="intro-note-text"><strong>Local etiquette:</strong> It&#x27;s polite to say &#x27;thank you&#x27; and &#x27;please&#x27; when interacting with service staff. Tipping 15-20% is customary.</p>
+  <p class="intro-note-text">Old Hickory is a small community with a rich history and outdoor recreational opportunities, especially around the lake. Winter is a great time to explore local attractions with fewer crowds and milder weather.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Tennessee locals are known for their hospitality. A friendly greeting is common when encountering residents.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are ideal for outdoor activities, while afternoons are best for visiting attractions like the Hermitage.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transportation options are limited, so having a car is essential for getting around the area.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Standard safety precautions apply. Be aware of wildlife in outdoor areas, especially near the lake.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect lighter crowds during the winter months compared to the summer tourist season.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> Respect local customs and be polite in interactions. Tipping 15-20% is customary in restaurants.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -639,7 +639,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical December temperatures are around 53°F daytime and 38°F overnight. Crowds are lighter than in the summer months, making it easier to explore local attractions. Be aware that some outdoor activities may be limited due to cooler weather.</p>
+  <p class="env-summary">Typical December temperatures are around 53°F daytime and 38°F overnight. Winter at Old Hickory brings a serene atmosphere, with the landscape often blanketed in frost. Crowds are lighter than summer, making it easier to explore local attractions. Some outdoor sites may have limited access due to weather conditions; check ahead for any closures.</p>
   <a href="https://forecast.weather.gov/MapClick.php?lat=36.2597&lon=-86.6481" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -651,24 +651,25 @@
   <div class="route-headline-row">
     <div class="route-headline">Nashville International Airport → Old Hickory, Tennessee</div>
     <div class="route-badges route-badges-inline">
-      <span class="badge badge-distance">13 mi</span>
-      <span class="badge badge-time">22 min</span>
+      <span class="badge badge-distance">25 mi</span>
+      <span class="badge badge-time">1 hr 10 min</span>
     </div>
   </div>
-  <p class="route-summary">The drive to Old Hickory from Nashville International Airport takes you through suburban areas with plenty of local scenery. Main roads include US-70 and local highways, leading you to your lodging in a residential part of town. Expect light traffic.</p>
+  <p class="route-summary">Drive from Nashville along I-40 E to reach Old Hickory. Enjoy scenic views of the Cumberland River as you approach the area. Look out for local farms and open fields along the route.</p>
 </div>
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.wsmv.com/video/2026/01/25/cumberland-river-old-hickory-tn/" class="attr-link" target="_blank" rel="noopener">Cumberland River</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJtyiXOnZBZIgRvwiAgLrm2fI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Cumberland River provides picturesque views and is ideal for kayaking or canoeing. The riverbanks are lined with parks, perfect for picnics or relaxing by the water. The sunset views are particularly attractive.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://thehermitage.com/" class="attr-link" target="_blank" rel="noopener">The Hermitage Hotel</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJhdOH0PdmZIgRVSci-4ShivQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This historic hotel is located in nearby Nashville and is known for its beautiful architecture and rich history. Visitors can tour the lobby and learn about its significance.</span><span class="practical-note">📌 Check for guided tour availability.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.recreation.gov/camping/campgrounds/233000" class="attr-link" target="_blank" rel="noopener">Old Hickory Park</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1–2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJAa7P5sBW-YcRI5Zz6J1_NsU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This park provides walking trails, picnic areas, and playgrounds for families. It is a great spot for a leisurely afternoon by the lake, with well-maintained paths and scenic views.</span><span class="practical-note">📌 Open daily; no entry fee.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.tripadvisor.com/Attraction_Review-g55061-d25802328-Reviews-Get_Up_And_Go_Kayaking_Old_Hickory_Lake-Gallatin_Sumner_County_Tennessee.html" class="attr-link" target="_blank" rel="noopener">Old Hickory Lake</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.9/5</span><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJS_ZVEuEmZIgRiCVXxhGdZog" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Old Hickory Lake offers picturesque views and opportunities for outdoor activities like fishing and picnicking. The lake spans 22,500 acres and features several parks along its shores, such as the popular Old Hickory Park.</span><span class="practical-note">📌 Parking is available at various access points around the lake.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.tripadvisor.com/Attraction_Review-g55248-d33675510-Reviews-Old_Hickory_Beach-Old_Hickory_Tennessee.html" class="attr-link" target="_blank" rel="noopener">Old Hickory Beach</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"> <a href="https://www.google.com/maps/place/?q=place_id:ChIJAQAABOJDZIgRzJ-FGqHl3zA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Lakeside swimming and recreation area on Old Hickory Lake.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.tripadvisor.com/Restaurant_Review-g55222-d3736468-Reviews-Fishtales_Grill_at_Cedar_Creek_Marina-Mount_Juliet_Tennessee.html" class="attr-link" target="_blank" rel="noopener">Cedar Creek Marina</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"> <a href="https://www.google.com/maps/place/?q=place_id:ChIJldzMGpc-ZIgROCNzaPx8PFk" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Boating access and marina facilities on the lake.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://stateparks.com/cages_bend_campground_in_tennessee.html" class="attr-link" target="_blank" rel="noopener">Cages Bend Campground</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"> <a href="https://www.google.com/maps/place/?q=place_id:ChIJg1oTjks5ZIgRrkL7XWFwz14" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Scenic lakeside camping with boat access.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://campflare.com/campground/avondale-518" class="attr-link" target="_blank" rel="noopener">Avondale Campground</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"> <a href="https://www.google.com/maps/place/?q=place_id:ChIJr_SsreE4ZIgR0_4uBytRqak" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Developed lakeside camping with full amenities.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.tripadvisor.com/Attraction_Review-g55061-d21079268-Reviews-Nat_Caldwell_Park-Gallatin_Sumner_County_Tennessee.html" class="attr-link" target="_blank" rel="noopener">Nat Caldwell Park</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"> <a href="https://www.google.com/maps/place/?q=place_id:ChIJrwkEDpw5ZIgRnklW1cd_l0E" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Public park with lake views and recreation facilities.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.recreation.gov/" class="attr-link" target="_blank" rel="noopener">Lock 3 Recreation Area</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJCTmGqAdBZIgRqAornAd4Zbg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Family-friendly beach and picnic spot on the lake.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://thehermitage.com/" class="attr-link" target="_blank" rel="noopener">Andrew Jackson&#x27;s Hermitage</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJf2rnpoJqZIgRQyx--6HBumM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Historic presidential mansion with preserved grounds and exhibits.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://visitjohnsoncitytn.com/place/lamar-alexander-rocky-fork-state-park/" class="attr-link" target="_blank" rel="noopener">Rocky Fork State Park</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-hike-moderate">Moderate</span><span class="badge badge-duration">2–3 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJp9erhrYrR4gRnpk1hKhakLs" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Rocky Fork State Park offers hiking trails through beautiful wooded areas. The park features a variety of trails with differing lengths and complexities, suitable for all skill levels. Enjoy the serene environment and natural beauty.</span></div>
-  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="Percy Priest Lake Drive">Percy Priest Lake Drive</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Day Trip</span><span class="badge badge-duration">30 miles round-trip</span></div></div><span class="attr-desc">This drive around Percy Priest Lake features views of the water and surrounding wildlife.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🎯</span><span class="attr-name"><a href="https://www.traillink.com/trail/old-hickory-dam-greenway/" class="attr-link" target="_blank" rel="noopener">Cumberland River Greenway</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-hike-easy">Easy</span><span class="badge badge-duration">2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJC2dSNslnZIgRQNB5SkWKInY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This greenway offers a paved trail for walking, biking, and jogging along the Cumberland River. It&#x27;s an easy route that provides access to scenic views of the water and wildlife.</span><span class="practical-note">📌 No permits needed; trail is open year-round.</span></div>
 </div>
 </div>
 <div class="card schedule-card">
@@ -689,56 +690,57 @@
   <div class="schedule-day">
     <div class="schedule-day-title">Day 2</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Cumberland River, then pivot to a different nearby area before midday crowds.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Old Hickory Lake, then pivot to a different nearby area before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Old Hickory Beach, keeping realistic transition time between stops.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Consider one or more of the following, within about 3h 30m: The Hermitage Hotel (1h), Old Hickory Park (1h 30m), Old Hickory Lake (1h). Leave buffer time between stops.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Old Hickory Grill, known for its fresh seafood and casual atmosphere. Try the crab cakes or the daily catch.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Old Hickory Grill, known for its steaks and seafood. The restaurant offers a cozy atmosphere perfect for unwinding after a day of exploration.</span></div>
     </div>
   </div>
   <div class="schedule-day">
     <div class="schedule-day-title">Day 3</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Rocky Fork State Park, then pivot to a different nearby area before midday crowds.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Cumberland River Greenway, then pivot to a different nearby area before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit Nashville, Tennessee for a guided tour of the estate and museum. Explore the gardens and learn about Jackson&#x27;s life.</span></div>
-    </div>
-    <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Pasta and Cream, known for its fresh seafood and casual atmosphere. Try the crab cakes or the daily catch.</span></div>
-    </div>
-  </div>
-  <div class="schedule-day">
-    <div class="schedule-day-title">Day 4</div>
-    <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Cumberland River, then pivot to a different nearby area before midday crowds.</span></div>
-    </div>
-    <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit Long Hunter State Park for a guided tour of the estate and museum. Explore the gardens and learn about Jackson&#x27;s life.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Old Hickory Beach, keeping realistic transition time between stops.</span></div>
     </div>
     <div class="schedule-period">
       <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Wrap the day with Cedar Creek Marina before dinner near your base.</span></div>
     </div>
   </div>
   <div class="schedule-day">
+    <div class="schedule-day-title">Day 4</div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Old Hickory Lake, then pivot to a different nearby area before midday crowds.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Cages Bend Campground, keeping realistic transition time between stops.</span></div>
+    </div>
+    <div class="schedule-period">
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at The Chop House, known for its steaks and seafood. The restaurant offers a cozy atmosphere perfect for unwinding after a day of exploration.</span></div>
+    </div>
+  </div>
+  <div class="schedule-day">
     <div class="schedule-day-title">Day 5</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Nashville, Tennessee, then pivot to a different nearby area before midday crowds.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Sanders Ferry Park and keep parking buffers before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit Gallatin, Tennessee for a guided tour of the estate and museum. Explore the gardens and learn about Jackson&#x27;s life.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit Cumberland River Greenway to explore the historic mansion and gardens. Allow time for the guided tour to fully appreciate its significance.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Wrap the day with Cages Bend Campground before dinner near your base.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy a relaxed, local evening; the drive to Asheville, North Carolina happens the next morning, not tonight. Plan dinner at The Olive Garden.</span></div>
     </div>
   </div>
 </div>
 </div>
 <div class="card events-card">
 <h3>🎭 Cultural Events</h3>
-<p>Old Hickory, Tennessee has a quiet cultural scene in December. The area does not have specific ticketed events during this time, but nearby Nashville offers a range of concerts and performances. Visitors can explore local parks and enjoy the holiday decorations in the community.</p>
+<p>Old Hickory, Tennessee, has a quiet cultural scene in December. The community often engages in local holiday festivities, but specific ticketed events during your travel dates are limited. Nearby Nashville offers more options for entertainment and events, including holiday shows and sports.</p>
+<p class="local-tip"><strong>Local tip:</strong> Check out the <a href="https://www.google.com/maps/search/?api=1&amp;query=Gaylord%20Opryland%20Old%20Hickory%2C%20Tennessee" class="tip-link" target="_blank" rel="noopener">Gaylord Opryland</a>&#x27;s A Country Christmas, featuring holiday-themed activities and dining options. It&#x27;s about 30 minutes away in Nashville.</p>
 </div>
 <div class="card restaurants-card">
 <h3>🍽️ Dinner Recommendations</h3>
@@ -846,15 +848,15 @@
 <div id="section-nashville" class="group-child-card" style="margin:0 1.5rem 1.25rem;border:2px solid var(--sage);border-radius:14px;overflow:hidden;background:#f2f6f1;">
   <div class="group-child-banner" style="padding:0.6rem 1.25rem;background:var(--sage);font-size:0.8rem;font-weight:700;letter-spacing:0.03em;color:#fff;text-transform:uppercase;text-align:center;">🧭 Day trip from <a href="#section-oldhickory" style="color:#fff;text-decoration:underline;text-underline-offset:2px;">Old Hickory, Tennessee</a></div>
 <div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1556033681-83abea291a96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8TmFzaHZpbGxlJTJDJTIwVGVubmVzc2VlfGVufDB8MHx8fDE3ODc4NzgwMjl8MA&ixlib=rb-4.1.0&q=80&w=1080')">
-  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=36.1623&lon=-86.7743" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Ryman%20Auditorium%20Nashville%2C%20Tennessee&amp;destination=Radnor%20Lake%3A%20Otter%20Creek%20Road%20to%20Ganier%20Ridge%20Trail%20Nashville%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Grand%20Ole%20Opry%20Nashville%2C%20Tennessee|Country%20Music%20Hall%20of%20Fame%20and%20Museum%20Nashville%2C%20Tennessee|Broadway%20Historic%20District%20Nashville%2C%20Tennessee|Parthenon%20Nashville%2C%20Tennessee|Couchville%20Lake%20Loop%20Trail%20Nashville%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=36.1623&lon=-86.7743" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Ryman%20Auditorium%20Nashville%2C%20Tennessee&amp;destination=Radnor%20Lake%3A%20Otter%20Creek%20Road%20to%20Ganier%20Ridge%20Trail%20Nashville%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Grand%20Ole%20Opry%20Nashville%2C%20Tennessee|Country%20Music%20Hall%20of%20Fame%20and%20Museum%20Nashville%2C%20Tennessee|Broadway%20Historic%20District%20Nashville%2C%20Tennessee|The%20Parthenon%20Nashville%2C%20Tennessee|Couchville%20Lake%20Loop%20Trail%20Nashville%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Nashville, Tennessee</h2>
   <p class="dates">December 8, 2026</p>
   <p class="img-credit">Tanner Boriack</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Nashville, Tennessee</h3>
-  <p class="intro-note-text">Nashville in December is festive, with holiday decorations and mild winter weather. Expect bustling streets and popular attractions, particularly during weekends. Plan ahead for any events or shows you wish to attend.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Rideshare services are widely used, and public transport options exist but may be limited. Parking can be challenging in busy areas.</p>
+  <p class="intro-note-text">Nashville in December is festive with holiday decorations and moderate temperatures. Enjoy local music, but be prepared for potential crowds at popular attractions.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Parking can be challenging in busy areas; consider ridesharing services.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -874,7 +876,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical December temperatures are around 53°F daytime and 38°F overnight. December in Nashville brings a festive atmosphere with holiday decorations throughout the city. Fewer crowds compared to the summer months make exploring more enjoyable. Note that some attractions may have altered hours for the holiday season.</p>
+  <p class="env-summary">Typical December temperatures are around 53°F daytime and 38°F overnight. December brings a festive atmosphere to Nashville with holiday lights illuminating the streets. Crowds are manageable compared to summer, but expect local events to draw visitors. Most attractions remain open, but plan for possible holiday hours.</p>
   <a href="https://forecast.weather.gov/MapClick.php?lat=36.1623&lon=-86.7743" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -891,7 +893,7 @@
       <span class="badge badge-time">22 min</span>
     </div>
   </div>
-  <p class="route-summary">Drive from Old Hickory to Nashville along US-70. This route features suburban landscapes and local shops, making it a pleasant journey into the city.</p>
+  <p class="route-summary">Drive from Old Hickory to Nashville along US-70. This route takes you through suburban landscapes and past local shops. Expect a mix of residential and commercial areas before reaching the city center.</p>
   <div class="can-miss-header">🧭 CAN'T-MISS ENROUTE</div>
   <div class="en-route-stops">
     <div class="stop-card"><span class="stop-icon">🏛️</span><div class="stop-body"><strong><a href="https://www.johnnycashmuseum.com/" class="attr-link" target="_blank" rel="noopener">Johnny Cash Museum</a> <span class="attr-external-link" title="link source">🔗</span></strong> <span class="stop-detour" title="Added distance and time for the round-trip detour off the main route">(0.3 mi round trip | 0 min)</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=36.3256059,-86.5652728" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a><div class="stop-desc">Dedicated exhibits on the Man in Black - .</div></div></div>
@@ -902,18 +904,28 @@
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.ryman.com/" class="attr-link" target="_blank" rel="noopener">Ryman Auditorium</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJletJO1lmZIgRq0UiSZV5AGM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Known as the &#x27;Mother Church of Country Music&#x27;, this historic venue hosts concerts and offers guided tours. The acoustics are exceptional, making it a favorite among artists.</span><span class="practical-note">📌 Check for tour availability and concert schedules prior to visiting.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.opry.com/" class="attr-link" target="_blank" rel="noopener">Grand Ole Opry</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJVSpg989pZIgRdex84bjnfic" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Grand Ole Opry is the home of American country music, featuring live performances and a rich history. Explore exhibits detailing its storied past and catch a show if time allows.</span><span class="practical-note">📌 Tickets recommended in advance, especially for popular shows.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://countrymusichalloffame.org/" class="attr-link" target="_blank" rel="noopener">Country Music Hall of Fame and Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">2–3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJS2U0MVxmZIgRZw7MYMgQuKU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This museum showcases the history of country music through exhibits and memorabilia. Highlights include the Taylor Swift Education Center and Elvis Presley&#x27;s gold records.</span><span class="practical-note">📌 Timed entry tickets recommended during peak hours.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🎯</span><span class="attr-name"><a href="https://en.wikipedia.org/wiki/Broadway_(Nashville,_Tennessee)" class="attr-link" target="_blank" rel="noopener">Broadway Historic District</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ2zB-Kl9mZIgRShZIF1Cxp0M" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A vibrant area filled with honky-tonks, live music venues, and shops. It&#x27;s an ideal spot to experience Nashville&#x27;s nightlife and grab a bite.</span><span class="practical-note">📌 Expect lively crowds, especially on weekends.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.nashvilleparthenon.com/" class="attr-link" target="_blank" rel="noopener">Parthenon</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5Y_y1kthZIgRpuE6xnvT9HA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A full-scale replica of the Athenian Parthenon, located in Centennial Park. Inside, you&#x27;ll find a statue of Athena and art exhibits.</span><span class="practical-note">📌 Open daily with an admission fee for the museum.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.ryman.com/" class="attr-link" target="_blank" rel="noopener">Ryman Auditorium</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">1-2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJletJO1lmZIgRq0UiSZV5AGM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Known as the &#x27;Mother Church of Country Music,&#x27; the Ryman Auditorium has hosted numerous legendary performances. The venue offers tours that highlight its history and architecture.</span><span class="practical-note">📌 Check for scheduled performances and book in advance.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.opry.com/" class="attr-link" target="_blank" rel="noopener">Grand Ole Opry</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJVSpg989pZIgRdex84bjnfic" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Grand Ole Opry is the longest-running radio broadcast in the US. It features a variety of performances from country music legends and up-and-coming artists. Guided tours are available, providing insight into its rich history.</span><span class="practical-note">📌 Reservations recommended for tours and shows.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://countrymusichalloffame.org/" class="attr-link" target="_blank" rel="noopener">Country Music Hall of Fame and Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">2-3 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJS2U0MVxmZIgRZw7MYMgQuKU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Explore exhibits dedicated to the history and evolution of country music. The museum houses a large collection of memorabilia, including artifacts from famous artists.</span><span class="practical-note">📌 Timed entry tickets are recommended.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://en.wikipedia.org/wiki/Broadway_(Nashville,_Tennessee)" class="attr-link" target="_blank" rel="noopener">Broadway Historic District</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-duration">1-2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ2zB-Kl9mZIgRShZIF1Cxp0M" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This vibrant area is lined with honky-tonks and live music venues. It&#x27;s the heart of Nashville&#x27;s nightlife, perfect for experiencing local music and cuisine.</span><span class="practical-note">📌 Expect crowds, especially in the evening.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.nashvilleparthenon.com/" class="attr-link" target="_blank" rel="noopener">The Parthenon</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5Y_y1kthZIgRpuE6xnvT9HA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A full-scale replica of the original Parthenon in Athens, Greece. It serves as a museum and features a large statue of Athena.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/tennessee/couchville-lake-loop-trail" class="attr-link" target="_blank" rel="noopener">Couchville Lake Loop Trail</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span></div></div><span class="attr-desc">2.2 mi, flat paved loop around scenic lake with birding.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/tennessee/radnor-lake-ganier-ridge-trail" class="attr-link" target="_blank" rel="noopener">Radnor Lake: Otter Creek Road to Ganier Ridge Trail</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=36.05811,-86.79243" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">2.6 mi, forested ridge with lake views and moderate elevation.</span></div>
 </div>
 </div>
 <div class="card events-card">
-<h3>🎭 Cultural Events</h3>
-<p>Nashville in December is alive with holiday spirit and music. The city hosts numerous concerts and performances, particularly in its renowned venues like the Ryman Auditorium. Expect a blend of holiday markets and live music throughout the month.</p>
+<h3>🎭 Cultural Events &amp; Entertainment</h3>
+<p class="events-intro">Nashville's cultural scene in December is vibrant with holiday festivities and live music. The city hosts numerous concerts, holiday markets, and seasonal performances throughout the month.</p>
+<div class="events-list">
+  <div class="event-item">
+    <div class="events-subcard">
+      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Ryman%20Auditorium%20Nashville%2C%20Tennessee" class="event-link" target="_blank" rel="noopener">Little Big Town Christmas Shows</a></strong><br/>
+      <span class="events-date-range">December 8-10, 2026</span><br/>
+      📍 Ryman Auditorium<br/>
+      💵 Varies<br/>
+    </div>
+  </div>
+</div>
 </div>
 <div class="card restaurants-card">
 <h3>🍽️ Dinner Recommendations</h3>
@@ -980,15 +992,15 @@
 <div id="section-gallatin" class="group-child-card" style="margin:0 1.5rem 1.25rem;border:2px solid var(--sage);border-radius:14px;overflow:hidden;background:#f2f6f1;">
   <div class="group-child-banner" style="padding:0.6rem 1.25rem;background:var(--sage);font-size:0.8rem;font-weight:700;letter-spacing:0.03em;color:#fff;text-transform:uppercase;text-align:center;">🧭 Day trip from <a href="#section-oldhickory" style="color:#fff;text-decoration:underline;text-underline-offset:2px;">Old Hickory, Tennessee</a></div>
 <div class="dest-header" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Aerial_view_of_Gallatin%2C_Tennessee%2C_October_2020.JPG/960px-Aerial_view_of_Gallatin%2C_Tennessee%2C_October_2020.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail')">
-  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=36.3883&lon=-86.4476" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Bledsoe%20Creek%20State%20Park&amp;destination=High%20Ridge%20Trail%20and%20Shoreline%20Trail%20Loop%20Gallatin%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Trousdale%20Place%20Gallatin%2C%20Tennessee|Historic%20Downtown%20Gallatin|Sumner%20County%20Museum%20Gallatin%2C%20Tennessee|Old%20Hickory%20Lake%20Gallatin%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=36.3883&lon=-86.4476" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Bledsoe%20Creek%20State%20Park&amp;destination=Shoreline%2C%20High%20Ridge%2C%20Owl%20Ridge%20Loop&amp;travelmode=driving&amp;api=1&amp;waypoints=Trousdale%20Place%20Gallatin%2C%20Tennessee|Historic%20Downtown%20Gallatin|Sumner%20County%20Museum%20Gallatin%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Gallatin, Tennessee</h2>
   <p class="dates">December 9, 2026</p>
   <p class="img-credit">Pi.1415926535</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Gallatin, Tennessee</h3>
-  <p class="intro-note-text">Gallatin in December offers a mix of mild winter weather and a range of local attractions. Expect moderate crowds and cooler temperatures ideal for outdoor exploration. Local shops and restaurants provide a cozy atmosphere.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport is limited; a car is recommended for getting around.</p>
+  <p class="intro-note-text">Gallatin in December offers mild temperatures, making it a pleasant winter destination. Expect fewer crowds and opportunities to enjoy local attractions at a leisurely pace. Be prepared for the possibility of frost in the mornings.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transport options are limited; a personal vehicle is recommended for getting around.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -1004,7 +1016,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical December temperatures are around 52°F daytime and 38°F overnight. Winter colors blend with the brisk air of December. Popular attractions will have moderate crowds compared to the summer season. Some trails in Bledsoe Creek State Park may have muddy sections after rain, so appropriate footwear is recommended.</p>
+  <p class="env-summary">Typical December temperatures are around 52°F daytime and 38°F overnight. Expect crisp winter air with the possibility of light frost in the mornings. Fewer visitors than in the summer months provide a quieter experience. Bledsoe Creek State Park is open, but check for any seasonal trail closures before heading out.</p>
   <a href="https://forecast.weather.gov/MapClick.php?lat=36.3883&lon=-86.4476" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -1021,7 +1033,7 @@
       <span class="badge badge-time">32 min</span>
     </div>
   </div>
-  <p class="route-summary">Drive from Old Hickory along TN-109 N, offering scenic views of rural Tennessee. The route includes stretches of farmland and occasional wooded areas, making for a pleasant drive.</p>
+  <p class="route-summary">Traveling from Old Hickory, take TN-109 N for a straight drive through scenic countryside. Enjoy views of the rolling hills and farmland along the way. Parking is available at each destination within Gallatin.</p>
   <div class="can-miss-header">🧭 CAN'T-MISS ENROUTE</div>
   <div class="en-route-stops">
     <div class="stop-card"><span class="stop-icon">💧</span><div class="stop-body"><strong><a href="https://www.google.com/maps/search/?api=1&amp;query=36.3000799,-86.6539054" class="attr-link" target="_blank" rel="noopener">Rockland Recreation Area</a> <span class="attr-external-link" title="link source">🗺️</span></strong> <span class="stop-detour" title="Added distance and time for the round-trip detour off the main route">(7.0 mi round trip | 14 min)</span><div class="stop-desc">Old Hickory Lake access with shelters and views</div></div></div>
@@ -1032,18 +1044,16 @@
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🗻</span><span class="attr-name"><a href="https://www.trousdaleplace.com/" class="attr-link" target="_blank" rel="noopener">Trousdale Place</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJBUrsYXcwZIgRZrvyBvVVZjA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A historic home dating back to the 1800s, Trousdale Place showcases local history through its architecture and artifacts. Guided tours are available, providing insight into the region&#x27;s past.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://downtowngallatin.org" class="attr-link" target="_blank" rel="noopener">Historic Downtown Gallatin</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ8Q-GzXAwZIgRqQJKaqb6p-4" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Explore shops, local art galleries, and historic architecture in the heart of Gallatin. The area is walkable, allowing for leisurely exploration of local history and culture.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.sumnercountymuseum.org/" class="attr-link" target="_blank" rel="noopener">Sumner County Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJBUrsYXcwZIgRy_K6b2zVjpE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Learn about the history of Sumner County through exhibits featuring artifacts, photographs, and documents. The museum is a great stop for history enthusiasts.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://corpslakes.erdc.dren.mil/Visitors/projects.cfm?Id=H313280" class="attr-link" target="_blank" rel="noopener">Old Hickory Lake</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJS_ZVEuEmZIgRiCVXxhGdZog" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The lake provides opportunities for birdwatching and scenic views. A short walk along the shoreline offers peaceful vistas, especially in the winter light.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://tnstateparks.com/parks/bledsoe-creek" class="attr-link" target="_blank" rel="noopener">Bledsoe Creek State Park</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-hike-easy">Easy</span><span class="badge badge-duration">2–3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ_4d8HPUlZIgRI_0G0jhMS7A" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Bledsoe Creek State Park features scenic trails and a tranquil lake, perfect for winter hikes. The park offers 5 miles of trails with minimal elevation gain, ideal for all skill levels. Trails can be muddy, so waterproof shoes are recommended.</span><span class="practical-note">📌 No permits required for entrance.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/tennessee/shoreline-high-ridge-owl-ridge-loop" class="attr-link" target="_blank" rel="noopener">High Ridge Trail and Shoreline Trail Loop</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span></div></div><span class="attr-desc">Moderate ridge and lakeshore loop in Bledsoe Creek State Park.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🗻</span><span class="attr-name"><a href="https://www.trousdaleplace.com/" class="attr-link" target="_blank" rel="noopener">Trousdale Place</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">30 min</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJBUrsYXcwZIgRZrvyBvVVZjA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Trousdale Place is a historic home that offers insight into the area&#x27;s rich history. The structure dates back to the early 1800s and features tours that highlight its architectural significance. It&#x27;s a brief visit worth making.</span><span class="practical-note">📌 Tours typically run on weekends; check for availability.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://downtowngallatin.org" class="attr-link" target="_blank" rel="noopener">Historic Downtown Gallatin</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ8Q-GzXAwZIgRqQJKaqb6p-4" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Explore the historic district with its well-preserved buildings, shops, and local eateries. Notable sites include the Sumner County Museum and various antique stores. Walking around the downtown area is easy and encourages exploration.</span><span class="practical-note">📌 Parking is available on the street and in nearby lots.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.sumnercountymuseum.org/" class="attr-link" target="_blank" rel="noopener">Sumner County Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJBUrsYXcwZIgRy_K6b2zVjpE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The museum showcases the history and culture of Sumner County through exhibits and collections. It&#x27;s an educational stop for those interested in local heritage.</span><span class="practical-note">📌 Check the hours of operation, as they vary seasonally.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🎯</span><span class="attr-name"><a href="https://tnstateparks.com/parks/bledsoe-creek" class="attr-link" target="_blank" rel="noopener">Bledsoe Creek State Park</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-hike-easy">Easy</span><span class="badge badge-duration">2–3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ_4d8HPUlZIgRI_0G0jhMS7A" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Bledsoe Creek State Park features a variety of hiking trails along the shoreline of Old Hickory Lake. Trails range from 1 to 3 miles, offering scenic views of the water and opportunities for birdwatching. The park is open for day use, but check for any trail conditions before your visit.</span><span class="practical-note">📌 No permits required for hiking.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/tennessee/shoreline-high-ridge-owl-ridge-loop" class="attr-link" target="_blank" rel="noopener">Shoreline, High Ridge, Owl Ridge Loop</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span></div></div><span class="attr-desc">Scenic shoreline and ridge combination near Gallatin.</span></div>
 </div>
 </div>
 <div class="card events-card">
 <h3>🎭 Cultural Events</h3>
-<p>Gallatin has a small-town charm with a focus on community events, especially during the holiday season. Expect local markets and festive gatherings that highlight the town's spirit.</p>
-<p class="local-tip"><strong>Local tip:</strong> Check out the <a href="https://do615.com/events/2026/12/5/merry-little-christmas-market-tickets" class="tip-link" target="_blank" rel="noopener">Merry Little Christmas Market</a> for holiday shopping and local entertainment.</p>
+<p>Gallatin has a festive atmosphere in December, highlighted by holiday markets and concerts. The downtown area features local shops and eateries that contribute to the community spirit during the holiday season.</p>
 </div>
 <div class="card restaurants-card">
 <h3>🍽️ Dinner Recommendations</h3>
@@ -1092,17 +1102,17 @@
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="http://www.caferakka.com/testimonials" class="rest-link" target="_blank" rel="noopener">Café Rakka</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://demosrestaurants.com/location/?srsltid=AfmBOopOxZpevKIKbUWWvtcaCnV4tRgQCxLaIBrapeLlhjGWF7tsIHx_" class="rest-link" target="_blank" rel="noopener">Demos&#x27; Restaurant</a> <span class="attr-external-link" title="link source">🔗</span></span>
       <div class="rest-badges">
         
-        <span class="badge cuisine-badge">Mediterranean</span>
+        <span class="badge cuisine-badge">Steakhouse</span>
         
-        <span class="badge badge-price">$$</span>
+        <span class="badge badge-price">$$$</span>
         
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJx1iEZsxGZIgRNK39x_xZgpQ" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJp6itiSpHZIgR_XwT9KwzSX4" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
       </div>
     </div>
-    <span class="rest-desc">Café Rakka serves Mediterranean dishes with a focus on fresh ingredients. It&#x27;s a cozy spot for a relaxed meal, with vegetarian options available.</span>
+    <span class="rest-desc">Demos&#x27; is known for its prime steaks and fresh seafood. The upscale setting is perfect for a special evening out. Reservations are recommended.</span>
   </div>
 </div>
 </div>
@@ -1110,15 +1120,15 @@
 <div id="section-lebanon" class="group-child-card" style="margin:0 1.5rem 1.25rem;border:2px solid var(--sage);border-radius:14px;overflow:hidden;background:#f2f6f1;">
   <div class="group-child-banner" style="padding:0.6rem 1.25rem;background:var(--sage);font-size:0.8rem;font-weight:700;letter-spacing:0.03em;color:#fff;text-transform:uppercase;text-align:center;">🧭 Day trip from <a href="#section-oldhickory" style="color:#fff;text-decoration:underline;text-underline-offset:2px;">Old Hickory, Tennessee</a></div>
 <div class="dest-header" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Former_Lebanon_High_School%2C_Lebanon%2C_Tennessee_6-3-2012.JPG/960px-Former_Lebanon_High_School%2C_Lebanon%2C_Tennessee_6-3-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail')">
-  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=36.2080&lon=-86.2911" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Cedars%20of%20Lebanon%20State%20Park&amp;destination=Limestone%20Sinks%20Trail%20Lebanon%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Historic%20Lebanon%20Public%20Square|Fiddlers%20Grove%20Historic%20Village%20Lebanon%2C%20Tennessee|Wilson%20County%20Museum%20Lebanon%2C%20Tennessee|Cedar%20Glades%20Trail%20Lebanon%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=36.2080&lon=-86.2911" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Cedars%20of%20Lebanon%20State%20Park&amp;destination=Limestone%20Sinks%20Trail%20Lebanon%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Historic%20Lebanon%20Public%20Square|Fiddlers%20Grove%20Historic%20Village%20Lebanon%2C%20Tennessee|Lebanon%20Golf%20%26%20Country%20Club|Don%20Fox%20Community%20Park%20Lebanon%2C%20Tennessee|Cedar%20Glades%20Trail%20Lebanon%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Lebanon, Tennessee</h2>
   <p class="dates">December 10, 2026</p>
   <p class="img-credit">Ichabod</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Lebanon, Tennessee</h3>
-  <p class="intro-note-text">Lebanon is a cozy town with a rich history, perfect for a winter visit. December offers mild temperatures, but it can get chilly, so dress in layers. Attractions may have reduced hours, so check ahead before visiting.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transportation options are limited; a car is recommended for getting around. Parking is generally available in town.</p>
+  <p class="intro-note-text">Lebanon, Tennessee in December offers cooler weather ideal for outdoor activities. Expect a relaxed atmosphere with fewer tourists than in summer. Dress warmly for outings, especially in the evenings.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transportation options are limited; driving is recommended to explore the area effectively.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -1138,14 +1148,14 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical December temperatures are around 54°F daytime and 39°F overnight. December brings a chilly atmosphere to Lebanon with the potential for early frost. The park facilities may operate on reduced hours, so check ahead. Crowds remain manageable post-Thanksgiving, making it an ideal time to explore.</p>
+  <p class="env-summary">Typical December temperatures are around 54°F daytime and 39°F overnight. Cool winter days with a chance of light snowfall. Crowds are lower than in the summer months, making for a more peaceful experience. Be prepared for potential icy patches on trails and roads.</p>
   <a href="https://forecast.weather.gov/MapClick.php?lat=36.2080&lon=-86.2911" class="weather-link">Current Weather</a>
 </div>
 </div>
 <div class="card getting-here-card getting-here-subcard">
   <div class="getting-here-header">
     <h3>🚗 Getting Here</h3>
-    <a href="https://www.google.com/maps/dir/?destination=Lebanon%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=Rock%20Castle%20Historic%20Site|Andrew%20Jackson%E2%80%99s%20Hermitage|Nashville%20Shores%20Lakeside%20Resort|Long%20Hunter%20State%20Park|Charlie%20Daniels%20Park&waypoint_place_ids=ChIJz7V2Er5AZIgRtm7kKt5Y8CA|ChIJf2rnpoJqZIgRQyx--6HBumM|ChIJL1neLxdrZIgRlJPyp_4oPhc|ChIJK2yy5KUTZIgRL7GSU_ik2Z0|ChIJHxxVWRo-ZIgRnF-EAlwaSns" target="_blank" rel="noopener" class="gmaps-link">Open in Google Maps →</a>
+    <a href="https://www.google.com/maps/dir/?destination=Lebanon%2C%20Tennessee&travelmode=driving&api=1&origin=607%20Parnell%20Road%2C%20Old%20Hickory%2C%20TN%2037138&waypoints=Rock%20Castle%20Historic%20Site|Andrew%20Jackson%E2%80%99s%20Hermitage|Long%20Hunter%20State%20Park|Charlie%20Daniels%20Park&waypoint_place_ids=ChIJz7V2Er5AZIgRtm7kKt5Y8CA|ChIJf2rnpoJqZIgRQyx--6HBumM|ChIJK2yy5KUTZIgRL7GSU_ik2Z0|ChIJHxxVWRo-ZIgRnF-EAlwaSns" target="_blank" rel="noopener" class="gmaps-link">Open in Google Maps →</a>
   </div>
   <div class="route-headline-row">
     <div class="route-headline">Old Hickory, Tennessee → Lebanon, Tennessee</div>
@@ -1155,12 +1165,11 @@
       <span class="badge badge-time">33 min</span>
     </div>
   </div>
-  <p class="route-summary">Take I-40 East from Old Hickory to Lebanon. You'll pass through scenic countryside dotted with farms and small towns. Look for signs to the Cedars of Lebanon State Park as you approach.</p>
+  <p class="route-summary">Drive east on I-40 from Old Hickory. You will pass through rural Tennessee landscapes and small towns before reaching Lebanon. Parking is available at local attractions.</p>
   <div class="can-miss-header">🧭 CAN'T-MISS ENROUTE</div>
   <div class="en-route-stops">
     <div class="stop-card"><span class="stop-icon">🏛️</span><div class="stop-body"><strong><a href="https://www.rockcastle.org/" class="attr-link" target="_blank" rel="noopener">Rock Castle Historic Site</a> <span class="attr-external-link" title="link source">🔗</span></strong> <span class="stop-detour" title="Added distance and time for the round-trip detour off the main route">(8.0 mi round trip | 15 min)</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=36.2792871,-86.5964169" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a><div class="stop-desc">early 19th-century stone mansion</div></div></div>
     <div class="stop-card"><span class="stop-icon">🏛️</span><div class="stop-body"><strong><a href="https://thehermitage.com/" class="attr-link" target="_blank" rel="noopener">Andrew Jackson’s Hermitage</a> <span class="attr-external-link" title="link source">🔗</span></strong> <span class="stop-detour" title="Added distance and time for the round-trip detour off the main route">(7.5 mi round trip | 9 min)</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=36.2102139,-86.600933" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a><div class="stop-desc">historic presidential mansion and grounds</div></div></div>
-    <div class="stop-card"><span class="stop-icon">💧</span><div class="stop-body"><strong><a href="https://www.google.com/maps/search/?api=1&amp;query=36.1588036,-86.6060873" class="attr-link" target="_blank" rel="noopener">Nashville Shores Lakeside Resort</a> <span class="attr-external-link" title="link source">🗺️</span></strong> <span class="stop-detour" title="Added distance and time for the round-trip detour off the main route">(16.7 mi round trip | 29 min)</span><div class="stop-desc">A lakeside resort with various recreational activities and dining options. A good spot for a meal or break before continuing to Lebanon.</div></div></div>
     <div class="stop-card"><span class="stop-icon">🥾</span><div class="stop-body"><strong><a href="https://tnstateparks.com/parks/long-hunter" class="attr-link" target="_blank" rel="noopener">Long Hunter State Park</a> <span class="attr-external-link" title="link source">🔗</span></strong> <span class="stop-detour" title="Added distance and time for the round-trip detour off the main route">(24.8 mi round trip | 31 min)</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=36.1039057,-86.5414535" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a><div class="stop-desc">lakeside hiking and scenic trails</div></div></div>
     <div class="stop-card"><span class="stop-icon">🏛️</span><div class="stop-body"><strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Charlie%20Daniels%20Park%20Lebanon%2C%20Tennessee" class="attr-link" target="_blank" rel="noopener">Charlie Daniels Park</a> <span class="attr-external-link" title="link source">🗺️</span></strong> <span class="stop-detour" title="Added distance and time for the round-trip detour off the main route">(5.0 mi round trip | 10 min)</span><div class="stop-desc">community park with history exhibits</div></div></div>
   </div>
@@ -1168,40 +1177,31 @@
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://tnstateparks.com/parks/cedars-of-lebanon/" class="attr-link" target="_blank" rel="noopener">Cedars of Lebanon State Park</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">2–3 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJU5SD31YcZIgRLxws9aRCMGA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The park features beautiful cedar glades and numerous trails. Enjoy a leisurely hike through the scenic landscape with options for picnicking. Parking is available near the main entrance.</span><span class="practical-note">📌 Check for any trail closures due to weather conditions.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.historiclebanon.com" class="attr-link" target="_blank" rel="noopener">Historic Lebanon Public Square</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJFQR_eoUhZIgReJ7mEZvSekw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This vibrant square is filled with shops, restaurants, and historic buildings. It serves as a cultural hub for local events and features a lovely courthouse at its center.</span><span class="practical-note">📌 Parking is available on the street and in nearby lots.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://fiddlersgrovetn.com/" class="attr-link" target="_blank" rel="noopener">Fiddlers Grove Historic Village</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1–2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJCaTjlPIfZIgRzoaLrgTMix4" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Explore the village showcasing Lebanon&#x27;s history with restored buildings from the 19th century. Various exhibits provide insight into local heritage.</span><span class="practical-note">📌 Check the schedule for any seasonal events or closures.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.hldrivingtour.info/lebanon-commercial-historic-district" class="attr-link" target="_blank" rel="noopener">Wilson County Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1 hour</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJl5YvN_QhZIgRe-0acHZ_3sA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The museum offers exhibits on local history and culture. It&#x27;s a great place to learn about the area&#x27;s past.</span><span class="practical-note">📌 Admission is free, but donations are appreciated.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.historiclebanon.com" class="attr-link" target="_blank" rel="noopener">Historic Lebanon Public Square</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJFQR_eoUhZIgReJ7mEZvSekw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The square features shops, local eateries, and historic buildings. The area is perfect for a leisurely stroll and offers a glimpse into Lebanon&#x27;s history.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://fiddlersgrovetn.com/" class="attr-link" target="_blank" rel="noopener">Fiddlers Grove Historic Village</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJCaTjlPIfZIgRzoaLrgTMix4" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A collection of historic buildings and artifacts showcasing the region&#x27;s history. Visitors can explore various structures from the 19th century.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.tripadvisor.com/Attraction_Review-g55153-d7380848-Reviews-Don_Fox_Community_Park-Lebanon_Tennessee.html" class="attr-link" target="_blank" rel="noopener">Don Fox Community Park</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJV0iBkc8hZIgRrZq4xVR4EJg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A local park with playgrounds, sports fields, and walking trails. A great spot for families to relax and enjoy the outdoors.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://tnstateparks.com/parks/cedars-of-lebanon/" class="attr-link" target="_blank" rel="noopener">Cedars of Lebanon State Park</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-hike-easy">Easy</span><span class="badge badge-duration">2–3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJU5SD31YcZIgRLxws9aRCMGA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This park features dense cedar forests and offers a variety of hiking trails. The 9-mile loop trail is ideal for viewing the unique landscape and wildlife. Keep an eye out for winter conditions that may affect trail accessibility.</span><span class="practical-note">📌 Check trail conditions before visiting as some trails may be icy.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/tennessee/cedar-glades-trail" class="attr-link" target="_blank" rel="noopener">Cedar Glades Trail</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span></div></div><span class="attr-desc">Flat limestone glades with unique cedar ecosystem and sinkholes.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/tennessee/limestone-sinks-trail" class="attr-link" target="_blank" rel="noopener">Limestone Sinks Trail</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span></div></div><span class="attr-desc">Short loop featuring sinkholes, limestone formations, and easy terrain.</span></div>
-  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="Cedar Forest Road">Cedar Forest Road</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Scenic Drive</span><span class="badge badge-duration">10-mile loop</span></div></div><span class="attr-desc">Cedar Forest Road meanders through dense cedar groves and offers tranquil views of the landscape.</span></div>
 </div>
 </div>
 <div class="card events-card">
 <h3>🎭 Cultural Events &amp; Entertainment</h3>
-<p class="events-intro">Lebanon has a lively holiday atmosphere in December, with various community events celebrating the season. Expect local vendors, festive decorations, and family-friendly activities throughout the town.</p>
+<p class="events-intro">Lebanon has a strong holiday spirit in December, with various community events and celebrations. Expect festive decorations and local gatherings throughout the town.</p>
 <div class="events-list">
   <div class="event-item">
     <div class="events-subcard">
       <strong><a href="https://allevents.in/lebanon/32nd-annual-christmas-train-show/200030347843955" class="event-link" target="_blank" rel="noopener">32nd Annual Christmas Train Show</a></strong><br/>
-      <span class="events-date-range">December 12, 2026, 9 AM - 3 PM</span><br/>
+      <span class="events-date-range">December 12, 2026, 9:00 AM to 3:00 PM</span><br/>
       📍 Wilson County Fair Grounds<br/>
-      💵 Free<br/>
+      💵 Varies<br/>
     </div>
   </div>
   <div class="event-item">
     <div class="events-subcard">
       <strong><a href="https://lebanonwilsonchamber.com/event/christmas-on-the-square-2026/" class="event-link" target="_blank" rel="noopener">Lebanon&#x27;s Christmas on the Square</a></strong><br/>
-      <span class="events-date-range">December 12, 2026, 10 AM - 4 PM</span><br/>
-      📍 149 Public Square<br/>
-      💵 Free<br/>
-    </div>
-  </div>
-  <div class="event-item">
-    <div class="events-subcard">
-      <strong><a href="https://lebanonwilsonchamber.com/events/category/chamber-events/page/5/?tribe-bar-date=2025-12-26&amp;ical=1" class="event-link" target="_blank" rel="noopener">Lebanon&#x27;s Christmas Parade 2026</a></strong><br/>
-      <span class="events-date-range">December 6, 2026, at 2 PM</span><br/>
-      📍 Downtown Lebanon<br/>
+      <span class="events-date-range">December 12, 2026, 10:00 AM to 4:00 PM</span><br/>
+      📍 Public Square<br/>
       💵 Free<br/>
     </div>
   </div>
@@ -1272,15 +1272,15 @@
 <div id="section-franklin" class="group-child-card" style="margin:0 1.5rem 1.25rem;border:2px solid var(--sage);border-radius:14px;overflow:hidden;background:#f2f6f1;">
   <div class="group-child-banner" style="padding:0.6rem 1.25rem;background:var(--sage);font-size:0.8rem;font-weight:700;letter-spacing:0.03em;color:#fff;text-transform:uppercase;text-align:center;">🧭 Day trip from <a href="#section-oldhickory" style="color:#fff;text-decoration:underline;text-underline-offset:2px;">Old Hickory, Tennessee</a></div>
 <div class="dest-header" style="background-image:url('https://images.unsplash.com/photo-1672268623852-35b0d1ed6850?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8RnJhbmtsaW4lMkMlMjBUZW5uZXNzZWV8ZW58MHwwfHx8MTc4Nzg4OTYzMHww&ixlib=rb-4.1.0&q=80&w=1080')">
-  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=35.9252&lon=-86.8689" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Historic%20Downtown%20Franklin&amp;destination=Winstead%20Hill%20Park%20Loop%20Franklin%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Franklin%20Theatre|Carnton%20Franklin%2C%20Tennessee|The%20Factory%20at%20Franklin" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=35.9252&lon=-86.8689" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Historic%20Downtown%20Franklin&amp;destination=Winstead%20Hill%20Park%20Loop%20Franklin%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Franklin%20Theatre|Carnton%20Franklin%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Franklin, Tennessee</h2>
   <p class="dates">December 11, 2026</p>
   <p class="img-credit">Josh Withers</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Franklin, Tennessee</h3>
-  <p class="intro-note-text">Franklin is a historic town with a rich Civil War history, making it an interesting stop in December. Expect festive decorations throughout the town as you explore its attractions and dining options.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transportation options are limited, so a personal vehicle is recommended for getting around Franklin.</p>
+  <p class="intro-note-text">Franklin in December offers a cozy atmosphere with festive events and fewer crowds. This is an ideal time to explore historical sites and enjoy local dining. Dress warmly for chilly evenings.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Parking in downtown Franklin can be limited during busy times, so plan accordingly. Consider using street parking or lots.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -1300,7 +1300,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical December temperatures are around 53°F daytime and 38°F overnight. December brings a serene winter atmosphere to Franklin. The town is often decorated for the holidays, with festive lights illuminating the historic buildings. Crowds are moderate compared to peak summer months, making it a pleasant time to explore. Most attractions are open, but check individual hours for holiday events.</p>
+  <p class="env-summary">Typical December temperatures are around 53°F daytime and 38°F overnight. Franklin transforms in December with festive decorations and a cozy atmosphere. This is a quieter time of year, with fewer crowds than the peak summer months. Be prepared for chilly evenings and occasional rain.</p>
   <a href="https://forecast.weather.gov/MapClick.php?lat=35.9252&lon=-86.8689" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -1317,7 +1317,7 @@
       <span class="badge badge-time">43 min</span>
     </div>
   </div>
-  <p class="route-summary">Drive from Old Hickory along I-65 S, enjoying the scenic landscapes of Middle Tennessee. The route features rolling hills and farmlands, setting a picturesque backdrop as you approach Franklin.</p>
+  <p class="route-summary">Drive southeast from Old Hickory on US-70. You'll pass through scenic rural Tennessee, with rolling hills and open fields along the way.</p>
   <div class="can-miss-header">🧭 CAN'T-MISS ENROUTE</div>
   <div class="en-route-stops">
     <div class="stop-card"><span class="stop-icon">🏛️</span><div class="stop-body"><strong><a href="https://visitfranklin.com/blog/your-guide-to-the-natchez-trace-parkway-in-franklin-tn/" class="attr-link" target="_blank" rel="noopener">Natchez Trace Parkway Bridge</a> <span class="attr-external-link" title="link source">🔗</span></strong> <span class="stop-detour" title="Added distance and time for the round-trip detour off the main route">(23.2 mi round trip | 29 min)</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=36.0367424,-86.9764887" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a><div class="stop-desc">double-arch bridge over Birdsong Hollow</div></div></div>
@@ -1327,31 +1327,30 @@
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://downtownfranklintn.com/" class="attr-link" target="_blank" rel="noopener">Historic Downtown Franklin</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">2-3 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJlwcL4_9_ZIgRsnghwlfkoVc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Historic Downtown Franklin features a collection of preserved 19th-century buildings. Walk along Main Street to admire the architecture and visit local shops. The area is rich in Civil War history, with plaques and markers detailing significant events.</span><span class="practical-note">📌 Parking is available in designated lots and along the street; weekends can be busier.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🎯</span><span class="attr-name"><a href="https://www.franklintheatre.com/" class="attr-link" target="_blank" rel="noopener">Franklin Theatre</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">2-3 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJgWNJjVF-ZIgRrL2njmaaUp8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Franklin Theatre is a restored historic venue that hosts live performances and movies. Enjoy the charm of this intimate setting while catching a show or film.</span><span class="practical-note">📌 Advance ticket purchase is recommended for popular events.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://boft.org/carnton" class="attr-link" target="_blank" rel="noopener">Carnton</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1-2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5_wYhad_ZIgRzdGFx8y5FVw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Carnton is a historic plantation that played a significant role in the Battle of Franklin. The museum offers guided tours of the home and gardens, revealing stories of the Civil War and local history.</span><span class="practical-note">📌 Timed entry tickets are recommended, especially on weekends.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.factoryatfranklin.com/" class="attr-link" target="_blank" rel="noopener">The Factory at Franklin</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1-2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJqS-E9_Z-ZIgRoYOK20eJNEM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A historic cotton gin turned shopping and dining complex. Explore unique shops, art galleries, and eateries in a vibrant atmosphere.</span><span class="practical-note">📌 No entry fee; parking is available on-site.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://downtownfranklintn.com/" class="attr-link" target="_blank" rel="noopener">Historic Downtown Franklin</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJlwcL4_9_ZIgRsnghwlfkoVc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Historic Downtown Franklin features well-preserved 19th-century architecture and shops. Stroll along Main Street to discover boutiques, galleries, and local eateries. The area is pedestrian-friendly, making for an enjoyable exploration.</span><span class="practical-note">📌 Best visited during daylight hours for a vibrant atmosphere.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🎯</span><span class="attr-name"><a href="https://www.franklintheatre.com/" class="attr-link" target="_blank" rel="noopener">Franklin Theatre</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">2–3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJgWNJjVF-ZIgRrL2njmaaUp8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The Franklin Theatre is a historic venue offering a mix of live performances and classic films. The theatre’s restored ambiance creates a unique experience for visitors and locals alike.</span><span class="practical-note">📌 Check the schedule for showtimes and book tickets in advance.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://boft.org/carnton" class="attr-link" target="_blank" rel="noopener">Carnton</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ5_wYhad_ZIgRzdGFx8y5FVw" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Traveler-specified seed attraction; details will be refined by linked references.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/tennessee/winstead-hill-park-trail" class="attr-link" target="_blank" rel="noopener">Winstead Hill Park Loop</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span></div></div><span class="attr-desc">Short hilltop loop with battlefield views nearby.</span></div>
 </div>
 </div>
 <div class="card events-card">
 <h3>🎭 Cultural Events &amp; Entertainment</h3>
-<p class="events-intro">Franklin has a rich cultural scene during December, highlighted by holiday festivities. Expect a lively atmosphere with local shops and restaurants participating in the celebrations. The community embraces the holiday spirit with various events and decorations throughout the town.</p>
+<p class="events-intro">Franklin has a rich cultural scene, especially during December with various holiday events. The town features local shops, galleries, and a historic downtown area that often hosts community gatherings and celebrations.</p>
 <div class="events-list">
   <div class="event-item">
     <div class="events-subcard">
-      <strong><a href="https://www.eventeny.com/events/dickens-of-a-christmas-2026-26433/" class="event-link" target="_blank" rel="noopener">Dickens of a Christmas</a></strong><br/>
+      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Main%20Street%2C%20Franklin%2C%20TN%20Franklin%2C%20Tennessee" class="event-link" target="_blank" rel="noopener">Dickens of a Christmas</a></strong><br/>
       <span class="events-date-range">December 12–13, 2026</span><br/>
-      📍 Main Street, Franklin<br/>
+      📍 Main Street, Franklin, TN<br/>
       💵 Free<br/>
     </div>
   </div>
   <div class="event-item">
     <div class="events-subcard">
       <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Franklin%2C%20TN%20Franklin%2C%20Tennessee" class="event-link" target="_blank" rel="noopener">Flashlight Candy Cane Hunt</a></strong><br/>
-      <span class="events-date-range">December 8-10, 2026</span><br/>
+      <span class="events-date-range">December 10-11, 2026</span><br/>
       📍 Franklin, TN<br/>
-      💵 Varies<br/>
+      💵 Free<br/>
     </div>
   </div>
 </div>
@@ -1403,17 +1402,17 @@
   </div>
   <div class="rest-item">
     <div class="rest-header rest-header-inline">
-      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://ar.tripadvisor.com/Restaurant_Review-g55055-d4727215-Reviews-or30-GRAYS_On_Main-Franklin_Tennessee.html" class="rest-link" target="_blank" rel="noopener">Gray&#x27;s on Main</a> <span class="attr-external-link" title="link source">🔗</span></span>
+      <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.puckettsrestaurant.com/franklin" class="rest-link" target="_blank" rel="noopener">Puckett&#x27;s Restaurant</a> <span class="attr-external-link" title="link source">🔗</span></span>
       <div class="rest-badges">
         
-        <span class="badge cuisine-badge">Contemporary American</span>
-        <span class="badge badge-rating">★ 4.5/5</span>
+        <span class="badge cuisine-badge">BBQ</span>
+        <span class="badge badge-rating">★ 4.4/5</span>
         <span class="badge badge-price">$$</span>
         
-         <a href="https://www.google.com/maps/place/?q=place_id:ChIJI32yClF-ZIgRu27uKU8wudk" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
+         <a href="https://www.google.com/maps/place/?q=place_id:ChIJWV7VgFF-ZIgRCyTSmce-qpc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a>
       </div>
     </div>
-    <span class="rest-desc">Eclectic Southern cuisine in a beautifully restored Victorian building.</span>
+    <span class="rest-desc">Slow-smoked BBQ, live music, and hearty Southern plates.</span>
   </div>
 </div>
 </div>
@@ -1421,15 +1420,15 @@
 <div id="section-leipers_fork" class="group-child-card" style="margin:0 1.5rem 1.25rem;border:2px solid var(--sage);border-radius:14px;overflow:hidden;background:#f2f6f1;">
   <div class="group-child-banner" style="padding:0.6rem 1.25rem;background:var(--sage);font-size:0.8rem;font-weight:700;letter-spacing:0.03em;color:#fff;text-transform:uppercase;text-align:center;">🧭 Day trip from <a href="#section-oldhickory" style="color:#fff;text-decoration:underline;text-underline-offset:2px;">Old Hickory, Tennessee</a></div>
 <div class="dest-header" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/c/cb/Cunningham_Bridge_near_Leiper%27s_Fork_Tennessee_photographed_circa_1938.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled')">
-  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=35.8981&lon=-86.9991" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Leiper%27s%20Fork%20Village&amp;destination=Harpeth%20River%20Trail%20and%20Judge%20Fulton%20Greer%20Park%20Leiper%27s%20Fork%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Puckett%27s%20Grocery%20%26%20Restaurant%20Leiper%27s%20Fork%2C%20Tennessee|Leiper%27s%20Fork%20Distillery|Timberland%20Park%20Perimeter%20Trail%20Leiper%27s%20Fork%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=35.8981&lon=-86.9991" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Leiper%27s%20Fork%20Village&amp;destination=Harpeth%20River%20Trail%20and%20Judge%20Fulton%20Greer%20Park%20Leiper%27s%20Fork%2C%20Tennessee&amp;travelmode=driving&amp;api=1&amp;waypoints=Puckett%27s%20Grocery%20%26%20Restaurant%20Leiper%27s%20Fork%2C%20Tennessee|The%20Factory%20at%20Franklin%20Leiper%27s%20Fork%2C%20Tennessee|Harpeth%20River%20State%20Park|Timberland%20Park%20Perimeter%20Trail%20Leiper%27s%20Fork%2C%20Tennessee" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Leiper's Fork, Tennessee</h2>
   <p class="dates">December 11, 2026</p>
   <p class="img-credit">USGov</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Leiper&#x27;s Fork, Tennessee</h3>
-  <p class="intro-note-text">Leiper&#x27;s Fork in December is a quiet escape with mild weather. Visitors can enjoy local food, music, and scenic drives without the summer crowds.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Parking can be limited in the village during peak hours; consider arriving early.</p>
+  <p class="intro-note-text">Leiper&#x27;s Fork offers a relaxed rural experience in December, ideal for exploring local shops and dining. Expect moderate weather and minimal crowds during your visit.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Parking is available in the village, but spaces can fill up quickly during peak dining hours. Consider arriving early.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -1449,7 +1448,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical December temperatures are around 53°F daytime and 39°F overnight. The area sees fewer visitors compared to the fall and summer months, allowing for a more relaxed experience. Be mindful of potential chilly winds when exploring outdoors.</p>
+  <p class="env-summary">Typical December temperatures are around 53°F daytime and 39°F overnight. Leiper's Fork in December features a tranquil rural landscape, with bare trees and fields preparing for winter. Crowds are minimal compared to peak season, making it a peaceful time to explore. Be aware that some outdoor attractions may have limited hours due to the season.</p>
   <a href="https://forecast.weather.gov/MapClick.php?lat=35.8981&lon=-86.9991" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -1466,7 +1465,7 @@
       <span class="badge badge-time">52 min</span>
     </div>
   </div>
-  <p class="route-summary">Drive south from Old Hickory on US-431, enjoying the rolling hills of Tennessee. You'll pass through scenic countryside before reaching Leiper's Fork, where the village atmosphere welcomes you.</p>
+  <p class="route-summary">Drive south from Old Hickory along I-65 S, then take exit 188 toward Leiper's Fork. Enjoy the scenic rural landscape as you approach this village.</p>
   <div class="can-miss-header">🧭 CAN'T-MISS ENROUTE</div>
   <div class="en-route-stops">
     <div class="stop-card"><span class="stop-icon">🥾</span><div class="stop-body"><strong><a href="https://tnstateparks.com/parks/radnor-lake" class="attr-link" target="_blank" rel="noopener">Radnor Lake State Natural Area</a> <span class="attr-external-link" title="link source">🔗</span></strong> <span class="stop-detour" title="Added distance and time for the round-trip detour off the main route">(9.0 mi round trip | 14 min)</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=36.0553946,-86.7957879" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a><div class="stop-desc">Scenic lake and wildlife refuge with trails</div></div></div>
@@ -1480,20 +1479,21 @@
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://en.wikipedia.org/wiki/Leiper%27s_Fork,_Tennessee" class="attr-link" target="_blank" rel="noopener">Leiper&#x27;s Fork Village</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1-2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJf8x7IhSCZIgRAFvMYJKxAu8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Leiper&#x27;s Fork Village features quaint shops, art galleries, and a lively music scene. Explore the local boutiques and enjoy live music at one of the venues. It&#x27;s a great place to connect with local culture.</span><span class="practical-note">📌 Parking is available along the main street, but it can fill up quickly on weekends.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.puckettsrestaurant.com" class="attr-link" target="_blank" rel="noopener">Puckett&#x27;s Grocery &amp; Restaurant</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1-2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJzRtblBaCZIgRGS2pR7Our5c" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Puckett&#x27;s offers Southern comfort food in a relaxed setting. Try their famous pulled pork or meatloaf, and enjoy live music in the evenings. The restaurant is a local favorite.</span><span class="practical-note">📌 Reservations are recommended during peak hours.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🎯</span><span class="attr-name"><a href="https://www.leipersforkdistillery.com/" class="attr-link" target="_blank" rel="noopener">Leiper&#x27;s Fork Distillery</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1-2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJm7ihF_OBZIgR0OBPluZVYD8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Take a tour of this local distillery to see the whiskey-making process. Tastings are available for those of age.</span><span class="practical-note">📌 Reservations for tours are recommended.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://en.wikipedia.org/wiki/Leiper%27s_Fork,_Tennessee" class="attr-link" target="_blank" rel="noopener">Leiper&#x27;s Fork Village</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.7/5</span><span class="badge badge-duration">1-2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJf8x7IhSCZIgRAFvMYJKxAu8" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This quaint village features unique shops, art galleries, and local crafts. Stroll through to enjoy the architecture and local culture. Visiting in winter means fewer crowds, allowing for a more relaxed experience.</span><span class="practical-note">📌 Parking is available along the main street.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.puckettsrestaurant.com" class="attr-link" target="_blank" rel="noopener">Puckett&#x27;s Grocery &amp; Restaurant</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1-2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJWV7VgFF-ZIgRCyTSmce-qpc" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A local favorite for Southern comfort food, including BBQ and burgers. The rustic setting adds to the dining experience.</span><span class="practical-note">📌 Popular for lunch and dinner; expect a wait during peak hours.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://visitfranklin.com/" class="attr-link" target="_blank" rel="noopener">The Factory at Franklin</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1-2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJqS-E9_Z-ZIgRoYOK20eJNEM" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A unique shopping and entertainment venue in a refurbished factory. Features local shops, restaurants, and events.</span><span class="practical-note">📌 Check local event schedules for special happenings.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.vrbo.com/vacation-rentals/united-states-of-america/tennessee/cheatham-county/kingston-springs/harpeth-river-state-park" class="attr-link" target="_blank" rel="noopener">Harpeth River State Park</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJrUXLQNyTZIgRsUmwH2baX-Q" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Offers scenic views of the Harpeth River and opportunities for hiking and picnicking. The park is a peaceful escape in winter.</span><span class="practical-note">📌 Entry is free; check for trail conditions.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/tennessee/timberland-park-perimeter-trail" class="attr-link" target="_blank" rel="noopener">Timberland Park Perimeter Trail</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span></div></div><span class="attr-desc">Wooded perimeter with park views near Franklin/Leiper&#x27;s Fork area.</span></div>
 </div>
 </div>
 <div class="card events-card">
 <h3>🎭 Cultural Events &amp; Entertainment</h3>
-<p class="events-intro">Leiper's Fork has a lively cultural scene with local artisans and seasonal events. Visitors can enjoy the charm of small-town festivities and explore local shops featuring handmade goods.</p>
+<p class="events-intro">Leiper's Fork has a vibrant community culture with various annual events and festivals. Visitors can explore local galleries and enjoy the charm of this small town near Nashville.</p>
 <div class="events-list">
   <div class="event-item">
     <div class="events-subcard">
-      <strong><a href="https://www.govserv.org/US/Franklin/546227228855683/Leiper%27s-Fork-Christmas-Parade" class="event-link" target="_blank" rel="noopener">Leiper&#x27;s Fork Christmas Parade</a></strong><br/>
-      <span class="events-date-range">December 9, 2026, 2:00 PM</span><br/>
+      <strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Leiper%27s%20Fork%20Leiper%27s%20Fork%2C%20Tennessee" class="event-link" target="_blank" rel="noopener">Leiper&#x27;s Fork Christmas Parade</a></strong><br/>
+      <span class="events-date-range">December 12, 2026, 2:00pm</span><br/>
       📍 Leiper's Fork<br/>
       💵 Free<br/>
     </div>
@@ -1565,20 +1565,20 @@
 </section>
 <section id="section-asheville" class="dest-section">
 <div class="dest-header" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/1/1e/1993_Storm_of_the_Century_Asheville%2C_North_Carolina_snowfall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled')">
-  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=35.5954&lon=-82.5508" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Biltmore%20Estate%20Asheville%2C%20North%20Carolina&amp;destination=Basilica%20of%20Saint%20Lawrence%20Asheville%2C%20North%20Carolina&amp;travelmode=driving&amp;api=1&amp;waypoints=River%20Arts%20District%20Asheville%2C%20North%20Carolina|North%20Carolina%20Arboretum|Downtown%20Asheville|Blue%20Ridge%20Parkway%20-%20Craggy%20Gardens%20Asheville%2C%20North%20Carolina|Asheville%20Art%20Museum|Asheville%20Pinball%20Museum" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
+  <div class="dest-header-actions"><a href="https://forecast.weather.gov/MapClick.php?lat=35.5954&lon=-82.5508" class="notion-header-btn" target="_blank" rel="noopener">Current Weather</a><a href="https://www.google.com/maps/dir/?origin=Blue%20Ridge%20Parkway%20Asheville%2C%20North%20Carolina&amp;destination=Basilica%20of%20Saint%20Lawrence%20Asheville%2C%20North%20Carolina&amp;travelmode=driving&amp;api=1&amp;waypoints=Biltmore%20Estate%20Asheville%2C%20North%20Carolina|River%20Arts%20District%20Asheville%2C%20North%20Carolina|North%20Carolina%20Arboretum|Downtown%20Asheville|Asheville%20Art%20Museum|Asheville%20Pinball%20Museum" class="notion-header-btn" target="_blank" rel="noopener">Attractions Map</a><span class="notion-header-btn" style="cursor:default;opacity:0.65;" title="Planning links are omitted from this shared build. See the private version for reservation/planning details.">Trip Plans</span></div>
   <h2>Asheville, North Carolina</h2>
   <p class="dates">December 13-16, 2026</p>
   <p class="img-credit">National Oceanic and Atmospheric Administration</p>
 </div>
 <div class="card intro-note-card">
   <h3>What to Know About Asheville, North Carolina</h3>
-  <p class="intro-note-text">Asheville offers a vibrant mix of arts, culture, and holiday festivities in December. Expect cooler temperatures and potential for holiday crowds at popular attractions. Plan ahead for reservations, especially at dining venues during peak hours.</p>
-  <p class="intro-note-text"><strong>Local customs:</strong> Locals appreciate a relaxed pace; don’t rush through meals or experiences. Tipping at restaurants is customary.</p>
-  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are ideal for exploring outdoor attractions before crowds arrive. Late afternoons are great for enjoying holiday lights and events.</p>
-  <p class="intro-note-text"><strong>Transportation quirks:</strong> Street parking can be limited in downtown areas; consider using public transport or rideshares. Be mindful of winter weather conditions when driving.</p>
-  <p class="intro-note-text"><strong>Safety:</strong> Stay aware of your surroundings, especially in crowded areas. Watch for icy sidewalks and roads during winter months.</p>
-  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect larger crowds at attractions like the Biltmore Estate due to holiday events. Weekends may be busier than weekdays.</p>
-  <p class="intro-note-text"><strong>Local etiquette:</strong> Be respectful of local artists and their work in galleries. Engaging with locals in a friendly manner is appreciated.</p>
+  <p class="intro-note-text">Asheville in December features a festive atmosphere with holiday events and decorations. Expect cooler temperatures and moderate crowds as visitors come for seasonal activities.</p>
+  <p class="intro-note-text"><strong>Local customs:</strong> Locals appreciate the arts and food scene; tipping 15-20% is customary in restaurants.</p>
+  <p class="intro-note-text"><strong>Best times of day:</strong> Mornings are ideal for visiting popular attractions to avoid larger crowds. Evening events and dining create a lively atmosphere.</p>
+  <p class="intro-note-text"><strong>Transportation quirks:</strong> Public transportation is available, but many visitors prefer to drive due to the spread-out attractions. Parking can be limited in busy areas.</p>
+  <p class="intro-note-text"><strong>Safety:</strong> Be mindful of icy sidewalks and roads during winter. Dress warmly and watch for weather updates.</p>
+  <p class="intro-note-text"><strong>Crowd patterns:</strong> Expect weekend crowds, especially around the Biltmore Estate and downtown area. Weekdays are generally quieter.</p>
+  <p class="intro-note-text"><strong>Local etiquette:</strong> Be respectful in art galleries and studios; it’s appreciated to ask before touching artworks. Keep noise levels low in residential areas.</p>
 </div>
 <div class="photo-gallery">
   <div class="image-tile photo-item">
@@ -1594,7 +1594,7 @@
 <div class="card env-card">
 <div class="env-subcard">
 <h3>🧥 What to Expect</h3>
-  <p class="env-summary">Typical December temperatures are around 51°F daytime and 34°F overnight. Winter in Asheville transforms the landscape with a crisp chill and occasional dustings of snow. Crowds are moderate compared to summer, but holiday visitors increase during this period. Parking is available at most attractions, but be prepared for holiday events that may cause congestion.</p>
+  <p class="env-summary">Typical December temperatures are around 51°F daytime and 34°F overnight. December in Asheville brings a festive atmosphere with holiday lights illuminating the downtown streets. Crowds are moderate as visitors come to enjoy holiday events, but it's less busy than summer. Some attractions may have special holiday hours, so check in advance.</p>
   <a href="https://forecast.weather.gov/MapClick.php?lat=35.5954&lon=-82.5508" class="weather-link">Current Weather</a>
 </div>
 </div>
@@ -1610,7 +1610,7 @@
       <span class="badge badge-time">5 hr 4 min</span>
     </div>
   </div>
-  <p class="route-summary">Drive from Old Hickory, Tennessee to Asheville takes you through scenic countryside. Follow I-40 E for a direct route, offering views of rolling hills and the possibility of stopping at local farms or roadside attractions along the way.</p>
+  <p class="route-summary">Drive from Old Hickory on I-40 East, passing through scenic forested areas and small towns. Enjoy the changing landscapes as you approach the Blue Ridge Mountains.</p>
   <div class="can-miss-header">🧭 CAN'T-MISS ENROUTE</div>
   <div class="en-route-stops">
     <div class="stop-card"><span class="stop-icon">🥾</span><div class="stop-body"><strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Burgess%20Falls%20State%20Park" class="attr-link" target="_blank" rel="noopener">Burgess Falls State Park</a> <span class="attr-external-link" title="link source">🗺️</span></strong> <span class="stop-detour" title="Added distance and time for the round-trip detour off the main route">(8.0 mi round trip | 15 min)</span><div class="stop-desc">multiple cascading waterfalls and trails</div></div></div>
@@ -1628,11 +1628,11 @@
 <div class="card attractions-card">
 <h3>🏔️ Top Attractions</h3>
 <div class="attraction-list">
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.biltmore.com/" class="attr-link" target="_blank" rel="noopener">Biltmore Estate</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">2–4 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJs183vc_yWYgRddbMMm8FVZI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This historic mansion features 250 rooms and extensive gardens. The estate is the largest privately owned home in the U.S. with a rich history and architectural grandeur. Plan to explore the gardens, especially the winter-themed displays during your visit.</span><span class="practical-note">📌 Reservations are recommended for guided tours due to high holiday demand.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.riverartsdistrict.com/" class="attr-link" target="_blank" rel="noopener">River Arts District</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ045tczXzWYgRXHmCdMGmziY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Explore galleries and studios in this vibrant area. Many local artists showcase their work, offering a unique opportunity to purchase original art.</span><span class="practical-note">📌 Check for open studio events during your visit for a more interactive experience.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://ncarboretum.org/" class="attr-link" target="_blank" rel="noopener">North Carolina Arboretum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1–2 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJOwpm7o-SWYgRa5_CUqHDhUU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">This 434-acre site showcases beautiful gardens and trails. In December, the gardens are often lit with holiday displays, making for a festive experience.</span><span class="practical-note">📌 Entry fee is applicable; check for special events during your visit.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.aboutasheville.com/" class="attr-link" target="_blank" rel="noopener">Downtown Asheville</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">2–3 hrs</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJn83oqVfzWYgRHZcckV2BfrE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">The heart of Asheville features an eclectic mix of shops, eateries, and street performers. Architecture enthusiasts will appreciate the Art Deco and Beaux-Arts buildings.</span><span class="practical-note">📌 Parking can be limited, so consider using public transport or ride-sharing services.</span></div>
-  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://CAESfAHrOzAVQmkPaAaDNvY-jRG-IJk5aqyv-Ms6ZOnrQeEwgqUsABDEZvb1nig8-WUaPTKwwjhW4N8oWloB68fqimO2dXsBSI5qQNC_bb7ronTyi-p-fTtDwKh3gZYAmTmirK4eZm2iTMnBFBE9Mb5itcRA3B_JGMyjyWGTV_I" class="attr-link" target="_blank" rel="noopener">Blue Ridge Parkway - Craggy Gardens</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">1 hr</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJGeRbxMgCWogRbUcBHFWZk0I" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">A scenic overlook with beautiful views of the surrounding mountains. In winter, the landscape can be captivating with potential snow cover.</span><span class="practical-note">📌 Check for road conditions, as sections of the Parkway may close due to snow.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">📍</span><span class="attr-name"><a href="https://www.romanticasheville.com/BlueRidgeParkway.htm" class="attr-link" target="_blank" rel="noopener">Blue Ridge Parkway</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-duration">2–3 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:EiNCbHVlIFJpZGdlIFBrd3ksIEFzaGV2aWxsZSwgTkMsIFVTQSIuKiwKFAoSCRWmusG4m02IEc3Sqhz23lqOEhQKEgkJbw88qYxZiBFdOjQGwTHvlA" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Drive along the scenic Blue Ridge Parkway, known for its views of the surrounding mountains. Several overlooks provide spots to stop and take photos.</span><span class="practical-note">📌 Check road conditions as some sections may be closed due to winter weather.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.biltmore.com/" class="attr-link" target="_blank" rel="noopener">Biltmore Estate</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.8/5</span><span class="badge badge-duration">3–4 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJs183vc_yWYgRddbMMm8FVZI" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Biltmore Estate is the largest privately-owned home in the U.S., set on an expansive 8,000-acre estate. Explore its grand architecture, gardens, and winter decorations. Timed-entry tickets are required for access.</span><span class="practical-note">📌 Reservations are recommended due to high holiday demand.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.riverartsdistrict.com/" class="attr-link" target="_blank" rel="noopener">River Arts District</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.6/5</span><span class="badge badge-duration">1–2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJ045tczXzWYgRXHmCdMGmziY" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Explore the vibrant arts scene in Asheville&#x27;s River Arts District, home to local artists&#x27; studios and galleries. Visit during the day for the best chance to meet artists in person.</span><span class="practical-note">📌 Parking can be limited; consider public transportation.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://ncarboretum.org/" class="attr-link" target="_blank" rel="noopener">North Carolina Arboretum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">1–2 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJOwpm7o-SWYgRa5_CUqHDhUU" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Visit the North Carolina Arboretum to see gardens and seasonal displays. The winter landscapes offer a peaceful retreat.</span><span class="practical-note">📌 Check for any special holiday events or hours.</span></div>
+  <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.aboutasheville.com/" class="attr-link" target="_blank" rel="noopener">Downtown Asheville</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-seed">Your Pick</span><span class="badge badge-rating">★ 4.5/5</span><span class="badge badge-duration">2–3 hours</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJn83oqVfzWYgRHZcckV2BfrE" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Wander through the eclectic shops, restaurants, and historic architecture of Downtown Asheville. The area is beautifully decorated for the holidays.</span><span class="practical-note">📌 Plan for potential crowds, especially on weekends.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.ashevilleart.org/" class="attr-link" target="_blank" rel="noopener">Asheville Art Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJs6F9fFfzWYgRBglywolT2_Q" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Contemporary and regional American art in historic downtown building.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://www.ashevillepinball.com/" class="attr-link" target="_blank" rel="noopener">Asheville Pinball Museum</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.7/5</span> <a href="https://www.google.com/maps/place/?q=place_id:ChIJf_WS21XzWYgRzNK3TkVqrc0" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Interactive museum featuring classic pinball machines and games.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🏛️</span><span class="attr-name"><a href="https://saintlawrencebasilica.org/the-architect" class="attr-link" target="_blank" rel="noopener">Basilica of Saint Lawrence</a><span class="attr-external-link" title="link source">🔗</span></span><div class="attr-badges attr-badges-inline"> <a href="https://www.google.com/maps/place/?q=place_id:ChIJD85VCFbzWYgROwRZIM5Gcbg" class="badge badge-map" target="_blank" rel="noopener" title="Open in Google Maps" aria-label="Open in Google Maps">🗺️</a></div></div><span class="attr-desc">Magnificent historic Catholic basilica with remarkable Guastavino architecture.</span></div>
@@ -1643,7 +1643,7 @@
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/north-carolina/gardens-and-conservatory-at-biltmore-estate" class="attr-link" target="_blank" rel="noopener">Gardens and Conservatory at Biltmore Estate</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.6/5</span></div></div><span class="attr-desc">Stroll through formal gardens and conservatory displays.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/north-carolina/wesley-branch-natural-garden-and-bent-creek-loop" class="attr-link" target="_blank" rel="noopener">Wesley Branch Natural Garden and Bent Creek Loop</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span></div></div><span class="attr-desc">Gentle forest and garden loop near Arboretum.</span></div>
   <div class="attr-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🥾</span><span class="attr-name"><a href="https://www.alltrails.com/trail/us/north-carolina/arbor-trace-trail-biltmore" class="attr-link" target="_blank" rel="noopener">Arbor Trace Trail Biltmore</a><span class="attr-external-link" title="link source">🥾</span></span><div class="attr-badges attr-badges-inline"><span class="badge badge-rating">★ 4.5/5</span></div></div><span class="attr-desc">Shaded wooded trail on Biltmore Estate property.</span></div>
-  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="Mount Mitchell Scenic Drive">Mount Mitchell Scenic Drive</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Day Trip</span><span class="badge badge-duration">32 miles one-way</span></div></div><span class="attr-desc">This drive leads to the highest peak east of the Mississippi River, offering panoramic views from the summit.</span></div>
+  <div class="attr-item attr-drive-item"><div class="attr-header attr-header-inline"><span class="attr-icon">🚗</span><span class="attr-name"><a href="#" class="attr-link drive-link" data-drive-title="Mount Mitchell Scenic Drive">Mount Mitchell Scenic Drive</a></span><div class="attr-badges attr-badges-inline"><span class="badge badge-scenic">Day Trip</span><span class="badge badge-duration">30 miles from Asheville — allow 1 hour each way</span></div></div><span class="attr-desc">This scenic drive leads to the highest peak east of the Mississippi, Mount Mitchell.</span></div>
 </div>
 </div>
 <div class="card schedule-card">
@@ -1652,43 +1652,43 @@
   <div class="schedule-day">
     <div class="schedule-day-title">Day 1</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Asheville from Old Hickory and check into your lodging around 4:00 PM. Break for lunch around Oak Ridge, Tennessee, roughly the midpoint.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Arrive in Asheville and check in to your lodging. Take some time to relax and freshen up after your drive. Break for lunch around Oak Ridge, Tennessee, roughly the midpoint.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit the River Arts District to explore the mansion and gardens decorated for the Christmas season.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Visit the Biltmore Estate to explore the mansion and gardens, all beautifully decorated for the holiday season.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Cúrate, a local tapas restaurant known for its vibrant atmosphere and signature dishes.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Cúrate, a farm-to-table restaurant known for its seasonal dishes and vibrant atmosphere.</span></div>
     </div>
   </div>
   <div class="schedule-day">
     <div class="schedule-day-title">Day 2</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start your day at the Downtown Asheville to enjoy the gardens and seasonal displays.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with North Carolina Arboretum, then pivot to a different nearby area before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Asheville Art Museum, keeping realistic transition time between stops.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Consider one or more of the following, within about 3h: River Arts District (1h 30m), North Carolina Arboretum (1h 30m). Leave buffer time between stops.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Dine at Rhubarb, a trendy spot featuring locally sourced dishes and an extensive drink menu.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at Rhubarb, a farm-to-table restaurant known for its seasonal dishes and vibrant atmosphere.</span></div>
     </div>
   </div>
   <div class="schedule-day">
     <div class="schedule-day-title">Day 3</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Take a leisurely stroll through Biltmore Estate, enjoying the shops and art galleries.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with Asheville Art Museum and keep parking buffers before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
       <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Spend the afternoon at Asheville Pinball Museum, keeping realistic transition time between stops.</span></div>
     </div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Dinner at Salsa&#x27;s, known for its farm-to-table dishes and inviting ambiance.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌙</span> Evening</span><span class="schedule-summary">Enjoy dinner at The Admiral, a farm-to-table restaurant known for its seasonal dishes and vibrant atmosphere.</span></div>
     </div>
   </div>
   <div class="schedule-day">
     <div class="schedule-day-title">Day 4</div>
     <div class="schedule-period">
-      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with River Arts District, then pivot to a different nearby area before midday crowds.</span></div>
+      <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">🌅</span> Morning</span><span class="schedule-summary">Start with North Carolina Arboretum, then pivot to a different nearby area before midday crowds.</span></div>
     </div>
     <div class="schedule-period">
       <div class="schedule-line"><span class="schedule-time"><span class="schedule-icon">☀️</span> Afternoon</span><span class="schedule-summary">Reserved for return travel to Charlotte Douglas International Airport around 4:50 PM; begin checkout and departure logistics.</span></div>
@@ -1697,18 +1697,9 @@
 </div>
 </div>
 <div class="card events-card">
-<h3>🎭 Cultural Events &amp; Entertainment</h3>
-<p class="events-intro">Asheville has a rich cultural scene that thrives during December. Expect holiday markets, seasonal decorations, and various performances throughout the city. Local galleries and shops often feature unique crafts and art, making it a vibrant time to explore.</p>
-<div class="events-list">
-  <div class="event-item">
-    <div class="events-subcard">
-      <strong><a href="https://www.romanticasheville.com/winter_in_asheville.htm" class="event-link" target="_blank" rel="noopener">Christmas at Biltmore</a></strong><br/>
-      <span class="events-date-range">November 6, 2026 - January 10, 2027</span><br/>
-      📍 Biltmore Estate<br/>
-      💵 Varies<br/>
-    </div>
-  </div>
-</div>
+<h3>🎭 Cultural Events</h3>
+<p>Asheville has a rich cultural scene in December, with various holiday festivals and events. Local venues often host live music, and the community embraces the festive spirit with decorations and celebrations.</p>
+<p class="local-tip"><strong>Local tip:</strong> Check out local live music at <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Orange%20Peel%20Asheville%2C%20North%20Carolina" class="tip-link" target="_blank" rel="noopener">The Orange Peel</a>, known for hosting a variety of bands throughout December.</p>
 </div>
 <div class="card restaurants-card">
 <h3>🍽️ Dinner Recommendations</h3>
@@ -1872,7 +1863,7 @@
       <span class="rest-name"><span class="rest-icon">🍽️</span> <a href="https://www.curatetapasbar.com/menus/" class="rest-link" target="_blank" rel="noopener">Cúrate</a> <span class="attr-external-link" title="link source">🔗</span></span>
       <div class="rest-badges">
         
-        
+        <span class="badge cuisine-badge">Spanish</span>
         <span class="badge badge-rating">★ 4.7/5</span>
         <span class="badge badge-price">$$$</span>
         
@@ -1959,17 +1950,23 @@
     <h3>🎒 Packing Summary (Trip-Wide)</h3>
     <p class="pack-summary-intro">Here's what to bring and where it's needed:</p>
     <ul class="pack-summary-list">
-      <li><strong>Camera</strong> <span class="pack-summary-places">(Asheville, North Carolina, Franklin, Tennessee, Gallatin, Tennessee, Lebanon, Tennessee, Leiper&#x27;s Fork, Tennessee, Nashville, Tennessee, Old Hickory, Tennessee)</span></li>
-      <li><strong>comfortable shoes</strong> <span class="pack-summary-places">(Old Hickory, Tennessee)</span></li>
-      <li><strong>comfortable walking shoes</strong> <span class="pack-summary-places">(Asheville, North Carolina, Franklin, Tennessee, Lebanon, Tennessee, Leiper&#x27;s Fork, Tennessee, Nashville, Tennessee)</span></li>
-      <li><strong>hat</strong> <span class="pack-summary-places">(Nashville, Tennessee)</span></li>
-      <li><strong>Layers / light jacket (temperature swings)</strong> <span class="pack-summary-places">(Asheville, North Carolina, Gallatin, Tennessee, Lebanon, Tennessee, Old Hickory, Tennessee)</span></li>
-      <li><strong>notebook</strong> <span class="pack-summary-places">(Leiper&#x27;s Fork, Tennessee)</span></li>
-      <li><strong>snacks</strong> <span class="pack-summary-places">(Gallatin, Tennessee)</span></li>
-      <li><strong>warm jacket</strong> <span class="pack-summary-places">(Franklin, Tennessee, Leiper&#x27;s Fork, Tennessee, Nashville, Tennessee)</span></li>
-      <li><strong>water bottle</strong> <span class="pack-summary-places">(Asheville, North Carolina, Franklin, Tennessee, Old Hickory, Tennessee)</span></li>
-      <li><strong>water-resistant jacket</strong> <span class="pack-summary-places">(Lebanon, Tennessee)</span></li>
-      <li><strong>waterproof shoes</strong> <span class="pack-summary-places">(Gallatin, Tennessee)</span></li>
+      <li><strong>Binoculars for birdwatching</strong> <span class="pack-summary-places">(Old Hickory, Tennessee)</span></li>
+      <li><strong>Camera</strong> <span class="pack-summary-places">(Gallatin, Tennessee, Lebanon, Tennessee, Leiper&#x27;s Fork, Tennessee, Nashville, Tennessee)</span></li>
+      <li><strong>comfortable shoes</strong> <span class="pack-summary-places">(Nashville, Tennessee)</span></li>
+      <li><strong>Comfortable walking shoes</strong> <span class="pack-summary-places">(Old Hickory, Tennessee)</span></li>
+      <li><strong>comfortable walking shoes</strong> <span class="pack-summary-places">(Asheville, North Carolina, Franklin, Tennessee, Leiper&#x27;s Fork, Tennessee)</span></li>
+      <li><strong>hiking poles</strong> <span class="pack-summary-places">(Lebanon, Tennessee)</span></li>
+      <li><strong>holiday-themed attire</strong> <span class="pack-summary-places">(Franklin, Tennessee)</span></li>
+      <li><strong>holiday-themed items</strong> <span class="pack-summary-places">(Asheville, North Carolina)</span></li>
+      <li><strong>Layers / light jacket (temperature swings)</strong> <span class="pack-summary-places">(Asheville, North Carolina, Franklin, Tennessee, Gallatin, Tennessee, Leiper&#x27;s Fork, Tennessee, Nashville, Tennessee, Old Hickory, Tennessee)</span></li>
+      <li><strong>Rain jacket</strong> <span class="pack-summary-places">(Old Hickory, Tennessee)</span></li>
+      <li><strong>reusable water bottle</strong> <span class="pack-summary-places">(Nashville, Tennessee)</span></li>
+      <li><strong>sturdy shoes</strong> <span class="pack-summary-places">(Gallatin, Tennessee)</span></li>
+      <li><strong>warm jacket</strong> <span class="pack-summary-places">(Lebanon, Tennessee)</span></li>
+      <li><strong>water bottle</strong> <span class="pack-summary-places">(Gallatin, Tennessee)</span></li>
+      <li><strong>water-resistant jacket</strong> <span class="pack-summary-places">(Asheville, North Carolina)</span></li>
+      <li><strong>waterproof jacket</strong> <span class="pack-summary-places">(Franklin, Tennessee)</span></li>
+      <li><strong>waterproof shoes</strong> <span class="pack-summary-places">(Lebanon, Tennessee)</span></li>
     </ul>
   </div>
 </section>
@@ -1977,7 +1974,7 @@
 
     </main>
 
-    <footer class="generator-footer" style="margin:1.25rem auto 2.5rem;padding:0 1rem;max-width:72rem;"><div style="border-top:1px solid #e8dcc8;padding-top:0.85rem;font-size:0.8rem;color:#8B6347;line-height:1.5;text-align:center;">Generated by <a href="https://github.com/flysoftware-git/itinerary-generator" >Itinerary Generator</a> v2.6.0 · Manifest: OldHickory_manifest.yaml · Itinerary output: 2026-09-03 04:04 UTC<div style="margin-top:0.35rem;">Issue reporting: <a href="https://github.com/flysoftware-git/itinerary-generator/issues/new?template=broken-link-report.yml&labels=bug">Report broken links</a> · <a href="https://github.com/flysoftware-git/itinerary-generator/issues/new?template=itinerary-feedback.yml">Share itinerary feedback</a></div></div></footer>
+    <footer class="generator-footer" style="margin:1.25rem auto 2.5rem;padding:0 1rem;max-width:72rem;"><div style="border-top:1px solid #e8dcc8;padding-top:0.85rem;font-size:0.8rem;color:#8B6347;line-height:1.5;text-align:center;">Generated by <a href="https://github.com/flysoftware-git/itinerary-generator" >Itinerary Generator</a> v2.6.0 · Manifest: OldHickory_manifest.yaml · Itinerary output: 2026-09-03 05:07 UTC<div style="margin-top:0.35rem;">Issue reporting: <a href="https://github.com/flysoftware-git/itinerary-generator/issues/new?template=broken-link-report.yml&labels=bug">Report broken links</a> · <a href="https://github.com/flysoftware-git/itinerary-generator/issues/new?template=itinerary-feedback.yml">Share itinerary feedback</a></div></div></footer>
 
     <!-- DRIVE INFO MODAL -->
     <div data-id="1109" id="drive-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.55);backdrop-filter:blur(3px);align-items:center;justify-content:center;">
