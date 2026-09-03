@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-09-03T07:16:20.9514314Z",
+    "updatedAt":  "2026-09-03T07:20:34.7939382Z",
     "trips":  [
                   {
                       "name":  "Europe Exploration",
@@ -20,7 +20,7 @@
                       "directory":  "sw/prod",
                       "entry":  "sw/prod/index.html",
                       "description":  "October 2026 — Utah, Colorado \u0026 New Mexico",
-                      "generatedAt":  "2026-09-03T06:51:47.319299+00:00"
+                      "generatedAt":  "2026-09-03T07:20:32.636873+00:00"
                   }
               ]
 }
