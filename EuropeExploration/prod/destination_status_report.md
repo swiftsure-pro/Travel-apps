@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260903T050758.890722Z
-- Generated at (UTC): 2026-09-03T05:10:20.072365+00:00
+- Run ID: 20260903T065532.439543Z
+- Generated at (UTC): 2026-09-03T06:57:18.540695+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 1
@@ -19,7 +19,7 @@
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (30)
+## Removed for No Verified URL (29)
 - **Brussels, Belgium** (11)
   - Beijingya — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Beijingya+Rue+Melsens+Brussels
@@ -69,16 +69,13 @@
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Ratz+Food+Market+Rue+Saint+Boniface+25+Ixelles+Brussels
     - url_collision_rejected: https://www.visit.brussels/en/visitors/where-to-eat/street-food-in-brussels
 - **Amsterdam, Netherlands** (2)
-  - Broodje van Kootje — dinner_recommendations (3 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.broodjevan kootje.nl/
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Broodje+van+Kootje+Amsterdam+Netherlands
-    - direct_batch_candidate_rejected: https://www.broodjevan
   - Pietersma Snacks — dinner_recommendations (5 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.birdthai.nl/
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Thaise+Snackbar+Bird+Zeedijk+72+Amsterdam+Netherlands
     - direct_batch_candidate_rejected: https://www.albertcuypmarkt.nl/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pietersma+Snacks+Albert+Cuypstraat+Amsterdam+Netherlands
     - url_collision_rejected: https://www.febo.nl/
+  - Vondelpark — top_attractions (0 candidate(s) considered)
 - **Berlin, Germany** (3)
   - Banh Mi Stable — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh+Mi+Stable+Berlin+Germany
@@ -86,8 +83,8 @@
   - Dumplings Nian — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dumplings+Nian+Berlin+Germany
     - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
-  - Tiergarten — top_attractions (0 candidate(s) considered)
-- **Prague, Czech Republic** (8)
+  - Brandenburg Gate — top_attractions (0 candidate(s) considered)
+- **Prague, Czech Republic** (7)
   - Banh-Mi-Ba — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh-Mi-Ba+Rybná+26+Prague
     - url_collision_rejected: https://budgettraveller.org/best-cheap-eats-prague-guide/
@@ -113,15 +110,14 @@
     - direct_batch_candidate_rejected: https://www.urozvarilu.cz/
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=U+Rozvařilů+Na+Poříčí+1068/23+Prague
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mlsná+labuť+Palladium+Prague
-  - Petrin Hill — top_attractions (0 candidate(s) considered)
 - **Frankfurt, Germany** (6)
   - Bader's Fisch Deli — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bader%27s+Fisch+Deli+Leipziger+Stra%C3%9Fe+Frankfurt
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-  - Bistro B — dinner_recommendations (5 candidate(s) considered)
-    - search_resolved: https://www.tripadvisor.com/Hotel_Review-g155033-d185738-Reviews-Le_C3_Hotel_art_de_vivre-Quebec_City_Quebec.html
-    - discovery_completed: https://www.tripadvisor.com/Hotel_Review-g155033-d185738-Reviews-Le_C3_Hotel_art_de_vivre-Quebec_City_Quebec.html
-    - search_resolved: https://www.yelp.com/biz/pub-bistro-b-54-rennerod
+  - Brauhaus Faust — dinner_recommendations (6 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/Attractions-g187337-Activities-Frankfurt_Hesse.html
+    - discovery_completed: https://www.tripadvisor.com/Attractions-g187337-Activities-Frankfurt_Hesse.html
+    - search_resolved: https://www.frankfurt-trophy.com/en/sample/278128/brauhaus-faust-kg-festbier
   - Exenberger Der Frankfurter Imbiss — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
   - Frittenwerk — dinner_recommendations (2 candidate(s) considered)

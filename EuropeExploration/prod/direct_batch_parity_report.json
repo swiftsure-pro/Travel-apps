@@ -1,9 +1,9 @@
 {
-  "run_id": "20260903T050758.890722Z",
-  "generated_at_utc": "2026-09-03T05:10:20.419930+00:00",
+  "run_id": "20260903T065532.439543Z",
+  "generated_at_utc": "2026-09-03T06:57:18.804145+00:00",
   "captured_html_input_count": 0,
   "unique_captured_urls": 0,
-  "unique_final_html_urls": 198,
+  "unique_final_html_urls": 202,
   "destinations_missing_at_least_one_captured_url": 0,
   "destinations_missing_captured_url_names": []
 }
