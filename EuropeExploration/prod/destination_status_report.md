@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260903T040507.545104Z
-- Generated at (UTC): 2026-09-03T04:07:12.975557+00:00
+- Run ID: 20260903T050758.890722Z
+- Generated at (UTC): 2026-09-03T05:10:20.072365+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 1
@@ -19,7 +19,7 @@
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (28)
+## Removed for No Verified URL (30)
 - **Brussels, Belgium** (11)
   - Beijingya — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Beijingya+Rue+Melsens+Brussels
@@ -79,13 +79,14 @@
     - direct_batch_candidate_rejected: https://www.albertcuypmarkt.nl/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pietersma+Snacks+Albert+Cuypstraat+Amsterdam+Netherlands
     - url_collision_rejected: https://www.febo.nl/
-- **Berlin, Germany** (2)
+- **Berlin, Germany** (3)
   - Banh Mi Stable — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh+Mi+Stable+Berlin+Germany
     - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
   - Dumplings Nian — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dumplings+Nian+Berlin+Germany
     - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
+  - Tiergarten — top_attractions (0 candidate(s) considered)
 - **Prague, Czech Republic** (8)
   - Banh-Mi-Ba — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh-Mi-Ba+Rybná+26+Prague
@@ -113,10 +114,14 @@
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=U+Rozvařilů+Na+Poříčí+1068/23+Prague
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mlsná+labuť+Palladium+Prague
   - Petrin Hill — top_attractions (0 candidate(s) considered)
-- **Frankfurt, Germany** (5)
+- **Frankfurt, Germany** (6)
   - Bader's Fisch Deli — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bader%27s+Fisch+Deli+Leipziger+Stra%C3%9Fe+Frankfurt
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
+  - Bistro B — dinner_recommendations (5 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/Hotel_Review-g155033-d185738-Reviews-Le_C3_Hotel_art_de_vivre-Quebec_City_Quebec.html
+    - discovery_completed: https://www.tripadvisor.com/Hotel_Review-g155033-d185738-Reviews-Le_C3_Hotel_art_de_vivre-Quebec_City_Quebec.html
+    - search_resolved: https://www.yelp.com/biz/pub-bistro-b-54-rennerod
   - Exenberger Der Frankfurter Imbiss — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
   - Frittenwerk — dinner_recommendations (2 candidate(s) considered)
