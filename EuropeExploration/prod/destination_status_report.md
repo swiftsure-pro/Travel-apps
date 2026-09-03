@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260902T221834.839465Z
-- Generated at (UTC): 2026-09-02T22:22:20.492590+00:00
+- Run ID: 20260903T005504.988170Z
+- Generated at (UTC): 2026-09-03T00:57:01.635151+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 1
@@ -19,7 +19,7 @@
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (29)
+## Removed for No Verified URL (28)
 - **Brussels, Belgium** (11)
   - Beijingya — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Beijingya+Rue+Melsens+Brussels
@@ -79,18 +79,13 @@
     - direct_batch_candidate_rejected: https://www.albertcuypmarkt.nl/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pietersma+Snacks+Albert+Cuypstraat+Amsterdam+Netherlands
     - url_collision_rejected: https://www.febo.nl/
-- **Berlin, Germany** (3)
+- **Berlin, Germany** (2)
   - Banh Mi Stable — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh+Mi+Stable+Berlin+Germany
     - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
   - Dumplings Nian — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dumplings+Nian+Berlin+Germany
     - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
-  - Tiergarten Park — top_attractions (3 candidate(s) considered)
-    - search_resolved: https://www.facebook.com/iamcuriousdon/posts/-tiergarten-park-berlin-germany-exploring-the-lush-beauty-of-tiergarten-park-ber/122149458044170560/
-    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/iamcuriousdon/posts/-tiergarten-park-berlin-germany-exploring-the-lush-beauty-of-tiergarten-park-ber/122149458044170560/
-    - audit_discarded_previously_accepted_url: https://www.facebook.com/iamcuriousdon/posts/-tiergarten-park-berlin-germany-exploring-the-lush-beauty-of-tiergarten-park-ber/122149458044170560/
-      [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
 - **Prague, Czech Republic** (7)
   - Banh-Mi-Ba — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh-Mi-Ba+Rybná+26+Prague
@@ -121,10 +116,6 @@
   - Bader's Fisch Deli — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bader%27s+Fisch+Deli+Leipziger+Stra%C3%9Fe+Frankfurt
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-  - Bistro B — dinner_recommendations (5 candidate(s) considered)
-    - search_resolved: https://www.tripadvisor.com/Hotel_Review-g155033-d185738-Reviews-Le_C3_Hotel_art_de_vivre-Quebec_City_Quebec.html
-    - discovery_completed: https://www.tripadvisor.com/Hotel_Review-g155033-d185738-Reviews-Le_C3_Hotel_art_de_vivre-Quebec_City_Quebec.html
-    - search_resolved: https://www.yelp.com/biz/pub-bistro-b-54-rennerod
   - Exenberger Der Frankfurter Imbiss — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
   - Frittenwerk — dinner_recommendations (2 candidate(s) considered)
@@ -138,3 +129,4 @@
     - direct_batch_candidate_rejected_generic: https://en.tripadvisor.com/Restaurants-g187337-zfp16-Frankfurt_Hesse.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Alims+Fischimbiss+Frankfurt+Germany
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Im+Biss+Frankfurt+Germany
+  - Palmengarten — top_attractions (0 candidate(s) considered)
