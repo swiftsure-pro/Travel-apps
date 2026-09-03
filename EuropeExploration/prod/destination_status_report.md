@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260903T065532.439543Z
-- Generated at (UTC): 2026-09-03T06:57:18.540695+00:00
+- Run ID: 20260903T072045.724164Z
+- Generated at (UTC): 2026-09-03T07:22:19.682140+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 1
@@ -19,7 +19,7 @@
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (29)
+## Removed for No Verified URL (28)
 - **Brussels, Belgium** (11)
   - Beijingya — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Beijingya+Rue+Melsens+Brussels
@@ -68,23 +68,21 @@
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wolf+Food+Market+Rue+Picard+9+Brussels
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Ratz+Food+Market+Rue+Saint+Boniface+25+Ixelles+Brussels
     - url_collision_rejected: https://www.visit.brussels/en/visitors/where-to-eat/street-food-in-brussels
-- **Amsterdam, Netherlands** (2)
+- **Amsterdam, Netherlands** (1)
   - Pietersma Snacks — dinner_recommendations (5 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.birdthai.nl/
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Thaise+Snackbar+Bird+Zeedijk+72+Amsterdam+Netherlands
     - direct_batch_candidate_rejected: https://www.albertcuypmarkt.nl/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pietersma+Snacks+Albert+Cuypstraat+Amsterdam+Netherlands
     - url_collision_rejected: https://www.febo.nl/
-  - Vondelpark — top_attractions (0 candidate(s) considered)
-- **Berlin, Germany** (3)
+- **Berlin, Germany** (2)
   - Banh Mi Stable — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh+Mi+Stable+Berlin+Germany
     - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
   - Dumplings Nian — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dumplings+Nian+Berlin+Germany
     - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
-  - Brandenburg Gate — top_attractions (0 candidate(s) considered)
-- **Prague, Czech Republic** (7)
+- **Prague, Czech Republic** (8)
   - Banh-Mi-Ba — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh-Mi-Ba+Rybná+26+Prague
     - url_collision_rejected: https://budgettraveller.org/best-cheap-eats-prague-guide/
@@ -110,14 +108,11 @@
     - direct_batch_candidate_rejected: https://www.urozvarilu.cz/
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=U+Rozvařilů+Na+Poříčí+1068/23+Prague
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mlsná+labuť+Palladium+Prague
+  - Petrin Hill — top_attractions (0 candidate(s) considered)
 - **Frankfurt, Germany** (6)
   - Bader's Fisch Deli — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bader%27s+Fisch+Deli+Leipziger+Stra%C3%9Fe+Frankfurt
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-  - Brauhaus Faust — dinner_recommendations (6 candidate(s) considered)
-    - search_resolved: https://www.tripadvisor.com/Attractions-g187337-Activities-Frankfurt_Hesse.html
-    - discovery_completed: https://www.tripadvisor.com/Attractions-g187337-Activities-Frankfurt_Hesse.html
-    - search_resolved: https://www.frankfurt-trophy.com/en/sample/278128/brauhaus-faust-kg-festbier
   - Exenberger Der Frankfurter Imbiss — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
   - Frittenwerk — dinner_recommendations (2 candidate(s) considered)
@@ -131,3 +126,7 @@
     - direct_batch_candidate_rejected_generic: https://en.tripadvisor.com/Restaurants-g187337-zfp16-Frankfurt_Hesse.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Alims+Fischimbiss+Frankfurt+Germany
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Im+Biss+Frankfurt+Germany
+  - Kaffeekommune — dinner_recommendations (6 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g187393-d963137-Reviews-Dom_Cafe-Mainz_Rhineland_Palatinate.html
+    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g187393-d963137-Reviews-Dom_Cafe-Mainz_Rhineland_Palatinate.html
+    - search_resolved: https://thecoffeevine.com/reviews/cafes/germany/mainz/kaffeekommune-mainz-de/
