@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260903T005504.988170Z
-- Generated at (UTC): 2026-09-03T00:57:01.635151+00:00
+- Run ID: 20260903T022409.414323Z
+- Generated at (UTC): 2026-09-03T02:25:57.020928+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 1
@@ -19,7 +19,7 @@
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (28)
+## Removed for No Verified URL (29)
 - **Brussels, Belgium** (11)
   - Beijingya — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Beijingya+Rue+Melsens+Brussels
@@ -86,7 +86,7 @@
   - Dumplings Nian — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dumplings+Nian+Berlin+Germany
     - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
-- **Prague, Czech Republic** (7)
+- **Prague, Czech Republic** (8)
   - Banh-Mi-Ba — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh-Mi-Ba+Rybná+26+Prague
     - url_collision_rejected: https://budgettraveller.org/best-cheap-eats-prague-guide/
@@ -112,6 +112,7 @@
     - direct_batch_candidate_rejected: https://www.urozvarilu.cz/
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=U+Rozvařilů+Na+Poříčí+1068/23+Prague
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mlsná+labuť+Palladium+Prague
+  - Vyšehrad — top_attractions (0 candidate(s) considered)
 - **Frankfurt, Germany** (6)
   - Bader's Fisch Deli — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bader%27s+Fisch+Deli+Leipziger+Stra%C3%9Fe+Frankfurt
@@ -129,4 +130,7 @@
     - direct_batch_candidate_rejected_generic: https://en.tripadvisor.com/Restaurants-g187337-zfp16-Frankfurt_Hesse.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Alims+Fischimbiss+Frankfurt+Germany
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Im+Biss+Frankfurt+Germany
-  - Palmengarten — top_attractions (0 candidate(s) considered)
+  - Kaffeekommune — dinner_recommendations (6 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g187393-d963137-Reviews-Dom_Cafe-Mainz_Rhineland_Palatinate.html
+    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g187393-d963137-Reviews-Dom_Cafe-Mainz_Rhineland_Palatinate.html
+    - search_resolved: https://thecoffeevine.com/reviews/cafes/germany/mainz/kaffeekommune-mainz-de/

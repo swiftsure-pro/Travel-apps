@@ -1,12 +1,12 @@
 {
-    "updatedAt":  "2026-09-03T02:23:30.8859955Z",
+    "updatedAt":  "2026-09-03T02:25:58.7506412Z",
     "trips":  [
                   {
                       "name":  "Europe Exploration",
                       "directory":  "EuropeExploration/prod",
                       "entry":  "EuropeExploration/prod/index.html",
                       "description":  "Five capitals by rail — Brussels to Frankfurt",
-                      "generatedAt":  "2026-09-03T00:57:01.675952+00:00"
+                      "generatedAt":  "2026-09-03T02:25:57.064963+00:00"
                   },
                   {
                       "name":  "Old Hickory \u0026 Asheville",
