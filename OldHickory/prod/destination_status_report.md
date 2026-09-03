@@ -1,28 +1,27 @@
 # Destination Status Summary
 
-- Run ID: 20260903T023947.286939Z
-- Generated at (UTC): 2026-09-03T02:43:20.285370+00:00
+- Run ID: 20260903T040152.005501Z
+- Generated at (UTC): 2026-09-03T04:04:42.611221+00:00
 - Destination count: 7
-- Retry recommended: 2
+- Retry recommended: 1
 - Retry attempted: 3
-- Resolved after retry: 1
-- Unresolved after retry: 2
+- Resolved after retry: 2
+- Unresolved after retry: 1
 - Not retried due to cap: 0
 
-## Needs Attention (2)
-- Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+## Needs Attention (1)
 - Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
 
 ## All Destinations (7)
 - Old Hickory, Tennessee (oldhickory) — status=degraded, terminal=resolved_after_retry, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
-- Nashville, Tennessee (nashville) — status=degraded, terminal=stable_without_retry, en_route_resolved=2/8, en_route_exhaustion_or_no_match=0
-- Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=5/5, en_route_exhaustion_or_no_match=0
+- Nashville, Tennessee (nashville) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/8, en_route_exhaustion_or_no_match=0
+- Gallatin, Tennessee (gallatin) — status=degraded, terminal=resolved_after_retry, en_route_resolved=5/5, en_route_exhaustion_or_no_match=0
 - Lebanon, Tennessee (lebanon) — status=degraded, terminal=stable_without_retry, en_route_resolved=7/8, en_route_exhaustion_or_no_match=0
 - Franklin, Tennessee (franklin) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/6, en_route_exhaustion_or_no_match=0
 - Leiper's Fork, Tennessee (leipers_fork) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/8, en_route_exhaustion_or_no_match=0
 - Asheville, North Carolina (asheville) — status=degraded, terminal=stable_without_retry, en_route_resolved=10/11, en_route_exhaustion_or_no_match=0
 
-## Removed for No Verified URL (55)
+## Removed for No Verified URL (56)
 - **Old Hickory, Tennessee** (13)
   - BODHI Asian Street Eats — dinner_recommendations (9 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
@@ -198,7 +197,7 @@
     - direct_batch_candidate_rejected: https://www.mtjuliet-tn.gov/240/Charlie-Daniels-Park
     - direct_batch_candidate_rejected: https://www.mtjuliet-tn.gov/
     - direct_batch_candidate_rejected: https://tnstateparks.com/parks/cedars-of-lebanon
-- **Franklin, Tennessee** (8)
+- **Franklin, Tennessee** (9)
   - 55 South — dinner_recommendations (4 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=January+at+Southall+2200+Osage+Loop+Franklin+TN
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55055-Franklin_Tennessee.html
@@ -229,6 +228,7 @@
     - direct_batch_candidate_rejected: https://www.opentable.com/neighborhood/tn/franklin-restaurants
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=North+Italia+Franklin+TN
     - url_collision_rejected: https://ratingsnearme.com/franklin-tn/best-restaurant
+  - The 615 Hideaway — dinner_recommendations (0 candidate(s) considered)
   - etch — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=etch+Franklin+230+Franklin+Rd+Franklin+TN
     - url_collision_rejected: https://www.theinfatuation.com/nashville/guides/best-restaurants-franklin-tennessee
