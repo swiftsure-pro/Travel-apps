@@ -1,0 +1,134 @@
+# Destination Status Summary
+
+- Run ID: 20260905T070819.512898Z
+- Generated at (UTC): 2026-09-05T07:12:35.824984+00:00
+- Destination count: 10
+- Retry recommended: 0
+- Retry attempted: 0
+- Resolved after retry: 0
+- Unresolved after retry: 0
+- Not retried due to cap: 0
+
+## Needs Attention (0)
+- None
+
+## All Destinations (10)
+- Kennebunk, Maine (kennebunk) — status=degraded, terminal=stable_without_retry
+- Portsmouth, New Hampshire (portsmouth) — status=degraded, terminal=stable_without_retry
+- Newburyport, Massachusetts (newburyport) — status=degraded, terminal=stable_without_retry
+- Boston, Massachusetts (boston) — status=degraded, terminal=stable_without_retry
+- Providence, Rhode Island (providence) — status=degraded, terminal=stable_without_retry
+- Narragansett, Rhode Island (narragansett) — status=degraded, terminal=stable_without_retry
+- Westerly, Rhode Island (westerly) — status=degraded, terminal=stable_without_retry
+- Mystic, Connecticut (mystic) — status=degraded, terminal=stable_without_retry
+- Old Saybrook, Connecticut (old_saybrook) — status=degraded, terminal=stable_without_retry
+- New Haven, Connecticut (new_haven) — status=degraded, terminal=stable_without_retry
+
+## Removed for No Verified URL (33)
+- **Kennebunk, Maine** (3)
+  - Nunan's Lobster Hut — dinner_recommendations (5 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g40693-Kennebunk_Kennebunks_Maine.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mabel%27s+Lobster+Claw+Kennebunkport+ME
+    - direct_batch_candidate_rejected: https://www.opentable.com/the-tides-beach-club
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Nunan%27s+Lobster+Hut+Kennebunkport+ME
+    - url_collision_rejected: https://www.restaurantji.com/me/kennebunkport/alissons-restaurant-/
+  - Seven High — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Seven+High+Kennebunk+ME
+    - url_collision_rejected: https://www.restaurantji.com/me/kennebunk/
+  - Rachel Carson National Wildlife Refuge — top_attractions (0 candidate(s) considered)
+- **Portsmouth, New Hampshire** (5)
+  - 110 Grill Portsmouth — dinner_recommendations (27 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.opentable.com/ristorante-massimo
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Ristorante+Massimo+59+Penhallow+Street+Portsmouth+NH
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-portsmouth-nh
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Cure+189+State+Street+Portsmouth+NH
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Louie%27s+Restaurant+West+End+Portsmouth+NH
+    - direct_batch_candidate_rejected: https://www.opentable.com/r/the-rosa-portsmouth
+  - 5 Thai Bistro — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-portsmouth-nh
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g46209-Portsmouth_New_Hampshire.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=5+Thai+Bistro+40+Pleasant+St+Portsmouth+NH
+    - url_collision_rejected: https://www.goportsmouthnh.com/wp-content/uploads/2026/03/GPC25105_Listings2025_v4.pdf
+  - Nichinan — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Nichinan+15+Middle+St+Portsmouth+NH
+    - url_collision_rejected: https://www.goportsmouthnh.com/wp-content/uploads/2026/03/GPC25105_Listings2025_v4.pdf
+  - Row 34 — dinner_recommendations (25 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Ristorante+Massimo+59+Penhallow+Street+Portsmouth+NH
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-portsmouth-nh
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Cure+189+State+Street+Portsmouth+NH
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Louie%27s+Restaurant+West+End+Portsmouth+NH
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Rosa+70+State+St+Portsmouth+NH
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Row+34+5+Portwalk+Pl+Portsmouth+NH
+  - Great Bay Discovery Center — top_attractions (0 candidate(s) considered)
+- **Newburyport, Massachusetts** (1)
+  - Parker River National Wildlife Refuge — top_attractions (0 candidate(s) considered)
+- **Boston, Massachusetts** (1)
+  - Freedom Trail — top_attractions (0 candidate(s) considered)
+- **Providence, Rhode Island** (1)
+  - Providence Riverwalk — top_attractions (0 candidate(s) considered)
+- **Narragansett, Rhode Island** (6)
+  - Bicycle Restaurant — dinner_recommendations (0 candidate(s) considered)
+  - Birch & Bay Roofdeck Coastal Kitchen — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.opentable.com/neighborhood/ri/narragansett-restaurants
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Birch+%26+Bay+Roofdeck+Coastal+Kitchen+Wakefield+RI
+  - Gansett Poke — dinner_recommendations (19 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.opentable.com/r/celeste-narragansett
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Celeste+15+Kingstown+Rd+Narragansett+RI
+    - direct_batch_candidate_rejected: https://www.opentable.com/neighborhood/ri/narragansett-restaurants
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Coast+Guard+House+40+Ocean+Rd+Narragansett+RI
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Surf+Shack+83+Narragansett+Ave+Narragansett+RI
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Boon+Street+Market+145+Boon+St+Narragansett+RI
+  - Pelly's Place — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Agave+Social+Cocina+Mexicana+23+Pier+Marketplace+Narragansett+RI
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pelly%27s+Place+Narragansett+RI
+    - url_collision_rejected: https://restaurantguru.com/Agave-Social-Cocina-Mexicana-Narragansett
+  - Galilee Fishing Port — top_attractions (0 candidate(s) considered)
+  - Point Judith Lighthouse — top_attractions (0 candidate(s) considered)
+- **Westerly, Rhode Island** (4)
+  - Two Little Fish — dinner_recommendations (8 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.evendo.com/locations/rhode-island/westerly/best-restaurants
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Two+Little+Fish+Misquamicut+Westerly+RI
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g54126-d33232053-Reviews-Caswell_s_Seafood_Haven-Westerly_Washington_County_Rhode_Island.html
+  - Napatree Point — top_attractions (0 candidate(s) considered)
+  - Watch Hill Lighthouse — top_attractions (0 candidate(s) considered)
+  - Weekapaug Point — top_attractions (0 candidate(s) considered)
+- **Mystic, Connecticut** (4)
+  - Barbary Coast — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33845-Mystic_Mystic_Country_Connecticut.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Barbary+Coast+Mystic+CT
+  - Jeremiah’s Restaurant & Tavern — dinner_recommendations (7 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-mystic-ct
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Jeremiah%E2%80%99s+Restaurant+Mystic+CT
+    - search_resolved: https://no.tripadvisor.com/Restaurants-g33845-c20-Mystic_Mystic_Country_Connecticut.html
+  - Red 36 — dinner_recommendations (24 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Shipwright%E2%80%99s+Daughter+20+E+Main+St+Mystic+CT
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33845-Mystic_Mystic_Country_Connecticut.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Mariner+Mystic+CT
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Oyster+Club+Mystic+CT
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Via+Emilia+24+W+Main+St+Mystic+CT
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Andiamo+Mystic+CT
+  - Mystic Riverwalk — top_attractions (0 candidate(s) considered)
+- **Old Saybrook, Connecticut** (4)
+  - Himalaya Cafe — dinner_recommendations (7 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Himalaya+Cafe+1456+Boston+Post+Rd+Old+Saybrook+CT
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g33878-d11645801-Reviews-or15-Shakahari-Old_Saybrook_Connecticut.html
+  - La Marea Ristorante — dinner_recommendations (8 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=La+Marea+Ristorante+732+Middlesex+Turnpike+Old+Saybrook+CT
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g33878-d11881849-Reviews-or90-La_Marea-Old_Saybrook_Connecticut.html
+  - Terra Mar Grill — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Terra+Mar+Grill+2+Bridge+St+Old+Saybrook+CT
+    - url_collision_rejected: https://en.wikivoyage.org/wiki/Old_Saybrook
+  - Great Island Wildlife Management Area — top_attractions (0 candidate(s) considered)
+- **New Haven, Connecticut** (4)
+  - Caseus Fromagerie & Bistro — dinner_recommendations (0 candidate(s) considered)
+  - Frank Pepe Pizzeria Napoletana — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33851-New_Haven_Connecticut.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Frank+Pepe+Pizzeria+Napoletana+New+Haven+CT
+    - url_collision_rejected: https://www.yelp.com/biz/zeneli-pizzeria-new-haven
+  - Lumi Asian Fusion — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Lumi+Asian+Fusion+460+Universal+Drive+North+North+Haven+CT
+    - url_collision_rejected: https://stacker.com/stories/connecticut/new-haven/highest-rated-fine-dining-restaurants-new-haven-area-diners
+  - East Rock Park Summit — top_attractions (0 candidate(s) considered)

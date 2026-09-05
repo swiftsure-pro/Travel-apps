@@ -1,0 +1,13 @@
+{
+  "fingerprint": "v3.0.0+97777b8+clean+20260905T070819.512898Z",
+  "run_id": "20260905T070819.512898Z",
+  "generator_version": "3.0.0",
+  "template_version": "2.5.7",
+  "build_tag": "",
+  "git": {
+    "branch": "feat/new-england-bike-manifest",
+    "commit": "97777b829522c70ba4712d471a66d807c59bc5ce",
+    "short_commit": "97777b8",
+    "dirty": false
+  }
+}
