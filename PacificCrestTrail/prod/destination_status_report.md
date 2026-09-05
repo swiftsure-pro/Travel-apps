@@ -1,0 +1,350 @@
+# Destination Status Summary
+
+- Run ID: 20260905T050432.326214Z
+- Generated at (UTC): 2026-09-05T05:09:37.073836+00:00
+- Destination count: 15
+- Retry recommended: 7
+- Retry attempted: 11
+- Resolved after retry: 4
+- Unresolved after retry: 7
+- Not retried due to cap: 0
+
+## Needs Attention (7)
+- Fish Lake Resort, Oregon (fish_lake) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Mazama Village, Oregon (mazama_village) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Shelter Cove Resort, Oregon (shelter_cove) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Big Lake Youth Camp, Oregon (big_lake) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Timberline Lodge, Oregon (timberline) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Stevens Pass, Washington (stevens_pass) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Manning Park, British Columbia (manning_park) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+
+## All Destinations (15)
+- Callahan's Lodge, Oregon (callahans) — status=degraded, terminal=stable_without_retry
+- Fish Lake Resort, Oregon (fish_lake) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Mazama Village, Oregon (mazama_village) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Shelter Cove Resort, Oregon (shelter_cove) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Elk Lake Resort, Oregon (elk_lake) — status=degraded, terminal=stable_without_retry
+- Big Lake Youth Camp, Oregon (big_lake) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Olallie Lake Resort, Oregon (olallie_lake) — status=degraded, terminal=stable_without_retry
+- Timberline Lodge, Oregon (timberline) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Cascade Locks, Oregon (cascade_locks) — status=degraded, terminal=stable_without_retry
+- Trout Lake, Washington (trout_lake) — status=degraded, terminal=resolved_after_retry
+- White Pass, Washington (white_pass) — status=degraded, terminal=resolved_after_retry
+- Snoqualmie Pass, Washington (snoqualmie_pass) — status=degraded, terminal=resolved_after_retry
+- Stevens Pass, Washington (stevens_pass) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Stehekin, Washington (stehekin) — status=degraded, terminal=resolved_after_retry
+- Manning Park, British Columbia (manning_park) — status=needs_retry, terminal=retry_cap_reached_unresolved
+
+## Removed for No Verified URL (94)
+- **Callahan's Lodge, Oregon** (4)
+  - Carlito's Italian Cuisine — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Carlitos+Italian+Cuisine+Ashland+OR
+    - url_collision_rejected: https://www.restaurantji.com/or/ashland/
+  - Gils — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gils+Ashland+OR
+    - url_collision_rejected: https://www.restaurantji.com/or/ashland/
+  - Vida Baking Co. — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Vida+Baking+Co+Ashland+OR
+    - url_collision_rejected: https://www.restaurantji.com/or/ashland/
+  - Pacific Crest Trail — top_attractions (0 candidate(s) considered)
+- **Fish Lake Resort, Oregon** (15)
+  - 138 Grill — dinner_recommendations (21 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Sugar+Pine+Caf+343+Broad+St+Butte+Falls+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Cascade+Gorge+Restaurant+Bar+Prospect+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Sammy%27s+Eagle+Point+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Barbwire+Grill+Shady+Cove+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mac%27s+Diner+Shady+Cove+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Ponderosa+Public+House+Chemult+OR
+  - Barbwire Grill — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Barbwire+Grill+Shady+Cove+OR
+  - Basin Martini Bar & Restaurant — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Basin+Martini+Bar+Restaurant+Klamath+Falls+OR
+  - Brevada Brewhouse — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Brevada+Brewhouse+Klamath+Falls+OR
+  - Cascade Gorge Restaurant & Bar — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Cascade+Gorge+Restaurant+Bar+Prospect+OR
+  - Cowboy Dinner Tree — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.yelp.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Cowboy+Dinner+Tree+Silver+Lake+OR
+  - East Lake Resort — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.yelp.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Odell+Lake+Resort+Restaurant+Crescent+Lake+OR
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=East+Lake+Resort+La+Pine+OR
+  - Girasol Family Mexican Restaurant & Cantina — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Girasol+Family+Mexican+Restaurant+Klamath+Falls+OR
+  - Kriselle Cellars — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Kriselle+Cellars+White+City+OR
+  - Lake of the Woods Pizzeria — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Lake+of+the+Woods+Pizzeria+Klamath+Falls+OR
+  - Mermaid Garden Cafe — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mermaid+Garden+Cafe+Klamath+Falls+OR
+  - Odell Lake Resort Restaurant — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.yelp.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Odell+Lake+Resort+Restaurant+Crescent+Lake+OR
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=East+Lake+Resort+La+Pine+OR
+  - Ponderosa Public House — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.yelp.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Ponderosa+Public+House+Chemult+OR
+  - Sammy's — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sammy%27s+Eagle+Point+OR
+  - Triple Tree Restaurant — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Triple+Tree+Restaurant+Central+Point+OR
+- **Mazama Village, Oregon** (4)
+  - El Rodeo variant duplicate — dinner_recommendations (0 candidate(s) considered)
+  - Jasper's Cafe — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Jasper%27s+Cafe+Medford+OR
+    - url_collision_rejected: https://www.tripadvisor.com/RestaurantsNear-g143020-d6876990-The_Cabins_at_Mazama_Village-Crater_Lake_National_Park_Oregon.html
+  - Taco Riendo — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Taco+Riendo+Medford+OR
+    - url_collision_rejected: https://www.tripadvisor.com/RestaurantsNear-g143020-d6876990-The_Cabins_at_Mazama_Village-Crater_Lake_National_Park_Oregon.html
+  - Thai Garden — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Thai+Garden+Central+Point+OR
+    - direct_batch_candidate_rejected: https://www.yelp.com/search?find_desc=Dinner&find_loc=Crater+Lake%2C+OR+97604
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Hearsay+Restaurant+Lounge+and+Garden+Ashland+OR
+    - url_collision_rejected: https://www.tripadvisor.com/RestaurantsNear-g143020-d6876990-The_Cabins_at_Mazama_Village-Crater_Lake_National_Park_Oregon.html
+- **Shelter Cove Resort, Oregon** (4)
+  - Crescent Lake Cafe — dinner_recommendations (15 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Hook+%26+Talon+27600+W+Odell+Lake+Rd+Crescent+OR
+    - direct_batch_candidate_rejected: https://www.yelp.com/search?cflt=restaurants&find_loc=Crescent+Lake%2C+OR
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Odell+Lake+Resort+Dining+21501+E+Odell+Rd+Crescent+Lake+OR
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Manley%27s+Tavern+Crescent+Lake+OR
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51824-Crescent_Lake_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mountain+House+Kitchen+Crescent+Lake+OR
+  - Forest Edge Pizzeria — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51824-Crescent_Lake_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Forest+Edge+Pizzeria+Crescent+Lake+OR
+  - Guy's Killer BBQ — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51824-Crescent_Lake_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Guy%27s+Killer+BBQ+Crescent+Lake+OR
+  - Mountain House Kitchen — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51824-Crescent_Lake_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mountain+House+Kitchen+Crescent+Lake+OR
+- **Elk Lake Resort, Oregon** (7)
+  - Ariana Restaurant — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Ariana+Restaurant+Bend+OR
+    - url_collision_rejected: https://allthingsbend.org/eat-drink/restaurants
+  - Jia Asian Street Kitchen — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Jia+Asian+Street+Kitchen+Bend+OR
+    - url_collision_rejected: https://www.yelp.com/biz/spork-bend
+  - Trattoria Sbandati — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Trattoria+Sbandati+Bend+OR
+    - url_collision_rejected: https://pdx.eater.com/maps/best-restaurants-bend-oregon-guide
+  - Green Lakes Trail — top_attractions (0 candidate(s) considered)
+  - Moraine Lake — top_attractions (0 candidate(s) considered)
+  - Sparks Lake — top_attractions (5 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://visitbend.com/journal/explore-the-lakes-near-bend/
+    - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=Sparks%20Lake
+    - search_resolved: https://www.facebook.com/100090463034895/posts/sparks-lakeoregon-usa-sparks-lake-located-in-oregon-usa-is-a-serene-and-scenic-b/629342580091171/
+    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/100090463034895/posts/sparks-lakeoregon-usa-sparks-lake-located-in-oregon-usa-is-a-serene-and-scenic-b/629342580091171/
+    - audit_discarded_previously_accepted_url: https://www.facebook.com/100090463034895/posts/sparks-lakeoregon-usa-sparks-lake-located-in-oregon-usa-is-a-serene-and-scenic-b/629342580091171/
+      [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
+  - Todd Lake — top_attractions (0 candidate(s) considered)
+- **Big Lake Youth Camp, Oregon** (9)
+  - Brunchies — dinner_recommendations (0 candidate(s) considered)
+  - Frankies — dinner_recommendations (0 candidate(s) considered)
+  - Martolli's Of Sisters — dinner_recommendations (22 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Open+Door+Sisters+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=High+Camp+Taphouse+Sisters+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Sisters+Meat+and+Smokehouse+Sisters+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Luckeys+Woodsman+Sisters+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Boone+Dog+Pizza+Sisters+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=R+Spot+Sisters+OR
+  - Rancho Viejo — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52072-Sisters_Central_Oregon_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Rancho+Viejo+Sisters+OR
+  - Sisters Bakery — dinner_recommendations (22 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Open+Door+Sisters+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=High+Camp+Taphouse+Sisters+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Sisters+Meat+and+Smokehouse+Sisters+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Luckeys+Woodsman+Sisters+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Boone+Dog+Pizza+Sisters+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=R+Spot+Sisters+OR
+  - Sisters Coffee Company — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52072-Sisters_Central_Oregon_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sisters+Coffee+Company+Sisters+OR
+  - Sisters Meat and Smokehouse — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sisters+Meat+and+Smokehouse+Sisters+OR
+    - url_collision_rejected: https://pdx.eater.com/maps/sisters-best-restaurants-oregon-bars
+  - The Cottonwood Cafe — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52072-Sisters_Central_Oregon_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Cottonwood+Cafe+Sisters+OR
+  - Three Creeks Brewing — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52072-Sisters_Central_Oregon_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Three+Creeks+Brewing+Sisters+OR
+- **Olallie Lake Resort, Oregon** (5)
+  - Additional high-rated Bend options (e.g., similar OpenTable listings like The Pine Room, 10 Barrel Brewing Pub, etc.) follow the same pattern of 4.5+ ratings, varied cuisines including New American, Asian fusion, and Pacific Northwest, with summer availability in July 2026; links constructed analogously for consistency. — dinner_recommendations (0 candidate(s) considered)
+  - Similar pattern continued for items 12-20 with cuisine variety (e.g., French bistro, seafood grill, farm-to-table, Italian, steakhouse) all 4.4+/5 from regional sources, using Bend addresses for Maps links and TripAdvisor/OpenTable for — dinner_recommendations (0 candidate(s) considered)
+  - Monon Lake — top_attractions (1 candidate(s) considered)
+    - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/oregon/monon-lake-via-olallie-lake-trail
+      [retention exit (4, "if self._is_alltrails_trail_url(url) and bool(getattr(self, '_disable_trails', False))")]
+  - Olallie Butte Trail — top_attractions (0 candidate(s) considered)
+  - Pacific Crest Trail north section — top_attractions (0 candidate(s) considered)
+- **Timberline Lodge, Oregon** (12)
+  - Blue Ox Bar — dinner_recommendations (9 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52100-Timberline_Lodge_Clackamas_County_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Blue+Ox+Bar+27500+E+Timberline+Rd+Government+Camp+OR
+    - search_resolved: https://www.tripadvisor.com/Tourism-g52100-Timberline_Lodge_Clackamas_County_Oregon-Vacations.html
+  - Chicali Cantina — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52127-Welches_Clackamas_County_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Chicali+Cantina+Welches+OR
+  - Glacier Haus Bistro & Pizza — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51889-Government_Camp_Clackamas_County_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Glacier+Haus+Bistro+88817+E+Government+Camp+Loop+Government+Camp+OR
+  - Glacier Public House — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Glacier+Public+House+88817+E+Government+Camp+Loop+Government+Camp+OR
+    - url_collision_rejected: https://www.restaurantji.com/or/government-camp/
+  - Mt. Hood Brewing Co. — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51889-Government_Camp_Clackamas_County_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mt.+Hood+Brewing+Co.+87304+E+Government+Camp+Loop+Government+Camp+OR
+  - Mt. Hood Roasters Coffee Company — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mt.+Hood+Roasters+Coffee+Company+73451+US-26+Rhododendron+OR
+    - url_collision_rejected: https://www.restaurantji.com/or/rhododendron/
+  - Naan N Curry Mt. Hood — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52127-Welches_Clackamas_County_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Naan+N+Curry+Mt.+Hood+Welches+OR
+  - Ratskeller — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51889-Government_Camp_Clackamas_County_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Ratskeller+88335+E+Government+Camp+Loop+Government+Camp+OR
+  - The Rendezvous Grill — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52127-Welches_Clackamas_County_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Rendezvous+Grill+67149+US-26+Welches+OR
+  - The Shack Restaurant and Sports Bar — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Shack+Restaurant+Sports+Bar+Welches+OR
+    - url_collision_rejected: https://www.tripadvisor.com/RestaurantsNear-g52127-d1308480-Altitude_Restaurant-Welches_Clackamas_County_Oregon.html
+  - Wraptitude Gourmet Wraps, Burgers & Beers — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52127-Welches_Clackamas_County_Oregon.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wraptitude+Gourmet+Wraps+Burgers+Beers+Welches+OR
+  - Zig Zag Inn — dinner_recommendations (26 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52100-Timberline_Lodge_Clackamas_County_Oregon.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Blue+Ox+Bar+27500+E+Timberline+Rd+Government+Camp+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Y%27Bar+27500+E+Timberline+Rd+Government+Camp+OR
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51889-Government_Camp_Clackamas_County_Oregon.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Glacier+Haus+Bistro+88817+E+Government+Camp+Loop+Government+Camp+OR
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Al+Forno+Ferruzza+73285+US-26+Rhododendron+OR
+- **Cascade Locks, Oregon** (3)
+  - The Cascade Room — dinner_recommendations (2 candidate(s) considered)
+    - url_collision_rejected: https://www.skamania.com/
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Cascade+Room+Skamania+Lodge+Stevenson+WA
+  - Bridge of the Gods — top_attractions (0 candidate(s) considered)
+  - Pacific Crest Trail – Herman Creek to Bridge of the Gods — top_attractions (0 candidate(s) considered)
+- **White Pass, Washington** (3)
+  - Cliff Droppers — dinner_recommendations (9 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g58668-Packwood_Washington.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Cliff+Droppers+12968+US-12+Packwood+WA
+    - search_resolved: https://www.tripadvisor.com/Tourism-g58825-White_Pass_Washington-Vacations.html
+  - Highway 12 Drive In — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Highway+12+Drive+In+Randle+WA
+    - url_collision_rejected: https://www.restaurantji.com/wa/randle/
+  - The Ice Cream Airstream — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Ice+Cream+Airstream+Packwood+WA
+    - url_collision_rejected: https://www.restaurantji.com/wa/packwood/
+- **Snoqualmie Pass, Washington** (5)
+  - Aahaar an Indian Eatery — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g58748-Snoqualmie_Washington.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Aahaar+an+Indian+Eatery+Snoqualmie+WA
+  - Copperstone Family Spaghetti Restaurant — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g58748-Snoqualmie_Washington.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Copperstone+Family+Spaghetti+Restaurant+Snoqualmie+WA
+  - Dru Bru — dinner_recommendations (28 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Restaurant+%26+Terrace+Bar+at+Salish+Lodge+6501+Railroad+Ave+SE+Snoqualmie+WA
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g58748-Snoqualmie_Washington.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Gianfranco+Ristorante+Italiano+Railroad+Ave+Snoqualmie+WA
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-north-bend-wa
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=North+Bend+Bar+%26+Grill+North+Bend+WA
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-snoqualmie
+  - Gianfranco Ristorante Italiano — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g58748-Snoqualmie_Washington.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gianfranco+Ristorante+Italiano+Railroad+Ave+Snoqualmie+WA
+    - direct_batch_candidate_rejected: https://www.yelp.com/search?find_loc=North+Bend%2C+WA
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Il+Paesano+Ristorante+Italiano+North+Bend+WA
+  - Vista Prime Steaks & Seafood — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.opentable.com/r/the-restaurant-at-salish-lodge-and-spa
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-snoqualmie
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Vista+Prime+Steaks+%26+Seafood+Snoqualmie+WA
+- **Stevens Pass, Washington** (8)
+  - Carta — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-guard-station
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Carta+Leavenworth+WA
+  - Gianfranco Ristorante Italiano — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-ski-area
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gianfranco+Ristorante+Italiano+Snoqualmie+WA
+  - Larch Handcrafted Pasta & Cocktails — dinner_recommendations (1 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g58560-Leavenworth_Washington.html
+  - Mana — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-guard-station
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mana+Leavenworth+WA
+  - North Bend Bar & Grill — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-guard-station
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-ski-area
+    - direct_batch_candidate_rejected: https://www.opentable.com/r/the-restaurant-at-salish-lodge-and-spa
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=North+Bend+Bar+%26+Grill+North+Bend+WA
+  - Whistling Post Saloon — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g58745-Skykomish_Washington.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Whistling+Post+Saloon+Skykomish+WA
+  - Yodelin Broth Company — dinner_recommendations (1 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g58560-Leavenworth_Washington.html
+  - wildflour — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-ski-area
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=wildflour+Leavenworth+WA
+- **Manning Park, British Columbia** (15)
+  - **Lizzie's Deli-Market — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g181776-Princeton_British_Columbia.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Lizzie%27s+Deli+Market+Dos+Rios+Tacos+Princeton+BC
+  - Blue Moose — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Blue+Moose+Hope+BC
+    - url_collision_rejected: https://www.yelp.ca/search?cflt=restaurants&find_loc=Hope%2C+BC
+  - Copper Glance — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Copper+Glance+Hope+BC
+    - url_collision_rejected: https://www.yelp.ca/search?cflt=food&find_loc=Manning+Park%2C+BC+V0X+1R0
+  - Hammer’s House of Hog — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Hammer%E2%80%99s+House+of+Hog+Hope+BC
+    - url_collision_rejected: https://www.yelp.ca/search?cflt=food&find_loc=Manning+Park%2C+BC+V0X+1R0
+  - Home Restaurant — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g181784-Hope_British_Columbia.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Home+Restaurant+Hope+BC
+  - Hope Mountain Cafe — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g181784-Hope_British_Columbia.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mountainview+Brewing+Co.+Hope+BC
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Hope+Mountain+Cafe+Hope+BC
+    - url_collision_rejected: https://www.restaurantji.com/bc/hope/
+  - Kibo Japanese Grill & Cafe — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g181784-Hope_British_Columbia.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Kibo+Japanese+Grill+Cafe+Hope+BC
+  - Little Creek Grill — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g181776-Princeton_British_Columbia.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Little+Creek+Grill+Princeton+BC
+  - Livinit Plus — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g181776-Princeton_British_Columbia.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Livinit+Plus+Princeton+BC
+  - Mountainview Brewing Co. — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g181784-Hope_British_Columbia.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mountainview+Brewing+Co.+Hope+BC
+  - Princeton Country Kitchen — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g181776-Princeton_British_Columbia.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Princeton+Country+Kitchen+Princeton+BC
+  - Rolly's Restaurant — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Rolly%27s+Restaurant+Hope+BC
+    - url_collision_rejected: https://www.restaurantji.com/bc/hope/
+  - Sakoon Indian Cuisine — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=City+Slice+Pizzeria+Indian+Cuisine+Princeton+BC
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sakoon+Indian+Cuisine+Hope+BC
+    - url_collision_rejected: https://www.restaurantji.com/bc/princeton/
+  - Stallones Kitchen + Bar — dinner_recommendations (5 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Hope+Korean+Kitchen+Hope+BC
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Stallones+Kitchen+Bar+Hope+BC
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g181776-Princeton_British_Columbia.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Princeton+Country+Kitchen+Princeton+BC
+    - url_collision_rejected: https://www.yelp.ca/search?cflt=restaurants&find_loc=Hope%2C+BC
+  - Thomasina's — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Thomasina%27s+Princeton+BC
+    - url_collision_rejected: https://www.restaurantji.com/bc/princeton/

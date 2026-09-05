@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-09-03T07:22:21.1763935Z",
+    "updatedAt":  "2026-09-05T05:21:01.3309556Z",
     "trips":  [
                   {
                       "name":  "Europe Exploration",
@@ -14,6 +14,13 @@
                       "entry":  "OldHickory/prod/index.html",
                       "description":  "December 6-16, 2026 — the lake outside Nashville, then Asheville at Christmas",
                       "generatedAt":  "2026-09-03T07:16:18.848858+00:00"
+                  },
+                  {
+                      "name":  "Pacific Crest Trail — Oregon and Washington",
+                      "directory":  "PacificCrestTrail/prod",
+                      "entry":  "PacificCrestTrail/prod/index.html",
+                      "description":  "Oregon and Washington — Border to border, northbound, summer 2026",
+                      "generatedAt":  "2026-09-05T05:09:37.139942+00:00"
                   },
                   {
                       "name":  "Southwest Road Trip",
