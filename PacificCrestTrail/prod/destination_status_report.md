@@ -1,11 +1,11 @@
 # Destination Status Summary
 
-- Run ID: 20260905T050432.326214Z
-- Generated at (UTC): 2026-09-05T05:09:37.073836+00:00
+- Run ID: 20260905T075327.643206Z
+- Generated at (UTC): 2026-09-05T07:58:51.598468+00:00
 - Destination count: 15
 - Retry recommended: 7
-- Retry attempted: 11
-- Resolved after retry: 4
+- Retry attempted: 10
+- Resolved after retry: 3
 - Unresolved after retry: 7
 - Not retried due to cap: 0
 
@@ -28,15 +28,15 @@
 - Olallie Lake Resort, Oregon (olallie_lake) — status=degraded, terminal=stable_without_retry
 - Timberline Lodge, Oregon (timberline) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Cascade Locks, Oregon (cascade_locks) — status=degraded, terminal=stable_without_retry
-- Trout Lake, Washington (trout_lake) — status=degraded, terminal=resolved_after_retry
+- Trout Lake, Washington (trout_lake) — status=degraded, terminal=stable_without_retry
 - White Pass, Washington (white_pass) — status=degraded, terminal=resolved_after_retry
 - Snoqualmie Pass, Washington (snoqualmie_pass) — status=degraded, terminal=resolved_after_retry
 - Stevens Pass, Washington (stevens_pass) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Stehekin, Washington (stehekin) — status=degraded, terminal=resolved_after_retry
 - Manning Park, British Columbia (manning_park) — status=needs_retry, terminal=retry_cap_reached_unresolved
 
-## Removed for No Verified URL (94)
-- **Callahan's Lodge, Oregon** (4)
+## Removed for No Verified URL (95)
+- **Callahan's Lodge, Oregon** (6)
   - Carlito's Italian Cuisine — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Carlitos+Italian+Cuisine+Ashland+OR
     - url_collision_rejected: https://www.restaurantji.com/or/ashland/
@@ -46,7 +46,9 @@
   - Vida Baking Co. — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Vida+Baking+Co+Ashland+OR
     - url_collision_rejected: https://www.restaurantji.com/or/ashland/
-  - Pacific Crest Trail — top_attractions (0 candidate(s) considered)
+  - Mount Ashland — top_attractions (0 candidate(s) considered)
+  - Pacific Crest Trail north from Callahan's — top_attractions (0 candidate(s) considered)
+  - Siskiyou Summit Overlook — top_attractions (0 candidate(s) considered)
 - **Fish Lake Resort, Oregon** (15)
   - 138 Grill — dinner_recommendations (21 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Sugar+Pine+Caf+343+Broad+St+Butte+Falls+OR
@@ -129,7 +131,7 @@
   - Mountain House Kitchen — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51824-Crescent_Lake_Oregon.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mountain+House+Kitchen+Crescent+Lake+OR
-- **Elk Lake Resort, Oregon** (7)
+- **Elk Lake Resort, Oregon** (6)
   - Ariana Restaurant — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Ariana+Restaurant+Bend+OR
     - url_collision_rejected: https://allthingsbend.org/eat-drink/restaurants
@@ -139,16 +141,13 @@
   - Trattoria Sbandati — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Trattoria+Sbandati+Bend+OR
     - url_collision_rejected: https://pdx.eater.com/maps/best-restaurants-bend-oregon-guide
-  - Green Lakes Trail — top_attractions (0 candidate(s) considered)
-  - Moraine Lake — top_attractions (0 candidate(s) considered)
-  - Sparks Lake — top_attractions (5 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://visitbend.com/journal/explore-the-lakes-near-bend/
-    - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=Sparks%20Lake
-    - search_resolved: https://www.facebook.com/100090463034895/posts/sparks-lakeoregon-usa-sparks-lake-located-in-oregon-usa-is-a-serene-and-scenic-b/629342580091171/
-    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/100090463034895/posts/sparks-lakeoregon-usa-sparks-lake-located-in-oregon-usa-is-a-serene-and-scenic-b/629342580091171/
-    - audit_discarded_previously_accepted_url: https://www.facebook.com/100090463034895/posts/sparks-lakeoregon-usa-sparks-lake-located-in-oregon-usa-is-a-serene-and-scenic-b/629342580091171/
+  - Hosmer Lake Overlook — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.facebook.com/SunriverResort/posts/adventure-is-never-far-from-sunriver-resort-just-a-short-drive-away-hosmer-lake-/1490540756450660/
+    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/SunriverResort/posts/adventure-is-never-far-from-sunriver-resort-just-a-short-drive-away-hosmer-lake-/1490540756450660/
+    - audit_discarded_previously_accepted_url: https://www.facebook.com/SunriverResort/posts/adventure-is-never-far-from-sunriver-resort-just-a-short-drive-away-hosmer-lake-/1490540756450660/
       [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
-  - Todd Lake — top_attractions (0 candidate(s) considered)
+  - Little Cultus Lake Trail — top_attractions (0 candidate(s) considered)
+  - PCT North from Elk Lake — top_attractions (0 candidate(s) considered)
 - **Big Lake Youth Camp, Oregon** (9)
   - Brunchies — dinner_recommendations (0 candidate(s) considered)
   - Frankies — dinner_recommendations (0 candidate(s) considered)
@@ -187,16 +186,17 @@
   - Monon Lake — top_attractions (1 candidate(s) considered)
     - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/oregon/monon-lake-via-olallie-lake-trail
       [retention exit (4, "if self._is_alltrails_trail_url(url) and bool(getattr(self, '_disable_trails', False))")]
-  - Olallie Butte Trail — top_attractions (0 candidate(s) considered)
-  - Pacific Crest Trail north section — top_attractions (0 candidate(s) considered)
-- **Timberline Lodge, Oregon** (12)
+  - Olallie Butte Trail — top_attractions (1 candidate(s) considered)
+    - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/oregon/olallie-butte
+      [retention exit (4, "if self._is_alltrails_trail_url(url) and bool(getattr(self, '_disable_trails', False))")]
+  - PCT north from Olallie Lake — top_attractions (1 candidate(s) considered)
+    - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/oregon/olallie-and-head-lakes-via-pacific-crest-trail
+      [retention exit (4, "if self._is_alltrails_trail_url(url) and bool(getattr(self, '_disable_trails', False))")]
+- **Timberline Lodge, Oregon** (11)
   - Blue Ox Bar — dinner_recommendations (9 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52100-Timberline_Lodge_Clackamas_County_Oregon.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Blue+Ox+Bar+27500+E+Timberline+Rd+Government+Camp+OR
     - search_resolved: https://www.tripadvisor.com/Tourism-g52100-Timberline_Lodge_Clackamas_County_Oregon-Vacations.html
-  - Chicali Cantina — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g52127-Welches_Clackamas_County_Oregon.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Chicali+Cantina+Welches+OR
   - Glacier Haus Bistro & Pizza — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51889-Government_Camp_Clackamas_County_Oregon.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Glacier+Haus+Bistro+88817+E+Government+Camp+Loop+Government+Camp+OR
@@ -231,12 +231,14 @@
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g51889-Government_Camp_Clackamas_County_Oregon.html
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Glacier+Haus+Bistro+88817+E+Government+Camp+Loop+Government+Camp+OR
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Al+Forno+Ferruzza+73285+US-26+Rhododendron+OR
-- **Cascade Locks, Oregon** (3)
+- **Cascade Locks, Oregon** (2)
   - The Cascade Room — dinner_recommendations (2 candidate(s) considered)
     - url_collision_rejected: https://www.skamania.com/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Cascade+Room+Skamania+Lodge+Stevenson+WA
-  - Bridge of the Gods — top_attractions (0 candidate(s) considered)
-  - Pacific Crest Trail – Herman Creek to Bridge of the Gods — top_attractions (0 candidate(s) considered)
+  - PCT Trailhead at Cascade Locks — top_attractions (0 candidate(s) considered)
+- **Trout Lake, Washington** (2)
+  - Big Lava Bed — top_attractions (0 candidate(s) considered)
+  - Round the Mountain Trail — top_attractions (0 candidate(s) considered)
 - **White Pass, Washington** (3)
   - Cliff Droppers — dinner_recommendations (9 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g58668-Packwood_Washington.html
@@ -271,7 +273,7 @@
     - direct_batch_candidate_rejected: https://www.opentable.com/r/the-restaurant-at-salish-lodge-and-spa
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-snoqualmie
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Vista+Prime+Steaks+%26+Seafood+Snoqualmie+WA
-- **Stevens Pass, Washington** (8)
+- **Stevens Pass, Washington** (7)
   - Carta — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-guard-station
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Carta+Leavenworth+WA
@@ -280,9 +282,6 @@
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gianfranco+Ristorante+Italiano+Snoqualmie+WA
   - Larch Handcrafted Pasta & Cocktails — dinner_recommendations (1 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g58560-Leavenworth_Washington.html
-  - Mana — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-guard-station
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mana+Leavenworth+WA
   - North Bend Bar & Grill — dinner_recommendations (4 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-guard-station
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-ski-area
@@ -296,7 +295,7 @@
   - wildflour — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/landmark/restaurants-near-stevens-pass-ski-area
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=wildflour+Leavenworth+WA
-- **Manning Park, British Columbia** (15)
+- **Manning Park, British Columbia** (16)
   - **Lizzie's Deli-Market — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g181776-Princeton_British_Columbia.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Lizzie%27s+Deli+Market+Dos+Rios+Tacos+Princeton+BC
@@ -348,3 +347,6 @@
   - Thomasina's — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Thomasina%27s+Princeton+BC
     - url_collision_rejected: https://www.restaurantji.com/bc/princeton/
+  - Boathouse at Lightning Lake — top_attractions (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://manningpark.com/
+    - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=Boathouse%20at%20Lightning%20Lake%20Manning%20Park%2C%20British%20Columbia

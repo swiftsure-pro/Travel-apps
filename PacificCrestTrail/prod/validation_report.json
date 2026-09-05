@@ -1,21 +1,21 @@
 {
-  "generator_version": "2.7.0",
+  "generator_version": "3.0.0",
   "template_version": "2.5.7",
-  "generated_at_utc": "2026-09-05T05:09:37.139942+00:00",
+  "generated_at_utc": "2026-09-05T07:58:51.652770+00:00",
   "development_build": {
-    "fingerprint": "v2.7.0+ec0c0b8+clean+20260905T050432.326214Z",
-    "run_id": "20260905T050432.326214Z",
-    "generator_version": "2.7.0",
+    "fingerprint": "v3.0.0+6a455e5+clean+20260905T075327.643206Z",
+    "run_id": "20260905T075327.643206Z",
+    "generator_version": "3.0.0",
     "template_version": "2.5.7",
     "build_tag": "",
     "git": {
-      "branch": "feat/place-id-maps-links",
-      "commit": "ec0c0b8cc9a72c583d1691ce842ec50f74583ed3",
-      "short_commit": "ec0c0b8",
+      "branch": "v3",
+      "commit": "6a455e5e18f11a5ce973acdfdb41f776c1e42143",
+      "short_commit": "6a455e5",
       "dirty": false
     }
   },
-  "timestamp_utc": "2026-09-05T05:09:37.592927Z",
+  "timestamp_utc": "2026-09-05T07:58:52.004690Z",
   "summary": {
     "valid": true,
     "error_count": 0,
@@ -29,335 +29,192 @@
         "provider": "grok",
         "model": "grok-4-fast",
         "calls": 15,
-        "prompt_tokens": 75395,
-        "completion_tokens": 23599,
-        "total_tokens": 98994,
+        "prompt_tokens": 77180,
+        "completion_tokens": 25785,
+        "total_tokens": 102965,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.292384
+        "estimated_cost_usd": 0.30907
       },
       {
         "provider": "serper",
         "model": "serper",
-        "calls": 142,
+        "calls": 129,
         "prompt_tokens": 0,
         "completion_tokens": 0,
         "total_tokens": 0,
-        "tool_calls": 142,
-        "tool_call_cost_usd": 0.142,
-        "estimated_cost_usd": 0.142
+        "tool_calls": 129,
+        "tool_call_cost_usd": 0.129,
+        "estimated_cost_usd": 0.129
       }
     ],
-    "total_calls": 157,
-    "total_estimated_cost_usd": 0.434384,
+    "total_calls": 144,
+    "total_estimated_cost_usd": 0.43807,
     "records": [
       {
         "provider": "grok",
         "model": "grok-4-fast",
-        "operation": "destination_bundle:callahans",
-        "prompt_tokens": 5052,
-        "completion_tokens": 894,
-        "total_tokens": 5946,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.015468
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
         "operation": "destination_bundle:fish_lake",
-        "prompt_tokens": 5020,
-        "completion_tokens": 1553,
-        "total_tokens": 6573,
+        "prompt_tokens": 5139,
+        "completion_tokens": 1628,
+        "total_tokens": 6767,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.019358
+        "estimated_cost_usd": 0.020046
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
-        "operation": "destination_bundle:shelter_cove",
-        "prompt_tokens": 5020,
-        "completion_tokens": 830,
-        "total_tokens": 5850,
+        "operation": "destination_bundle:callahans",
+        "prompt_tokens": 5171,
+        "completion_tokens": 1777,
+        "total_tokens": 6948,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.01502
+        "estimated_cost_usd": 0.021004
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:mazama_village",
-        "prompt_tokens": 5026,
-        "completion_tokens": 2115,
-        "total_tokens": 7141,
+        "prompt_tokens": 5145,
+        "completion_tokens": 1956,
+        "total_tokens": 7101,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.022742
+        "estimated_cost_usd": 0.022026
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "destination_bundle:shelter_cove",
+        "prompt_tokens": 5139,
+        "completion_tokens": 1545,
+        "total_tokens": 6684,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.019548
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:big_lake",
-        "prompt_tokens": 5030,
-        "completion_tokens": 875,
-        "total_tokens": 5905,
+        "prompt_tokens": 5149,
+        "completion_tokens": 1203,
+        "total_tokens": 6352,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.01531
+        "estimated_cost_usd": 0.017516
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:elk_lake",
-        "prompt_tokens": 5023,
-        "completion_tokens": 1661,
-        "total_tokens": 6684,
+        "prompt_tokens": 5142,
+        "completion_tokens": 1775,
+        "total_tokens": 6917,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.020012
+        "estimated_cost_usd": 0.020934
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:olallie_lake",
-        "prompt_tokens": 5030,
-        "completion_tokens": 1768,
-        "total_tokens": 6798,
+        "prompt_tokens": 5149,
+        "completion_tokens": 1634,
+        "total_tokens": 6783,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.020668
+        "estimated_cost_usd": 0.020102
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:timberline",
-        "prompt_tokens": 5027,
-        "completion_tokens": 1767,
-        "total_tokens": 6794,
+        "prompt_tokens": 5146,
+        "completion_tokens": 1994,
+        "total_tokens": 7140,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.020656
+        "estimated_cost_usd": 0.022256
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:cascade_locks",
-        "prompt_tokens": 5019,
-        "completion_tokens": 1818,
-        "total_tokens": 6837,
+        "prompt_tokens": 5138,
+        "completion_tokens": 1644,
+        "total_tokens": 6782,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.020946
+        "estimated_cost_usd": 0.02014
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:trout_lake",
-        "prompt_tokens": 5011,
-        "completion_tokens": 1590,
-        "total_tokens": 6601,
+        "prompt_tokens": 5130,
+        "completion_tokens": 1567,
+        "total_tokens": 6697,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.019562
+        "estimated_cost_usd": 0.019662
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:white_pass",
-        "prompt_tokens": 5020,
-        "completion_tokens": 1717,
-        "total_tokens": 6737,
+        "prompt_tokens": 5139,
+        "completion_tokens": 1853,
+        "total_tokens": 6992,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.020342
+        "estimated_cost_usd": 0.021396
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:snoqualmie_pass",
-        "prompt_tokens": 5029,
-        "completion_tokens": 1887,
-        "total_tokens": 6916,
+        "prompt_tokens": 5148,
+        "completion_tokens": 2070,
+        "total_tokens": 7218,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.02138
+        "estimated_cost_usd": 0.022716
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:stevens_pass",
-        "prompt_tokens": 5020,
-        "completion_tokens": 1451,
-        "total_tokens": 6471,
+        "prompt_tokens": 5139,
+        "completion_tokens": 1460,
+        "total_tokens": 6599,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.018746
+        "estimated_cost_usd": 0.019038
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:stehekin",
-        "prompt_tokens": 5024,
-        "completion_tokens": 1855,
-        "total_tokens": 6879,
+        "prompt_tokens": 5143,
+        "completion_tokens": 2074,
+        "total_tokens": 7217,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.021178
+        "estimated_cost_usd": 0.02273
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:manning_park",
-        "prompt_tokens": 5044,
-        "completion_tokens": 1818,
-        "total_tokens": 6862,
+        "prompt_tokens": 5163,
+        "completion_tokens": 1605,
+        "total_tokens": 6768,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.020996
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "estimated_cost_usd": 0.019956
       },
       {
         "provider": "serper",
@@ -1782,8 +1639,8 @@
   },
   "errors": [],
   "warnings": [
-    "Attractions removed for no verified URL: 10 of 54 (19%) (threshold: 3)",
-    "Restaurants removed for no verified URL: 84 of 147 (57%) (threshold: 0)"
+    "Attractions removed for no verified URL: 13 of 53 (25%) (threshold: 3)",
+    "Restaurants removed for no verified URL: 82 of 146 (56%) (threshold: 0)"
   ],
-  "html_path": "output\\pct-prod4\\prod\\index.html"
+  "html_path": "output\\pct-v3\\prod\\index.html"
 }
