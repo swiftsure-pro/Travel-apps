@@ -105,6 +105,33 @@ function Get-OptionalPropertyValue {
     return $property.Value
 }
 
+function Test-TrackedByGit {
+    param(
+        [string]$Root,
+        [string]$RelativePath
+    )
+
+    # The one question the filesystem cannot answer: is this entry MISSING
+    # because the trip was deleted, or because this checkout does not contain
+    # it? git knows. A sparse or partial checkout still tracks every path.
+    #
+    # On failure -- git absent, not a repository, anything -- the answer is
+    # "assume tracked", because dropping a live trip from the public catalog
+    # is far worse than leaving a stale row in it.
+    # `ls-files -- <path>` prints the path when tracked, nothing when not, and
+    # exits 0 either way. Deliberately NOT `--error-unmatch`: that reports an
+    # untracked path on stderr, and this script sets $ErrorActionPreference to
+    # Stop, which turns a native command's stderr into a terminating error --
+    # so the catch fired on exactly the case being tested and every ghost
+    # entry was preserved. Verified by injecting one.
+    try {
+        $tracked = & git -C $Root ls-files -- $RelativePath
+        return -not [string]::IsNullOrWhiteSpace(($tracked | Out-String))
+    } catch {
+        return $true
+    }
+}
+
 function New-TripEntry {
     param(
         [string]$Root,
@@ -219,6 +246,46 @@ $trips = @(foreach ($indexFile in $indexFiles) {
     New-TripEntry -Root $rootResolved -IndexFile $indexFile -ExistingByEntry $existingByEntry
 })
 
+
+# MERGE, do not replace. This script scans the filesystem, so it only ever
+# sees the trips this checkout happens to contain -- and a full checkout of
+# this repository fails on Windows path limits inside sw/prod/dev, so the
+# working copy is routinely sparse. Run that way, the old behaviour rewrote
+# trips.json down to whatever was present and silently dropped every other
+# trip from the public landing page. It did exactly that twice, and both
+# times the catalog had to be repaired by hand before publishing.
+#
+# An entry that was not rediscovered on disk is kept when git still tracks
+# it, and dropped only when git does not -- which is the difference between
+# "not checked out here" and "genuinely deleted".
+$discoveredEntries = @{}
+foreach ($trip in $trips) {
+    $discoveredEntries[$trip.entry] = $true
+}
+
+$preserved = @()
+$removed = @()
+foreach ($entryPath in $existingByEntry.Keys) {
+    if ($discoveredEntries.ContainsKey($entryPath)) { continue }
+    if (Test-TrackedByGit -Root $rootResolved -RelativePath $entryPath) {
+        $preserved += $existingByEntry[$entryPath]
+    } else {
+        $removed += $entryPath
+    }
+}
+
+if ($preserved.Count -gt 0) {
+    $trips = @($trips) + @($preserved)
+    Write-Host "Preserved $($preserved.Count) trip(s) tracked by git but not present in this checkout:"
+    foreach ($trip in $preserved) {
+        Write-Host "  $($trip.directory)"
+    }
+}
+
+foreach ($entryPath in $removed) {
+    Write-Host "Dropped $entryPath -- neither on disk nor tracked by git."
+}
+
 # Wrapped in @() so a single-match result stays a 1-element array rather than
 # unwrapping to a bare object -- Sort-Object/pipeline output on exactly one
 # item does that unwrap, which then made $trips.Count below throw
@@ -237,4 +304,4 @@ $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 [System.IO.File]::WriteAllText($catalogPath, $json + [Environment]::NewLine, $utf8NoBom)
 
 Write-Host "Generated trips catalog: $catalogPath"
-Write-Host "Trip count: $($trips.Count)"
+Write-Host "Trip count: $($trips.Count) ($($discoveredEntries.Count) discovered here)"
