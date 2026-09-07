@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-09-07T06:27:43.8046013Z",
+    "updatedAt":  "2026-09-07T06:43:56.6147512Z",
     "trips":  [
                   {
                       "name":  "East Coast Greenway — Portland to New Haven",
@@ -27,7 +27,7 @@
                       "directory":  "PacificCrestTrail/prod",
                       "entry":  "PacificCrestTrail/prod/index.html",
                       "description":  "Oregon and Washington — Border to border, northbound, summer 2026",
-                      "generatedAt":  "2026-09-07T03:17:51.972320+00:00"
+                      "generatedAt":  "2026-09-07T06:40:43.890801+00:00"
                   },
                   {
                       "name":  "Southwest Road Trip",
