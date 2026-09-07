@@ -1,19 +1,19 @@
 {
-    "updatedAt":  "2026-09-07T06:47:48.9859073Z",
+    "updatedAt":  "2026-09-07T07:32:05.4967926Z",
     "trips":  [
                   {
                       "name":  "East Coast Greenway — Portland to New Haven",
                       "directory":  "EastCoastGreenway/prod",
                       "entry":  "EastCoastGreenway/prod/index.html",
                       "description":  "Portland to New Haven — Five states by bike, September 2027",
-                      "generatedAt":  "2026-09-07T06:26:27.693697+00:00"
+                      "generatedAt":  "2026-09-07T07:17:36.000537+00:00"
                   },
                   {
                       "name":  "Europe Exploration",
                       "directory":  "EuropeExploration/prod",
                       "entry":  "EuropeExploration/prod/index.html",
                       "description":  "Five capitals by rail — Brussels to Frankfurt",
-                      "generatedAt":  "2026-09-07T06:47:10.848487+00:00"
+                      "generatedAt":  "2026-09-07T07:31:26.026622+00:00"
                   },
                   {
                       "name":  "Old Hickory \u0026 Asheville",
@@ -27,7 +27,7 @@
                       "directory":  "PacificCrestTrail/prod",
                       "entry":  "PacificCrestTrail/prod/index.html",
                       "description":  "Oregon and Washington — Border to border, northbound, summer 2026",
-                      "generatedAt":  "2026-09-07T06:40:43.890801+00:00"
+                      "generatedAt":  "2026-09-07T07:28:20.175450+00:00"
                   },
                   {
                       "name":  "Southwest Road Trip",

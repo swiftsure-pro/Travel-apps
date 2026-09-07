@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260907T064414.257365Z
-- Generated at (UTC): 2026-09-07T06:47:10.820429+00:00
+- Run ID: 20260907T072821.309090Z
+- Generated at (UTC): 2026-09-07T07:31:25.992348+00:00
 - Destination count: 5
 - Retry recommended: 1
 - Retry attempted: 2
@@ -19,7 +19,7 @@
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (46)
+## Removed for No Verified URL (41)
 - **Brussels, Belgium** (12)
   - Bao Bang Bang — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bao+Bang+Bang+Ixelles+Brussels+Belgium
@@ -74,7 +74,7 @@
   - T Wit Madammeke — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=T+Wit+Madammeke+Dailly+Brussels+Belgium
     - url_collision_rejected: https://www.yelp.com/
-- **Amsterdam, Netherlands** (13)
+- **Amsterdam, Netherlands** (12)
   - FEBO — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=FEBO+Ferdinand+Bolstraat+Amsterdam+Netherlands
     - url_collision_rejected: https://www.amsterdamtourism.org/cheap-eats-amsterdam/
@@ -97,9 +97,6 @@
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=FEBO+Ferdinand+Bolstraat+Amsterdam+Netherlands
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Stubbe%E2%80%99s+Haring+Singel+Amsterdam+Netherlands
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Hoi+Tin+Zeedijk+Amsterdam+Netherlands
-  - Roopram Roti — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.timeout.com/amsterdam/restaurants/cheap-eats-in-amsterdam
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Roopram+Roti+Amsterdam+Netherlands
   - SLA — dinner_recommendations (22 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.timeout.com/amsterdam/restaurants/cheap-eats-in-amsterdam
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Vleminckx+Sausmeesters+Voetboogstraat+33+Amsterdam+Netherlands
@@ -123,7 +120,7 @@
   - Wok to Walk — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wok+to+Walk+Amsterdam+Netherlands
     - url_collision_rejected: https://www.amsterdamtourism.org/best-restaurants-by-budget/
-- **Berlin, Germany** (11)
+- **Berlin, Germany** (10)
   - Burgermeister — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Burgermeister+Oberbaumstra%C3%9Fe+8+Berlin+Germany
     - url_collision_rejected: https://berlinpoche.de/en/cheap-eats-berlin
@@ -161,13 +158,10 @@
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Imren+Grill+Boppstra%C3%9Fe+10+Berlin+Germany
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Hamy+Caf%C3%A9+Hasenheide+10+Berlin+Germany
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=V%C3%B6ner+Boxhagener+Str.+56+Berlin+Germany
-  - East Side Gallery — top_attractions (0 candidate(s) considered)
-- **Prague, Czech Republic** (3)
+- **Prague, Czech Republic** (1)
   - U Šnoků butcher grill — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://www.tripadvisor.com/Restaurant_Review-g274707-d2345670-Reviews-Nase_Maso-Prague_Bohemia.html
-  - Prague Castle — top_attractions (0 candidate(s) considered)
-  - Vysehrad — top_attractions (0 candidate(s) considered)
-- **Frankfurt, Germany** (7)
+- **Frankfurt, Germany** (6)
   - **Exenberger — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Exenberger+Bruchstraße+14+Frankfurt+Germany
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
@@ -180,7 +174,6 @@
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Currywurst+Taunus+25+Taunusstraße+25+Frankfurt+Germany
     - direct_batch_candidate_rejected_generic: https://www.falstaff.com//nordics/die-besten/street-food-guide-germany-2025-the-best-street-food-stands-in-frankfurt
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-  - Farsun — dinner_recommendations (0 candidate(s) considered)
   - Frittenwerk 4.0+/5 $$ German — dinner_recommendations (28 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=AROMA+Oederweg+80A+Frankfurt+Germany
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.co.uk/Restaurant_Review-g187337-d1342805-Reviews-AROMA-Frankfurt_Hesse.html

@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260907T061343.467672Z
-- Generated at (UTC): 2026-09-07T06:26:27.631175+00:00
+- Run ID: 20260907T070739.647999Z
+- Generated at (UTC): 2026-09-07T07:17:35.896977+00:00
 - Destination count: 10
 - Retry recommended: 0
 - Retry attempted: 0
@@ -24,7 +24,7 @@
 - Old Saybrook, Connecticut (old_saybrook) — status=degraded, terminal=stable_without_retry
 - New Haven, Connecticut (new_haven) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (28)
+## Removed for No Verified URL (33)
 - **Kennebunk, Maine** (4)
   - Nunan's Lobster Hut — dinner_recommendations (5 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g40693-Kennebunk_Kennebunks_Maine.html
@@ -60,6 +60,9 @@
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Louie%27s+Restaurant+West+End+Portsmouth+NH
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Rosa+70+State+St+Portsmouth+NH
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Row+34+5+Portwalk+Pl+Portsmouth+NH
+- **Newburyport, Massachusetts** (2)
+  - Joppa Flats Education Center — top_attractions (0 candidate(s) considered)
+  - Parker River National Wildlife Refuge — top_attractions (0 candidate(s) considered)
 - **Boston, Massachusetts** (1)
   - Freedom Trail — top_attractions (0 candidate(s) considered)
 - **Narragansett, Rhode Island** (5)
@@ -78,14 +81,14 @@
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pelly%27s+Place+Narragansett+RI
     - url_collision_rejected: https://restaurantguru.com/Agave-Social-Cocina-Mexicana-Narragansett
   - Point Judith Lighthouse — top_attractions (0 candidate(s) considered)
-  - Scarborough State Beach — top_attractions (0 candidate(s) considered)
+  - South County Bike Path — top_attractions (0 candidate(s) considered)
 - **Westerly, Rhode Island** (2)
   - Two Little Fish — dinner_recommendations (8 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.evendo.com/locations/rhode-island/westerly/best-restaurants
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Two+Little+Fish+Misquamicut+Westerly+RI
     - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g54126-d33232053-Reviews-Caswell_s_Seafood_Haven-Westerly_Washington_County_Rhode_Island.html
   - Watch Hill Lighthouse — top_attractions (0 candidate(s) considered)
-- **Mystic, Connecticut** (3)
+- **Mystic, Connecticut** (6)
   - Barbary Coast — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33845-Mystic_Mystic_Country_Connecticut.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Barbary+Coast+Mystic+CT
@@ -100,7 +103,19 @@
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Oyster+Club+Mystic+CT
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Via+Emilia+24+W+Main+St+Mystic+CT
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Andiamo+Mystic+CT
-- **Old Saybrook, Connecticut** (6)
+  - Thai Basil — dinner_recommendations (4 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g33871-d872873-Reviews-or15-Thai_Spice-Norwalk_Connecticut.html
+    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g33871-d872873-Reviews-or15-Thai_Spice-Norwalk_Connecticut.html
+    - audit_discarded_previously_accepted_url: https://www.tripadvisor.com/Restaurant_Review-g33871-d872873-Reviews-or15-Thai_Spice-Norwalk_Connecticut.html
+      [retention exit (16, 'if self._is_generic_restaurant_landing_url(url, item_name, dest_name, item_tokens=_rest_tokens)')]
+  - Mystic River Boardwalk — top_attractions (0 candidate(s) considered)
+  - Noank Historic District — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.facebook.com/NorwichCTRadio/posts/groton-connecticut-the-village-of-noanka-dock-view-of-long-island-sound-and-maso/1638252271610843/
+    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/NorwichCTRadio/posts/groton-connecticut-the-village-of-noanka-dock-view-of-long-island-sound-and-maso/1638252271610843/
+    - audit_discarded_previously_accepted_url: https://www.facebook.com/NorwichCTRadio/posts/groton-connecticut-the-village-of-noanka-dock-view-of-long-island-sound-and-maso/1638252271610843/
+      [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
+- **Old Saybrook, Connecticut** (5)
+  - Dock & Dine — dinner_recommendations (0 candidate(s) considered)
   - Himalaya Cafe — dinner_recommendations (7 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Himalaya+Cafe+1456+Boston+Post+Rd+Old+Saybrook+CT
@@ -109,18 +124,12 @@
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=La+Marea+Ristorante+732+Middlesex+Turnpike+Old+Saybrook+CT
     - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g33878-d11881849-Reviews-or90-La_Marea-Old_Saybrook_Connecticut.html
-  - Saybrook Fish House — dinner_recommendations (0 candidate(s) considered)
   - Terra Mar Grill — dinner_recommendations (3 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Terra+Mar+Grill+2+Bridge+St+Old+Saybrook+CT
     - url_collision_rejected: https://en.wikivoyage.org/wiki/Old_Saybrook
-  - Fenwick Historic District — top_attractions (3 candidate(s) considered)
-    - search_resolved: https://www.facebook.com/TheNewEnglandCoast/posts/katharine-hepburns-house-on-fenwick-in-old-saybrook-connecticut-wanderlust-water/1170879471706302/
-    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/TheNewEnglandCoast/posts/katharine-hepburns-house-on-fenwick-in-old-saybrook-connecticut-wanderlust-water/1170879471706302/
-    - audit_discarded_previously_accepted_url: https://www.facebook.com/TheNewEnglandCoast/posts/katharine-hepburns-house-on-fenwick-in-old-saybrook-connecticut-wanderlust-water/1170879471706302/
-      [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
-  - Harvey's Beach — top_attractions (0 candidate(s) considered)
-- **New Haven, Connecticut** (3)
+  - The Blue Oar — dinner_recommendations (0 candidate(s) considered)
+- **New Haven, Connecticut** (4)
   - Caseus Fromagerie & Bistro — dinner_recommendations (0 candidate(s) considered)
   - Frank Pepe Pizzeria Napoletana — dinner_recommendations (3 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33851-New_Haven_Connecticut.html
@@ -129,3 +138,4 @@
   - Lumi Asian Fusion — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Lumi+Asian+Fusion+460+Universal+Drive+North+North+Haven+CT
     - url_collision_rejected: https://stacker.com/stories/connecticut/new-haven/highest-rated-fine-dining-restaurants-new-haven-area-diners
+  - Yale University — top_attractions (0 candidate(s) considered)

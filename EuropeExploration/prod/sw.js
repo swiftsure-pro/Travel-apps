@@ -1,4 +1,4 @@
-const CACHE = 'roadtrip-shell-20260907T064414.257365Z';
+const CACHE = 'roadtrip-shell-20260907T072821.309090Z';
 const SHELL = ['./', './index.html', './manifest.webmanifest'];
 const IMAGES = ["https://images.unsplash.com/photo-1548092304-e0205cb0031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8QnJ1c3NlbHMlMkMlMjBCZWxnaXVtfGVufDB8MHx8fDE3ODg1OTEzNjR8MA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1581161424127-30b1f7eee75f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8QnJ1c3NlbHMlMkMlMjBCZWxnaXVtfGVufDB8MHx8fDE3ODg1OTEzNjR8MA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1582124534218-f7bf8b908f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8M3x8QnJ1c3NlbHMlMkMlMjBCZWxnaXVtfGVufDB8MHx8fDE3ODg1OTEzNjR8MA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1701013694884-a278c7acea5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8NHx8QnJ1c3NlbHMlMkMlMjBCZWxnaXVtfGVufDB8MHx8fDE3ODg1OTEzNjR8MA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8QW1zdGVyZGFtJTJDJTIwTmV0aGVybGFuZHN8ZW58MHwwfHx8MTc4ODU5MTM2NHww&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1584003564911-a7a321c84e1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8QW1zdGVyZGFtJTJDJTIwTmV0aGVybGFuZHN8ZW58MHwwfHx8MTc4ODU5MTM2NHww&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8M3x8QW1zdGVyZGFtJTJDJTIwTmV0aGVybGFuZHN8ZW58MHwwfHx8MTc4ODU5MTM2NHww&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1618259278412-2819cbdea4dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8QmVybGluJTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg4NTkxMzY0fDA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1587330979470-3595ac045ab0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8M3x8QmVybGluJTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg4NTkxMzY0fDA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1592906209472-a36b1f3782ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8UHJhZ3VlJTJDJTIwQ3plY2glMjBSZXB1YmxpY3xlbnwwfDB8fHwxNzg4NTkxMzY0fDA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1458150945447-7fb764c11a92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8UHJhZ3VlJTJDJTIwQ3plY2glMjBSZXB1YmxpY3xlbnwwfDB8fHwxNzg4NTkxMzY0fDA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1619558846792-1fc47446bbd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8M3x8UHJhZ3VlJTJDJTIwQ3plY2glMjBSZXB1YmxpY3xlbnwwfDB8fHwxNzg4NTkxMzY0fDA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1596811311317-c948dd4382dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8NHx8UHJhZ3VlJTJDJTIwQ3plY2glMjBSZXB1YmxpY3xlbnwwfDB8fHwxNzg4NTkxMzY0fDA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1605186620429-1ece911f171c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8MXx8RnJhbmtmdXJ0JTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg4NTkxMzcxfDA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1607879344639-d5f8dec22a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8Mnx8RnJhbmtmdXJ0JTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg4NTkxMzcxfDA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1577185816322-21f2a92b1342?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8M3x8RnJhbmtmdXJ0JTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg4NTkxMzcxfDA&ixlib=rb-4.1.0&q=80&w=1080", "https://images.unsplash.com/photo-1642096633192-9290503a9a38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDAxOTE3fDB8MXxzZWFyY2h8NHx8RnJhbmtmdXJ0JTJDJTIwR2VybWFueXxlbnwwfDB8fHwxNzg4NTkxMzcxfDA&ixlib=rb-4.1.0&q=80&w=1080"];
 
@@ -46,6 +46,41 @@ self.addEventListener('fetch', (event) => {
     const isImage = event.request.destination === 'image';
 
     if (!sameOrigin && !cacheableCdn && !isImage) {
+        return;
+    }
+
+    // A page navigation goes to the network FIRST, and falls back to the
+    // cache only when the network cannot answer.
+    //
+    // Cache-first is right for images and pinned CDN assets -- those are
+    // immutable, and their URLs change when their content does. It is wrong
+    // for the itinerary itself. index.html is precached in SHELL, so
+    // cache-first served the copy from whenever the reader first opened the
+    // page and kept serving it: a republished guide was invisible for at
+    // least one load, and indefinitely to a reader who never happened to
+    // reload twice. That is exactly backwards for the one file that is
+    // expected to be republished, and it shipped three corrected trail links
+    // that nobody could see.
+    //
+    // The offline guarantee is unchanged. Whatever is cached is still
+    // returned whenever fetch rejects, which is what being offline looks
+    // like from here.
+    if (event.request.mode === 'navigate') {
+        event.respondWith(
+            fetch(event.request)
+                .then((response) => {
+                    if (response && response.ok) {
+                        const clone = response.clone();
+                        caches.open(CACHE).then((cache) => cache.put(event.request, clone));
+                    }
+                    return response;
+                })
+                .catch(() =>
+                    caches
+                        .match(event.request)
+                        .then((cached) => cached || caches.match('./index.html'))
+                )
+        );
         return;
     }
 
