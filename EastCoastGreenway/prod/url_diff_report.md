@@ -1,15 +1,14 @@
 # URL Diff Report
 
-- Run ID: 20260905T072521.706106Z
-- Generated at (UTC): 2026-09-05T07:29:10.389867+00:00
+- Run ID: 20260907T022237.265856Z
+- Generated at (UTC): 2026-09-07T02:38:13.472469+00:00
 - Baseline URLs: 0
-- Current URLs: 229
+- Current URLs: 209
 - Kept: 0
-- Added: 229
+- Added: 209
 - Removed: 0
 
-## Added URLs (229)
-- https://arboretum.harvard.edu/visit/
+## Added URLs (209)
 - https://barbouchee.com/
 - https://carminenewburyport.com/newburyport-carmine-food-menu
 - https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css
@@ -17,9 +16,8 @@
 - https://ctvisit.com/listings/fort-saybrook-monument-park
 - https://customhousemaritimemuseum.org/
 - https://en.wikipedia.org/wiki/New_Haven_Green
+- https://en.wikipedia.org/wiki/Point_Judith_Light
 - https://en.wikipedia.org/wiki/Wedding_Cake_House_(Kennebunk,_Maine)
-- https://evendo.com/locations/connecticut/new-haven/landmark/long-wharf-park
-- https://evendo.com/locations/massachusetts/essex-county/attraction/wentworth-coolidge-mansion/best-landmarks
 - https://fmstationcafe.com/
 - https://forecast.weather.gov/MapClick.php?lat=41.2918&lon=-72.3762
 - https://forecast.weather.gov/MapClick.php?lat=41.3082&lon=-72.9251
@@ -42,8 +40,6 @@
 - https://newburyportfish.com/oysterfest-2026/
 - https://oberlinrestaurant.com/reservations
 - https://oldemistickvillage.com/
-- https://oldsaybrookct.myrec.com/info/facilities/details.aspx?FacilityID=8307
-- https://peabody.yale.edu
 - https://portvidaamexicancantina.com/newburyport-port-vida-a-mexican-cantina-food-menu
 - https://restaurantguru.com/Agave-Social-Cocina-Mexicana-Narragansett
 - https://riparks.ri.gov/beaches/misquamicut-state-beach
@@ -51,23 +47,20 @@
 - https://thecoastguardhouse.com/narragansett-the-coast-guard-house-events
 - https://thejoynestrestaurant.com/newburyport-the-tannery-the-joy-nest-food-menu
 - https://themarinermystic.com/reservations
-- https://thewatchhillconservancy.org/napatree/
 - https://trattoria-south.com/dinner/
 - https://unionleague.com/reservations
 - https://ussconstitutionmuseum.org/
 - https://visitmystic.info/
-- https://washinboston.com/
-- https://watchhilllighthousekeepers.org/
-- https://weekapauginn.com/
+- https://www.alamy.com/portsmouth-harbor-lighthouse-and-fort-constitution-state-historic-site-in-summer-new-castle-new-hampshire-usa-image236542826.html
 - https://www.alltrails.com/trail/us/connecticut/shoreline-greenway-trail
 - https://www.alltrails.com/trail/us/maine/biddeford-to-kennebunk-via-eastern-
 - https://www.alltrails.com/trail/us/new-hampshire/hampton-to-portsmouth-via-the
 - https://www.alltrails.com/trail/us/rhode-island/south-county-bike-path
 - https://www.alltrails.com/trail/us/rhode-island/washington-secondary-rail-trai
 - https://www.barvlaha.com/
+- https://www.boston.gov/parks/boston-common
 - https://www.boston.gov/parks/public-garden
 - https://www.bostoniapublichouse.com/menu
-- https://www.bush41library.gov/galleries/walkers-point-kennebunkport-maine
 - https://www.chezrosabistro.com/grabyourtable
 - https://www.consigliosrestaurant.com/dining-menu
 - https://www.earthathiddenpond.com/make-a-reservation
@@ -85,27 +78,28 @@
 - https://www.google.com/maps/dir/?destination=Portsmouth%2C%20New%20Hampshire&travelmode=bicycling&api=1&origin=Kennebunk%2C%20Maine
 - https://www.google.com/maps/dir/?destination=Providence%2C%20Rhode%20Island&travelmode=bicycling&api=1&origin=Boston%2C%20Massachusetts
 - https://www.google.com/maps/dir/?destination=Westerly%2C%20Rhode%20Island&travelmode=bicycling&api=1&origin=Narragansett%2C%20Rhode%20Island
-- https://www.google.com/maps/dir/?origin=Boston%20Public%20Garden&amp;destination=Beacon%20Hill%20Boston%2C%20Massachusetts&amp;travelmode=driving&amp;api=1&amp;waypoints=USS%20Constitution%20Boston%2C%20Massachusetts|Fenway%20Park%20Boston%2C%20Massachusetts|Arnold%20Arboretum%20Boston%2C%20Massachusetts
-- https://www.google.com/maps/dir/?origin=East%20Rock%20Park%20New%20Haven%2C%20Connecticut&amp;destination=Long%20Wharf%20Park%20New%20Haven%2C%20Connecticut&amp;travelmode=driving&amp;api=1&amp;waypoints=Peabody%20Museum%20of%20Natural%20History%20New%20Haven%2C%20Connecticut|New%20Haven%20Green
-- https://www.google.com/maps/dir/?origin=Maudslay%20State%20Park&amp;destination=Custom%20House%20Maritime%20Museum%20Newburyport%2C%20Massachusetts&amp;travelmode=driving&amp;api=1&amp;waypoints=Joppa%20Park%20Newburyport%2C%20Massachusetts
-- https://www.google.com/maps/dir/?origin=Mystic%20Seaport%20Museum&amp;destination=Mystic%20River%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Mystic%20Aquarium|Olde%20Mistick%20Village%20Mystic%2C%20Connecticut
-- https://www.google.com/maps/dir/?origin=Saybrook%20Point&amp;destination=Fort%20Saybrook%20Monument%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Old%20Saybrook%20Town%20Beach
-- https://www.google.com/maps/dir/?origin=Strawbery%20Banke%20Museum%20Portsmouth%2C%20New%20Hampshire&amp;destination=Market%20Square%20Portsmouth%2C%20New%20Hampshire&amp;travelmode=driving&amp;api=1&amp;waypoints=Wentworth-Coolidge%20Mansion%20Portsmouth%2C%20New%20Hampshire|Seacoast%20Science%20Center%20Portsmouth%2C%20New%20Hampshire|Prescott%20Park%20Portsmouth%2C%20New%20Hampshire
-- https://www.google.com/maps/dir/?origin=The%20Towers%20Narragansett%2C%20Rhode%20Island&amp;destination=Salty%20Brine%20State%20Beach%20Narragansett%2C%20Rhode%20Island&amp;travelmode=driving&amp;api=1&amp;waypoints=Scarborough%20State%20Beach%20Narragansett%2C%20Rhode%20Island
-- https://www.google.com/maps/dir/?origin=Walker%27s%20Point%20Kennebunk%2C%20Maine&amp;destination=First%20Parish%20Church%20Kennebunk%2C%20Maine&amp;travelmode=driving&amp;api=1&amp;waypoints=Kennebunk%20Beach|The%20Wedding%20Cake%20House%20Kennebunk%2C%20Maine
-- https://www.google.com/maps/dir/?origin=Watch%20Hill%20Lighthouse%20Westerly%2C%20Rhode%20Island&amp;destination=Weekapaug%20Beach%20Westerly%2C%20Rhode%20Island&amp;travelmode=driving&amp;api=1&amp;waypoints=Misquamicut%20State%20Beach%20Westerly%2C%20Rhode%20Island|Wilcox%20Park%20Westerly%2C%20Rhode%20Island|Westerly%20Town%20Beach
-- https://www.google.com/maps/dir/?origin=WaterFire%20Providence%2C%20Rhode%20Island&amp;destination=Federal%20Hill%20Providence%2C%20Rhode%20Island&amp;travelmode=driving&amp;api=1&amp;waypoints=Roger%20Williams%20Park%20Providence%2C%20Rhode%20Island|RISD%20Museum%20Providence%2C%20Rhode%20Island|Providence%20Athenaeum|Prospect%20Terrace%20Park%20Providence%2C%20Rhode%20Island
+- https://www.google.com/maps/dir/?origin=East%20Rock%20Park%20New%20Haven%2C%20Connecticut&amp;destination=Lighthouse%20Point%20Park%20New%20Haven%2C%20Connecticut&amp;travelmode=driving&amp;api=1&amp;waypoints=New%20Haven%20Green
+- https://www.google.com/maps/dir/?origin=Fenway%20Park%20Boston%2C%20Massachusetts&amp;destination=Bunker%20Hill%20Monument%20Boston%2C%20Massachusetts&amp;travelmode=driving&amp;api=1&amp;waypoints=USS%20Constitution%20Boston%2C%20Massachusetts|Public%20Garden%20Boston%2C%20Massachusetts|Boston%20Common
+- https://www.google.com/maps/dir/?origin=Mystic%20Seaport%20Museum&amp;destination=Mystic%20River%20Boathouse%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Mystic%20Aquarium|Olde%20Mistick%20Village%20Mystic%2C%20Connecticut
+- https://www.google.com/maps/dir/?origin=Old%20Saybrook%20Town%20Beach&amp;destination=Fort%20Saybrook%20Monument%20Park&amp;travelmode=driving&amp;api=1
+- https://www.google.com/maps/dir/?origin=Plum%20Island%20Beach%20Newburyport%2C%20Massachusetts&amp;destination=Maudslay%20State%20Park&amp;travelmode=driving&amp;api=1&amp;waypoints=Custom%20House%20Maritime%20Museum%20Newburyport%2C%20Massachusetts
+- https://www.google.com/maps/dir/?origin=RISD%20Museum%20Providence%2C%20Rhode%20Island&amp;destination=Roger%20Williams%20Park%20Providence%2C%20Rhode%20Island&amp;travelmode=driving&amp;api=1&amp;waypoints=Providence%20Athenaeum|Benefit%20Street%20Mile%20of%20History%20Providence%2C%20Rhode%20Island
+- https://www.google.com/maps/dir/?origin=Strawbery%20Banke%20Museum%20Portsmouth%2C%20New%20Hampshire&amp;destination=Prescott%20Park%20Portsmouth%2C%20New%20Hampshire&amp;travelmode=driving&amp;api=1&amp;waypoints=Fort%20Constitution%20State%20Historic%20Site%20Portsmouth%2C%20New%20Hampshire
+- https://www.google.com/maps/dir/?origin=The%20Towers%20Narragansett%2C%20Rhode%20Island&amp;destination=Narragansett%20Beach&amp;travelmode=driving&amp;api=1&amp;waypoints=Point%20Judith%20Lighthouse%20Narragansett%2C%20Rhode%20Island|South%20County%20Museum%20Narragansett%2C%20Rhode%20Island
+- https://www.google.com/maps/dir/?origin=The%20Wedding%20Cake%20House%20Kennebunk%2C%20Maine&amp;destination=Gooch%27s%20Beach%20Kennebunk%2C%20Maine&amp;travelmode=driving&amp;api=1
+- https://www.google.com/maps/dir/?origin=Wilcox%20Park%20Westerly%2C%20Rhode%20Island&amp;destination=Misquamicut%20State%20Beach%20Westerly%2C%20Rhode%20Island&amp;travelmode=driving&amp;api=1
 - https://www.google.com/maps/search/?api=1&amp;query=%2A%2AAgave%20Social%20Cocina%20Mexicana%2A%2A%20Narragansett%2C%20Rhode%20Island&amp;query_place_id=ChIJd9cVndS75YkRvXyzD-TKnMs
 - https://www.google.com/maps/search/?api=1&amp;query=%2A%2ABoon%20Street%20Market%2A%2A%20Narragansett%2C%20Rhode%20Island&amp;query_place_id=ChIJ8Zg7N4G75YkRwxB2ai6bUM4
 - https://www.google.com/maps/search/?api=1&amp;query=%2A%2ACoast%20Guard%20House%2A%2A%20Narragansett%2C%20Rhode%20Island&amp;query_place_id=ChIJ5U7VlPK75YkRbUr1BEKxD1c
 - https://www.google.com/maps/search/?api=1&amp;query=%2A%2ATrattoria%20Romana%2A%2A%20Narragansett%2C%20Rhode%20Island&amp;query_place_id=ChIJ9dnFI9G75YkRHJZu_N8Ij30
-- https://www.google.com/maps/search/?api=1&amp;query=Arnold%20Arboretum%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJaxH09Dh544kRyBRUrinxRfQ
+- https://www.google.com/maps/search/?api=1&amp;query=311%20Omakase%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJnWDc3Bh744kRdAPopyBzyVk
 - https://www.google.com/maps/search/?api=1&amp;query=Bar%2025%20NBPT%20Newburyport%2C%20Massachusetts&amp;query_place_id=ChIJx4iHfsTh4okRRkfTnAld9ts
 - https://www.google.com/maps/search/?api=1&amp;query=Bar%20Bouch%C3%A9e%20Old%20Saybrook%2C%20Connecticut&amp;query_place_id=ChIJZ_poyzgp5okRZsgbO3GY33E
 - https://www.google.com/maps/search/?api=1&amp;query=Bar%20Vlaha%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJb6tocJR544kRkl3zzewP3Os
-- https://www.google.com/maps/search/?api=1&amp;query=Beacon%20Hill%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJT84qgp5w44kR2MRBT4FBDq0
-- https://www.google.com/maps/search/?api=1&amp;query=Boston%20Public%20Garden&amp;query_place_id=ChIJu2Argp5w44kRAecWXgt_18s
+- https://www.google.com/maps/search/?api=1&amp;query=Benefit%20Street%20Mile%20of%20History%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJKwCkRzxF5IkRDLW05EWpfp8
+- https://www.google.com/maps/search/?api=1&amp;query=Boston%20Common&amp;query_place_id=ChIJKyNuvJ1w44kRBE-pe_yDhj8
 - https://www.google.com/maps/search/?api=1&amp;query=Bostonia%20Public%20House%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJFUWFZ4Zw44kR0RI3sWVFTnE
+- https://www.google.com/maps/search/?api=1&amp;query=Bunker%20Hill%20Monument%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJ_5cHC_Jw44kRmALscjIXr6w
 - https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Nuovo%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJTylwOxdF5IkRTz6Qim5c_tA
 - https://www.google.com/maps/search/?api=1&amp;query=Carmine%20Newburyport&amp;query_place_id=ChIJb7s44Mzh4okRpzOetty1u54
 - https://www.google.com/maps/search/?api=1&amp;query=Chamard%20Vineyards%20Bistro%20Old%20Saybrook%2C%20Connecticut&amp;query_place_id=ChIJ7_yfl0Av5okR2DAXUHVxj3I
@@ -119,31 +113,29 @@
 - https://www.google.com/maps/search/?api=1&amp;query=East%20Rock%20Park%20New%20Haven%2C%20Connecticut&amp;query_place_id=ChIJ9yZW2efZ54kRdBvObMNzPt4
 - https://www.google.com/maps/search/?api=1&amp;query=East%20Side%20Pockets%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJecDaeSNF5IkRK8q6zufi0JI
 - https://www.google.com/maps/search/?api=1&amp;query=FM%20Station%20Cafe%20Newburyport%2C%20Massachusetts&amp;query_place_id=ChIJfYf817vh4okRsfThG_SuEZM
-- https://www.google.com/maps/search/?api=1&amp;query=Federal%20Hill%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJ-wjGDXVF5IkRVpJolJY-ETg
 - https://www.google.com/maps/search/?api=1&amp;query=Fenway%20Park%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJbz8lP_Z544kRBFV6ZMsNgKI
-- https://www.google.com/maps/search/?api=1&amp;query=First%20Parish%20Church%20Kennebunk%2C%20Maine&amp;query_place_id=ChIJ_c-0q9etskwRCI8VKSStGR0
+- https://www.google.com/maps/search/?api=1&amp;query=Fort%20Constitution%20State%20Historic%20Site%20Portsmouth%2C%20New%20Hampshire&amp;query_place_id=ChIJCfe2brK44okRlg4TMilUVm4
 - https://www.google.com/maps/search/?api=1&amp;query=Fort%20Saybrook%20Monument%20Park&amp;query_place_id=ChIJQUdWimgi5okRojBJwoOmEbE
 - https://www.google.com/maps/search/?api=1&amp;query=Gift%20Horse%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJl_BvqVRF5IkRIydcTZ-Wbtw
 - https://www.google.com/maps/search/?api=1&amp;query=Giulia%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJTRa97T9344kRt_HspVyvshg
+- https://www.google.com/maps/search/?api=1&amp;query=Gooch%27s%20Beach%20Kennebunk%2C%20Maine&amp;query_place_id=ChIJ_-MOaJyrskwRo_p3n4Ng5eo
 - https://www.google.com/maps/search/?api=1&amp;query=Jewel%20in%20the%20Crown%20Newburyport%2C%20Massachusetts&amp;query_place_id=ChIJ02L8eajh4okR8jo_fppdDJ0
-- https://www.google.com/maps/search/?api=1&amp;query=Joppa%20Park%20Newburyport%2C%20Massachusetts&amp;query_place_id=ChIJNQqLE93h4okRzDveFpKcAYY
-- https://www.google.com/maps/search/?api=1&amp;query=Kennebunk%20Beach&amp;query_place_id=ChIJD5oNv3-rskwR6W8RcMNpJ1U
 - https://www.google.com/maps/search/?api=1&amp;query=La%20Maison%20Navarre%20Portsmouth%2C%20New%20Hampshire&amp;query_place_id=ChIJwWRIDQu_4okROWjCXVbHGxY
+- https://www.google.com/maps/search/?api=1&amp;query=Lighthouse%20Point%20Park%20New%20Haven%2C%20Connecticut&amp;query_place_id=ChIJ6wFoOPZ36IkR4tws9H5FTlc
 - https://www.google.com/maps/search/?api=1&amp;query=Liv%27s%20Oyster%20Bar%20%26%20Restaurant%20Old%20Saybrook%2C%20Connecticut&amp;query_place_id=ChIJq8ccbVMi5okRN010jOz3uKY
-- https://www.google.com/maps/search/?api=1&amp;query=Long%20Wharf%20Park%20New%20Haven%2C%20Connecticut&amp;query_place_id=ChIJuzP8Mz_Y54kRPtOkDJklpfw
 - https://www.google.com/maps/search/?api=1&amp;query=Longo%20Ristorante%20Westerly%2C%20Rhode%20Island&amp;query_place_id=ChIJq0mK6Bbn5YkRb14Dvc0Ig2c
 - https://www.google.com/maps/search/?api=1&amp;query=Loretta%20Newburyport%2C%20Massachusetts&amp;query_place_id=ChIJRyhWQKjh4okREtAtqOKuHbI
 - https://www.google.com/maps/search/?api=1&amp;query=Louie%27s%20Restaurant%20Portsmouth%2C%20New%20Hampshire&amp;query_place_id=ChIJsXWj8gy_4okRHRciAgWrlmc
 - https://www.google.com/maps/search/?api=1&amp;query=Luigi%27s%20Restaurant%20Old%20Saybrook%2C%20Connecticut&amp;query_place_id=ChIJbUaRlJUj5okR1fw0HXhGrDs
 - https://www.google.com/maps/search/?api=1&amp;query=Mahaniyom%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJS03YYr9544kRqpoJvSgIyWE
-- https://www.google.com/maps/search/?api=1&amp;query=Market%20Square%20Portsmouth%2C%20New%20Hampshire&amp;query_place_id=ChIJt0vJbAy_4okRH63mE3BPxqc
 - https://www.google.com/maps/search/?api=1&amp;query=Maudslay%20State%20Park&amp;query_place_id=ChIJccFZQsnj4okRZsj7caDCVVg
 - https://www.google.com/maps/search/?api=1&amp;query=Misquamicut%20State%20Beach%20Westerly%2C%20Rhode%20Island&amp;query_place_id=ChIJ-SQAHdbl5YkRJSKhjOSI0xs
 - https://www.google.com/maps/search/?api=1&amp;query=Mooncusser%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJHe5IgHR644kRtWtdJlRLe5w
 - https://www.google.com/maps/search/?api=1&amp;query=Mystic%20Aquarium&amp;query_place_id=ChIJcwPEodjh5YkRPEKrXqApeCM
-- https://www.google.com/maps/search/?api=1&amp;query=Mystic%20River%20Park&amp;query_place_id=ChIJpaCkPlcL5okRbVe6p_E3kwM
+- https://www.google.com/maps/search/?api=1&amp;query=Mystic%20River%20Boathouse%20Park&amp;query_place_id=ChIJu8rF4g0K5okRBuD_vn-mScA
 - https://www.google.com/maps/search/?api=1&amp;query=Mystic%20Seaport%20Museum&amp;query_place_id=ChIJV8xqXRAK5okRfGbbHiMrR9U
 - https://www.google.com/maps/search/?api=1&amp;query=Nam%20Khong%20Westerly%2C%20Rhode%20Island&amp;query_place_id=ChIJy97WKf_m5YkRWNjOE9Ga8OM
+- https://www.google.com/maps/search/?api=1&amp;query=Narragansett%20Beach&amp;query_place_id=ChIJFYe-8JS75YkRgmOiYyzc5lg
 - https://www.google.com/maps/search/?api=1&amp;query=New%20Haven%20Green&amp;query_place_id=ChIJ9WWd6bTZ54kRtRINNJT5rRM
 - https://www.google.com/maps/search/?api=1&amp;query=Newburyport%20Fish&amp;query_place_id=ChIJixileQfh4okR4PF6C1WNIGs
 - https://www.google.com/maps/search/?api=1&amp;query=O%20Ya%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJCwHivHh644kRPmTmzVpMuhw
@@ -152,20 +144,18 @@
 - https://www.google.com/maps/search/?api=1&amp;query=Old%20Saybrook%20Town%20Beach&amp;query_place_id=ChIJQwAjT9oj5okRokSLW7L8eQg
 - https://www.google.com/maps/search/?api=1&amp;query=Olde%20Mistick%20Village%20Mystic%2C%20Connecticut&amp;query_place_id=ChIJ43x-LHQK5okRTOtOWRJ0nZA
 - https://www.google.com/maps/search/?api=1&amp;query=Olea%20New%20Haven%2C%20Connecticut&amp;query_place_id=ChIJp_FOMLPZ54kRbW6zfFr1mjw
-- https://www.google.com/maps/search/?api=1&amp;query=Peabody%20Museum%20of%20Natural%20History%20New%20Haven%2C%20Connecticut&amp;query_place_id=ChIJ0R3hdMjZ54kRR4BDDTt5aAM
+- https://www.google.com/maps/search/?api=1&amp;query=Plum%20Island%20Beach%20Newburyport%2C%20Massachusetts&amp;query_place_id=ChIJzy7RjJvg4okRRDzd6IwOV_4
+- https://www.google.com/maps/search/?api=1&amp;query=Point%20Judith%20Lighthouse%20Narragansett%2C%20Rhode%20Island&amp;query_place_id=ChIJlXCf-Au-5YkRWnri5CTgfG4
 - https://www.google.com/maps/search/?api=1&amp;query=Port%20Vida%20a%20Mexican%20Cantina%20Newburyport%2C%20Massachusetts&amp;query_place_id=ChIJjUwBQ63h4okRYhSQweI6I3w
 - https://www.google.com/maps/search/?api=1&amp;query=Prescott%20Park%20Portsmouth%2C%20New%20Hampshire&amp;query_place_id=ChIJz1I1CxK_4okR_5Z8smun0UM
-- https://www.google.com/maps/search/?api=1&amp;query=Prospect%20Terrace%20Park%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJT9VQaRhF5IkR1K6eAXnTBe8
 - https://www.google.com/maps/search/?api=1&amp;query=Providence%20Athenaeum&amp;query_place_id=ChIJwWTSKhZF5IkR99WHmZo5EeY
+- https://www.google.com/maps/search/?api=1&amp;query=Public%20Garden%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJu2Argp5w44kRAecWXgt_18s
 - https://www.google.com/maps/search/?api=1&amp;query=RISD%20Museum%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJF8ZeSxZF5IkRvBdY0FYlEUk
 - https://www.google.com/maps/search/?api=1&amp;query=Rio%20Salado%20Mystic%2C%20Connecticut&amp;query_place_id=ChIJd1LCiuAL5okR1vKCVUB9-gk
 - https://www.google.com/maps/search/?api=1&amp;query=Roger%20Williams%20Park%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJ5TV-L8xP5IkRfJSh5GOOBsk
 - https://www.google.com/maps/search/?api=1&amp;query=Rosella%20Kennebunk%2C%20Maine&amp;query_place_id=ChIJbUtosYKrskwRN8Rl1-QXovI
-- https://www.google.com/maps/search/?api=1&amp;query=Salty%20Brine%20State%20Beach%20Narragansett%2C%20Rhode%20Island&amp;query_place_id=ChIJM_nZyke-5YkRCYynUtDPGzU
 - https://www.google.com/maps/search/?api=1&amp;query=Sarma%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJ67tplNJw44kR--jFyZ2szbg
-- https://www.google.com/maps/search/?api=1&amp;query=Saybrook%20Point&amp;query_place_id=ChIJP5kNMGgi5okR-d0ezzfGsoo
-- https://www.google.com/maps/search/?api=1&amp;query=Scarborough%20State%20Beach%20Narragansett%2C%20Rhode%20Island&amp;query_place_id=ChIJyeaXwSu85YkRQWWhKMQ5IMI
-- https://www.google.com/maps/search/?api=1&amp;query=Seacoast%20Science%20Center%20Portsmouth%2C%20New%20Hampshire&amp;query_place_id=ChIJjVAA_lTH4okReV6_UMGzTwA
+- https://www.google.com/maps/search/?api=1&amp;query=South%20County%20Museum%20Narragansett%2C%20Rhode%20Island&amp;query_place_id=ChIJubk7aem75YkRWEnGMFXlL2s
 - https://www.google.com/maps/search/?api=1&amp;query=Strawbery%20Banke%20Museum%20Portsmouth%2C%20New%20Hampshire&amp;query_place_id=ChIJr0Ecdg2_4okRc5H5JcPXtwk
 - https://www.google.com/maps/search/?api=1&amp;query=Surf%20Portsmouth&amp;query_place_id=ChIJ5-7khQ6_4okRMVHgUiVeS24
 - https://www.google.com/maps/search/?api=1&amp;query=Ten%20Steak%20%26%20Sushi%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJYeeUNhRF5IkRnrn5W9b_nvM
@@ -179,29 +169,21 @@
 - https://www.google.com/maps/search/?api=1&amp;query=The%20Towers%20Narragansett%2C%20Rhode%20Island&amp;query_place_id=ChIJm8rVkvK75YkRpz_FjbhVkBo
 - https://www.google.com/maps/search/?api=1&amp;query=The%20Wedding%20Cake%20House%20Kennebunk%2C%20Maine&amp;query_place_id=ChIJK2rccyasskwRdc2J7u9aR0s
 - https://www.google.com/maps/search/?api=1&amp;query=USS%20Constitution%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJU4NB08Fx44kRLFQMqMDCm1Y
-- https://www.google.com/maps/search/?api=1&amp;query=Union%20League%20Cafe%20New%20Haven%2C%20Connecticut&amp;query_place_id=ChIJj9ZJRrPZ54kRXfrZx-OiVOM
-- https://www.google.com/maps/search/?api=1&amp;query=Wa%20Shin%20Boston%2C%20Massachusetts&amp;query_place_id=ChIJ2Tp-EGR744kRmfemBPwk9Vk
-- https://www.google.com/maps/search/?api=1&amp;query=Walker%27s%20Point%20Kennebunk%2C%20Maine&amp;query_place_id=ChIJUT0MWqmrskwR37UCygcTnTs
-- https://www.google.com/maps/search/?api=1&amp;query=Watch%20Hill%20Lighthouse%20Westerly%2C%20Rhode%20Island&amp;query_place_id=ChIJVVUlC4jj5YkRKYTU0Sw0ueM
-- https://www.google.com/maps/search/?api=1&amp;query=WaterFire%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJv8qDGhFF5IkRieJmbHELqJM
-- https://www.google.com/maps/search/?api=1&amp;query=Weekapaug%20Beach%20Westerly%2C%20Rhode%20Island&amp;query_place_id=ChIJtyr_dBTp5YkRB59DoWS1uRg
-- https://www.google.com/maps/search/?api=1&amp;query=Wentworth-Coolidge%20Mansion%20Portsmouth%2C%20New%20Hampshire&amp;query_place_id=ChIJnTgVIma_4okRAMF3FLLU2bk
-- https://www.google.com/maps/search/?api=1&amp;query=Westerly%20Town%20Beach&amp;query_place_id=ChIJGaoXOXTm5YkRV6vL9psibwM
+- https://www.google.com/maps/search/?api=1&amp;query=Union%20League%20Cafe%20New%20Haven%2C%20Connecticut&amp;query_place_id=ChIJv7Qg40zY54kRsSkESfei_NI
 - https://www.google.com/maps/search/?api=1&amp;query=Wilcox%20Park%20Westerly%2C%20Rhode%20Island&amp;query_place_id=ChIJibA5MBfn5YkRILDL0-bgJUs
 - https://www.google.com/maps/search/?api=1&amp;query=Zesty%20Bites%20Providence%2C%20Rhode%20Island&amp;query_place_id=ChIJU8z90ZRF5IkRRtC1fQ6X9iM
-- https://www.goprovidence.com/federal-hill/
-- https://www.holidaylandmark.com/usa/rhode-island/waterfire-providence/
+- https://www.goprovidence.com/college-hill-benefit-street/
 - https://www.longoristorantepizzeria.com/order
 - https://www.lorettarestaurant.com/hours.html
 - https://www.luigis-restaurant.com/contact-us
 - https://www.mahaniyomboston.com/menu
-- https://www.maploco.com/top-attractions/us-cities/portsmouth-new-hampshire/market-square/
 - https://www.mass.gov/locations/maudslay-state-park
 - https://www.massaudubon.org/get-outdoors/wildlife-sanctuaries/joppa-flats
 - https://www.mlb.com/redsox/ballpark/tours
 - https://www.mooncusserboston.com/menu/
 - https://www.mysticaquarium.org/
 - https://www.newburyportjewel.com/contact.html
+- https://www.newhavenct.gov/home/components/facilitydirectory/facilitydirectory/16/664
 - https://www.oldsaybrookct.gov/
 - https://www.opentable.com/cafe-nuovo-providence
 - https://www.opentable.com/ocean-kennebunkport
@@ -215,28 +197,26 @@
 - https://www.rosellakpt.com/press
 - https://www.rwpconservancy.org/
 - https://www.sarmarestaurant.com/reservations
-- https://www.seacoastsciencecenter.org/
 - https://www.shipwrightsdaughter.com
+- https://www.southcountymuseum.org/
 - https://www.strawberybanke.org/
 - https://www.surfseafood.com/portsmouth
 - https://www.tenprimesteakandsushi.com/menu
-- https://www.thegeographicalcure.com/post/what-to-see-in-boston-s-historic-beacon-hill-neighborhood
 - https://www.thepuddledock.com/menu
 - https://www.thetowersri.com/
 - https://www.tripadvisor.com/Attraction_Review-g33742-d2442379-Reviews-or40-Chamard_Vineyards-Clinton_Connecticut.html
-- https://www.tripadvisor.com/Attraction_Review-g54097-d3267934-Reviews-Salty_Brine_State_Beach-Narragansett_Washington_County_Rhode_Island.html
 - https://www.tripadvisor.com/Attraction_Review-g54126-d531778-Reviews-Westerly_Library_Wilcox_Park-Westerly_Washington_County_Rhode_Island.html
+- https://www.tripadvisor.com/Attraction_Review-g60745-d133763-Reviews-Bunker_Hill_Monument-Boston_Massachusetts.html
 - https://www.tripadvisor.com/LocationPhotoDirectLink-g46209-d8527226-i436534641-La_Maison_Navarre-Portsmouth_New_Hampshire.html
 - https://www.tripadvisor.com/Restaurant_Review-g33845-d33403649-Reviews-Cucina_Al_Pantheon-Mystic_Mystic_Country_Connecticut.html
 - https://www.tripadvisor.com/Restaurant_Review-g41706-d24127089-Reviews-Bar_25_Nbpt-Newburyport_Massachusetts.html
 - https://www.tripadvisor.com/Restaurant_Review-g46209-d33966605-Reviews-Louie_s_Restaurant-Portsmouth_New_Hampshire.html
 - https://www.tripadvisor.com/Restaurant_Review-g54097-d28107541-Reviews-Boon_Street_Market-Narragansett_Washington_County_Rhode_Island.html
 - https://www.tripadvisor.com/Restaurant_Review-g54126-d11924908-Reviews-Nam_Khong-Westerly_Washington_County_Rhode_Island.html
+- https://www.tripadvisor.com/Restaurant_Review-g60745-d26731877-Reviews-311_Omakase-Boston_Massachusetts.html
 - https://www.tripadvisor.com/Restaurant_Review-g60745-d802390-Reviews-or30-O_Ya-Boston_Massachusetts.html
-- https://www.tripadvisor.ie/Attraction_Review-g40693-d28483028-Reviews-First_Parish_Unitarian_Universalist_Church-Kennebunk_Kennebunks_Maine.html
 - https://www.yelp.com/biz/chillinghams-steak-westerly
 - https://www.yelp.com/biz/gift-horse-providence
-- https://www.yelp.com/biz/prospect-terrace-providence
 - https://www.yelp.com/biz/zesty-bites-providence
 
 ## Removed URLs (0)
