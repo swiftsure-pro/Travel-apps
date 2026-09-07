@@ -1,12 +1,12 @@
 {
-    "updatedAt":  "2026-09-07T03:37:39.3607771Z",
+    "updatedAt":  "2026-09-07T06:27:43.8046013Z",
     "trips":  [
                   {
                       "name":  "East Coast Greenway — Portland to New Haven",
                       "directory":  "EastCoastGreenway/prod",
                       "entry":  "EastCoastGreenway/prod/index.html",
                       "description":  "Portland to New Haven — Five states by bike, September 2027",
-                      "generatedAt":  "2026-09-07T02:38:13.187339+00:00"
+                      "generatedAt":  "2026-09-07T06:26:27.693697+00:00"
                   },
                   {
                       "name":  "Europe Exploration",

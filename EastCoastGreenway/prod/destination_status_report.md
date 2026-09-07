@@ -1,7 +1,7 @@
 # Destination Status Summary
 
-- Run ID: 20260907T022237.265856Z
-- Generated at (UTC): 2026-09-07T02:38:13.091924+00:00
+- Run ID: 20260907T061343.467672Z
+- Generated at (UTC): 2026-09-07T06:26:27.631175+00:00
 - Destination count: 10
 - Retry recommended: 0
 - Retry attempted: 0
@@ -17,16 +17,15 @@
 - Portsmouth, New Hampshire (portsmouth) — status=degraded, terminal=stable_without_retry
 - Newburyport, Massachusetts (newburyport) — status=degraded, terminal=stable_without_retry
 - Boston, Massachusetts (boston) — status=degraded, terminal=stable_without_retry
-- Providence, Rhode Island (providence) — status=degraded, terminal=stable_without_retry
+- Providence, Rhode Island (providence) — status=healthy, terminal=stable_without_retry
 - Narragansett, Rhode Island (narragansett) — status=degraded, terminal=stable_without_retry
 - Westerly, Rhode Island (westerly) — status=degraded, terminal=stable_without_retry
 - Mystic, Connecticut (mystic) — status=degraded, terminal=stable_without_retry
 - Old Saybrook, Connecticut (old_saybrook) — status=degraded, terminal=stable_without_retry
 - New Haven, Connecticut (new_haven) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (41)
-- **Kennebunk, Maine** (6)
-  - Bandolier — dinner_recommendations (0 candidate(s) considered)
+## Removed for No Verified URL (28)
+- **Kennebunk, Maine** (4)
   - Nunan's Lobster Hut — dinner_recommendations (5 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g40693-Kennebunk_Kennebunks_Maine.html
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mabel%27s+Lobster+Claw+Kennebunkport+ME
@@ -36,10 +35,9 @@
   - Seven High — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Seven+High+Kennebunk+ME
     - url_collision_rejected: https://www.restaurantji.com/me/kennebunk/
-  - Dock Square — top_attractions (0 candidate(s) considered)
-  - Parson's Beach — top_attractions (0 candidate(s) considered)
+  - Parson's Way — top_attractions (0 candidate(s) considered)
   - Rachel Carson National Wildlife Refuge — top_attractions (0 candidate(s) considered)
-- **Portsmouth, New Hampshire** (7)
+- **Portsmouth, New Hampshire** (4)
   - 110 Grill Portsmouth — dinner_recommendations (26 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.opentable.com/ristorante-massimo
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Ristorante+Massimo+59+Penhallow+Street+Portsmouth+NH
@@ -52,10 +50,6 @@
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g46209-Portsmouth_New_Hampshire.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=5+Thai+Bistro+40+Pleasant+St+Portsmouth+NH
     - url_collision_rejected: https://www.goportsmouthnh.com/wp-content/uploads/2026/03/GPC25105_Listings2025_v4.pdf
-  - Mombo — dinner_recommendations (5 candidate(s) considered)
-    - search_resolved: https://www.tripadvisor.com/ShowUserReviews-g1152711-d9877201-r1007776872-Lushoto_Executive_Lodge-Lushoto_Tanga_Region.html
-    - discovery_completed: https://www.tripadvisor.com/ShowUserReviews-g1152711-d9877201-r1007776872-Lushoto_Executive_Lodge-Lushoto_Tanga_Region.html
-    - search_resolved: https://www.opentable.com/r/mombo-portsmouth
   - Nichinan — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Nichinan+15+Middle+St+Portsmouth+NH
     - url_collision_rejected: https://www.goportsmouthnh.com/wp-content/uploads/2026/03/GPC25105_Listings2025_v4.pdf
@@ -66,18 +60,9 @@
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Louie%27s+Restaurant+West+End+Portsmouth+NH
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Rosa+70+State+St+Portsmouth+NH
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Row+34+5+Portwalk+Pl+Portsmouth+NH
-  - Isles of Shoals Boat Tour — top_attractions (0 candidate(s) considered)
-  - Portsmouth Harbor Trail — top_attractions (0 candidate(s) considered)
-- **Newburyport, Massachusetts** (3)
-  - Joppa Flats Education Center — top_attractions (0 candidate(s) considered)
-  - Newburyport Waterfront — top_attractions (0 candidate(s) considered)
-  - Parker River National Wildlife Refuge — top_attractions (0 candidate(s) considered)
 - **Boston, Massachusetts** (1)
   - Freedom Trail — top_attractions (0 candidate(s) considered)
-- **Providence, Rhode Island** (2)
-  - Federal Hill — top_attractions (0 candidate(s) considered)
-  - WaterFire — top_attractions (0 candidate(s) considered)
-- **Narragansett, Rhode Island** (4)
+- **Narragansett, Rhode Island** (5)
   - Birch & Bay Roofdeck Coastal Kitchen — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.opentable.com/neighborhood/ri/narragansett-restaurants
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Birch+%26+Bay+Roofdeck+Coastal+Kitchen+Wakefield+RI
@@ -92,15 +77,15 @@
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Agave+Social+Cocina+Mexicana+23+Pier+Marketplace+Narragansett+RI
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pelly%27s+Place+Narragansett+RI
     - url_collision_rejected: https://restaurantguru.com/Agave-Social-Cocina-Mexicana-Narragansett
+  - Point Judith Lighthouse — top_attractions (0 candidate(s) considered)
   - Scarborough State Beach — top_attractions (0 candidate(s) considered)
-- **Westerly, Rhode Island** (3)
+- **Westerly, Rhode Island** (2)
   - Two Little Fish — dinner_recommendations (8 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.evendo.com/locations/rhode-island/westerly/best-restaurants
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Two+Little+Fish+Misquamicut+Westerly+RI
     - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g54126-d33232053-Reviews-Caswell_s_Seafood_Haven-Westerly_Washington_County_Rhode_Island.html
   - Watch Hill Lighthouse — top_attractions (0 candidate(s) considered)
-  - Weekapaug Breachway — top_attractions (0 candidate(s) considered)
-- **Mystic, Connecticut** (4)
+- **Mystic, Connecticut** (3)
   - Barbary Coast — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33845-Mystic_Mystic_Country_Connecticut.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Barbary+Coast+Mystic+CT
@@ -115,7 +100,6 @@
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Oyster+Club+Mystic+CT
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Via+Emilia+24+W+Main+St+Mystic+CT
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Andiamo+Mystic+CT
-  - Denison Pequotsepos Nature Center — top_attractions (0 candidate(s) considered)
 - **Old Saybrook, Connecticut** (6)
   - Himalaya Cafe — dinner_recommendations (7 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
@@ -125,14 +109,18 @@
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=La+Marea+Ristorante+732+Middlesex+Turnpike+Old+Saybrook+CT
     - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g33878-d11881849-Reviews-or90-La_Marea-Old_Saybrook_Connecticut.html
+  - Saybrook Fish House — dinner_recommendations (0 candidate(s) considered)
   - Terra Mar Grill — dinner_recommendations (3 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Terra+Mar+Grill+2+Bridge+St+Old+Saybrook+CT
     - url_collision_rejected: https://en.wikivoyage.org/wiki/Old_Saybrook
-  - The Blue Oar — dinner_recommendations (0 candidate(s) considered)
-  - Saybrook Point — top_attractions (0 candidate(s) considered)
-  - The Preserve — top_attractions (0 candidate(s) considered)
-- **New Haven, Connecticut** (5)
+  - Fenwick Historic District — top_attractions (3 candidate(s) considered)
+    - search_resolved: https://www.facebook.com/TheNewEnglandCoast/posts/katharine-hepburns-house-on-fenwick-in-old-saybrook-connecticut-wanderlust-water/1170879471706302/
+    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/TheNewEnglandCoast/posts/katharine-hepburns-house-on-fenwick-in-old-saybrook-connecticut-wanderlust-water/1170879471706302/
+    - audit_discarded_previously_accepted_url: https://www.facebook.com/TheNewEnglandCoast/posts/katharine-hepburns-house-on-fenwick-in-old-saybrook-connecticut-wanderlust-water/1170879471706302/
+      [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
+  - Harvey's Beach — top_attractions (0 candidate(s) considered)
+- **New Haven, Connecticut** (3)
   - Caseus Fromagerie & Bistro — dinner_recommendations (0 candidate(s) considered)
   - Frank Pepe Pizzeria Napoletana — dinner_recommendations (3 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33851-New_Haven_Connecticut.html
@@ -141,5 +129,3 @@
   - Lumi Asian Fusion — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Lumi+Asian+Fusion+460+Universal+Drive+North+North+Haven+CT
     - url_collision_rejected: https://stacker.com/stories/connecticut/new-haven/highest-rated-fine-dining-restaurants-new-haven-area-diners
-  - Long Wharf — top_attractions (0 candidate(s) considered)
-  - Yale University Campus — top_attractions (0 candidate(s) considered)
