@@ -1,132 +1,200 @@
 # Destination Status Summary
 
-- Run ID: 20260903T072045.724164Z
-- Generated at (UTC): 2026-09-03T07:22:19.682140+00:00
+- Run ID: 20260907T033307.141015Z
+- Generated at (UTC): 2026-09-07T03:36:43.824194+00:00
 - Destination count: 5
-- Retry recommended: 1
-- Retry attempted: 1
+- Retry recommended: 2
+- Retry attempted: 2
 - Resolved after retry: 0
-- Unresolved after retry: 1
+- Unresolved after retry: 2
 - Not retried due to cap: 0
 
-## Needs Attention (1)
+## Needs Attention (2)
 - Brussels, Belgium (brussels) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Amsterdam, Netherlands (amsterdam) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
 
 ## All Destinations (5)
 - Brussels, Belgium (brussels) — status=needs_retry, terminal=retry_cap_reached_unresolved
-- Amsterdam, Netherlands (amsterdam) — status=degraded, terminal=stable_without_retry
+- Amsterdam, Netherlands (amsterdam) — status=needs_retry, terminal=retry_cap_reached_unresolved
 - Berlin, Germany (berlin) — status=degraded, terminal=stable_without_retry
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (28)
-- **Brussels, Belgium** (11)
-  - Beijingya — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Beijingya+Rue+Melsens+Brussels
-    - url_collision_rejected: https://www.bruxellestoday.be/que-faire/manger-15-euros-bruxelles.html
-  - Chou Sando — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Chou+Sando+Brussels
-    - url_collision_rejected: https://www.visit.brussels/en/visitors/where-to-eat/street-food-in-brussels
-  - Fish Tank — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Fish+Tank+Marolles+Brussels
-    - url_collision_rejected: https://www.visit.brussels/en/visitors/where-to-eat/street-food-in-brussels
-  - Friterie Tabora — dinner_recommendations (7 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Friterie+Tabora+Rue+de+Tabora+2+Brussels
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+de+la+Barriere+Avenue+du+Parc+5+Saint-Gilles+Brussels
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Saint-Josse+Saint-Josse-ten-Noode+Brussels
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+du+Cafe+Georgette+Brussels
-    - direct_batch_candidate_rejected: https://www.yelp.com/search?cflt=friterie&find_loc=1000+Bruxelles
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Michel+Place+Jourdan+Brussels
-  - Friterie de la Barrière — dinner_recommendations (8 candidate(s) considered)
-    - direct_batch_existing_url_preserved: https://mapstr.com/place/pDWX1oj5rBg/friterie-de-la-barriere-saint-gilles-restaurant-friterie-frites-street_food-sur_le_pouce
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Tabora+Rue+de+Tabora+2+Brussels
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Friterie+de+la+Barriere+Avenue+du+Parc+5+Saint-Gilles+Brussels
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Saint-Josse+Saint-Josse-ten-Noode+Brussels
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+du+Cafe+Georgette+Brussels
-    - direct_batch_candidate_rejected: https://www.yelp.com/search?cflt=friterie&find_loc=1000+Bruxelles
-  - Fritland — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Fritland+Rue+Henri+Maus+49+Brussels
-    - url_collision_rejected: https://www.brusselstourism.org/best-frites-in-brussels/
-  - Kaf Kaf — dinner_recommendations (22 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Maison+Antoine+Place+Jourdan+1+Etterbeek+Brussels
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Tabora+Rue+de+Tabora+2+Brussels
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Frit+Flagey+Place+Eugene+Flagey+Ixelles+Brussels
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+de+la+Barriere+Avenue+du+Parc+5+Saint-Gilles+Brussels
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Fritland+Rue+Henri+Maus+49+Brussels
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Patatak+Rue+de+la+Bourse+34+Brussels
-  - Munch — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Munch+Saint-Gilles+Brussels
-    - url_collision_rejected: https://www.bruxellestoday.be/que-faire/manger-15-euros-bruxelles.html
-  - Panam — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Panam+Kebab+Brussels
-    - url_collision_rejected: https://www.visit.brussels/en/visitors/where-to-eat/street-food-in-brussels
-  - Patatak — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Patatak+Rue+de+la+Bourse+34+Brussels
-    - url_collision_rejected: https://www.petitfute.com/v40163-bruxelles-brussel/actualite/m17-top-10-insolites-voyage/a45955-ou-manger-les-meilleures-frites-a-bruxelles-nos-spots-preferes.html
-  - Ratz Food Market — dinner_recommendations (4 candidate(s) considered)
-    - url_collision_rejected: https://www.visit.brussels/en/visitors/where-to-eat/brussels-food-markets
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wolf+Food+Market+Rue+Picard+9+Brussels
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Ratz+Food+Market+Rue+Saint+Boniface+25+Ixelles+Brussels
-    - url_collision_rejected: https://www.visit.brussels/en/visitors/where-to-eat/street-food-in-brussels
-- **Amsterdam, Netherlands** (1)
-  - Pietersma Snacks — dinner_recommendations (5 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.birdthai.nl/
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Thaise+Snackbar+Bird+Zeedijk+72+Amsterdam+Netherlands
-    - direct_batch_candidate_rejected: https://www.albertcuypmarkt.nl/
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pietersma+Snacks+Albert+Cuypstraat+Amsterdam+Netherlands
-    - url_collision_rejected: https://www.febo.nl/
-- **Berlin, Germany** (2)
-  - Banh Mi Stable — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh+Mi+Stable+Berlin+Germany
-    - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
-  - Dumplings Nian — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dumplings+Nian+Berlin+Germany
-    - url_collision_rejected: https://helloberl.in/best-cheap-eats-in-berlin/
-- **Prague, Czech Republic** (8)
-  - Banh-Mi-Ba — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Banh-Mi-Ba+Rybná+26+Prague
-    - url_collision_rejected: https://budgettraveller.org/best-cheap-eats-prague-guide/
-  - Doner Kebab Zizkov — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Doner+Kebab+Zizkov+Seifertova+Street+Prague
-    - url_collision_rejected: https://www.nomadicmick.com/cheap-restaurants-in-prague/
-  - Hostinec U Merendy — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://entdecke-tschechien.de/guenstige-hospodas-prag-preise-biersorten/
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Hostinec+U+Merendy+Žižkov+Prague
-  - Manifesto Market — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Manifesto+Market+Smíchov+Prague
-    - url_collision_rejected: https://budgettraveller.org/best-cheap-eats-prague-guide/
-  - Mlsná labuť — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mlsná+labuť+Palladium+Prague
-    - url_collision_rejected: https://www.realpragueguides.com/blog/prague-cheap-eats-2025-budget-travelers-guide
-  - Station Anděl — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Station+Anděl+Anděl+Prague
-    - url_collision_rejected: https://www.nomadicmick.com/cheap-restaurants-in-prague/
-  - U Jelínků — dinner_recommendations (25 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Lidová+jídelna+Těšnov+Těšnov+1163/5+Prague
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Havelská+Koruna+Old+Town+Prague
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Jídelna+Světozor+Vodičkova+39+Prague
-    - direct_batch_candidate_rejected: https://www.urozvarilu.cz/
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=U+Rozvařilů+Na+Poříčí+1068/23+Prague
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mlsná+labuť+Palladium+Prague
+## Removed for No Verified URL (45)
+- **Brussels, Belgium** (12)
+  - Bao Bang Bang — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bao+Bang+Bang+Ixelles+Brussels+Belgium
+    - url_collision_rejected: https://mapstr.com/
+  - Bintje — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bintje+Chatelain+Ixelles+Brussels+Belgium
+    - url_collision_rejected: https://www.yelp.com/
+  - Boulengier — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Boulengier+Saint-Gilles+Brussels+Belgium
+    - url_collision_rejected: https://www.brusselstimes.com/
+  - Friterie Chez Eugène — dinner_recommendations (6 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Tabora+Rue+de+Tabora+2+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+du+Bourdon+Uccle+Brussels+Belgium
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Friterie+Chez+Eugene+Bois+de+la+Cambre+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Michel+Jourdan+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Saint-Josse+Brussels+Belgium
+    - url_collision_rejected: https://www.petitfute.com/
+  - Friterie Michel — dinner_recommendations (6 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Tabora+Rue+de+Tabora+2+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+du+Bourdon+Uccle+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Chez+Eugene+Bois+de+la+Cambre+Brussels+Belgium
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Friterie+Michel+Jourdan+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Saint-Josse+Brussels+Belgium
+    - url_collision_rejected: https://www.petitfute.com/
+  - Friterie Saint-Josse — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mankoshé+Rue+de+Liedekerke+33+Saint-Josse+Brussels+Belgium
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Friterie+Saint-Josse+Brussels+Belgium
+    - url_collision_rejected: https://www.bruxellestoday.be/
+  - Friterie du Bourdon — dinner_recommendations (6 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Tabora+Rue+de+Tabora+2+Brussels+Belgium
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Friterie+du+Bourdon+Uccle+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Chez+Eugene+Bois+de+la+Cambre+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Michel+Jourdan+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Saint-Josse+Brussels+Belgium
+    - url_collision_rejected: https://www.petitfute.com/
+  - Jeanbon — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Jeanbon+multiple+locations+Brussels+Belgium
+    - url_collision_rejected: https://www.brusselstimes.com/
+  - Kaf Kaf — dinner_recommendations (21 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Maison+Antoine+Place+Jourdan+1+Etterbeek+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+Tabora+Rue+de+Tabora+2+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Fritkot+Bompa+Ixelles+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Bintje+Chatelain+Ixelles+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Friterie+du+Bourdon+Uccle+Brussels+Belgium
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Tonton+Garby+Rue+Duquesnoy+6+Brussels+Belgium
+  - La Mandibule — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=La+Mandibule+Chaussee+de+Wavre+170+Ixelles+Brussels+Belgium
+    - url_collision_rejected: https://www.repubblica.it/
+  - Pistolet Original — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pistolet+Original+Rue+Joseph+Stevens+24+Brussels+Belgium
+    - url_collision_rejected: https://mapstr.com/
+  - T Wit Madammeke — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=T+Wit+Madammeke+Dailly+Brussels+Belgium
+    - url_collision_rejected: https://www.yelp.com/
+- **Amsterdam, Netherlands** (13)
+  - FEBO — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=FEBO+Ferdinand+Bolstraat+Amsterdam+Netherlands
+    - url_collision_rejected: https://www.amsterdamtourism.org/cheap-eats-amsterdam/
+  - Fabel Friet — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Fabel+Friet+Amsterdam+Netherlands
+    - url_collision_rejected: https://traveltastefeel.com/the-ultimate-guide-to-cheap-eats-amsterdam-2025/
+  - Foodhallen stalls — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Foodhallen+Bellamyplein+Amsterdam+Netherlands
+    - url_collision_rejected: https://www.amsterdamtourism.org/cheap-eats-amsterdam/
+  - Leeman Döner — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.timeout.com/amsterdam/restaurants/cheap-eats-in-amsterdam
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Leeman+D%C3%B6ner+Van+Woustraat+Amsterdam+Netherlands
+  - Maoz Falafel — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Maoz+Falafel+Amsterdam+Netherlands
+    - url_collision_rejected: https://www.amsterdamtourism.org/cheap-eats-amsterdam/
+  - Nam Kee — dinner_recommendations (22 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.timeout.com/amsterdam/restaurants/cheap-eats-in-amsterdam
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Vleminckx+Sausmeesters+Voetboogstraat+33+Amsterdam+Netherlands
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Manneken+Pis+Damrak+41+Amsterdam+Netherlands
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=FEBO+Ferdinand+Bolstraat+Amsterdam+Netherlands
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Stubbe%E2%80%99s+Haring+Singel+Amsterdam+Netherlands
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Hoi+Tin+Zeedijk+Amsterdam+Netherlands
+  - Roopram Roti — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.timeout.com/amsterdam/restaurants/cheap-eats-in-amsterdam
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Roopram+Roti+Amsterdam+Netherlands
+  - SLA — dinner_recommendations (22 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.timeout.com/amsterdam/restaurants/cheap-eats-in-amsterdam
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Vleminckx+Sausmeesters+Voetboogstraat+33+Amsterdam+Netherlands
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Manneken+Pis+Damrak+41+Amsterdam+Netherlands
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=FEBO+Ferdinand+Bolstraat+Amsterdam+Netherlands
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Stubbe%E2%80%99s+Haring+Singel+Amsterdam+Netherlands
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Hoi+Tin+Zeedijk+Amsterdam+Netherlands
+  - Singel 404 — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Stubbe%E2%80%99s+Haring+Singel+Amsterdam+Netherlands
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Singel+404+Amsterdam+Netherlands
+    - url_collision_rejected: https://www.amsterdamtourism.org/cheap-eats-amsterdam/
+  - Stubbe’s Haring — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Stubbe%E2%80%99s+Haring+Singel+Amsterdam+Netherlands
+    - url_collision_rejected: https://www.amsterdamtourism.org/cheap-eats-amsterdam/
+  - The Lilac (De Vlinderboom) — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Lilac+De+Vlinderboom+Amsterdam+Netherlands
+    - url_collision_rejected: https://www.amsterdamtourism.org/best-restaurants-by-budget/
+  - Van Dobben — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Van+Dobben+Korte+Reguliersdwarsstraat+Amsterdam+Netherlands
+    - url_collision_rejected: https://www.amsterdamtourism.org/cheap-eats-amsterdam/
+  - Wok to Walk — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wok+to+Walk+Amsterdam+Netherlands
+    - url_collision_rejected: https://www.amsterdamtourism.org/best-restaurants-by-budget/
+- **Berlin, Germany** (11)
+  - Burgermeister — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Burgermeister+Oberbaumstra%C3%9Fe+8+Berlin+Germany
+    - url_collision_rejected: https://berlinpoche.de/en/cheap-eats-berlin
+  - Imren Grill — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Imren+Grill+Boppstra%C3%9Fe+10+Berlin+Germany
+    - url_collision_rejected: https://berlinpoche.de/en/cheap-eats-berlin
+  - K36ab-Point — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://mitvergnuegen.com/2026/restaurants-berlin-essen-5-euro
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=K36ab-Point+Alt-Moabit+76+Berlin+Germany
+  - Konditorei Damaskus — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Konditorei+Damaskus+Sonnenallee+93+Berlin+Germany
+    - url_collision_rejected: https://www.travel2berlin.com/post/berlin-food-lovers-street-food-markets-restaurants
+  - Mensa FU II Dahlem — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mensa+TU+Hardenbergstra%C3%9Fe+34+Berlin+Germany
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mensa+FU+II+Otto-von-Simson-Stra%C3%9Fe+26+Berlin+Germany
+    - url_collision_rejected: https://www.studentpartout.de/regional/berlin/wohnen-leben/g%C3%BCnstig-essen-in-berlin-12-adressen-bei-denen-du-unter-11-euro-satt-wirst/
+  - Mmaah — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mmaah+Eat+Korean+Berlin+Germany
+    - url_collision_rejected: https://berlinpoche.de/guenstig-essen-berlin
+  - Puffer Imbiss (Markthalle Neun) — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Puffer+Imbiss+Markthalle+Neun+Eisenbahnstra%C3%9Fe+Berlin+Germany
+    - url_collision_rejected: https://www.natalieetc.com/home/cheap-german-eats-berlin
+  - Rissani — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Rissani+Kreuzberg+Berlin+Germany
+    - url_collision_rejected: https://berlinpoche.de/guenstig-essen-berlin
+  - Sahara Imbiss — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Konnopke%E2%80%99s+Imbiss+Sch%C3%B6nhauser+Allee+44b+Berlin+Germany
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sahara+Imbiss+Reuterstra%C3%9Fe+56+Berlin+Germany
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Puffer+Imbiss+Markthalle+Neun+Eisenbahnstra%C3%9Fe+Berlin+Germany
+    - url_collision_rejected: https://restaurantguru.com/Konnopkes-Imbiss-Berlin-6
+  - Vöner — dinner_recommendations (21 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mustafa%27s+Gem%C3%BCse+Kebap+Mehringdamm+33+Berlin+Germany
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Curry+36+Mehringdamm+36+Berlin+Germany
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Konnopke%E2%80%99s+Imbiss+Sch%C3%B6nhauser+Allee+44b+Berlin+Germany
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Imren+Grill+Boppstra%C3%9Fe+10+Berlin+Germany
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Hamy+Caf%C3%A9+Hasenheide+10+Berlin+Germany
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=V%C3%B6ner+Boxhagener+Str.+56+Berlin+Germany
+  - Brandenburg Gate — top_attractions (0 candidate(s) considered)
+- **Prague, Czech Republic** (2)
+  - U Šnoků butcher grill — dinner_recommendations (1 candidate(s) considered)
+    - url_collision_rejected: https://www.tripadvisor.com/Restaurant_Review-g274707-d2345670-Reviews-Nase_Maso-Prague_Bohemia.html
   - Petrin Hill — top_attractions (0 candidate(s) considered)
-- **Frankfurt, Germany** (6)
-  - Bader's Fisch Deli — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bader%27s+Fisch+Deli+Leipziger+Stra%C3%9Fe+Frankfurt
+- **Frankfurt, Germany** (7)
+  - **Exenberger — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Exenberger+Bruchstraße+14+Frankfurt+Germany
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-  - Exenberger Der Frankfurter Imbiss — dinner_recommendations (1 candidate(s) considered)
+  - Bader's Fisch Deli 4.0+/5 $ Seafood — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://en.tripadvisor.com.hk/Restaurants-g187337-zfp16-Frankfurt_Hesse.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bader%27s+Fisch+Deli+Leipziger+Straße+55+Frankfurt+Germany
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-  - Frittenwerk — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Frittenwerk+Kaiserstra%C3%9Fe+Frankfurt
+  - Café Liebling — dinner_recommendations (0 candidate(s) considered)
+  - Currywurst Taunus 25 — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://restaurantguru.com/Bestworscht-In-Town-Frankfurt
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Currywurst+Taunus+25+Taunusstraße+25+Frankfurt+Germany
+    - direct_batch_candidate_rejected_generic: https://www.falstaff.com//nordics/die-besten/street-food-guide-germany-2025-the-best-street-food-stands-in-frankfurt
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
+  - Frittenwerk 4.0+/5 $$ German — dinner_recommendations (28 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=AROMA+Oederweg+80A+Frankfurt+Germany
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.co.uk/Restaurant_Review-g187337-d1342805-Reviews-AROMA-Frankfurt_Hesse.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Best+Worscht+in+Town+Grüneburgweg+37+Frankfurt+Germany
+    - direct_batch_candidate_rejected_generic: https://restaurantguru.com/Bestworscht-In-Town-Frankfurt
+    - direct_batch_candidate_rejected: https://www.yelp.com/search?find_desc=Cheap+Eats&find_loc=Frankfurt%2C+Hessen
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Tonbul+Altstadt+Frankfurt+Germany
   - Gref-Völsings Braterei — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gref-V%C3%B6lsings+Braterei+Gr%C3%BCneburgweg+Frankfurt
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gref-Völsings+Braterei+Grüneburgweg+37+Frankfurt+Germany
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-  - Im Biss — dinner_recommendations (4 candidate(s) considered)
-    - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-    - direct_batch_candidate_rejected_generic: https://en.tripadvisor.com/Restaurants-g187337-zfp16-Frankfurt_Hesse.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Alims+Fischimbiss+Frankfurt+Germany
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Im+Biss+Frankfurt+Germany
-  - Kaffeekommune — dinner_recommendations (6 candidate(s) considered)
-    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g187393-d963137-Reviews-Dom_Cafe-Mainz_Rhineland_Palatinate.html
-    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g187393-d963137-Reviews-Dom_Cafe-Mainz_Rhineland_Palatinate.html
-    - search_resolved: https://thecoffeevine.com/reviews/cafes/germany/mainz/kaffeekommune-mainz-de/
+  - Im Biss 4.0+/5 $ German — dinner_recommendations (28 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=AROMA+Oederweg+80A+Frankfurt+Germany
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.co.uk/Restaurant_Review-g187337-d1342805-Reviews-AROMA-Frankfurt_Hesse.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Best+Worscht+in+Town+Grüneburgweg+37+Frankfurt+Germany
+    - direct_batch_candidate_rejected_generic: https://restaurantguru.com/Bestworscht-In-Town-Frankfurt
+    - direct_batch_candidate_rejected: https://www.yelp.com/search?find_desc=Cheap+Eats&find_loc=Frankfurt%2C+Hessen
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Tonbul+Altstadt+Frankfurt+Germany
