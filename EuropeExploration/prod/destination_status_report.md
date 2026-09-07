@@ -1,26 +1,25 @@
 # Destination Status Summary
 
-- Run ID: 20260907T033307.141015Z
-- Generated at (UTC): 2026-09-07T03:36:43.824194+00:00
+- Run ID: 20260907T064414.257365Z
+- Generated at (UTC): 2026-09-07T06:47:10.820429+00:00
 - Destination count: 5
-- Retry recommended: 2
+- Retry recommended: 1
 - Retry attempted: 2
-- Resolved after retry: 0
-- Unresolved after retry: 2
+- Resolved after retry: 1
+- Unresolved after retry: 1
 - Not retried due to cap: 0
 
-## Needs Attention (2)
+## Needs Attention (1)
 - Brussels, Belgium (brussels) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
-- Amsterdam, Netherlands (amsterdam) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
 
 ## All Destinations (5)
 - Brussels, Belgium (brussels) — status=needs_retry, terminal=retry_cap_reached_unresolved
-- Amsterdam, Netherlands (amsterdam) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Amsterdam, Netherlands (amsterdam) — status=degraded, terminal=resolved_after_retry
 - Berlin, Germany (berlin) — status=degraded, terminal=stable_without_retry
 - Prague, Czech Republic (prague) — status=degraded, terminal=stable_without_retry
 - Frankfurt, Germany (frankfurt) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (45)
+## Removed for No Verified URL (46)
 - **Brussels, Belgium** (12)
   - Bao Bang Bang — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bao+Bang+Bang+Ixelles+Brussels+Belgium
@@ -162,11 +161,12 @@
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Imren+Grill+Boppstra%C3%9Fe+10+Berlin+Germany
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Hamy+Caf%C3%A9+Hasenheide+10+Berlin+Germany
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=V%C3%B6ner+Boxhagener+Str.+56+Berlin+Germany
-  - Brandenburg Gate — top_attractions (0 candidate(s) considered)
-- **Prague, Czech Republic** (2)
+  - East Side Gallery — top_attractions (0 candidate(s) considered)
+- **Prague, Czech Republic** (3)
   - U Šnoků butcher grill — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://www.tripadvisor.com/Restaurant_Review-g274707-d2345670-Reviews-Nase_Maso-Prague_Bohemia.html
-  - Petrin Hill — top_attractions (0 candidate(s) considered)
+  - Prague Castle — top_attractions (0 candidate(s) considered)
+  - Vysehrad — top_attractions (0 candidate(s) considered)
 - **Frankfurt, Germany** (7)
   - **Exenberger — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Exenberger+Bruchstraße+14+Frankfurt+Germany
@@ -175,12 +175,12 @@
     - direct_batch_candidate_rejected_generic: https://en.tripadvisor.com.hk/Restaurants-g187337-zfp16-Frankfurt_Hesse.html
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bader%27s+Fisch+Deli+Leipziger+Straße+55+Frankfurt+Germany
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
-  - Café Liebling — dinner_recommendations (0 candidate(s) considered)
   - Currywurst Taunus 25 — dinner_recommendations (4 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://restaurantguru.com/Bestworscht-In-Town-Frankfurt
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Currywurst+Taunus+25+Taunusstraße+25+Frankfurt+Germany
     - direct_batch_candidate_rejected_generic: https://www.falstaff.com//nordics/die-besten/street-food-guide-germany-2025-the-best-street-food-stands-in-frankfurt
     - url_collision_rejected: https://www.falstaff.com/de/die-besten/streetfood-guide-deutschland-2025-die-besten-imbisse-in-frankfurt
+  - Farsun — dinner_recommendations (0 candidate(s) considered)
   - Frittenwerk 4.0+/5 $$ German — dinner_recommendations (28 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=AROMA+Oederweg+80A+Frankfurt+Germany
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.co.uk/Restaurant_Review-g187337-d1342805-Reviews-AROMA-Frankfurt_Hesse.html

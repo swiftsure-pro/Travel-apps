@@ -1,21 +1,21 @@
 {
-  "generator_version": "3.0.0",
+  "generator_version": "3.1.0",
   "template_version": "2.5.7",
-  "generated_at_utc": "2026-09-07T03:36:43.912473+00:00",
+  "generated_at_utc": "2026-09-07T06:47:10.848487+00:00",
   "development_build": {
-    "fingerprint": "v3.0.0+b33ba52+clean+20260907T033307.141015Z",
-    "run_id": "20260907T033307.141015Z",
-    "generator_version": "3.0.0",
+    "fingerprint": "v3.1.0+c093ea2+clean+20260907T064414.257365Z",
+    "run_id": "20260907T064414.257365Z",
+    "generator_version": "3.1.0",
     "template_version": "2.5.7",
     "build_tag": "",
     "git": {
       "branch": "v3",
-      "commit": "b33ba5237258a17c2ec9cba6013ab7e67eea8592",
-      "short_commit": "b33ba52",
+      "commit": "c093ea2a46535c51e6d80cf6a946a9a8ebf10fed",
+      "short_commit": "c093ea2",
       "dirty": false
     }
   },
-  "timestamp_utc": "2026-09-07T03:36:44.121128Z",
+  "timestamp_utc": "2026-09-07T06:47:11.047926Z",
   "summary": {
     "valid": true,
     "error_count": 0,
@@ -29,93 +29,126 @@
         "provider": "grok",
         "model": "grok-4.3",
         "calls": 7,
-        "prompt_tokens": 91742,
-        "completion_tokens": 8287,
-        "total_tokens": 100029,
-        "tool_calls": 12,
-        "tool_call_cost_usd": 0.06,
-        "estimated_cost_usd": 0.195394
+        "prompt_tokens": 83868,
+        "completion_tokens": 8318,
+        "total_tokens": 92186,
+        "tool_calls": 9,
+        "tool_call_cost_usd": 0.045,
+        "estimated_cost_usd": 0.17063
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "calls": 12,
-        "prompt_tokens": 49877,
-        "completion_tokens": 11133,
-        "total_tokens": 61010,
+        "prompt_tokens": 49899,
+        "completion_tokens": 11084,
+        "total_tokens": 60983,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.166552
+        "estimated_cost_usd": 0.166302
       },
       {
         "provider": "serper",
         "model": "serper",
-        "calls": 31,
+        "calls": 39,
         "prompt_tokens": 0,
         "completion_tokens": 0,
         "total_tokens": 0,
-        "tool_calls": 31,
-        "tool_call_cost_usd": 0.031,
-        "estimated_cost_usd": 0.031
+        "tool_calls": 39,
+        "tool_call_cost_usd": 0.039,
+        "estimated_cost_usd": 0.039
       }
     ],
-    "total_calls": 50,
-    "total_estimated_cost_usd": 0.392946,
+    "total_calls": 58,
+    "total_estimated_cost_usd": 0.375932,
     "records": [
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:brussels",
         "prompt_tokens": 5133,
-        "completion_tokens": 1756,
-        "total_tokens": 6889,
+        "completion_tokens": 1753,
+        "total_tokens": 6886,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.020802
+        "estimated_cost_usd": 0.020784
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:amsterdam",
         "prompt_tokens": 5096,
-        "completion_tokens": 1979,
-        "total_tokens": 7075,
+        "completion_tokens": 1986,
+        "total_tokens": 7082,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.022066
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "destination_bundle:prague",
-        "prompt_tokens": 5100,
-        "completion_tokens": 1804,
-        "total_tokens": 6904,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.021024
+        "estimated_cost_usd": 0.022108
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:berlin",
         "prompt_tokens": 5099,
-        "completion_tokens": 2062,
-        "total_tokens": 7161,
+        "completion_tokens": 2082,
+        "total_tokens": 7181,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.02257
+        "estimated_cost_usd": 0.02269
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "destination_bundle:prague",
+        "prompt_tokens": 5100,
+        "completion_tokens": 1984,
+        "total_tokens": 7084,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.022104
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "destination_bundle:frankfurt",
         "prompt_tokens": 5123,
-        "completion_tokens": 2065,
-        "total_tokens": 7188,
+        "completion_tokens": 1530,
+        "total_tokens": 6653,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.022636
+        "estimated_cost_usd": 0.019426
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
       },
       {
         "provider": "serper",
@@ -308,89 +341,56 @@
         "provider": "grok",
         "model": "grok-4.3",
         "operation": "cultural_events:search",
-        "prompt_tokens": 13922,
-        "completion_tokens": 967,
-        "total_tokens": 14889,
+        "prompt_tokens": 10981,
+        "completion_tokens": 1213,
+        "total_tokens": 12194,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.021759
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 10900,
+        "completion_tokens": 1212,
+        "total_tokens": 12112,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.021655
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 16524,
+        "completion_tokens": 1243,
+        "total_tokens": 17767,
         "tool_calls": 2,
         "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.02982
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
+        "estimated_cost_usd": 0.033762
       },
       {
         "provider": "grok",
         "model": "grok-4.3",
         "operation": "cultural_events:search",
-        "prompt_tokens": 7744,
-        "completion_tokens": 1141,
-        "total_tokens": 8885,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.017532
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 8256,
-        "completion_tokens": 1151,
-        "total_tokens": 9407,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.018197
+        "prompt_tokens": 13775,
+        "completion_tokens": 1118,
+        "total_tokens": 14893,
+        "tool_calls": 2,
+        "tool_call_cost_usd": 0.01,
+        "estimated_cost_usd": 0.030014
       },
       {
         "provider": "serper",
@@ -435,182 +435,270 @@
         "tool_calls": 1,
         "tool_call_cost_usd": 0.001,
         "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 21206,
-        "completion_tokens": 1352,
-        "total_tokens": 22558,
-        "tool_calls": 3,
-        "tool_call_cost_usd": 0.015,
-        "estimated_cost_usd": 0.044888
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "serper",
-        "model": "serper",
-        "operation": "url_discovery_fallback:search",
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0,
-        "tool_calls": 1,
-        "tool_call_cost_usd": 0.001,
-        "estimated_cost_usd": 0.001
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "cultural_events:Brussels, Belgium",
-        "prompt_tokens": 3429,
-        "completion_tokens": 136,
-        "total_tokens": 3565,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.007674
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "cultural_events:Amsterdam, Netherlands",
-        "prompt_tokens": 3298,
-        "completion_tokens": 201,
-        "total_tokens": 3499,
+        "prompt_tokens": 3350,
+        "completion_tokens": 223,
+        "total_tokens": 3573,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.007802
+        "estimated_cost_usd": 0.008038
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "cultural_events:Berlin, Germany",
-        "prompt_tokens": 3320,
-        "completion_tokens": 351,
-        "total_tokens": 3671,
+        "prompt_tokens": 3484,
+        "completion_tokens": 375,
+        "total_tokens": 3859,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.008746
+        "estimated_cost_usd": 0.009218
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "cultural_events:Prague, Czech Republic",
-        "prompt_tokens": 3770,
-        "completion_tokens": 242,
-        "total_tokens": 4012,
+        "prompt_tokens": 3539,
+        "completion_tokens": 366,
+        "total_tokens": 3905,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.008992
+        "estimated_cost_usd": 0.009274
       },
       {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 12390,
-        "completion_tokens": 1409,
-        "total_tokens": 13799,
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
         "tool_calls": 1,
-        "tool_call_cost_usd": 0.005,
-        "estimated_cost_usd": 0.02401
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "cultural_events:Frankfurt, Germany",
-        "prompt_tokens": 3725,
-        "completion_tokens": 264,
-        "total_tokens": 3989,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.009034
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 14051,
-        "completion_tokens": 1105,
-        "total_tokens": 15156,
-        "tool_calls": 2,
-        "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.030326
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4.3",
-        "operation": "cultural_events:search",
-        "prompt_tokens": 14173,
-        "completion_tokens": 1162,
-        "total_tokens": 15335,
-        "tool_calls": 2,
-        "tool_call_cost_usd": 0.01,
-        "estimated_cost_usd": 0.030621
-      },
-      {
-        "provider": "grok",
-        "model": "grok-4-fast",
-        "operation": "cultural_events:Amsterdam, Netherlands",
-        "prompt_tokens": 3291,
-        "completion_tokens": 162,
-        "total_tokens": 3453,
-        "tool_calls": 0,
-        "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.007554
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
       },
       {
         "provider": "grok",
         "model": "grok-4-fast",
         "operation": "cultural_events:Brussels, Belgium",
-        "prompt_tokens": 3493,
-        "completion_tokens": 111,
-        "total_tokens": 3604,
+        "prompt_tokens": 3449,
+        "completion_tokens": 136,
+        "total_tokens": 3585,
         "tool_calls": 0,
         "tool_call_cost_usd": 0.0,
-        "estimated_cost_usd": 0.007652
+        "estimated_cost_usd": 0.007714
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 9662,
+        "completion_tokens": 1216,
+        "total_tokens": 10878,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.020118
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "serper",
+        "model": "serper",
+        "operation": "url_discovery_fallback:search",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.001,
+        "estimated_cost_usd": 0.001
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "cultural_events:Frankfurt, Germany",
+        "prompt_tokens": 3571,
+        "completion_tokens": 291,
+        "total_tokens": 3862,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.008888
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 11021,
+        "completion_tokens": 1020,
+        "total_tokens": 12041,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.021326
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4.3",
+        "operation": "cultural_events:search",
+        "prompt_tokens": 11005,
+        "completion_tokens": 1296,
+        "total_tokens": 12301,
+        "tool_calls": 1,
+        "tool_call_cost_usd": 0.005,
+        "estimated_cost_usd": 0.021996
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "cultural_events:Brussels, Belgium",
+        "prompt_tokens": 3608,
+        "completion_tokens": 79,
+        "total_tokens": 3687,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.00769
+      },
+      {
+        "provider": "grok",
+        "model": "grok-4-fast",
+        "operation": "cultural_events:Amsterdam, Netherlands",
+        "prompt_tokens": 3347,
+        "completion_tokens": 279,
+        "total_tokens": 3626,
+        "tool_calls": 0,
+        "tool_call_cost_usd": 0.0,
+        "estimated_cost_usd": 0.008368
       }
     ]
   },
@@ -618,5 +706,5 @@
   "warnings": [
     "Restaurants removed for no verified URL: 43 of 88 (49%) (threshold: 0)"
   ],
-  "html_path": "output\\europe-final\\prod\\index.html"
+  "html_path": "output\\europe-v5\\prod\\index.html"
 }
