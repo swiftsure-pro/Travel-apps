@@ -1,141 +1,281 @@
 # Destination Status Summary
 
-- Run ID: 20260907T070739.647999Z
-- Generated at (UTC): 2026-09-07T07:17:35.896977+00:00
-- Destination count: 10
-- Retry recommended: 0
-- Retry attempted: 0
-- Resolved after retry: 0
-- Unresolved after retry: 0
+- Run ID: 20260913T193733.820347Z
+- Generated at (UTC): 2026-09-13T19:59:45.738710+00:00
+- Destination count: 11
+- Retry recommended: 2
+- Retry attempted: 4
+- Resolved after retry: 2
+- Unresolved after retry: 2
 - Not retried due to cap: 0
 
-## Needs Attention (0)
-- None
+## Needs Attention (2)
+- Danielson, Connecticut (danielson) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
+- Willimantic, Connecticut (willimantic) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
 
-## All Destinations (10)
+## All Destinations (11)
 - Kennebunk, Maine (kennebunk) — status=degraded, terminal=stable_without_retry
 - Portsmouth, New Hampshire (portsmouth) — status=degraded, terminal=stable_without_retry
 - Newburyport, Massachusetts (newburyport) — status=degraded, terminal=stable_without_retry
 - Boston, Massachusetts (boston) — status=degraded, terminal=stable_without_retry
-- Providence, Rhode Island (providence) — status=healthy, terminal=stable_without_retry
-- Narragansett, Rhode Island (narragansett) — status=degraded, terminal=stable_without_retry
-- Westerly, Rhode Island (westerly) — status=degraded, terminal=stable_without_retry
-- Mystic, Connecticut (mystic) — status=degraded, terminal=stable_without_retry
-- Old Saybrook, Connecticut (old_saybrook) — status=degraded, terminal=stable_without_retry
+- Milford, Massachusetts (milford) — status=degraded, terminal=resolved_after_retry
+- Providence, Rhode Island (providence) — status=degraded, terminal=stable_without_retry
+- Danielson, Connecticut (danielson) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Willimantic, Connecticut (willimantic) — status=needs_retry, terminal=retry_cap_reached_unresolved
+- Hartford, Connecticut (hartford) — status=degraded, terminal=stable_without_retry
+- Farmington, Connecticut (farmington) — status=degraded, terminal=resolved_after_retry
 - New Haven, Connecticut (new_haven) — status=degraded, terminal=stable_without_retry
 
-## Removed for No Verified URL (33)
-- **Kennebunk, Maine** (4)
-  - Nunan's Lobster Hut — dinner_recommendations (5 candidate(s) considered)
+## Removed for No Verified URL (67)
+- **Kennebunk, Maine** (7)
+  - 50 Local — dinner_recommendations (4 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g40693-Kennebunk_Kennebunks_Maine.html
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Mabel%27s+Lobster+Claw+Kennebunkport+ME
-    - direct_batch_candidate_rejected: https://www.opentable.com/the-tides-beach-club
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Nunan%27s+Lobster+Hut+Kennebunkport+ME
-    - url_collision_rejected: https://www.restaurantji.com/me/kennebunkport/alissons-restaurant-/
-  - Seven High — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Seven+High+Kennebunk+ME
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=50+Local+Kennebunk+ME
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-kennebunk-me
+    - url_collision_rejected: https://www.opentable.com/white-barn-inn
+  - 50 Local (additional note on variety) — dinner_recommendations (1 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-kennebunk-me
+  - Rosella KPT — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Rosella+1+Chase+Hill+Road+Kennebunk+ME
+    - url_collision_rejected: https://www.opentable.com/r/rosella-kennebunkport
+  - Smoke BBQ (second location vibe) — dinner_recommendations (1 candidate(s) considered)
     - url_collision_rejected: https://www.restaurantji.com/me/kennebunk/
-  - Parson's Way — top_attractions (0 candidate(s) considered)
+  - Wandby Landing — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wandby+Landing+Kennebunk+ME
+    - url_collision_rejected: https://www.restaurantji.com/me/kennebunk/
+  - Wandby Landing (expanded) — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wandby+Landing+Kennebunk+ME
+    - url_collision_rejected: https://www.restaurantji.com/me/kennebunk/
   - Rachel Carson National Wildlife Refuge — top_attractions (0 candidate(s) considered)
 - **Portsmouth, New Hampshire** (4)
-  - 110 Grill Portsmouth — dinner_recommendations (26 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.opentable.com/ristorante-massimo
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Ristorante+Massimo+59+Penhallow+Street+Portsmouth+NH
-    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-portsmouth-nh
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Cure+189+State+Street+Portsmouth+NH
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Louie%27s+Restaurant+West+End+Portsmouth+NH
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Rosa+70+State+St+Portsmouth+NH
-  - 5 Thai Bistro — dinner_recommendations (4 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-portsmouth-nh
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g46209-Portsmouth_New_Hampshire.html
+  - 5 Thai Bistro — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://reviews.birdeye.com/d/restaurants/portsmouth-nh/
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=5+Thai+Bistro+40+Pleasant+St+Portsmouth+NH
-    - url_collision_rejected: https://www.goportsmouthnh.com/wp-content/uploads/2026/03/GPC25105_Listings2025_v4.pdf
-  - Nichinan — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Nichinan+15+Middle+St+Portsmouth+NH
-    - url_collision_rejected: https://www.goportsmouthnh.com/wp-content/uploads/2026/03/GPC25105_Listings2025_v4.pdf
-  - Row 34 — dinner_recommendations (25 candidate(s) considered)
+    - url_collision_rejected: https://boston.eater.com/maps/best-restaurants-portsmouth-new-hampshire
+  - Bao 155 — dinner_recommendations (25 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Row+34+5+Portwalk+Pl+Portsmouth+NH
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Ristorante+Massimo+59+Penhallow+Street+Portsmouth+NH
-    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-portsmouth-nh
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Cure+189+State+Street+Portsmouth+NH
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Louie%27s+Restaurant+West+End+Portsmouth+NH
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Cure+Restaurant+189+State+St+Portsmouth+NH
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Louie%27s+Restaurant+909+Islington+St+Portsmouth+NH
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Puddle+Dock+66+Marcy+St+Portsmouth+NH
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Rosa+70+State+St+Portsmouth+NH
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Row+34+5+Portwalk+Pl+Portsmouth+NH
-- **Newburyport, Massachusetts** (2)
-  - Joppa Flats Education Center — top_attractions (0 candidate(s) considered)
+  - Toscana Chop House — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-portsmouth-nh
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Toscana+Chop+House+Portsmouth+NH
+  - Two-Fifty Market — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Two-Fifty+Market+Portsmouth+NH
+    - url_collision_rejected: https://www.portsmouthnh.com/restaurants-portsmouth-nh/portsmouth/
+- **Newburyport, Massachusetts** (5)
+  - Bar 25 Nbpt — dinner_recommendations (1 candidate(s) considered)
+    - url_collision_rejected: https://www.opentable.com/r/sea-level-oyster-bar-newburyport
+  - Cozy Kimchi — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g41706-Newburyport_Massachusetts.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Cozy+Kimchi+Newburyport+MA
+  - Good Fortune Restaurant — dinner_recommendations (7 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g41706-Newburyport_Massachusetts.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Good+Fortune+Restaurant+Newburyport+MA
+    - search_resolved: https://no.tripadvisor.com/Restaurants-g41706-c11-Newburyport_Massachusetts.html
+  - Leo's House of Pizza — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g41706-Newburyport_Massachusetts.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Leo%27s+House+of+Pizza+Newburyport+MA
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Anchor+Stone+Deck+Pizza+Newburyport+MA
+    - url_collision_rejected: https://foodeist.com/best-restaurants-in-newburyport-ma
   - Parker River National Wildlife Refuge — top_attractions (0 candidate(s) considered)
-- **Boston, Massachusetts** (1)
+- **Boston, Massachusetts** (3)
+  - O Ya — dinner_recommendations (27 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sarma+249+Pearl+St+Somerville+MA
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Neptune+Oyster+63+Salem+St+Boston+MA
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Saltie+Girl+279+Dartmouth+St+Boston+MA
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Carmelina’s+307+Hanover+St+Boston+MA
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Yume+Ga+Arukara+Cambridge+MA
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Row+34+Seaport+Boston+MA
+  - Boston Common — top_attractions (0 candidate(s) considered)
   - Freedom Trail — top_attractions (0 candidate(s) considered)
-- **Narragansett, Rhode Island** (5)
-  - Birch & Bay Roofdeck Coastal Kitchen — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.opentable.com/neighborhood/ri/narragansett-restaurants
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Birch+%26+Bay+Roofdeck+Coastal+Kitchen+Wakefield+RI
-  - Gansett Poke — dinner_recommendations (19 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.opentable.com/r/celeste-narragansett
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Celeste+15+Kingstown+Rd+Narragansett+RI
-    - direct_batch_candidate_rejected: https://www.opentable.com/neighborhood/ri/narragansett-restaurants
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Coast+Guard+House+40+Ocean+Rd+Narragansett+RI
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Surf+Shack+83+Narragansett+Ave+Narragansett+RI
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Boon+Street+Market+145+Boon+St+Narragansett+RI
-  - Pelly's Place — dinner_recommendations (3 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Agave+Social+Cocina+Mexicana+23+Pier+Marketplace+Narragansett+RI
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pelly%27s+Place+Narragansett+RI
-    - url_collision_rejected: https://restaurantguru.com/Agave-Social-Cocina-Mexicana-Narragansett
-  - Point Judith Lighthouse — top_attractions (0 candidate(s) considered)
-  - South County Bike Path — top_attractions (0 candidate(s) considered)
-- **Westerly, Rhode Island** (2)
-  - Two Little Fish — dinner_recommendations (8 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.evendo.com/locations/rhode-island/westerly/best-restaurants
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Two+Little+Fish+Misquamicut+Westerly+RI
-    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g54126-d33232053-Reviews-Caswell_s_Seafood_Haven-Westerly_Washington_County_Rhode_Island.html
-  - Watch Hill Lighthouse — top_attractions (0 candidate(s) considered)
-- **Mystic, Connecticut** (6)
-  - Barbary Coast — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33845-Mystic_Mystic_Country_Connecticut.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Barbary+Coast+Mystic+CT
-  - Jeremiah’s Restaurant & Tavern — dinner_recommendations (7 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-mystic-ct
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Jeremiah%E2%80%99s+Restaurant+Mystic+CT
-    - search_resolved: https://no.tripadvisor.com/Restaurants-g33845-c20-Mystic_Mystic_Country_Connecticut.html
-  - Red 36 — dinner_recommendations (24 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Shipwright%E2%80%99s+Daughter+20+E+Main+St+Mystic+CT
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33845-Mystic_Mystic_Country_Connecticut.html
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Mariner+Mystic+CT
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Oyster+Club+Mystic+CT
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Via+Emilia+24+W+Main+St+Mystic+CT
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Andiamo+Mystic+CT
-  - Thai Basil — dinner_recommendations (4 candidate(s) considered)
-    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g33871-d872873-Reviews-or15-Thai_Spice-Norwalk_Connecticut.html
-    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g33871-d872873-Reviews-or15-Thai_Spice-Norwalk_Connecticut.html
-    - audit_discarded_previously_accepted_url: https://www.tripadvisor.com/Restaurant_Review-g33871-d872873-Reviews-or15-Thai_Spice-Norwalk_Connecticut.html
-      [retention exit (16, 'if self._is_generic_restaurant_landing_url(url, item_name, dest_name, item_tokens=_rest_tokens)')]
-  - Mystic River Boardwalk — top_attractions (0 candidate(s) considered)
-  - Noank Historic District — top_attractions (3 candidate(s) considered)
-    - search_resolved: https://www.facebook.com/NorwichCTRadio/posts/groton-connecticut-the-village-of-noanka-dock-view-of-long-island-sound-and-maso/1638252271610843/
-    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/NorwichCTRadio/posts/groton-connecticut-the-village-of-noanka-dock-view-of-long-island-sound-and-maso/1638252271610843/
-    - audit_discarded_previously_accepted_url: https://www.facebook.com/NorwichCTRadio/posts/groton-connecticut-the-village-of-noanka-dock-view-of-long-island-sound-and-maso/1638252271610843/
-      [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
-- **Old Saybrook, Connecticut** (5)
-  - Dock & Dine — dinner_recommendations (0 candidate(s) considered)
-  - Himalaya Cafe — dinner_recommendations (7 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Himalaya+Cafe+1456+Boston+Post+Rd+Old+Saybrook+CT
-    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g33878-d11645801-Reviews-or15-Shakahari-Old_Saybrook_Connecticut.html
-  - La Marea Ristorante — dinner_recommendations (8 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=La+Marea+Ristorante+732+Middlesex+Turnpike+Old+Saybrook+CT
-    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g33878-d11881849-Reviews-or90-La_Marea-Old_Saybrook_Connecticut.html
-  - Terra Mar Grill — dinner_recommendations (3 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33878-Old_Saybrook_Connecticut.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Terra+Mar+Grill+2+Bridge+St+Old+Saybrook+CT
-    - url_collision_rejected: https://en.wikivoyage.org/wiki/Old_Saybrook
-  - The Blue Oar — dinner_recommendations (0 candidate(s) considered)
-- **New Haven, Connecticut** (4)
-  - Caseus Fromagerie & Bistro — dinner_recommendations (0 candidate(s) considered)
-  - Frank Pepe Pizzeria Napoletana — dinner_recommendations (3 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33851-New_Haven_Connecticut.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Frank+Pepe+Pizzeria+Napoletana+New+Haven+CT
-    - url_collision_rejected: https://www.yelp.com/biz/zeneli-pizzeria-new-haven
-  - Lumi Asian Fusion — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Lumi+Asian+Fusion+460+Universal+Drive+North+North+Haven+CT
-    - url_collision_rejected: https://stacker.com/stories/connecticut/new-haven/highest-rated-fine-dining-restaurants-new-haven-area-diners
-  - Yale University — top_attractions (0 candidate(s) considered)
+- **Milford, Massachusetts** (6)
+  - Bar 'Cino — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bar+%27Cino+Westwood+MA
+    - url_collision_rejected: https://www.opentable.com/neighborhood/ma/milford-restaurants
+  - Kosmos — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Kosmos+Greek+Walpole+MA
+    - url_collision_rejected: https://www.opentable.com/neighborhood/ma/milford-restaurants
+  - Neroli Ristorante — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Neroli+Ristorante+Westwood+MA
+    - url_collision_rejected: https://www.opentable.com/neighborhood/ma/milford-restaurants
+  - Stone's Public House — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Stone%27s+Public+House+Ashland+MA
+    - url_collision_rejected: https://www.opentable.com/neighborhood/ma/milford-restaurants
+  - Trattoria Centrale — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g41682-Milford_Massachusetts.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Trattoria+Centrale+Milford+MA
+    - url_collision_rejected: https://www.restaurantji.com/ma/milford/trattoria-89-/
+  - Uno Pizzeria & Grill — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Uno+Pizzeria+%26+Grill+Bellingham+MA
+    - url_collision_rejected: https://www.opentable.com/neighborhood/ma/milford-restaurants
+- **Providence, Rhode Island** (8)
+  - Al Forno — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Al+Forno+577+South+Water+St+Providence+RI
+    - url_collision_rejected: https://boston.eater.com/maps/best-restaurants-providence-rhode-island
+  - CAV Restaurant — dinner_recommendations (29 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Massimo+Restaurant+134+Atwells+Ave+Providence+RI
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-providence-ri
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Hemenway's+Providence+RI
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Hemenway
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Gracie's+194+Washington+St+Providence+RI
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Gracie
+  - Frank & Laurie’s — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Frank+&+Laurie’s+Providence+RI
+    - url_collision_rejected: https://boston.eater.com/maps/best-restaurants-providence-rhode-island
+  - Pot au Feu Bistro — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pot+au+Feu+Bistro+Providence+RI
+    - url_collision_rejected: https://boston.eater.com/maps/best-restaurants-providence-rhode-island
+  - The Capital Grille — dinner_recommendations (5 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-providence-ri
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Capital+Grille+Providence+RI
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g60946-zft20693-Providence_Rhode_Island.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Waterman+Grille+Providence+RI
+    - url_collision_rejected: https://boston.eater.com/maps/best-restaurants-providence-rhode-island
+  - There, There — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=There,+There+Providence+RI
+    - url_collision_rejected: https://boston.eater.com/maps/best-restaurants-providence-rhode-island
+  - Waterman Grille — dinner_recommendations (5 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-providence-ri
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Capital+Grille+Providence+RI
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g60946-zft20693-Providence_Rhode_Island.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Waterman+Grille+Providence+RI
+    - url_collision_rejected: https://boston.eater.com/maps/best-restaurants-providence-rhode-island
+  - WaterFire — top_attractions (0 candidate(s) considered)
+- **Danielson, Connecticut** (10)
+  - 99 Restaurants — dinner_recommendations (24 candidate(s) considered)
+    - url_collision_rejected: https://www.iexitapp.com/guide/Connecticut/6/Danielson/3972
+    - direct_batch_candidate_rejected: https://www.heirloomfoodcompany.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Heirloom+Food+Company+630+N+Main+St+Danielson+CT
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=NK+Restaurant+Danielson+CT
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wicked+Sinister+Smokehouse+14+Central+St+Danielson+CT
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Little+River+Bread+Co+138+Main+St+Danielson+CT
+  - Black Pond Brews — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Black+Pond+Brews+1001+Hartford+Pike+Danielson+CT
+    - url_collision_rejected: https://www.iexitapp.com/guide/Connecticut/6/Danielson/3972
+  - Blended Nutrition — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.menupix.com/connecticut/n/570133/Danielson-restaurants
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Blended+Nutrition+535+Main+St+Danielson+CT
+  - Mexican Grill Dayville — dinner_recommendations (5 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Railside+Tavern+460+Hartford+Pike+Dayville+CT
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mexican+Grill+Dayville+1086+N+Main+St+Dayville+CT
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Yamato+Hibachi+and+Sushi+729+Hartford+Pike+Dayville+CT
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=99+Restaurants+1068+Killingly+Commons+Dr+Dayville+CT
+    - url_collision_rejected: https://www.iexitapp.com/guide/Connecticut/6/Danielson/3972
+  - NewYork Pizza Co. — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=New+York+Pizza+Co+8+Furnace+St+Danielson+CT
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Pizza+Pizzazz+136+Main+St+Danielson+CT
+    - url_collision_rejected: https://www.sirved.com/city/danielson-connecticut-usa
+  - Pizza Pizzazz — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=New+York+Pizza+Co+8+Furnace+St+Danielson+CT
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pizza+Pizzazz+136+Main+St+Danielson+CT
+    - url_collision_rejected: https://www.sirved.com/city/danielson-connecticut-usa
+  - Sugarz Bakery — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.restaurantji.com/ct/danielson/little-river-bread-co/
+    - direct_batch_candidate_rejected: https://www.menupix.com/connecticut/n/570133/Danielson-restaurants
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sugarz+Bakery+535+Main+St+Killingly+CT
+  - The Deli and Market on Maple Street — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.yelp.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Deli+and+Market+on+Maple+Street+Killingly+CT
+  - Wicked Sinister Smokehouse — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.restaurantji.com/ct/danielson/wicked-sinister-smokehouse/
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Wicked+Sinister+Smokehouse+14+Central+St+Danielson+CT
+  - Yamato Hibachi and Sushi — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Yamato+Hibachi+and+Sushi+729+Hartford+Pike+Dayville+CT
+    - url_collision_rejected: https://www.iexitapp.com/guide/Connecticut/6/Danielson/3972
+- **Willimantic, Connecticut** (10)
+  - Olympic Restaurant — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Olympic+Restaurant+58+Boston+Post+Rd+Willimantic+CT
+    - url_collision_rejected: https://www.sirved.com/city/willimantic-connecticut-usa
+  - Oriental Cafe Willimantic — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Oriental+Cafe+Willimantic+CT
+    - url_collision_rejected: https://www.sirved.com/city/willimantic-connecticut-usa
+  - Papa's Pizza — dinner_recommendations (6 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Trigo+Wood+Fired+Pizza+744+Main+St+Willimantic+CT
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Pleasant+Pizza+413+Pleasant+St+Willimantic+CT
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Papa%27s+Pizza+1555+Main+St+Willimantic+CT
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33982-Willimantic_Mystic_Country_Connecticut.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Tony%27s+Pizza+117+Main+St+Willimantic+CT
+    - url_collision_rejected: https://www.restaurantji.com/ct/willimantic/
+  - Pleasant Pizza — dinner_recommendations (6 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Trigo+Wood+Fired+Pizza+744+Main+St+Willimantic+CT
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pleasant+Pizza+413+Pleasant+St+Willimantic+CT
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Papa%27s+Pizza+1555+Main+St+Willimantic+CT
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33982-Willimantic_Mystic_Country_Connecticut.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Tony%27s+Pizza+117+Main+St+Willimantic+CT
+    - url_collision_rejected: https://www.restaurantji.com/ct/willimantic/
+  - Stone Row Kitchen & Bar — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=NOJ+Marketplace+%26+Kitchen+790+Main+St+Willimantic+CT
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33982-Willimantic_Mystic_Country_Connecticut.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Stone+Row+Kitchen+%26+Bar+Willimantic+CT
+    - url_collision_rejected: https://www.sirved.com/city/willimantic-connecticut-usa
+  - Taquería Cordoba — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Taquer%C3%ADa+Cordoba+Willimantic+CT
+    - direct_batch_candidate_rejected: https://www.yelp.com/search?find_desc=Restaurants&find_loc=Willimantic%2C+CT+06226
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=La+Mexicana+Grocery+%26+Taqueria+Willimantic+CT
+    - url_collision_rejected: https://www.restaurantji.com/ct/willimantic/
+  - The Fish Market — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=NOJ+Marketplace+%26+Kitchen+790+Main+St+Willimantic+CT
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Fish+Market+1307+Main+St+Willimantic+CT
+    - url_collision_rejected: https://www.sirved.com/city/willimantic-connecticut-usa
+  - Tony's Pizza — dinner_recommendations (6 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Trigo+Wood+Fired+Pizza+744+Main+St+Willimantic+CT
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Pleasant+Pizza+413+Pleasant+St+Willimantic+CT
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Papa%27s+Pizza+1555+Main+St+Willimantic+CT
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g33982-Willimantic_Mystic_Country_Connecticut.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Tony%27s+Pizza+117+Main+St+Willimantic+CT
+    - url_collision_rejected: https://www.restaurantji.com/ct/willimantic/
+  - Trigo Wood Fired Pizza — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Trigo+Wood+Fired+Pizza+744+Main+St+Willimantic+CT
+    - url_collision_rejected: https://www.restaurantji.com/ct/willimantic/
+  - Willimantic Brewing Company — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Willimantic+Brewing+Company+967+Main+St+Willimantic+CT
+    - url_collision_rejected: https://www.sirved.com/city/willimantic-connecticut-usa
+- **Hartford, Connecticut** (9)
+  - Artisan — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Artisan+West+Hartford+CT
+    - url_collision_rejected: https://www.opentable.com/neighborhood/us/connecticut/hartford-restaurants
+  - Bear's Smokehouse BBQ — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Bear%27s+Smokehouse+BBQ+Hartford+CT
+    - url_collision_rejected: https://www.ctinsider.com/food/article/connecticut-magazine-top-restaurants-hartford-2025-20037749.php
+  - Fleming's Steakhouse — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-hartford-ct
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Fleming%27s+Steakhouse+West+Hartford+CT
+    - url_collision_rejected: https://www.opentable.com/r/max-downtown-g-hartford
+  - Hartford Pizza Garden — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Hartford+Pizza+Garden+535+Farmington+Ave+Hartford+CT
+    - url_collision_rejected: https://stacker.com/stories/connecticut/hartford/highest-rated-restaurants-hartford-diners
+  - Max Oyster Bar — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Max+Oyster+Bar+West+Hartford+CT
+    - url_collision_rejected: https://www.opentable.com/neighborhood/us/connecticut/hartford-restaurants
+  - Máncora Restobar — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=M%C3%A1ncora+Restobar+Hartford+CT
+    - url_collision_rejected: https://www.restaurantji.com/ct/hartford/
+  - Ruth's Chris Steak House — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-hartford-ct
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Ruth%27s+Chris+Steak+House+Hartford+CT
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Fleming%27s+Steakhouse+West+Hartford+CT
+    - url_collision_rejected: https://www.opentable.com/r/max-downtown-g-hartford
+  - The Mill on the River — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Mill+on+the+River+South+Windsor+CT
+    - url_collision_rejected: https://www.opentable.com/neighborhood/us/connecticut/hartford-restaurants
+  - The Triple Three — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Triple+Three+89+Arch+St+Hartford+CT
+    - url_collision_rejected: https://www.ctinsider.com/food/article/connecticut-magazine-top-restaurants-hartford-2025-20037749.php
+- **Farmington, Connecticut** (4)
+  - Cugino's Restaurant of Farmington — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://reviews.birdeye.com/d/restaurants/farmington-ct/
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Cugino%27s+Restaurant+of+Farmington+1053+Farmington+Ave+Farmington+CT
+  - Golden Mango — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Golden+Mango+Farmington+CT
+    - url_collision_rejected: https://www.restaurantji.com/ct/farmington/
+  - Mangetsu Farmington — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mangetsu+Farmington+Farmington+CT
+    - url_collision_rejected: https://www.restaurantji.com/ct/farmington/
+  - P.F. Chang's — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=P.F.+Chang%27s+322+W+Farms+Mall+Farmington+CT
+    - url_collision_rejected: https://www.restaurantji.com/ct/farmington/
+- **New Haven, Connecticut** (1)
+  - Yale University Campus — top_attractions (0 candidate(s) considered)
