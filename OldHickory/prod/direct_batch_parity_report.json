@@ -1,9 +1,17 @@
 {
-  "run_id": "20260919T053526.789610Z",
-  "generated_at_utc": "2026-09-19T05:42:43.107554+00:00",
-  "captured_html_input_count": 0,
-  "unique_captured_urls": 0,
-  "unique_final_html_urls": 249,
-  "destinations_missing_at_least_one_captured_url": 0,
-  "destinations_missing_captured_url_names": []
+  "run_id": "20260919T210417.775435Z",
+  "generated_at_utc": "2026-09-19T21:20:27.421796+00:00",
+  "captured_html_input_count": 28,
+  "unique_captured_urls": 475,
+  "unique_final_html_urls": 292,
+  "destinations_missing_at_least_one_captured_url": 7,
+  "destinations_missing_captured_url_names": [
+    "Asheville, North Carolina",
+    "Franklin, Tennessee",
+    "Gallatin, Tennessee",
+    "Lebanon, Tennessee",
+    "Leiper's Fork, Tennessee",
+    "Nashville, Tennessee",
+    "Old Hickory, Tennessee"
+  ]
 }
