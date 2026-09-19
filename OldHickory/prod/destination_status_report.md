@@ -1,285 +1,223 @@
 # Destination Status Summary
 
-- Run ID: 20260903T071328.464836Z
-- Generated at (UTC): 2026-09-03T07:16:18.750858+00:00
+- Run ID: 20260919T053526.789610Z
+- Generated at (UTC): 2026-09-19T05:42:42.884099+00:00
 - Destination count: 7
-- Retry recommended: 3
-- Retry attempted: 3
+- Retry recommended: 0
+- Retry attempted: 0
 - Resolved after retry: 0
-- Unresolved after retry: 3
+- Unresolved after retry: 0
 - Not retried due to cap: 0
 
-## Needs Attention (3)
-- Old Hickory, Tennessee (oldhickory) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
-- Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=url_acceptance_ratio_below_threshold, retry_cap_reached
-- Asheville, North Carolina (asheville) — status=needs_retry, terminal=retry_cap_reached_unresolved, triggers=rendered_items_missing_links, retry_cap_reached
+## Needs Attention (0)
+- None
 
 ## All Destinations (7)
-- Old Hickory, Tennessee (oldhickory) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
-- Nashville, Tennessee (nashville) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/8, en_route_exhaustion_or_no_match=0
-- Gallatin, Tennessee (gallatin) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=5/5, en_route_exhaustion_or_no_match=0
-- Lebanon, Tennessee (lebanon) — status=degraded, terminal=stable_without_retry, en_route_resolved=7/8, en_route_exhaustion_or_no_match=0
-- Franklin, Tennessee (franklin) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/6, en_route_exhaustion_or_no_match=0
-- Leiper's Fork, Tennessee (leipers_fork) — status=degraded, terminal=stable_without_retry, en_route_resolved=7/7, en_route_exhaustion_or_no_match=0
-- Asheville, North Carolina (asheville) — status=needs_retry, terminal=retry_cap_reached_unresolved, en_route_resolved=10/12, en_route_exhaustion_or_no_match=0
+- Old Hickory, Tennessee (oldhickory) — status=degraded, terminal=stable_without_retry, en_route_resolved=2/4, en_route_exhaustion_or_no_match=0
+- Nashville, Tennessee (nashville) — status=degraded, terminal=stable_without_retry, en_route_resolved=4/8, en_route_exhaustion_or_no_match=0
+- Gallatin, Tennessee (gallatin) — status=degraded, terminal=stable_without_retry, en_route_resolved=5/7, en_route_exhaustion_or_no_match=0
+- Lebanon, Tennessee (lebanon) — status=degraded, terminal=stable_without_retry, en_route_resolved=2/4, en_route_exhaustion_or_no_match=0
+- Franklin, Tennessee (franklin) — status=degraded, terminal=stable_without_retry, en_route_resolved=3/7, en_route_exhaustion_or_no_match=0
+- Leiper's Fork, Tennessee (leipers_fork) — status=degraded, terminal=stable_without_retry, en_route_resolved=6/8, en_route_exhaustion_or_no_match=0
+- Asheville, North Carolina (asheville) — status=degraded, terminal=stable_without_retry, en_route_resolved=9/11, en_route_exhaustion_or_no_match=0
 
-## Removed for No Verified URL (57)
-- **Old Hickory, Tennessee** (13)
-  - BODHI Asian Street Eats — dinner_recommendations (9 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=BODHI+Asian+Street+Eats+Old+Hickory+TN+37138
-    - search_resolved: https://no.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
-  - Gourmet Ribs — dinner_recommendations (10 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gourmet+Ribs+Old+Hickory+TN+37138
-    - search_resolved: https://www.tripadvisor.com/Tourism-g55248-Old_Hickory_Tennessee-Vacations.html
-  - Meatballs Italian Grill — dinner_recommendations (11 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Meatballs+Italian+Grill+Old+Hickory+TN+37138
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55098-Hermitage_Tennessee.html
+## Removed for No Verified URL (48)
+- **Old Hickory, Tennessee** (12)
+  - BODHI Asian Street Eats — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-old-hickory-hermitage-tn
-  - Nadeen's Hermitage Haven — dinner_recommendations (9 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55098-Hermitage_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Nadeen%27s+Hermitage+Haven+Hermitage+TN
-    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g55098-d2627588-Reviews-IHOP-Hermitage_Tennessee.html
-  - Old Hickory Steakhouse — dinner_recommendations (9 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-old-hickory-hermitage-tn
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Old+Hickory+Steakhouse+Gaylord+Opryland+Nashville+TN
-    - search_resolved: https://www.tripadvisor.com/Hotel_Review-g55229-d105443-Reviews-or6130-Gaylord_Opryland_Resort_Convention_Center-Nashville_Davidson_County_Tennessee.html
-  - Rack and Tap Bar and Grill — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Rack+and+Tap+Bar+and+Grill+Old+Hickory+TN+37138
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=BODHI+Asian+Street+Eats+14801+Lebanon+Rd+Old+Hickory+TN
+  - Chulitos Panaderia y Taqueria — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.instagram.com/p/DITtyUWMvIL
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Chulitos+Panaderia+y+Taqueria+15311+Lebanon+Road+Old+Hickory+TN
+    - direct_batch_candidate_rejected_generic: https://www.tennessean.com/story/entertainment/dining/2025/05/28/best-restaurants-in-nashville-hermitage-old-hickory/82761635007/
+  - Gourmet Ribs — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gourmet+Ribs+Old+Hickory+TN
+  - Grandaddy's Original Hot Chicken Shack — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Grandaddy%27s+Original+Hot+Chicken+Shack+Old+Hickory+TN
+    - direct_batch_candidate_rejected_generic: https://www.restaurantji.com/tn/old-hickory/
+  - Meatballs Italian Grill — dinner_recommendations (4 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
+    - direct_batch_candidate_rejected_generic: https://www.tennessean.com/story/entertainment/dining/2025/05/28/best-restaurants-in-nashville-hermitage-old-hickory/82761635007/
+    - direct_batch_candidate_rejected: https://tuttidagio.com
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Meatballs+Italian+Grill+Old+Hickory+TN
+  - Monell's — dinner_recommendations (5 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g55229-d26834372-Reviews-SweetMilk_Breakfast_Lunch-Nashville_Davidson_County_Tennessee.html
+    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g55229-d26834372-Reviews-SweetMilk_Breakfast_Lunch-Nashville_Davidson_County_Tennessee.html
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g55229-d10137111-Reviews-Old_Hickory_Grill-Nashville_Davidson_County_Tennessee.html
+  - Old Hickory Steakhouse — dinner_recommendations (6 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g55229-d8065944-Reviews-or270-5th_and_Taylor-Nashville_Davidson_County_Tennessee.html
+    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g55229-d8065944-Reviews-or270-5th_and_Taylor-Nashville_Davidson_County_Tennessee.html
+    - search_resolved: https://www.visitmusiccity.com/nashville-businesses/old-hickory-steakhouse-gaylord-opryland/5036
+  - Red Ninja Sushi & Korean Cuisine — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Red+Ninja+Sushi+Old+Hickory+TN
     - url_collision_rejected: https://www.restaurantji.com/tn/old-hickory/
-  - Ravello at Gaylord Opryland — dinner_recommendations (10 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-old-hickory-hermitage-tn
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Old+Hickory+Steakhouse+Gaylord+Opryland+Nashville+TN
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Ravello+at+Gaylord+Opryland+Nashville+TN
-  - Salvo's Pizza — dinner_recommendations (9 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55098-Hermitage_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Salvo%27s+Pizza+Hermitage+TN
-    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g55098-d2303035-Reviews-or165-Gondola_House-Hermitage_Tennessee.html
   - Sam’s Sports Grill — dinner_recommendations (3 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sam%E2%80%99s+Sports+Grill+Old+Hickory+TN+37138
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sam%E2%80%99s+Sports+Grill+Old+Hickory+TN
     - url_collision_rejected: https://www.restaurantji.com/tn/old-hickory/
-  - Simply Thai — dinner_recommendations (5 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55248-Old_Hickory_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Simply+Thai+Old+Hickory+TN+37138
-    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g55248-d3609224-Reviews-Simply_Thai-Old_Hickory_Tennessee.html
-  - Lakewood Theatre Company — en_route_stops (10 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://thehermitage.com/
-    - direct_batch_candidate_rejected: https://www.historicrockcastle.com/
-    - direct_batch_candidate_rejected: https://www.tripadvisor.com/Attraction_Review-g55229-d561761-Reviews-Two_Rivers_Mansion-Nashville_Davidson_County_Tennessee.html
-    - direct_batch_candidate_rejected: https://wanderlog.com/place/details/9591977/old-hickory-village-farmers-market
-    - direct_batch_candidate_rejected: https://www.tripadvisor.com/Attractions-g55248-Activities-Old_Hickory_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.oldhickoryvillage.org/resources
-  - Old Hickory Art Center — en_route_stops (4 candidate(s) considered)
-    - direct_batch_existing_url_preserved: https://www.oldhickoryvillage.org/resources
-    - discovery_completed: https://www.oldhickoryvillage.org/resources
-    - en_route_resolved_to_maps: https://www.google.com/maps/search/?api=1&query=Old%20Hickory%20Art%20Center
-    - audit_discarded_previously_accepted_url: https://www.google.com/maps/search/?api=1&query=Old%20Hickory%20Art%20Center
-      [retention exit not recorded]
-  - Old Hickory Village Farmers Market — en_route_stops (4 candidate(s) considered)
-    - direct_batch_existing_url_preserved: https://wanderlog.com/place/details/9591977/old-hickory-village-farmers-market
-    - discovery_completed: https://wanderlog.com/place/details/9591977/old-hickory-village-farmers-market
-    - en_route_resolved_to_maps: https://www.google.com/maps/search/?api=1&query=Old%20Hickory%20Village%20Farmers%20Market
-    - audit_discarded_previously_accepted_url: https://www.google.com/maps/search/?api=1&query=Old%20Hickory%20Village%20Farmers%20Market
-      [retention exit not recorded]
-- **Nashville, Tennessee** (7)
-  - Butcher & Bee — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Butcher+and+Bee+East+Nashville+TN
-    - url_collision_rejected: https://nashville.eater.com/maps/best-nashville-restaurants-38
-  - Five Points Pizza — dinner_recommendations (4 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55229-Nashville_Davidson_County_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Five+Points+Pizza+East+Nashville+TN
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Sho+Pizza+Bar+Riverside+Village+Nashville+TN
-    - url_collision_rejected: https://topofnashville.com/top-rated/
-  - Graze Nashville — dinner_recommendations (2 candidate(s) considered)
-    - url_collision_rejected: https://topofnashville.com/top-rated/
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Graze+Nashville+East+Nashville+TN
-  - Hattie B's Hot Chicken — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Hattie+Bs+Hot+Chicken+112+19th+Ave+S+Nashville+TN
-    - url_collision_rejected: https://sobrosnetwork.com/2023/09/nashville-restaurant-rankings/
-  - House of India — dinner_recommendations (3 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55229-Nashville_Davidson_County_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=House+of+India+Franklin+TN
-    - url_collision_rejected: https://topofnashville.com/top-rated/
-  - Monell's Dining & Catering — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Monells+Dining+Germantown+Nashville+TN
-    - url_collision_rejected: https://topofnashville.com/top-rated/
-  - Sho Pizza Bar — dinner_recommendations (4 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55229-Nashville_Davidson_County_Tennessee.html
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Five+Points+Pizza+East+Nashville+TN
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sho+Pizza+Bar+Riverside+Village+Nashville+TN
-    - url_collision_rejected: https://topofnashville.com/top-rated/
-- **Gallatin, Tennessee** (12)
-  - Agave's 109 — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Agave%27s+109+Gallatin+TN
-    - url_collision_rejected: https://www.restaurantji.com/tn/gallatin/
-  - Black Elm Coffee — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Black+Elm+Coffee+Gallatin+TN
-    - url_collision_rejected: https://www.restaurantji.com/tn/gallatin/
+  - Sperry's — dinner_recommendations (0 candidate(s) considered)
+  - Cumberland River Greenway — top_attractions (3 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.lrd.usace.army.mil/
+    - search_resolved: https://www.traillink.com/trail/old-hickory-dam-greenway/
+    - authoritative_no_match_recovered_via_general_search: https://www.traillink.com/trail/old-hickory-dam-greenway/
+  - Old Hickory Dam Overlook — top_attractions (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.lrd.usace.army.mil/
+    - direct_batch_maps_query_not_accepted_as_url: https://www.google.com/maps/search/?api=1&query=Old%20Hickory%20Dam%20Overlook
+- **Nashville, Tennessee** (1)
+  - Warner Woods Loop — top_attractions (6 candidate(s) considered)
+    - search_resolved: https://www.alltrails.com/trail/us/tennessee/warner-woods-trail
+    - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/tennessee/warner-woods-loop
+    - search_cache_hit: https://www.alltrails.com/trail/us/tennessee/warner-woods-trail
+    - search_resolved: https://www.facebook.com/healthyparkstn/posts/tn-trail-highlight-warner-woods-loophave-you-visited-this-awesome-trail-in-nashv/882084323932828/
+    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/healthyparkstn/posts/tn-trail-highlight-warner-woods-loophave-you-visited-this-awesome-trail-in-nashv/882084323932828/
+- **Gallatin, Tennessee** (9)
   - Casa Roja Mexican Grill — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Casa+Roja+Mexican+Grill+Gallatin+TN
     - url_collision_rejected: https://restaurantguru.com/Gallatin
-  - DosBros Fresh Mexican Grill — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=DosBros+Fresh+Mexican+Grill+Gallatin+TN
+  - M.L.Rose Neighborhood Pub — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=M.L.Rose+Neighborhood+Pub+Gallatin+TN
     - url_collision_rejected: https://topofnashville.com/best-restaurants-gallatin/
-  - Gyros King — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Gyros+King+Gallatin+TN
-    - url_collision_rejected: https://restaurantguru.com/Gallatin
-  - Hummus Republic — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Hummus+Republic+Gallatin+TN
-    - url_collision_rejected: https://restaurantguru.com/Gallatin
-  - Mama's Kitchen — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mama%27s+Kitchen+495+E+Main+St+Gallatin+TN
-    - url_collision_rejected: https://www.restaurantji.com/tn/gallatin/
-  - Pokemoto — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pokemoto+1025+Nashville+Pike+Gallatin+TN
-    - url_collision_rejected: https://foodeist.com/best-restaurants-in-gallatin-sumner-county
-  - Sapporo — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sapporo+1650+Nashville+Pike+Gallatin+TN
-    - url_collision_rejected: https://topofnashville.com/best-restaurants-gallatin/
-  - Top Hog BBQ — dinner_recommendations (23 candidate(s) considered)
+  - Oh Taste And See — dinner_recommendations (4 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55061-Gallatin_Sumner_County_Tennessee.html
     - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Campione%27s+Taste+of+Chicago+179+Hancock+St+Gallatin+TN
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Alberto%E2%80%99s+210+Douglas+Bend+Rd+Gallatin+TN
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=The+Chocolate+Covered+Strawberry+2375+Nashville+Pike+Gallatin+TN
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Top+Hog+BBQ+642+Blythe+Ave+Gallatin+TN
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Sapporo+1650+Nashville+Pike+Gallatin+TN
-  - Hendersonville Memory Gardens — en_route_stops (7 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Oh+Taste+And+See+Gallatin+TN
+    - url_collision_rejected: https://restaurantguru.com/Gallatin
+  - Salvo's Pizza — dinner_recommendations (5 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55061-Gallatin_Sumner_County_Tennessee.html
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.ca/Restaurants-g55061-Gallatin_Sumner_County_Tennessee.html
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Prince+Street+Pizza+%26+Pub+123+Prince+St+Gallatin+TN
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Salvo%27s+Pizza+Gallatin+TN
+    - url_collision_rejected: https://restaurantguru.com/Gallatin
+  - Sapporo Japanese and Korean Restaurant — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sapporo+Japanese+and+Korean+Restaurant+1650+Nashville+Pike+Gallatin+TN
+    - url_collision_rejected: https://topofnashville.com/best-restaurants-gallatin/
+  - Thai Spice — dinner_recommendations (6 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/Restaurant_Review-g32212-d6779230-Reviews-Noodles_Company-Citrus_Heights_California.html
+    - discovery_completed: https://www.tripadvisor.com/Restaurant_Review-g32212-d6779230-Reviews-Noodles_Company-Citrus_Heights_California.html
+    - search_resolved: https://www.deliverclub.com/order/restaurant/thai-flavor-restaurant-menu/16778
+  - The Blue Goose Cafe — dinner_recommendations (0 candidate(s) considered)
+  - Douglass-Clark House — en_route_stops (11 candidate(s) considered)
     - direct_batch_candidate_rejected: https://historicrockcastle.com/
-    - direct_batch_candidate_rejected: https://www.hendersonvillememorygardens.com/
-    - direct_batch_candidate_rejected: https://monthavenartscenter.org/
-    - direct_batch_candidate_rejected: https://www.hendersonvillen.gov/parks
-    - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Hendersonville%20Memory%20Gardens%20Gallatin%2C%20Tennessee
-    - discovery_completed: https://www.google.com/maps/search/?api=1&query=Hendersonville%20Memory%20Gardens%20Gallatin%2C%20Tennessee
-  - Monthaven Arts & Cultural Center — en_route_stops (9 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com/Attraction_Review-g55095-d4749982-Reviews-Hendersonville_Memory_Gardens-Hendersonville_Sumner_County_Tennessee.html
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com/Attraction_Review-g55095-d12345678-Reviews-Rockland_Recreation_Area-Hendersonville_Sumner_County_Tennessee.html
+    - direct_batch_candidate_rejected: https://www.southernliving.com/travel/tennessee/hendersonville-tn
+    - direct_batch_candidate_rejected: https://tnstateparks.com/parks/bledsoe-creek
+    - direct_batch_candidate_rejected: http://www.douglassclarkhouse.com/
+  - Hendersonville Farmers Market — en_route_stops (11 candidate(s) considered)
     - direct_batch_candidate_rejected: https://historicrockcastle.com/
-    - direct_batch_candidate_rejected: https://www.hendersonvillememorygardens.com/
-    - direct_batch_candidate_rejected: https://monthavenartscenter.org/
-    - direct_batch_candidate_rejected: https://www.hendersonvillen.gov/parks
-    - direct_batch_selected_authoritative: https://www.google.com/maps/search/?api=1&query=Monthaven%20Arts%20%26%20Cultural%20Center%20Gallatin%2C%20Tennessee
-    - en_route_url_collision_rejected: https://www.google.com/maps/search/?api=1&query=Monthaven%20Arts%20%26%20Cultural%20Center%20Gallatin%2C%20Tennessee
-- **Lebanon, Tennessee** (7)
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com/Attraction_Review-g55095-d4749982-Reviews-Hendersonville_Memory_Gardens-Hendersonville_Sumner_County_Tennessee.html
+    - direct_batch_candidate_rejected: https://www.tripadvisor.com/Attraction_Review-g55095-d12345678-Reviews-Rockland_Recreation_Area-Hendersonville_Sumner_County_Tennessee.html
+    - direct_batch_candidate_rejected: https://www.southernliving.com/travel/tennessee/hendersonville-tn
+    - direct_batch_candidate_rejected: https://tnstateparks.com/parks/bledsoe-creek
+    - direct_batch_candidate_rejected: http://www.douglassclarkhouse.com/
+- **Lebanon, Tennessee** (8)
   - A1 Pizza & Pasta — dinner_recommendations (6 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://restaurantguru.com/Aubreys-Lebanon
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Chi-Town+Pizza+Lebanon+TN
-    - direct_batch_candidate_rejected: https://www.restaurantji.com/tn/lebanon/tenn-lakes-brewing-company/
-    - direct_batch_candidate_rejected: https://restaurantguru.com/A1-PIZZA-and-PASTA-Lebanon
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=A1+Pizza+%26+Pasta+Lebanon+TN
-    - url_collision_rejected: https://www.yelp.com/biz/chi-town-pizza-lebanon
-  - Angelo's Italian Restaurant — dinner_recommendations (5 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://restaurantguru.com/Demos-Restaurant-Lebanon
-    - direct_batch_candidate_rejected: https://restaurantguru.com/A1-PIZZA-and-PASTA-Lebanon
     - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55153-Lebanon_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Angelo%27s+Italian+Restaurant+Lebanon+TN
-    - url_collision_rejected: https://www.yelp.com/biz/painturos-lebanon
-  - Cedar City Brewing Company — dinner_recommendations (4 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.restaurantji.com/tn/lebanon/cedar-city-brewing-company/
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Cedar+City+Brewing+Company+Lebanon+TN
-    - direct_batch_candidate_rejected: https://www.restaurantji.com/tn/lebanon/tenn-lakes-brewing-company/
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Tenn+Lakes+Brewing+Company+Lebanon+TN
-  - Dak Der Asian Foods — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://restaurantguru.com/DAK-DER-ASIAN-FOODS-Lebanon
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Dak+Der+Asian+Foods+Lebanon+TN
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Painturo%27s+Pizza+Lebanon+TN
+    - direct_batch_candidate_rejected: https://www.yelp.com/search?cflt=restaurants&find_loc=Lebanon%2C+TN
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=A1+Pizza+%26+Pasta+Lebanon+TN
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Chi-Town+Pizza+Lebanon+TN
+    - url_collision_rejected: https://restaurantguru.com/Lebanon-Tennessee
+  - Aubrey's — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Aubrey%27s+Lebanon+TN
+    - url_collision_rejected: https://restaurantguru.com/Lebanon-Tennessee
+  - Logan's Roadhouse — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Logan%27s+Roadhouse+Lebanon+TN
+    - url_collision_rejected: https://restaurantguru.com/Lebanon-Tennessee
   - Pyramids Grill — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://restaurantguru.com/Pyramids-Grill-Lebanon
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Pyramids+Grill+Lebanon+TN
-  - Fite-Fessenden House — en_route_stops (12 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://thehermitage.com/
-    - direct_batch_candidate_rejected: https://thehermitage.com/plan-your-visit/tulip-grove/
-    - direct_batch_candidate_rejected: https://www.rockcastle.org/
-    - direct_batch_candidate_rejected: https://www.mtjuliet-tn.gov/240/Charlie-Daniels-Park
-    - direct_batch_candidate_rejected: https://www.mtjuliet-tn.gov/
-    - direct_batch_candidate_rejected: https://tnstateparks.com/parks/cedars-of-lebanon
-  - Hibbett Hall Train and History Museum — en_route_stops (10 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://thehermitage.com/
-    - direct_batch_candidate_rejected: https://thehermitage.com/plan-your-visit/tulip-grove/
-    - direct_batch_candidate_rejected: https://www.rockcastle.org/
-    - direct_batch_candidate_rejected: https://www.mtjuliet-tn.gov/240/Charlie-Daniels-Park
-    - direct_batch_candidate_rejected: https://www.mtjuliet-tn.gov/
-    - direct_batch_candidate_rejected: https://tnstateparks.com/parks/cedars-of-lebanon
-- **Franklin, Tennessee** (8)
-  - 55 South — dinner_recommendations (4 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=January+at+Southall+2200+Osage+Loop+Franklin+TN
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55055-Franklin_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=55+South+Franklin+TN
-    - url_collision_rejected: https://www.theinfatuation.com/nashville/guides/best-restaurants-franklin-tennessee
-  - Culaccino Italian Restaurant + Bar — dinner_recommendations (4 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Culaccino+104+E+Main+St+Franklin+TN
-    - direct_batch_candidate_rejected: https://www.yelp.com/search?find_desc=Best+Restaurants&find_loc=Franklin%2C+TN
-    - direct_batch_candidate_rejected: https://www.opentable.com/neighborhood/tn/franklin-restaurants
-    - url_collision_rejected: https://ratingsnearme.com/franklin-tn/best-restaurant
-  - Culamar — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Culamar+99+E+Main+St+Franklin+TN
-    - url_collision_rejected: https://www.tennessean.com/story/entertainment/dining/2024/06/19/williamson-county-restaurants-franklin-food-top-10-ranking/73978137007/
-  - House of India — dinner_recommendations (7 candidate(s) considered)
+    - url_collision_rejected: https://restaurantguru.com/Lebanon-Tennessee
+  - Swampers — dinner_recommendations (0 candidate(s) considered)
+  - Tenn Lakes Brewing Company — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55153-Lebanon_Tennessee.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Tenn+Lakes+Brewing+Company+Lebanon+TN
+    - url_collision_rejected: https://restaurantguru.com/Lebanon-Tennessee
+  - The Blackbird Restaurant — dinner_recommendations (0 candidate(s) considered)
+  - Cave Creek Trail — top_attractions (4 candidate(s) considered)
+    - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/tennessee/cave-creek-trail
+    - search_resolved: https://www.trailforks.com/trails/cave-creek-trail-606172/
+    - authoritative_no_match_recovered_via_general_search: https://www.trailforks.com/trails/cave-creek-trail-606172/
+- **Franklin, Tennessee** (9)
+  - 1799 Kitchen and Bar Room — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-franklin-tn
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55055-zfp10954-Franklin_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.yelp.com/search?find_desc=Best+Restaurants&find_loc=Franklin%2C+TN
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Serratos+Steakhouse+Franklin+TN
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=1799+Kitchen+and+Bar+Room+Franklin+TN
+  - 55 South — dinner_recommendations (6 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-franklin-tn
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=January+at+Southall+Farm+Franklin+TN
+    - direct_batch_candidate_rejected: https://eu.tennessean.com/story/entertainment/dining/2024/06/19/williamson-county-restaurants-franklin-food-top-10-ranking/73978137007/
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=55+South+403+Main+St+Franklin+TN
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.in/Restaurants-g55055-Franklin_Tennessee.html
+    - url_collision_rejected: https://www.opentable.com/r/red-pony-restaurant-franklin
+  - Connors Steak & Seafood — dinner_recommendations (4 candidate(s) considered)
+    - url_collision_rejected: https://www.restaurantji.com/tn/franklin/connors-steak-and-seafood-/
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-franklin-tn
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Connors+Steak+and+Seafood+Franklin+TN
+    - url_collision_rejected: https://www.opentable.com/r/the-rutledge-franklin
+  - GRAYS On Main — dinner_recommendations (7 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.in/Restaurants-g55055-Franklin_Tennessee.html
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=GRAYS+On+Main+Franklin+TN
+    - search_resolved: https://www.tripadvisor.com/RestaurantsNear-g55055-d4727215-GRAYS_on_Main-Franklin_Tennessee.html
+  - House of India — dinner_recommendations (6 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-franklin-tn
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Perry's+Steakhouse+Cool+Springs+Franklin+TN
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=House+of+India+Franklin+TN
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Perrys+Steakhouse+Cool+Springs+Franklin+TN
+    - direct_batch_candidate_rejected: https://www.yelp.com/search?find_desc=Best+Restaurants&find_loc=Franklin%2C+TN
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Serrato's+Steakhouse+Franklin+TN
+    - url_collision_rejected: https://www.restaurantji.com/tn/franklin/connors-steak-and-seafood-/
   - Mi Kitchen — dinner_recommendations (4 candidate(s) considered)
-    - direct_batch_candidate_rejected_generic: https://www.tripadvisor.com/Restaurants-g55055-Franklin_Tennessee.html
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=1799+Kitchen+and+Bar+Room+130+2nd+Ave+N+Franklin+TN
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-franklin-tn
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=1799+Kitchen+and+Bar+Room+Franklin+TN
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Mi+Kitchen+Franklin+TN
     - url_collision_rejected: https://www.theinfatuation.com/nashville/guides/best-restaurants-franklin-tennessee
-  - North Italia — dinner_recommendations (4 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.yelp.com/search?find_desc=Best+Restaurants&find_loc=Franklin%2C+TN
-    - direct_batch_candidate_rejected: https://www.opentable.com/neighborhood/tn/franklin-restaurants
+  - North Italia — dinner_recommendations (5 candidate(s) considered)
+    - direct_batch_candidate_rejected_generic: https://www.opentable.com/nearby/restaurants-near-me-franklin-tn
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=North+Italia+Franklin+TN
+    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Zolo's+Italian+119+5th+Ave+N+Franklin+TN+37064
+    - direct_batch_candidate_rejected: https://www.yelp.com/search?find_desc=Best+Restaurants&find_loc=Franklin%2C+TN
     - url_collision_rejected: https://ratingsnearme.com/franklin-tn/best-restaurant
-  - etch — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=etch+Franklin+230+Franklin+Rd+Franklin+TN
-    - url_collision_rejected: https://www.theinfatuation.com/nashville/guides/best-restaurants-franklin-tennessee
-  - Birdsong Hollow Overlook — en_route_stops (10 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://visitfranklin.com/blog/your-guide-to-the-natchez-trace-parkway-in-franklin-tn/
-    - direct_batch_candidate_rejected: https://franklinis.com/nashville-to-franklin-tn-what-to-see-eat-and-do-in-downtown-franklin/
-    - direct_batch_candidate_rejected: https://visitfranklin.com/plan-your-trip/
-    - direct_batch_candidate_rejected: https://franklintn.com/blog/day-trips-from-franklin-tn
-    - direct_batch_candidate_rejected: https://visitfranklin.com/blog/the-6-most-scenic-drives-to-take-around-franklin/
-    - direct_batch_selected_authoritative: https://visitfranklin.com/blog/your-guide-to-the-natchez-trace-parkway-in-franklin-tn/
-- **Leiper's Fork, Tennessee** (9)
+  - Puckett's Restaurant — dinner_recommendations (3 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Puckett's+Restaurant+120+4th+Ave+S+Franklin+TN+37064
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Puckett
+    - url_collision_rejected: https://ratingsnearme.com/franklin-tn/best-restaurant
+  - The Red Pony — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Red+Pony+408+Main+Street+Franklin+TN+37064
+    - url_collision_rejected: https://www.opentable.com/r/red-pony-restaurant-franklin
+- **Leiper's Fork, Tennessee** (6)
   - Amerigo Italian Restaurant — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Amerigo+Italian+Restaurant+Franklin+TN
     - url_collision_rejected: https://www.yelp.com/biz/italy-from-scratch-franklin
+  - Blue Sushi & Saki Grill — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Blue+Sushi+%26+Saki+Grill+Franklin+TN
+    - url_collision_rejected: https://www.williamsonscene.com/williamsonsbest/2025/food_drink/readers_poll/leiper-s-fork-distillery/article_6df62122-488a-4cb0-a636-20717a31559e.html
   - GratiDude Ranch — dinner_recommendations (2 candidate(s) considered)
     - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=GratiDude+Ranch+Leiper%27s+Fork+TN
     - url_collision_rejected: https://www.southboundstays.com/visit-leipers-fork/what-to-do-in-leipers-fork/eat-drink-in-leipers-fork/
-  - Hattie B’s Hot Chicken — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Hattie+B%E2%80%99s+Hot+Chicken+Franklin+TN
-    - url_collision_rejected: https://www.williamsonscene.com/williamsonsbest/2025/food_drink/readers_poll/leiper-s-fork-distillery/article_6df62122-488a-4cb0-a636-20717a31559e.html
-  - Martin’s Bar-B-Que Joint — dinner_recommendations (2 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Martin%E2%80%99s+Bar-B-Que+Joint+Franklin+TN
-    - url_collision_rejected: https://www.williamsonscene.com/williamsonsbest/2025/food_drink/readers_poll/leiper-s-fork-distillery/article_6df62122-488a-4cb0-a636-20717a31559e.html
-  - Sperry’s Steakhouse — dinner_recommendations (4 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://www.opentable.com/r/perrys-steakhouse-grille-cool-springs-franklin
-    - direct_batch_candidate_rejected_generic: https://www.google.com/maps/search/?api=1&query=Perry%27s+Steakhouse+Cool+Springs+Franklin+TN
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sperry%E2%80%99s+Steakhouse+Cool+Springs+TN
-    - url_collision_rejected: https://www.southboundstays.com/visit-leipers-fork/what-to-do-in-leipers-fork/eat-drink-in-leipers-fork/
-  - Uncle Lenny’s Country Cafe — dinner_recommendations (2 candidate(s) considered)
-    - url_collision_rejected: https://www.yelp.com/biz/uncle-lennys-country-cafe-franklin
-    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Uncle+Lenny%E2%80%99s+Country+Cafe+Franklin+TN
-  - Leiper's Creek Gallery — en_route_stops (12 candidate(s) considered)
-    - direct_batch_candidate_rejected: https://boft.org/carnton
-    - direct_batch_candidate_rejected: https://boft.org/carter-house
-    - direct_batch_candidate_rejected: https://boft.org/lotz-house
-    - direct_batch_candidate_rejected: https://www.nps.gov/natr/index.htm
-    - direct_batch_candidate_rejected: https://cheekwood.org/
-    - direct_batch_candidate_rejected: https://tnstateparks.com/parks/radnor-lake
-  - FiftyForward Martin Center — top_attractions (3 candidate(s) considered)
-    - search_resolved: https://www.facebook.com/fiftyforwardmartincenter/photos/off-to-leipers-fork-for-a-day-of-fun/2306416149678789/
-    - authoritative_no_match_recovered_via_general_search: https://www.facebook.com/fiftyforwardmartincenter/photos/off-to-leipers-fork-for-a-day-of-fun/2306416149678789/
-    - audit_discarded_previously_accepted_url: https://www.facebook.com/fiftyforwardmartincenter/photos/off-to-leipers-fork-for-a-day-of-fun/2306416149678789/
-      [retention exit (30, "if allow_google_maps_search and policy_class in {'google_maps_search', 'google_maps_dir'}")]
-  - Harpeth River Trail and Judge Fulton Greer Park — top_attractions (4 candidate(s) considered)
-    - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/tennessee/harpeth-river-trail-and-judge-fulton-greer-park
-    - search_resolved: https://www.alltrails.com/parks/us/tennessee/judge-fulton-green-park
-    - authoritative_no_match_recovered_via_general_search: https://www.alltrails.com/parks/us/tennessee/judge-fulton-green-park
-- **Asheville, North Carolina** (1)
-  - Lake Powhatan via Bent Creek Trail — top_attractions (4 candidate(s) considered)
-    - search_resolved: https://www.alltrails.com/poi/us/north-carolina/asheville/lake-powhatan-dam
-    - authoritative_no_match_recovered_via_general_search: https://www.alltrails.com/poi/us/north-carolina/asheville/lake-powhatan-dam
-    - audit_discarded_previously_accepted_url: https://www.alltrails.com/trail/us/north-carolina/wesley-branch-natural-garden-and-bent-creek-loop
-      [retention exit (25, 'if not self._meets_alltrails_publish_confidence(url, item_name, dest_name)')]
+  - Sperry's Restaurant — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sperry%27s+Restaurant+Cool+Springs+Franklin+TN
+    - url_collision_rejected: https://www.yellowpages.com/leipers-fork-tn/restaurants
+  - Sweethaven — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=Sweethaven+Franklin+TN
+    - url_collision_rejected: https://www.tripadvisor.com/Restaurant_Review-g55055-d6507851-Leiper_s_Fork-Franklin_Tennessee.html
+  - The Davis General — dinner_recommendations (2 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://www.google.com/maps/search/?api=1&query=The+Davis+General+Franklin+TN
+    - url_collision_rejected: https://www.tripadvisor.com/Restaurant_Review-g55055-d6507851-Leiper_s_Fork-Franklin_Tennessee.html
+- **Asheville, North Carolina** (3)
+  - Cucina 24 — dinner_recommendations (6 candidate(s) considered)
+    - search_resolved: https://www.tripadvisor.com/ShowUserReviews-g60742-d3192619-r208699669-Strada_Italiano-Asheville_North_Carolina.html
+    - discovery_completed: https://www.tripadvisor.com/ShowUserReviews-g60742-d3192619-r208699669-Strada_Italiano-Asheville_North_Carolina.html
+    - search_resolved: https://rocketreach.co/cucina-24-profile_b468aecdfc5c9b5d
+  - Clingmans Dome — en_route_stops (11 candidate(s) considered)
+    - direct_batch_candidate_rejected: https://exploreoakridge.com/things-to-do/american-museum-of-science-energy/
+    - direct_batch_candidate_rejected: https://exploreoakridge.com/things-to-do/oak-ridge-history-museum/
+    - direct_batch_candidate_rejected: https://www.zooknoxville.org/
+    - direct_batch_candidate_rejected: https://www.easttennesseehistory.org/
+    - direct_batch_candidate_rejected: https://www.nps.gov/grsm/planyourvisit/clingmans-dome.htm
+    - direct_batch_candidate_rejected: https://www.nps.gov/obed/index.htm
+  - Carolina Mountain and Bent Creek Trail — top_attractions (6 candidate(s) considered)
+    - search_resolved: https://www.alltrails.com/trail/us/north-carolina/old-bent-creek-road-loop
+    - alltrails_confidence_denied_no_corroboration: https://www.alltrails.com/trail/us/north-carolina/carolina-mountain-and-bent-creek-trail
+    - search_cache_hit: https://www.alltrails.com/trail/us/north-carolina/old-bent-creek-road-loop
+    - search_resolved: https://www.alltrails.com/trail/us/north-carolina/carolina-mountain-and-bent-creek-trail
+    - authoritative_no_match_recovered_via_general_search: https://www.alltrails.com/trail/us/north-carolina/carolina-mountain-and-bent-creek-trail
