@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-09-22T06:26:53.3445984Z",
+    "updatedAt":  "2026-09-23T05:12:04.5154450Z",
     "trips":  [
                   {
                       "name":  "East Coast Greenway — Portland to New Haven",
@@ -20,7 +20,7 @@
                       "directory":  "OldHickory/prod",
                       "entry":  "OldHickory/prod/index.html",
                       "description":  "December 6-16, 2026 — the lake outside Nashville, then Asheville at Christmas",
-                      "generatedAt":  "2026-09-19T21:20:26.044847+00:00"
+                      "generatedAt":  "2026-09-23T05:10:37.596987+00:00"
                   },
                   {
                       "name":  "Pacific Crest Trail — Oregon and Washington",
@@ -34,7 +34,7 @@
                       "directory":  "sw/prod",
                       "entry":  "sw/prod/index.html",
                       "description":  "October 2026 — Utah, Colorado \u0026 New Mexico",
-                      "generatedAt":  "2026-09-22T06:26:04.522518+00:00"
+                      "generatedAt":  "2026-09-23T04:55:06.813193+00:00"
                   }
               ]
 }

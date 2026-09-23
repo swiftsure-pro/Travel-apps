@@ -1,9 +1,9 @@
 {
-  "run_id": "20260919T210417.775435Z",
-  "generated_at_utc": "2026-09-19T21:20:27.421796+00:00",
+  "run_id": "20260923T045522.727534Z",
+  "generated_at_utc": "2026-09-23T05:10:39.070509+00:00",
   "captured_html_input_count": 28,
-  "unique_captured_urls": 475,
-  "unique_final_html_urls": 292,
+  "unique_captured_urls": 456,
+  "unique_final_html_urls": 262,
   "destinations_missing_at_least_one_captured_url": 7,
   "destinations_missing_captured_url_names": [
     "Asheville, North Carolina",
